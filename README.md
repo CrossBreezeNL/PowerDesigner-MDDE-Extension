@@ -10,13 +10,15 @@ This extensions is to add extra modeling possibilities to LDM models, where stan
       - To specify join type and conditions on source objects.
       - To specify period offsets on source objects (for example last month).
     - Examples tab on mappings so example input and output data can be specified in the model.
-- Business rule (new)
-  - Scalar business rule
-  - Filter business rule
+  - Business rule (stereotype)
+    - Add support for modeling business rules with input/output attributes and examples.
+    - Supported sub-stereotypes:
+      - Scalar business rule
+      - Filter business rule
 - Model checks
   - Extra model checks have been implemented to verify the newly supported objects.
 - PowerDeComposer integration
-  - To allow verson management of PowerDesigner files in Git the tool PowerDeComposer have been implemented. In this extension a menu item on models have been added to decompose the model.
+  - To allow version management of PowerDesigner files in Git the tool PowerDeComposer have been implemented. In this extension a menu item on models have been added to decompose a model using PowerDeComposer.
 
 ## Modeling manual
 There is a modeling manual available [here](./manual/) on how to use the PowerDesigner extension.
