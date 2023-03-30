@@ -4,7 +4,7 @@
 
 In order to model business rules new object types are introduced using the extension (based on the Entity type). If you are in a diagram of a model where the 'Data Warehouse Automation' extensions is attached, in the Toolbox on the right a section for this extension will be available for creating business rules.
 
-![PowerDesigner Toolbox Business Rule](img\business_rule_toolbox.png)
+![PowerDesigner Toolbox Business Rule](img/business_rule_toolbox.png)
 
 In order to create a business rule you can click on any business rule icon in the Toolbox in the 'Data Warehouse Automation (MDDE)' section. Hover over the icon to see what each icon represents. When you have clicked an icon the Toolbox you can click in the diagram where you want to have the business rule positioned. To stop creating business rules in the diagram, press the right-click button of the mouse. After you have create a scalar business rule in the diagram you can double click to edit it. Specifics about each business rule type are explained in their respective section:
 
@@ -22,7 +22,7 @@ On the 'General' tab:
 1. Functionally describe the business rule in the 'Comment' field.
 1. Write the SQL syntax for the business rule in the 'SQL Expression (MDDE)' field. The expression should contain one or multiple scalar SQL expressions seperated by a comma. For example `CASE WHEN ... THEN ... ELSE ... END AS EXAMPLE_OUTPUT` or `LEFT(..., ...) AS LEFT_OUTPUT`. Don't include any set operation like SELECT, JOIN, GROUP BY or somesort. You must include the output alias of the expression (like ` AS RESULTING_VALUE`) the output alias must match the 'Code' of an attribute of the business rule with the stereotype 'Output attribute (MDDE)'. When you want to reference an input of the business rule in the SQL expression you must use the 'Code' of the input attribute as specified on the 'Attributes' tab (see below for explanation on adding these attributes). For example, when you have an input attribute with the Name 'Example Input' it's Code will be 'EXAMPLE_INPUT' and an example SQL expression can be `LEFT(EXAMPLE_INPUT, 2) AS EXAMPLE_OUTPUT`.
 
-![Scalar business rule - General](img\scalar_business_rule_general.png)
+![Scalar business rule - General](img/scalar_business_rule_general.png)
 
 > Preferably use ANSI SQL syntax since it makes the expression re-usable when migrating to a different database platform.
 
@@ -33,7 +33,7 @@ On the 'Attributes' tab:
 1. Add each input of the rule as an attribute, set it's data type and set the Stereotype to 'Input attribute (MDDE)'
 1. Add the output of the rule as an attribute, set it's data type and set the Stereotype to 'Output attribute (MDDE)'
 
-![Scalar business rule - Attributes](img\scalar_business_rule_attributes.png)
+![Scalar business rule - Attributes](img/scalar_business_rule_attributes.png)
 
 > Note: the name of the input and output attributes need to be functional so it's clear what input is expected and what the output means.
 
@@ -53,7 +53,7 @@ On the 'Examples (MDDE)' tab:
 
 When you want to create multiple examples, follow the the above steps for every example.
 
-![Scalar business rule - Examples](img\scalar_business_rule_examples.png)
+![Scalar business rule - Examples](img/scalar_business_rule_examples.png)
 
 ## Filter business rule
 
@@ -71,14 +71,14 @@ On the 'General' tab:
 1. Functionally describe the business rule in the 'Comment' field.
 1. Write the SQL syntax for the filter in the 'SQL Expression (MDDE)' field. The expression should contain one SQL condition (it should be true or false). For example `FIRST_INPUT > SECOND_INPUT` or `FIRST_INPUT <> SECOND_INPUT AND FIRST_INPUT > 0`. Don't include any set operation like SELECT, JOIN, GROUP BY or somesort. Also don't include the output alias of the expression (like ` AS RESULTING_VALUE`). When you want to reference an input of the business rule in the SQL expression you must use the 'Code' of the input attribute as specified on the 'Attributes' tab (see below for explanation on adding these attributes). For example, when you have an input attribute with the Name 'Example Input' it's Code will be 'EXAMPLE_INPUT'.
 
-![Filter business rule - General](img\filter_business_rule_general.png)
+![Filter business rule - General](img/filter_business_rule_general.png)
 
 ### Attributes
 
 On the 'Attributes' tab:
 1. Add each input of the rule as an attribute, set it's data type and set the Stereotype to 'Input attribute (MDDE)'
 
-![Scalar business rule - Attributes](img\filter_business_rule_attributes.png)
+![Scalar business rule - Attributes](img/filter_business_rule_attributes.png)
 
 ### Examples
 
@@ -94,7 +94,7 @@ On the 'Examples (MDDE)' tab:
 
 When you want to create multiple examples, follow the the above steps for every example.
 
-![Filter business rule - Examples](img\filter_business_rule_examples.png)
+![Filter business rule - Examples](img/filter_business_rule_examples.png)
 
 ***
 

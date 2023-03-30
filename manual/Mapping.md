@@ -10,15 +10,15 @@ Creating a mapping is standard PowerDesigner functionality, where you can add a 
 
 > If you don't see the 'Mapping' tab, click on the 'More >>' button in the bottom left of the entity dialog (the button is '<< Less' if the tab is already visible).
 
-![Create entity mapping](img\entity_mapping_create.png)
+![Create entity mapping](img/entity_mapping_create.png)
 
 When you click on the button an object-picker screen will appear where you can select the data source (if there are multiple, otherwise it will automatically use the single existing one) and after selecting the data source it will ask to select the primary source object.
 
-![Select primary source object](img\entity_mapping_primary_source_object.png)
+![Select primary source object](img/entity_mapping_primary_source_object.png)
 
 After adding the mapping you can go to it's properties by clicking the 'Properties' icon on the right of the drop-down list.
 
-![Open mapping properties](img\entity_mapping_open_properties.png)
+![Open mapping properties](img/entity_mapping_open_properties.png)
 
 In the poperties tab you can set a good name for the new mapping in the 'Name' field of the mapping. After setting the name, click 'Apply' and 'OK'. Now you can read further in the next section to add source objects.
 
@@ -26,13 +26,13 @@ In the poperties tab you can set a good name for the new mapping in the 'Name' f
 
 In the mapping tab of an entity go to the 'Source objects' tab and then click on the 'Add a Row' button (or Ctrl+N). A new (empty) row in the list of source objects will be added.
 
-![Add source object](img\mapping_source_object_add.png)
+![Add source object](img/mapping_source_object_add.png)
 
 > Make sure the columns 'Joined object (MDDE)', 'Join type (MDDE)', 'Join alias (MDDE)', 'Offset Period (MDDE)', 'Offset Value (MDDE)' and 'Display Name' are visible (preferably in this order). If not, you can add them using the 'Customize Columns and Filter' toolbar button.
 
 First set the 'Joined object (MDDE)' by clicking on the dots (...) in the cell you want to edit.
 
-![Select joined object](img\mapping_source_object_select.png)
+![Select joined object](img/mapping_source_object_select.png)
 
 An object picker will appear with which you can select a source object. Choose the source object and click 'OK'. Now choose the corresponding 'Join type'. The primary source object for a mapping should always have the 'From' join type (which is automatically set so when you select the primary source object while creating the mapping). All other source objects should have one of the other join types (there can only be one 'From'). As a next option on the source object you can specify an alias, this is only needed if the same source object exists in the list of source objects multiple times. This is needed to enter the join properties in the next step specifying join conditions. 
 
@@ -40,7 +40,7 @@ The next option is to select the Offset Period for the source object if the data
 
 Click 'Apply' to effectuate the changes in the model. 
 
-![Source object applied](img\mapping_source_object_apply.png)
+![Source object applied](img/mapping_source_object_apply.png)
 
 ### Specifying join conditions
 
@@ -54,7 +54,7 @@ When you added a source object with a join type which needs join conditions you 
 
 Per cell use the dots button (...) to select the correct attribute. The parent attribute side can contain a reference to an attribute of another source object (by using the dots button) or a literal value (like number, date or textual value) by entering it in the cell. When you're done setting all values click 'Apply' and 'OK'.
 
-![Source object join conditions](img\source_object_join_conditions.png)
+![Source object join conditions](img/source_object_join_conditions.png)
 
 > Make sure the columns 'Child attribute (MDDE)', 'Join operator (MDDE)' and 'Parent attribute (MDDE)' are visible in this order. If not, you can add them using the 'Customize Columns and Filter' toolbar button.
 
@@ -62,11 +62,11 @@ Per cell use the dots button (...) to select the correct attribute. The parent a
 
 When you want to apply a scalar business rule in the mapping, you can add the scalar business rule as a source object, just like any other entity.
 
-![Mapping a scalar business rule](img\mapping_scalar_business_rule.png)
+![Mapping a scalar business rule](img/mapping_scalar_business_rule.png)
 
 In order to specify how the input parameters are filled, we use the join conditions to specify per input attribute of the scalar business rule which attribute from another source object should go into the attribute. The input attribute can be an attribute from a source entity, but also an output attribute of a previously mapped business rule in the same mapping.
 
-![Business rule join conditions](img\mapping_scalar_business_rule_join_conditions.png)
+![Business rule join conditions](img/mapping_scalar_business_rule_join_conditions.png)
 
 The output of the scalar business rule is mapped exactly like an attribute of any other source object, see the [Add an attribute mapping](#add-an-attribute-mapping) section for details on this.
 
@@ -74,7 +74,7 @@ The output of the scalar business rule is mapped exactly like an attribute of an
 
 When you want to apply a filter business rule in the mapping, you can add the filter business rule as a source object, just like any other entity.
 
-![Mapping a filter business rule](img\mapping_filter_business_rule.png)
+![Mapping a filter business rule](img/mapping_filter_business_rule.png)
 
 In order to specify how the input parameters are filled, we use the join conditions to specify per input attribute of the filter business rule which attribute from another source object should go into the attribute. The input attribute can be an attribute from a source entity, but also an output attribute of a previously mapped business rule in the same mapping.
 
@@ -90,13 +90,13 @@ In this view you can now add a new attribute mapping using the 'Add Mapping' ico
 
 When you wan't to map a source attribute click on the [...] icon in the 'Source attribute (MDDE)' cell. This will open an object pick for the source object where you want to select an attribute from. When you select a source object and click 'OK' a second object picker will popup where you can select the source attribute. Select the attribute to use and click 'OK'. When you're done click 'Apply' to effectuate the changes in the model.
 
-![Attribute mapping for business rule](img\attribute_mapping_attribute.png)
+![Attribute mapping for business rule](img/attribute_mapping_attribute.png)
 
 ### Specify a literal value
 
 When you don't source a value from an attribute, but you have a literal value for a certain target attribute you can type the value in the 'Source attribute (MDDE)' field. When it's not a numeric value you have to encapsulate the value in single quotes ('). When you're done click 'Apply' to effectuate the changes in the model.
 
-![Attribute mapping - literal value](img\attribute_mapping_literal.png)
+![Attribute mapping - literal value](img/attribute_mapping_literal.png)
 
 ## Examples
 
@@ -107,7 +107,7 @@ On the 'Mapping (MDDE)' tab:
 1. Go to the 'Examples' tab in the bottom of the screen. This will show a list of all examples.
 1. Create a new example by clicking the 'Add a Row' button (or press CTRL+I).
 1. Enter the name of the example in the 'Name' field, describe the example in the comment field and press 'Apply'.
-   ![Mapping example - Create example](img\mapping_example_create.png)
+   ![Mapping example - Create example](img/mapping_example_create.png)
 1. Double click on the new example row (in the grey area on the left) to open the example.
    In the new dialog screen you will see the name, the comment and example data for the example.
    The example data is the source input and expected output data. The type of the example data can be read in the 'Example data type (MDDE)'. The expected output data will always be for the target entity of the mapping and the source input for any source entity of the mapping.
@@ -120,7 +120,7 @@ In the 'Example (MDDE) properties' screen:
 
 1. Add example input data for a specific entity by clicking on the 'Add a Row' button (or press CTRL+I).
 1. Specify the example entity by clicking on the dots (...) button in the 'Example entity (MDDE)' field and press 'Apply' after choosing an entity.
-   ![Mapping example - Create example data](img\mapping_example_data_create.png)
+   ![Mapping example - Create example data](img/mapping_example_data_create.png)
 1. Open the example input by double clicking on the new example data row (in the grey area).
 
 ### Specify example data records
@@ -128,7 +128,7 @@ To specify example data records (either for source input or expected output), do
 
 1. In the new dialog screen on the 'General' tab you can add example records for clicking 'Add a Row'.
 1. Set the name of the example record so it's clear what the row functionally resembles (if possible) and press 'Apply'.
-   ![Mapping example - Create example record](img\mapping_example_record_create.png)
+   ![Mapping example - Create example record](img/mapping_example_record_create.png)
 1. Double click on the new example record row (in the grey area) to open it.
    Thew new dialog screen shows all attributes ('Attribute (MDDE)') with values ('Value (MDDE)') for the example record.
 1. Add a new attribute value by click on the 'Add a Row' button.
@@ -136,7 +136,7 @@ To specify example data records (either for source input or expected output), do
 1. Set the value for the current attribute in the 'Value (MDDE)' field.
 1. Repeat the previous 3 steps for each attribute.
 1. Press 'Apply' to store the attribute values.
-   ![Mapping example - Create example record attribute value](img\mapping_example_attribute_create.png)
+   ![Mapping example - Create example record attribute value](img/mapping_example_attribute_create.png)
 
 > Make sure for all example records within an example data set (input or output) (as created in the 'Example data' section) the same attributes are used. So if in the first record for 3 attributes example values are given, make sure for the other records for the same attributes example values are given.
 
