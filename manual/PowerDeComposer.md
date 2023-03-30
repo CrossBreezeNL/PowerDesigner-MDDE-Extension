@@ -6,7 +6,7 @@ In order to save the results of the changes made in the PowerDesigner models you
 
 ![Export and decompose](img\model_export_and_decompose.png)
 
-> This needs to PowerDesigner named paths to be setup correctly. See the [README](../README.md) in the models folder.
+> This needs to PowerDesigner named paths to be setup correctly. See the [README](../README.md) in the root folder.
 
 > After exporting and decomposing the model it can happen PowerDesigner shows there are still unsaved changes. When this happens all changes are stored in the export and decomposed model, so don't worry in this case something was not exported. This is a known issue where we haven't found a fix for yet, there are actually no unsaved changes.
 
