@@ -1,0 +1,24 @@
+<o:TemplateTargetItem Id="C57BB9BF-D121-48B1-8917-FB689E11812B">
+<a:ObjectID>C57BB9BF-D121-48B1-8917-FB689E11812B</a:ObjectID>
+<a:Name>mdde_NamedObject_XmlElementName</a:Name>
+<a:TemplateTargetItem.Value>.vbscript(%Stereotype%, %MetaClass.DisplayName%)
+   Dim strStereotype : strStereotype = ScriptInputArray(0)
+   Dim strMetaClassLabel : strMetaClassLabel = ScriptInputArray(1)
+
+   &#39; If the stereotype starts with &quot;mdde_&quot; then we strip that part of and use it as the Xml Element name.
+   If Left(strStereotype, 4) = &quot;mdde_&quot; Then
+      ScriptResult = Right(strStereotype, Len(strStereotype) - 4)
+   &#39; Otherwise we use the DisplayName of the PowerDesigner MetaClass.
+   Else
+      &#39; If the MetaClass is Entity Attribute we change the name to Attribute, otherwise we take the MetaClass label.
+      If strMetaClassLabel = &quot;Entity Attribute&quot; Then
+         ScriptResult = &quot;Attribute&quot;
+      Else
+         ScriptResult = strMetaClassLabel
+      End If
+   End If
+.endvbscript</a:TemplateTargetItem.Value>
+<a:CreationDate>1651670451</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

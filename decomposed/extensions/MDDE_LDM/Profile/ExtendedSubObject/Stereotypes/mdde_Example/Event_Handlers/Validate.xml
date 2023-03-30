@@ -1,0 +1,29 @@
+<o:EventHandlerTargetItem Id="B0FF036C-3CBE-4E39-913B-3D908EDEC7AA">
+<a:ObjectID>B0FF036C-3CBE-4E39-913B-3D908EDEC7AA</a:ObjectID>
+<a:Name>Validate</a:Name>
+<a:CreationDate>1657100828</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HandlerScript>Function %Validate%(obj, ByRef message)
+   WriteDebug &quot;[mdde_Example.Validate] &quot; &amp; obj.UOL
+
+   &#39; Update the Code from the Name.
+   obj.SetNameToCode()
+   
+   &#39; If the parent is a mapping, let&#39;s create the ExpectedOutput object.
+   If obj.ParentObject.IsKindOf(PdCommon.cls_BaseClassifierMapping) Then
+      Dim colExampleEntityData : Set colExampleEntityData = obj.GetExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+      
+      &#39; If the example data collection is empty, create the target entity object.
+      If colExampleEntityData.Count = 0 Then
+         WriteDebug &quot;Creating expected output&quot;
+         Dim objExpectedOutput : Set objExpectedOutput = colExampleEntityData.CreateNew()
+         objExpectedOutput.Stereotype = &quot;mdde_EntityExampleData&quot;
+         objExpectedOutput.Name = &quot;Expected output&quot;
+         objExpectedOutput.SetExtendedAttribute &quot;mdde_ExampleEntity&quot;, obj.ParentObject.Classifier
+      End If
+   End If
+   
+   %Validate% = True
+End Function</a:HandlerScript>
+</o:EventHandlerTargetItem>

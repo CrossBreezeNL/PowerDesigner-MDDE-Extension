@@ -1,0 +1,37 @@
+<o:TemplateTargetItem Id="F055D4E2-9816-4DBB-960D-C7743C707C8E">
+<a:ObjectID>F055D4E2-9816-4DBB-960D-C7743C707C8E</a:ObjectID>
+<a:Name>mdde_Entity_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+  .if (%mdde_NamedObject_XmlElementExport_Template%)
+
+  %mdde_NamedObject_XmlElementExport_Template%
+  .endif
+  .comment Export the list of attributes.
+  .comment Create a variable to store the column ordinal.
+  .set_value(vAttributeOrdinal, 0, new)
+  .foreach_item(Attributes,\n  &lt;Attributes&gt;\n,\n  &lt;/Attributes&gt;)
+    .comment Increase the ColumnOrdinal counter.
+    .set_value(vAttributeOrdinal, %+(vAttributeOrdinal,1)%)
+    %mdde_EntityAttribute_XmlExport_Template%
+  .next(\n)
+  .foreach_item(Identifiers,\n  &lt;Identifiers&gt;\n,\n  &lt;/Identifiers&gt;)
+    %mdde_Identifier_XmlExport_Template%
+  .next(\n)
+  .foreach_item(Mappings,\n  &lt;Mappings&gt;\n,\n  &lt;/Mappings&gt;)
+    %mdde_BaseClassifierMapping_XmlExport_Template%
+  .next(\n)
+  .foreach_item(Relationships,\n  &lt;Relationships&gt;\n,\n  &lt;/Relationships&gt;)
+    %mdde_Relationship_XmlExport_Template%
+  .next(\n)
+
+  .comment If the stereotype of the current entity has it&#39;s own template, include it here.
+  .if (%mdde_Entity_Stereotyped_XmlExport_Template%)
+
+  %mdde_Entity_Stereotyped_XmlExport_Template%
+  .endif
+
+&lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1651670451</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

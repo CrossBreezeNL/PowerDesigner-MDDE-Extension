@@ -1,0 +1,15 @@
+<o:FormTargetItem Id="8CB0B827-CE17-449B-AF8A-EAFF194BC495">
+<a:ObjectID>8CB0B827-CE17-449B-AF8A-EAFF194BC495</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_ChildAttributeSelector&quot; Caption=&quot;Child attribute (MDDE)&quot; AttributeID=&quot;{4448B089-2B01-4D49-83CA-70CEDD1812F4}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_JoinOperator&quot; Caption=&quot;Join operator (MDDE)&quot; AttributeID=&quot;{2AA569D6-094E-4EA8-BBFF-713196E44D4E}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_ParentAttributeSelector&quot; Caption=&quot;Parent attribute (MDDE)&quot; AttributeID=&quot;{2F31C5F4-4F85-4804-80F4-B3AD3BD2F7BC}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1650361399</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>

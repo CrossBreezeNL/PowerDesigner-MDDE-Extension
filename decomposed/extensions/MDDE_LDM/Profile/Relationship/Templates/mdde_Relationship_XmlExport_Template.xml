@@ -1,0 +1,14 @@
+<o:TemplateTargetItem Id="4E7F85A7-6B6D-4339-971F-88181158091F">
+<a:ObjectID>4E7F85A7-6B6D-4339-971F-88181158091F</a:ObjectID>
+<a:Name>mdde_Relationship_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template% ParentEntity=&quot;%Entity1.Code%&quot; ParentEntityId=&quot;%Entity1.ObjectID%&quot; ChildEntity=&quot;%Entity2.Code%&quot; ChildEntityId=&quot;%Entity2.ObjectID%&quot;&gt;
+  .comment Export the relationship joins.
+  .foreach_item(Joins,\n  &lt;RelationshipJoins&gt;\n,\n  &lt;/RelationshipJoins&gt;)
+    %mdde_RelationshipJoin_XmlExport_Template%
+  .next(\n)
+
+&lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1663315476</a:CreationDate>
+<a:Creator>WaniYP</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

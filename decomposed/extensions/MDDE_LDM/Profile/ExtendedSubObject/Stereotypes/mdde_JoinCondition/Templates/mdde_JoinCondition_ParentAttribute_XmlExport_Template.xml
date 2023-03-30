@@ -1,0 +1,13 @@
+<o:TemplateTargetItem Id="BFD61E2B-B395-4207-AB27-E82EA58A4A68">
+<a:ObjectID>BFD61E2B-B395-4207-AB27-E82EA58A4A68</a:ObjectID>
+<a:Name>mdde_JoinCondition_ParentAttribute_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>.comment If a literal is specified, use it, otherwise take the parent source object and attribute if set.
+.if %mdde_ParentLiteralValue%
+%mdde_ParentLiteralValue%
+.elsif (%mdde_ParentSourceObject%) &amp;&amp; (%mdde_ParentAttribute%)
+%mdde_ParentSourceObject.Code%.%mdde_ParentAttribute.Code%
+.endif</a:TemplateTargetItem.Value>
+<a:CreationDate>1654155830</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

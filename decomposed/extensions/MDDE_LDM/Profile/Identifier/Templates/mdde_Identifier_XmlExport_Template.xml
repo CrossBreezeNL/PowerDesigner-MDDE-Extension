@@ -1,0 +1,21 @@
+<o:TemplateTargetItem Id="07F279C0-229A-489C-96BE-436691FC93BA">
+<a:ObjectID>07F279C0-229A-489C-96BE-436691FC93BA</a:ObjectID>
+<a:Name>mdde_Identifier_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;Identifier
+.if (%PrimaryIdentifier%)
+ PrimaryIdentifier=&quot;%PrimaryIdentifier%&quot;
+.endif
+&gt;
+  .comment Export the list of attributes.
+  .comment Create a variable to store the column ordinal.
+  .set_value(vAttributeOrdinal, 0, new)
+  .foreach_item(Attributes,\n  &lt;Attributes&gt;\n,\n  &lt;/Attributes&gt;)
+    .comment Increase the ColumnOrdinal counter.
+    .set_value(vAttributeOrdinal, %+(vAttributeOrdinal,1)%)
+    &lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template% Ordinal=&quot;%vAttributeOrdinal%&quot; /&gt;
+  .next(\n)
+&lt;/Identifier&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1651738252</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

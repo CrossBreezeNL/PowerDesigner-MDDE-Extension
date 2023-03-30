@@ -1,0 +1,11 @@
+<o:TemplateTargetItem Id="8CD10603-B5E5-460F-BD5D-DC237772B0DA">
+<a:ObjectID>8CD10603-B5E5-460F-BD5D-DC237772B0DA</a:ObjectID>
+<a:Name>mdde_Example_Stereotyped_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>%mdde_Example_ExampleInput_XmlExport_Template%
+.foreach_item(mdde_ExpectedScalarOutput,\n&lt;ExpectedScalarOutput&gt;\n,\n&lt;/ExpectedScalarOutput&gt;)
+  %mdde_ExampleAttributeValue_XmlExport_Template%
+.next(\n)</a:TemplateTargetItem.Value>
+<a:CreationDate>1666183120</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

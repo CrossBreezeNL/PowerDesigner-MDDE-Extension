@@ -1,0 +1,18 @@
+<o:StereotypeTargetItem Id="C1302E59-40DA-47AA-9C22-66448061611E">
+<a:ObjectID>C1302E59-40DA-47AA-9C22-66448061611E</a:ObjectID>
+<a:Name>mdde_ExpressionBusinessRule</a:Name>
+<a:CreationDate>1656441233</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Abstract>1</a:Abstract>
+<c:ParentSttp>
+<o:StereotypeTargetItem Ref="75250F30-4C0A-4599-888D-D0AFBFD6AF7E"/>
+</c:ParentSttp>
+<c:Categories>
+<xi:include href="Stereotypes/Stereotypes.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Templates/Templates.xml" />
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

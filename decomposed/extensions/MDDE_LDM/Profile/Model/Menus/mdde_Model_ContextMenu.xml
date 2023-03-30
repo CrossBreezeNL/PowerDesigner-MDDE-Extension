@@ -1,0 +1,16 @@
+<o:MenuTargetItem Id="1D7A420C-7255-425E-99AE-B83F0B87B5DF">
+<a:ObjectID>1D7A420C-7255-425E-99AE-B83F0B87B5DF</a:ObjectID>
+<a:Name>mdde_Model_ContextMenu</a:Name>
+<a:MenuTargetItem.Value>&lt;Menu&gt;
+   &lt;Command Name=&quot;mdde_ExportXmlAndDecompose&quot; Caption=&quot;Export XML and Decompose (MDDE)&quot; /&gt;
+   &lt;Popup Caption=&quot;Debugging (MDDE)&quot; &gt;
+      &lt;Command Name=&quot;mdde_ExportXml&quot; Caption=&quot;Export XML (MDDE)&quot; /&gt;
+      &lt;Command Name=&quot;mdde_Decompose&quot; Caption=&quot;Decompose (MDDE)&quot; /&gt;
+      &lt;Command Name=&quot;mdde_UpdateDiagramPreferences&quot; Caption=&quot;Update Diagram Preferences (MDDE)&quot; /&gt;
+   &lt;/Popup&gt;
+&lt;/Menu&gt;
+</a:MenuTargetItem.Value>
+<a:CreationDate>1650405522</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:MenuTargetItem>

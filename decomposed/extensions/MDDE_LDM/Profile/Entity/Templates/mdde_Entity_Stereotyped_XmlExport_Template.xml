@@ -1,0 +1,8 @@
+<o:TemplateTargetItem Id="610025F1-3C84-49DF-B815-5EFEE7C46F01">
+<a:ObjectID>610025F1-3C84-49DF-B815-5EFEE7C46F01</a:ObjectID>
+<a:Name>mdde_Entity_Stereotyped_XmlExport_Template</a:Name>
+<a:CreationDate>1651672666</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>This is an empty template which can be overriden per stereotype to add elements to the XML export.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

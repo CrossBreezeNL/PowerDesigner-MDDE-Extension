@@ -1,0 +1,31 @@
+<o:ExtendedAttributeTargetItem Id="C30EF6BE-4A71-47D0-A049-F289D71A3559">
+<a:ObjectID>C30EF6BE-4A71-47D0-A049-F289D71A3559</a:ObjectID>
+<a:Name>mdde_AttributeSelector</a:Name>
+<a:CreationDate>1657028212</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_EmptyList%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:Computed>1</a:Computed>
+<a:GetMethodScript>Function %Get%(obj)
+   &#39;Initialize the return value to an empty string.
+   %Get% = &quot;&quot;
+   
+   &#39; Get the attribute.
+   Dim objAttribute : Set objAttribute = obj.GetExtendedAttribute(&quot;mdde_Attribute&quot;)
+   
+   &#39; If the child attribute is not empty, return the FQ name.
+   If Not(objAttribute Is Nothing) Then
+      %Get% = objAttribute.DisplayName
+   End If
+End Function</a:GetMethodScript>
+<a:SetMethodScript>Sub %Set%(obj, value)
+   &#39; Implement your setter method on &lt;obj&gt; here
+   &#39; using &lt;value&gt; as you wish
+
+End Sub</a:SetMethodScript>
+<a:Label>Attribute (MDDE)</a:Label>
+<c:EditMethod>
+<o:MethodTargetItem Ref="366F8297-99DB-42C9-A203-4E51858E8E5E"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

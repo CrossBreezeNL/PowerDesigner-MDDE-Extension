@@ -1,0 +1,28 @@
+<o:TemplateTargetItem Id="EBDF6FC6-F2F5-442C-A89E-FA876D2A079F">
+<a:ObjectID>EBDF6FC6-F2F5-442C-A89E-FA876D2A079F</a:ObjectID>
+<a:Name>mdde_Entity_SapHanaExpression_Template</a:Name>
+<a:TemplateTargetItem.Value>.vbscript(%mdde_SqlExpression%)
+   Dim strSapHanaExpression : strSapHanaExpression = ScriptInputArray(0)
+   
+   &#39; Create a RegExp object to perform a regular expression search.
+   Dim RE : Set RE = New RegExp
+   &#39; Make sure we search case-sensitive.
+   RE.IgnoreCase = False
+   &#39; Make sure the consider all matches.
+   RE.Global = True
+   
+   &#39; Loop through the attributes of this business rule.
+   Dim objAttribute
+   For Each objAttribute In ActiveSelection.Item(0).Attributes
+      &#39; Use word boundary (\b) to match whole words.
+      RE.Pattern = &quot;\b(&quot; + objAttribute.Code + &quot;)\b&quot;
+      &#39; Replace with attribute found prefixed with a colon (which is the SAP HANA syntax for referencing a parameter).
+      strSapHanaExpression = RE.Replace(strSapHanaExpression, &quot;:$1&quot;)
+   Next
+
+   ScriptResult = strSapHanaExpression
+.endvbscript</a:TemplateTargetItem.Value>
+<a:CreationDate>1656508910</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="78855B09-CD2D-4C8F-ABC9-5138260B24DF">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>78855B09-CD2D-4C8F-ABC9-5138260B24DF</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1666188164</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_ExampleRecord_XmlExport_Template.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

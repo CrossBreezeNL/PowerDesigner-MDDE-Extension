@@ -1,0 +1,31 @@
+<o:MethodTargetItem Id="B903497F-9515-4292-9A7E-90E3B07F8D10">
+<a:ObjectID>B903497F-9515-4292-9A7E-90E3B07F8D10</a:ObjectID>
+<a:Name>mdde_Entity_DeleteMapping</a:Name>
+<a:CreationDate>1653999127</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Delete the currently selected mapping</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   WriteDebug &quot;[mdde_Entity_DeleteMapping] &quot; &amp; obj.UOL
+   
+   &#39; Check whether there is a mapping selected (DefaultMapping), and if not report an error.
+   If (obj.DefaultMapping Is Nothing) Then
+      MsgBox _
+          &quot;There is no mapping selected to delete!&quot; &amp; vbCrLf &amp; vbCrLf _
+            &amp; &quot;Please select a mapping before trying to delete.&quot; _
+         ,vbExclamation _
+         ,&quot;No mapping selected&quot;
+      Exit Sub
+   End If
+   
+   &#39; Ask for confirmation to remove the mapping.
+   Dim iAnswer : iAnswer = MsgBox(&quot;Are you sure you want to delete mapping &quot; &amp; obj.DefaultMapping.Name &amp; &quot;?&quot;, vbYesNo)
+   
+   &#39; If the user pressed &#39;Yes&#39;, delete the mapping.
+   If (iAnswer = vbYes) Then
+      &#39; Remove the mapping from the entity and remove the object (this will automatically reset the DefaultMapping).
+      obj.Mappings.Remove obj.DefaultMapping, True
+   End If
+   
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

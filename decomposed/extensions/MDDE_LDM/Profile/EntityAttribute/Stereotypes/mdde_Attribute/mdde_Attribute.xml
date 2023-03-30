@@ -1,0 +1,12 @@
+<o:StereotypeTargetItem Id="3AF22252-6AD6-407D-873D-0D2C2B0EAF49">
+<a:ObjectID>3AF22252-6AD6-407D-873D-0D2C2B0EAF49</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:CreationDate>1651586835</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Attribute (MDDE)</a:Label>
+<a:Abstract>1</a:Abstract>
+<c:Categories>
+<xi:include href="Stereotypes/Stereotypes.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

@@ -1,0 +1,18 @@
+<o:TemplateTargetItem Id="87AF4F17-7EAF-441B-A76A-B8E874DEF4AD">
+<a:ObjectID>87AF4F17-7EAF-441B-A76A-B8E874DEF4AD</a:ObjectID>
+<a:Name>mdde_Entity_TTView_Template</a:Name>
+<a:TemplateTargetItem.Value>.vbscript(%Stereotype%, %Code%)
+  Dim strStereotype : strStereotype = ScriptInputArray(0)
+  Dim strCode : strCode = ScriptInputArray(1)
+  
+  ScriptResult = &quot;&quot;
+  
+  &#39; If the stereotype contains &quot;with TT view&quot; it will return  the TT view name.
+  If (InStr(strStereotype,&quot;with TT view&quot;) &gt; 0) Then
+    ScriptResult = Trim(Mid(strCode,1,7) &amp; &quot;TT_&quot; &amp; Mid(strCode,8,247))
+  End If
+.endvbscript</a:TemplateTargetItem.Value>
+<a:CreationDate>1652880918</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

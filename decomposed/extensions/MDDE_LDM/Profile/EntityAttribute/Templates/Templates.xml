@@ -1,0 +1,15 @@
+<o:TypedCategoryTargetItem Id="C6061AD7-BB81-414F-898A-988229161352">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>C6061AD7-BB81-414F-898A-988229161352</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1651670975</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_EntityAttribute_XmlExport_Template.xml" />
+<xi:include href="mdde_EntityAttribute_DataType.xml" />
+<xi:include href="mdde_EntityAttribute_Length.xml" />
+<xi:include href="mdde_EntityAttribute_Precision.xml" />
+<xi:include href="mdde_EntityAttribute_Scale.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -1,0 +1,10 @@
+<o:TemplateTargetItem Id="F6669E16-D2DF-4EE6-8E14-EC22D05D2844">
+<a:ObjectID>F6669E16-D2DF-4EE6-8E14-EC22D05D2844</a:ObjectID>
+<a:Name>mdde_Example_ExampleInput_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>.foreach_item(mdde_ExampleInput,\n&lt;ExampleInput&gt;\n,\n&lt;/ExampleInput&gt;)
+  %mdde_ExampleAttributeValue_XmlExport_Template%
+.next(\n)</a:TemplateTargetItem.Value>
+<a:CreationDate>1666186486</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

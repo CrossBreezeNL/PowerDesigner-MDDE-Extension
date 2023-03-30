@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="DA219A85-3DED-4E0C-8BD6-9ECD64828540">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>DA219A85-3DED-4E0C-8BD6-9ECD64828540</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1655828795</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Check_ScalarBusinessRule_AttributeCodeOccursInSqlExpression.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

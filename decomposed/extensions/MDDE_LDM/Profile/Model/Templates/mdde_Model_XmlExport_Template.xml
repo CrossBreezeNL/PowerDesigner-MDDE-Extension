@@ -1,0 +1,23 @@
+<o:TemplateTargetItem Id="AA1A6038-8DC5-4DA1-98DE-9BE69845E914">
+<a:ObjectID>AA1A6038-8DC5-4DA1-98DE-9BE69845E914</a:ObjectID>
+<a:Name>mdde_Model_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;Model %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+.if (%mdde_NamedObject_XmlElementExport_Template%)
+
+  %mdde_NamedObject_XmlElementExport_Template%
+.endif()
+  .comment Include a list of source models.
+  .set_value(CurrentModelID, %ObjectID%)
+  .foreach_item(TargetModels,\n  &lt;SourceModels&gt;\n,&quot;  &lt;/SourceModels&gt;&quot;,%TargetModelType%==&quot;Logical Data Model&quot;)
+  .if (%Used%) &amp;&amp; (%TargetModelID% != %CurrentModelID%)
+    &lt;SourceModel Id=&quot;%TargetModelID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot; /&gt;
+  .endif(\n)
+  .next()
+
+  .comment Include the package contents (a model is also a package).
+  %mdde_BasePackage_XmlExport_Template%
+&lt;/Model&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1651665197</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

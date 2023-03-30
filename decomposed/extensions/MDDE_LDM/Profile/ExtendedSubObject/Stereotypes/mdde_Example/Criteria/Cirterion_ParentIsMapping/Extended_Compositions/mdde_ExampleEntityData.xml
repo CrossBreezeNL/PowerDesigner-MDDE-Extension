@@ -1,0 +1,14 @@
+<o:ExtendedCompositionTargetItem Id="95304AF0-E30A-41FA-9F6C-DDC6A94E4E1C">
+<a:ObjectID>95304AF0-E30A-41FA-9F6C-DDC6A94E4E1C</a:ObjectID>
+<a:Name>mdde_ExampleEntityData</a:Name>
+<a:CreationDate>1661255687</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_EntityExampleData</a:DestinationStereotype>
+<a:Label>Example data (MDDE)</a:Label>
+<a:DefaultColumnFilter>&quot;_MDDE_LDM.mdde_ExampleDataType.{3268E67B-02F5-49E6-8F21-5315420B1DF9}&quot; 80 &quot;_MDDE_LDM.mdde_ExampleEntity.{EF3B200B-7AAB-4385-9C19-55DFD097E54A}&quot; 80 &quot;_MDDE_LDM.mdde_ExampleRecordCount.{DF8DA599-B7F1-40CE-90BB-A640914CBB95}&quot; 80 LABL 80 DISPNAME -1 NAME -1 CODE -1 PRNT -1 OBJTYPE -1 CDAT -1 CUSR -1 MDAT -1 MUSR -1 OMDAT -1 CLSSNAME -1 FLDR -1 SDSC -1 OLOC -1 GPRT -1 PCKG -1 NOTETEXT -1 DESCTEXT -1 KYWD -1 GENEORGN -1 STRN -1 MODL -1 CPNM -1 MSTP -1 DESC -1 NOTE -1 HASNOTE -1 RPLA -1</a:DefaultColumnFilter>
+<c:DestinationStereotypeObject>
+<o:StereotypeTargetItem Ref="836A8062-D3DA-4233-B9AF-6E2ABAA63217"/>
+</c:DestinationStereotypeObject>
+</o:ExtendedCompositionTargetItem>

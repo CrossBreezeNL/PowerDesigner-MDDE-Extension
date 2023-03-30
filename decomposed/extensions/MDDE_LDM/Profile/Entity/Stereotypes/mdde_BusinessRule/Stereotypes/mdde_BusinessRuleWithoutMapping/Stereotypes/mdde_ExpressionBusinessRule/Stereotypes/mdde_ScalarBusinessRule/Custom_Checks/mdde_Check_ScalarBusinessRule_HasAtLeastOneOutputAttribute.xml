@@ -1,0 +1,30 @@
+<o:CustomCheckTargetItem Id="DB2ABEB5-CB49-4B90-8E9F-61330B71877F">
+<a:ObjectID>DB2ABEB5-CB49-4B90-8E9F-61330B71877F</a:ObjectID>
+<a:Name>mdde_Check_ScalarBusinessRule_HasAtLeastOneOutputAttribute</a:Name>
+<a:CreationDate>1655828495</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that every scalar business rule has at least one output attribute</a:HelpMessage>
+<a:OutputMessage>The following scalar business rules have no attribute(s) with the output stereotype:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   Dim boolResult, objAttribute
+   boolResult = False
+   For Each objAttribute In obj.Attributes
+      If objAttribute.HasStereotype(&quot;mdde_OutputAttribute&quot;) Then
+         boolResult = True
+         Exit For
+      End If
+   Next
+
+   %Check% = boolResult
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

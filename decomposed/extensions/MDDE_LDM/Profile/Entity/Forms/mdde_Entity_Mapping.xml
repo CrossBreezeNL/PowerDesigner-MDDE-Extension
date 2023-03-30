@@ -1,0 +1,20 @@
+<o:FormTargetItem Id="AECFB517-F079-42D3-898D-8DA64DDE7A42">
+<a:ObjectID>AECFB517-F079-42D3-898D-8DA64DDE7A42</a:ObjectID>
+<a:Name>mdde_Entity_Mapping</a:Name>
+<a:Code>MAPS</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;HorizontalLayout Name=&quot;mdde_HorizontalLayout_DefaultMapping&quot; &gt;
+      &lt;ExtendedAttribute Attribute=&quot;mdde_Entity_DefaultMappingSelector&quot; Caption=&quot;Mapping&quot; AttributeID=&quot;{632D5806-0218-4A45-A661-8FE4135BD32F}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+      &lt;CustomMethod Method=&quot;mdde_Entity_DeleteMapping&quot; Name=&quot;mdde_Entity_DeleteMapping&quot; Caption=&quot;Delete mapping&quot; HorizontalResize=&quot;No&quot; Display=&quot;Img_Delete&quot; /&gt;
+      &lt;CustomMethod Method=&quot;mdde_Entity_AddMapping&quot; Name=&quot;mdde_Entity_AddMapping&quot; Caption=&quot;Add mapping&quot; HorizontalResize=&quot;No&quot; Display=&quot;Img_Create&quot; /&gt;
+   &lt;/HorizontalLayout&gt;
+   &lt;Include Name=&quot;Mapping&quot; Context=&quot;DefaultMapping&quot; Form=&quot;MappingDetails&quot; SizeInChars=&quot;3&quot; LineNumber=&quot;1&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; ReadOnly=&quot;No&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1650367984</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Mapping (MDDE)</a:Label>
+<a:FormType>MAPS</a:FormType>
+<a:FavoritePage>0</a:FavoritePage>
+</o:FormTargetItem>

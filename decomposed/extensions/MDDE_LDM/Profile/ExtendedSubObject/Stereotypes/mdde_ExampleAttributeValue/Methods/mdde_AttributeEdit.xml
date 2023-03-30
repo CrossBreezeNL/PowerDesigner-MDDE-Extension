@@ -1,0 +1,36 @@
+<o:MethodTargetItem Id="366F8297-99DB-42C9-A203-4E51858E8E5E">
+<a:ObjectID>366F8297-99DB-42C9-A203-4E51858E8E5E</a:ObjectID>
+<a:Name>mdde_AttributeEdit</a:Name>
+<a:CreationDate>1657022244</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>This edit method is used for the attribute object picker for parent attributes.
+
+Based on the stereotype (input or output) we filter on attribute types.
+
+The parent object must have an computed extended attribute which points to the object to select the attributes from with the name &#39;mdde_ExampleEntity&#39;.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   Dim objExampleEntity
+   If obj.ParentObject.Stereotype = &quot;mdde_Example&quot; Then
+      &#39; Get a reference to the entity the example is for.
+      Set objExampleEntity = obj.ParentObject.GetExtendedAttribute(&quot;mdde_ExampleEntity&quot;)
+   ElseIf obj.ParentObject.Stereotype = &quot;mdde_ExampleRecord&quot; Then
+      Set objExampleEntity = obj.ParentObject.ParentObject.GetExtendedAttribute(&quot;mdde_ExampleEntity&quot;)
+   End If
+   
+   &#39; Based on the stereotype of the current object, show an object picker.
+   Dim objExampleAttribute
+   If obj.HasStereotype(&quot;mdde_ExampleInputAttributeValue&quot;) Then
+      Set objExampleAttribute = SelectInputAttribute(objExampleEntity)
+   ElseIf obj.HasStereotype(&quot;mdde_ExpectedOutputAttributeValue&quot;) Then
+      Set objExampleAttribute = SelectOutputAttribute(objExampleEntity)
+   Else
+      Set objExampleAttribute = SelectAnyAttribute(objExampleEntity)
+   End If
+   
+   &#39; If a source object was selected, go on.
+   If Not(objExampleAttribute Is Nothing) Then
+      obj.SetExtendedAttribute &quot;mdde_Attribute&quot;, objExampleAttribute
+   End If
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

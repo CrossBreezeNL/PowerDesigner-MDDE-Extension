@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="7BBEDCB3-FEE6-4532-9465-2D4764511DF3">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>7BBEDCB3-FEE6-4532-9465-2D4764511DF3</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1657120038</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_ExpressionBusinessRule_Example_CheckAttributeAndValues.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -1,0 +1,232 @@
+<a:CheckGlobalScript>&#39;******************************************************************************
+&#39;* Purpose:  This VB-Script holds global definitions shared by all the custom-
+&#39;*            checks scripts of the model extension.
+&#39;******************************************************************************
+
+Option Explicit &#39; This is to ensure all used variables are defined
+
+&#39; Constants used in the extension are defined below.
+Const cMDDE_EXT_CODE = &quot;MDDE_LDM&quot;
+Const cMDDE_PDC_COMPOSED_FOLDER = &quot;composed&quot;
+Const cMDDE_PDC_DECOMPOSED_FOLDER = &quot;decomposed&quot;
+Const cMDDE_JOIN_TYPE_APPLY = &quot;Apply&quot;
+
+
+&#39;******************************************************************************
+&#39; Routine to write an error to the output.
+&#39;******************************************************************************
+Sub WriteError (strMsg)
+   Output now() &amp; vbtab &amp; &quot; ERROR: &quot; &amp; strMsg
+End Sub
+
+
+&#39;******************************************************************************
+&#39; Routine to write an debug message to the output.
+&#39;******************************************************************************
+Sub WriteInfo (strMsg)
+   Output now() &amp; vbtab &amp; &quot; INFO: &quot; &amp; strMsg
+End Sub
+
+
+&#39;******************************************************************************
+&#39; Routine to write an debug message to the output.
+&#39; To enable or disable debug mode:
+&#39; &gt; In Tools -&gt; General Options -&gt; Variables
+&#39; &gt; Create an environment variable named MDDE_DEBUG_MODE with the value True or False.
+&#39;******************************************************************************
+Sub WriteDebug (strMsg)
+   &#39;Initialize the debug mode to be disabled.
+   Dim bDebugMode : bDebugMode = False
+   
+   &#39; Check whether debug mode is configured.
+   If Not(ActiveModel Is Nothing) Then
+      &#39; If the MDDE_DEBUG_MODE variable is configured, use it.
+      If Len(ActiveModel.EvaluateText(&quot;%$MDDE_DEBUG_MODE%&quot;)) &gt; 0 Then
+         bDebugMode = CBool(ActiveModel.EvaluateText(&quot;%$MDDE_DEBUG_MODE%&quot;))
+      End If
+   End If
+   
+   &#39; Write the output if debug mode is enabled.
+   If (bDebugMode) Then
+      Output now() &amp; vbtab &amp; &quot; DEBUG: &quot; &amp; strMsg
+   End If
+End Sub
+
+
+&#39;******************************************************************************
+&#39; Resolve possible shortcut references and return the real object.
+&#39;******************************************************************************
+Function GetRealObject(objItemOrShortcut)
+   If (objItemOrShortcut Is Nothing) Then
+      Set GetRealObject = Nothing
+      Exit Function
+   End If
+   If (objItemOrShortcut.IsShortcut) Then
+      &#39; If the object is a shortcut, open the target model.
+      objItemOrShortcut.TargetModelDefinition.AskForLoad False
+      &#39; Return the TargetObject of the shortcut.
+      Set GetRealObject = objItemOrShortcut.TargetObject
+   Else
+      &#39; If the object is not a shortcut, return the passed object.
+      Set GetRealObject = objItemOrShortcut
+   End If
+End Function
+
+
+&#39;******************************************************************************
+&#39; Check whether a collection contains a certain object.
+&#39;******************************************************************************
+Function CollectionContainsObject(objCollection, objItem)
+   &#39; Resolve possible shortcut references.
+   Set objItem = GetRealObject (objItem)
+   
+   &#39; If the item is Nothing, return False.
+   If(objItem Is Nothing) Then
+      CollectionContainsObject = False
+      Exit Function
+   End If
+   
+   &#39; Loop through the collection to check whether the item exists, and if so return True.
+   Dim objColItem
+   For Each objColItem In objCollection
+      Set objColItem = GetRealObject (objColItem)
+      If (objColItem.ObjectID = objItem.ObjectID) Then
+         CollectionContainsObject = True
+         Exit Function
+      End If
+   Next
+
+   CollectionContainsObject = False
+End Function
+
+
+&#39;******************************************************************************
+&#39; Show an object picker for an attribute of the given entity
+&#39; and return the selected on.
+&#39;******************************************************************************
+Function SelectAttribute(objEntity, strExcludeStereotype)  
+   Set objEntity = GetRealObject(objEntity)
+   &#39; Init the return value to Nothing.
+   Set SelectAttribute = Nothing
+   
+   &#39; If the passed entity is not nothing, create a selection on all it&#39;s attributes.
+   If Not(objEntity Is Nothing) Then
+      Dim objSel : Set objSel = objEntity.Model.CreateSelection
+
+      If Not(objSel Is Nothing) Then
+         Dim objAttribute
+         For Each objAttribute in objEntity.Attributes
+            
+            &#39; If no exclude stereotype is specified, include all attributes.
+            If IsNull(strExcludeStereotype) Then
+               objSel.Objects.Add objAttribute
+            &#39; Only include attribute if they are not of the stereotype to exclude.
+            Else
+               If Not(objAttribute.HasStereotype(strExcludeStereotype)) Then
+                  objSel.Objects.Add objAttribute
+               End If
+            End If              
+         Next
+
+         &#39; Display the object picker on the selection
+         Set SelectAttribute = objSel.ShowObjectPicker(&quot;&quot;, &quot;&quot;, &quot;Select an attribute&quot;, True, True, False)
+         &#39; Empty the selection.
+         objSel.Delete
+       End If
+   End If       
+End Function
+
+Function SelectAnyAttribute(objEntity)
+   Set SelectAnyAttribute = Nothing
+   Set SelectAnyAttribute = SelectAttribute(objEntity, Null)
+End Function
+
+Function SelectInputAttribute(objEntity)
+   Set SelectInputAttribute = Nothing
+   Set SelectInputAttribute = SelectAttribute(objEntity, &quot;mdde_OutputAttribute&quot;)
+End Function
+
+Function SelectOutputAttribute(objEntity)
+   Set SelectOutputAttribute = Nothing
+   Set SelectOutputAttribute = SelectAttribute(objEntity, &quot;mdde_InputAttribute&quot;)
+End Function
+
+&#39; Function to check whether the value is a valid literal.
+&#39; It&#39;s a valid literal if the input value is numeric or encapsulated with quotes.
+Function IsLiteralValue(strValue)
+   IsLiteralValue = (IsNumeric(strValue) Or (Left(strValue, 1) = &quot;&#39;&quot; And Right(strValue, 1) = &quot;&#39;&quot;))
+End Function
+
+
+&#39;******************************************************************************
+&#39; BaseStucturalFeatureMapping functions
+&#39; Sadly these can&#39;t be re-used over Event and Custom check code.
+&#39; That&#39;s why this code is here.
+&#39;******************************************************************************
+
+   &#39;******************************************************************************
+   &#39; Check whether an attribute mapping has a valid source object.
+   &#39;******************************************************************************
+   Function AttributeMappingHasValidSourceObject(objAttributeMapping)
+      AttributeMappingHasValidSourceObject = True
+   
+      &#39; Only check when the attribute mapping has a source feature attached.
+      If Not (objAttributeMapping.SourceFeature Is Nothing) Then
+         &#39; Get the source entity of the source feature.  
+         Dim objSourceEntity : Set objSourceEntity = GetRealObject(objAttributeMapping.SourceFeature.Parent)
+      
+         If Not(objSourceEntity Is Nothing) Then
+            &#39; If the source object is not set, return False.
+            If (objAttributeMapping.GetExtendedAttribute(&quot;mdde_SourceObject&quot;) Is Nothing) Then
+               AttributeMappingHasValidSourceObject = False
+               Exit Function
+            
+            Else
+               &#39; Get the joined object of the source object.
+               Dim objJoinedSource : Set objJoinedSource = GetRealObject(objAttributeMapping.getExtendedAttribute(&quot;mdde_SourceObject&quot;).getExtendedAttribute(&quot;mdde_JoinedObject&quot;))
+               &#39; If the joined object is not set, return False.
+               If (objJoinedSource Is Nothing) Then
+                  AttributeMappingHasValidSourceObject = False
+                  Exit Function
+               Else
+                  &#39; If the joined source object is not the same as the assigned source, return False.
+                  If (objJoinedSource.ObjectID &lt;&gt; objSourceEntity.ObjectID) Then
+                     AttributeMappingHasValidSourceObject = False
+                     Exit Function
+                  End If
+               End If
+            End If
+         End If
+      End If   
+   End Function
+
+   &#39;******************************************************************************
+   &#39; Find the first possible source object from the mapping for the current
+   &#39; attribute mapping. If one is found, the first one is assigned.
+   &#39;******************************************************************************
+   Sub SetSourceObjectOnAttributeMapping(objAttributeMapping)
+      &#39; Derive the source entity.
+      Dim objSourceEntity
+      If Not(objAttributeMapping.SourceFeature Is Nothing) Then
+         Set objSourceEntity = GetRealObject(objAttributeMapping.SourceFeature.Parent)
+         If (objSourceEntity Is Nothing) Then
+            Exit Sub
+         End If
+      Else
+         Exit Sub
+      End If
+   
+      &#39; Loop through the source objects of the current mapping.
+      Dim objSourceObject
+      For Each objSourceObject In objAttributeMapping.ClassifierMap.getExtendedCollection(&quot;mdde_SourceObjects&quot;)
+         Dim objJoinedSource : Set objJoinedSource = GetRealObject(objSourceObject.getExtendedAttribute(&quot;mdde_JoinedObject&quot;))
+         If Not(objJoinedSource Is Nothing) Then
+            &#39; If the current source object entity is the same as the parent entity of the attribute we assign the current joiner.
+            &#39; This also means the first found match is assigned while there might be multiple options. The modeler then needs to update the source object to the right one.
+            If (objJoinedSource.ObjectID = objSourceEntity.ObjectID) Then
+               objAttributeMapping.SetExtendedAttribute &quot;mdde_SourceObject&quot;, objSourceObject
+               Exit Sub
+            End If
+         End If
+      Next
+   End Sub</a:CheckGlobalScript>

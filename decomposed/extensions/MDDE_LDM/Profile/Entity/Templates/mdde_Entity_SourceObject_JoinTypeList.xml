@@ -1,0 +1,12 @@
+<o:TemplateTargetItem Id="CFDD3749-A267-4A5F-8AD6-76F2D75F8741">
+<a:ObjectID>CFDD3749-A267-4A5F-8AD6-76F2D75F8741</a:ObjectID>
+<a:Name>mdde_Entity_SourceObject_JoinTypeList</a:Name>
+<a:TemplateTargetItem.Value>From
+Inner join
+Left join
+Full join</a:TemplateTargetItem.Value>
+<a:CreationDate>1652263054</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>The list of supported join types of the current entity. This template is overriden for speicifc stereotypes, like for scalar business rules only Apply is supported.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

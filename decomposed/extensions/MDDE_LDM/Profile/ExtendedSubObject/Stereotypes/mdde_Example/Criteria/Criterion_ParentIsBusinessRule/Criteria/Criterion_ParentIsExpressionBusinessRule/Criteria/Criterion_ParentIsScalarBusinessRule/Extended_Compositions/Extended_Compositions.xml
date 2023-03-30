@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="D898263D-CE9E-478B-B240-7E7904758A36">
+<a:TypePublicName>ExtendedCompositionTargetItem</a:TypePublicName>
+<a:ObjectID>D898263D-CE9E-478B-B240-7E7904758A36</a:ObjectID>
+<a:Name>Extended Compositions</a:Name>
+<a:CreationDate>1657094145</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_ExpectedScalarOutput.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

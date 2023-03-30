@@ -1,0 +1,10 @@
+<o:MetaClassTargetItem Id="34EEDCE4-B616-418A-AABE-4E0CA207DBB0">
+<a:ObjectID>34EEDCE4-B616-418A-AABE-4E0CA207DBB0</a:ObjectID>
+<a:Name>Relationship</a:Name>
+<a:CreationDate>1663315476</a:CreationDate>
+<a:Creator>WaniYP</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>

@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="C7B3D190-6F90-4F4E-B7AC-05651CF563B0">
+<a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
+<a:ObjectID>C7B3D190-6F90-4F4E-B7AC-05651CF563B0</a:ObjectID>
+<a:Name>Stereotypes</a:Name>
+<a:CreationDate>1651586835</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Attribute/mdde_Attribute.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

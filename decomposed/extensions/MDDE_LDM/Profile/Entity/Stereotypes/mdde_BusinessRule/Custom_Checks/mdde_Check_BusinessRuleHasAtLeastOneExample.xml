@@ -1,0 +1,31 @@
+<o:CustomCheckTargetItem Id="71C36100-3A41-4014-8072-2A0AF67EA716">
+<a:ObjectID>71C36100-3A41-4014-8072-2A0AF67EA716</a:ObjectID>
+<a:Name>mdde_Check_BusinessRuleHasAtLeastOneExample</a:Name>
+<a:CreationDate>1657118746</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that every business rule has at least one example</a:HelpMessage>
+<a:OutputMessage>The following business rules have no examples specified:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = True
+   
+   Dim colExamples : Set colExamples = obj.GetExtendedCollection(&quot;mdde_BusinessRule_Examples&quot;)
+   If colExamples Is Nothing Then
+      WriteError(&quot;BusinessRule &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; has no examples collection!&quot;)
+      %Check% = False
+   ElseIf colExamples.Count = 0 Then
+      WriteError(&quot;BusinessRule &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; has no examples specified!&quot;)
+      %Check% = False
+   End If
+   
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

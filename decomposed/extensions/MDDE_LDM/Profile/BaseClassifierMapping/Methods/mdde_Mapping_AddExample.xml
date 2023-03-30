@@ -1,0 +1,19 @@
+<o:MethodTargetItem Id="3DE59E81-5822-4492-977A-A53A3098C0DA">
+<a:ObjectID>3DE59E81-5822-4492-977A-A53A3098C0DA</a:ObjectID>
+<a:Name>mdde_Mapping_AddExample</a:Name>
+<a:CreationDate>1661254188</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   WriteDebug &quot;[mdde_Mapping_AddExample] &quot; &amp; obj.UOL
+   
+   &#39; Create a new example.
+   Dim objNewExample : Set objNewExample = obj.GetExtendedCollection(&quot;mdde_Mapping_Examples&quot;).CreateNew()
+   &#39; Enable name to code.
+   objNewExample.SetNameToCode()
+   
+   &#39; Set the new example as the default example (so it&#39;s selected).
+   obj.SetExtendedAttribute &quot;mdde_Mapping_DefaultExample&quot;, objNewExample
+   
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

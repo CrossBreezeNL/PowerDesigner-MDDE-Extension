@@ -1,0 +1,16 @@
+<o:FormTargetItem Id="C048B161-9EE9-4044-84C4-1F885AABA22A">
+<a:ObjectID>C048B161-9EE9-4044-84C4-1F885AABA22A</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StandardNameAndCode Attribute=&quot;NameAndCode&quot; Caption1=&quot;Name&quot; Caption2=&quot;Code&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Comment&quot; Caption=&quot;Comment:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_SqlExpression&quot; Caption=&quot;SQL Expression (MDDE)&quot; AttributeID=&quot;{38253E88-8698-4A5B-8398-0FA2B14556C0}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Generated&quot; Caption=&quot;Generate:&quot; Display=&quot;Checkbox&quot; LeftText=&quot;No&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1651577176</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>

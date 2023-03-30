@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="EC81E477-DA20-4883-B7F6-E8B55E65562F">
+<a:TypePublicName>ExtendedCollectionTargetItem</a:TypePublicName>
+<a:ObjectID>EC81E477-DA20-4883-B7F6-E8B55E65562F</a:ObjectID>
+<a:Name>Extended Collections</a:Name>
+<a:CreationDate>1657021587</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Attribute.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

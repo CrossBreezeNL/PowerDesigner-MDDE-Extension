@@ -1,0 +1,74 @@
+<o:MethodTargetItem Id="3B10E13D-3565-4243-AE19-8496E8C3B12C">
+<a:ObjectID>3B10E13D-3565-4243-AE19-8496E8C3B12C</a:ObjectID>
+<a:Name>mdde_Entity_AddMapping</a:Name>
+<a:CreationDate>1653999090</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Add a mapping</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   WriteDebug &quot;[mdde_Entity_AddMapping] &quot; &amp; obj.UOL
+
+   &#39;If there is no datasource, give an error
+   If (obj.Model.DataSources.Count = 0) Then
+      MsgBox _
+          &quot;There are no DataSources defined for this model!&quot; &amp; vbCrLf &amp; vbCrLf _
+            &amp; &quot;Please add a data source with the required source models to this model first.&quot; _
+         ,vbExclamation _
+         ,&quot;No data sources available&quot;
+      Exit Sub
+   End If
+   
+   &#39; If there is only one data source, set it as active
+   Dim objSelectedDS
+   If (obj.Model.DataSources.Count = 1) Then
+      Set objSelectedDS = obj.Model.DataSources.Item(0)
+   
+   &#39; There are multiple data sources, so the user should choose which data source this mapping belongs to.
+   Else
+      Dim objDSSelection : Set objDSSelection = ActiveModel.CreateSelection
+      &#39; Show an object picker for data sources (in this model) and store the selected object.
+      Set objSelectedDS = objDSSelection.ShowObjectPicker(&quot;DefaultDataSource&quot;, &quot;&quot;, &quot;Please select a data source for the mapping&quot;, True, True, False)
+      &#39; Delete the selection.
+      objDSSelection.Delete()
+   End If
+   
+   &#39; Exit the routine if there is no selected data source.
+   If (objSelectedDS Is Nothing) Then
+      Exit Sub
+   End If
+   
+   &#39; If we cannot create a mapping in the given data source, report an error.
+   If (objSelectedDS.CanCreateMapping(obj) = False) Then
+      MsgBox &quot;Cannot create a mapping on &quot; &amp; obj.Code &amp; &quot; using datasource &quot; &amp; objSelectedDS.Code
+      Exit Sub
+      
+      MsgBox _
+          &quot;Cannot create a mapping on &quot; &amp; obj.Code &amp; &quot; using datasource &quot; &amp; objSelectedDS.Code &amp; &quot;!&quot; _
+         ,vbExclamation _
+         ,&quot;Cannot create mapping&quot;
+      Exit Sub
+   End If
+   
+   &#39; Now we know we can create a mapping in the data source we ask the user to choose the primary source object (from any open model).
+   Dim objPrimarySourceSelection : Set objPrimarySourceSelection = ActiveModel.CreateSelection
+   Dim objPrimarySource : Set objPrimarySource = objPrimarySourceSelection.ShowObjectPicker(&quot;Entity&quot;, &quot;&quot;, &quot;Please select the primary source object for the mapping&quot;, True, False, False)
+   &#39; Delete the selection.
+   objPrimarySourceSelection.Delete()
+   
+   &#39; If there is no primary source selected, the user pressed cancel, so we exit the routine.
+   If (objPrimarySource Is Nothing) Then
+      Exit Sub
+   End If
+   
+   &#39; If the primary source object is selected, we can create the mapping with it&#39;s primary source (from) object.
+   &#39; Create the new mapping in the selected data source for this entity (obj), set the new mapping as default and enforce the creation.
+   Dim objNewMapping : Set objNewMapping = objSelectedDS.CreateMapping(obj, Nothing, True, True)
+   
+   &#39; Add a source object with join type &#39;From&#39;.      
+   Dim objFromSourceObject : Set objFromSourceObject = objNewMapping.getExtendedCollection(&quot;mdde_SourceObjects&quot;).CreateNew()
+   objFromSourceObject.SetNameAndCode objPrimarySource.Name, objPrimarySource.Code
+   objFromSourceObject.SetExtendedAttribute &quot;mdde_JoinType&quot;, &quot;From&quot;    
+   objFromSourceObject.SetExtendedAttribute &quot;mdde_JoinedObject&quot;, objPrimarySource
+   
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

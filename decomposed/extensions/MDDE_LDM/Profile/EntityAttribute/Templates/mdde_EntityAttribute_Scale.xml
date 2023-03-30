@@ -1,0 +1,11 @@
+<o:TemplateTargetItem Id="AB394922-7D21-4C42-AD99-CF5170170466">
+<a:ObjectID>AB394922-7D21-4C42-AD99-CF5170170466</a:ObjectID>
+<a:Name>mdde_EntityAttribute_Scale</a:Name>
+<a:TemplateTargetItem.Value>.set_value(PdDataType, %mdde_EntityAttribute_DataType%)
+.if (%PdDataType% == &quot;N&quot;) || (%PdDataType% == &quot;DC&quot;) || (%PdDataType% == &quot;MN&quot;)
+%Precision%
+.endif()</a:TemplateTargetItem.Value>
+<a:CreationDate>1653401220</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

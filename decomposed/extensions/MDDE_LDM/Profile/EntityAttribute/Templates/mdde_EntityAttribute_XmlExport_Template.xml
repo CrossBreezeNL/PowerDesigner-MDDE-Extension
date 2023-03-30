@@ -1,0 +1,39 @@
+<o:TemplateTargetItem Id="84CC044E-7977-423E-8CB5-2CACFD002A4D">
+<a:ObjectID>84CC044E-7977-423E-8CB5-2CACFD002A4D</a:ObjectID>
+<a:Name>mdde_EntityAttribute_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%
+.comment the vAttributeOrdinal variable is set by the mdde_Entity_XmlExport_Template template.
+.if (%vAttributeOrdinal%)
+ Ordinal=&quot;%vAttributeOrdinal%&quot;
+.endif
+.comment From LogicalAttribute metaclass.
+.if (%DataType%)
+ DataType=&quot;%mdde_EntityAttribute_DataType%&quot;
+.endif
+.if (%mdde_EntityAttribute_Length%)
+ Length=&quot;%mdde_EntityAttribute_Length%&quot;
+.endif
+.if (%mdde_EntityAttribute_Precision%)
+ Precision=&quot;%mdde_EntityAttribute_Precision%&quot;
+.endif
+.if (%mdde_EntityAttribute_Scale%)
+ Scale=&quot;%mdde_EntityAttribute_Scale%&quot;
+.endif
+.if (%PrimaryIdentifier%)
+ Primary=&quot;%PrimaryIdentifier%&quot;
+.endif
+.if (%Foreign%)
+ Foreign=&quot;%Foreign%&quot;
+.endif
+.if (%Mandatory%)
+ Mandatory=&quot;%Mandatory%&quot;
+.endif
+&gt;
+.if (%mdde_NamedObject_XmlElementExport_Template%)
+\n  %mdde_NamedObject_XmlElementExport_Template%
+.endif(\n)
+&lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1651670975</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

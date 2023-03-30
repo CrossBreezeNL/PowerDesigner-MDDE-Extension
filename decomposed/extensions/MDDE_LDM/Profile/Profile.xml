@@ -1,0 +1,22 @@
+<o:ProfileTargetItem Id="AC8C4A3D-DB68-4669-91B2-6306DA6CADBC">
+<a:ObjectID>AC8C4A3D-DB68-4669-91B2-6306DA6CADBC</a:ObjectID>
+<a:Name>Profile</a:Name>
+<a:CreationDate>1650359230</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Shared/Shared.xml" />
+<xi:include href="Entity/Entity.xml" />
+<xi:include href="BaseClassifierMapping/BaseClassifierMapping.xml" />
+<xi:include href="ExtendedSubObject/ExtendedSubObject.xml" />
+<xi:include href="BaseStructuralFeatureMapping/BaseStructuralFeatureMapping.xml" />
+<xi:include href="Model/Model.xml" />
+<xi:include href="EntityAttribute/EntityAttribute.xml" />
+<xi:include href="NamedObject/NamedObject.xml" />
+<xi:include href="BasePackage/BasePackage.xml" />
+<xi:include href="Package/Package.xml" />
+<xi:include href="Identifier/Identifier.xml" />
+<xi:include href="Relationship/Relationship.xml" />
+<xi:include href="RelationshipJoin/RelationshipJoin.xml" />
+</c:Categories>
+</o:ProfileTargetItem>

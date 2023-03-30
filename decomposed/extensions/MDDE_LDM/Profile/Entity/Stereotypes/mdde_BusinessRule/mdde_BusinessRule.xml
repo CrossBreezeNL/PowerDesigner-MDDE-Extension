@@ -1,0 +1,18 @@
+<o:StereotypeTargetItem Id="4AD8DD8A-E421-435E-9559-6FD7A44BCDA3">
+<a:ObjectID>4AD8DD8A-E421-435E-9559-6FD7A44BCDA3</a:ObjectID>
+<a:Name>mdde_BusinessRule</a:Name>
+<a:CreationDate>1651576644</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Business rule (MDDE)</a:Label>
+<c:Categories>
+<xi:include href="Stereotypes/Stereotypes.xml" />
+<xi:include href="Templates/Templates.xml" />
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Extended_Compositions/Extended_Compositions.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Extended_Collections/Extended_Collections.xml" />
+<xi:include href="Methods/Methods.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

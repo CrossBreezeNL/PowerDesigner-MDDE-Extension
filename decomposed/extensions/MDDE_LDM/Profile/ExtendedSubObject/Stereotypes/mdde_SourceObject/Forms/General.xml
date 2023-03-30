@@ -1,0 +1,19 @@
+<o:FormTargetItem Id="8E1A9ECE-4F8B-4945-81E2-CB0B32BC1FBC">
+<a:ObjectID>8E1A9ECE-4F8B-4945-81E2-CB0B32BC1FBC</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_JoinedObject&quot; Caption=&quot;Joined object (MDDE)&quot; AttributeID=&quot;{D60BC69B-0289-460F-A8E9-6CFBB6A9A7E8}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_JoinType&quot; Caption=&quot;Join type (MDDE)&quot; AttributeID=&quot;{08A86AD4-3F3F-40E1-AFC2-24CB6B49E316}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_JoinAlias&quot; Caption=&quot;Join alias (MDDE)&quot; AttributeID=&quot;{4F5E7B71-E5C4-49DC-BFA5-ABE9B6660801}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StaticText Name=&quot;mdde_Text_JoinConditions&quot; Caption=&quot;Please specify the join conditions for this source object below.&quot; /&gt;
+   &lt;StaticText Name=&quot;mdde_Text_JoinConditionsBusinessRule&quot; Caption=&quot;If the source object is a business rule, the input parameters for the business rule must be mapped here.&quot; /&gt;
+   &lt;StandardCollection Collection=&quot;mdde_JoinConditions&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;DisplayName&quot; Caption=&quot;Display name&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; LeftText=&quot;false&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1650363157</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>

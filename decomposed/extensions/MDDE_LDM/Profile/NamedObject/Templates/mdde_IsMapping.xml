@@ -1,0 +1,9 @@
+<o:TemplateTargetItem Id="12C27C66-86A2-454C-AD16-56825E7B2086">
+<a:ObjectID>12C27C66-86A2-454C-AD16-56825E7B2086</a:ObjectID>
+<a:Name>mdde_IsMapping</a:Name>
+<a:TemplateTargetItem.Value>False</a:TemplateTargetItem.Value>
+<a:CreationDate>1666185088</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Default value for IsMapping is false. This is overridden in the BaseClassifierMapping metaclass.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

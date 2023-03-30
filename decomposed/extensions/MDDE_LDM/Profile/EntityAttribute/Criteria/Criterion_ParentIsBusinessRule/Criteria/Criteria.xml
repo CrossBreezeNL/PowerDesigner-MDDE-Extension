@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="E867B461-E2B6-4AF5-BE0B-30D25FEEB034">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>E867B461-E2B6-4AF5-BE0B-30D25FEEB034</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1655828676</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Criterion_ParentIsExpressionBusinessRule/Criterion_ParentIsExpressionBusinessRule.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

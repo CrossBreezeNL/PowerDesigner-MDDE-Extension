@@ -1,0 +1,17 @@
+<o:MethodTargetItem Id="9EBDFEAE-D579-409E-B0CE-E5506BD25FD5">
+<a:ObjectID>9EBDFEAE-D579-409E-B0CE-E5506BD25FD5</a:ObjectID>
+<a:Name>mdde_ChildAttributeEdit</a:Name>
+<a:CreationDate>1650361548</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>&#39; If the joined object is  set, show an object picker for the entity and store the selected one.
+Sub %Method%(obj)
+   If Not(obj.Parent.Parent.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;) Is Nothing) Then
+      Dim objChildEntity : Set objChildEntity = obj.Parent.Parent.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;)
+      Dim objChildAttribute : Set objChildAttribute = SelectInputAttribute(objChildEntity)
+      If Not(objChildAttribute Is Nothing) Then
+         obj.SetExtendedAttribute &quot;mdde_ChildAttribute&quot;, objChildAttribute
+      End If
+   End If
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

@@ -1,0 +1,22 @@
+<o:FormTargetItem Id="C90C8187-281A-4862-9B3C-71E64F61E8A4">
+<a:ObjectID>C90C8187-281A-4862-9B3C-71E64F61E8A4</a:ObjectID>
+<a:Name>mdde_Example_Details</a:Name>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StandardAttribute Attribute=&quot;Name&quot; Caption=&quot;Name&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;HorizontalLayout Name=&quot;HorizontalLayout_ExpectedInputs&quot; &gt;
+      &lt;StaticText Name=&quot;Label_ExampleInputs&quot; Caption=&quot;Input:     &quot; /&gt;
+      &lt;StandardCollection Collection=&quot;mdde_ExampleInput&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+   &lt;/HorizontalLayout&gt;
+   &lt;StaticText Name=&quot;StaticText_ExpectedFilterResult1&quot; Caption=&quot;For the &#39;Output&#39; specify whether we expect the filter to include or exclude the record in the dataset when the filter is applied using the input specified above.&quot; /&gt;
+   &lt;StaticText Name=&quot;StaticText_ExpectedFilterResult2&quot; Caption=&quot;&#39;Yes&#39; means the record will be included, &#39;No&#39; means the record will be excluded from the resultset.&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_ExpectedFilterResult&quot; Caption=&quot;Output&quot; AttributeID=&quot;{D5BB84DB-C630-4A91-B0AB-0C86D1F2D0F9}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; Display=&quot;VerticalRadios&quot; LeftText=&quot;No&quot; /&gt;
+   &lt;HorizontalLayout Name=&quot;HorizontalLayout_ExpectedFilterResult&quot; &gt;
+   &lt;/HorizontalLayout&gt;
+   &lt;StandardAttribute Attribute=&quot;Comment&quot; Caption=&quot;Comment&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; LeftText=&quot;false&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1657094164</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Example details (MDDE)</a:Label>
+</o:FormTargetItem>

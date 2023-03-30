@@ -1,0 +1,19 @@
+<o:ExtendedAttributeTargetItem Id="9C6B6DAA-C557-4D27-83B1-F6F7CF78EDB3">
+<a:ObjectID>9C6B6DAA-C557-4D27-83B1-F6F7CF78EDB3</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:CreationDate>1650375353</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_SourceObjectList%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_SourceObject</a:DestinationStereotype>
+<a:Label>Source object (MDDE)</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="CFD259B7-4543-4876-AFC3-3D64A41A81EE"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="7FDC0878-90A9-4754-A8CE-1E69513C976B"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

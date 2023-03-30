@@ -1,0 +1,14 @@
+<o:TemplateTargetItem Id="7DFFC453-0B17-40B4-9DAA-BE04988E4932">
+<a:ObjectID>7DFFC453-0B17-40B4-9DAA-BE04988E4932</a:ObjectID>
+<a:Name>mdde_SourceObject_OffsetTypeList</a:Name>
+<a:TemplateTargetItem.Value>Month
+Quarter
+Year
+End-Of-Month
+End-Of-Quarter
+End-Of-Year</a:TemplateTargetItem.Value>
+<a:CreationDate>1673528712</a:CreationDate>
+<a:Creator>palanis</a:Creator>
+<a:Comment>List of allowed offset periods</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

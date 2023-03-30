@@ -1,0 +1,10 @@
+<o:MetaClassTargetItem Id="3C96293A-3C15-4476-831C-AE7AC3CD1A56">
+<a:ObjectID>3C96293A-3C15-4476-831C-AE7AC3CD1A56</a:ObjectID>
+<a:Name>RelationshipJoin</a:Name>
+<a:CreationDate>1663316907</a:CreationDate>
+<a:Creator>WaniYP</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>

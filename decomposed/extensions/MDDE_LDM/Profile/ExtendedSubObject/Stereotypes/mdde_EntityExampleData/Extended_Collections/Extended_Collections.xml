@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="3E15BD2A-73F2-4BCD-BFAC-D51CA1323FA9">
+<a:TypePublicName>ExtendedCollectionTargetItem</a:TypePublicName>
+<a:ObjectID>3E15BD2A-73F2-4BCD-BFAC-D51CA1323FA9</a:ObjectID>
+<a:Name>Extended Collections</a:Name>
+<a:CreationDate>1661255728</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_ExampleEntity.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

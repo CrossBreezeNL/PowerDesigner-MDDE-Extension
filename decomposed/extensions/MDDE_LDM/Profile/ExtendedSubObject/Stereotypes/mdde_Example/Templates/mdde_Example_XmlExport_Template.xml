@@ -1,0 +1,13 @@
+<o:TemplateTargetItem Id="1098748A-0062-4042-8B95-04FA34ECAE2B">
+<a:ObjectID>1098748A-0062-4042-8B95-04FA34ECAE2B</a:ObjectID>
+<a:Name>mdde_Example_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+.if(%mdde_Example_Stereotyped_XmlExport_Template%)
+  %mdde_Example_Stereotyped_XmlExport_Template%
+.endif()
+
+&lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1666183120</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

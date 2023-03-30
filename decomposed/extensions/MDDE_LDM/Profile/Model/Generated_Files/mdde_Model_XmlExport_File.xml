@@ -1,0 +1,13 @@
+<o:GeneratedFileTargetItem Id="0FE105DF-4B25-48EC-B7E6-E36E1DE2946B">
+<a:ObjectID>0FE105DF-4B25-48EC-B7E6-E36E1DE2946B</a:ObjectID>
+<a:Name>mdde_Model_XmlExport_File</a:Name>
+<a:TemplateTargetItem.Value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+%mdde_Model_XmlExport_Template%</a:TemplateTargetItem.Value>
+<a:CreationDate>1651665549</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>The Model XML Export file.</a:Comment>
+<a:FileType>.xml</a:FileType>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Filename>%Code%.model.xml</a:Filename>
+<a:GeneratedFileTargetItem.Encoding>UTF8</a:GeneratedFileTargetItem.Encoding>
+</o:GeneratedFileTargetItem>
