@@ -1,7 +1,5 @@
 > [Modeling](./README.md) > Mapping
 
-[[_TOC_]]
-
 # Mapping
 
 In PowerDesigner, by default, you can create mappings with source entities for that mapping. Each source entity can only exists once in a mapping, which is a problem when you either want to join in a source table or apply one business rule multiple times within on mapping. Because of the latter the entity mapping (BaseClassifierMapping) and attribute mapping (BaseStructuralFeatureMapping) functionality is extended in PowerDesigner as part of this extension.

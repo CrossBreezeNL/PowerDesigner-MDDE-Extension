@@ -1,7 +1,5 @@
 > [Modeling](./README.md) > PowerDeComposer
 
-[[_TOC_]]
-
 # PowerDeComposer
 
 In order to save the results of the changes made in the PowerDesigner models you can right-click on a model and click on 'Export XML and Decompose (MDDE)' to export the model to an XML file for code generation and decompose the model so it's ready to be pushed into Git.

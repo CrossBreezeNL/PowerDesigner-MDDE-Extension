@@ -1,7 +1,5 @@
 > [Modeling](./README.md) > Business rule
 
-[[_TOC_]]
-
 # Business rule
 
 In order to model business rules new object types are introduced using the extension (based on the Entity type). If you are in a diagram of a model where the 'Data Warehouse Automation' extensions is attached, in the Toolbox on the right a section for this extension will be available for creating business rules.

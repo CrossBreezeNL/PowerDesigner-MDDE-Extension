@@ -1,7 +1,5 @@
 > Modeling
 
-[[_TOC_]]
-
 # Modeling
 
 For modeling data structures and lineage a PowerDesigner extensions has been develop to add the necessary modeling options for logical data models in PowerDesigner.

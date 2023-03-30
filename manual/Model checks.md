@@ -1,7 +1,5 @@
 > [Modeling](./README.md) > Model checks
 
-[[_TOC_]]
-
 # Model checks
 
 One of the standard functionalities of PowerDesigner is to execute model checks on a model. By default there is a list of model checks available which can be very helpfull. Since we add functionality as part of the PowerDesigner extension we also need to validate (check) what is been modeled. For this new model checks are introduced.

@@ -1,7 +1,5 @@
 > [Modeling](./README.md) > Frequently asked questions
 
-[[_TOC_]]
-
 # Frequently asked questions
 
 ## Why don't I see the tab mentioned in the manual?
