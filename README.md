@@ -3,6 +3,9 @@ A PowerDesigner LDM extension to support Model Driven Data Engineering using Pow
 
 This extensions is to add extra modeling possibilities to LDM models, where standard PowerDesigner functionalities are missing options to add metadata.
 
+## Modeling manual
+There is a modeling manual available [here](./manual/) on how to use the PowerDesigner extension.
+
 ## Prerequisites
 
 > Prerequisites on your machine:
@@ -40,9 +43,6 @@ Create the following named paths in PowerDesigner (via Tools -> General Options.
 |----------------------|---------------------------------|
 | PDC_SCRIPT_PATH    | {Git-Folder}\pdc\                 |
 | [XEM]              | {Git-Folder}\composed\extensions\ |
-
-## Manual
-There is a manual available [here](./manual/) on how to use the PowerDesigner extension.
 
 ## On branch clone/switch
 
