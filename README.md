@@ -65,7 +65,7 @@ Create the following named paths in PowerDesigner (via Tools -> General Options.
 
 > Before switching branch, make sure all your changes in PowerDesigner models are decomposed and commited into Git.
 
-After every branch update, clone or switch, make sure the close PowerDesigner and run:
+After every branch update, clone or switch, make sure to close PowerDesigner and run:
 
 ``` powershell
 ./compose.ps1
