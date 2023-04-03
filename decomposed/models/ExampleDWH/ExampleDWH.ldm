@@ -20,6 +20,9 @@ ATT MOPT</a:History>
 <c:GenerationOrigins>
 <xi:include href="GenerationOrigins/Shortcuts/ExampleDWH.xml" />
 </c:GenerationOrigins>
+<c:ExtendedModelDefinitions>
+<xi:include href="ExtendedModelDefinitions/Shortcuts/MDDE_LDM.xml" />
+</c:ExtendedModelDefinitions>
 <c:LogicalDiagrams>
 <xi:include href="LogicalDiagrams/ExampleDWH/ExampleDWH.xml" />
 </c:LogicalDiagrams>
@@ -64,6 +67,7 @@ ATT MOPT</a:History>
 <xi:include href="TargetModels/EXAMPLESOURCE/EXAMPLESOURCE.xml" />
 <xi:include href="TargetModels/REFERENCE/REFERENCE.xml" />
 <xi:include href="TargetModels/ExampleDWH.xml" />
+<xi:include href="TargetModels/MDDE_LDM.xml" />
 </c:TargetModels>
 </o:Model>
 </c:Children>

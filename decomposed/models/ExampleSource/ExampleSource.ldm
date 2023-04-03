@@ -20,6 +20,9 @@ ATT MOPT</a:History>
 <c:GenerationOrigins>
 <xi:include href="GenerationOrigins/Shortcuts/ExampleSource.xml" />
 </c:GenerationOrigins>
+<c:ExtendedModelDefinitions>
+<xi:include href="ExtendedModelDefinitions/Shortcuts/MDDE_LDM.xml" />
+</c:ExtendedModelDefinitions>
 <c:LogicalDiagrams>
 <xi:include href="LogicalDiagrams/EXAMPLESOURCE/EXAMPLESOURCE.xml" />
 </c:LogicalDiagrams>
@@ -35,6 +38,7 @@ ATT MOPT</a:History>
 </c:Relationships>
 <c:TargetModels>
 <xi:include href="TargetModels/ExampleSource.xml" />
+<xi:include href="TargetModels/MDDE_LDM.xml" />
 </c:TargetModels>
 </o:Model>
 </c:Children>

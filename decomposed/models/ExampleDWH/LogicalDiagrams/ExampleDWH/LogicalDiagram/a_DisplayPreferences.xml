@@ -4,13 +4,13 @@
 
 [DisplayPreferences\General]
 Adjust to text=Yes
-Snap Grid=No
+Snap Grid=Yes
 Constrain Labels=Yes
 Display Grid=No
 Show Page Delimiter=No
 Show Links intersections=Yes
-Activate automatic link routing=Yes
-Grid size=800
+Activate automatic link routing=No
+Grid size=825
 Graphic unit=2
 Window color=255 255 255
 Background image=

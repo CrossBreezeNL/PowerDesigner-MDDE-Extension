@@ -28,6 +28,7 @@
 <o:SubReplication Ref="7D13C262-8BD5-4439-A23F-7EA836779CAA"/>
 <o:SubReplication Ref="BC501E7A-1F4B-44E8-8EB3-900B0D12A3CA"/>
 <o:SubReplication Ref="8C96A825-FEFC-4926-9C24-B59ED61A3EDF"/>
+<o:SubReplication Ref="D1A67288-025B-44C1-A0DC-FEF58E954559"/>
 </c:SessionReplications>
 <c:FullShortcutModel>
 <xi:include href="FullShortcutModel/EXAMPLESOURCE/EXAMPLESOURCE.xml" />

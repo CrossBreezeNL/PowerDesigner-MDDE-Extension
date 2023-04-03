@@ -1,6 +1,6 @@
 <o:ArchitectureAreaSymbol Id="ExampleDWH_Symbol_C2A6609F-EE69-45B9-B6D2-C363489ADA42">
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-8378,1547), (26304,23209))</a:Rect>
+<a:Rect>((-8378,1547), (26304,23849))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>418425</a:LineColor>
 <a:FillColor>15399421</a:FillColor>
@@ -13,7 +13,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>11396853</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:SubSymbols>
-<o:EntitySymbol Id="o15">
+<o:EntitySymbol Id="o16">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(5980, 2472)</a:EmptyAreaSize>
 <a:Rect>((10043,14063), (23947,20809))</a:Rect>
@@ -42,10 +42,10 @@ Entity.Comment 0</a:SymbolContent>
 <o:Entity Ref="F4768B60-F094-44AE-9DF7-0837236654D8"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o17">
+<o:EntitySymbol Id="o18">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(5980, 2472)</a:EmptyAreaSize>
-<a:Rect>((-7193,13988), (10263,20734))</a:Rect>
+<a:Rect>((-7425,14025), (10725,21449))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -70,10 +70,10 @@ Entity.Comment 0</a:SymbolContent>
 <o:Entity Ref="160799C9-3053-43AE-BBD9-52234E105A58"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o19">
+<o:EntitySymbol Id="o20">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(6252, 2000)</a:EmptyAreaSize>
-<a:Rect>((11191,8647), (22839,14444))</a:Rect>
+<a:Rect>((11550,8251), (23924,14850))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -98,10 +98,10 @@ Entity.Comment 0</a:SymbolContent>
 <o:Entity Ref="55CF4041-B276-4062-8077-8AD97583712F"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o21">
+<o:EntitySymbol Id="o22">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(5512, 2000)</a:EmptyAreaSize>
-<a:Rect>((-5551,8722), (5983,14519))</a:Rect>
+<a:Rect>((-5775,9076), (5775,15676))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -126,10 +126,10 @@ Entity.Comment 0</a:SymbolContent>
 <o:Entity Ref="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o10">
+<o:EntitySymbol Id="o11">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(3562, 1988)</a:EmptyAreaSize>
-<a:Rect>((1671,2801), (13823,7648))</a:Rect>
+<a:Rect>((1650,2476), (14024,7425))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>

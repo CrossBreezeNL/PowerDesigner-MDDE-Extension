@@ -15,6 +15,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:BrushStyle>6</a:BrushStyle>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Entity Ref="2CBE61AD-180C-485A-8F14-2F2CEA9C225F"/>
 </c:Object>

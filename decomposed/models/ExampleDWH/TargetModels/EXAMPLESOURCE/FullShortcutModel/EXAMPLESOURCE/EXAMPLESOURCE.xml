@@ -9,6 +9,9 @@ DAT 1680508855
 ATT MOPT</a:History>
 <xi:include href="Model/a_PackageOptionsText.xml" />
 <xi:include href="Model/a_ModelOptionsText.xml" />
+<c:ExtendedModelDefinitions>
+<xi:include href="ExtendedModelDefinitions/Shortcuts/MDDE_LDM.xml" />
+</c:ExtendedModelDefinitions>
 <c:Entities>
 <xi:include href="Entities/Customer.xml" />
 <xi:include href="Entities/SalesOrder.xml" />
@@ -188,6 +191,17 @@ ATT MOPT</a:History>
 </c:SubReplications>
 <c:ReplicaObject>
 <o:Entity Ref="8EF12F3C-6B5B-40A9-9B43-9DEEF9960F3D"/>
+</c:ReplicaObject>
+</o:SubReplication>
+<o:SubReplication Id="D1A67288-025B-44C1-A0DC-FEF58E954559">
+<a:ObjectID>D1A67288-025B-44C1-A0DC-FEF58E954559</a:ObjectID>
+<a:CreationDate>1680509420</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:OriginalID>A4C4F964-E554-47A4-AA61-05E892D94E26</a:OriginalID>
+<a:OriginalClassID>362D41EC-9D82-11D1-8E5D-444553540000</a:OriginalClassID>
+<a:OriginalUOL>ExtendedModelDefinitions::Shortcut of extension &#39;Model Driven Data Engineering (MDDE)&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:Shortcut Ref="13573CAB-C0E7-45FC-808B-9C0D4A25B293"/>
 </c:ReplicaObject>
 </o:SubReplication>
 </c:SubReplications>
