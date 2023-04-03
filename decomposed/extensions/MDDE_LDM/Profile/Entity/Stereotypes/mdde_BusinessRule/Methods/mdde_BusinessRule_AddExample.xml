@@ -17,7 +17,7 @@
    
     Dim objAttribute
     For Each objAttribute In obj.Attributes
-       Dim objExampleCollection
+       Dim objExampleCollection : Set objExampleCollection = Nothing
        If objAttribute.HasStereotype(&quot;mdde_InputAttribute&quot;) Then
           Set objExampleCollection = objNewExample.GetExtendedCollection(&quot;mdde_ExampleInput&quot;)
        ElseIf objAttribute.HasStereotype(&quot;mdde_OutputAttribute&quot;) Then
