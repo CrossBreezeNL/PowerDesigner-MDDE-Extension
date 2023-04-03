@@ -1,0 +1,86 @@
+<o:Model Id="715799B0-B0B6-4F9B-972A-EEEDFE064E8A">
+<a:ObjectID>715799B0-B0B6-4F9B-972A-EEEDFE064E8A</a:ObjectID>
+<a:Name>Reference</a:Name>
+<a:Code>REFERENCE</a:Code>
+<a:CreationDate>1680508819</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {85AEC6F1-42A5-4718-931A-1E6438DB4A51}
+DAT 1680508822
+ATT MOPT</a:History>
+<xi:include href="Model/a_PackageOptionsText.xml" />
+<xi:include href="Model/a_ModelOptionsText.xml" />
+<c:Entities>
+<xi:include href="Entities/Country.xml" />
+</c:Entities>
+<c:Replications>
+<o:Replication Id="40AE21B9-4295-4CE6-BAF1-0C20E1CA6702">
+<a:ObjectID>40AE21B9-4295-4CE6-BAF1-0C20E1CA6702</a:ObjectID>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:OriginalID>E0D7FF56-7977-4D8F-A64B-BB6D985687E7</a:OriginalID>
+<a:OriginalClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:OriginalClassID>
+<c:SubReplications>
+<o:SubReplication Id="51F9F970-1430-47C3-8478-AF00327827E3">
+<a:ObjectID>51F9F970-1430-47C3-8478-AF00327827E3</a:ObjectID>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:OriginalID>BC120FD8-8AF8-4F3F-86C8-474D1B5B207F</a:OriginalID>
+<a:OriginalClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;</a:OriginalUOL>
+<c:SubReplications>
+<o:SubReplication Id="6BFBE387-1C54-42C9-AF96-825A7BC27B1F">
+<a:ObjectID>6BFBE387-1C54-42C9-AF96-825A7BC27B1F</a:ObjectID>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:OriginalID>E8F4ACA6-7532-4525-86F4-0F468CCE212D</a:OriginalID>
+<a:OriginalClassID>040810A2-4B62-45C1-9C8B-5EABC249838B</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;::Identifiers::Identifier &#39;Country.PK_COUNTRY&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:Identifier Ref="42190DE0-11D5-4C2E-B395-03ADAF51D5B1"/>
+</c:ReplicaObject>
+</o:SubReplication>
+<o:SubReplication Id="469F468C-8FCC-41DF-B694-A9CA7CF906B2">
+<a:ObjectID>469F468C-8FCC-41DF-B694-A9CA7CF906B2</a:ObjectID>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:OriginalID>93CCB3E8-5C2F-4C63-A061-68CAE43ACFE2</a:OriginalID>
+<a:OriginalClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;::Attributes::Entity Attribute &#39;Country.COUNTRY_CODE&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:EntityAttribute Ref="C9A82D76-CEC2-4AE8-B52F-AC90F6A3F781"/>
+</c:ReplicaObject>
+</o:SubReplication>
+<o:SubReplication Id="600AD6FB-885F-4A9B-B3D4-4F1F94B185BB">
+<a:ObjectID>600AD6FB-885F-4A9B-B3D4-4F1F94B185BB</a:ObjectID>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:OriginalID>3B30B067-59BC-4062-9C19-166AB3C2179C</a:OriginalID>
+<a:OriginalClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;::Attributes::Entity Attribute &#39;Country.COUNTRY_DESCRIPTION&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:EntityAttribute Ref="3E3A85D4-DE12-4418-9070-041893426E9B"/>
+</c:ReplicaObject>
+</o:SubReplication>
+<o:SubReplication Id="D3F31A27-1589-4F76-BEC6-D38D45ACBF8D">
+<a:ObjectID>D3F31A27-1589-4F76-BEC6-D38D45ACBF8D</a:ObjectID>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:OriginalID>A31CD79D-0ACE-484B-AFFD-77BFF4707757</a:OriginalID>
+<a:OriginalClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;::Attributes::Entity Attribute &#39;Country.COUNTRY_CONTINENT&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:EntityAttribute Ref="607CCB78-B767-4E12-A535-41C35F07E976"/>
+</c:ReplicaObject>
+</o:SubReplication>
+</c:SubReplications>
+<c:ReplicaObject>
+<o:Entity Ref="BA7E7AF1-BBBF-4333-B9D0-ECA5732D0544"/>
+</c:ReplicaObject>
+</o:SubReplication>
+</c:SubReplications>
+<c:ReplicaObject>
+<o:Model Ref="715799B0-B0B6-4F9B-972A-EEEDFE064E8A"/>
+</c:ReplicaObject>
+</o:Replication>
+</c:Replications>
+</o:Model>

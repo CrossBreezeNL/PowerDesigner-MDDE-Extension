@@ -1,0 +1,20 @@
+<o:EntitySymbol Id="EXAMPLESOURCE_Entity_1352D98F-2A9C-42AA-AE82-2E68BA514F02">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-25327,28154), (-11423,36652))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="1352D98F-2A9C-42AA-AE82-2E68BA514F02"/>
+</c:Object>
+</o:EntitySymbol>

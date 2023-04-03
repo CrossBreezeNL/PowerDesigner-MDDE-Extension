@@ -1,0 +1,56 @@
+<o:Entity Id="F4768B60-F094-44AE-9DF7-0837236654D8">
+<a:ObjectID>F4768B60-F094-44AE-9DF7-0837236654D8</a:ObjectID>
+<a:Name>Derive_Customer_FullName</a:Name>
+<a:Code>Derive_Customer_FullName</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {A9060921-18D1-4FBD-BA87-F765768BD3B9}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_businessRule</a:Stereotype>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\*\generator Riched20 10.0.16299}\viewkind4\uc1 
+\pard\f0\fs20 Create full name from first and last name\par
+}
+</a:Description>
+<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XModel_Modeling_Extension,63={29131F46-42B1-4DD8-9C6B-A955E3CD33F4},xm_stereotype,6=derive
+
+</a:ExtendedAttributesText>
+<c:Attributes>
+<o:EntityAttribute Id="05AA87F0-E369-460D-AB69-6AC7BEC62FCE">
+<a:ObjectID>05AA87F0-E369-460D-AB69-6AC7BEC62FCE</a:ObjectID>
+<a:Name>FirstName</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {B8C8482D-6D30-4D72-8C4F-65A36C0C7830}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_parameter</a:Stereotype>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="0B6D6D1F-8BB3-42FF-B7A8-6EF189102F30">
+<a:ObjectID>0B6D6D1F-8BB3-42FF-B7A8-6EF189102F30</a:ObjectID>
+<a:Name>LastName</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {B2CAFBC0-0A07-4BCA-98E5-C5E12A1F27B7}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_parameter</a:Stereotype>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="83F0E425-E9F5-4E95-B7E7-E0C5EF86D9A6">
+<a:ObjectID>83F0E425-E9F5-4E95-B7E7-E0C5EF86D9A6</a:ObjectID>
+<a:Name>FullName</a:Name>
+<a:Code>FULLNAME</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {C6880CC5-BE81-4375-BB9B-76721A79421A}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>VA151</a:DataType>
+<a:Length>151</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

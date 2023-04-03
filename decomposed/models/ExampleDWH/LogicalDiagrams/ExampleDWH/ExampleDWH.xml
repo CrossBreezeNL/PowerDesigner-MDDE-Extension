@@ -1,0 +1,22 @@
+<o:LogicalDiagram Id="C4A1A5C6-9074-45E9-8765-83FEF618758B">
+<a:ObjectID>C4A1A5C6-9074-45E9-8765-83FEF618758B</a:ObjectID>
+<a:Name>ExampleDWH</a:Name>
+<a:Code>ExampleDWH</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {B65A366D-27C4-415C-B959-4C947FF01E65}
+DAT 1680508903</a:History>
+<xi:include href="LogicalDiagram/a_DisplayPreferences.xml" />
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>7</a:PaperSource>
+<c:Symbols>
+<xi:include href="Symbols/ExampleDWH_Symbol_4CE7D49B-DF58-4436-A6A0-E8FD88A97955.xml" />
+<xi:include href="Symbols/ExampleDWH_Symbol_A2B869FA-B8A2-47BF-AEEA-75C714608D23.xml" />
+<xi:include href="Symbols/ExampleDWH_Entity_300B0E82-0073-4894-B364-9429B35F1D39.xml" />
+<xi:include href="Symbols/ExampleDWH_Entity_2CBE61AD-180C-485A-8F14-2F2CEA9C225F.xml" />
+<xi:include href="Symbols/ExampleDWH_Symbol_C2A6609F-EE69-45B9-B6D2-C363489ADA42.xml" />
+<xi:include href="Symbols/ExampleDWH_Symbol_886CEEF0-1B32-4407-ADDC-1C899A05EB06.xml" />
+</c:Symbols>
+</o:LogicalDiagram>

@@ -1,0 +1,42 @@
+<o:Entity Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0">
+<a:ObjectID>5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0</a:ObjectID>
+<a:Name>Calculate_Order_Age</a:Name>
+<a:Code>Calculate_Order_Age</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {41D1B62B-F9B1-4135-AF2D-439AFB15F96E}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_businessRule</a:Stereotype>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\f0\fs17 Calculates the age of the order by examining the datediff in days between the order date and current date\par
+}
+</a:Description>
+<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,66={29131F46-42B1-4DD8-9C6B-A955E3CD33F4},xm_stereotype,9=calculate
+
+</a:ExtendedAttributesText>
+<c:Attributes>
+<o:EntityAttribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818">
+<a:ObjectID>53DE74F2-F420-48D6-A2A7-176CC3150818</a:ObjectID>
+<a:Name>OrderDate</a:Name>
+<a:Code>ORDERDATE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {87D08732-95C1-401E-9FFF-33AB904D3D4B}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_parameter</a:Stereotype>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="742B3F05-D053-4323-9052-6D641E3BF52F">
+<a:ObjectID>742B3F05-D053-4323-9052-6D641E3BF52F</a:ObjectID>
+<a:Name>OrderAgeInDays</a:Name>
+<a:Code>ORDERAGEINDAYS</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {E14C2EAF-EDFD-42F9-B737-76F03AE4BA20}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

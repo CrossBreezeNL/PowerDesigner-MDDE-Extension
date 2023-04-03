@@ -1,0 +1,24 @@
+<o:TargetModel Id="0AF1DBC5-A5AD-4C3F-BC99-91B8CB3CDB6C">
+<a:ObjectID>0AF1DBC5-A5AD-4C3F-BC99-91B8CB3CDB6C</a:ObjectID>
+<a:Name>Reference</a:Name>
+<a:Code>REFERENCE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:TargetModelURL>file:///C|/Users/MooOthman/Documents/GitHub/PowerDesigner-MDDE-Extension/composed/models/Reference.ldm</a:TargetModelURL>
+<a:TargetModelID>E0D7FF56-7977-4D8F-A64B-BB6D985687E7</a:TargetModelID>
+<a:TargetModelClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="EE41D9BD-F24A-4F2B-B93F-DD267F22B7F6"/>
+</c:SessionShortcuts>
+<c:SessionReplications>
+<o:Replication Ref="40AE21B9-4295-4CE6-BAF1-0C20E1CA6702"/>
+<o:SubReplication Ref="51F9F970-1430-47C3-8478-AF00327827E3"/>
+<o:SubReplication Ref="6BFBE387-1C54-42C9-AF96-825A7BC27B1F"/>
+<o:SubReplication Ref="469F468C-8FCC-41DF-B694-A9CA7CF906B2"/>
+<o:SubReplication Ref="600AD6FB-885F-4A9B-B3D4-4F1F94B185BB"/>
+<o:SubReplication Ref="D3F31A27-1589-4F76-BEC6-D38D45ACBF8D"/>
+</c:SessionReplications>
+<c:FullShortcutModel>
+<xi:include href="FullShortcutModel/REFERENCE/REFERENCE.xml" />
+</c:FullShortcutModel>
+</o:TargetModel>

@@ -1,0 +1,64 @@
+<o:Entity Id="BA7E7AF1-BBBF-4333-B9D0-ECA5732D0544">
+<a:ObjectID>BA7E7AF1-BBBF-4333-B9D0-ECA5732D0544</a:ObjectID>
+<a:Name>Country</a:Name>
+<a:Code>Country</a:Code>
+<a:CreationDate>1680508822</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {65AE4CC4-CCEC-42BE-A0F0-1DEFDD241F00}
+DAT 1680508822</a:History>
+<c:Identifiers>
+<o:Identifier Id="42190DE0-11D5-4C2E-B395-03ADAF51D5B1">
+<a:ObjectID>42190DE0-11D5-4C2E-B395-03ADAF51D5B1</a:ObjectID>
+<a:Name>PK_Country</a:Name>
+<a:Code>PK_COUNTRY</a:Code>
+<a:CreationDate>1680508822</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {B3144B65-C58F-4476-871F-7F6176ADE977}
+DAT 1680508822
+ATT NAME
+ATT CODE</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="C9A82D76-CEC2-4AE8-B52F-AC90F6A3F781"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="42190DE0-11D5-4C2E-B395-03ADAF51D5B1"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="C9A82D76-CEC2-4AE8-B52F-AC90F6A3F781">
+<a:ObjectID>C9A82D76-CEC2-4AE8-B52F-AC90F6A3F781</a:ObjectID>
+<a:Name>Country_Code</a:Name>
+<a:Code>COUNTRY_CODE</a:Code>
+<a:CreationDate>1680508822</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {F5935F59-F66B-49CB-850F-B5CC16FF725C}
+DAT 1680508822</a:History>
+<a:DataType>VMBT3</a:DataType>
+<a:Length>3</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="3E3A85D4-DE12-4418-9070-041893426E9B">
+<a:ObjectID>3E3A85D4-DE12-4418-9070-041893426E9B</a:ObjectID>
+<a:Name>Country_Description</a:Name>
+<a:Code>COUNTRY_DESCRIPTION</a:Code>
+<a:CreationDate>1680508822</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {ED0C2462-3461-4E78-AF44-2D3A548A91A8}
+DAT 1680508822</a:History>
+<a:DataType>VMBT100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="607CCB78-B767-4E12-A535-41C35F07E976">
+<a:ObjectID>607CCB78-B767-4E12-A535-41C35F07E976</a:ObjectID>
+<a:Name>Country_Continent</a:Name>
+<a:Code>COUNTRY_CONTINENT</a:Code>
+<a:CreationDate>1680508822</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {452D1D97-AB47-4421-9065-EF51ED80E2D0}
+DAT 1680508822</a:History>
+<a:DataType>VMBT100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

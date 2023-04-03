@@ -1,0 +1,68 @@
+<o:Entity Id="55CF4041-B276-4062-8077-8AD97583712F">
+<a:ObjectID>55CF4041-B276-4062-8077-8AD97583712F</a:ObjectID>
+<a:Name>Aggregate_Customer_Revenue</a:Name>
+<a:Code>Aggregate_Customer_Revenue</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {25935B1D-CC33-4D20-951D-DE4735AB5D45}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_businessRule</a:Stereotype>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\f0\fs17 Calculates the customer revenue by aggregating the total amount of all the orders for the given customer\par
+}
+</a:Description>
+<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,66={29131F46-42B1-4DD8-9C6B-A955E3CD33F4},xm_stereotype,9=aggregate
+
+</a:ExtendedAttributesText>
+<c:Identifiers>
+<o:Identifier Id="61EE3CD3-7C67-4E04-9D99-74E9FB2371B1">
+<a:ObjectID>61EE3CD3-7C67-4E04-9D99-74E9FB2371B1</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>KEY_1</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {1FD840F0-3428-4450-A7D5-941B421B07F4}
+DAT 1680508903</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="AC683E67-30A3-45BF-8065-1B8FF126F918"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="61EE3CD3-7C67-4E04-9D99-74E9FB2371B1"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="AC683E67-30A3-45BF-8065-1B8FF126F918">
+<a:ObjectID>AC683E67-30A3-45BF-8065-1B8FF126F918</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {72BCC0C2-19F9-4C8F-85F5-F36F0967FA06}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_parameter</a:Stereotype>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,66={6AFDBBE0-1AAB-4387-9BE6-352D325A4176},xm_stereotype,9=attribute
+
+</a:ExtendedAttributesText>
+</o:EntityAttribute>
+<o:EntityAttribute Id="EF027C35-8FBA-4D21-A3B0-818BB2F112B7">
+<a:ObjectID>EF027C35-8FBA-4D21-A3B0-818BB2F112B7</a:ObjectID>
+<a:Name>TotalRevenue</a:Name>
+<a:Code>TOTALREVENUE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {4CD386C9-2B7C-46B9-8B0B-F24E33361869}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>DC20,2</a:DataType>
+<a:Length>20</a:Length>
+<a:Precision>2</a:Precision>
+<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,67={C17538B9-3DDB-439D-BB9A-5499CC819F99},xm_aggregateFunction,3=sum
+
+</a:ExtendedAttributesText>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

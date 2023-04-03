@@ -1,0 +1,12 @@
+<o:Area Id="886CEEF0-1B32-4407-ADDC-1C899A05EB06">
+<a:ObjectID>886CEEF0-1B32-4407-ADDC-1C899A05EB06</a:ObjectID>
+<a:Name>Reference Tables</a:Name>
+<a:Code>REFERENCE_TABLES</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {CBE0BA28-38E5-4AF8-9672-0C62EA51D184}
+DAT 1680508903</a:History>
+<c:AttachedObjects>
+<o:Entity Ref="F7FFB923-8961-422F-9EB7-B5EA84C99262"/>
+</c:AttachedObjects>
+</o:Area>

@@ -1,0 +1,161 @@
+<o:ArchitectureAreaSymbol Id="ExampleDWH_Symbol_C2A6609F-EE69-45B9-B6D2-C363489ADA42">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-8378,1547), (26304,23209))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>418425</a:LineColor>
+<a:FillColor>15399421</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>16</a:GradientFillMode>
+<a:GradientEndColor>11396853</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:SubSymbols>
+<o:EntitySymbol Id="o15">
+<a:IconMode>-1</a:IconMode>
+<a:EmptyAreaSize>(5980, 2472)</a:EmptyAreaSize>
+<a:Rect>((10043,14063), (23947,20809))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:SymbolContent>Entity.Stereotype 1
+Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
+Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
+Entity.Comment 0</a:SymbolContent>
+<c:Object>
+<o:Entity Ref="F4768B60-F094-44AE-9DF7-0837236654D8"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o17">
+<a:IconMode>-1</a:IconMode>
+<a:EmptyAreaSize>(5980, 2472)</a:EmptyAreaSize>
+<a:Rect>((-7193,13988), (10263,20734))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:SymbolContent>Entity.Stereotype 1
+Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
+Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
+Entity.Comment 0</a:SymbolContent>
+<c:Object>
+<o:Entity Ref="160799C9-3053-43AE-BBD9-52234E105A58"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o19">
+<a:IconMode>-1</a:IconMode>
+<a:EmptyAreaSize>(6252, 2000)</a:EmptyAreaSize>
+<a:Rect>((11191,8647), (22839,14444))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:SymbolContent>Entity.Stereotype 1
+Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
+Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
+Entity.Comment 0</a:SymbolContent>
+<c:Object>
+<o:Entity Ref="55CF4041-B276-4062-8077-8AD97583712F"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o21">
+<a:IconMode>-1</a:IconMode>
+<a:EmptyAreaSize>(5512, 2000)</a:EmptyAreaSize>
+<a:Rect>((-5551,8722), (5983,14519))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:SymbolContent>Entity.Stereotype 1
+Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
+Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
+Entity.Comment 0</a:SymbolContent>
+<c:Object>
+<o:Entity Ref="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o10">
+<a:IconMode>-1</a:IconMode>
+<a:EmptyAreaSize>(3562, 1988)</a:EmptyAreaSize>
+<a:Rect>((1671,2801), (13823,7648))</a:Rect>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 Arial,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:SymbolContent>Entity.Stereotype 1
+Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
+Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
+Entity.Comment 0</a:SymbolContent>
+<c:Object>
+<o:Entity Ref="E1395C49-53C1-4F30-A69D-5E523DF67CD1"/>
+</c:Object>
+</o:EntitySymbol>
+</c:SubSymbols>
+<c:Object>
+<o:Area Ref="C2A6609F-EE69-45B9-B6D2-C363489ADA42"/>
+</c:Object>
+</o:ArchitectureAreaSymbol>

@@ -1,0 +1,14 @@
+<o:Shortcut Id="EE41D9BD-F24A-4F2B-B93F-DD267F22B7F6">
+<a:ObjectID>EE41D9BD-F24A-4F2B-B93F-DD267F22B7F6</a:ObjectID>
+<a:Name>Country</a:Name>
+<a:Code>Country</a:Code>
+<a:History>ORG {428BB410-6800-4DA5-BC7C-EDD722423BA2}
+DAT 1680508903</a:History>
+<a:TargetStereotype/>
+<a:TargetID>BC120FD8-8AF8-4F3F-86C8-474D1B5B207F</a:TargetID>
+<a:TargetClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="51F9F970-1430-47C3-8478-AF00327827E3"/>
+</c:FullShortcutReplica>
+</o:Shortcut>
