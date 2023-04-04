@@ -1,6 +1,6 @@
 <o:ArchitectureAreaSymbol Id="ExampleDWH_Symbol_C2A6609F-EE69-45B9-B6D2-C363489ADA42">
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-8378,1547), (26304,23849))</a:Rect>
+<a:Rect>((-8378,-5775), (35474,23849))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>418425</a:LineColor>
 <a:FillColor>15399421</a:FillColor>
@@ -15,113 +15,38 @@ LABL 0 Arial,8,N</a:FontList>
 <c:SubSymbols>
 <o:EntitySymbol Id="o16">
 <a:IconMode>-1</a:IconMode>
-<a:EmptyAreaSize>(5980, 2472)</a:EmptyAreaSize>
-<a:Rect>((10043,14063), (23947,20809))</a:Rect>
-<a:AutoAdjustToText>0</a:AutoAdjustToText>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<a:SymbolContent>Entity.Stereotype 1
-Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
-Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
-Entity.Comment 0</a:SymbolContent>
-<c:Object>
-<o:Entity Ref="F4768B60-F094-44AE-9DF7-0837236654D8"/>
-</c:Object>
-</o:EntitySymbol>
-<o:EntitySymbol Id="o18">
-<a:IconMode>-1</a:IconMode>
-<a:EmptyAreaSize>(5980, 2472)</a:EmptyAreaSize>
-<a:Rect>((-7425,14025), (10725,21449))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<a:SymbolContent>Entity.Stereotype 1
-Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
-Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
-Entity.Comment 0</a:SymbolContent>
-<c:Object>
-<o:Entity Ref="160799C9-3053-43AE-BBD9-52234E105A58"/>
-</c:Object>
-</o:EntitySymbol>
-<o:EntitySymbol Id="o20">
-<a:IconMode>-1</a:IconMode>
-<a:EmptyAreaSize>(6252, 2000)</a:EmptyAreaSize>
-<a:Rect>((11550,8251), (23924,14850))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<a:SymbolContent>Entity.Stereotype 1
-Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
-Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
-Entity.Comment 0</a:SymbolContent>
-<c:Object>
-<o:Entity Ref="55CF4041-B276-4062-8077-8AD97583712F"/>
-</c:Object>
-</o:EntitySymbol>
-<o:EntitySymbol Id="o22">
-<a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(5512, 2000)</a:EmptyAreaSize>
-<a:Rect>((-5775,9076), (5775,15676))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
+<a:Rect>((-4125,5775), (7425,8249))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>4227327</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
 <a:FontList>STRN 0 Arial,8,N
 DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
 <a:BrushStyle>6</a:BrushStyle>
 <a:GradientFillMode>65</a:GradientFillMode>
+<a:CustomPictureType>1</a:CustomPictureType>
+<a:CustomTextMode>2</a:CustomTextMode>
+<a:CustomPictureID>39FC8F13-AD99-471F-ADD9-3C041F59D58A</a:CustomPictureID>
 <a:GradientEndColor>16777215</a:GradientEndColor>
-<a:SymbolContent>Entity.Stereotype 1
-Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
-Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
+<a:SymbolContent>Entity.Stereotype 0
+Entity.Attributes 0 10 &quot;All attributes&quot; LDMPENTALL DomainOrDataType
+Entity.Identifiers 0 0 &quot;&quot; &quot;&quot; &lt;No Attr&gt;
 Entity.Comment 0</a:SymbolContent>
+<a:SubSymbolsLayout>&lt;Form&gt;
+ &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+ &lt;Separator Name=&quot;Separator&quot; /&gt;
+ &lt;StandardCollection Name=&quot;Attributes&quot; Collection=&quot;Attributes&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;\r\nDataType No\r\nDomainOrDataType No &amp;quot;Domain or Data type&amp;quot;\r\nDomain No\r\nNullIndicator No Mandatory&quot; Filters=&quot;&amp;quot;All attributes&amp;quot;  LDMPENTALL &amp;quot;&amp;quot;\r\n&amp;quot;Primary attributes&amp;quot;  LDMPENTPK &amp;quot;\&amp;quot;PIDTF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;\r\n&amp;quot;Identifying attributes&amp;quot;  LDMPENTIDTF &amp;quot;\&amp;quot;AIDF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardCollection Name=&quot;Identifiers&quot; Collection=&quot;Identifiers&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+&lt;/Form&gt;</a:SubSymbolsLayout>
 <c:Object>
 <o:Entity Ref="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0"/>
 </c:Object>
@@ -129,29 +54,78 @@ Entity.Comment 0</a:SymbolContent>
 <o:EntitySymbol Id="o11">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(3562, 1988)</a:EmptyAreaSize>
-<a:Rect>((1650,2476), (14024,7425))</a:Rect>
-<a:LineColor>12615680</a:LineColor>
-<a:FillColor>16570034</a:FillColor>
+<a:Rect>((14850,0), (26400,2474))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>12615680</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
 <a:FontList>STRN 0 Arial,8,N
 DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 Arial,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
 <a:BrushStyle>6</a:BrushStyle>
 <a:GradientFillMode>65</a:GradientFillMode>
+<a:CustomPictureType>1</a:CustomPictureType>
+<a:CustomTextMode>2</a:CustomTextMode>
+<a:CustomPictureID>DB8B65D1-B039-4A9A-AF70-70A21CCAE8AD</a:CustomPictureID>
 <a:GradientEndColor>16777215</a:GradientEndColor>
-<a:SymbolContent>Entity.Stereotype 1
-Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL DataType
-Entity.Identifiers 1 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
+<a:SymbolContent>Entity.Stereotype 0
+Entity.Attributes 0 -5 &quot;All attributes&quot; LDMPENTALL Stereotype IdentifierIndicator DomainOrDataType NullIndicator
+Entity.Identifiers 0 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
 Entity.Comment 0</a:SymbolContent>
+<a:SubSymbolsLayout>&lt;Form&gt;
+ &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+ &lt;Separator Name=&quot;Separator&quot; /&gt;
+ &lt;StandardCollection Name=&quot;Attributes&quot; Collection=&quot;Attributes&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;\r\nDataType No\r\nDomainOrDataType No &amp;quot;Domain or Data type&amp;quot;\r\nDomain No\r\nNullIndicator No Mandatory&quot; Filters=&quot;&amp;quot;All attributes&amp;quot;  LDMPENTALL &amp;quot;&amp;quot;\r\n&amp;quot;Primary attributes&amp;quot;  LDMPENTPK &amp;quot;\&amp;quot;PIDTF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;\r\n&amp;quot;Identifying attributes&amp;quot;  LDMPENTIDTF &amp;quot;\&amp;quot;AIDF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardCollection Name=&quot;Identifiers&quot; Collection=&quot;Identifiers&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+&lt;/Form&gt;</a:SubSymbolsLayout>
 <c:Object>
 <o:Entity Ref="E1395C49-53C1-4F30-A69D-5E523DF67CD1"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o19">
+<a:CreationDate>1680514655</a:CreationDate>
+<a:IconMode>-1</a:IconMode>
+<a:EmptyAreaSize>(5775, 1238)</a:EmptyAreaSize>
+<a:Rect>((14025,16499), (25575,18975))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>4227327</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:CustomPictureType>1</a:CustomPictureType>
+<a:CustomTextMode>2</a:CustomTextMode>
+<a:CustomPictureID>39FC8F13-AD99-471F-ADD9-3C041F59D58A</a:CustomPictureID>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:SymbolContent>Entity.Stereotype 0
+Entity.Attributes 0 10 &quot;All attributes&quot; LDMPENTALL DomainOrDataType
+Entity.Identifiers 0 0 &quot;&quot; &quot;&quot; &lt;No Attr&gt;
+Entity.Comment 0</a:SymbolContent>
+<a:SubSymbolsLayout>&lt;Form&gt;
+ &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+ &lt;Separator Name=&quot;Separator&quot; /&gt;
+ &lt;StandardCollection Name=&quot;Attributes&quot; Collection=&quot;Attributes&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;\r\nDataType No\r\nDomainOrDataType No &amp;quot;Domain or Data type&amp;quot;\r\nDomain No\r\nNullIndicator No Mandatory&quot; Filters=&quot;&amp;quot;All attributes&amp;quot;  LDMPENTALL &amp;quot;&amp;quot;\r\n&amp;quot;Primary attributes&amp;quot;  LDMPENTPK &amp;quot;\&amp;quot;PIDTF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;\r\n&amp;quot;Identifying attributes&amp;quot;  LDMPENTIDTF &amp;quot;\&amp;quot;AIDF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardCollection Name=&quot;Identifiers&quot; Collection=&quot;Identifiers&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+&lt;/Form&gt;</a:SubSymbolsLayout>
+<c:Object>
+<o:Entity Ref="FEEBABF2-3F57-42F3-B5AB-485037997805"/>
 </c:Object>
 </o:EntitySymbol>
 </c:SubSymbols>

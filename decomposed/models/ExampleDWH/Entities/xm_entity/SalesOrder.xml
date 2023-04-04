@@ -5,8 +5,12 @@
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:History>ORG {7CAE8E1F-34A4-44C8-814E-5CE4A25F3C8B}
-DAT 1680508903</a:History>
+DAT 1680508903
+ATT DFLTMAP</a:History>
 <a:Stereotype>xm_entity</a:Stereotype>
+<c:DefaultMapping>
+<o:DefaultObjectMapping Ref="810808D7-5A8C-494A-9265-911D49E3282B"/>
+</c:DefaultMapping>
 <c:Identifiers>
 <o:Identifier Id="75DB3191-6745-4050-AAFA-2333E6CC7728">
 <a:ObjectID>75DB3191-6745-4050-AAFA-2333E6CC7728</a:ObjectID>
@@ -106,8 +110,9 @@ DAT 1680508903</a:History>
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:History>ORG {59ED4A77-A3A6-47B4-A9E9-5C0072240A29}
-DAT 1680508903</a:History>
-<a:Stereotype>xm_attribute</a:Stereotype>
+DAT 1680508903
+ATT STRN</a:History>
+<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
 <a:DataType>I</a:DataType>
 <c:Domain>
 <o:Domain Ref="B6DFED76-B916-4112-9B91-83D3F18CBAAE"/>

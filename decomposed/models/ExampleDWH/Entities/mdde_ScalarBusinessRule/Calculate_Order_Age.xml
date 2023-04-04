@@ -1,0 +1,164 @@
+<o:Entity Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0">
+<a:ObjectID>5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0</a:ObjectID>
+<a:Name>Calculate_Order_Age</a:Name>
+<a:Code>Calculate_Order_Age</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Comment>Calculate the age of order</a:Comment>
+<a:History>ORG {41D1B62B-F9B1-4135-AF2D-439AFB15F96E}
+DAT 1680508903
+ATT STRN
+ATT OBJEXA
+ATT LABL</a:History>
+<a:Stereotype>mdde_ScalarBusinessRule</a:Stereotype>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\f0\fs17 Calculates the age of the order by examining the datediff in days between the order date and current date\par
+}
+</a:Description>
+<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,66={29131F46-42B1-4DD8-9C6B-A955E3CD33F4},xm_stereotype,9=calculate
+
+{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,114={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,51=DATEDIFF(DAY, @OrderDate, @CurrentDate) as OrderAge
+
+</a:ExtendedAttributesText>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="FA0AD357-2F6F-426E-898E-294E91868DC6">
+<a:ObjectID>FA0AD357-2F6F-426E-898E-294E91868DC6</a:ObjectID>
+<a:Name>Examples</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_BusinessRule_Examples</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680524690</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="3A317AF5-67EA-441F-B1EE-014074A069BE">
+<a:ObjectID>3A317AF5-67EA-441F-B1EE-014074A069BE</a:ObjectID>
+<a:Name>Example Order Age</a:Name>
+<a:Code>Example_Order_Age</a:Code>
+<a:CreationDate>1680524690</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_Example</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="3B417998-0B92-4B04-83A5-CA9AD61B569B">
+<a:ObjectID>3B417998-0B92-4B04-83A5-CA9AD61B569B</a:ObjectID>
+<a:Name>Example input</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleInput</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680524690</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="32D4CE1C-FB35-40A2-BA19-8F766CD3B92F">
+<a:ObjectID>32D4CE1C-FB35-40A2-BA19-8F766CD3B92F</a:ObjectID>
+<a:Name>OrderDate</a:Name>
+<a:Code>ORDERDATE</a:Code>
+<a:CreationDate>1680524690</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ExampleInputAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,67={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,12=&#39;2023-04-01&#39;
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="A97001EB-6B77-492D-BB1E-A330B80C94C8">
+<a:ObjectID>A97001EB-6B77-492D-BB1E-A330B80C94C8</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680524702</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="53DE74F2-F420-48D6-A2A7-176CC3150818"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="DD8ABACC-014E-4CC0-BB83-0C8375E80BEC">
+<a:ObjectID>DD8ABACC-014E-4CC0-BB83-0C8375E80BEC</a:ObjectID>
+<a:Name>CurrentDate</a:Name>
+<a:Code>CURRENTDATE</a:Code>
+<a:CreationDate>1680525535</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ExampleInputAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,60={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,6=&#39;2023&#39;
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="2114C45E-75D8-4F46-AC04-EE1A18FC1AC0">
+<a:ObjectID>2114C45E-75D8-4F46-AC04-EE1A18FC1AC0</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680525658</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="7B8233A5-359F-4372-9693-5AA2D4A3E458"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="8D61F35A-E960-40F2-8524-533F5AB54D5B">
+<a:ObjectID>8D61F35A-E960-40F2-8524-533F5AB54D5B</a:ObjectID>
+<a:Name>Expected scalar output (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExpectedScalarOutput</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680524690</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="13B391B5-41D7-4CFE-B007-FBE8446D6F64">
+<a:ObjectID>13B391B5-41D7-4CFE-B007-FBE8446D6F64</a:ObjectID>
+<a:Name>OrderAgeInDays</a:Name>
+<a:Code>ORDERAGEINDAYS</a:Code>
+<a:CreationDate>1680524690</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ExpectedOutputAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=2
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="BCDAB75A-5E67-4494-B334-790CE744F9E1">
+<a:ObjectID>BCDAB75A-5E67-4494-B334-790CE744F9E1</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680524720</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="742B3F05-D053-4323-9052-6D641E3BF52F"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+<c:Attributes>
+<o:EntityAttribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818">
+<a:ObjectID>53DE74F2-F420-48D6-A2A7-176CC3150818</a:ObjectID>
+<a:Name>OrderDate</a:Name>
+<a:Code>ORDERDATE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {87D08732-95C1-401E-9FFF-33AB904D3D4B}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_parameter</a:Stereotype>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="742B3F05-D053-4323-9052-6D641E3BF52F">
+<a:ObjectID>742B3F05-D053-4323-9052-6D641E3BF52F</a:ObjectID>
+<a:Name>OrderAgeInDays</a:Name>
+<a:Code>ORDERAGEINDAYS</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {E14C2EAF-EDFD-42F9-B737-76F03AE4BA20}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458">
+<a:ObjectID>7B8233A5-359F-4372-9693-5AA2D4A3E458</a:ObjectID>
+<a:Name>CurrentDate</a:Name>
+<a:Code>CURRENTDATE</a:Code>
+<a:CreationDate>1680525535</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

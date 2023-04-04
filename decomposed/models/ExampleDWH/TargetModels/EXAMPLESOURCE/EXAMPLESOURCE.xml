@@ -10,6 +10,9 @@
 <c:SessionShortcuts>
 <o:Shortcut Ref="AAB39AC0-8B7A-4424-9F9D-2862C68E941B"/>
 <o:Shortcut Ref="58505E7D-8D8A-43D4-91D8-0C5D0B9022BA"/>
+<o:Shortcut Ref="F1541B92-DB67-4B30-8EF1-30888105CD49"/>
+<o:Shortcut Ref="16CA98D6-6762-4DDE-B801-FED3E0161E48"/>
+<o:Shortcut Ref="871AB45F-ADD2-454E-AFDD-6D4331ABEEBF"/>
 </c:SessionShortcuts>
 <c:SessionReplications>
 <o:Replication Ref="7BC2450A-E429-40C2-B459-49F00D74C766"/>

@@ -5,13 +5,6 @@
     <SourceModel Id="E0D7FF56-7977-4D8F-A64B-BB6D985687E7" Code="REFERENCE" Name="Reference" />
   </SourceModels>
   <Entities>
-    <Entity Id="160799C9-3053-43AE-BBD9-52234E105A58" Code="Lookup_Country" Name="Lookup_Country" Stereotype="xm_businessRule">
-      <Attributes>
-        <Attribute Id="F7D5123D-C3E3-4F89-811E-EE6AD955D140" Code="COUNTRY_CODE" Name="Country_Code" Stereotype="xm_parameter" Ordinal="1" DataType="VA" Length="3"></Attribute>
-        <Attribute Id="D8A7BF44-6465-42DD-BC66-BD3D3ED272CC" Code="COUNTRY_DESCRIPTION" Name="Country_Description" Stereotype="xm_attribute" Ordinal="2" DataType="VA" Length="100"></Attribute>
-        <Attribute Id="238E4332-42B6-4E5C-8723-C33812E7701C" Code="COUNTRY_CONTINENT" Name="Country_Continent" Stereotype="xm_attribute" Ordinal="3" DataType="VA" Length="100"></Attribute>
-      </Attributes>
-    </Entity>
     <Entity Id="300B0E82-0073-4894-B364-9429B35F1D39" Code="Customer" Name="Customer" Stereotype="xm_entity">
       <Attributes>
         <Attribute Id="821996D6-42E2-4246-8CCF-60B3B757B5E2" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_businessKey" Ordinal="1" DataType="I" Primary="TRUE" Mandatory="TRUE"></Attribute>
@@ -37,6 +30,41 @@
             <Attribute Id="821996D6-42E2-4246-8CCF-60B3B757B5E2" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_businessKey" Ordinal="1" />
           </Attributes></Identifier>
       </Identifiers>
+      <Mappings>
+        <Mapping Id="497A6AB6-A62C-4560-A047-F3E9C5424705" Code="Mapping_Customer_ExampleSources_Customer_WithEnrichment" Name="Mapping_Customer_ExampleSources_Customer_WithEnrichment">
+          <SourceObjects>
+            <SourceObject Id="BD5952F1-0868-4FC7-A3AC-273126B9E7AA" Code="Customer" Name="Customer" Stereotype="mdde_SourceObject" JoinedObject="Customer" JoinedObjectModel="EXAMPLESOURCE" JoinType="FROM">
+              <Entity Id="1352D98F-2A9C-42AA-AE82-2E68BA514F02" Code="Customer" Name="Customer" />
+            </SourceObject>
+            <SourceObject Id="946186C3-8F2F-41B9-9A7D-8AB9CB4F2146" Code="Country" Name="Country" Stereotype="mdde_SourceObject" JoinedObject="Country" JoinedObjectModel="EXAMPLEDWH" JoinType="LEFT JOIN">
+              <Entity Id="F7FFB923-8961-422F-9EB7-B5EA84C99262" Code="Country" Name="Country" Stereotype="xm_entity" />
+              <JoinConditions>
+                <JoinCondition ChildAttribute="CODE" JoinOperator="=" ParentAttribute="Customer.COUNTRY" ParentIsLiteralValue="false" />
+              </JoinConditions>
+            </SourceObject>
+            <SourceObject Id="BFE7CB1D-E29F-43F8-80A1-8A39D28FDA94" Code="Derive_Customer_FullName" Name="Derive_Customer_FullName" Stereotype="mdde_SourceObject" JoinedObject="Derive_Customer_FullName" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
+              <Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive_Customer_FullName" Stereotype="mdde_ScalarBusinessRule" />
+            </SourceObject>
+            <SourceObject Id="6DB43891-22B1-48D1-8BDC-27987FA6D4D0" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_SourceObject" JoinedObject="Filter_FromNL" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
+              <Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule" />
+            </SourceObject>
+          </SourceObjects>
+          <AttributeMappings>
+            <AttributeMapping Id="BDF4592B-823E-48F2-A044-4791AA547000" TargetAttribute="CUSTOMERID" SourceAttribute="Customer.ID" IsLiteralValue="false">
+              <TargetAttribute Id="821996D6-42E2-4246-8CCF-60B3B757B5E2" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_businessKey" />
+              <SourceAttribute Model="EXAMPLESOURCE" SourceObjectId="BD5952F1-0868-4FC7-A3AC-273126B9E7AA" Id="071EB08F-6D7D-428D-BBB0-14B5B9D81201" Code="ID" Name="Id" />
+            </AttributeMapping>
+            <AttributeMapping Id="7CBB89CA-D319-4CC8-B6B9-4D8E187C001C" TargetAttribute="FULLNAME" SourceAttribute="Derive_Customer_FullName.FULLNAME" IsLiteralValue="false">
+              <TargetAttribute Id="706B5392-B8A5-4BD5-B3D1-ABCF4AAF1E97" Code="FULLNAME" Name="FullName" Stereotype="xm_attribute" />
+              <SourceAttribute SourceObjectId="BFE7CB1D-E29F-43F8-80A1-8A39D28FDA94" Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULLNAME" Name="fullname" Stereotype="mdde_OutputAttribute" />
+            </AttributeMapping>
+            <AttributeMapping Id="E0980325-A2FE-44ED-BFE1-2AC1141A1478" TargetAttribute="COUNTRY_DESCRIPTION" SourceAttribute="Country.DESCRIPTION" IsLiteralValue="false">
+              <TargetAttribute Id="AEED4C8F-1536-4AA3-9882-2995E0D50FA8" Code="COUNTRY_DESCRIPTION" Name="Country_Description" Stereotype="xm_attribute" />
+              <SourceAttribute SourceObjectId="946186C3-8F2F-41B9-9A7D-8AB9CB4F2146" Id="80ED7852-37E8-48C0-ADE2-B41FA9231ECB" Code="DESCRIPTION" Name="Description" Stereotype="xm_attribute" />
+            </AttributeMapping>
+          </AttributeMappings>
+        </Mapping>
+      </Mappings>
       <Relationships>
         <Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955" Code="Customer_SalesOrder" Name="Customer_SalesOrder" ParentEntity="Customer" ParentEntityId="300B0E82-0073-4894-B364-9429B35F1D39" ChildEntity="SalesOrder" ChildEntityId="2CBE61AD-180C-485A-8F14-2F2CEA9C225F">
           <RelationshipJoins>
@@ -52,7 +80,7 @@
         <Attribute Id="C04AC16A-42B7-4C30-A8B7-4BBBFC4630AF" Code="ORDERNUMBER" Name="OrderNumber" Stereotype="xm_attribute" Ordinal="3" DataType="VA" Length="50"></Attribute>
         <Attribute Id="CDFD6CA7-C11D-49AE-9882-AC733F7943CF" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_attribute" Ordinal="4" DataType="I" Foreign="TRUE"></Attribute>
         <Attribute Id="170BF497-2F70-404A-A97D-3BAD41FE3D82" Code="TOTALAMOUNT" Name="TotalAmount" Stereotype="xm_attribute" Ordinal="5" DataType="DC" Precision="12" Scale="2"></Attribute>
-        <Attribute Id="12F67EA7-2C9F-4D03-B063-84C354E15884" Code="AGEINDAYS" Name="AgeInDays" Stereotype="xm_attribute" Ordinal="6" DataType="I"></Attribute>
+        <Attribute Id="12F67EA7-2C9F-4D03-B063-84C354E15884" Code="AGEINDAYS" Name="AgeInDays" Stereotype="mdde_OutputAttribute" Ordinal="6" DataType="I"></Attribute>
       </Attributes>
       <Identifiers>
         <Identifier PrimaryIdentifier="TRUE">
@@ -60,6 +88,15 @@
             <Attribute Id="3D846A5E-5D6B-4E30-820A-1692473D8211" Code="ORDERID" Name="OrderId" Stereotype="xm_businessKey" Ordinal="1" />
           </Attributes></Identifier>
       </Identifiers>
+      <Mappings>
+        <Mapping Id="810808D7-5A8C-494A-9265-911D49E3282B" Code="SalesOrder_Mapping" Name="SalesOrder_Mapping">
+          <SourceObjects>
+            <SourceObject Id="0F2EE1DB-8E68-424B-BBF5-0342A9EFE195" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_SourceObject" JoinedObject="Calculate_Order_Age" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
+              <Entity Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule" />
+            </SourceObject>
+          </SourceObjects>
+        </Mapping>
+      </Mappings>
       <Relationships>
         <Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955" Code="Customer_SalesOrder" Name="Customer_SalesOrder" ParentEntity="Customer" ParentEntityId="300B0E82-0073-4894-B364-9429B35F1D39" ChildEntity="SalesOrder" ChildEntityId="2CBE61AD-180C-485A-8F14-2F2CEA9C225F">
           <RelationshipJoins>
@@ -81,35 +118,40 @@
           </Attributes></Identifier>
       </Identifiers>
     </Entity>
-    <Entity Id="F4768B60-F094-44AE-9DF7-0837236654D8" Code="Derive_Customer_FullName" Name="Derive_Customer_FullName" Stereotype="xm_businessRule">
-      <Attributes>
-        <Attribute Id="05AA87F0-E369-460D-AB69-6AC7BEC62FCE" Code="FIRSTNAME" Name="FirstName" Stereotype="xm_parameter" Ordinal="1" DataType="VA" Length="50"></Attribute>
-        <Attribute Id="0B6D6D1F-8BB3-42FF-B7A8-6EF189102F30" Code="LASTNAME" Name="LastName" Stereotype="xm_parameter" Ordinal="2" DataType="VA" Length="100"></Attribute>
-        <Attribute Id="83F0E425-E9F5-4E95-B7E7-E0C5EF86D9A6" Code="FULLNAME" Name="FullName" Stereotype="xm_attribute" Ordinal="3" DataType="VA" Length="151"></Attribute>
-      </Attributes>
-    </Entity>
-    <Entity Id="55CF4041-B276-4062-8077-8AD97583712F" Code="Aggregate_Customer_Revenue" Name="Aggregate_Customer_Revenue" Stereotype="xm_businessRule">
-      <Attributes>
-        <Attribute Id="AC683E67-30A3-45BF-8065-1B8FF126F918" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_parameter" Ordinal="1" DataType="I" Primary="TRUE" Mandatory="TRUE"></Attribute>
-        <Attribute Id="EF027C35-8FBA-4D21-A3B0-818BB2F112B7" Code="TOTALREVENUE" Name="TotalRevenue" Stereotype="xm_attribute" Ordinal="2" DataType="DC" Precision="20" Scale="2"></Attribute>
-      </Attributes>
-      <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
-          <Attributes>
-            <Attribute Id="AC683E67-30A3-45BF-8065-1B8FF126F918" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_parameter" Ordinal="1" />
-          </Attributes></Identifier>
-      </Identifiers>
-    </Entity>
-    <Entity Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="xm_businessRule">
+    <Entity Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule">
       <Attributes>
         <Attribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818" Code="ORDERDATE" Name="OrderDate" Stereotype="xm_parameter" Ordinal="1" DataType="DT"></Attribute>
         <Attribute Id="742B3F05-D053-4323-9052-6D641E3BF52F" Code="ORDERAGEINDAYS" Name="OrderAgeInDays" Stereotype="xm_attribute" Ordinal="2" DataType="I"></Attribute>
+        <Attribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458" Code="CURRENTDATE" Name="CurrentDate" Ordinal="3" DataType="DT"></Attribute>
       </Attributes>
+      <SqlExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate) as OrderAge</SqlExpression>
+      <SapHanaExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate) as OrderAge</SapHanaExpression>
+      <Examples>
+        <Extended Sub-Object Id="3A317AF5-67EA-441F-B1EE-014074A069BE" Code="Example_Order_Age" Name="Example Order Age" Stereotype="mdde_Example">  
+          <ExampleInput>
+            <Extended Sub-Object Attribute="ORDERDATE" SqlValue="'&#39;&#39;2023-04-01&#39;&#39;'" Value="&#39;2023-04-01&#39;" />
+            <Extended Sub-Object Attribute="CURRENTDATE" SqlValue="'&#39;&#39;2023&#39;&#39;'" Value="&#39;2023&#39;" />
+          </ExampleInput>
+          <ExpectedScalarOutput>
+            <Extended Sub-Object Attribute="ORDERAGEINDAYS" SqlValue="2" Value="2" />
+          </ExpectedScalarOutput>
+        </Extended Sub-Object>
+      </Examples>
     </Entity>
-    <Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="xm_businessRule">
+    <Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule">
       <Attributes>
         <Attribute Id="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9" Code="PCODE" Name="pCode" Stereotype="xm_parameter" Ordinal="1" DataType="VA" Length="25"></Attribute>
       </Attributes>
+      <SqlExpression>@pCode = &#39;NL&#39;</SqlExpression>
+      <SapHanaExpression>@pCode = &#39;NL&#39;</SapHanaExpression>
+      <Examples>
+        <Extended Sub-Object Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286" Code="pCode_is_equal_to_NL" Name="pCode is equal to NL" Stereotype="mdde_Example">  
+          <ExampleInput>
+            <Extended Sub-Object Attribute="PCODE" SqlValue="'&#39;&#39;NL&#39;&#39;'" Value="&#39;NL&#39;" />
+          </ExampleInput>
+          <ExpectedFilterResult>true</ExpectedFilterResult>
+        </Extended Sub-Object>
+      </Examples>
     </Entity>
     <Entity Id="F9BB4252-766A-498C-8B9B-1A1485D1E2FD" Code="CustomerWithParent" Name="CustomerWithParent" Stereotype="xm_entity">
       <Attributes>
@@ -121,6 +163,26 @@
         <Attribute Id="752B934F-FC28-4BE6-BBE8-5011226D9222" Code="PHONE" Name="Phone" Ordinal="6" DataType="VA" Length="20"></Attribute>
         <Attribute Id="14A56015-742B-4FBB-B366-55F400B86572" Code="PARENTCUSTOMERNAME" Name="ParentCustomerName" Ordinal="7" DataType="VA" Length="100"></Attribute>
       </Attributes>
+    </Entity>
+    <Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive_Customer_FullName" Stereotype="mdde_ScalarBusinessRule">
+      <Attributes>
+        <Attribute Id="E92AD306-2FC3-45E5-BB25-CC937198496D" Code="FIRSTNAME" Name="firstname" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="VA" Length="55"></Attribute>
+        <Attribute Id="01123E25-DC0F-4396-A487-1328F1D44134" Code="LASTNAME" Name="lastname" Stereotype="mdde_InputAttribute" Ordinal="2" DataType="VA" Length="55"></Attribute>
+        <Attribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULLNAME" Name="fullname" Stereotype="mdde_OutputAttribute" Ordinal="3" DataType="VA" Length="110"></Attribute>
+      </Attributes>
+      <SqlExpression>concat(firstname, &#39;&#39;, lastname) as fullname</SqlExpression>
+      <SapHanaExpression>concat(firstname, &#39;&#39;, lastname) as fullname</SapHanaExpression>
+      <Examples>
+        <Extended Sub-Object Id="6AB09887-AA4D-4A92-BD85-34A26EF2DAEF" Code="Example_full_name" Name="Example full name" Stereotype="mdde_Example">  
+          <ExampleInput>
+            <Extended Sub-Object Attribute="FIRSTNAME" SqlValue="'Moo'" Value="Moo" />
+            <Extended Sub-Object Attribute="LASTNAME" SqlValue="'Othman'" Value="Othman" />
+          </ExampleInput>
+          <ExpectedScalarOutput>
+            <Extended Sub-Object Attribute="FULLNAME" SqlValue="'Moo Othman'" Value="Moo Othman" />
+          </ExpectedScalarOutput>
+        </Extended Sub-Object>
+      </Examples>
     </Entity>
   </Entities>
 </Model>
