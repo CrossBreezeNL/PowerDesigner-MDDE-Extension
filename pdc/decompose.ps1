@@ -6,7 +6,7 @@ $DebugPreference = "SilentlyContinue"
 #$DebugPreference = "Continue"
 
 # Include PowerDeComposer PowerShell Functions.
-Import-Module -Name "$PSScriptRoot\PowerDeComposer.psm1" -Force
+Import-Module -Name Join-Path -Path $PSScriptRoot -ChildPath "PowerDeComposer.psm1" -Force
 
 # Variables used for PowerDeComposer.
 $PDCBasePath = Split-Path -Path $PSScriptRoot -Parent
