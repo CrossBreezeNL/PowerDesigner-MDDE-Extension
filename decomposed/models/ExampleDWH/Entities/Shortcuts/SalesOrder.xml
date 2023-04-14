@@ -1,0 +1,14 @@
+<o:Shortcut Id="58505E7D-8D8A-43D4-91D8-0C5D0B9022BA">
+<a:ObjectID>58505E7D-8D8A-43D4-91D8-0C5D0B9022BA</a:ObjectID>
+<a:Name>SalesOrder</a:Name>
+<a:Code>SalesOrder</a:Code>
+<a:History>ORG {4F8AA57E-BD81-4A11-A840-82C12DCF1479}
+DAT 1680508903</a:History>
+<a:TargetStereotype/>
+<a:TargetID>60EC35C7-6DB5-44B9-92BD-A08887CA9005</a:TargetID>
+<a:TargetClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="A7FDCE2D-A292-4E0D-8C16-0F5D8274D4C9"/>
+</c:FullShortcutReplica>
+</o:Shortcut>

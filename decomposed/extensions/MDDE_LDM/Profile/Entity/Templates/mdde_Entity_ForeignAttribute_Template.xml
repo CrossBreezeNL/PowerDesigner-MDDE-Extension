@@ -1,0 +1,11 @@
+<o:TemplateTargetItem Id="573781C9-670D-41E0-8505-CE0144E5DE99">
+<a:ObjectID>573781C9-670D-41E0-8505-CE0144E5DE99</a:ObjectID>
+<a:Name>mdde_Entity_ForeignAttribute_Template</a:Name>
+<a:TemplateTargetItem.Value>.foreach_item(Attributes,,,%Foreign%)
+%Code%
+.next(,)</a:TemplateTargetItem.Value>
+<a:CreationDate>1652879903</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Template to get the name of the foreign identifier attribute (there should only be one for the parent Hub in case of satelites).</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

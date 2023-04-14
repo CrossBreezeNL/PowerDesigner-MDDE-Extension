@@ -1,0 +1,13 @@
+<o:TemplateTargetItem Id="17F3AF21-A502-4714-B333-4104A5C7491D">
+<a:ObjectID>17F3AF21-A502-4714-B333-4104A5C7491D</a:ObjectID>
+<a:Name>mdde_JoinOperatorList</a:Name>
+<a:TemplateTargetItem.Value>=
+&lt;
+&gt;
+&lt;=
+&gt;=
+&lt;&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1650361026</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

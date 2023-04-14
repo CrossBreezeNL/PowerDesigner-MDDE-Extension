@@ -1,0 +1,12 @@
+<o:TemplateTargetItem Id="778DEDF3-5E81-4204-AB15-AFDA331D12B4">
+<a:ObjectID>778DEDF3-5E81-4204-AB15-AFDA331D12B4</a:ObjectID>
+<a:Name>mdde_EntityAttribute_Precision</a:Name>
+<a:TemplateTargetItem.Value>.set_value(PdDataType, %mdde_EntityAttribute_DataType%)
+.if (%PdDataType% == &quot;N&quot;) || (%PdDataType% == &quot;DC&quot;) || (%PdDataType% == &quot;MN&quot;)
+%Length%
+.endif()</a:TemplateTargetItem.Value>
+<a:CreationDate>1652895401</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Derive whether to export the precision attribute, based on the mdde_EntityAttribute_DataType</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

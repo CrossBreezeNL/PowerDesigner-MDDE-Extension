@@ -1,0 +1,20 @@
+<o:FormTargetItem Id="0A2AD013-C4B7-4420-A646-3D2B142E7884">
+<a:ObjectID>0A2AD013-C4B7-4420-A646-3D2B142E7884</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StandardAttribute Attribute=&quot;Name&quot; Caption=&quot;Name&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Comment&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StaticText Name=&quot;StaticText_ExampleInput&quot; Caption=&quot;Select or add an input entity and specify the example input data.&quot; /&gt;
+   &lt;HorizontalLayout Name=&quot;HorizontalLayout_ExampleData&quot; &gt;
+      &lt;StaticText Name=&quot;Label_ExampleData&quot; Caption=&quot;Example data:&quot; /&gt;
+      &lt;StandardCollection Collection=&quot;mdde_ExampleEntityData&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+   &lt;/HorizontalLayout&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1661268402</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Example details (MDDE)</a:Label>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>

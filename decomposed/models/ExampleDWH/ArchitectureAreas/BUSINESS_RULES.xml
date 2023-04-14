@@ -1,0 +1,14 @@
+<o:Area Id="C2A6609F-EE69-45B9-B6D2-C363489ADA42">
+<a:ObjectID>C2A6609F-EE69-45B9-B6D2-C363489ADA42</a:ObjectID>
+<a:Name>Business Rules</a:Name>
+<a:Code>BUSINESS_RULES</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {925BFF9E-2C23-4EDF-BB0A-0A85574BBEA4}
+DAT 1680508903</a:History>
+<c:AttachedObjects>
+<o:Entity Ref="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0"/>
+<o:Entity Ref="E1395C49-53C1-4F30-A69D-5E523DF67CD1"/>
+<o:Entity Ref="FEEBABF2-3F57-42F3-B5AB-485037997805"/>
+</c:AttachedObjects>
+</o:Area>

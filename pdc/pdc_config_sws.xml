@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PowerDeComposerConfig>
+	<Decompose fileRemovalStrategy="files">
+	
+        <!-- Specify the nodes to remove before decomposing. -->
+        <NodeRemovals>
+            <!-- Remove all Expanded attributes. -->
+            <NodeRemoval xpath="//*/@Expanded" />
+            
+            <!-- Remove all Selected attributes. -->
+            <NodeRemoval xpath="//*/@Selected" />
+            
+            <!-- Remove all Loaded attributes. -->
+            <NodeRemoval xpath="//*/@Loaded" />
+
+            <!-- Remove all attributes that start with Rmg. -->
+            <NodeRemoval xpath="//*/@*[substring(name(),1,3) = 'Rmg']" />
+        </NodeRemovals> 
+
+        <!-- Specify which elements should be decomposed. -->
+		<!-- The DecomposableElement is implicitly a AllConditions group. -->
+	    <DecomposableElement>
+     	 
+            <!-- Here we specify which information to include as an attribute on the xi:include tag. -->
+			<IncludeAttributes />
+
+		</DecomposableElement>
+	</Decompose>
+</PowerDeComposerConfig>

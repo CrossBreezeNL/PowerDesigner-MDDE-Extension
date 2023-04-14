@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="B45D5025-487A-4F0C-9011-BD9002B28CC4">
+<a:TypePublicName>FormTargetItem</a:TypePublicName>
+<a:ObjectID>B45D5025-487A-4F0C-9011-BD9002B28CC4</a:ObjectID>
+<a:Name>Forms</a:Name>
+<a:CreationDate>1657014166</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_BusinessRule_Examples.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -1,0 +1,3 @@
+composed/*
+!composed/.gitkeep
+decomposed/**/*.decompose.log

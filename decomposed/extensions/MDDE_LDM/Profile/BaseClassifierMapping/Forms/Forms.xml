@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="6DB62127-C346-4C74-A853-8EF45CE2E9C2">
+<a:TypePublicName>FormTargetItem</a:TypePublicName>
+<a:ObjectID>6DB62127-C346-4C74-A853-8EF45CE2E9C2</a:ObjectID>
+<a:Name>Forms</a:Name>
+<a:CreationDate>1650365215</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="MappingDetails.xml" />
+<xi:include href="mdde_Mapping_Examples.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

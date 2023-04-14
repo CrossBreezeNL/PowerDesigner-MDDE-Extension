@@ -1,0 +1,13 @@
+<o:TemplateTargetItem Id="F1CC279C-2AB8-44A2-8B08-18214D4E3FEA">
+<a:ObjectID>F1CC279C-2AB8-44A2-8B08-18214D4E3FEA</a:ObjectID>
+<a:Name>mdde_ExampleEntityList</a:Name>
+<a:TemplateTargetItem.Value>.foreach_item (ParentObject.ParentObject.SourceClassifiers)
+   .// Only include non-business rule entities.
+   .if %.D:mdde_Entity_IsBusinessRule?% != true
+      %ObjectID%
+   .endif
+.next (\n)</a:TemplateTargetItem.Value>
+<a:CreationDate>1661341301</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

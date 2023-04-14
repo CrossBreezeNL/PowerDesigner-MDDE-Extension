@@ -1,0 +1,8 @@
+<o:TemplateTargetItem Id="9321D103-BA2C-4896-91C2-1B5118F35FA8">
+<a:ObjectID>9321D103-BA2C-4896-91C2-1B5118F35FA8</a:ObjectID>
+<a:Name>mdde_SourceObjectList</a:Name>
+<a:TemplateTargetItem.Value>.collection(Parent.mdde_SourceObjects)</a:TemplateTargetItem.Value>
+<a:CreationDate>1650375537</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

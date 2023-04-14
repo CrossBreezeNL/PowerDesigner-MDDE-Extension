@@ -1,0 +1,14 @@
+<o:ExtendedCompositionTargetItem Id="93AA4671-34CB-469F-BBA0-7D7321C15EBE">
+<a:ObjectID>93AA4671-34CB-469F-BBA0-7D7321C15EBE</a:ObjectID>
+<a:Name>mdde_SourceObjects</a:Name>
+<a:CreationDate>1650362434</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_SourceObject</a:DestinationStereotype>
+<a:Label>Source objects (MDDE)</a:Label>
+<a:DefaultColumnFilter>&quot;_MDDE_LDM.mdde_JoinedObject.{D60BC69B-0289-460F-A8E9-6CFBB6A9A7E8}&quot; 80 &quot;_MDDE_LDM.mdde_JoinType.{08A86AD4-3F3F-40E1-AFC2-24CB6B49E316}&quot; 80 &quot;_MDDE_LDM.mdde_JoinAlias.{4F5E7B71-E5C4-49DC-BFA5-ABE9B6660801}&quot; 80 &quot;_MDDE_LDM.mdde_OffsetPeriod.{2507123F-240C-4F0B-873A-C35A738DBA2F}&quot; 80 &quot;_MDDE_LDM.mdde_OffsetValue.{C9302863-5616-46A3-89FA-EF8548AE7D8D}&quot; 80 DISPNAME 80 NAME -1 CODE -1 PRNT -1 OBJTYPE -1 CDAT -1 CUSR -1 MDAT -1 MUSR -1 OMDAT -1 CLSSNAME -1 FLDR -1 SDSC -1 OLOC -1 GPRT -1 PCKG -1 NOTETEXT -1 DESCTEXT -1 KYWD -1 LABL -1 GENEORGN -1 STRN -1 MODL -1 CPNM -1 MSTP -1 DESC -1 NOTE -1 HASNOTE -1 RPLA -1</a:DefaultColumnFilter>
+<c:DestinationStereotypeObject>
+<o:StereotypeTargetItem Ref="BA25C1AC-4885-46E1-B0D1-7C737D2CECCE"/>
+</c:DestinationStereotypeObject>
+</o:ExtendedCompositionTargetItem>

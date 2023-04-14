@@ -1,0 +1,11 @@
+<o:StereotypeTargetItem Id="13E15C6B-1F5C-435C-89D9-07876B47E8FC">
+<a:ObjectID>13E15C6B-1F5C-435C-89D9-07876B47E8FC</a:ObjectID>
+<a:Name>mdde_ExampleInputAttributeValue</a:Name>
+<a:CreationDate>1657022013</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Example input attribute value</a:Label>
+<c:ParentSttp>
+<o:StereotypeTargetItem Ref="E7A6EB32-19C0-4076-AA95-AF544F02CACE"/>
+</c:ParentSttp>
+</o:StereotypeTargetItem>

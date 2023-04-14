@@ -1,0 +1,90 @@
+<o:Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1">
+<a:ObjectID>E1395C49-53C1-4F30-A69D-5E523DF67CD1</a:ObjectID>
+<a:Name>Filter_FromNL</a:Name>
+<a:Code>Filter_FromNL</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Comment>Only include records where the country is the Netherlands.</a:Comment>
+<a:History>ORG {FC8BAD02-7678-44A0-A01B-383F2F46980E}
+DAT 1680508903
+ATT STRN
+ATT OBJEXA
+ATT LABL</a:History>
+<a:Stereotype>mdde_FilterBusinessRule</a:Stereotype>
+<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,63={29131F46-42B1-4DD8-9C6B-A955E3CD33F4},xm_stereotype,6=filter
+
+{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,83={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,20=@COUNTRY_CODE = &#39;NL&#39;
+
+</a:ExtendedAttributesText>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="FEB21E43-2D09-4084-B821-B5EFFE6565F1">
+<a:ObjectID>FEB21E43-2D09-4084-B821-B5EFFE6565F1</a:ObjectID>
+<a:Name>Examples</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_BusinessRule_Examples</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680618617</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286">
+<a:ObjectID>72E29F02-DD8A-4D15-ABE6-3C03B708B286</a:ObjectID>
+<a:Name>Country is NL</a:Name>
+<a:Code>Country_is_NL</a:Code>
+<a:CreationDate>1680618617</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Comment>When the country is equal to &#39;NL&#39;, the record should be included.</a:Comment>
+<a:Stereotype>mdde_Example</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="B4368593-EA80-4138-A79F-06AA9EC26B6A">
+<a:ObjectID>B4368593-EA80-4138-A79F-06AA9EC26B6A</a:ObjectID>
+<a:Name>Example input</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleInput</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680618617</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="13AFA5ED-A306-49F2-B82D-17158E1D0E0A">
+<a:ObjectID>13AFA5ED-A306-49F2-B82D-17158E1D0E0A</a:ObjectID>
+<a:Name>pCode</a:Name>
+<a:Code>PCODE</a:Code>
+<a:CreationDate>1680618617</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ExampleInputAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,58={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,4=&#39;NL&#39;
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="B032E00D-EADA-4A52-9B05-8B7452654D14">
+<a:ObjectID>B032E00D-EADA-4A52-9B05-8B7452654D14</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680618689</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+<c:Attributes>
+<o:EntityAttribute Id="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9">
+<a:ObjectID>3B3CCC71-5C81-4C56-84DA-EA62EC3843B9</a:ObjectID>
+<a:Name>Country Code</a:Name>
+<a:Code>COUNTRY_CODE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {2171013A-B9EA-4EA3-A1B0-8AC296CFCBEB}
+DAT 1680508903
+ATT NAME
+ATT CODE
+ATT STRN</a:History>
+<a:Stereotype>mdde_InputAttribute</a:Stereotype>
+<a:DataType>VA25</a:DataType>
+<a:Length>25</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

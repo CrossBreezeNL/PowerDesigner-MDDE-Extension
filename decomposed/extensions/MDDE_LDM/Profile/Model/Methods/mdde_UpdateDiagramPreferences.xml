@@ -1,0 +1,92 @@
+<o:MethodTargetItem Id="A62E167B-7A86-4487-81C8-068350A08A67">
+<a:ObjectID>A62E167B-7A86-4487-81C8-068350A08A67</a:ObjectID>
+<a:Name>mdde_UpdateDiagramPreferences</a:Name>
+<a:CreationDate>1656502390</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(objModel)
+   SetDiagramPreferencesForPackage(objModel)
+End Sub
+
+Function SetDiagramPreferencesForPackage(objPackage)
+   &#39; Loop through all doagrams to update the preferences (if needed).
+   Dim objDiagram
+   For Each objDiagram In objPackage.LogicalDiagrams
+      SetDiagramPreferences(objDiagram)
+   Next
+   
+   &#39; Call this method for all child-packages.
+   Dim objChildPackage
+   For Each objChildPackage in objPackage.Packages
+      SetDiagramPreferencesForPackage(objChildPackage)
+   Next
+End Function
+
+Function SetDiagramPreferences(objDiagram)
+   WriteDebug(&quot;[mdde_UpdateDiagramPreferences] Diagram &quot; &amp; objDiagram.Code)
+   &#39; Create a new string to update the display preferences in.
+   Dim strNewDisplayPreferences : strNewDisplayPreferences = objDiagram.DisplayPreferences
+   
+   &#39; Set Snap Grid to No.
+   strNewDisplayPreferences = IniFindReplace(strNewDisplayPreferences, &quot;Snap Grid=No&quot;, &quot;Snap Grid=Yes&quot;)
+   &#39; Set Display Grid to Yes.
+   strNewDisplayPreferences = IniFindReplace(strNewDisplayPreferences, &quot;Display Grid=Yes&quot;, &quot;Display Grid=No&quot;)
+   &#39; Set tje Grid size to 825.
+   strNewDisplayPreferences = IniFindReplace(strNewDisplayPreferences, &quot;Grid size=(?!825)([0-9]+)&quot;, &quot;Grid size=825&quot;)
+   &#39; Disable automatic link routing.
+   strNewDisplayPreferences = IniFindReplace(strNewDisplayPreferences, &quot;Activate automatic link routing=Yes&quot;, &quot;Activate automatic link routing=No&quot;)
+   &#39; Don&#39;t show the page delimeter.
+   strNewDisplayPreferences = IniFindReplace(strNewDisplayPreferences, &quot;Show Page Delimiter=Yes&quot;, &quot;Show Page Delimiter=No&quot;)
+   
+   &#39; All colors are denoted by 3 integers. They can be denoted with and without a comma between the integers.
+   &#39; To make sure we don&#39;t get changes on these we always replace these notations without the comma.
+   strNewDisplayPreferences = IniFindReplace(strNewDisplayPreferences, &quot;=([0-9]{1,3}),\s*([0-9]{1,3}),\s*([0-9]{1,3})\b&quot;, &quot;=$1 $2 $3&quot;)
+   
+   &#39; Update the display preferneces of the diagram.
+   objDiagram.DisplayPreferences = strNewDisplayPreferences
+   
+   &#39; Update the settings for all symbols in the diagram.
+   Dim objSymbol
+   For Each objSymbol In objDiagram.Symbols
+      &#39; Make sure AutoAdjustToText is disabled.
+      If objSymbol.HasAttribute(&quot;AutoAdjustToText&quot;) Then
+         If objSymbol.AutoAdjustToText = True Then
+            WriteDebug(&quot;[mdde_UpdateDiagramPreferences] Symbol &quot; &amp; objSymbol.UOL &amp; &quot;: disabling AutoAdjustToText&quot;)
+            objSymbol.AutoAdjustToText = False
+         End If
+      End If
+      &#39; Make sure manually resized is true.
+      If objSymbol.HasAttribute(&quot;ManuallyResized&quot;) Then
+         If objSymbol.ManuallyResized = False Then
+            WriteDebug(&quot;[mdde_UpdateDiagramPreferences] Symbol &quot; &amp; objSymbol.UOL &amp; &quot;: enabling ManuallyResized&quot;)
+            objSymbol.ManuallyResized = True
+         End If
+      End If
+      &#39; Make sure automatic routing state is 0.
+      If objSymbol.HasAttribute(&quot;AutomaticRoutingState&quot;) Then
+         If objSymbol.AutomaticRoutingState &lt;&gt; 0 Then
+            WriteDebug(&quot;[mdde_UpdateDiagramPreferences] Symbol &quot; &amp; objSymbol.UOL &amp; &quot;: setting AutomaticRoutingState to 0&quot;)
+            objSymbol.AutomaticRoutingState = 0
+         End If
+      End If
+   Next
+End Function
+
+Function IniFindReplace(strSearchValue, strRegexPattern, strReplacePattern)
+   &#39; Create a Regex object to use for all find-replace actions.
+   Dim RE : Set RE = New RegExp
+   RE.IgnoreCase = True
+   RE.Global = True
+   
+   RE.Pattern = strRegexPattern
+   &#39; Check whether the regex pattern can be found in the search value.
+   If RE.Test(strSearchValue) Then
+      WriteDebug(&quot;[mdde_UpdateDiagramPreferences] &#39;&quot; &amp; strRegexPattern &amp; &quot;&#39; was found, replacing with &#39;&quot; &amp; strReplacePattern &amp; &quot;&#39;.&quot;)
+      IniFindReplace = RE.Replace(strSearchValue, strReplacePattern)
+      Exit Function
+   End If
+   
+   &#39; If we reach this code, the pattern wasn&#39;t found so we return the original string.
+   IniFindReplace = strSearchValue
+End Function</a:MethodScript>
+</o:MethodTargetItem>

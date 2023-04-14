@@ -1,0 +1,38 @@
+<o:MethodTargetItem Id="9C6DB1BF-E914-4428-8D56-ADA791A42B8C">
+<a:ObjectID>9C6DB1BF-E914-4428-8D56-ADA791A42B8C</a:ObjectID>
+<a:Name>mdde_ExportXml</a:Name>
+<a:CreationDate>1651739429</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+
+   &#39; Log that we will start decomposing.
+   WriteInfo &quot;Start exporting &quot; &amp; obj.Code
+
+   &#39; Get the current extended generation target (so we can restore it afterwards).
+   Dim strGenerationPath : strGenerationPath = obj.GetPackageOptions().GenerationPath
+   
+   &#39; Create a Scripting.FileSystemObject to get the parent folder and base name of the model file name to construct the target folder path from.
+   Dim objFileSystem : Set objFileSystem = CreateObject(&quot;Scripting.FileSystemObject&quot;)
+   Dim strModelFolderLocaton : strModelFolderLocaton = objFileSystem.GetParentFolderName(obj.Filename) &amp; &quot;\&quot; &amp; objFileSystem.GetBaseName(obj.Filename)
+   WriteDebug &quot;Model folder location: &quot; &amp; strModelFolderLocaton
+   
+   &#39; Update the generation path so the XML export is written to the same folder as the decomposed model.
+   obj.GetPackageOptions().GenerationPath = Replace(strModelFolderLocaton, cMDDE_PDC_COMPOSED_FOLDER, cMDDE_PDC_DECOMPOSED_FOLDER)
+
+   &#39; Execute the XML file, so it will be generated using the stored location in PD.
+   WriteInfo &quot;Start XML export of &quot; &amp; obj.Code
+   Dim executionSucceeded : executionSucceeded = obj.ExecuteCustomMethod(cMDDE_EXT_CODE &amp; &quot;.mdde_Model_XmlExport_File&quot;)
+
+   &#39; Inform the user the export is done.
+   If executionSucceeded = vbTrue Then
+      WriteInfo &quot;Done exporting XML of &quot; &amp; obj.Code
+   Else
+      WriteError &quot;The XML export failed!&quot; &amp; chr(10) &amp; &quot;See the &#39;Output&#39; windows for more information.&quot;
+   End If
+   
+   &#39; Revert the generation path to the original value.
+   obj.GetPackageOptions().GenerationPath = strGenerationPath
+
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

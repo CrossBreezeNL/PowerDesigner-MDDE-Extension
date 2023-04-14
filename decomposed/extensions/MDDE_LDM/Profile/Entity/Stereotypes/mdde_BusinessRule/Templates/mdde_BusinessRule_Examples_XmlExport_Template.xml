@@ -1,0 +1,10 @@
+<o:TemplateTargetItem Id="B029EAD1-8BDA-4375-97C4-6CF99B743183">
+<a:ObjectID>B029EAD1-8BDA-4375-97C4-6CF99B743183</a:ObjectID>
+<a:Name>mdde_BusinessRule_Examples_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>.foreach_item(mdde_BusinessRule_Examples,\n&lt;Examples&gt;\n,\n&lt;/Examples&gt;)
+  %mdde_Example_XmlExport_Template%
+.next(\n)</a:TemplateTargetItem.Value>
+<a:CreationDate>1666183120</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

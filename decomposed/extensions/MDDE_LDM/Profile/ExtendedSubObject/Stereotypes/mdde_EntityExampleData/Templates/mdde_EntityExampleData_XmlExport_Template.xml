@@ -1,0 +1,17 @@
+<o:TemplateTargetItem Id="CD633E8B-EBC0-424B-BD93-A01EF001DA80">
+<a:ObjectID>CD633E8B-EBC0-424B-BD93-A01EF001DA80</a:ObjectID>
+<a:Name>mdde_EntityExampleData_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% Type=&quot;%.X:mdde_ExampleDataType%&quot;
+.if(%mdde_ExampleEntity%)
+ ExampleEntityId=&quot;%.X:mdde_ExampleEntity.ObjectID%&quot; ExampleEntityModel=&quot;%.X:mdde_ExampleEntity.Model.Code%&quot; ExampleEntity=&quot;%.X:mdde_ExampleEntity.Code%&quot;
+.endif()
+&gt;
+  .foreach_item(mdde_ExampleRecords)
+  %mdde_ExampleRecord_XmlExport_Template%
+  .next()
+
+&lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1666184658</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

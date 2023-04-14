@@ -1,0 +1,9 @@
+<o:TemplateTargetItem Id="17E8E495-58E6-484C-97D3-EEE2AC4D0D11">
+<a:ObjectID>17E8E495-58E6-484C-97D3-EEE2AC4D0D11</a:ObjectID>
+<a:Name>mdde_Entity_IsBusinessRule</a:Name>
+<a:TemplateTargetItem.Value>True</a:TemplateTargetItem.Value>
+<a:CreationDate>1655827518</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>This is a template which is used in the Criterion_ParentIsBusinessRule criterion on EntityAttribute. Since GTL doesn&#39;t have a HasStereotype type of function this is a workaround to check one template.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

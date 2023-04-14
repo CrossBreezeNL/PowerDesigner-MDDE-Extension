@@ -1,0 +1,82 @@
+<o:CustomCheckTargetItem Id="C46720A9-A59F-4098-BCFD-1FF4DD871221">
+<a:ObjectID>C46720A9-A59F-4098-BCFD-1FF4DD871221</a:ObjectID>
+<a:Name>mdde_ExpressionBusinessRule_Example_CheckAttributeAndValues</a:Name>
+<a:CreationDate>1657120027</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that business rule example have an example value for all attributes.</a:HelpMessage>
+<a:OutputMessage>The following business rules have incomplete examples:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   &#39; Initialize check with true.
+   %Check% = True
+   
+   &#39; Get the collection with examples.
+   Dim colExamples : Set colExamples = obj.GetExtendedCollection(&quot;mdde_BusinessRule_Examples&quot;)
+   
+   &#39; If the collection exists, loop over the examples.
+   If Not(colExamples Is Nothing) Then
+      Dim objExample
+      For Each objExample In colExamples
+      
+         &#39; Check the example input
+         CheckExampleAttributeValues obj, objExample, &quot;mdde_ExampleInput&quot;, &quot;input&quot;, &quot;mdde_InputAttribute&quot;, %Check%
+
+         &#39; Check the example output (if it exist&#39;s).
+         CheckExampleAttributeValues obj, objExample, &quot;mdde_ExpectedScalarOutput&quot;, &quot;output&quot;, &quot;mdde_OutputAttribute&quot;, %Check%
+         
+      Next
+   End If
+
+End Function
+
+Function CheckExampleAttributeValues(objBusinessRule, objExample, strExtendedCollectionName, strAttributeDirection, strRequiredStereotype, ByRef CheckResult)
+   &#39; If the example has a collection with the given name, loop over the example attribute values.
+   Dim colExampleAttributeValues : Set colExampleAttributeValues = objExample.GetExtendedCollection(strExtendedCollectionName)
+   If Not(colExampleAttributeValues Is Nothing) Then
+   
+      Dim colRequiredAttributes : Set colRequiredAttributes = CreateObject(&quot;System.Collections.ArrayList&quot;)
+      &#39; Loop over all attributes of the business rule and add the required attribute to the list.
+      Dim objBrAttribute
+      For Each objBrAttribute In objBusinessRule.Attributes
+         &#39; If the attribute is of the required stereotype, add it to the list.
+         If objBrAttribute.Stereotype = strRequiredStereotype Then
+            colRequiredAttributes.Add objBrAttribute
+         End If
+      Next   
+   
+      Dim objExampleAttributeValue
+      For Each objExampleAttributeValue In colExampleAttributeValues
+         &#39; Check whether the specified input attribute is part of this entity.
+         Dim objExampleAttribute : Set objExampleAttribute = objExampleAttributeValue.GetExtendedAttribute(&quot;mdde_Attribute&quot;)
+         &#39; If the attribute is Nothing, return an error.
+         If objExampleAttribute Is Nothing Then
+            WriteError(&quot;The business rule &#39;&quot; &amp; objBusinessRule.DisplayName &amp; &quot;&#39; example &#39;&quot; &amp; objExample.DisplayName &amp; &quot;&#39; has an &quot; &amp; strAttributeDirection &amp; &quot; &#39;&quot; &amp; objExampleAttributeValue.DisplayName &amp; &quot;&#39; without an attribute reference!&quot;)
+            CheckResult = False
+         &#39; If the attribute is not part of the parent entity, return an error.
+         ElseIf Not(colRequiredAttributes.Contains(objExampleAttribute)) Then
+            WriteError(&quot;The business rule &#39;&quot; &amp; objBusinessRule.DisplayName &amp; &quot;&#39; example &#39;&quot; &amp; objExample.DisplayName &amp; &quot;&#39; references an &quot; &amp; strAttributeDirection &amp; &quot; attribute &#39;&quot; &amp; objExampleAttribute.DisplayName &amp; &quot;&#39; which is not part of the rule, has the wrong stereotype or is already specified before!&quot;)
+            CheckResult = False
+         &#39; If we reach this point the attribute is ok.
+         Else
+            &#39; Remove the attribute from the required list, since it is found.
+            colRequiredAttributes.Remove(objExampleAttribute)
+         End If
+      Next
+      
+      &#39; If there are still items in the required attribute list, the check should fail.
+      If colRequiredAttributes.Count &gt; 0 Then
+         WriteError(&quot;The business rule &#39;&quot; &amp; objBusinessRule.DisplayName &amp; &quot;&#39; example &#39;&quot; &amp; objExample.DisplayName &amp; &quot;&#39; is missing example value for &quot; &amp; strAttributeDirection &amp; &quot; attribute(s) &quot; &amp; join(colRequiredAttributes.ToArray(), &quot;, &quot;) &amp; &quot;!&quot;)
+         CheckResult = False
+      End If
+   End If
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

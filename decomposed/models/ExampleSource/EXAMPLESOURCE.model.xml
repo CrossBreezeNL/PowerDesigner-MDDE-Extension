@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model Id="D7F41E17-25EB-4620-B6EA-96957CAE246A" Code="EXAMPLESOURCE" Name="ExampleSource">
+  <Entities>
+    <Entity Id="60EC35C7-6DB5-44B9-92BD-A08887CA9005" Code="SalesOrder" Name="SalesOrder">
+      <Attributes>
+        <Attribute Id="3FA0D49D-8A10-4769-B683-85960E9F353F" Code="ID" Name="Id" Ordinal="1" DataType="I" Primary="TRUE" Mandatory="TRUE"></Attribute>
+        <Attribute Id="FE17C4F0-5C1E-4E50-A96E-D045E816ACAF" Code="ORDERDATE" Name="OrderDate" Ordinal="2" DataType="DT"></Attribute>
+        <Attribute Id="485471FA-F386-4401-BDE8-7447D453FEBF" Code="ORDERNUMBER" Name="OrderNumber" Ordinal="3" DataType="VA" Length="50"></Attribute>
+        <Attribute Id="EC1D061C-A80C-45FC-9210-404133B3EAC3" Code="CUSTOMERID" Name="CustomerId" Ordinal="4" DataType="I" Foreign="TRUE"></Attribute>
+        <Attribute Id="493F6607-B532-4EA0-AD55-9161F8A30CAC" Code="TOTALAMOUNT" Name="TotalAmount" Ordinal="5" DataType="DC" Precision="12" Scale="2"></Attribute>
+      </Attributes>
+      <Identifiers>
+        <Identifier PrimaryIdentifier="TRUE">
+          <Attributes>
+            <Attribute Id="3FA0D49D-8A10-4769-B683-85960E9F353F" Code="ID" Name="Id" Ordinal="1" />
+          </Attributes></Identifier>
+      </Identifiers>
+      <Relationships>
+        <Relationship Id="8520EA3D-9D01-4834-98B4-544FA3B7BBBD" Code="Order_Customer" Name="Order_Customer" ParentEntity="Customer" ParentEntityId="1352D98F-2A9C-42AA-AE82-2E68BA514F02" ChildEntity="SalesOrder" ChildEntityId="60EC35C7-6DB5-44B9-92BD-A08887CA9005">
+          <RelationshipJoins>
+            <RelationshipJoin ParentEntity="Customer" ParentAttribute="ID" ChildEntity="SalesOrder" ChildAttribute="CUSTOMERID" />
+          </RelationshipJoins>
+        </Relationship>
+      </Relationships>
+    </Entity>
+    <Entity Id="1352D98F-2A9C-42AA-AE82-2E68BA514F02" Code="Customer" Name="Customer">
+      <Attributes>
+        <Attribute Id="071EB08F-6D7D-428D-BBB0-14B5B9D81201" Code="ID" Name="Id" Ordinal="1" DataType="I" Primary="TRUE" Mandatory="TRUE"></Attribute>
+        <Attribute Id="E15BA61C-22E8-480F-8854-32B66E2001C0" Code="FIRSTNAME" Name="FirstName" Ordinal="2" DataType="VA" Length="50"></Attribute>
+        <Attribute Id="B47EB33C-682A-4199-845A-C2B47D086F72" Code="LASTNAME" Name="LastName" Ordinal="3" DataType="VA" Length="100"></Attribute>
+        <Attribute Id="99AAF098-A167-4D36-90B7-54A482421D21" Code="CITY" Name="City" Ordinal="4" DataType="VA" Length="50"></Attribute>
+        <Attribute Id="95EA4A3A-B2E7-4F50-AEA3-8209C2AC0C46" Code="COUNTRY" Name="Country" Ordinal="5" DataType="VA" Length="3"></Attribute>
+        <Attribute Id="117618E5-A065-4822-86E2-61CAA2E89AF9" Code="PHONE" Name="Phone" Ordinal="6" DataType="VA" Length="20"></Attribute>
+      </Attributes>
+      <Identifiers>
+        <Identifier PrimaryIdentifier="TRUE">
+          <Attributes>
+            <Attribute Id="071EB08F-6D7D-428D-BBB0-14B5B9D81201" Code="ID" Name="Id" Ordinal="1" />
+          </Attributes></Identifier>
+      </Identifiers>
+      <Relationships>
+        <Relationship Id="8520EA3D-9D01-4834-98B4-544FA3B7BBBD" Code="Order_Customer" Name="Order_Customer" ParentEntity="Customer" ParentEntityId="1352D98F-2A9C-42AA-AE82-2E68BA514F02" ChildEntity="SalesOrder" ChildEntityId="60EC35C7-6DB5-44B9-92BD-A08887CA9005">
+          <RelationshipJoins>
+            <RelationshipJoin ParentEntity="Customer" ParentAttribute="ID" ChildEntity="SalesOrder" ChildAttribute="CUSTOMERID" />
+          </RelationshipJoins>
+        </Relationship>
+      </Relationships>
+    </Entity>
+  </Entities>
+</Model>

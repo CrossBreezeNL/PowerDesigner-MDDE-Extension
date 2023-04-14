@@ -1,0 +1,16 @@
+<o:StereotypeTargetItem Id="836A8062-D3DA-4233-B9AF-6E2ABAA63217">
+<a:ObjectID>836A8062-D3DA-4233-B9AF-6E2ABAA63217</a:ObjectID>
+<a:Name>mdde_EntityExampleData</a:Name>
+<a:CreationDate>1661255615</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Entity example data (MDDE)</a:Label>
+<c:Categories>
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Extended_Collections/Extended_Collections.xml" />
+<xi:include href="Extended_Compositions/Extended_Compositions.xml" />
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Templates/Templates.xml" />
+<xi:include href="Methods/Methods.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

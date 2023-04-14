@@ -1,0 +1,10 @@
+<o:MetaClassTargetItem Id="927C7DEF-CBC5-4A7A-B61E-08F094F4808B">
+<a:ObjectID>927C7DEF-CBC5-4A7A-B61E-08F094F4808B</a:ObjectID>
+<a:Name>Identifier</a:Name>
+<a:CreationDate>1651738252</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>

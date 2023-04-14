@@ -1,0 +1,18 @@
+<o:FormTargetItem Id="1D98A288-75D1-4427-9883-2788365F9A6D">
+<a:ObjectID>1D98A288-75D1-4427-9883-2788365F9A6D</a:ObjectID>
+<a:Name>mdde_BusinessRule_Examples</a:Name>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;HorizontalLayout Name=&quot;HorizontalLayout_DefaultExample&quot; &gt;
+      &lt;ExtendedAttribute Attribute=&quot;mdde_BusinessRule_DefaultExample&quot; Caption=&quot;Example&quot; AttributeID=&quot;{4DD6EFB5-B8C3-4C28-BE88-6D0709895850}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+      &lt;CustomMethod Method=&quot;mdde_BusinessRule_AddExample&quot; Name=&quot;mdde_BusinessRule_AddExample&quot; Caption=&quot;Add example&quot; HorizontalResize=&quot;No&quot; /&gt;
+   &lt;/HorizontalLayout&gt;
+   &lt;GroupBox Name=&quot;GroupBox_DefaultExampleDetails&quot; Caption=&quot;Current example&quot; ControlAsLabel=&quot;No&quot; &gt;
+      &lt;Include Name=&quot;mdde_Example_ExampleDetails&quot; Context=&quot;mdde_BusinessRule_DefaultExample&quot; Form=&quot;mdde_Example_Details&quot; SizeInChars=&quot;3&quot; LineNumber=&quot;1&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; ReadOnly=&quot;No&quot; /&gt;
+   &lt;/GroupBox&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1657013919</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Examples (MDDE)</a:Label>
+</o:FormTargetItem>

@@ -1,0 +1,29 @@
+<o:MethodTargetItem Id="2C13A30F-B4D5-4211-8083-F38A7DEFFDC9">
+<a:ObjectID>2C13A30F-B4D5-4211-8083-F38A7DEFFDC9</a:ObjectID>
+<a:Name>mdde_Mapping_EditDefaultExample</a:Name>
+<a:CreationDate>1661254289</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+
+   &#39; Create a new selection object for the source objects.
+   Dim objExampleSelection : Set objExampleSelection = ActiveModel.CreateSelection
+   
+   &#39; Add all source objects of the current mapping to the selection.
+   Dim objExample
+   For Each objExample In obj.GetExtendedCollection(&quot;mdde_Mapping_Examples&quot;)
+      objExampleSelection.Objects.Add objExample
+   Next
+   
+   &#39; Show the object picker and fetch the selected source object.
+   Dim selExampleObj : Set selExampleObj = objExampleSelection.ShowObjectPicker(&quot;&quot;, &quot;&quot;, &quot;Select an example&quot;, True, True, False)
+   &#39; Cleanup the selection object.
+   objExampleSelection.Delete()
+   
+   &#39; If a source object was selected, go on.
+   If Not(selExampleObj Is Nothing) Then
+      obj.SetExtendedAttribute &quot;mdde_Mapping_DefaultExample&quot;, selExampleObj
+   End If
+
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

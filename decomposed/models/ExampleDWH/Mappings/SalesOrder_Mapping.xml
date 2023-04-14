@@ -1,0 +1,50 @@
+<o:DefaultObjectMapping Id="810808D7-5A8C-494A-9265-911D49E3282B">
+<a:ObjectID>810808D7-5A8C-494A-9265-911D49E3282B</a:ObjectID>
+<a:Name>SalesOrder_Mapping</a:Name>
+<a:Code>SalesOrder_Mapping</a:Code>
+<a:CreationDate>1680618864</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="BC2A9D59-31CC-4665-BDD7-C2F6D2D3ABE9">
+<a:ObjectID>BC2A9D59-31CC-4665-BDD7-C2F6D2D3ABE9</a:ObjectID>
+<a:Name>Source objects (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObjects</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680618864</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="0F2EE1DB-8E68-424B-BBF5-0342A9EFE195">
+<a:ObjectID>0F2EE1DB-8E68-424B-BBF5-0342A9EFE195</a:ObjectID>
+<a:Name>Calculate_Order_Age</a:Name>
+<a:Code>Calculate_Order_Age</a:Code>
+<a:CreationDate>1680618864</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_SourceObject</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,62={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,5=Apply
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="EA539496-2F3C-460C-9CDC-90C4ADC3ACB2">
+<a:ObjectID>EA539496-2F3C-460C-9CDC-90C4ADC3ACB2</a:ObjectID>
+<a:Name>mdde_JoinedObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinedObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680618864</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:Entity Ref="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+<c:Classifier>
+<o:Entity Ref="2CBE61AD-180C-485A-8F14-2F2CEA9C225F"/>
+</c:Classifier>
+<c:SourceClassifiers>
+<o:Entity Ref="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0"/>
+</c:SourceClassifiers>
+<c:DataSource>
+<o:DefaultDataSource Ref="2682665A-5174-4E1B-9085-251EA01809FA"/>
+</c:DataSource>
+</o:DefaultObjectMapping>

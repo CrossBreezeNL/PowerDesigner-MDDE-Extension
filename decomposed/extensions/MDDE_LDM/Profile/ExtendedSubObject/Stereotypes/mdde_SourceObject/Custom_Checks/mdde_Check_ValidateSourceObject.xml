@@ -1,0 +1,32 @@
+<o:CustomCheckTargetItem Id="49802D2D-925D-4F82-8855-854FD33B7F7A">
+<a:ObjectID>49802D2D-925D-4F82-8855-854FD33B7F7A</a:ObjectID>
+<a:Name>mdde_Check_ValidateSourceObject</a:Name>
+<a:CreationDate>1656598365</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>A custom check to make sure the Validate function is called to update the source object Name and Code before exporting the model.
+
+This is needed so when a joined object it&#39;s Name or Code is changed the source object Name and Code is also update (without opening the mapping).</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that all source objects are validated before an export.</a:HelpMessage>
+<a:OutputMessage>An error occured for the following source object while triggering the validate event</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   Dim boolValidateSucceeded, strEventMessage
+   &#39; Trigger the validate event.
+   boolValidateSucceeded = obj.TriggerValidateEvent(strEventMessage)
+   &#39; If the validate failed, write the error.
+   If (boolValidateSucceeded = False) Then
+      WriteError(&quot;Error while triggering validate event on source object &#39;&quot; &amp; obj.Code &amp; &quot;&#39;: &#39;&quot; &amp; strEventMessage &amp; &quot;&#39;&quot;)
+   End If
+   &#39; Report the check output.
+   %Check% = boolValidateSucceeded
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

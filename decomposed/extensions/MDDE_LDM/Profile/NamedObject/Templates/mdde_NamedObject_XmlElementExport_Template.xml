@@ -1,0 +1,18 @@
+<o:TemplateTargetItem Id="4F397B8D-E026-4659-9A1A-2967B19E566E">
+<a:ObjectID>4F397B8D-E026-4659-9A1A-2967B19E566E</a:ObjectID>
+<a:Name>mdde_NamedObject_XmlElementExport_Template</a:Name>
+<a:TemplateTargetItem.Value>.comment Disabled the Comment and Description export for now, since it makes the export larger and we don&#39;t need these.
+.comment .if (%Comment?%)
+.comment .if (%Comment%)
+.comment &lt;Comment&gt;%.X:Comment%&lt;/Comment&gt;
+.comment .endif
+.comment .endif
+.comment .if (%Description?%)
+.comment .if (%Description%)
+.comment &lt;Description&gt;%.X:mdde_Description_Rtf2Ascii%&lt;/Description&gt;
+.comment .endif
+.comment .endif</a:TemplateTargetItem.Value>
+<a:CreationDate>1651675822</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

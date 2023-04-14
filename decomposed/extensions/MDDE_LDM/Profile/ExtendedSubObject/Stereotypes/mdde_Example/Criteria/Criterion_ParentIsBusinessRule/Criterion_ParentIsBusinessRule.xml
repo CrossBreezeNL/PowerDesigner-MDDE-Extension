@@ -1,0 +1,11 @@
+<o:CriterionTargetItem Id="739FB23B-4DFA-4244-8CE3-0EDF3FA4853A">
+<a:ObjectID>739FB23B-4DFA-4244-8CE3-0EDF3FA4853A</a:ObjectID>
+<a:Name>Criterion_ParentIsBusinessRule</a:Name>
+<a:CriterionTargetItem.Value>%ParentObject.mdde_Entity_IsBusinessRule% == &quot;True&quot;</a:CriterionTargetItem.Value>
+<a:CreationDate>1657013919</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Criteria/Criteria.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

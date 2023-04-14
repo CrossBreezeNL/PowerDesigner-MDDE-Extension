@@ -1,0 +1,14 @@
+<o:FormTargetItem Id="4FD40FBD-35A7-40D7-9BF7-C4197037250D">
+<a:ObjectID>4FD40FBD-35A7-40D7-9BF7-C4197037250D</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StandardAttribute Attribute=&quot;ParentObject&quot; Caption=&quot;Parent&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+   &lt;Include Name=&quot;mdde_Example_Details&quot; Form=&quot;mdde_Example_Details&quot; SizeInChars=&quot;3&quot; LineNumber=&quot;1&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; ReadOnly=&quot;No&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1657028746</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>

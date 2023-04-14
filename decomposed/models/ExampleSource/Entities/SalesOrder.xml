@@ -1,0 +1,92 @@
+<o:Entity Id="60EC35C7-6DB5-44B9-92BD-A08887CA9005">
+<a:ObjectID>60EC35C7-6DB5-44B9-92BD-A08887CA9005</a:ObjectID>
+<a:Name>SalesOrder</a:Name>
+<a:Code>SalesOrder</a:Code>
+<a:CreationDate>1680508855</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {D5ADD5CF-510D-4F42-8CE0-9F850A78FB41}
+DAT 1680508855</a:History>
+<c:Identifiers>
+<o:Identifier Id="6C2E6CC8-BBAF-4C6F-9CFC-24A684D313BB">
+<a:ObjectID>6C2E6CC8-BBAF-4C6F-9CFC-24A684D313BB</a:ObjectID>
+<a:Name>PK_Order</a:Name>
+<a:Code>PK_ORDER</a:Code>
+<a:CreationDate>1680508855</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {9B4DC8F0-C764-4C69-BF51-0963FF30AE97}
+DAT 1680508855</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="3FA0D49D-8A10-4769-B683-85960E9F353F"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="6C2E6CC8-BBAF-4C6F-9CFC-24A684D313BB"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="3FA0D49D-8A10-4769-B683-85960E9F353F">
+<a:ObjectID>3FA0D49D-8A10-4769-B683-85960E9F353F</a:ObjectID>
+<a:Name>Id</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1680508855</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {8017615D-E34E-4738-950F-8FDDA0D33F1E}
+DAT 1680508903
+ORG {49257E04-0334-4850-9F6B-423B4921A7A6}
+DAT 1680508855</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="FE17C4F0-5C1E-4E50-A96E-D045E816ACAF">
+<a:ObjectID>FE17C4F0-5C1E-4E50-A96E-D045E816ACAF</a:ObjectID>
+<a:Name>OrderDate</a:Name>
+<a:Code>ORDERDATE</a:Code>
+<a:CreationDate>1680508855</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {2F004CE3-801C-4543-AF09-6EA7641BA2A5}
+DAT 1680508903
+ORG {56A92EE6-55C9-4243-A0E1-B24978B86E4D}
+DAT 1680508855</a:History>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="485471FA-F386-4401-BDE8-7447D453FEBF">
+<a:ObjectID>485471FA-F386-4401-BDE8-7447D453FEBF</a:ObjectID>
+<a:Name>OrderNumber</a:Name>
+<a:Code>ORDERNUMBER</a:Code>
+<a:CreationDate>1680508855</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {90EFA81B-229D-49BD-ACC7-E8FB03D1B7CD}
+DAT 1680508903
+ORG {A1249EC3-2A7A-4FBB-9FC4-DEC00F3D0598}
+DAT 1680508855</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="EC1D061C-A80C-45FC-9210-404133B3EAC3">
+<a:ObjectID>EC1D061C-A80C-45FC-9210-404133B3EAC3</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1680508855</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {5A733804-BE24-4B45-9B61-D96453AAE367}
+DAT 1680508903
+ORG {53C34CE9-C822-4DB3-B76B-821D7F9BB7EB}
+DAT 1680508855</a:History>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="493F6607-B532-4EA0-AD55-9161F8A30CAC">
+<a:ObjectID>493F6607-B532-4EA0-AD55-9161F8A30CAC</a:ObjectID>
+<a:Name>TotalAmount</a:Name>
+<a:Code>TOTALAMOUNT</a:Code>
+<a:CreationDate>1680508855</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {96698163-CD6C-4637-B0FD-3D1C464D0CEE}
+DAT 1680508903
+ORG {E5A91AEB-BE4A-45AF-AFCA-BC6E3F199BAC}
+DAT 1680508855</a:History>
+<a:DataType>DC12,2</a:DataType>
+<a:Length>12</a:Length>
+<a:Precision>2</a:Precision>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

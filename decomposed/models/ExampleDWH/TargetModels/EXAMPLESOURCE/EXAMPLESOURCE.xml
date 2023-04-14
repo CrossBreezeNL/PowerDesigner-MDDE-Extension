@@ -1,0 +1,39 @@
+<o:TargetModel Id="57B74310-C6BE-49AE-A01B-963925649357">
+<a:ObjectID>57B74310-C6BE-49AE-A01B-963925649357</a:ObjectID>
+<a:Name>ExampleSource</a:Name>
+<a:Code>EXAMPLESOURCE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:TargetModelURL>file:///%MDDE_EXAMPLE_MODELS%/models/ExampleSource.ldm</a:TargetModelURL>
+<a:TargetModelID>D7F41E17-25EB-4620-B6EA-96957CAE246A</a:TargetModelID>
+<a:TargetModelClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="AAB39AC0-8B7A-4424-9F9D-2862C68E941B"/>
+<o:Shortcut Ref="58505E7D-8D8A-43D4-91D8-0C5D0B9022BA"/>
+<o:Shortcut Ref="F1541B92-DB67-4B30-8EF1-30888105CD49"/>
+<o:Shortcut Ref="16CA98D6-6762-4DDE-B801-FED3E0161E48"/>
+<o:Shortcut Ref="871AB45F-ADD2-454E-AFDD-6D4331ABEEBF"/>
+</c:SessionShortcuts>
+<c:SessionReplications>
+<o:Replication Ref="7BC2450A-E429-40C2-B459-49F00D74C766"/>
+<o:SubReplication Ref="B3238EE1-EC39-4BAF-876F-5A8DE22A7E4F"/>
+<o:SubReplication Ref="99B5B7BB-436C-4EE3-A464-F8D3B9025BD8"/>
+<o:SubReplication Ref="1FB2EA31-0546-43DE-9209-0DB2492D8DE8"/>
+<o:SubReplication Ref="661C159C-A098-41DC-8435-47A433A1156F"/>
+<o:SubReplication Ref="DA95A914-B5E0-4796-A778-9A5205C5B646"/>
+<o:SubReplication Ref="0A90A221-D1F5-44A4-87C8-5F906DD5B55F"/>
+<o:SubReplication Ref="9C026F36-EFF1-4D98-9F17-D67AD160A53F"/>
+<o:SubReplication Ref="3DB59E91-A04B-4CEA-AFD0-5E85E8D6AADA"/>
+<o:SubReplication Ref="A7FDCE2D-A292-4E0D-8C16-0F5D8274D4C9"/>
+<o:SubReplication Ref="9E8140BB-9724-4ED4-A5C8-2B9E219C289F"/>
+<o:SubReplication Ref="38348DF0-96CC-43D6-84B4-55AA1CB8B65F"/>
+<o:SubReplication Ref="F3E14A2D-CAB8-45BB-B2BB-C0D3B4B5A5BF"/>
+<o:SubReplication Ref="7D13C262-8BD5-4439-A23F-7EA836779CAA"/>
+<o:SubReplication Ref="BC501E7A-1F4B-44E8-8EB3-900B0D12A3CA"/>
+<o:SubReplication Ref="8C96A825-FEFC-4926-9C24-B59ED61A3EDF"/>
+<o:SubReplication Ref="D1A67288-025B-44C1-A0DC-FEF58E954559"/>
+</c:SessionReplications>
+<c:FullShortcutModel>
+<xi:include href="FullShortcutModel/EXAMPLESOURCE/EXAMPLESOURCE.xml" />
+</c:FullShortcutModel>
+</o:TargetModel>

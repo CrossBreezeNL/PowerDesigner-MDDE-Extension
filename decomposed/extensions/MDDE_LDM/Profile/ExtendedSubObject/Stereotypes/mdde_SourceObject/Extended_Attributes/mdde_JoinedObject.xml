@@ -1,0 +1,13 @@
+<o:ExtendedAttributeTargetItem Id="D60BC69B-0289-460F-A8E9-6CFBB6A9A7E8">
+<a:ObjectID>D60BC69B-0289-460F-A8E9-6CFBB6A9A7E8</a:ObjectID>
+<a:Name>mdde_JoinedObject</a:Name>
+<a:CreationDate>1650360751</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:DestinationClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:DestinationClassID>
+<a:Label>Joined object (MDDE)</a:Label>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="B4B1685A-3EE9-4287-8F85-95CEEA265BE9"/>
+</c:ExtendedCollection>
+</o:ExtendedAttributeTargetItem>

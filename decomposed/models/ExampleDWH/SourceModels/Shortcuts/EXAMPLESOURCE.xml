@@ -1,0 +1,11 @@
+<o:Shortcut Id="F1541B92-DB67-4B30-8EF1-30888105CD49">
+<a:ObjectID>F1541B92-DB67-4B30-8EF1-30888105CD49</a:ObjectID>
+<a:Name>ExampleSource</a:Name>
+<a:Code>EXAMPLESOURCE</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>D7F41E17-25EB-4620-B6EA-96957CAE246A</a:TargetID>
+<a:TargetClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:TargetClassID>
+<c:FullShortcutReplica>
+<o:Replication Ref="7BC2450A-E429-40C2-B459-49F00D74C766"/>
+</c:FullShortcutReplica>
+</o:Shortcut>

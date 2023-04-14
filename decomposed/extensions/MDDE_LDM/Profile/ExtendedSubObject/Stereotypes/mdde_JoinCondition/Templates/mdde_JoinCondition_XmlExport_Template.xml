@@ -1,0 +1,18 @@
+<o:TemplateTargetItem Id="8CABA3C5-A7EC-4F3C-AF2B-6F2D181068E6">
+<a:ObjectID>8CABA3C5-A7EC-4F3C-AF2B-6F2D181068E6</a:ObjectID>
+<a:Name>mdde_JoinCondition_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;JoinCondition
+.if (%mdde_JoinCondition_ChildAttribute_XmlExport_Template%)
+ ChildAttribute=&quot;%mdde_JoinCondition_ChildAttribute_XmlExport_Template%&quot;
+.endif
+.if (%mdde_JoinOperator%)
+ JoinOperator=&quot;%mdde_JoinOperator%&quot;
+.endif
+.if (%mdde_JoinCondition_ParentAttribute_XmlExport_Template%)
+ ParentAttribute=&quot;%mdde_JoinCondition_ParentAttribute_XmlExport_Template%&quot; ParentIsLiteralValue=&quot;%mdde_ParentIsLiteralValue%&quot;
+.endif
+ /&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1651762677</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

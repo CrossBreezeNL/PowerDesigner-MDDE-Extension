@@ -1,0 +1,20 @@
+<o:StereotypeTargetItem Id="E7A6EB32-19C0-4076-AA95-AF544F02CACE">
+<a:ObjectID>E7A6EB32-19C0-4076-AA95-AF544F02CACE</a:ObjectID>
+<a:Name>mdde_ExampleAttributeValue</a:Name>
+<a:CreationDate>1657013652</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>This extended sub object represents an example attribute.
+
+The attribute Name and Code are copied from the attribute the value is for.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Example attribute value</a:Label>
+<c:Categories>
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Extended_Collections/Extended_Collections.xml" />
+<xi:include href="Stereotypes/Stereotypes.xml" />
+<xi:include href="Methods/Methods.xml" />
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Event_Handlers/Event_Handlers.xml" />
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="1911069A-0289-4A14-824D-073291509F05">
+<a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
+<a:ObjectID>1911069A-0289-4A14-824D-073291509F05</a:ObjectID>
+<a:Name>Stereotypes</a:Name>
+<a:CreationDate>1651576644</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_BusinessRule/mdde_BusinessRule.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

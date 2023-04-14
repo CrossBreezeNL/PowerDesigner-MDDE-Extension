@@ -1,0 +1,15 @@
+<o:EventHandlerTargetItem Id="E276445E-072E-4A63-A721-0C922E4457C6">
+<a:ObjectID>E276445E-072E-4A63-A721-0C922E4457C6</a:ObjectID>
+<a:Name>OnDelete</a:Name>
+<a:CreationDate>1650382776</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HandlerScript>Function %OnDelete%(obj)
+   WriteDebug &quot;[mdde_SourceObject.OnDelete] &quot; &amp; obj.UOL
+   
+   &#39; When an source object is removed, sync the source objects.
+   SyncMappingSource obj.ParentObject
+   
+   %OnDelete% = True
+End Function</a:HandlerScript>
+</o:EventHandlerTargetItem>

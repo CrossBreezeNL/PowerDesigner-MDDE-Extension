@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PowerDeComposerConfig>
+	<Decompose fileRemovalStrategy="files">
+	
+		<!-- Specify a XPath to execute on both sides (composed and decomposed) to decide whether the decompose. -->
+		<!-- The value of the XPath must be found in the root XML document of the decomposed model, so it can be in a decompose part of the model. -->
+		<!-- If the value doesn't exist on both sides we do nothing. -->
+		<!-- If the value exists on one side but not on the other side, we decompose. -->
+		<!-- If the value exists on both sides, we decompose if the value is different. -->
+		<ChangeDetection xpath="/processing-instruction('PowerDesigner')/@LastModificationDate" />
+
+        <!-- Specify the nodes to remove before decomposing. -->
+        <NodeRemovals>
+            <!-- Remove the object count on the PowerDesigner processing instruction. -->
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@Objects" />
+            <!-- Remove the symbols count on the PowerDesigner processing instruction. -->
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@Symbols" />
+            <!-- Remove the symbols count on the PowerDesigner processing instruction. -->
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@LastModificationDate" />
+
+            <!-- Remove the PD Repository information. -->
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@RepositoryId" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractionId" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractionBranch" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractionVersion" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractionDate" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractEndDate" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@OriginalExtractionBranch" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@OriginalExtractionDate" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@OriginalExtractionId" />
+            <NodeRemoval xpath="//ExtendedModelDefinition/RepositoryInformation" />
+
+            <!-- Remove library information. -->
+            <NodeRemoval xpath="//ExtendedModelDefinition/LibraryID" />
+
+            <!-- Remove the Modifier & ModificationDate from all elements (including Shortcut elements). -->
+            <!-- This is needed for less unneeded conflicts, since these are updated in to many elements when something is changed. -->
+            <NodeRemoval xpath="//Modifier" />
+            <NodeRemoval xpath="//ModificationDate" />            
+            
+        </NodeRemovals>
+        
+		<!-- Configuration on how to replace identifiers. -->
+		<IdentifierReplacements>
+            <IdentifierReplacement identifierNodeXPath="//*/@Id[../ObjectID]" replacementValueXPath="../ObjectID" referencingNodeXPath="//*/@Ref" />
+		</IdentifierReplacements>
+
+        <!-- Specify which elements should be decomposed. -->
+        <!-- The DecomposableElement is implicitly a AllConditions group. -->
+        <DecomposableElement>
+            <OneOffConditions>
+                <!-- Decompose all elements with an ObjectID and Code which are inside a collection (except for the Children collection and collections inside the Entities objects). -->
+                <AllConditions>
+                    <!-- The element must have a ObjectID element as childs. -->
+                    <ElementCondition xpath="./ObjectID" />
+                    <!-- Use the parent axis on the current node to set a predicate on the parent. -->
+                    <!-- Decompose all elements where the parent name starts with 'c:' (these are the collections in PowerDesigner). -->
+                    <ElementCondition xpath="parent::node()[starts-with(name(), 'c:')]" />
+                    <!-- Don't decompose the o:ExtendedModelDefinition element. -->
+                    <ElementCondition xpath="name() != 'o:ExtendedModelDefinition'" />
+                </AllConditions>
+
+                <!-- Decompose the a:CheckGlobalScript. -->
+                <ElementCondition xpath="name() = 'a:CheckGlobalScript'" />
+            </OneOffConditions>
+			 
+            <TargetFolderNames>
+                <!-- If the decomposable element has a Name element then don't decompose it in a folder with the collection name (like Categories). -->
+                <!-- The '.' means resolving the base folder with a ., which is the current folder. -->
+                <TargetFolderName xpath="'.'" condition="string-length(./Name) > 0" overrideParent="true" />
+            </TargetFolderNames>
+
+            <TargetFileNames>
+            	<!-- For items with a Code element and it is unique for the given TargetFolder, we use the Code. -->
+            	<TargetFileName xpath="translate(normalize-space(./Name), ' ', '_')" condition="string-length(./Name) > 0" />
+            	<!-- For items with a Code and ObjectID element and it is NOT unique for the given TargetFolder, we use the Code and ObjectID. -->
+            	<TargetFileName xpath="concat(translate(normalize-space(./Name), ' ', '_'), '_', ./ObjectID)" condition="string-length(./Name) > 0 and string-length(./ObjectID) > 0" />
+            	<!-- For items without a Code element, but with an ObjectID we use the ObjectID. -->
+            	<TargetFileName xpath="./ObjectID" condition="string-length(./ObjectID) > 0" />              
+            	<!-- For items which don't have a Code and ObjectID element, we use the name of the element. -->
+            	<TargetFileName xpath="translate(name(), ':', '_')" />
+            </TargetFileNames>
+
+            <!-- Here we specify which information to include as an attribute on the xi:include tag. -->
+			<IncludeAttributes />
+
+		</DecomposableElement>
+
+	</Decompose>
+</PowerDeComposerConfig>

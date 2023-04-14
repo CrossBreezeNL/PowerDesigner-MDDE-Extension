@@ -1,0 +1,13 @@
+<o:TypedCategoryTargetItem Id="A88A6AFE-935E-4A25-8748-75064DB58442">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>A88A6AFE-935E-4A25-8748-75064DB58442</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1651739964</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_BaseClassifierMapping_XmlExport_Template.xml" />
+<xi:include href="mdde_Mapping_DefaultExampleList.xml" />
+<xi:include href="mdde_IsMapping.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

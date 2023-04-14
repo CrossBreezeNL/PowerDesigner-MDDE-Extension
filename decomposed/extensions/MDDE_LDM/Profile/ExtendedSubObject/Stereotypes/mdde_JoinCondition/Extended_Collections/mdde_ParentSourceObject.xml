@@ -1,0 +1,13 @@
+<o:ExtendedCollectionTargetItem Id="A3C745A6-6100-46DD-8240-BF48F5B17227">
+<a:ObjectID>A3C745A6-6100-46DD-8240-BF48F5B17227</a:ObjectID>
+<a:Name>mdde_ParentSourceObject</a:Name>
+<a:CreationDate>1650361231</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_SourceObject</a:DestinationStereotype>
+<a:DefaultColumnFilter>NAME 80 CODE 80</a:DefaultColumnFilter>
+<c:DestinationStereotypeObject>
+<o:StereotypeTargetItem Ref="BA25C1AC-4885-46E1-B0D1-7C737D2CECCE"/>
+</c:DestinationStereotypeObject>
+</o:ExtendedCollectionTargetItem>

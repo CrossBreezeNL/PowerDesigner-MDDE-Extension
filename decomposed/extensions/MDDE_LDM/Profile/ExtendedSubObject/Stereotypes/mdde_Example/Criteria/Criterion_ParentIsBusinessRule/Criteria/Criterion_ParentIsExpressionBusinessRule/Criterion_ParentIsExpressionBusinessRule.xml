@@ -1,0 +1,18 @@
+<o:CriterionTargetItem Id="39B72C95-9AAD-436D-98E6-164B607A36F8">
+<a:ObjectID>39B72C95-9AAD-436D-98E6-164B607A36F8</a:ObjectID>
+<a:Name>Criterion_ParentIsExpressionBusinessRule</a:Name>
+<a:CriterionTargetItem.Value>%ParentObject.mdde_Entity_IsExpressionBusinessRule% == &quot;True&quot;</a:CriterionTargetItem.Value>
+<a:CreationDate>1657014114</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:ParentCriterion>
+<o:CriterionTargetItem Ref="739FB23B-4DFA-4244-8CE3-0EDF3FA4853A"/>
+</c:ParentCriterion>
+<c:Categories>
+<xi:include href="Extended_Compositions/Extended_Compositions.xml" />
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Criteria/Criteria.xml" />
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

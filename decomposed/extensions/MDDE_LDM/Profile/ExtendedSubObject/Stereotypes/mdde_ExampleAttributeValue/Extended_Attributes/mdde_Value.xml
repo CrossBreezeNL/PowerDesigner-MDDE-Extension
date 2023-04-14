@@ -1,0 +1,10 @@
+<o:ExtendedAttributeTargetItem Id="C1E04409-79C8-4E5A-A0F8-3877AEB28F39">
+<a:ObjectID>C1E04409-79C8-4E5A-A0F8-3877AEB28F39</a:ObjectID>
+<a:Name>mdde_Value</a:Name>
+<a:CreationDate>1657013652</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>The value for the attribute of the current test scenario</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
+<a:Label>Value (MDDE)</a:Label>
+</o:ExtendedAttributeTargetItem>

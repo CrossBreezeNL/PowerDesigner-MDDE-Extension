@@ -1,0 +1,37 @@
+<o:MethodTargetItem Id="5043FF47-2CA9-472E-8C98-2AD04315C5B1">
+<a:ObjectID>5043FF47-2CA9-472E-8C98-2AD04315C5B1</a:ObjectID>
+<a:Name>mdde_BusinessRule_AddExample</a:Name>
+<a:CreationDate>1657029012</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   WriteDebug &quot;[mdde_BusinessRule_AddExample] &quot; &amp; obj.UOL
+   
+   &#39; Create a new example.
+   Dim objNewExample : Set objNewExample = obj.GetExtendedCollection(&quot;mdde_BusinessRule_Examples&quot;).CreateNew()
+   &#39; Enable name to code.
+   objNewExample.SetNameToCode()
+   
+   &#39; Set the new example as the default example (so it&#39;s selected).
+   obj.SetExtendedAttribute &quot;mdde_BusinessRule_DefaultExample&quot;, objNewExample
+   
+    Dim objAttribute
+    For Each objAttribute In obj.Attributes
+       Dim objExampleCollection : Set objExampleCollection = Nothing
+       If objAttribute.HasStereotype(&quot;mdde_InputAttribute&quot;) Then
+          Set objExampleCollection = objNewExample.GetExtendedCollection(&quot;mdde_ExampleInput&quot;)
+       ElseIf objAttribute.HasStereotype(&quot;mdde_OutputAttribute&quot;) Then
+          Set objExampleCollection = objNewExample.GetExtendedCollection(&quot;mdde_ExpectedScalarOutput&quot;)
+       End If
+     
+       &#39; If the attribute target collection is found, create the example.
+       If Not(objExampleCollection Is Nothing) Then
+          Dim attributeExample : Set attributeExample = objExampleCollection.CreateNew()
+          attributeExample.Name = objAttribute.Name
+          attributeExample.Code = objAttribute.Code
+          attributeExample.SetExtendedAttribute &quot;mdde_Attribute&quot;, objAttribute
+       End If
+    Next
+   
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

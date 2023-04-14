@@ -1,0 +1,17 @@
+<o:FormTargetItem Id="0583FC72-26BE-4A24-8ABE-6E8575C003FF">
+<a:ObjectID>0583FC72-26BE-4A24-8ABE-6E8575C003FF</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_ExampleEntity&quot; Caption=&quot;Example entity:     &quot; AttributeID=&quot;{EF3B200B-7AAB-4385-9C19-55DFD097E54A}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+   &lt;HorizontalLayout Name=&quot;HorizontalLayout_ExampleRecords&quot; &gt;
+      &lt;StaticText Name=&quot;Label_ExampleRecords&quot; Caption=&quot;Example records:&quot; /&gt;
+      &lt;StandardCollection Collection=&quot;mdde_ExampleRecords&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+   &lt;/HorizontalLayout&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1661275416</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>

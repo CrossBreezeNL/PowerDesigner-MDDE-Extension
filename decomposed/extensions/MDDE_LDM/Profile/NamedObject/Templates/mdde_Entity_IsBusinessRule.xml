@@ -1,0 +1,9 @@
+<o:TemplateTargetItem Id="0EB46EE4-B80A-4C3A-9CD6-2A2A1ABA8D8F">
+<a:ObjectID>0EB46EE4-B80A-4C3A-9CD6-2A2A1ABA8D8F</a:ObjectID>
+<a:Name>mdde_Entity_IsBusinessRule</a:Name>
+<a:TemplateTargetItem.Value>False</a:TemplateTargetItem.Value>
+<a:CreationDate>1666187947</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>This template is overriden in the mdde_BusinessRule stereotype of the Entity metaclass with True.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

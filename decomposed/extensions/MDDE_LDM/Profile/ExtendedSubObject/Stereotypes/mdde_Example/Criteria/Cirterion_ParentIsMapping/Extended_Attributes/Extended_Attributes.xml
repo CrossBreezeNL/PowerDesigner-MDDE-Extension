@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="C677062F-920D-4916-8553-225E79F38397">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>C677062F-920D-4916-8553-225E79F38397</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1661254703</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_ExampleMapping.xml" />
+<xi:include href="mdde_ExampleEntity.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

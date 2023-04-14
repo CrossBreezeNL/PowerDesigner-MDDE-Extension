@@ -1,0 +1,41 @@
+<o:MethodTargetItem Id="4D852F7B-D579-4592-8BD2-AF7A0C6A12C3">
+<a:ObjectID>4D852F7B-D579-4592-8BD2-AF7A0C6A12C3</a:ObjectID>
+<a:Name>mdde_ParentSourceObjectAndAttributeEdit</a:Name>
+<a:CreationDate>1650362434</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>&#39; Create a selection object on all source objects, except the source object of the current condition.
+&#39; Show the object picker on the selection and store the selected one.
+Sub %Method%(obj)
+   Dim objSel : Set objSel = obj.Model.CreateSelection
+   
+   If Not(objSel Is Nothing) Then
+      Dim objJoin
+      For Each objJoin in obj.Parent.Parent.Parent.Parent.getExtendedCollection(&quot;mdde_SourceObjects&quot;)
+         &#39; Skip the current source object (so the parent of the current condition.
+         If (objJoin.ObjectID &lt;&gt; obj.Parent.Parent.ObjectID) Then
+            objSel.Objects.Add objJoin
+         End If
+      Next
+
+      &#39; Display the object picker on the selection
+      Dim objParentSourceObject : Set objParentSourceObject = objSel.ShowObjectPicker
+      &#39; Remove the selection.
+      objSel.Delete
+      
+      &#39; If a source object was choosen, show an object picker to choose an attribute of the joined object.
+      If Not (objParentSourceObject Is Nothing) Then
+         Dim objParentEntity : Set objParentEntity = objParentSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;)
+         Dim objParentAttribute : Set objParentAttribute = SelectOutputAttribute(objParentEntity)
+         &#39; If an attribute was selected, store the choosen parent source object and attribute.
+         If Not(objParentAttribute Is Nothing) Then
+            obj.SetExtendedAttribute &quot;mdde_ParentSourceObject&quot;, objParentSourceObject
+            obj.SetExtendedAttribute &quot;mdde_ParentAttribute&quot;, objParentAttribute
+            &#39; Empty the literal value, since there is a attribute reference now.
+            obj.SetExtendedAttribute &quot;mdde_ParentLiteralValue&quot;, Nothing
+         End If         
+      End If
+   End If
+   
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

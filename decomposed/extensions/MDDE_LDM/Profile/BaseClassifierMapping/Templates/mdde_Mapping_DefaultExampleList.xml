@@ -1,0 +1,8 @@
+<o:TemplateTargetItem Id="6C3C4D3C-063D-48E0-B5BE-BB3285CFF229">
+<a:ObjectID>6C3C4D3C-063D-48E0-B5BE-BB3285CFF229</a:ObjectID>
+<a:Name>mdde_Mapping_DefaultExampleList</a:Name>
+<a:TemplateTargetItem.Value>.collection(mdde_Mapping_Examples)</a:TemplateTargetItem.Value>
+<a:CreationDate>1661244392</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

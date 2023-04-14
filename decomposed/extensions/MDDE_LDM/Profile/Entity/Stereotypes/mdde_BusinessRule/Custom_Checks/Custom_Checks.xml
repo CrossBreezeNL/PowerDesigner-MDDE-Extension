@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="F2D0EB91-D6DC-4ECE-8661-80CB9D239937">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>F2D0EB91-D6DC-4ECE-8661-80CB9D239937</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1655828224</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Check_BusinessRuleHasAtLeastOneInputAttribute.xml" />
+<xi:include href="mdde_Check_BusinessRuleHasAtLeastOneExample.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

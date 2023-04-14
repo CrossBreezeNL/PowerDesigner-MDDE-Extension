@@ -1,0 +1,26 @@
+<o:TargetModel Id="0AF1DBC5-A5AD-4C3F-BC99-91B8CB3CDB6C">
+<a:ObjectID>0AF1DBC5-A5AD-4C3F-BC99-91B8CB3CDB6C</a:ObjectID>
+<a:Name>Reference</a:Name>
+<a:Code>REFERENCE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:TargetModelURL>file:///%MDDE_EXAMPLE_MODELS%/models/Reference.ldm</a:TargetModelURL>
+<a:TargetModelID>E0D7FF56-7977-4D8F-A64B-BB6D985687E7</a:TargetModelID>
+<a:TargetModelClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="27C37D10-8029-4887-93ED-B30DE50AD7E1"/>
+<o:Shortcut Ref="BBED68A4-7CBF-4826-B71D-E2D22A935E14"/>
+</c:SessionShortcuts>
+<c:SessionReplications>
+<o:Replication Ref="40AE21B9-4295-4CE6-BAF1-0C20E1CA6702"/>
+<o:SubReplication Ref="BB7BFD24-4523-4405-B43C-BFD93D898D24"/>
+<o:SubReplication Ref="3E2B5E57-F725-4F68-B614-21324DD2E1CE"/>
+<o:SubReplication Ref="EB109E30-1B67-485B-87D1-1989B5E9141E"/>
+<o:SubReplication Ref="9C301B62-8C82-4AE2-B472-4C3C0627FF00"/>
+<o:SubReplication Ref="5E555B18-512D-4C0D-94AB-766B36C55395"/>
+<o:SubReplication Ref="B23AE5B9-028B-4892-8E3D-F2010A2FFABB"/>
+</c:SessionReplications>
+<c:FullShortcutModel>
+<xi:include href="FullShortcutModel/REFERENCE/REFERENCE.xml" />
+</c:FullShortcutModel>
+</o:TargetModel>

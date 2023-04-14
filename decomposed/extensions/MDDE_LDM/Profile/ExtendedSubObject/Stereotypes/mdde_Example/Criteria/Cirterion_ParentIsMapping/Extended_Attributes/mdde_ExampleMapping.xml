@@ -1,0 +1,15 @@
+<o:ExtendedAttributeTargetItem Id="9A6A1239-3548-42DA-BC82-483933AC4D83">
+<a:ObjectID>9A6A1239-3548-42DA-BC82-483933AC4D83</a:ObjectID>
+<a:Name>mdde_ExampleMapping</a:Name>
+<a:CreationDate>1661254703</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:Computed>1</a:Computed>
+<a:ComputedAccessType>RO</a:ComputedAccessType>
+<a:GetMethodScript>Function %Get%(obj)
+   &#39; The example is owned by the mapping (BaseStructuralFeatureMapping), so we can return the Parent object.
+   Set %Get% = obj.ParentObject
+End Function</a:GetMethodScript>
+<a:DestinationClassID>4F87C7A4-251E-11D1-83D9-444553540000</a:DestinationClassID>
+</o:ExtendedAttributeTargetItem>

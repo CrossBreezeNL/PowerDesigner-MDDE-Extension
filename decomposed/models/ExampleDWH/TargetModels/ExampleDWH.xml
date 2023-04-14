@@ -1,0 +1,13 @@
+<o:TargetModel Id="060ED67F-4555-4624-917D-4A92EF378EAF">
+<a:ObjectID>060ED67F-4555-4624-917D-4A92EF378EAF</a:ObjectID>
+<a:Name>ExampleDWH</a:Name>
+<a:Code>ExampleDWH</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:TargetModelURL>file:///C|/Users/MooOthman/Downloads/ExampleDWH.pdm</a:TargetModelURL>
+<a:TargetModelID>ABCC26D9-AC8A-4930-987B-6E6D64489B3B</a:TargetModelID>
+<a:TargetModelClassID>CDE44E21-9669-11D1-9914-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="0A88CE29-D17A-487C-BEBD-2FB08716EEB7"/>
+</c:SessionShortcuts>
+</o:TargetModel>

@@ -1,0 +1,19 @@
+<o:TemplateTargetItem Id="EDE99505-01AA-4EA6-9940-ED9174F8AB72">
+<a:ObjectID>EDE99505-01AA-4EA6-9940-ED9174F8AB72</a:ObjectID>
+<a:Name>mdde_BaseStructuralFeatureMapping_SourceAttribute_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>.if(%MappedTo%)
+  .comment If the source feature is not empty, the source is a real attribute.
+  .if (%SourceFeature%)
+    .comment If the source object is also known, the mapping is correct and we present the source attribute.
+    .if (%mdde_SourceObject%)
+%mdde_SourceObject.Code%.%SourceFeature.Code%
+    .endif
+  .comment If the mapped to value is a numeric value or encapsulated in single quotes, it&#39;s a static value.
+  .elsif (%mdde_IsLiteralValue%)
+%MappedTo%
+  .endif
+.endif</a:TemplateTargetItem.Value>
+<a:CreationDate>1654162570</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

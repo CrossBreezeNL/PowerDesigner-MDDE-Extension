@@ -1,0 +1,88 @@
+<o:Entity Id="F9BB4252-766A-498C-8B9B-1A1485D1E2FD">
+<a:ObjectID>F9BB4252-766A-498C-8B9B-1A1485D1E2FD</a:ObjectID>
+<a:Name>CustomerWithParent</a:Name>
+<a:Code>CustomerWithParent</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {497FBA26-E0DB-4EAA-B147-7CC5D6A93301}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_entity</a:Stereotype>
+<c:Attributes>
+<o:EntityAttribute Id="301AACDF-1DE2-4F79-A30D-9D7599A86400">
+<a:ObjectID>301AACDF-1DE2-4F79-A30D-9D7599A86400</a:ObjectID>
+<a:Name>Id</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {A81407B4-D7CA-4494-A3F0-2743ACC91C04}
+DAT 1680508903</a:History>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="8BB0D790-F1B6-4376-B7B3-FE3B5CFF706A">
+<a:ObjectID>8BB0D790-F1B6-4376-B7B3-FE3B5CFF706A</a:ObjectID>
+<a:Name>FirstName</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {B48AAB72-0EBA-4471-AB1C-DA1172C89D66}
+DAT 1680508903</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="1E48BA31-A38D-455E-8DC3-CDC014E88032">
+<a:ObjectID>1E48BA31-A38D-455E-8DC3-CDC014E88032</a:ObjectID>
+<a:Name>LastName</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {6618C119-C2B2-43C8-89AD-0161BEA9B09E}
+DAT 1680508903</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="9001C275-74DC-4782-8A0A-5A74F1302852">
+<a:ObjectID>9001C275-74DC-4782-8A0A-5A74F1302852</a:ObjectID>
+<a:Name>City</a:Name>
+<a:Code>CITY</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {76B88F03-C4FB-4CF2-9D7C-C977F3A5DBEF}
+DAT 1680508903</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="C23C26C0-3293-4264-8762-70145F65A7E4">
+<a:ObjectID>C23C26C0-3293-4264-8762-70145F65A7E4</a:ObjectID>
+<a:Name>Country</a:Name>
+<a:Code>COUNTRY</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {5E840A86-6C7B-4C37-A72C-B52A05EBEFCB}
+DAT 1680508903</a:History>
+<a:DataType>VA3</a:DataType>
+<a:Length>3</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="752B934F-FC28-4BE6-BBE8-5011226D9222">
+<a:ObjectID>752B934F-FC28-4BE6-BBE8-5011226D9222</a:ObjectID>
+<a:Name>Phone</a:Name>
+<a:Code>PHONE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {B026C300-B051-45D8-9EF4-28640109EC93}
+DAT 1680508903</a:History>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="14A56015-742B-4FBB-B366-55F400B86572">
+<a:ObjectID>14A56015-742B-4FBB-B366-55F400B86572</a:ObjectID>
+<a:Name>ParentCustomerName</a:Name>
+<a:Code>PARENTCUSTOMERNAME</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {A7542FA3-6D12-4664-A752-574910CCF823}
+DAT 1680508903</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

@@ -1,0 +1,13 @@
+<o:TypedCategoryTargetItem Id="5C4BED09-B973-4240-85BB-F05A74636D2E">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>5C4BED09-B973-4240-85BB-F05A74636D2E</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1661255728</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_ExampleEntity.xml" />
+<xi:include href="mdde_ExampleRecordCount.xml" />
+<xi:include href="mdde_ExampleDataType.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -1,0 +1,22 @@
+<o:ExtendedAttributeTargetItem Id="69FCD9E0-2CBB-41CE-8473-19BEE7C34AE3">
+<a:ObjectID>69FCD9E0-2CBB-41CE-8473-19BEE7C34AE3</a:ObjectID>
+<a:Name>mdde_Mapping_DefaultExample</a:Name>
+<a:CreationDate>1661244392</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>The currently selected example for the mapping.
+
+Note: The &#39;Validate&#39; must be off!</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_Mapping_DefaultExampleList%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_Example</a:DestinationStereotype>
+<a:Label>Default example</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="B9C292A0-E0C4-4E1D-8C42-9C4DC5E52130"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="2C13A30F-B4D5-4211-8083-F38A7DEFFDC9"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

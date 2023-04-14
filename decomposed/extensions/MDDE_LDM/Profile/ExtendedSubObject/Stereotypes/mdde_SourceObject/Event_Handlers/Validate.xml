@@ -1,0 +1,106 @@
+<o:EventHandlerTargetItem Id="D7E93778-3FB0-4C51-9051-1C3EC80753AA">
+<a:ObjectID>D7E93778-3FB0-4C51-9051-1C3EC80753AA</a:ObjectID>
+<a:Name>Validate</a:Name>
+<a:CreationDate>1650363241</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HandlerScript>Function %Validate%(obj, ByRef message)
+   WriteDebug &quot;[mdde_SourceObject.Validate] &quot; &amp; obj.UOL
+   &#39; Get the joined entity of the current source object.
+   Dim objJoinedObject : Set objJoinedObject = obj.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;)
+   &#39; If the joined entity is set and the current object is attached to a mapping, go on.
+   If Not(objJoinedObject Is Nothing) And Not(obj.ParentObject Is Nothing) Then   
+      &#39; Resolve potential shortcuts.
+      Set objJoinedObject = GetRealObject(objJoinedObject)
+      
+      &#39; If mapping doesn&#39;t contain the joined entity as a source classifier, add it.
+      If Not(CollectionContainsObject(obj.ParentObject.SourceClassifiers, objJoinedObject)) Then
+         WriteDebug &quot;Adding missing source classifier: &quot; &amp; objJoinedObject.Code
+         obj.ParentObject.SourceClassifiers.Add objJoinedObject
+      End If
+      
+      Dim strJoinAlias : strJoinAlias = obj.GetExtendedAttributeText(&quot;mdde_JoinAlias&quot;)
+      
+      &#39; If an error occurs while setting the name, it means the name already exists.
+      &#39; This can only happen when the joined object is already in a previous source object.
+      &#39; In this case the modeller needs to set the alias.
+      On Error Resume Next
+      
+         &#39; Update the Name of the source object using the joined entity and alias.
+         If (strJoinAlias &lt;&gt; &quot;&quot;) Then
+            obj.Name = objJoinedObject.Name &amp; &quot; &quot; &amp; strJoinAlias
+         Else
+            obj.Name = objJoinedObject.Name
+         End If
+      
+      &#39; If an error occured:
+      If Err.Number &lt;&gt; 0 Then
+         &#39; Present a message to the user.
+         MsgBox _
+             &quot;The joined object &#39;&quot; &amp; objJoinedObject.DisplayName &amp; &quot;&#39;  with alias &#39;&quot; &amp; strJoinAlias &amp; &quot;&#39; doesn&#39;t result in a unique name!&quot; &amp; vbCrLf &amp; vbCrLf _
+               &amp; &quot;Please specify/update the alias for the source object and click &#39;Apply&#39;.&quot; _
+            ,vbExclamation _
+            ,&quot;Source object not unique&quot;
+         &#39; Clean the Error.
+         Err.Clear
+      &#39; If no error occured:
+      Else
+         &#39; Update the Code from the Name.
+         obj.SetNameToCode
+      End If
+      
+      &#39; Revert the error handling to normal (so it doesn&#39;t resume).
+      On Error GoTo 0
+      
+      &#39; If the joined object is a scalar business rule, set the join type to apply.
+      If (objJoinedObject.HasStereotype(&quot;mdde_BusinessRuleWithoutMapping&quot;) And obj.GetExtendedAttributeText(&quot;mdde_JoinType&quot;) &lt;&gt; cMDDE_JOIN_TYPE_APPLY) Then
+         WriteDebug &quot;Updating join type for &quot; &amp; objJoinedObject.Code &amp; &quot; to &quot; &amp; cMDDE_JOIN_TYPE_APPLY
+         obj.SetExtendedAttributeText &quot;mdde_JoinType&quot;, cMDDE_JOIN_TYPE_APPLY
+      End If
+      
+   End If
+   
+   &#39; Remove any unreferenced table sources
+   SyncMappingSource obj.ParentObject
+   
+   %Validate% = True
+End Function
+
+&#39;******************************************************************************
+&#39; Sync the entity sources and join objects
+&#39;******************************************************************************
+Sub SyncMappingSource(objMapping)
+   Dim objEntitiesToRemove : Set objEntitiesToRemove = CreateObject(&quot;System.Collections.ArrayList&quot;)
+   If Not(objMapping Is Nothing) Then
+      Dim objSourceClassifier, bFound
+      For Each objSourceClassifier In objMapping.SourceClassifiers 
+         bFound = False
+         &#39; Resolve possible shortcuts using GetRealObject.
+         Dim objRealSourceClassifier : Set objRealSourceClassifier = GetRealObject(objSourceClassifier)
+         &#39; Loop through the source objects of the current BaseClassifierMapping.
+         Dim objSourceObject
+         For Each objSourceObject In objMapping.GetExtendedCollection(&quot;mdde_SourceObjects&quot;)   
+            &#39; Get the joined object of the current source object.
+            Dim objReferencedSourceObject : Set objReferencedSourceObject = GetRealObject(objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;))
+            If Not(objReferencedSourceObject Is Nothing) Then
+               &#39; If the referenced source object is the same as the current source classfier, the source classifier is used.
+               If (objReferencedSourceObject.ObjectID = objRealSourceClassifier.ObjectID) Then
+                  bFound = True
+                  Exit For
+               End If
+            End If
+         Next
+         If (bFound = False) Then
+            &#39; Remove object from collection but do not remove the object itself        
+            objEntitiesToRemove.Add objSourceClassifier 
+         End If
+      Next
+   End If
+   &#39; Remove all unused source classifiers (but don&#39;t remove the real source object).
+   For Each objSourceClassifier In objEntitiesToRemove
+      WriteDebug &quot;Removing unused source classifier: &quot; &amp; objSourceClassifier.Code
+      objMapping.SourceClassifiers.Remove objSourceClassifier, False
+   Next
+End Sub
+</a:HandlerScript>
+</o:EventHandlerTargetItem>

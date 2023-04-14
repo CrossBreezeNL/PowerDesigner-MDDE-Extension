@@ -1,0 +1,20 @@
+<o:ExtendedAttributeTargetItem Id="74944D52-7CEE-4632-B6D9-1333EBDF268F">
+<a:ObjectID>74944D52-7CEE-4632-B6D9-1333EBDF268F</a:ObjectID>
+<a:Name>mdde_ParentSourceObject</a:Name>
+<a:CreationDate>1650361231</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>For a join condition we need to know the alias of the parent field object, so next the parent field we also need to source object.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_ParentSourceObjectList%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_SourceObject</a:DestinationStereotype>
+<a:Label>(internal) Parent source object (MDDE)</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="A3C745A6-6100-46DD-8240-BF48F5B17227"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="4D852F7B-D579-4592-8BD2-AF7A0C6A12C3"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

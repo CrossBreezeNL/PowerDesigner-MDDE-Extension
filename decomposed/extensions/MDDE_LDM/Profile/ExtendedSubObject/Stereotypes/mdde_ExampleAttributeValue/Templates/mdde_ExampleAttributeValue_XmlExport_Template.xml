@@ -1,0 +1,28 @@
+<o:TemplateTargetItem Id="B4875006-6330-4938-9CD3-38082505A18A">
+<a:ObjectID>B4875006-6330-4938-9CD3-38082505A18A</a:ObjectID>
+<a:Name>mdde_ExampleAttributeValue_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName%
+.if (%mdde_Attribute%)
+ Attribute=&quot;%.X:mdde_Attribute.Code%&quot;
+.comment Replace all single quotes to double-single-quotes since this is needed to escape them in SQL.
+.set_value(ValueEncapsulator, &quot;&quot;)
+.set_value(SqlValue, %.X:mdde_Value%)
+.comment Only encapsulate the value if the value is not null.
+.if (%mdde_Value%)
+.comment Encapsulate the vlaue if the attribute is a string or date/time type.
+.if (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;A&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;VA&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;LA&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;LVA&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;TXT&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;MBT&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;VMBT&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;D&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;T&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;DT&quot;) || (%mdde_Attribute.mdde_EntityAttribute_DataType% == &quot;ST&quot;)
+   .set_value(ValueEncapsulator, &quot;&#39;&quot;)
+.endif
+.comment If the value is empty, so the SqlValue to NULL.
+.else
+   .set_value(SqlValue, &quot;NULL&quot;)
+.endif
+.replace (&quot;&amp;#39;&quot;,&quot;&amp;#39;&amp;#39;&quot;)
+ SqlValue=&quot;%ValueEncapsulator%%SqlValue%%ValueEncapsulator%&quot;
+.endreplace
+.endif()
+ Value=&quot;%.X:mdde_Value%&quot; /&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1666185315</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

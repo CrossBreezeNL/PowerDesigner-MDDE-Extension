@@ -1,0 +1,52 @@
+<o:ExtendedAttributeTargetItem Id="2F31C5F4-4F85-4804-80F4-B3AD3BD2F7BC">
+<a:ObjectID>2F31C5F4-4F85-4804-80F4-B3AD3BD2F7BC</a:ObjectID>
+<a:Name>mdde_ParentAttributeSelector</a:Name>
+<a:CreationDate>1654074384</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
+<a:Computed>1</a:Computed>
+<a:GetMethodScript>Function %Get%(obj)
+   &#39;Initialize the return value to an empty string.
+   %Get% = &quot;&quot;
+   
+   &#39; Get the parent source object and attribute.
+   Dim objParentSourceObject : Set objParentSourceObject = obj.GetExtendedAttribute(&quot;mdde_ParentSourceObject&quot;)
+   Dim objParentAttribute : Set objParentAttribute = obj.GetExtendedAttribute(&quot;mdde_ParentAttribute&quot;)
+   Dim strParentLiteralValue : strParentLiteralValue = obj.GetExtendedAttribute(&quot;mdde_ParentLiteralValue&quot;)
+   
+   &#39; If a literal value is specified, use that.
+   If Len(strParentLiteralValue) &gt; 0 Then
+      %Get% = strParentLiteralValue
+   &#39; If the child attribute is not empty, return the FQ name.
+   ElseIf Not(objParentSourceObject Is Nothing) And Not(objParentAttribute Is Nothing) Then
+      %Get% = objParentSourceObject.DisplayName &amp; &quot;.&quot; &amp; objParentAttribute.DisplayName
+   End If
+
+End Function</a:GetMethodScript>
+<a:SetMethodScript>Sub %Set%(obj, value)
+   &#39; The Set method is used when someone types a value in the &#39;Parent attribute (MDDE)&#39; field.
+   &#39; This is used to set literal values, like numeric and textual values.
+   &#39; For setting an attribute, the ... should be used (which call the edit method).
+   
+   &#39; If the input value is numeric or encapsulated with quotes, we store the value in the mdde_ParentLiteralValue extended attribute.
+   If IsLiteralValue(value) Then
+      obj.SetExtendedAttribute &quot;mdde_ParentLiteralValue&quot;, value
+      &#39; Empty the source object and attribute references, since we the value is a literal now.
+      obj.SetExtendedAttribute &quot;mdde_ParentSourceObject&quot;, Nothing
+      obj.SetExtendedAttribute &quot;mdde_ParentAttribute&quot;, Nothing
+
+   &#39; Otherwise we show a message.
+   Else
+      MsgBox &quot;The entered value is not a valid literal value!&quot; &amp; vbCrLf &amp; vbCrLf _
+               &amp; &quot;It should either be numeric or encapsulated with single quotes (&#39;).&quot; &amp; vbCrLf &amp; vbCrLf _
+               &amp; &quot;For non-literal values, use the [...] button to select an attribute.&quot; _
+            , vbExclamation _
+            , &quot;Unexpected value&quot;
+   End If
+End Sub</a:SetMethodScript>
+<a:Label>Parent attribute (MDDE)</a:Label>
+<c:EditMethod>
+<o:MethodTargetItem Ref="4D852F7B-D579-4592-8BD2-AF7A0C6A12C3"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="A444A553-0AD6-49C1-A40C-46A7D2B8E4CE">
+<a:TypePublicName>EventHandlerTargetItem</a:TypePublicName>
+<a:ObjectID>A444A553-0AD6-49C1-A40C-46A7D2B8E4CE</a:ObjectID>
+<a:Name>Event Handlers</a:Name>
+<a:CreationDate>1650363241</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Validate.xml" />
+<xi:include href="OnDelete.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

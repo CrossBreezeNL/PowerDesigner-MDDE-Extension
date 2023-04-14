@@ -1,0 +1,26 @@
+<o:ExtendedAttributeTargetItem Id="632D5806-0218-4A45-A661-8FE4135BD32F">
+<a:ObjectID>632D5806-0218-4A45-A661-8FE4135BD32F</a:ObjectID>
+<a:Name>mdde_Entity_DefaultMappingSelector</a:Name>
+<a:CreationDate>1653996426</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>This extended attribute is an alternative to the &#39;Mapping&#39; attribute of a mapping which stores the default mapping of the entity. The reason we override this attribute is so we can implement our own custom Edit method to support the workflow of a modeller.
+
+This is a calculated attribute which stores the selection in the DefaultMapping attribute of the entity.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_Entity_DefaultMappingList_Template%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:Computed>1</a:Computed>
+<a:GetMethodScript>Function %Get%(obj)
+   &#39; Return the current DefaultMapping of the Entity (if it&#39;s set).
+   If Not(obj.DefaultMapping Is Nothing) Then
+      Set %Get% = obj.DefaultMapping
+   End If
+End Function</a:GetMethodScript>
+<a:SetMethodScript>Sub %Set%(obj, value)
+   &#39; If a mapping is select in the drop-down, store it in the DefaultMapping of the Entity.
+   Set obj.DefaultMapping = value
+End Sub</a:SetMethodScript>
+<a:DestinationClassID>E32D93EC-027C-4FD9-976E-3A94CD0AB996</a:DestinationClassID>
+<a:Label>Default mapping</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+</o:ExtendedAttributeTargetItem>

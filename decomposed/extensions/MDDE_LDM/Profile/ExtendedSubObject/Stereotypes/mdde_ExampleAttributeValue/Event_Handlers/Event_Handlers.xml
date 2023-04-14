@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="38AFA609-3CEA-49DB-A2A5-E0CD72EBBDD5">
+<a:TypePublicName>EventHandlerTargetItem</a:TypePublicName>
+<a:ObjectID>38AFA609-3CEA-49DB-A2A5-E0CD72EBBDD5</a:ObjectID>
+<a:Name>Event Handlers</a:Name>
+<a:CreationDate>1657099186</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Validate.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

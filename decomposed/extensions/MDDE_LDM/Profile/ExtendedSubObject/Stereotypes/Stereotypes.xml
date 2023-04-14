@@ -1,0 +1,16 @@
+<o:TypedCategoryTargetItem Id="9374FEA4-45B1-4A6F-9B92-391C7B456E69">
+<a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
+<a:ObjectID>9374FEA4-45B1-4A6F-9B92-391C7B456E69</a:ObjectID>
+<a:Name>Stereotypes</a:Name>
+<a:CreationDate>1650359819</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_SourceObject/mdde_SourceObject.xml" />
+<xi:include href="mdde_JoinCondition/mdde_JoinCondition.xml" />
+<xi:include href="mdde_Example/mdde_Example.xml" />
+<xi:include href="mdde_ExampleAttributeValue/mdde_ExampleAttributeValue.xml" />
+<xi:include href="mdde_EntityExampleData/mdde_EntityExampleData.xml" />
+<xi:include href="mdde_ExampleRecord/mdde_ExampleRecord.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -1,0 +1,18 @@
+<o:TemplateTargetItem Id="E0D4E34B-C088-4AEB-8CB3-EB21FFF9F211">
+<a:ObjectID>E0D4E34B-C088-4AEB-8CB3-EB21FFF9F211</a:ObjectID>
+<a:Name>mdde_BasePackage_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>.comment For all child packages, include the output of this template of the child-package.
+.foreach_item(Packages,&lt;Packages&gt;\n,\n&lt;/Packages&gt;\n,%IsSelected%==true)
+  %mdde_Package_XmlExport_Template%
+.next(\n)
+.comment Include all Entities in current Package.
+.foreach_item(Entities,&lt;Entities&gt;,\n&lt;/Entities&gt;\n,%IsSelected%==true)
+.if (%IsShortcut%==false)
+
+  %mdde_Entity_XmlExport_Template%
+.endif()
+.next()</a:TemplateTargetItem.Value>
+<a:CreationDate>1651669935</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

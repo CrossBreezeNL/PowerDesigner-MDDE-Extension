@@ -1,0 +1,8 @@
+<o:TemplateTargetItem Id="D2289B30-9F7E-4E31-8F21-7970D8E6ABF8">
+<a:ObjectID>D2289B30-9F7E-4E31-8F21-7970D8E6ABF8</a:ObjectID>
+<a:Name>mdde_BusinessRule_DefaultExampleList</a:Name>
+<a:TemplateTargetItem.Value>.collection(mdde_BusinessRule_Examples)</a:TemplateTargetItem.Value>
+<a:CreationDate>1657021486</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

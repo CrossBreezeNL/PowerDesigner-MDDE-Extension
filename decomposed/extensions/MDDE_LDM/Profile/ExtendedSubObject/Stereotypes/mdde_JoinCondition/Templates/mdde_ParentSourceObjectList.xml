@@ -1,0 +1,12 @@
+<o:TemplateTargetItem Id="961259C7-E181-4B2D-A336-381943D9B4CB">
+<a:ObjectID>961259C7-E181-4B2D-A336-381943D9B4CB</a:ObjectID>
+<a:Name>mdde_ParentSourceObjectList</a:Name>
+<a:TemplateTargetItem.Value>.foreach_item(Parent.Parent.Parent.Parent.mdde_SourceObjects)
+   .if(%ObjectID%!=%Outer.Parent.Parent.ObjectID%)
+      %ObjectID%
+   .endif
+.next(\n)</a:TemplateTargetItem.Value>
+<a:CreationDate>1650361231</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

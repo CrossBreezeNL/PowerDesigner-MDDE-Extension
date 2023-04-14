@@ -1,0 +1,15 @@
+<o:FormTargetItem Id="CF0A4B0A-31B8-42C8-B27E-D651FD7903E3">
+<a:ObjectID>CF0A4B0A-31B8-42C8-B27E-D651FD7903E3</a:ObjectID>
+<a:Name>mdde_Entity_Mapping</a:Name>
+<a:Code>MAPS</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StaticText Name=&quot;mdde_MappingNotAllowed&quot; Caption=&quot;Mapping is not allowed on this business rule type.&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1651587776</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Mapping (MDDE)</a:Label>
+<a:FormType>MAPS</a:FormType>
+<a:FavoritePage>0</a:FavoritePage>
+</o:FormTargetItem>

@@ -1,0 +1,10 @@
+<o:ExtendedAttributeTargetItem Id="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316">
+<a:ObjectID>08A86AD4-3F3F-40E1-AFC2-24CB6B49E316</a:ObjectID>
+<a:Name>mdde_JoinType</a:Name>
+<a:CreationDate>1650360606</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_JoinedObject.mdde_Entity_SourceObject_JoinTypeList%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:Label>Join type (MDDE)</a:Label>
+</o:ExtendedAttributeTargetItem>

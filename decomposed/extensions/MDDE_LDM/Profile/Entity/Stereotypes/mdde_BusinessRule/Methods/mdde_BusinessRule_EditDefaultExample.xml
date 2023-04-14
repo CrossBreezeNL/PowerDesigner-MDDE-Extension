@@ -1,0 +1,29 @@
+<o:MethodTargetItem Id="D7A9435E-CEA7-46AF-9043-8353E24D2DF1">
+<a:ObjectID>D7A9435E-CEA7-46AF-9043-8353E24D2DF1</a:ObjectID>
+<a:Name>mdde_BusinessRule_EditDefaultExample</a:Name>
+<a:CreationDate>1657022418</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+
+   &#39; Create a new selection object for the source objects.
+   Dim objExampleSelection : Set objExampleSelection = ActiveModel.CreateSelection
+   
+   &#39; Add all source objects of the current mapping to the selection.
+   Dim objExample
+   For Each objExample In obj.GetExtendedCollection(&quot;mdde_BusinessRule_Examples&quot;)
+      objExampleSelection.Objects.Add objExample
+   Next
+   
+   &#39; Show the object picker and fetch the selected source object.
+   Dim selExampleObj : Set selExampleObj = objExampleSelection.ShowObjectPicker(&quot;&quot;, &quot;&quot;, &quot;Select an example&quot;, True, True, False)
+   &#39; Cleanup the selection object.
+   objExampleSelection.Delete()
+   
+   &#39; If a source object was selected, go on.
+   If Not(selExampleObj Is Nothing) Then
+      obj.SetExtendedAttribute &quot;mdde_BusinessRule_DefaultExample&quot;, selExampleObj
+   End If
+
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

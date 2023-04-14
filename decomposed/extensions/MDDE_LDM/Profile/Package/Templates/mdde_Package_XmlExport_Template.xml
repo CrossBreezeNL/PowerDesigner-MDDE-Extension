@@ -1,0 +1,14 @@
+<o:TemplateTargetItem Id="6580BF8D-5BA3-4486-B37E-23CCDB98077D">
+<a:ObjectID>6580BF8D-5BA3-4486-B37E-23CCDB98077D</a:ObjectID>
+<a:Name>mdde_Package_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;Package %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+
+  .if (%mdde_NamedObject_XmlElementExport_Template%)
+  %mdde_NamedObject_XmlElementExport_Template%
+  .endif(\n)
+  %mdde_BasePackage_XmlExport_Template%
+&lt;/Package&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1651667836</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="7D7C29D4-71FC-4619-90A0-4490E4706351">
+<a:TypePublicName>ExtendedCompositionTargetItem</a:TypePublicName>
+<a:ObjectID>7D7C29D4-71FC-4619-90A0-4490E4706351</a:ObjectID>
+<a:Name>Extended Compositions</a:Name>
+<a:CreationDate>1650363011</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_JoinConditions.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -1,0 +1,101 @@
+<o:Model Id="715799B0-B0B6-4F9B-972A-EEEDFE064E8A">
+<a:ObjectID>715799B0-B0B6-4F9B-972A-EEEDFE064E8A</a:ObjectID>
+<a:Name>Reference</a:Name>
+<a:Code>REFERENCE</a:Code>
+<a:CreationDate>1680508819</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {85AEC6F1-42A5-4718-931A-1E6438DB4A51}
+DAT 1680508822
+ATT MOPT
+ATT FOPT</a:History>
+<xi:include href="Model/a_PackageOptionsText.xml" />
+<xi:include href="Model/a_ModelOptionsText.xml" />
+<c:ExtendedModelDefinitions>
+<xi:include href="ExtendedModelDefinitions/Shortcuts/MDDE_LDM.xml" />
+</c:ExtendedModelDefinitions>
+<c:Entities>
+<xi:include href="Entities/Country.xml" />
+</c:Entities>
+<c:Replications>
+<o:Replication Id="40AE21B9-4295-4CE6-BAF1-0C20E1CA6702">
+<a:ObjectID>40AE21B9-4295-4CE6-BAF1-0C20E1CA6702</a:ObjectID>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:OriginalID>E0D7FF56-7977-4D8F-A64B-BB6D985687E7</a:OriginalID>
+<a:OriginalClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:OriginalClassID>
+<c:SubReplications>
+<o:SubReplication Id="BB7BFD24-4523-4405-B43C-BFD93D898D24">
+<a:ObjectID>BB7BFD24-4523-4405-B43C-BFD93D898D24</a:ObjectID>
+<a:CreationDate>1680509282</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:OriginalID>799FB8E9-7272-480E-8BAF-38025AFB6F05</a:OriginalID>
+<a:OriginalClassID>362D41EC-9D82-11D1-8E5D-444553540000</a:OriginalClassID>
+<a:OriginalUOL>ExtendedModelDefinitions::Shortcut of extension &#39;Model Driven Data Engineering (MDDE)&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:Shortcut Ref="FDFB400C-481A-41AC-8CC3-DB72710FC4E8"/>
+</c:ReplicaObject>
+</o:SubReplication>
+<o:SubReplication Id="3E2B5E57-F725-4F68-B614-21324DD2E1CE">
+<a:ObjectID>3E2B5E57-F725-4F68-B614-21324DD2E1CE</a:ObjectID>
+<a:CreationDate>1680557963</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:OriginalID>BC120FD8-8AF8-4F3F-86C8-474D1B5B207F</a:OriginalID>
+<a:OriginalClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;</a:OriginalUOL>
+<c:SubReplications>
+<o:SubReplication Id="EB109E30-1B67-485B-87D1-1989B5E9141E">
+<a:ObjectID>EB109E30-1B67-485B-87D1-1989B5E9141E</a:ObjectID>
+<a:CreationDate>1680557963</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:OriginalID>E8F4ACA6-7532-4525-86F4-0F468CCE212D</a:OriginalID>
+<a:OriginalClassID>040810A2-4B62-45C1-9C8B-5EABC249838B</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;::Identifiers::Identifier &#39;Country.PK_COUNTRY&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:Identifier Ref="C3530DD1-0E31-41A4-9B3B-9710FD6D124E"/>
+</c:ReplicaObject>
+</o:SubReplication>
+<o:SubReplication Id="9C301B62-8C82-4AE2-B472-4C3C0627FF00">
+<a:ObjectID>9C301B62-8C82-4AE2-B472-4C3C0627FF00</a:ObjectID>
+<a:CreationDate>1680557963</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:OriginalID>93CCB3E8-5C2F-4C63-A061-68CAE43ACFE2</a:OriginalID>
+<a:OriginalClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;::Attributes::Entity Attribute &#39;Country.COUNTRY_CODE&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:EntityAttribute Ref="6FFEFD65-F477-4959-A655-AE28E22C22E6"/>
+</c:ReplicaObject>
+</o:SubReplication>
+<o:SubReplication Id="5E555B18-512D-4C0D-94AB-766B36C55395">
+<a:ObjectID>5E555B18-512D-4C0D-94AB-766B36C55395</a:ObjectID>
+<a:CreationDate>1680557963</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:OriginalID>3B30B067-59BC-4062-9C19-166AB3C2179C</a:OriginalID>
+<a:OriginalClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;::Attributes::Entity Attribute &#39;Country.COUNTRY_DESCRIPTION&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:EntityAttribute Ref="C4FC8995-3C31-431C-99BB-D31D662F3C2A"/>
+</c:ReplicaObject>
+</o:SubReplication>
+<o:SubReplication Id="B23AE5B9-028B-4892-8E3D-F2010A2FFABB">
+<a:ObjectID>B23AE5B9-028B-4892-8E3D-F2010A2FFABB</a:ObjectID>
+<a:CreationDate>1680557963</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:OriginalID>A31CD79D-0ACE-484B-AFFD-77BFF4707757</a:OriginalID>
+<a:OriginalClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:OriginalClassID>
+<a:OriginalUOL>Entities::Entity &#39;Country&#39;::Attributes::Entity Attribute &#39;Country.COUNTRY_CONTINENT&#39;</a:OriginalUOL>
+<c:ReplicaObject>
+<o:EntityAttribute Ref="0B8662BE-7A79-4312-BBFA-AB42C425F5B3"/>
+</c:ReplicaObject>
+</o:SubReplication>
+</c:SubReplications>
+<c:ReplicaObject>
+<o:Entity Ref="A9BA13D2-5DC4-4EB0-A746-1B4CB8C96309"/>
+</c:ReplicaObject>
+</o:SubReplication>
+</c:SubReplications>
+<c:ReplicaObject>
+<o:Model Ref="715799B0-B0B6-4F9B-972A-EEEDFE064E8A"/>
+</c:ReplicaObject>
+</o:Replication>
+</c:Replications>
+</o:Model>

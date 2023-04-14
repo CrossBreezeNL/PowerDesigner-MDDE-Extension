@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model Id="E0D7FF56-7977-4D8F-A64B-BB6D985687E7" Code="REFERENCE" Name="Reference">
+  <Entities>
+    <Entity Id="BC120FD8-8AF8-4F3F-86C8-474D1B5B207F" Code="Country" Name="Country">
+      <Attributes>
+        <Attribute Id="93CCB3E8-5C2F-4C63-A061-68CAE43ACFE2" Code="COUNTRY_CODE" Name="Country_Code" Ordinal="1" DataType="VMBT" Length="3" Primary="TRUE" Mandatory="TRUE"></Attribute>
+        <Attribute Id="3B30B067-59BC-4062-9C19-166AB3C2179C" Code="COUNTRY_DESCRIPTION" Name="Country_Description" Ordinal="2" DataType="VMBT" Length="100"></Attribute>
+        <Attribute Id="A31CD79D-0ACE-484B-AFFD-77BFF4707757" Code="COUNTRY_CONTINENT" Name="Country_Continent" Ordinal="3" DataType="VMBT" Length="100"></Attribute>
+      </Attributes>
+      <Identifiers>
+        <Identifier PrimaryIdentifier="TRUE">
+          <Attributes>
+            <Attribute Id="93CCB3E8-5C2F-4C63-A061-68CAE43ACFE2" Code="COUNTRY_CODE" Name="Country_Code" Ordinal="1" />
+          </Attributes></Identifier>
+      </Identifiers>
+    </Entity>
+  </Entities>
+</Model>

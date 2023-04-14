@@ -1,0 +1,40 @@
+<o:Shortcut Id="AAB39AC0-8B7A-4424-9F9D-2862C68E941B">
+<a:ObjectID>AAB39AC0-8B7A-4424-9F9D-2862C68E941B</a:ObjectID>
+<a:Name>Customer</a:Name>
+<a:Code>Customer</a:Code>
+<a:History>ORG {246F7842-07B9-4049-8335-3AA37FB1A116}
+DAT 1680508903</a:History>
+<a:TargetStereotype/>
+<a:TargetID>1352D98F-2A9C-42AA-AE82-2E68BA514F02</a:TargetID>
+<a:TargetClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;</a:TargetPackagePath>
+<c:SubShortcuts>
+<o:Shortcut Id="16CA98D6-6762-4DDE-B801-FED3E0161E48">
+<a:ObjectID>16CA98D6-6762-4DDE-B801-FED3E0161E48</a:ObjectID>
+<a:Name>Country</a:Name>
+<a:Code>COUNTRY</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>95EA4A3A-B2E7-4F50-AEA3-8209C2AC0C46</a:TargetID>
+<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;::Customer</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="9C026F36-EFF1-4D98-9F17-D67AD160A53F"/>
+</c:FullShortcutReplica>
+</o:Shortcut>
+<o:Shortcut Id="871AB45F-ADD2-454E-AFDD-6D4331ABEEBF">
+<a:ObjectID>871AB45F-ADD2-454E-AFDD-6D4331ABEEBF</a:ObjectID>
+<a:Name>Id</a:Name>
+<a:Code>ID</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>071EB08F-6D7D-428D-BBB0-14B5B9D81201</a:TargetID>
+<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;::Customer</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="1FB2EA31-0546-43DE-9209-0DB2492D8DE8"/>
+</c:FullShortcutReplica>
+</o:Shortcut>
+</c:SubShortcuts>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="B3238EE1-EC39-4BAF-876F-5A8DE22A7E4F"/>
+</c:FullShortcutReplica>
+</o:Shortcut>

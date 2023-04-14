@@ -1,0 +1,33 @@
+<o:TemplateTargetItem Id="199693EF-52BA-4D0C-8FD3-5E7102534246">
+<a:ObjectID>199693EF-52BA-4D0C-8FD3-5E7102534246</a:ObjectID>
+<a:Name>mdde_SourceObject_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;SourceObject %mdde_NamedObject_XmlAttributeExport_Template% JoinedObject=&quot;%mdde_JoinedObject.Code%&quot; JoinedObjectModel=&quot;%mdde_JoinedObject.Model.Code%&quot;
+.if (%mdde_JoinType%)
+ JoinType=&quot;%.U:mdde_JoinType%&quot;
+.endif()
+.if (%mdde_JoinAlias%)
+ JoinAlias=&quot;%mdde_JoinAlias%&quot;
+.endif()
+.if (%mdde_OffsetPeriod%)
+ OffsetPeriod=&quot;%.U:mdde_OffsetPeriod%&quot;
+.endif()
+.if (%mdde_OffsetValue%)
+ OffsetValue=&quot;%mdde_OffsetValue%&quot;
+.endif()
+&gt;
+  .if (%mdde_JoinedObject%)
+
+  &lt;%mdde_JoinedObject.mdde_NamedObject_XmlElementName% %mdde_JoinedObject.mdde_NamedObject_XmlAttributeExport_Template%
+.if (%mdde_JoinedObject.mdde_Entity_ForeignAttribute_Template%)
+ ForeignAttribute=&quot;%mdde_JoinedObject.mdde_Entity_ForeignAttribute_Template%&quot;
+.endif()
+ /&gt;
+  .endif(\n)
+  .foreach_item(mdde_JoinConditions,&quot;  &lt;JoinConditions&gt;\n&quot;,&quot;\n  &lt;/JoinConditions&gt;\n&quot;)
+    %mdde_JoinCondition_XmlExport_Template%
+  .next(\n)
+&lt;/SourceObject&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1651741182</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

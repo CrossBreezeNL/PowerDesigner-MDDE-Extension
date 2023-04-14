@@ -1,0 +1,11 @@
+<o:Shortcut Id="27C37D10-8029-4887-93ED-B30DE50AD7E1">
+<a:ObjectID>27C37D10-8029-4887-93ED-B30DE50AD7E1</a:ObjectID>
+<a:Name>Reference</a:Name>
+<a:Code>REFERENCE</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>E0D7FF56-7977-4D8F-A64B-BB6D985687E7</a:TargetID>
+<a:TargetClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:TargetClassID>
+<c:FullShortcutReplica>
+<o:Replication Ref="40AE21B9-4295-4CE6-BAF1-0C20E1CA6702"/>
+</c:FullShortcutReplica>
+</o:Shortcut>

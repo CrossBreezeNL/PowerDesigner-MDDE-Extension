@@ -1,0 +1,14 @@
+<o:ExtendedCompositionTargetItem Id="2BCE3760-2E81-40DD-9789-825A3EAA5C4E">
+<a:ObjectID>2BCE3760-2E81-40DD-9789-825A3EAA5C4E</a:ObjectID>
+<a:Name>mdde_ExampleInput</a:Name>
+<a:CreationDate>1657021869</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_ExampleInputAttributeValue</a:DestinationStereotype>
+<a:Label>Example input</a:Label>
+<a:DefaultColumnFilter>&quot;_MDDE_LDM.mdde_AttributeSelector.{C30EF6BE-4A71-47D0-A049-F289D71A3559}&quot; 80 &quot;_MDDE_LDM.mdde_Value.{C1E04409-79C8-4E5A-A0F8-3877AEB28F39}&quot; 80 &quot;_MDDE_LDM.mdde_Attribute.{0BA15ECB-9BC9-4E9C-9F01-2D0034293CA7}&quot; -1 NAME -1 CODE -1 PRNT -1 DISPNAME -1 OBJTYPE -1 CDAT -1 CUSR -1 MDAT -1 MUSR -1 OMDAT -1 CLSSNAME -1 FLDR -1 SDSC -1 OLOC -1 GPRT -1 PCKG -1 NOTETEXT -1 DESCTEXT -1 KYWD -1 LABL 80 GENEORGN -1 STRN -1 MODL -1 CPNM -1 MSTP -1 DESC -1 NOTE -1 HASNOTE -1 RPLA -1</a:DefaultColumnFilter>
+<c:DestinationStereotypeObject>
+<o:StereotypeTargetItem Ref="13E15C6B-1F5C-435C-89D9-07876B47E8FC"/>
+</c:DestinationStereotypeObject>
+</o:ExtendedCompositionTargetItem>

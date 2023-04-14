@@ -1,0 +1,21 @@
+<o:FormTargetItem Id="36192A9E-57FA-480D-B483-F56B412A1E87">
+<a:ObjectID>36192A9E-57FA-480D-B483-F56B412A1E87</a:ObjectID>
+<a:Name>MappingDetails</a:Name>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;TabWindow Name=&quot;Details&quot; &gt;
+      &lt;VerticalLayout Name=&quot;Source objects&quot; &gt;
+         &lt;StandardCollection Collection=&quot;mdde_SourceObjects&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+      &lt;VerticalLayout Name=&quot;Attribute mappings&quot; &gt;
+         &lt;StandardCollection Collection=&quot;StructuralFeatureMaps&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+      &lt;VerticalLayout Name=&quot;Examples&quot; &gt;
+         &lt;StandardCollection Collection=&quot;mdde_Mapping_Examples&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+   &lt;/TabWindow&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1650365215</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:FormTargetItem>

@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="B2ABB14D-0AF3-4008-89B4-70FA4E8AC0E5">
+<a:TypePublicName>MethodTargetItem</a:TypePublicName>
+<a:ObjectID>B2ABB14D-0AF3-4008-89B4-70FA4E8AC0E5</a:ObjectID>
+<a:Name>Methods</a:Name>
+<a:CreationDate>1653999090</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Entity_AddMapping.xml" />
+<xi:include href="mdde_Entity_DeleteMapping.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

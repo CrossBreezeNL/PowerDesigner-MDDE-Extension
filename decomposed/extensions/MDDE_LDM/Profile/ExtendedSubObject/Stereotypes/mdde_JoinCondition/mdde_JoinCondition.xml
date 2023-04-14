@@ -1,0 +1,18 @@
+<o:StereotypeTargetItem Id="8217DEE6-7977-4E4B-8E3A-FC0ACC05FFD3">
+<a:ObjectID>8217DEE6-7977-4E4B-8E3A-FC0ACC05FFD3</a:ObjectID>
+<a:Name>mdde_JoinCondition</a:Name>
+<a:CreationDate>1650360904</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Join condition</a:Label>
+<a:PluralLabel>Join conditions</a:PluralLabel>
+<a:UseAsMetaClass>1</a:UseAsMetaClass>
+<a:DefaultName>Join condition</a:DefaultName>
+<c:Categories>
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Extended_Collections/Extended_Collections.xml" />
+<xi:include href="Templates/Templates.xml" />
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Methods/Methods.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

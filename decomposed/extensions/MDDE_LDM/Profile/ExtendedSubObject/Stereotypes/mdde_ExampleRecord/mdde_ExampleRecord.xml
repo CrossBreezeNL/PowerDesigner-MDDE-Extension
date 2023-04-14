@@ -1,0 +1,13 @@
+<o:StereotypeTargetItem Id="BA82114F-2945-4125-A251-D62BBB77C3B3">
+<a:ObjectID>BA82114F-2945-4125-A251-D62BBB77C3B3</a:ObjectID>
+<a:Name>mdde_ExampleRecord</a:Name>
+<a:CreationDate>1661258604</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Example record (MDDE)</a:Label>
+<c:Categories>
+<xi:include href="Extended_Compositions/Extended_Compositions.xml" />
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

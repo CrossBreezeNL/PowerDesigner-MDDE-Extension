@@ -1,0 +1,22 @@
+<o:EntitySymbol Id="ExampleDWH_Entity_2CBE61AD-180C-485A-8F14-2F2CEA9C225F">
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((12422,27063), (26994,36659))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>12615680</a:LineColor>
+<a:FillColor>16570034</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="2CBE61AD-180C-485A-8F14-2F2CEA9C225F"/>
+</c:Object>
+</o:EntitySymbol>

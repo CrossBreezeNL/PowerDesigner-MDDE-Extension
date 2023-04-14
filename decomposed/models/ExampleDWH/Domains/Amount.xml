@@ -1,0 +1,12 @@
+<o:Domain Id="3813C360-5A71-4B09-B8F3-F37235EACD01">
+<a:ObjectID>3813C360-5A71-4B09-B8F3-F37235EACD01</a:ObjectID>
+<a:Name>Amount</a:Name>
+<a:Code>Amount</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {7E9EF944-E20C-49F3-97B0-8E0BBCB9C41C}
+DAT 1680508903</a:History>
+<a:DataType>DC12,2</a:DataType>
+<a:Length>12</a:Length>
+<a:Precision>2</a:Precision>
+</o:Domain>

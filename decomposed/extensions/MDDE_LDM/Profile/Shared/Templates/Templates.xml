@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="3098B21A-517A-4383-9A59-95C3A88D9D91">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>3098B21A-517A-4383-9A59-95C3A88D9D91</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1650361090</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_EmptyList.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

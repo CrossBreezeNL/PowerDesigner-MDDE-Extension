@@ -1,0 +1,13 @@
+<o:TypedCategoryTargetItem Id="C69EE8AB-D9D0-49AE-9467-E48CC20B66DE">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>C69EE8AB-D9D0-49AE-9467-E48CC20B66DE</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1657013652</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Value.xml" />
+<xi:include href="mdde_Attribute.xml" />
+<xi:include href="mdde_AttributeSelector.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

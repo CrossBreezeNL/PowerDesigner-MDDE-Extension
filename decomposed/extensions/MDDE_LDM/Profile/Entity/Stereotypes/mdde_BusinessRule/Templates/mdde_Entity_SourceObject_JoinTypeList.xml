@@ -1,0 +1,9 @@
+<o:TemplateTargetItem Id="F721F79A-9DFB-4FAC-8C17-3F80B1BF41AA">
+<a:ObjectID>F721F79A-9DFB-4FAC-8C17-3F80B1BF41AA</a:ObjectID>
+<a:Name>mdde_Entity_SourceObject_JoinTypeList</a:Name>
+<a:TemplateTargetItem.Value>Cross apply
+Outer apply</a:TemplateTargetItem.Value>
+<a:CreationDate>1652263054</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

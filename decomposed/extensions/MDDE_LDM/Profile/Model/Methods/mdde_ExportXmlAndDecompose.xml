@@ -1,0 +1,32 @@
+<o:MethodTargetItem Id="BAFE969A-F488-4F43-8D7C-58270DE1E30D">
+<a:ObjectID>BAFE969A-F488-4F43-8D7C-58270DE1E30D</a:ObjectID>
+<a:Name>mdde_ExportXmlAndDecompose</a:Name>
+<a:CreationDate>1651739370</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+
+   &#39; Clean the model from unused shortcuts and removing extended obsolete attribute or extended collections.
+   &#39; Disabled for now since it seems to throw away the extension from the model.
+   &#39;WriteDebug &quot;Cleaning the model&quot;
+   &#39;obj.CleanModel()
+   
+   &#39; Update the display preferences of all diagrams.
+   obj.ExecuteCustomMethod(cMDDE_EXT_CODE &amp; &quot;.mdde_UpdateDiagramPreferences&quot;)
+   
+   &#39; Save any change to the model file before exporting and decomposing.
+   WriteDebug &quot;Saving the model&quot;
+   obj.Save()
+   
+   &#39; Decompose the model.
+   obj.ExecuteCustomMethod(cMDDE_EXT_CODE &amp; &quot;.mdde_Decompose&quot;)
+   
+   &#39; Export XML of the model.
+   obj.ExecuteCustomMethod(cMDDE_EXT_CODE &amp; &quot;.mdde_ExportXml&quot;)
+   
+   &#39; Save any changes to the model file after decomposing.
+   WriteDebug &quot;Saving the model file&quot;
+   obj.Save()
+   
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

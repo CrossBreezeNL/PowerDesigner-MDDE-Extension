@@ -1,0 +1,152 @@
+<o:Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805">
+<a:ObjectID>FEEBABF2-3F57-42F3-B5AB-485037997805</a:ObjectID>
+<a:Name>Derive Customer FullName</a:Name>
+<a:Code>Derive_Customer_FullName</a:Code>
+<a:CreationDate>1680514655</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Comment>Merge the firstname and lastname of a customer.</a:Comment>
+<a:Stereotype>mdde_ScalarBusinessRule</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,106={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,43=FIRST_NAME || &#39; &#39; || LAST_NAME AS FULL_NAME
+
+</a:ExtendedAttributesText>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="87261A10-7A94-443E-841E-13D3C5578D34">
+<a:ObjectID>87261A10-7A94-443E-841E-13D3C5578D34</a:ObjectID>
+<a:Name>Examples</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_BusinessRule_Examples</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680514810</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="6AB09887-AA4D-4A92-BD85-34A26EF2DAEF">
+<a:ObjectID>6AB09887-AA4D-4A92-BD85-34A26EF2DAEF</a:ObjectID>
+<a:Name>Example full name</a:Name>
+<a:Code>Example_full_name</a:Code>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_Example</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="6CE7BE38-7FE5-4503-B74E-0E69D1BB4682">
+<a:ObjectID>6CE7BE38-7FE5-4503-B74E-0E69D1BB4682</a:ObjectID>
+<a:Name>Example input</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleInput</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="FF2B1F37-4AF6-417D-98E7-7AE852C71B4E">
+<a:ObjectID>FF2B1F37-4AF6-417D-98E7-7AE852C71B4E</a:ObjectID>
+<a:Name>firstname</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ExampleInputAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=Moo
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="22C279F7-C892-44D3-8C6B-21DABEFA7EAA">
+<a:ObjectID>22C279F7-C892-44D3-8C6B-21DABEFA7EAA</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="E92AD306-2FC3-45E5-BB25-CC937198496D"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="3EB8E7F6-3552-4FF2-9D64-7D0900C6B8DA">
+<a:ObjectID>3EB8E7F6-3552-4FF2-9D64-7D0900C6B8DA</a:ObjectID>
+<a:Name>lastname</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ExampleInputAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,60={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,6=Othman
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="291C159A-7275-4B18-8DE5-7599EC354031">
+<a:ObjectID>291C159A-7275-4B18-8DE5-7599EC354031</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="01123E25-DC0F-4396-A487-1328F1D44134"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="B7CEBA64-3A40-4EE4-970B-E65BF3C5BC73">
+<a:ObjectID>B7CEBA64-3A40-4EE4-970B-E65BF3C5BC73</a:ObjectID>
+<a:Name>Expected scalar output (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExpectedScalarOutput</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="8438FD51-2983-4C0D-84E2-E88DD055AE8C">
+<a:ObjectID>8438FD51-2983-4C0D-84E2-E88DD055AE8C</a:ObjectID>
+<a:Name>fullname</a:Name>
+<a:Code>FULLNAME</a:Code>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ExpectedOutputAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,65={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,10=Moo Othman
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="DA2FE59D-789D-4923-93B9-BC24851E62C6">
+<a:ObjectID>DA2FE59D-789D-4923-93B9-BC24851E62C6</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680522881</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="C979CF59-70EA-4B3F-B2FE-2919D9BABF85"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+<c:Attributes>
+<o:EntityAttribute Id="E92AD306-2FC3-45E5-BB25-CC937198496D">
+<a:ObjectID>E92AD306-2FC3-45E5-BB25-CC937198496D</a:ObjectID>
+<a:Name>First Name</a:Name>
+<a:Code>FIRST_NAME</a:Code>
+<a:CreationDate>1680514810</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_InputAttribute</a:Stereotype>
+<a:DataType>VA55</a:DataType>
+<a:Length>55</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="01123E25-DC0F-4396-A487-1328F1D44134">
+<a:ObjectID>01123E25-DC0F-4396-A487-1328F1D44134</a:ObjectID>
+<a:Name>Last Name</a:Name>
+<a:Code>LAST_NAME</a:Code>
+<a:CreationDate>1680514810</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_InputAttribute</a:Stereotype>
+<a:DataType>VA55</a:DataType>
+<a:Length>55</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85">
+<a:ObjectID>C979CF59-70EA-4B3F-B2FE-2919D9BABF85</a:ObjectID>
+<a:Name>Full Name</a:Name>
+<a:Code>FULL_NAME</a:Code>
+<a:CreationDate>1680514810</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
+<a:DataType>VA110</a:DataType>
+<a:Length>110</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

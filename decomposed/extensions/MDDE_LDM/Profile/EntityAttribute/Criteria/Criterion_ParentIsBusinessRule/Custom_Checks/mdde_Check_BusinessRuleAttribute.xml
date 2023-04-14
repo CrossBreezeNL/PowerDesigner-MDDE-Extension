@@ -1,0 +1,22 @@
+<o:CustomCheckTargetItem Id="AD553B0B-A45A-4382-8EA8-041874AAFA2C">
+<a:ObjectID>AD553B0B-A45A-4382-8EA8-041874AAFA2C</a:ObjectID>
+<a:Name>mdde_Check_BusinessRuleAttribute</a:Name>
+<a:CreationDate>1655827518</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that every business rule attribute has a stereotype assigned.</a:HelpMessage>
+<a:OutputMessage>The following business rule attributes have no (correct) stereotype set:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   &#39; Check whether the attribute has a business rule attribute stereotype.
+   %Check% = obj.HasStereotype(&quot;mdde_BusinessRuleAttribute&quot;)
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

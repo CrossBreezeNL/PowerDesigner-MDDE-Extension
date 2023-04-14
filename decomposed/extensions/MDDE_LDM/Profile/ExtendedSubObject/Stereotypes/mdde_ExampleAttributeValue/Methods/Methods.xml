@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="484F84EA-C701-40B7-9F7A-04CA2AB10C45">
+<a:TypePublicName>MethodTargetItem</a:TypePublicName>
+<a:ObjectID>484F84EA-C701-40B7-9F7A-04CA2AB10C45</a:ObjectID>
+<a:Name>Methods</a:Name>
+<a:CreationDate>1657022244</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_AttributeEdit.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -1,0 +1,35 @@
+<o:Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955">
+<a:ObjectID>4CE7D49B-DF58-4436-A6A0-E8FD88A97955</a:ObjectID>
+<a:Name>Customer_SalesOrder</a:Name>
+<a:Code>Customer_SalesOrder</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {B9ECDFCE-F7E2-41DE-B1D7-5408928BFFCB}
+DAT 1680508903</a:History>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="2CBE61AD-180C-485A-8F14-2F2CEA9C225F"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="300B0E82-0073-4894-B364-9429B35F1D39"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="1984B994-A138-4E18-9E04-B02BAA3189C7">
+<a:ObjectID>1984B994-A138-4E18-9E04-B02BAA3189C7</a:ObjectID>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {29AEE97C-21BF-43BB-AE57-932D455DD869}
+DAT 1680508903</a:History>
+<c:Object1>
+<o:EntityAttribute Ref="821996D6-42E2-4246-8CCF-60B3B757B5E2"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="CDFD6CA7-C11D-49AE-9882-AC733F7943CF"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="3763BC8D-F85E-4173-AFF3-97646E092560"/>
+</c:ParentIdentifier>
+</o:Relationship>

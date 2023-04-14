@@ -1,0 +1,21 @@
+<o:MethodTargetItem Id="40D25FA7-3CDA-4B6C-A93A-4B03DE1E8126">
+<a:ObjectID>40D25FA7-3CDA-4B6C-A93A-4B03DE1E8126</a:ObjectID>
+<a:Name>mdde_Decompose</a:Name>
+<a:CreationDate>1650405522</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39; Log that we will start decomposing.
+   WriteInfo &quot;Start decomposing &quot; &amp; obj.Code
+
+   &#39; Resolve the decompose.ps1 script location.
+   Dim strDecomposeScriptLocation : strDecomposeScriptLocation = EvaluateNamedPath(&quot;%PDC_SCRIPT_PATH%/decompose.ps1&quot;)
+   &#39; The Filename contains the full path of the model.   
+   Dim strDecomposeCommand : strDecomposeCommand = &quot; -File &quot;&quot;&quot; &amp; strDecomposeScriptLocation &amp; &quot;&quot;&quot; &quot;&quot;&quot; &amp; obj.Filename &amp; &quot;&quot;&quot;&quot;
+   &#39; Execute the PowerShell command and pipe the output to the script output.
+   Dim strCommandResults : strCommandResults = ExecuteCommand(&quot;pwsh.exe&quot;, strDecomposeCommand, cmd_PipeOutput)
+
+   &#39; Log that we are done.
+   WriteInfo &quot;Done decomposing &quot; &amp; obj.Code
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

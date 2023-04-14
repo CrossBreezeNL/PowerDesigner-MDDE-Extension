@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="AFCA3821-3E12-4699-8816-957ABC3D967A">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>AFCA3821-3E12-4699-8816-957ABC3D967A</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1651669935</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Package_XmlExport_Template.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

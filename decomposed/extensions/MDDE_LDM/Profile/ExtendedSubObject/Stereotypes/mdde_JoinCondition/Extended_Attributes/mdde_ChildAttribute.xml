@@ -1,0 +1,18 @@
+<o:ExtendedAttributeTargetItem Id="11926273-2A7F-450C-8E2C-E0B105E9AD07">
+<a:ObjectID>11926273-2A7F-450C-8E2C-E0B105E9AD07</a:ObjectID>
+<a:Name>mdde_ChildAttribute</a:Name>
+<a:CreationDate>1650360904</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_EmptyList%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:DestinationClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:DestinationClassID>
+<a:Label>(internal) Child attribute (MDDE)</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="BFF92CAD-675F-4C38-ABE3-1E0CA84ABEA8"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="9EBDFEAE-D579-409E-B0CE-E5506BD25FD5"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

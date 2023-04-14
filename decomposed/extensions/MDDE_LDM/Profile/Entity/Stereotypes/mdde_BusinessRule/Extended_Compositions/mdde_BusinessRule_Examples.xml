@@ -1,0 +1,14 @@
+<o:ExtendedCompositionTargetItem Id="A2604219-B6D6-483E-B2B7-867A561FDECA">
+<a:ObjectID>A2604219-B6D6-483E-B2B7-867A561FDECA</a:ObjectID>
+<a:Name>mdde_BusinessRule_Examples</a:Name>
+<a:CreationDate>1657014166</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_Example</a:DestinationStereotype>
+<a:Label>Examples</a:Label>
+<a:DefaultColumnFilter>NAME 80 CODE 80</a:DefaultColumnFilter>
+<c:DestinationStereotypeObject>
+<o:StereotypeTargetItem Ref="FF90B999-7C71-420A-AC12-C865686191AE"/>
+</c:DestinationStereotypeObject>
+</o:ExtendedCompositionTargetItem>

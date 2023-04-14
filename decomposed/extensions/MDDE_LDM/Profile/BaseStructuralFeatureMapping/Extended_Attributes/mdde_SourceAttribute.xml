@@ -1,0 +1,56 @@
+<o:ExtendedAttributeTargetItem Id="AA5782B2-9902-4933-9B6E-77F576EABE9A">
+<a:ObjectID>AA5782B2-9902-4933-9B6E-77F576EABE9A</a:ObjectID>
+<a:Name>mdde_SourceAttribute</a:Name>
+<a:CreationDate>1651650809</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
+<a:Computed>1</a:Computed>
+<a:GetMethodScript>Function %Get%(obj)
+   &#39;Initialize the return value to an empty string.
+   %Get% = &quot;&quot;
+   
+   &#39; Get the source object to select the attribute from.
+   Dim objSourceObject : Set objSourceObject = obj.GetExtendedAttribute(&quot;mdde_SourceObject&quot;)
+   &#39;Get the Mapped To value.
+   Dim strMappedTo : strMappedTo = obj.MappedTo
+   
+   &#39; We can only derive the source attribute if the mapped to is set.
+   If Len(strMappedTo) &gt; 0 Then
+      &#39; If the source feature is not empty, the source is a real attribute.
+      If Not(obj.SourceFeature Is Nothing) Then
+         &#39; If the source object is also known, the mapping is correct and we present the source attribute.
+         If Not(objSourceObject Is Nothing) Then
+            %Get% = objSourceObject.DisplayName &amp; &quot;.&quot; &amp; obj.SourceFeature.DisplayName
+         End If
+      Else
+         &#39; If the mapped to value is a numeric value or encapsulated in single quotes, it&#39;s a static value.
+         If obj.GetExtendedAttribute(&quot;mdde_IsLiteralValue&quot;) = True Then
+            %Get% = strMappedTo
+         End If
+      End If
+   End If
+   
+End Function</a:GetMethodScript>
+<a:SetMethodScript>Sub %Set%(obj, value)
+   &#39; The Set method is used when someone types a value in the &#39;Source attribute (MDDE)&#39; field.
+   &#39; This is used to set static values, like numeric and textual values.
+   &#39; For setting an attribute, the ... should be used (which call the edit method).
+   
+   &#39; If the input value is numeric or encapsulated with quotes, we store the value in the MappedTo property.
+   If IsLiteralValue(value) Then
+      obj.MappedTo = value
+   &#39; Otherwise we show a message.
+   Else
+      MsgBox &quot;The entered value is not a valid static value!&quot; &amp; vbCrLf &amp; vbCrLf _
+               &amp; &quot;It should either be numeric or encapsulated with single quotes (&#39;).&quot; &amp; vbCrLf &amp; vbCrLf _
+               &amp; &quot;For non-literal values, use the [...] button to select an attribute.&quot; _
+            , vbExclamation _
+            , &quot;Unexpected value&quot;
+   End If
+End Sub</a:SetMethodScript>
+<a:Label>Source attribute (MDDE)</a:Label>
+<c:EditMethod>
+<o:MethodTargetItem Ref="96C373F5-913B-4D7F-A44B-33751986AB3C"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

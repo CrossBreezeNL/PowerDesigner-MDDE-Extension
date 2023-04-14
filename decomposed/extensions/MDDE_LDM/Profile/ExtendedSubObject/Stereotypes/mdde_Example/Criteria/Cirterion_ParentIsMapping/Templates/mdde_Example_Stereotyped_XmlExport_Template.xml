@@ -1,0 +1,10 @@
+<o:TemplateTargetItem Id="68EBA238-40AB-48E8-BC0E-7C642FD0885F">
+<a:ObjectID>68EBA238-40AB-48E8-BC0E-7C642FD0885F</a:ObjectID>
+<a:Name>mdde_Example_Stereotyped_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>.foreach_item(mdde_ExampleEntityData,\n)
+%mdde_EntityExampleData_XmlExport_Template%
+.next(\n)</a:TemplateTargetItem.Value>
+<a:CreationDate>1666184658</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

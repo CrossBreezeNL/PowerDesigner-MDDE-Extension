@@ -1,0 +1,14 @@
+<o:ExtendedCompositionTargetItem Id="BB56209B-6F26-4B6B-896E-FFA65194C353">
+<a:ObjectID>BB56209B-6F26-4B6B-896E-FFA65194C353</a:ObjectID>
+<a:Name>mdde_JoinConditions</a:Name>
+<a:CreationDate>1650363011</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_JoinCondition</a:DestinationStereotype>
+<a:Label>Join conditions (MDDE)</a:Label>
+<a:DefaultColumnFilter>&quot;_MDDE_LDM.mdde_ChildAttributeSelector.{4448B089-2B01-4D49-83CA-70CEDD1812F4}&quot; 80 &quot;_MDDE_LDM.mdde_JoinOperator.{2AA569D6-094E-4EA8-BBFF-713196E44D4E}&quot; 80 &quot;_MDDE_LDM.mdde_ParentAttributeSelector.{2F31C5F4-4F85-4804-80F4-B3AD3BD2F7BC}&quot; 80 &quot;_MDDE_LDM.mdde_ChildAttribute.{11926273-2A7F-450C-8E2C-E0B105E9AD07}&quot; -1 &quot;_MDDE_LDM.mdde_ParentSourceObject.{74944D52-7CEE-4632-B6D9-1333EBDF268F}&quot; -1 &quot;_MDDE_LDM.mdde_ParentAttribute.{F769AEF0-639D-4941-8C5B-2F2928B75278}&quot; -1 NAME -1 CODE -1 PRNT -1 DISPNAME -1 OBJTYPE -1 CDAT -1 CUSR -1 MDAT -1 MUSR -1 OMDAT -1 CLSSNAME -1 FLDR -1 SDSC -1 OLOC -1 GPRT -1 PCKG -1 NOTETEXT -1 DESCTEXT -1 KYWD -1 LABL -1 GENEORGN -1 STRN -1 MODL -1 CPNM -1 MSTP -1 DESC -1 NOTE -1 HASNOTE -1 RPLA -1</a:DefaultColumnFilter>
+<c:DestinationStereotypeObject>
+<o:StereotypeTargetItem Ref="8217DEE6-7977-4E4B-8E3A-FC0ACC05FFD3"/>
+</c:DestinationStereotypeObject>
+</o:ExtendedCompositionTargetItem>

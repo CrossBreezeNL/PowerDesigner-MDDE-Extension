@@ -1,0 +1,72 @@
+<o:Entity Id="F7FFB923-8961-422F-9EB7-B5EA84C99262">
+<a:ObjectID>F7FFB923-8961-422F-9EB7-B5EA84C99262</a:ObjectID>
+<a:Name>Country</a:Name>
+<a:Code>Country</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {AE5281EC-2967-401B-90E3-5BC979424676}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_entity</a:Stereotype>
+<c:Identifiers>
+<o:Identifier Id="90BFE7DC-ED2D-4B46-8D4C-84B7A37D713A">
+<a:ObjectID>90BFE7DC-ED2D-4B46-8D4C-84B7A37D713A</a:ObjectID>
+<a:Name>PK_Country</a:Name>
+<a:Code>PK_COUNTRY</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {93272387-F974-4CAF-BE81-C3F5714BDCEB}
+DAT 1680508903</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="5C782765-BA26-49BC-8DA4-FDFDD7538643"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="90BFE7DC-ED2D-4B46-8D4C-84B7A37D713A"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="5C782765-BA26-49BC-8DA4-FDFDD7538643">
+<a:ObjectID>5C782765-BA26-49BC-8DA4-FDFDD7538643</a:ObjectID>
+<a:Name>Code</a:Name>
+<a:Code>CODE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {89F4AF69-702C-4920-BFA9-9FB4FDA32AE2}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_businessKey</a:Stereotype>
+<a:DataType>VMBT3</a:DataType>
+<a:Length>3</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:ExtendedAttributesText>{9AA965AB-581D-4C13-8165-852F9A00B38F},MSSQLSRV2016,238={8C784170-CF5C-47B8-92C4-6F55CB5C20C7},ExtDeftConstName,0=
+{2B8CA186-41D1-4259-8C4A-3070140AEB80},ExtNullConstName,0=
+{80BA5E36-A6B9-415A-BB91-F7EF95528DCC},ExtCollation,0=
+{3175F5EA-150A-478F-823F-1D40A26994A8},ExtIdentitySeedInc,0=
+
+</a:ExtendedAttributesText>
+</o:EntityAttribute>
+<o:EntityAttribute Id="80ED7852-37E8-48C0-ADE2-B41FA9231ECB">
+<a:ObjectID>80ED7852-37E8-48C0-ADE2-B41FA9231ECB</a:ObjectID>
+<a:Name>Description</a:Name>
+<a:Code>DESCRIPTION</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {7D6CBC37-3075-4496-8A38-403A608E98FD}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>VMBT100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="8A0765A7-C0F9-4068-A63C-80884F17A8D5">
+<a:ObjectID>8A0765A7-C0F9-4068-A63C-80884F17A8D5</a:ObjectID>
+<a:Name>Continent</a:Name>
+<a:Code>CONTINENT</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {D193EAFD-72CE-4CAA-8C98-D64BB5227A2B}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>VMBT100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

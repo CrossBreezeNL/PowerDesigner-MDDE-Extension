@@ -1,0 +1,19 @@
+<o:ExtendedAttributeTargetItem Id="4DD6EFB5-B8C3-4C28-BE88-6D0709895850">
+<a:ObjectID>4DD6EFB5-B8C3-4C28-BE88-6D0709895850</a:ObjectID>
+<a:Name>mdde_BusinessRule_DefaultExample</a:Name>
+<a:CreationDate>1657021238</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_BusinessRule_DefaultExampleList%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_Example</a:DestinationStereotype>
+<a:Label>Default example</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="9CBBAB7B-B88D-40D4-BBEB-DD3B82F89CBF"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="D7A9435E-CEA7-46AF-9043-8353E24D2DF1"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>
