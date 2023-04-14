@@ -1,12 +1,12 @@
 <o:Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805">
 <a:ObjectID>FEEBABF2-3F57-42F3-B5AB-485037997805</a:ObjectID>
-<a:Name>Derive_Customer_FullName</a:Name>
+<a:Name>Derive Customer FullName</a:Name>
 <a:Code>Derive_Customer_FullName</a:Code>
 <a:CreationDate>1680514655</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
-<a:Comment>Merge the firstname and lastname of customer</a:Comment>
+<a:Comment>Merge the firstname and lastname of a customer.</a:Comment>
 <a:Stereotype>mdde_ScalarBusinessRule</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,106={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,43=concat(firstname, &#39;&#39;, lastname) as fullname
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,106={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,43=FIRST_NAME || &#39; &#39; || LAST_NAME AS FULL_NAME
 
 </a:ExtendedAttributesText>
 <c:ExtendedCompositions>
@@ -120,8 +120,8 @@
 <c:Attributes>
 <o:EntityAttribute Id="E92AD306-2FC3-45E5-BB25-CC937198496D">
 <a:ObjectID>E92AD306-2FC3-45E5-BB25-CC937198496D</a:ObjectID>
-<a:Name>firstname</a:Name>
-<a:Code>FIRSTNAME</a:Code>
+<a:Name>First Name</a:Name>
+<a:Code>FIRST_NAME</a:Code>
 <a:CreationDate>1680514810</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_InputAttribute</a:Stereotype>
@@ -130,8 +130,8 @@
 </o:EntityAttribute>
 <o:EntityAttribute Id="01123E25-DC0F-4396-A487-1328F1D44134">
 <a:ObjectID>01123E25-DC0F-4396-A487-1328F1D44134</a:ObjectID>
-<a:Name>lastname</a:Name>
-<a:Code>LASTNAME</a:Code>
+<a:Name>Last Name</a:Name>
+<a:Code>LAST_NAME</a:Code>
 <a:CreationDate>1680514810</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_InputAttribute</a:Stereotype>
@@ -140,8 +140,8 @@
 </o:EntityAttribute>
 <o:EntityAttribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85">
 <a:ObjectID>C979CF59-70EA-4B3F-B2FE-2919D9BABF85</a:ObjectID>
-<a:Name>fullname</a:Name>
-<a:Code>FULLNAME</a:Code>
+<a:Name>Full Name</a:Name>
+<a:Code>FULL_NAME</a:Code>
 <a:CreationDate>1680514810</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_OutputAttribute</a:Stereotype>

@@ -4,7 +4,7 @@
 <a:Code>Filter_FromNL</a:Code>
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
-<a:Comment>Filter on NL only</a:Comment>
+<a:Comment>Only include records where the country is the Netherlands.</a:Comment>
 <a:History>ORG {FC8BAD02-7678-44A0-A01B-383F2F46980E}
 DAT 1680508903
 ATT STRN
@@ -13,7 +13,7 @@ ATT LABL</a:History>
 <a:Stereotype>mdde_FilterBusinessRule</a:Stereotype>
 <a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,63={29131F46-42B1-4DD8-9C6B-A955E3CD33F4},xm_stereotype,6=filter
 
-{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,76={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,13=@pCode = &#39;NL&#39;
+{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,83={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,20=@COUNTRY_CODE = &#39;NL&#39;
 
 </a:ExtendedAttributesText>
 <c:ExtendedCompositions>
@@ -26,11 +26,11 @@ ATT LABL</a:History>
 <c:ExtendedComposition.Content>
 <o:ExtendedSubObject Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286">
 <a:ObjectID>72E29F02-DD8A-4D15-ABE6-3C03B708B286</a:ObjectID>
-<a:Name>pCode is equal to NL</a:Name>
-<a:Code>pCode_is_equal_to_NL</a:Code>
+<a:Name>Country is NL</a:Name>
+<a:Code>Country_is_NL</a:Code>
 <a:CreationDate>1680618617</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
-<a:Comment>When the pCode is equal to &#39;NL&#39;, the record should be included.</a:Comment>
+<a:Comment>When the country is equal to &#39;NL&#39;, the record should be included.</a:Comment>
 <a:Stereotype>mdde_Example</a:Stereotype>
 <c:ExtendedCompositions>
 <o:ExtendedComposition Id="B4368593-EA80-4138-A79F-06AA9EC26B6A">
@@ -73,13 +73,16 @@ ATT LABL</a:History>
 <c:Attributes>
 <o:EntityAttribute Id="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9">
 <a:ObjectID>3B3CCC71-5C81-4C56-84DA-EA62EC3843B9</a:ObjectID>
-<a:Name>pCode</a:Name>
-<a:Code>PCODE</a:Code>
+<a:Name>Country Code</a:Name>
+<a:Code>COUNTRY_CODE</a:Code>
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:History>ORG {2171013A-B9EA-4EA3-A1B0-8AC296CFCBEB}
-DAT 1680508903</a:History>
-<a:Stereotype>xm_parameter</a:Stereotype>
+DAT 1680508903
+ATT NAME
+ATT CODE
+ATT STRN</a:History>
+<a:Stereotype>mdde_InputAttribute</a:Stereotype>
 <a:DataType>VA25</a:DataType>
 <a:Length>25</a:Length>
 </o:EntityAttribute>

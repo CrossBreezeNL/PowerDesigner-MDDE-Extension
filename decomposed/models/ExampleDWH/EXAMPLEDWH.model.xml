@@ -43,7 +43,7 @@
               </JoinConditions>
             </SourceObject>
             <SourceObject Id="BFE7CB1D-E29F-43F8-80A1-8A39D28FDA94" Code="Derive_Customer_FullName" Name="Derive_Customer_FullName" Stereotype="mdde_SourceObject" JoinedObject="Derive_Customer_FullName" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
-              <Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive_Customer_FullName" Stereotype="mdde_ScalarBusinessRule" />
+              <Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_ScalarBusinessRule" />
             </SourceObject>
             <SourceObject Id="6DB43891-22B1-48D1-8BDC-27987FA6D4D0" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_SourceObject" JoinedObject="Filter_FromNL" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
               <Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule" />
@@ -54,9 +54,9 @@
               <TargetAttribute Id="821996D6-42E2-4246-8CCF-60B3B757B5E2" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_businessKey" />
               <SourceAttribute Model="EXAMPLESOURCE" SourceObjectId="BD5952F1-0868-4FC7-A3AC-273126B9E7AA" Id="071EB08F-6D7D-428D-BBB0-14B5B9D81201" Code="ID" Name="Id" />
             </AttributeMapping>
-            <AttributeMapping Id="7CBB89CA-D319-4CC8-B6B9-4D8E187C001C" TargetAttribute="FULLNAME" SourceAttribute="Derive_Customer_FullName.FULLNAME" IsLiteralValue="false">
+            <AttributeMapping Id="7CBB89CA-D319-4CC8-B6B9-4D8E187C001C" TargetAttribute="FULLNAME" SourceAttribute="Derive_Customer_FullName.FULL_NAME" IsLiteralValue="false">
               <TargetAttribute Id="706B5392-B8A5-4BD5-B3D1-ABCF4AAF1E97" Code="FULLNAME" Name="FullName" Stereotype="xm_attribute" />
-              <SourceAttribute SourceObjectId="BFE7CB1D-E29F-43F8-80A1-8A39D28FDA94" Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULLNAME" Name="fullname" Stereotype="mdde_OutputAttribute" />
+              <SourceAttribute SourceObjectId="BFE7CB1D-E29F-43F8-80A1-8A39D28FDA94" Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULL_NAME" Name="Full Name" Stereotype="mdde_OutputAttribute" />
             </AttributeMapping>
             <AttributeMapping Id="E0980325-A2FE-44ED-BFE1-2AC1141A1478" TargetAttribute="COUNTRY_DESCRIPTION" SourceAttribute="Country.DESCRIPTION" IsLiteralValue="false">
               <TargetAttribute Id="AEED4C8F-1536-4AA3-9882-2995E0D50FA8" Code="COUNTRY_DESCRIPTION" Name="Country_Description" Stereotype="xm_attribute" />
@@ -140,14 +140,14 @@
     </Entity>
     <Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule">
       <Attributes>
-        <Attribute Id="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9" Code="PCODE" Name="pCode" Stereotype="xm_parameter" Ordinal="1" DataType="VA" Length="25"></Attribute>
+        <Attribute Id="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9" Code="COUNTRY_CODE" Name="Country Code" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="VA" Length="25"></Attribute>
       </Attributes>
-      <SqlExpression>@pCode = &#39;NL&#39;</SqlExpression>
-      <SapHanaExpression>@pCode = &#39;NL&#39;</SapHanaExpression>
+      <SqlExpression>@COUNTRY_CODE = &#39;NL&#39;</SqlExpression>
+      <SapHanaExpression>@:COUNTRY_CODE = &#39;NL&#39;</SapHanaExpression>
       <Examples>
-        <Extended Sub-Object Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286" Code="pCode_is_equal_to_NL" Name="pCode is equal to NL" Stereotype="mdde_Example">  
+        <Extended Sub-Object Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286" Code="Country_is_NL" Name="Country is NL" Stereotype="mdde_Example">  
           <ExampleInput>
-            <Extended Sub-Object Attribute="PCODE" SqlValue="'&#39;&#39;NL&#39;&#39;'" Value="&#39;NL&#39;" />
+            <Extended Sub-Object Attribute="COUNTRY_CODE" SqlValue="'&#39;&#39;NL&#39;&#39;'" Value="&#39;NL&#39;" />
           </ExampleInput>
           <ExpectedFilterResult>true</ExpectedFilterResult>
         </Extended Sub-Object>
@@ -164,22 +164,22 @@
         <Attribute Id="14A56015-742B-4FBB-B366-55F400B86572" Code="PARENTCUSTOMERNAME" Name="ParentCustomerName" Ordinal="7" DataType="VA" Length="100"></Attribute>
       </Attributes>
     </Entity>
-    <Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive_Customer_FullName" Stereotype="mdde_ScalarBusinessRule">
+    <Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_ScalarBusinessRule">
       <Attributes>
-        <Attribute Id="E92AD306-2FC3-45E5-BB25-CC937198496D" Code="FIRSTNAME" Name="firstname" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="VA" Length="55"></Attribute>
-        <Attribute Id="01123E25-DC0F-4396-A487-1328F1D44134" Code="LASTNAME" Name="lastname" Stereotype="mdde_InputAttribute" Ordinal="2" DataType="VA" Length="55"></Attribute>
-        <Attribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULLNAME" Name="fullname" Stereotype="mdde_OutputAttribute" Ordinal="3" DataType="VA" Length="110"></Attribute>
+        <Attribute Id="E92AD306-2FC3-45E5-BB25-CC937198496D" Code="FIRST_NAME" Name="First Name" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="VA" Length="55"></Attribute>
+        <Attribute Id="01123E25-DC0F-4396-A487-1328F1D44134" Code="LAST_NAME" Name="Last Name" Stereotype="mdde_InputAttribute" Ordinal="2" DataType="VA" Length="55"></Attribute>
+        <Attribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULL_NAME" Name="Full Name" Stereotype="mdde_OutputAttribute" Ordinal="3" DataType="VA" Length="110"></Attribute>
       </Attributes>
-      <SqlExpression>concat(firstname, &#39;&#39;, lastname) as fullname</SqlExpression>
-      <SapHanaExpression>concat(firstname, &#39;&#39;, lastname) as fullname</SapHanaExpression>
+      <SqlExpression>FIRST_NAME || &#39; &#39; || LAST_NAME AS FULL_NAME</SqlExpression>
+      <SapHanaExpression>:FIRST_NAME || &#39; &#39; || :LAST_NAME AS :FULL_NAME</SapHanaExpression>
       <Examples>
         <Extended Sub-Object Id="6AB09887-AA4D-4A92-BD85-34A26EF2DAEF" Code="Example_full_name" Name="Example full name" Stereotype="mdde_Example">  
           <ExampleInput>
-            <Extended Sub-Object Attribute="FIRSTNAME" SqlValue="'Moo'" Value="Moo" />
-            <Extended Sub-Object Attribute="LASTNAME" SqlValue="'Othman'" Value="Othman" />
+            <Extended Sub-Object Attribute="FIRST_NAME" SqlValue="'Moo'" Value="Moo" />
+            <Extended Sub-Object Attribute="LAST_NAME" SqlValue="'Othman'" Value="Othman" />
           </ExampleInput>
           <ExpectedScalarOutput>
-            <Extended Sub-Object Attribute="FULLNAME" SqlValue="'Moo Othman'" Value="Moo Othman" />
+            <Extended Sub-Object Attribute="FULL_NAME" SqlValue="'Moo Othman'" Value="Moo Othman" />
           </ExpectedScalarOutput>
         </Extended Sub-Object>
       </Examples>
