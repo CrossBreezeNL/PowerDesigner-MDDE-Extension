@@ -155,6 +155,57 @@
 </c:Content>
 </o:ExtendedCollection>
 </c:ExtendedCollections>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="36A6F533-E2EA-4695-86C0-DE048EF4E897">
+<a:ObjectID>36A6F533-E2EA-4695-86C0-DE048EF4E897</a:ObjectID>
+<a:Name>Join conditions (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinConditions</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681481511</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="7E9845C4-FAD4-446B-9EEA-50B4D8596CD3">
+<a:ObjectID>7E9845C4-FAD4-446B-9EEA-50B4D8596CD3</a:ObjectID>
+<a:Name>Join condition_1</a:Name>
+<a:Code>Join_condition_1</a:Code>
+<a:CreationDate>1681481511</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_JoinCondition</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="416F1EBC-1026-42D2-A5BF-9E6291B0FE94">
+<a:ObjectID>416F1EBC-1026-42D2-A5BF-9E6291B0FE94</a:ObjectID>
+<a:Name>mdde_ChildAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ChildAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681481529</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="E9E8687A-F706-432C-ACC0-F3FDB53CFA07">
+<a:ObjectID>E9E8687A-F706-432C-ACC0-F3FDB53CFA07</a:ObjectID>
+<a:Name>mdde_ParentSourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ParentSourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681481542</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="BD5952F1-0868-4FC7-A3AC-273126B9E7AA"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="3A85E5EC-505B-409A-B0C8-71150E243279">
+<a:ObjectID>3A85E5EC-505B-409A-B0C8-71150E243279</a:ObjectID>
+<a:Name>mdde_ParentAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ParentAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681481542</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="16CA98D6-6762-4DDE-B801-FED3E0161E48"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
 </o:ExtendedSubObject>
 </c:ExtendedComposition.Content>
 </o:ExtendedComposition>
@@ -243,6 +294,15 @@
 </c:SourceFeatures>
 <c:BaseStructuralFeatureMapping.Feature>
 <o:EntityAttribute Ref="AEED4C8F-1536-4AA3-9882-2995E0D50FA8"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="892C88D0-AA94-49BF-B44B-C1AA36BF595C">
+<a:ObjectID>892C88D0-AA94-49BF-B44B-C1AA36BF595C</a:ObjectID>
+<a:CreationDate>1681482489</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Expression>&#39;CRM&#39;</a:Expression>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="F8F03F52-1D36-4E8D-BF7D-EB749FE204FB"/>
 </c:BaseStructuralFeatureMapping.Feature>
 </o:DefaultStructuralFeatureMapping>
 </c:StructuralFeatureMaps>

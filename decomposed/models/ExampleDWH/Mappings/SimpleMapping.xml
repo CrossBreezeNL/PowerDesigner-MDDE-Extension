@@ -1,0 +1,1548 @@
+<o:DefaultObjectMapping Id="68FC41F2-429B-4AD8-9B62-274EA98B4979">
+<a:ObjectID>68FC41F2-429B-4AD8-9B62-274EA98B4979</a:ObjectID>
+<a:Name>SimpleMapping</a:Name>
+<a:Code>SimpleMapping</a:Code>
+<a:CreationDate>1681479477</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="73F7516E-3C38-49D6-92A6-BD62D4F98B60">
+<a:ObjectID>73F7516E-3C38-49D6-92A6-BD62D4F98B60</a:ObjectID>
+<a:Name>Source objects (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObjects</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681479477</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A">
+<a:ObjectID>33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A</a:ObjectID>
+<a:Name>Customer Cust</a:Name>
+<a:Code>Customer_Cust</a:Code>
+<a:CreationDate>1681479477</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_SourceObject</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,123={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,4=From
+{4F5E7B71-E5C4-49DC-BFA5-ABE9B6660801},mdde_JoinAlias,4=Cust
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="6B1C50DB-1160-4C90-812F-5CDAF2778DE0">
+<a:ObjectID>6B1C50DB-1160-4C90-812F-5CDAF2778DE0</a:ObjectID>
+<a:Name>mdde_JoinedObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinedObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681479477</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="AAB39AC0-8B7A-4424-9F9D-2862C68E941B"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="22AB1CD4-4B56-4B09-9AC0-FD32A6454C9A">
+<a:ObjectID>22AB1CD4-4B56-4B09-9AC0-FD32A6454C9A</a:ObjectID>
+<a:Name>Country Cntr</a:Name>
+<a:Code>Country_Cntr</a:Code>
+<a:CreationDate>1681479939</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_SourceObject</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,128={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,9=Left join
+{4F5E7B71-E5C4-49DC-BFA5-ABE9B6660801},mdde_JoinAlias,4=Cntr
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="F59E3FFE-5754-4BD8-A60D-6E7D1FAE15C1">
+<a:ObjectID>F59E3FFE-5754-4BD8-A60D-6E7D1FAE15C1</a:ObjectID>
+<a:Name>mdde_JoinedObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinedObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681479939</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Entity Ref="F7FFB923-8961-422F-9EB7-B5EA84C99262"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="240FF0BB-336B-4A32-9A50-849412AD7309">
+<a:ObjectID>240FF0BB-336B-4A32-9A50-849412AD7309</a:ObjectID>
+<a:Name>Join conditions (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinConditions</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681480936</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="083D3B4E-2672-42F6-8FE3-FDD85631B427">
+<a:ObjectID>083D3B4E-2672-42F6-8FE3-FDD85631B427</a:ObjectID>
+<a:Name>Join condition_1</a:Name>
+<a:Code>Join_condition_1</a:Code>
+<a:CreationDate>1681480936</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_JoinCondition</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="DD256073-6430-4323-A249-1A06BF1E1D89">
+<a:ObjectID>DD256073-6430-4323-A249-1A06BF1E1D89</a:ObjectID>
+<a:Name>mdde_ChildAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ChildAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681480983</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="5C782765-BA26-49BC-8DA4-FDFDD7538643"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="20B1C37A-A584-4709-8E52-468037996747">
+<a:ObjectID>20B1C37A-A584-4709-8E52-468037996747</a:ObjectID>
+<a:Name>mdde_ParentSourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ParentSourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681480998</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="75187BD0-4ED8-404A-ABD6-9609D6D072E4">
+<a:ObjectID>75187BD0-4ED8-404A-ABD6-9609D6D072E4</a:ObjectID>
+<a:Name>mdde_ParentAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ParentAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681480998</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="16CA98D6-6762-4DDE-B801-FED3E0161E48"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="982B9980-89F5-4F1A-80EE-9043EF88CBCD">
+<a:ObjectID>982B9980-89F5-4F1A-80EE-9043EF88CBCD</a:ObjectID>
+<a:Name>Examples</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Mapping_Examples</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681479939</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="9ACCF28A-711B-4B11-84DB-6C5A68ED4AEA">
+<a:ObjectID>9ACCF28A-711B-4B11-84DB-6C5A68ED4AEA</a:ObjectID>
+<a:Name>Happy flow</a:Name>
+<a:Code>Happy_flow</a:Code>
+<a:CreationDate>1681482911</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>This test scenario is a happy flow</a:Comment>
+<a:Stereotype>mdde_Example</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="28817145-FC98-4FCC-8B92-28208ABBE7FE">
+<a:ObjectID>28817145-FC98-4FCC-8B92-28208ABBE7FE</a:ObjectID>
+<a:Name>Example data (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleEntityData</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482998</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="467797B3-6AA5-4263-AB51-485D031234D8">
+<a:ObjectID>467797B3-6AA5-4263-AB51-485D031234D8</a:ObjectID>
+<a:Name>Expected output</a:Name>
+<a:Code>Entity_example_data__MDDE__1</a:Code>
+<a:CreationDate>1681482998</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_EntityExampleData</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="76E5F14A-348C-4ED5-A32A-E4D249F062E8">
+<a:ObjectID>76E5F14A-348C-4ED5-A32A-E4D249F062E8</a:ObjectID>
+<a:Name>mdde_ExampleEntity</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleEntity</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482998</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Entity Ref="300B0E82-0073-4894-B364-9429B35F1D39"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="F911E10A-4893-4650-AA86-E09AA7DFC66E">
+<a:ObjectID>F911E10A-4893-4650-AA86-E09AA7DFC66E</a:ObjectID>
+<a:Name>Example records (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleRecords</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483144</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="57585113-D953-4C85-9203-15184947D29C">
+<a:ObjectID>57585113-D953-4C85-9203-15184947D29C</a:ObjectID>
+<a:Name>First record</a:Name>
+<a:Code>Example_record__MDDE__1</a:Code>
+<a:CreationDate>1681483734</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleRecord</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="A1A43EA0-7BC9-48DD-B4D4-E2B2C876596C">
+<a:ObjectID>A1A43EA0-7BC9-48DD-B4D4-E2B2C876596C</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483758</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="62B8AB7F-7F4D-49A3-B7D5-04C6E1D9D03E">
+<a:ObjectID>62B8AB7F-7F4D-49A3-B7D5-04C6E1D9D03E</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483759</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="9388950D-6E3B-4D3D-97DE-3D58DD9E5919">
+<a:ObjectID>9388950D-6E3B-4D3D-97DE-3D58DD9E5919</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1681483759</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=1
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="65CCC55F-D0DC-422D-A5F2-481183FD7ED7">
+<a:ObjectID>65CCC55F-D0DC-422D-A5F2-481183FD7ED7</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483764</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="821996D6-42E2-4246-8CCF-60B3B757B5E2"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="6F39AB6F-38E0-43A3-8BFE-238D4BF14F00">
+<a:ObjectID>6F39AB6F-38E0-43A3-8BFE-238D4BF14F00</a:ObjectID>
+<a:Name>FirstName</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1681483759</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,58={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,4=John
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="9F835FC3-90CF-44EB-9F85-954489887DFC">
+<a:ObjectID>9F835FC3-90CF-44EB-9F85-954489887DFC</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483768</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="1C25B8C3-87B8-4ADD-846B-148F70ED6FA7"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="6DDE0AF6-BF9C-4D8E-A3FA-9294DB36B920">
+<a:ObjectID>6DDE0AF6-BF9C-4D8E-A3FA-9294DB36B920</a:ObjectID>
+<a:Name>LastName</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1681483759</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Smith
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="1E67995C-5850-4ED9-8F30-AC79BD566C37">
+<a:ObjectID>1E67995C-5850-4ED9-8F30-AC79BD566C37</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483772</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="9C9F9B92-807D-44E9-8126-B49E00833C72"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="6717A734-988C-4941-B3A9-A8E62E7A4C89">
+<a:ObjectID>6717A734-988C-4941-B3A9-A8E62E7A4C89</a:ObjectID>
+<a:Name>City</a:Name>
+<a:Code>CITY</a:Code>
+<a:CreationDate>1681483759</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,63={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,9=Amsterdam
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="92A48DC3-7AA1-408F-A099-8360163EB0B9">
+<a:ObjectID>92A48DC3-7AA1-408F-A099-8360163EB0B9</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483776</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="80FDED88-4CF0-4708-8E2C-87910197B915"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="B957D208-19E5-4D1D-948A-705E1FE141B7">
+<a:ObjectID>B957D208-19E5-4D1D-948A-705E1FE141B7</a:ObjectID>
+<a:Name>Country_Code</a:Name>
+<a:Code>COUNTRY_CODE</a:Code>
+<a:CreationDate>1681483759</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,56={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,2=NL
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="0854AB54-2777-4C90-AC6C-1E2D42867D9C">
+<a:ObjectID>0854AB54-2777-4C90-AC6C-1E2D42867D9C</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483780</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="0219356E-AA66-4F1D-9EDA-1F6CA72D3C14"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="F1B991D8-83AF-4570-A401-978888E2BA23">
+<a:ObjectID>F1B991D8-83AF-4570-A401-978888E2BA23</a:ObjectID>
+<a:Name>Country_Continent</a:Name>
+<a:Code>COUNTRY_CONTINENT</a:Code>
+<a:CreationDate>1681483759</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,60={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,6=Europe
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="92D9FDA8-6975-40DC-8E10-0C674470AF81">
+<a:ObjectID>92D9FDA8-6975-40DC-8E10-0C674470AF81</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483784</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="DCCFD5DD-7EFD-4EF9-AF76-DE1C9141C268"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="E3B05DFB-D21C-4222-A5D2-CED0215BA331">
+<a:ObjectID>E3B05DFB-D21C-4222-A5D2-CED0215BA331</a:ObjectID>
+<a:Name>RecordSource</a:Name>
+<a:Code>RECORDSOURCE</a:Code>
+<a:CreationDate>1681483759</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=CRM
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="6AD06365-C6E6-4A87-8861-53C66637816B">
+<a:ObjectID>6AD06365-C6E6-4A87-8861-53C66637816B</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483787</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="F8F03F52-1D36-4E8D-BF7D-EB749FE204FB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="1642DB53-C74A-437F-A41C-E1A6126AA103">
+<a:ObjectID>1642DB53-C74A-437F-A41C-E1A6126AA103</a:ObjectID>
+<a:Name>Second record</a:Name>
+<a:Code>Example_record__MDDE__2</a:Code>
+<a:CreationDate>1681483742</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleRecord</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="E8226501-C4F7-48A5-9C7B-6E64F7264E89">
+<a:ObjectID>E8226501-C4F7-48A5-9C7B-6E64F7264E89</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483809</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="B952BC5C-0CB7-49FA-8A00-73D2AA815EB8">
+<a:ObjectID>B952BC5C-0CB7-49FA-8A00-73D2AA815EB8</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483813</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="DC4D4482-B3F5-498D-B089-FF3A06923561">
+<a:ObjectID>DC4D4482-B3F5-498D-B089-FF3A06923561</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1681483813</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=2
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="3EF1F90B-A3EB-4590-B373-E20B1FA61AFB">
+<a:ObjectID>3EF1F90B-A3EB-4590-B373-E20B1FA61AFB</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483817</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="821996D6-42E2-4246-8CCF-60B3B757B5E2"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="79DB7CB7-FED9-40D4-9E4B-21C72C96F7C4">
+<a:ObjectID>79DB7CB7-FED9-40D4-9E4B-21C72C96F7C4</a:ObjectID>
+<a:Name>FirstName</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1681483813</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Frank
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="878DEF01-DA4D-4474-A1B6-9CCA23404DA4">
+<a:ObjectID>878DEF01-DA4D-4474-A1B6-9CCA23404DA4</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483823</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="1C25B8C3-87B8-4ADD-846B-148F70ED6FA7"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="F2A2E88C-B0C9-470B-8C75-55AD5AC4ED7C">
+<a:ObjectID>F2A2E88C-B0C9-470B-8C75-55AD5AC4ED7C</a:ObjectID>
+<a:Name>LastName</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1681483813</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Black
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="F71E2DA8-C721-4A40-B744-2D19CC2C9B76">
+<a:ObjectID>F71E2DA8-C721-4A40-B744-2D19CC2C9B76</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483826</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="9C9F9B92-807D-44E9-8126-B49E00833C72"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="4CBB45CE-E594-45FA-9621-C465E0A922CD">
+<a:ObjectID>4CBB45CE-E594-45FA-9621-C465E0A922CD</a:ObjectID>
+<a:Name>City</a:Name>
+<a:Code>CITY</a:Code>
+<a:CreationDate>1681483813</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,63={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,9=Eindhoven
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="3C7F7B79-1723-4C0D-86C6-015F534E0D53">
+<a:ObjectID>3C7F7B79-1723-4C0D-86C6-015F534E0D53</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483831</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="80FDED88-4CF0-4708-8E2C-87910197B915"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="8FA4A389-0351-43EB-A879-68911879C320">
+<a:ObjectID>8FA4A389-0351-43EB-A879-68911879C320</a:ObjectID>
+<a:Name>Country_Code</a:Name>
+<a:Code>COUNTRY_CODE</a:Code>
+<a:CreationDate>1681483813</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,56={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,2=NL
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="2162C316-8DA8-41CA-B6F5-9592050B56E0">
+<a:ObjectID>2162C316-8DA8-41CA-B6F5-9592050B56E0</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483835</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="0219356E-AA66-4F1D-9EDA-1F6CA72D3C14"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="1CED5AFB-EDB8-4A74-A056-98721A62BF63">
+<a:ObjectID>1CED5AFB-EDB8-4A74-A056-98721A62BF63</a:ObjectID>
+<a:Name>Country_Continent</a:Name>
+<a:Code>COUNTRY_CONTINENT</a:Code>
+<a:CreationDate>1681483813</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,60={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,6=Europe
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="E3C7FEA8-7A69-4A54-8AE2-E9AC8712E927">
+<a:ObjectID>E3C7FEA8-7A69-4A54-8AE2-E9AC8712E927</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483838</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="DCCFD5DD-7EFD-4EF9-AF76-DE1C9141C268"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="30B1BB16-A3AC-49A0-98E3-212D39E3A2A1">
+<a:ObjectID>30B1BB16-A3AC-49A0-98E3-212D39E3A2A1</a:ObjectID>
+<a:Name>RecordSource</a:Name>
+<a:Code>RECORDSOURCE</a:Code>
+<a:CreationDate>1681483813</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=CRM
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="12587958-AF6E-4129-AD3C-DDAAB5288884">
+<a:ObjectID>12587958-AF6E-4129-AD3C-DDAAB5288884</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483841</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="F8F03F52-1D36-4E8D-BF7D-EB749FE204FB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="99A92BF2-6310-474E-95A0-8FBF05A999CC">
+<a:ObjectID>99A92BF2-6310-474E-95A0-8FBF05A999CC</a:ObjectID>
+<a:Name>Example records (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleRecords</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483366</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="DF949C77-0B70-47C1-828C-DD081BDBED2B">
+<a:ObjectID>DF949C77-0B70-47C1-828C-DD081BDBED2B</a:ObjectID>
+<a:Name>Output record 1</a:Name>
+<a:Code>Example_record__MDDE__1</a:Code>
+<a:CreationDate>1681483366</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>First output record</a:Comment>
+<a:Stereotype>mdde_ExampleRecord</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="761DD4AE-F618-4998-9E52-B10462E7E4EF">
+<a:ObjectID>761DD4AE-F618-4998-9E52-B10462E7E4EF</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483485</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="BAABA775-0F2D-44CC-97C6-BB1B6D6C946A">
+<a:ObjectID>BAABA775-0F2D-44CC-97C6-BB1B6D6C946A</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483485</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="08BAD419-1BCC-4701-B90D-9148B11BB91F">
+<a:ObjectID>08BAD419-1BCC-4701-B90D-9148B11BB91F</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1681483485</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=1
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="668FF17D-AECB-4A4F-A8AB-D96A1F7141C5">
+<a:ObjectID>668FF17D-AECB-4A4F-A8AB-D96A1F7141C5</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483509</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="821996D6-42E2-4246-8CCF-60B3B757B5E2"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="F2033C97-FE3E-4E91-A900-DDD655E58F4D">
+<a:ObjectID>F2033C97-FE3E-4E91-A900-DDD655E58F4D</a:ObjectID>
+<a:Name>FirstName</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1681483504</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,58={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,4=John
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="9AEC4C9B-1E5A-4C88-8EAA-3A9E78BEDB74">
+<a:ObjectID>9AEC4C9B-1E5A-4C88-8EAA-3A9E78BEDB74</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483513</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="1C25B8C3-87B8-4ADD-846B-148F70ED6FA7"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="A5357E86-2F3C-4695-B93C-8805713E1FAB">
+<a:ObjectID>A5357E86-2F3C-4695-B93C-8805713E1FAB</a:ObjectID>
+<a:Name>LastName</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1681483504</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Smith
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="0F1021F1-E611-4ECF-A01A-D722E3A290B0">
+<a:ObjectID>0F1021F1-E611-4ECF-A01A-D722E3A290B0</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483518</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="9C9F9B92-807D-44E9-8126-B49E00833C72"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="A32D5FEA-01FE-4BFD-83FD-F902F3B35A71">
+<a:ObjectID>A32D5FEA-01FE-4BFD-83FD-F902F3B35A71</a:ObjectID>
+<a:Name>City</a:Name>
+<a:Code>CITY</a:Code>
+<a:CreationDate>1681483504</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,63={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,9=Amsterdam
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="488106BC-CB54-429D-BA7B-B413B70F7194">
+<a:ObjectID>488106BC-CB54-429D-BA7B-B413B70F7194</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483523</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="80FDED88-4CF0-4708-8E2C-87910197B915"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="2D0ED567-EAAD-4FD3-975E-F96167FE75B4">
+<a:ObjectID>2D0ED567-EAAD-4FD3-975E-F96167FE75B4</a:ObjectID>
+<a:Name>Country_Code</a:Name>
+<a:Code>COUNTRY_CODE</a:Code>
+<a:CreationDate>1681483504</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,56={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,2=NL
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="4F0E89EA-FE1D-4F0A-B909-124BD0478699">
+<a:ObjectID>4F0E89EA-FE1D-4F0A-B909-124BD0478699</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483527</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="0219356E-AA66-4F1D-9EDA-1F6CA72D3C14"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="29D82DC0-AB0B-4EAB-BB69-3D18DC646C74">
+<a:ObjectID>29D82DC0-AB0B-4EAB-BB69-3D18DC646C74</a:ObjectID>
+<a:Name>Country_Continent</a:Name>
+<a:Code>COUNTRY_CONTINENT</a:Code>
+<a:CreationDate>1681483504</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,60={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,6=Europe
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="BF1B5E08-6A86-4311-A414-C67D69247D57">
+<a:ObjectID>BF1B5E08-6A86-4311-A414-C67D69247D57</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483530</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="DCCFD5DD-7EFD-4EF9-AF76-DE1C9141C268"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="FC3954C1-0E31-41E7-9B69-7B0E0B33B85C">
+<a:ObjectID>FC3954C1-0E31-41E7-9B69-7B0E0B33B85C</a:ObjectID>
+<a:Name>RecordSource</a:Name>
+<a:Code>RECORDSOURCE</a:Code>
+<a:CreationDate>1681483504</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=CRM
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="D20BE32E-7F4D-48A2-AC33-7E4329063EBE">
+<a:ObjectID>D20BE32E-7F4D-48A2-AC33-7E4329063EBE</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483534</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="F8F03F52-1D36-4E8D-BF7D-EB749FE204FB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="0BEE977B-C7C5-427E-AF16-D5980C34B3D1">
+<a:ObjectID>0BEE977B-C7C5-427E-AF16-D5980C34B3D1</a:ObjectID>
+<a:Name>Output record 2</a:Name>
+<a:Code>Example_record__MDDE__2</a:Code>
+<a:CreationDate>1681483366</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>Second output record</a:Comment>
+<a:Stereotype>mdde_ExampleRecord</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="811B24E9-4305-40BA-BD3D-6A163BCAB3FC">
+<a:ObjectID>811B24E9-4305-40BA-BD3D-6A163BCAB3FC</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483485</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="29C26B3F-0FB0-445B-AA35-19DCA3D9390C">
+<a:ObjectID>29C26B3F-0FB0-445B-AA35-19DCA3D9390C</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483632</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="AAE9045C-4B7E-4DAD-B8A7-25D45DEDF5CF">
+<a:ObjectID>AAE9045C-4B7E-4DAD-B8A7-25D45DEDF5CF</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1681483632</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=2
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="EA7D9141-170E-4C58-95FD-A39D9B0991DC">
+<a:ObjectID>EA7D9141-170E-4C58-95FD-A39D9B0991DC</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483641</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="821996D6-42E2-4246-8CCF-60B3B757B5E2"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="0640DE69-9A17-47C4-8DB9-45E0D6D0920F">
+<a:ObjectID>0640DE69-9A17-47C4-8DB9-45E0D6D0920F</a:ObjectID>
+<a:Name>FirstName</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1681483632</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Frank
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="4D6FD3D0-A751-4A34-B039-F6990DC01227">
+<a:ObjectID>4D6FD3D0-A751-4A34-B039-F6990DC01227</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483645</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="1C25B8C3-87B8-4ADD-846B-148F70ED6FA7"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="DAA24938-3F16-444C-A13D-AAF7AE4FE657">
+<a:ObjectID>DAA24938-3F16-444C-A13D-AAF7AE4FE657</a:ObjectID>
+<a:Name>LastName</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1681483632</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Black
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="73F60B76-3CA7-4CCB-AE7F-6612B7DF899A">
+<a:ObjectID>73F60B76-3CA7-4CCB-AE7F-6612B7DF899A</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483649</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="9C9F9B92-807D-44E9-8126-B49E00833C72"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="3BD7BA6B-F224-4BF8-ABC6-42B98047D0C5">
+<a:ObjectID>3BD7BA6B-F224-4BF8-ABC6-42B98047D0C5</a:ObjectID>
+<a:Name>City</a:Name>
+<a:Code>CITY</a:Code>
+<a:CreationDate>1681483632</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,63={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,9=Eindhoven
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="942A57BD-ECEE-4256-8B98-23DBBD178511">
+<a:ObjectID>942A57BD-ECEE-4256-8B98-23DBBD178511</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483653</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="80FDED88-4CF0-4708-8E2C-87910197B915"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="136E938E-D797-4821-BB8E-6DE0F5B4E4D9">
+<a:ObjectID>136E938E-D797-4821-BB8E-6DE0F5B4E4D9</a:ObjectID>
+<a:Name>Country_Code</a:Name>
+<a:Code>COUNTRY_CODE</a:Code>
+<a:CreationDate>1681483632</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,56={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,2=NL
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="003C944E-8C4C-481C-89F3-72CDF39ECA12">
+<a:ObjectID>003C944E-8C4C-481C-89F3-72CDF39ECA12</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483657</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="0219356E-AA66-4F1D-9EDA-1F6CA72D3C14"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="0A39D40B-7141-44C6-85E5-3369C8CDB846">
+<a:ObjectID>0A39D40B-7141-44C6-85E5-3369C8CDB846</a:ObjectID>
+<a:Name>Country_Continent</a:Name>
+<a:Code>COUNTRY_CONTINENT</a:Code>
+<a:CreationDate>1681483632</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,60={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,6=Europe
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="6E30BBAD-6CCB-48C3-967B-002A578A0573">
+<a:ObjectID>6E30BBAD-6CCB-48C3-967B-002A578A0573</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483661</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="DCCFD5DD-7EFD-4EF9-AF76-DE1C9141C268"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="6787E8BE-7562-45EA-B9EA-5B206D3DB28A">
+<a:ObjectID>6787E8BE-7562-45EA-B9EA-5B206D3DB28A</a:ObjectID>
+<a:Name>RecordSource</a:Name>
+<a:Code>RECORDSOURCE</a:Code>
+<a:CreationDate>1681483632</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=CRM
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="D0E56E28-DED5-4189-8463-D8A594C3E29F">
+<a:ObjectID>D0E56E28-DED5-4189-8463-D8A594C3E29F</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483666</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="F8F03F52-1D36-4E8D-BF7D-EB749FE204FB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="F344C453-46A5-4A36-B2BE-2CAF7F3FB823">
+<a:ObjectID>F344C453-46A5-4A36-B2BE-2CAF7F3FB823</a:ObjectID>
+<a:Name>Entity example data (MDDE)_2</a:Name>
+<a:Code>Entity_example_data__MDDE__2</a:Code>
+<a:CreationDate>1681483872</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_EntityExampleData</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="EDB343D5-6B00-4F24-A0D4-74D33E671CD8">
+<a:ObjectID>EDB343D5-6B00-4F24-A0D4-74D33E671CD8</a:ObjectID>
+<a:Name>mdde_ExampleEntity</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleEntity</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483890</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="AAB39AC0-8B7A-4424-9F9D-2862C68E941B"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="E524065B-28DE-49F4-BEE6-66068674B9EB">
+<a:ObjectID>E524065B-28DE-49F4-BEE6-66068674B9EB</a:ObjectID>
+<a:Name>Example records (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleRecords</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483880</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="EF59C165-64BB-448A-8B03-FC17D6185B26">
+<a:ObjectID>EF59C165-64BB-448A-8B03-FC17D6185B26</a:ObjectID>
+<a:Name>First record</a:Name>
+<a:Code>Example_record__MDDE__1</a:Code>
+<a:CreationDate>1681483904</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleRecord</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="7C06C573-46FF-496E-A0B2-02852B63B0BC">
+<a:ObjectID>7C06C573-46FF-496E-A0B2-02852B63B0BC</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483915</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="0EC2D6C4-2F93-46C0-9BB6-B0244A4F03B8">
+<a:ObjectID>0EC2D6C4-2F93-46C0-9BB6-B0244A4F03B8</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483916</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="9168B55A-8701-402F-A972-3E6DE0CDF140">
+<a:ObjectID>9168B55A-8701-402F-A972-3E6DE0CDF140</a:ObjectID>
+<a:Name>Id</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1681483916</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=1
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="97331372-1A16-4CA3-826A-2F32A193D6A6">
+<a:ObjectID>97331372-1A16-4CA3-826A-2F32A193D6A6</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483921</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="871AB45F-ADD2-454E-AFDD-6D4331ABEEBF"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="ADCBAE27-4C78-4456-A8A9-F8EB037629A5">
+<a:ObjectID>ADCBAE27-4C78-4456-A8A9-F8EB037629A5</a:ObjectID>
+<a:Name>FirstName</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1681483916</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,58={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,4=John
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="D9A682DB-EEAF-4A7C-A2D2-FAC1378B9AC7">
+<a:ObjectID>D9A682DB-EEAF-4A7C-A2D2-FAC1378B9AC7</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483925</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="48E38BAC-F7E9-4C58-A710-ADBADB4452E0"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="DEFD58D3-DF3D-4A3F-912B-3EC00A77955A">
+<a:ObjectID>DEFD58D3-DF3D-4A3F-912B-3EC00A77955A</a:ObjectID>
+<a:Name>LastName</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1681483916</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Smith
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="E86F22FC-88B3-46E7-9872-EC8AACFF6466">
+<a:ObjectID>E86F22FC-88B3-46E7-9872-EC8AACFF6466</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483928</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="4FA3FD51-1318-47D3-BE35-254B0683ADE7"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="F1968CCD-96BB-43C7-9F42-D9FDD1FCC0C8">
+<a:ObjectID>F1968CCD-96BB-43C7-9F42-D9FDD1FCC0C8</a:ObjectID>
+<a:Name>City</a:Name>
+<a:Code>CITY</a:Code>
+<a:CreationDate>1681483916</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,63={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,9=Amsterdam
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="31522C80-29A0-4351-9FA2-1F3470A749D9">
+<a:ObjectID>31522C80-29A0-4351-9FA2-1F3470A749D9</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483933</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="0A0F1142-734D-418D-BFF6-2146B79ED2D6"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="B2ACF635-8715-4E51-B40D-3FC0D22DC5EA">
+<a:ObjectID>B2ACF635-8715-4E51-B40D-3FC0D22DC5EA</a:ObjectID>
+<a:Name>Country</a:Name>
+<a:Code>COUNTRY</a:Code>
+<a:CreationDate>1681483916</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,56={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,2=NL
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="0F77012A-414F-40E4-863A-7A133358DE6F">
+<a:ObjectID>0F77012A-414F-40E4-863A-7A133358DE6F</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483936</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="16CA98D6-6762-4DDE-B801-FED3E0161E48"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="CD191195-C0B5-4FA0-9CE5-BE5A2314ABA8">
+<a:ObjectID>CD191195-C0B5-4FA0-9CE5-BE5A2314ABA8</a:ObjectID>
+<a:Name>Second record</a:Name>
+<a:Code>Example_record__MDDE__2</a:Code>
+<a:CreationDate>1681483904</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleRecord</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="899498D1-F57F-486E-8F8D-94A124C60138">
+<a:ObjectID>899498D1-F57F-486E-8F8D-94A124C60138</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483915</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="8F23BDFF-2B79-4EFB-964B-CC89FCC4684C">
+<a:ObjectID>8F23BDFF-2B79-4EFB-964B-CC89FCC4684C</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483958</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="C0E6D130-F1D5-4443-B0A7-3D43FEE84863">
+<a:ObjectID>C0E6D130-F1D5-4443-B0A7-3D43FEE84863</a:ObjectID>
+<a:Name>Id</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1681483958</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=2
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="A8BD7038-3E96-49A5-A21B-8316BAA90737">
+<a:ObjectID>A8BD7038-3E96-49A5-A21B-8316BAA90737</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483962</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="871AB45F-ADD2-454E-AFDD-6D4331ABEEBF"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="F3BD8120-6047-44C5-A799-2E0C36B44B34">
+<a:ObjectID>F3BD8120-6047-44C5-A799-2E0C36B44B34</a:ObjectID>
+<a:Name>FirstName</a:Name>
+<a:Code>FIRSTNAME</a:Code>
+<a:CreationDate>1681483958</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Frank
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="ED3ECC36-E3C5-4B22-BA6A-DC6AD267DE80">
+<a:ObjectID>ED3ECC36-E3C5-4B22-BA6A-DC6AD267DE80</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483966</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="48E38BAC-F7E9-4C58-A710-ADBADB4452E0"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="1FF023E1-31A0-4388-AF96-22421E7F5B92">
+<a:ObjectID>1FF023E1-31A0-4388-AF96-22421E7F5B92</a:ObjectID>
+<a:Name>LastName</a:Name>
+<a:Code>LASTNAME</a:Code>
+<a:CreationDate>1681483958</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,59={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,5=Black
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="E3B9CCD9-E68A-4CCD-95CA-285E43203E44">
+<a:ObjectID>E3B9CCD9-E68A-4CCD-95CA-285E43203E44</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483969</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="4FA3FD51-1318-47D3-BE35-254B0683ADE7"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="BE622FA9-D936-4230-99DE-2472AB294838">
+<a:ObjectID>BE622FA9-D936-4230-99DE-2472AB294838</a:ObjectID>
+<a:Name>City</a:Name>
+<a:Code>CITY</a:Code>
+<a:CreationDate>1681483958</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,56={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,2=NL
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="D0E4DCD5-E849-4794-BAE1-EBF09A3016B5">
+<a:ObjectID>D0E4DCD5-E849-4794-BAE1-EBF09A3016B5</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483973</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="0A0F1142-734D-418D-BFF6-2146B79ED2D6"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="9294AF20-3F6A-47D0-9103-8A8F3A07BDDF">
+<a:ObjectID>9294AF20-3F6A-47D0-9103-8A8F3A07BDDF</a:ObjectID>
+<a:Name>Country</a:Name>
+<a:Code>COUNTRY</a:Code>
+<a:CreationDate>1681483958</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,63={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,9=Eindhoven
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="ABC549B2-2A96-4CF6-B1D6-74C55DF999F2">
+<a:ObjectID>ABC549B2-2A96-4CF6-B1D6-74C55DF999F2</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483977</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Shortcut Ref="16CA98D6-6762-4DDE-B801-FED3E0161E48"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="F64EC157-60ED-4E67-855B-7C203A01CD04">
+<a:ObjectID>F64EC157-60ED-4E67-855B-7C203A01CD04</a:ObjectID>
+<a:Name>Entity example data (MDDE)_3</a:Name>
+<a:Code>Entity_example_data__MDDE__3</a:Code>
+<a:CreationDate>1681483872</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_EntityExampleData</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="E3748B68-E25C-4CBA-8C08-D37E7ACA0C48">
+<a:ObjectID>E3748B68-E25C-4CBA-8C08-D37E7ACA0C48</a:ObjectID>
+<a:Name>mdde_ExampleEntity</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleEntity</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483898</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:Entity Ref="F7FFB923-8961-422F-9EB7-B5EA84C99262"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="CF838339-2251-4DFF-BA09-1F49B6BCDFD2">
+<a:ObjectID>CF838339-2251-4DFF-BA09-1F49B6BCDFD2</a:ObjectID>
+<a:Name>Example records (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleRecords</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681483894</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="D6E1B6F2-063B-4336-A88B-CB227810C2E8">
+<a:ObjectID>D6E1B6F2-063B-4336-A88B-CB227810C2E8</a:ObjectID>
+<a:Name>NL record</a:Name>
+<a:Code>Example_record__MDDE__1</a:Code>
+<a:CreationDate>1681483997</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleRecord</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="43DFEF72-1652-43FB-A4AD-79C2D0068982">
+<a:ObjectID>43DFEF72-1652-43FB-A4AD-79C2D0068982</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681484006</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="3E643EB9-D843-4722-81E7-5650131B7BFE">
+<a:ObjectID>3E643EB9-D843-4722-81E7-5650131B7BFE</a:ObjectID>
+<a:Name>Example attribute values (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681484006</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="C04F5881-B9FE-482E-BF2C-7ADB4F22E814">
+<a:ObjectID>C04F5881-B9FE-482E-BF2C-7ADB4F22E814</a:ObjectID>
+<a:Name>Code</a:Name>
+<a:Code>CODE</a:Code>
+<a:CreationDate>1681484006</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,56={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,2=NL
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="562A2C98-C5CD-41C5-BA7F-1C43AB9EF5D9">
+<a:ObjectID>562A2C98-C5CD-41C5-BA7F-1C43AB9EF5D9</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681484012</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="5C782765-BA26-49BC-8DA4-FDFDD7538643"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="C72EE69C-B647-45AA-99F7-F569B4B6816E">
+<a:ObjectID>C72EE69C-B647-45AA-99F7-F569B4B6816E</a:ObjectID>
+<a:Name>Continent</a:Name>
+<a:Code>CONTINENT</a:Code>
+<a:CreationDate>1681484006</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,60={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,6=Europe
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="3288D594-8834-4158-B176-F4F3192C4DA8">
+<a:ObjectID>3288D594-8834-4158-B176-F4F3192C4DA8</a:ObjectID>
+<a:Name>mdde_Attribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Attribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681484016</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="8A0765A7-C0F9-4068-A63C-80884F17A8D5"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+<c:Classifier>
+<o:Entity Ref="300B0E82-0073-4894-B364-9429B35F1D39"/>
+</c:Classifier>
+<c:SourceClassifiers>
+<o:Entity Ref="F7FFB923-8961-422F-9EB7-B5EA84C99262"/>
+<o:Shortcut Ref="AAB39AC0-8B7A-4424-9F9D-2862C68E941B"/>
+</c:SourceClassifiers>
+<c:StructuralFeatureMaps>
+<o:DefaultStructuralFeatureMapping Id="83BF6A5C-D70D-43B4-A877-1B1D929B43E0">
+<a:ObjectID>83BF6A5C-D70D-43B4-A877-1B1D929B43E0</a:ObjectID>
+<a:CreationDate>1681482834</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="7B40A72B-6EB5-4096-92A2-9A9BFB7F375F">
+<a:ObjectID>7B40A72B-6EB5-4096-92A2-9A9BFB7F375F</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482862</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="871AB45F-ADD2-454E-AFDD-6D4331ABEEBF"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="821996D6-42E2-4246-8CCF-60B3B757B5E2"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="B93FE73A-8CCA-4336-9DB1-45303BBB3148">
+<a:ObjectID>B93FE73A-8CCA-4336-9DB1-45303BBB3148</a:ObjectID>
+<a:CreationDate>1681482834</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="4A8045E1-F5E3-4591-B9BF-F86EA687AFF6">
+<a:ObjectID>4A8045E1-F5E3-4591-B9BF-F86EA687AFF6</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482869</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="48E38BAC-F7E9-4C58-A710-ADBADB4452E0"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="1C25B8C3-87B8-4ADD-846B-148F70ED6FA7"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="4119999A-838C-4CE5-AB02-F3D49CB95EE0">
+<a:ObjectID>4119999A-838C-4CE5-AB02-F3D49CB95EE0</a:ObjectID>
+<a:CreationDate>1681482834</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="69355D76-475F-423F-8E15-F298701E09ED">
+<a:ObjectID>69355D76-475F-423F-8E15-F298701E09ED</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482874</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="4FA3FD51-1318-47D3-BE35-254B0683ADE7"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="9C9F9B92-807D-44E9-8126-B49E00833C72"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="FD1742F8-28F9-4D66-BFC5-689600A065C7">
+<a:ObjectID>FD1742F8-28F9-4D66-BFC5-689600A065C7</a:ObjectID>
+<a:CreationDate>1681482834</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="B7EAC23C-70C9-4BE8-8F2B-88A1D163C466">
+<a:ObjectID>B7EAC23C-70C9-4BE8-8F2B-88A1D163C466</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482881</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="0A0F1142-734D-418D-BFF6-2146B79ED2D6"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="80FDED88-4CF0-4708-8E2C-87910197B915"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="CB6CA535-6738-4B79-B0B5-E3FE4576451C">
+<a:ObjectID>CB6CA535-6738-4B79-B0B5-E3FE4576451C</a:ObjectID>
+<a:CreationDate>1681482834</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="13887969-9E0A-4456-9D7C-6A31B7C445F6">
+<a:ObjectID>13887969-9E0A-4456-9D7C-6A31B7C445F6</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482891</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="16CA98D6-6762-4DDE-B801-FED3E0161E48"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="0219356E-AA66-4F1D-9EDA-1F6CA72D3C14"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="F83C406F-C7A5-4774-9581-596EBAD2CFB8">
+<a:ObjectID>F83C406F-C7A5-4774-9581-596EBAD2CFB8</a:ObjectID>
+<a:CreationDate>1681482834</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="4DE76D34-1149-4C1C-99DC-33489CD8DDFA">
+<a:ObjectID>4DE76D34-1149-4C1C-99DC-33489CD8DDFA</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482897</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="22AB1CD4-4B56-4B09-9AC0-FD32A6454C9A"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:EntityAttribute Ref="80ED7852-37E8-48C0-ADE2-B41FA9231ECB"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="AEED4C8F-1536-4AA3-9882-2995E0D50FA8"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="1A0EC3FB-339C-4034-BE53-39EBA4D49A32">
+<a:ObjectID>1A0EC3FB-339C-4034-BE53-39EBA4D49A32</a:ObjectID>
+<a:CreationDate>1681482834</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="C0F88883-426E-4A14-A484-2E2D54409DD3">
+<a:ObjectID>C0F88883-426E-4A14-A484-2E2D54409DD3</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482904</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="22AB1CD4-4B56-4B09-9AC0-FD32A6454C9A"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:EntityAttribute Ref="8A0765A7-C0F9-4068-A63C-80884F17A8D5"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="DCCFD5DD-7EFD-4EF9-AF76-DE1C9141C268"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="B53AE344-E4AF-475E-8C61-EE5E7BAAA53D">
+<a:ObjectID>B53AE344-E4AF-475E-8C61-EE5E7BAAA53D</a:ObjectID>
+<a:CreationDate>1681482834</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="99ED1129-D280-46AD-8A81-948741EEFBBE">
+<a:ObjectID>99ED1129-D280-46AD-8A81-948741EEFBBE</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1681482910</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="33971AB0-49CF-4BF1-B45D-DE4EEF7EA24A"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="B2514214-F1F9-42EB-BE65-8B7C7BF77BD3"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="842A3F5E-3723-445B-A521-850B22378B23"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+</c:StructuralFeatureMaps>
+<c:DataSource>
+<o:DefaultDataSource Ref="2682665A-5174-4E1B-9085-251EA01809FA"/>
+</c:DataSource>
+</o:DefaultObjectMapping>
