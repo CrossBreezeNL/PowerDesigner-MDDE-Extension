@@ -14,7 +14,7 @@
       If strMetaClassLabel = &quot;Entity Attribute&quot; Then
          ScriptResult = &quot;Attribute&quot;
       Else
-         ScriptResult = strMetaClassLabel
+         ScriptResult = Replace(strMetaClassLabel, " ", "_")
       End If
    End If
 .endvbscript</a:TemplateTargetItem.Value>
