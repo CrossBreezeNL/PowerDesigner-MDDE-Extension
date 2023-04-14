@@ -2,7 +2,7 @@
 
 # Modeling guidelines
 
-Modeling guidelines help you develop models and generate code using the Rabobank Powerdesigner extentions. Applying these guidelines can improve the consistency, clarity, and readability of your models.
+Modeling guidelines help you develop models and generate code using the MDDE Powerdesigner extentions. Applying these guidelines can improve the consistency, clarity, and readability of your models.
 
 ## Guidelines
 
