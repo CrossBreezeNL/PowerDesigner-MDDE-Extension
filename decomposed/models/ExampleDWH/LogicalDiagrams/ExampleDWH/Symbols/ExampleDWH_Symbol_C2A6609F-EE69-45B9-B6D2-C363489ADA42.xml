@@ -1,6 +1,6 @@
 <o:ArchitectureAreaSymbol Id="ExampleDWH_Symbol_C2A6609F-EE69-45B9-B6D2-C363489ADA42">
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-8378,-5775), (35474,23849))</a:Rect>
+<a:Rect>((9899,2474), (28875,23100))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>418425</a:LineColor>
 <a:FillColor>15399421</a:FillColor>
@@ -16,7 +16,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:EntitySymbol Id="o16">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(5512, 2000)</a:EmptyAreaSize>
-<a:Rect>((-4125,5775), (7425,8249))</a:Rect>
+<a:Rect>((14025,11550), (25575,14024))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>4227327</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -54,7 +54,7 @@ Entity.Comment 0</a:SymbolContent>
 <o:EntitySymbol Id="o11">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(3562, 1988)</a:EmptyAreaSize>
-<a:Rect>((14850,0), (26400,2474))</a:Rect>
+<a:Rect>((14025,6600), (25575,9074))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>12615680</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>

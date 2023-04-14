@@ -19,6 +19,8 @@ This extensions is to add extra modeling possibilities to LDM models, where stan
   - Extra model checks have been implemented to verify the newly supported objects.
 - PowerDeComposer integration
   - To allow version management of PowerDesigner files in Git the tool PowerDeComposer have been implemented. In this extension a menu item on models have been added to decompose a model using PowerDeComposer.
+- XML Export
+  - To generate code, tests, etc. using CrossGenerate for the model an XML export has been implemented on model level.
 
 ## Modeling manual
 There is a modeling manual available [here](./manual/) on how to use the PowerDesigner extension.
@@ -54,12 +56,13 @@ git config --local core.longpaths true
 
 ## PowerDesigner named paths
 
-Create the following named paths in PowerDesigner (via Tools -> General Options... -> Named Paths). In the Path the {Git-Folder} part should be replaced with the folder reference relative to the root of this repository on your machine. For the [XEM] config, only add the path, don't remove existing entries.
+Create the following named paths in PowerDesigner (via Tools -> General Options... -> Named Paths). In the Path the {Git-Folder} part should be replaced with the folder reference relative to the root of this repository on your machine. For the [XEM] config, only add the path, don't remove existing entries. The MDDE_EXAMPLE_MODELS entry is only for the example models in this repository, it's not needed for using the extension in your own models.
 
-| Name             | Path                                |
-|----------------------|---------------------------------|
-| PDC_SCRIPT_PATH    | {Git-Folder}\pdc\                 |
-| [XEM]              | {Git-Folder}\composed\extensions\ |
+| Name                 | Path                              |
+|----------------------|-----------------------------------|
+| PDC_SCRIPT_PATH      | {Git-Folder}\pdc\                 |
+| [XEM]                | {Git-Folder}\composed\extensions\ |
+| MDDE_EXAMPLE_MODELS  | {Git-Folder}\composed\            |
 
 ## On branch clone/switch
 
@@ -68,7 +71,7 @@ Create the following named paths in PowerDesigner (via Tools -> General Options.
 After every branch update, clone or switch, make sure to close PowerDesigner and run:
 
 ``` powershell
-./compose.ps1
+compose.ps1
 ```
 
 This will compose all models based on the decomposed folder contents. The composed models are not automatically updated on a branch change.

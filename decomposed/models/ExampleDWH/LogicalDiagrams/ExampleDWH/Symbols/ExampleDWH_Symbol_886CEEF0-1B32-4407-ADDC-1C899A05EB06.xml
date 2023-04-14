@@ -1,6 +1,6 @@
 <o:ArchitectureAreaSymbol Id="ExampleDWH_Symbol_886CEEF0-1B32-4407-ADDC-1C899A05EB06">
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-28025,10177), (-12117,20581))</a:Rect>
+<a:Rect>((-32150,2752), (-16242,13156))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>418425</a:LineColor>
 <a:FillColor>15399421</a:FillColor>
@@ -16,7 +16,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:EntitySymbol Id="o23">
 <a:IconMode>-1</a:IconMode>
 <a:EmptyAreaSize>(9534, 2472)</a:EmptyAreaSize>
-<a:Rect>((-27186,11138), (-13540,17884))</a:Rect>
+<a:Rect>((-31311,3713), (-17665,10459))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>

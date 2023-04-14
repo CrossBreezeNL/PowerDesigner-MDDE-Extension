@@ -3,15 +3,15 @@
 ###
 
 # The location of the PowerDeComposer jar file.
-$PDCJarLocation = "$PSScriptRoot\PowerDeComposer.jar"
+$PDCJarLocation = Join-Path -Path $PSScriptRoot -ChildPath "PowerDeComposer.jar"
 # Set minimum memory to 64MB and maximum to 2GB.
 $JavaArguments = @("-Xms128M", "-Xmx2G", "-jar", "-Dfile.encoding=UTF-8", "`"$PDCJarLocation`"")
 # The location of the PowerDeComposer LDM config file.
-$LdmConfigFileLocation = "$PSScriptRoot\pdc_config_ldm.xml"
+$LdmConfigFileLocation = Join-Path -Path $PSScriptRoot -ChildPath "pdc_config_ldm.xml"
 # The location of the PowerDeComposer XEM config file.
-$XemConfigFileLocation = "$PSScriptRoot\pdc_config_xem.xml"
+$XemConfigFileLocation = Join-Path -Path $PSScriptRoot -ChildPath "pdc_config_xem.xml"
 # The location of the PowerDeComposer SWS config file.
-$SwsConfigFileLocation = "$PSScriptRoot\pdc_config_sws.xml"
+$SwsConfigFileLocation = Join-Path -Path $PSScriptRoot -ChildPath "pdc_config_sws.xml"
 
 # Function to invoke PowerDeComposer as a java call.
 Function Invoke-PowerDeComposer {

@@ -3,11 +3,11 @@ $DebugPreference = "SilentlyContinue"
 #$DebugPreference = "Continue"
 
 # Include PowerDeComposer PowerShell Functions.
-$PDCModuleLocation = "$PSScriptRoot\pdc\PowerDeComposer.psm1"
+$PDCModuleLocation = Join-Path -Path $PSScriptRoot -ChildPath "pdc/PowerDeComposer.psm1"
 
 # Variables used for PowerDeComposer.
-$ComposedFolder = "$PSScriptRoot\composed"
-$DecomposedFolder = "$PSScriptRoot\decomposed"
+$ComposedFolder = Join-Path -Path $PSScriptRoot -ChildPath "composed"
+$DecomposedFolder = Join-Path -Path $PSScriptRoot -ChildPath "decomposed"
 
 # Compose all decomposed model files.
 # Enable the Measure-Command to measure the run times (uncomment line 14 and 27).
