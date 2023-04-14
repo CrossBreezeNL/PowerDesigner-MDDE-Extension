@@ -18,9 +18,6 @@
   .if (%mdde_JoinedObject%)
 
   &lt;%mdde_JoinedObject.mdde_NamedObject_XmlElementName% %mdde_JoinedObject.mdde_NamedObject_XmlAttributeExport_Template%
-.if (%mdde_JoinedObject.mdde_Entity_TTView_Template%)
- TTView=&quot;%mdde_JoinedObject.mdde_Entity_TTView_Template%&quot;
-.endif()
 .if (%mdde_JoinedObject.mdde_Entity_ForeignAttribute_Template%)
  ForeignAttribute=&quot;%mdde_JoinedObject.mdde_Entity_ForeignAttribute_Template%&quot;
 .endif()

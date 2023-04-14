@@ -11,6 +11,5 @@
 <xi:include href="mdde_Entity_Stereotyped_XmlExport_Template.xml" />
 <xi:include href="mdde_Entity_DefaultMappingList_Template.xml" />
 <xi:include href="mdde_Entity_ForeignAttribute_Template.xml" />
-<xi:include href="mdde_Entity_TTView_Template.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
