@@ -43,10 +43,10 @@
               </JoinConditions>
             </SourceObject>
             <SourceObject Id="BFE7CB1D-E29F-43F8-80A1-8A39D28FDA94" Code="Derive_Customer_FullName" Name="Derive_Customer_FullName" Stereotype="mdde_SourceObject" JoinedObject="Derive_Customer_FullName" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
-              <Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_ScalarBusinessRule" />
+              <ScalarBusinessRule Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_ScalarBusinessRule" />
             </SourceObject>
             <SourceObject Id="6DB43891-22B1-48D1-8BDC-27987FA6D4D0" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_SourceObject" JoinedObject="Filter_FromNL" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
-              <Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule" />
+              <FilterBusinessRule Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule" />
             </SourceObject>
           </SourceObjects>
           <AttributeMappings>
@@ -80,7 +80,7 @@
         <Attribute Id="C04AC16A-42B7-4C30-A8B7-4BBBFC4630AF" Code="ORDERNUMBER" Name="OrderNumber" Stereotype="xm_attribute" Ordinal="3" DataType="VA" Length="50"></Attribute>
         <Attribute Id="CDFD6CA7-C11D-49AE-9882-AC733F7943CF" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_attribute" Ordinal="4" DataType="I" Foreign="TRUE"></Attribute>
         <Attribute Id="170BF497-2F70-404A-A97D-3BAD41FE3D82" Code="TOTALAMOUNT" Name="TotalAmount" Stereotype="xm_attribute" Ordinal="5" DataType="DC" Precision="12" Scale="2"></Attribute>
-        <Attribute Id="12F67EA7-2C9F-4D03-B063-84C354E15884" Code="AGEINDAYS" Name="AgeInDays" Stereotype="mdde_OutputAttribute" Ordinal="6" DataType="I"></Attribute>
+        <OutputAttribute Id="12F67EA7-2C9F-4D03-B063-84C354E15884" Code="AGEINDAYS" Name="AgeInDays" Stereotype="mdde_OutputAttribute" Ordinal="6" DataType="I"></OutputAttribute>
       </Attributes>
       <Identifiers>
         <Identifier PrimaryIdentifier="TRUE">
@@ -92,7 +92,7 @@
         <Mapping Id="810808D7-5A8C-494A-9265-911D49E3282B" Code="SalesOrder_Mapping" Name="SalesOrder_Mapping">
           <SourceObjects>
             <SourceObject Id="0F2EE1DB-8E68-424B-BBF5-0342A9EFE195" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_SourceObject" JoinedObject="Calculate_Order_Age" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
-              <Entity Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule" />
+              <ScalarBusinessRule Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule" />
             </SourceObject>
           </SourceObjects>
         </Mapping>
@@ -118,41 +118,41 @@
           </Attributes></Identifier>
       </Identifiers>
     </Entity>
-    <Entity Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule">
+    <ScalarBusinessRule Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule">
       <Attributes>
-        <Attribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818" Code="ORDERDATE" Name="OrderDate" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="DT"></Attribute>
-        <Attribute Id="742B3F05-D053-4323-9052-6D641E3BF52F" Code="ORDERAGEINDAYS" Name="OrderAgeInDays" Stereotype="mdde_OutputAttribute" Ordinal="2" DataType="I"></Attribute>
-        <Attribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458" Code="CURRENTDATE" Name="CurrentDate" Stereotype="mdde_InputAttribute" Ordinal="3" DataType="DT"></Attribute>
+        <Attribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818" Code="ORDERDATE" Name="OrderDate" Stereotype="xm_parameter" Ordinal="1" DataType="DT"></Attribute>
+        <Attribute Id="742B3F05-D053-4323-9052-6D641E3BF52F" Code="ORDERAGEINDAYS" Name="OrderAgeInDays" Stereotype="xm_attribute" Ordinal="2" DataType="I"></Attribute>
+        <Attribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458" Code="CURRENTDATE" Name="CurrentDate" Ordinal="3" DataType="DT"></Attribute>
       </Attributes>
-      <SqlExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate)</SqlExpression>
-      <SapHanaExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate)</SapHanaExpression>
+      <SqlExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate) as OrderAge</SqlExpression>
+      <SapHanaExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate) as OrderAge</SapHanaExpression>
       <Examples>
-        <Extended_Sub-Object Id="3A317AF5-67EA-441F-B1EE-014074A069BE" Code="Example_Order_Age" Name="Example Order Age" Stereotype="mdde_Example">  
+        <Example Id="3A317AF5-67EA-441F-B1EE-014074A069BE" Code="Example_Order_Age" Name="Example Order Age" Stereotype="mdde_Example">  
           <ExampleInput>
-            <Extended_Sub-Object Attribute="ORDERDATE" SqlValue="'&#39;&#39;2023-04-01&#39;&#39;'" Value="&#39;2023-04-01&#39;" />
-            <Extended_Sub-Object Attribute="CURRENTDATE" SqlValue="'&#39;&#39;2023-04-03&#39;&#39;'" Value="&#39;2023-04-03&#39;" />
+            <ExampleInputAttributeValue Attribute="ORDERDATE" SqlValue="'&#39;&#39;2023-04-01&#39;&#39;'" Value="&#39;2023-04-01&#39;" />
+            <ExampleInputAttributeValue Attribute="CURRENTDATE" SqlValue="'&#39;&#39;2023&#39;&#39;'" Value="&#39;2023&#39;" />
           </ExampleInput>
           <ExpectedScalarOutput>
-            <Extended_Sub-Object Attribute="ORDERAGEINDAYS" SqlValue="2" Value="2" />
+            <ExpectedOutputAttributeValue Attribute="ORDERAGEINDAYS" SqlValue="2" Value="2" />
           </ExpectedScalarOutput>
-        </Extended_Sub-Object>
+        </Example>
       </Examples>
-    </Entity>
-    <Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule">
+    </ScalarBusinessRule>
+    <FilterBusinessRule Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule">
       <Attributes>
-        <Attribute Id="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9" Code="COUNTRY_CODE" Name="Country Code" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="VA" Length="25"></Attribute>
+        <InputAttribute Id="3B3CCC71-5C81-4C56-84DA-EA62EC3843B9" Code="COUNTRY_CODE" Name="Country Code" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="VA" Length="25"></InputAttribute>
       </Attributes>
       <SqlExpression>@COUNTRY_CODE = &#39;NL&#39;</SqlExpression>
       <SapHanaExpression>@:COUNTRY_CODE = &#39;NL&#39;</SapHanaExpression>
       <Examples>
-        <Extended Sub-Object Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286" Code="Country_is_NL" Name="Country is NL" Stereotype="mdde_Example">  
+        <Example Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286" Code="Country_is_NL" Name="Country is NL" Stereotype="mdde_Example">  
           <ExampleInput>
-            <Extended Sub-Object Attribute="COUNTRY_CODE" SqlValue="'&#39;&#39;NL&#39;&#39;'" Value="&#39;NL&#39;" />
+            <ExampleInputAttributeValue Attribute="COUNTRY_CODE" SqlValue="'&#39;&#39;NL&#39;&#39;'" Value="&#39;NL&#39;" />
           </ExampleInput>
           <ExpectedFilterResult>true</ExpectedFilterResult>
-        </Extended_Sub-Object>
+        </Example>
       </Examples>
-    </Entity>
+    </FilterBusinessRule>
     <Entity Id="F9BB4252-766A-498C-8B9B-1A1485D1E2FD" Code="CustomerWithParent" Name="CustomerWithParent" Stereotype="xm_entity">
       <Attributes>
         <Attribute Id="301AACDF-1DE2-4F79-A30D-9D7599A86400" Code="ID" Name="Id" Ordinal="1" DataType="I"></Attribute>
@@ -164,25 +164,25 @@
         <Attribute Id="14A56015-742B-4FBB-B366-55F400B86572" Code="PARENTCUSTOMERNAME" Name="ParentCustomerName" Ordinal="7" DataType="VA" Length="100"></Attribute>
       </Attributes>
     </Entity>
-    <Entity Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_ScalarBusinessRule">
+    <ScalarBusinessRule Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_ScalarBusinessRule">
       <Attributes>
-        <Attribute Id="E92AD306-2FC3-45E5-BB25-CC937198496D" Code="FIRST_NAME" Name="First Name" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="VA" Length="55"></Attribute>
-        <Attribute Id="01123E25-DC0F-4396-A487-1328F1D44134" Code="LAST_NAME" Name="Last Name" Stereotype="mdde_InputAttribute" Ordinal="2" DataType="VA" Length="55"></Attribute>
-        <Attribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULL_NAME" Name="Full Name" Stereotype="mdde_OutputAttribute" Ordinal="3" DataType="VA" Length="110"></Attribute>
+        <InputAttribute Id="E92AD306-2FC3-45E5-BB25-CC937198496D" Code="FIRST_NAME" Name="First Name" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="VA" Length="55"></InputAttribute>
+        <InputAttribute Id="01123E25-DC0F-4396-A487-1328F1D44134" Code="LAST_NAME" Name="Last Name" Stereotype="mdde_InputAttribute" Ordinal="2" DataType="VA" Length="55"></InputAttribute>
+        <OutputAttribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULL_NAME" Name="Full Name" Stereotype="mdde_OutputAttribute" Ordinal="3" DataType="VA" Length="110"></OutputAttribute>
       </Attributes>
       <SqlExpression>FIRST_NAME || &#39; &#39; || LAST_NAME AS FULL_NAME</SqlExpression>
       <SapHanaExpression>:FIRST_NAME || &#39; &#39; || :LAST_NAME AS :FULL_NAME</SapHanaExpression>
       <Examples>
-        <Extended_Sub-Object Id="6AB09887-AA4D-4A92-BD85-34A26EF2DAEF" Code="Example_full_name" Name="Example full name" Stereotype="mdde_Example">  
+        <Example Id="6AB09887-AA4D-4A92-BD85-34A26EF2DAEF" Code="Example_full_name" Name="Example full name" Stereotype="mdde_Example">  
           <ExampleInput>
-            <Extended Sub-Object Attribute="FIRST_NAME" SqlValue="'Moo'" Value="Moo" />
-            <Extended Sub-Object Attribute="LAST_NAME" SqlValue="'Othman'" Value="Othman" />
+            <ExampleInputAttributeValue Attribute="FIRST_NAME" SqlValue="'Moo'" Value="Moo" />
+            <ExampleInputAttributeValue Attribute="LAST_NAME" SqlValue="'Othman'" Value="Othman" />
           </ExampleInput>
           <ExpectedScalarOutput>
-            <Extended Sub-Object Attribute="FULL_NAME" SqlValue="'Moo Othman'" Value="Moo Othman" />
+            <ExpectedOutputAttributeValue Attribute="FULL_NAME" SqlValue="'Moo Othman'" Value="Moo Othman" />
           </ExpectedScalarOutput>
-        </Extended_Sub-Object>
+        </Example>
       </Examples>
-    </Entity>
+    </ScalarBusinessRule>
   </Entities>
 </Model>
