@@ -120,22 +120,22 @@
     </Entity>
     <Entity Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule">
       <Attributes>
-        <Attribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818" Code="ORDERDATE" Name="OrderDate" Stereotype="xm_parameter" Ordinal="1" DataType="DT"></Attribute>
-        <Attribute Id="742B3F05-D053-4323-9052-6D641E3BF52F" Code="ORDERAGEINDAYS" Name="OrderAgeInDays" Stereotype="xm_attribute" Ordinal="2" DataType="I"></Attribute>
-        <Attribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458" Code="CURRENTDATE" Name="CurrentDate" Ordinal="3" DataType="DT"></Attribute>
+        <Attribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818" Code="ORDERDATE" Name="OrderDate" Stereotype="mdde_InputAttribute" Ordinal="1" DataType="DT"></Attribute>
+        <Attribute Id="742B3F05-D053-4323-9052-6D641E3BF52F" Code="ORDERAGEINDAYS" Name="OrderAgeInDays" Stereotype="mdde_OutputAttribute" Ordinal="2" DataType="I"></Attribute>
+        <Attribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458" Code="CURRENTDATE" Name="CurrentDate" Stereotype="mdde_InputAttribute" Ordinal="3" DataType="DT"></Attribute>
       </Attributes>
-      <SqlExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate) as OrderAge</SqlExpression>
-      <SapHanaExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate) as OrderAge</SapHanaExpression>
+      <SqlExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate)</SqlExpression>
+      <SapHanaExpression>DATEDIFF(DAY, @OrderDate, @CurrentDate)</SapHanaExpression>
       <Examples>
-        <Extended Sub-Object Id="3A317AF5-67EA-441F-B1EE-014074A069BE" Code="Example_Order_Age" Name="Example Order Age" Stereotype="mdde_Example">  
+        <Extended_Sub-Object Id="3A317AF5-67EA-441F-B1EE-014074A069BE" Code="Example_Order_Age" Name="Example Order Age" Stereotype="mdde_Example">  
           <ExampleInput>
-            <Extended Sub-Object Attribute="ORDERDATE" SqlValue="'&#39;&#39;2023-04-01&#39;&#39;'" Value="&#39;2023-04-01&#39;" />
-            <Extended Sub-Object Attribute="CURRENTDATE" SqlValue="'&#39;&#39;2023&#39;&#39;'" Value="&#39;2023&#39;" />
+            <Extended_Sub-Object Attribute="ORDERDATE" SqlValue="'&#39;&#39;2023-04-01&#39;&#39;'" Value="&#39;2023-04-01&#39;" />
+            <Extended_Sub-Object Attribute="CURRENTDATE" SqlValue="'&#39;&#39;2023-04-03&#39;&#39;'" Value="&#39;2023-04-03&#39;" />
           </ExampleInput>
           <ExpectedScalarOutput>
-            <Extended Sub-Object Attribute="ORDERAGEINDAYS" SqlValue="2" Value="2" />
+            <Extended_Sub-Object Attribute="ORDERAGEINDAYS" SqlValue="2" Value="2" />
           </ExpectedScalarOutput>
-        </Extended Sub-Object>
+        </Extended_Sub-Object>
       </Examples>
     </Entity>
     <Entity Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule">
@@ -145,12 +145,12 @@
       <SqlExpression>@pCode = &#39;NL&#39;</SqlExpression>
       <SapHanaExpression>@pCode = &#39;NL&#39;</SapHanaExpression>
       <Examples>
-        <Extended Sub-Object Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286" Code="pCode_is_equal_to_NL" Name="pCode is equal to NL" Stereotype="mdde_Example">  
+        <Extended_Sub-Object Id="72E29F02-DD8A-4D15-ABE6-3C03B708B286" Code="pCode_is_equal_to_NL" Name="pCode is equal to NL" Stereotype="mdde_Example">  
           <ExampleInput>
-            <Extended Sub-Object Attribute="PCODE" SqlValue="'&#39;&#39;NL&#39;&#39;'" Value="&#39;NL&#39;" />
+            <Extended_Sub-Object Attribute="PCODE" SqlValue="'&#39;&#39;NL&#39;&#39;'" Value="&#39;NL&#39;" />
           </ExampleInput>
           <ExpectedFilterResult>true</ExpectedFilterResult>
-        </Extended Sub-Object>
+        </Extended_Sub-Object>
       </Examples>
     </Entity>
     <Entity Id="F9BB4252-766A-498C-8B9B-1A1485D1E2FD" Code="CustomerWithParent" Name="CustomerWithParent" Stereotype="xm_entity">
@@ -170,18 +170,18 @@
         <Attribute Id="01123E25-DC0F-4396-A487-1328F1D44134" Code="LASTNAME" Name="lastname" Stereotype="mdde_InputAttribute" Ordinal="2" DataType="VA" Length="55"></Attribute>
         <Attribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULLNAME" Name="fullname" Stereotype="mdde_OutputAttribute" Ordinal="3" DataType="VA" Length="110"></Attribute>
       </Attributes>
-      <SqlExpression>concat(firstname, &#39;&#39;, lastname) as fullname</SqlExpression>
-      <SapHanaExpression>concat(firstname, &#39;&#39;, lastname) as fullname</SapHanaExpression>
+      <SqlExpression>concat(@firstname, &#39;&#39;, @lastname)</SqlExpression>
+      <SapHanaExpression>concat(@firstname, &#39;&#39;, @lastname)</SapHanaExpression>
       <Examples>
-        <Extended Sub-Object Id="6AB09887-AA4D-4A92-BD85-34A26EF2DAEF" Code="Example_full_name" Name="Example full name" Stereotype="mdde_Example">  
+        <Extended_Sub-Object Id="6AB09887-AA4D-4A92-BD85-34A26EF2DAEF" Code="Example_full_name" Name="Example full name" Stereotype="mdde_Example">  
           <ExampleInput>
-            <Extended Sub-Object Attribute="FIRSTNAME" SqlValue="'Moo'" Value="Moo" />
-            <Extended Sub-Object Attribute="LASTNAME" SqlValue="'Othman'" Value="Othman" />
+            <Extended_Sub-Object Attribute="FIRSTNAME" SqlValue="'Moo'" Value="Moo" />
+            <Extended_Sub-Object Attribute="LASTNAME" SqlValue="'Othman'" Value="Othman" />
           </ExampleInput>
           <ExpectedScalarOutput>
-            <Extended Sub-Object Attribute="FULLNAME" SqlValue="'Moo Othman'" Value="Moo Othman" />
+            <Extended_Sub-Object Attribute="FULLNAME" SqlValue="'Moo Othman'" Value="Moo Othman" />
           </ExpectedScalarOutput>
-        </Extended Sub-Object>
+        </Extended_Sub-Object>
       </Examples>
     </Entity>
   </Entities>
