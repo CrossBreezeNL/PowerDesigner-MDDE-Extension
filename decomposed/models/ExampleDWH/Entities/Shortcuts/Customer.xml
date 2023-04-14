@@ -33,54 +33,6 @@ DAT 1680508903</a:History>
 <o:SubReplication Ref="1FB2EA31-0546-43DE-9209-0DB2492D8DE8"/>
 </c:FullShortcutReplica>
 </o:Shortcut>
-<o:Shortcut Id="48E38BAC-F7E9-4C58-A710-ADBADB4452E0">
-<a:ObjectID>48E38BAC-F7E9-4C58-A710-ADBADB4452E0</a:ObjectID>
-<a:Name>FirstName</a:Name>
-<a:Code>FIRSTNAME</a:Code>
-<a:TargetStereotype/>
-<a:TargetID>E15BA61C-22E8-480F-8854-32B66E2001C0</a:TargetID>
-<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
-<a:TargetPackagePath>&lt;Model&gt;::Customer</a:TargetPackagePath>
-<c:FullShortcutReplica>
-<o:SubReplication Ref="661C159C-A098-41DC-8435-47A433A1156F"/>
-</c:FullShortcutReplica>
-</o:Shortcut>
-<o:Shortcut Id="4FA3FD51-1318-47D3-BE35-254B0683ADE7">
-<a:ObjectID>4FA3FD51-1318-47D3-BE35-254B0683ADE7</a:ObjectID>
-<a:Name>LastName</a:Name>
-<a:Code>LASTNAME</a:Code>
-<a:TargetStereotype/>
-<a:TargetID>B47EB33C-682A-4199-845A-C2B47D086F72</a:TargetID>
-<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
-<a:TargetPackagePath>&lt;Model&gt;::Customer</a:TargetPackagePath>
-<c:FullShortcutReplica>
-<o:SubReplication Ref="DA95A914-B5E0-4796-A778-9A5205C5B646"/>
-</c:FullShortcutReplica>
-</o:Shortcut>
-<o:Shortcut Id="0A0F1142-734D-418D-BFF6-2146B79ED2D6">
-<a:ObjectID>0A0F1142-734D-418D-BFF6-2146B79ED2D6</a:ObjectID>
-<a:Name>City</a:Name>
-<a:Code>CITY</a:Code>
-<a:TargetStereotype/>
-<a:TargetID>99AAF098-A167-4D36-90B7-54A482421D21</a:TargetID>
-<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
-<a:TargetPackagePath>&lt;Model&gt;::Customer</a:TargetPackagePath>
-<c:FullShortcutReplica>
-<o:SubReplication Ref="0A90A221-D1F5-44A4-87C8-5F906DD5B55F"/>
-</c:FullShortcutReplica>
-</o:Shortcut>
-<o:Shortcut Id="B2514214-F1F9-42EB-BE65-8B7C7BF77BD3">
-<a:ObjectID>B2514214-F1F9-42EB-BE65-8B7C7BF77BD3</a:ObjectID>
-<a:Name>Phone</a:Name>
-<a:Code>PHONE</a:Code>
-<a:TargetStereotype/>
-<a:TargetID>117618E5-A065-4822-86E2-61CAA2E89AF9</a:TargetID>
-<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
-<a:TargetPackagePath>&lt;Model&gt;::Customer</a:TargetPackagePath>
-<c:FullShortcutReplica>
-<o:SubReplication Ref="3DB59E91-A04B-4CEA-AFD0-5E85E8D6AADA"/>
-</c:FullShortcutReplica>
-</o:Shortcut>
 </c:SubShortcuts>
 <c:FullShortcutReplica>
 <o:SubReplication Ref="B3238EE1-EC39-4BAF-876F-5A8DE22A7E4F"/>

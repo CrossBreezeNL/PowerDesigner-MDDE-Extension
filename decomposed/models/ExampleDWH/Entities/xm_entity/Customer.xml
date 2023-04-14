@@ -9,7 +9,7 @@ DAT 1680508903
 ATT DFLTMAP</a:History>
 <a:Stereotype>xm_entity</a:Stereotype>
 <c:DefaultMapping>
-<o:DefaultObjectMapping Ref="68FC41F2-429B-4AD8-9B62-274EA98B4979"/>
+<o:DefaultObjectMapping Ref="497A6AB6-A62C-4560-A047-F3E9C5424705"/>
 </c:DefaultMapping>
 <c:Identifiers>
 <o:Identifier Id="3763BC8D-F85E-4173-AFF3-97646E092560">
@@ -174,14 +174,70 @@ DAT 1680508903</a:History>
 <a:Length>20</a:Length>
 <a:Precision>2</a:Precision>
 </o:EntityAttribute>
-<o:EntityAttribute Id="F8F03F52-1D36-4E8D-BF7D-EB749FE204FB">
-<a:ObjectID>F8F03F52-1D36-4E8D-BF7D-EB749FE204FB</a:ObjectID>
-<a:Name>RecordSource</a:Name>
-<a:Code>RECORDSOURCE</a:Code>
-<a:CreationDate>1681481716</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
-<a:DataType>VA25</a:DataType>
-<a:Length>25</a:Length>
+<o:EntityAttribute Id="761AF92F-A96A-493B-84DB-052BBA7EE93F">
+<a:ObjectID>761AF92F-A96A-493B-84DB-052BBA7EE93F</a:ObjectID>
+<a:Name>Id</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}
+DAT 1680508903</a:History>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="79FAA978-17FD-4191-9042-3C19EA750D40">
+<a:ObjectID>79FAA978-17FD-4191-9042-3C19EA750D40</a:ObjectID>
+<a:Name>FirstName2</a:Name>
+<a:Code>FIRSTNAME2</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {2F757B96-6519-4AF5-A4C1-4C412BFDC8F5}
+DAT 1680508903</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="ED8437E9-2467-49B2-B480-C84499B76DEC">
+<a:ObjectID>ED8437E9-2467-49B2-B480-C84499B76DEC</a:ObjectID>
+<a:Name>LastName2</a:Name>
+<a:Code>LASTNAME2</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {813C9305-0BD4-4DE2-9EF0-8F63A4012A3C}
+DAT 1680508903</a:History>
+<a:DataType>VA100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="CA1AA126-C0C9-4DEC-9D3F-85CECECAC2C5">
+<a:ObjectID>CA1AA126-C0C9-4DEC-9D3F-85CECECAC2C5</a:ObjectID>
+<a:Name>City2</a:Name>
+<a:Code>CITY2</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {E6DA1E86-09E5-4A4E-B108-9882435F2CF0}
+DAT 1680508903</a:History>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="D010B45C-7985-4CAF-9DB8-C403EF02A3F5">
+<a:ObjectID>D010B45C-7985-4CAF-9DB8-C403EF02A3F5</a:ObjectID>
+<a:Name>Country</a:Name>
+<a:Code>COUNTRY</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {CDDCF6FC-AAD6-4750-B6F0-D89A27F7FAC3}
+DAT 1680508903</a:History>
+<a:DataType>VA3</a:DataType>
+<a:Length>3</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="E3E9AC40-81A1-4C5A-B15C-71F599A331A6">
+<a:ObjectID>E3E9AC40-81A1-4C5A-B15C-71F599A331A6</a:ObjectID>
+<a:Name>Phone2</a:Name>
+<a:Code>PHONE2</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {E65E8C99-8AC5-4EBA-A95C-E867C0CD0A06}
+DAT 1680508903</a:History>
+<a:DataType>VA20</a:DataType>
+<a:Length>20</a:Length>
 </o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
