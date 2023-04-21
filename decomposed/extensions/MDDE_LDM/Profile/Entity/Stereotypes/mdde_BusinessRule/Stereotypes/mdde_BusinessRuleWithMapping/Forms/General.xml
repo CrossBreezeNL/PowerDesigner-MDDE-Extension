@@ -1,0 +1,17 @@
+<o:FormTargetItem Id="BD247FDF-FB61-4DBC-AFA7-5F9BC1D07FB3">
+<a:ObjectID>BD247FDF-FB61-4DBC-AFA7-5F9BC1D07FB3</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StandardNameAndCode Attribute=&quot;NameAndCode&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;true&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Comment&quot; Caption=&quot;Comment:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_SQL_Expression&quot; AttributeID=&quot;{9963E487-124F-4DB6-8308-F01E592E7A48}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Generated&quot; Caption=&quot;Generate:&quot; Display=&quot;Checkbox&quot; LeftText=&quot;No&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_Complex&quot; Caption=&quot;Complex business rule: &quot; AttributeID=&quot;{9015AAFA-A64E-41CB-BC16-5F6F73FE61A4}&quot; GrayHiddenAttributes=&quot;Yes&quot; Display=&quot;Checkbox&quot; LeftText=&quot;No&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1679500316</a:CreationDate>
+<a:Creator>RijnbergenN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>

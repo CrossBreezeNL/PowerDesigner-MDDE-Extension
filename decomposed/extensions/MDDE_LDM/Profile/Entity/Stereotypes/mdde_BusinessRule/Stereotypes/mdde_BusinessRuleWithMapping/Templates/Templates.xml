@@ -1,0 +1,13 @@
+<o:TypedCategoryTargetItem Id="EA079A1A-930C-4972-9309-5EFF1E9B92F4">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>EA079A1A-930C-4972-9309-5EFF1E9B92F4</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1679500316</a:CreationDate>
+<a:Creator>RijnbergenN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Entity_Stereotyped_XmlExport_Template.xml" />
+<xi:include href="mdde_Entity_IsAggregateBusinessRule.xml" />
+<xi:include href="mdde_Entity_SourceObject_JoinTypeList.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

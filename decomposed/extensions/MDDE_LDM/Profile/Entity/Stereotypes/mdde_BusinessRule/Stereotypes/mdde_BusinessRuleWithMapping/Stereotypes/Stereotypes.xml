@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="FA077C97-0101-45DF-B1B9-959CB96B2B90">
+<a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
+<a:ObjectID>FA077C97-0101-45DF-B1B9-959CB96B2B90</a:ObjectID>
+<a:Name>Stereotypes</a:Name>
+<a:CreationDate>1679500316</a:CreationDate>
+<a:Creator>RijnbergenN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_AggregateBusinessRule/mdde_AggregateBusinessRule.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

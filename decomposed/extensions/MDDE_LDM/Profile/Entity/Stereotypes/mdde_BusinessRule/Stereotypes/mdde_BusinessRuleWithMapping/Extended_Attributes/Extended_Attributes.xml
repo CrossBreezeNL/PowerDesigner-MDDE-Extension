@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="767C7E01-8833-4EE8-97EE-E30F14482E8F">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>767C7E01-8833-4EE8-97EE-E30F14482E8F</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1679500316</a:CreationDate>
+<a:Creator>RijnbergenN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Complex.xml" />
+<xi:include href="mdde_SQL_Expression.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

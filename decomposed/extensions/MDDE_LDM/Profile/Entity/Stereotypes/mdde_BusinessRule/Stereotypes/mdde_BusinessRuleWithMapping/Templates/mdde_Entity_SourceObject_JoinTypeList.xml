@@ -1,0 +1,10 @@
+<o:TemplateTargetItem Id="FE0493EB-7596-47D1-965B-FD97BC5E5715">
+<a:ObjectID>FE0493EB-7596-47D1-965B-FD97BC5E5715</a:ObjectID>
+<a:Name>rda_Entity_SourceObject_JoinTypeList</a:Name>
+<a:TemplateTargetItem.Value>Inner Join
+Left Join
+</a:TemplateTargetItem.Value>
+<a:CreationDate>1680685923</a:CreationDate>
+<a:Creator>RijnbergenN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

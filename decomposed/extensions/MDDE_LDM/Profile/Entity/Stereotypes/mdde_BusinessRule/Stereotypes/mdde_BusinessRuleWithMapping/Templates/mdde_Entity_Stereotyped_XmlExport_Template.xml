@@ -1,0 +1,11 @@
+<o:TemplateTargetItem Id="AF987C30-B6EA-4598-918C-B974EB31F95F">
+<a:ObjectID>AF987C30-B6EA-4598-918C-B974EB31F95F</a:ObjectID>
+<a:Name>mdde_Entity_Stereotyped_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;SqlExpression&gt;%.X:mdde_SQL_Expression%&lt;/SqlExpression&gt;
+&lt;ComplexBusinessRule&gt;%.X:mdde_Complex%&lt;/ComplexBusinessRule&gt;
+.comment Add the business rule examples to the export.
+%mdde_BusinessRule_Examples_XmlExport_Template%</a:TemplateTargetItem.Value>
+<a:CreationDate>1679500316</a:CreationDate>
+<a:Creator>RijnbergenN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>
