@@ -12,7 +12,7 @@ $DecomposedFolder = Join-Path -Path $PSScriptRoot -ChildPath "decomposed"
 # Decompose all ldm, pdm, xem and sws files.
 # Enable the Measure-Command to measure the run times (uncomment line 14 and 45).
 #Measure-Command -Expression {
-    Get-ChildItem -Path $ComposedFolder -Include "*.xem","*.sws","*.ldm" -Recurse -Depth 2 |
+    Get-ChildItem -Path $ComposedFolder -Include "*.xem","*.sws" -Recurse -Depth 2 |
     ForEach-Object -Parallel {
         # Include PowerDeComposer PowerShell Functions.
         Import-Module -Name $using:PDCModuleLocation -Force

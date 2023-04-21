@@ -1,10 +1,8 @@
 <o:TemplateTargetItem Id="66521AEA-8631-4DD5-A298-FD56290F7C08">
 <a:ObjectID>66521AEA-8631-4DD5-A298-FD56290F7C08</a:ObjectID>
 <a:Name>mdde_Entity_Stereotyped_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>&lt;SqlExpression&gt;%.X:mdde_SqlExpression%&lt;/SqlExpression&gt;
-.if (%mdde_Entity_SapHanaExpression_Template%)
-
-&lt;SapHanaExpression&gt;%.X:mdde_Entity_SapHanaExpression_Template%&lt;/SapHanaExpression&gt;
+<a:TemplateTargetItem.Value>.if (%mdde_SqlExpression%)
+&lt;SqlExpression&gt;%.X:mdde_SqlExpression%&lt;/SqlExpression&gt;
 .endif()
 .comment Add the business rule examples to the export.
 %mdde_BusinessRule_Examples_XmlExport_Template%</a:TemplateTargetItem.Value>

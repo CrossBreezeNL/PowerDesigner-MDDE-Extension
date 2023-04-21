@@ -68,6 +68,13 @@ Create the following named paths in PowerDesigner (via Tools -> General Options.
 
 > Before switching branch, make sure all your changes in PowerDesigner models are decomposed and commited into Git.
 
+Model changes can be decomposed using the context menu of the model (see [PowerDeComposer manual](./manual/PowerDeComposer.md)).
+
+Changes in the Workspace or Extensions can be decomposed using the following command:
+``` powershell
+decompose_sws_xem.ps1
+```
+
 After every branch update, clone or switch, make sure to close PowerDesigner and run:
 
 ``` powershell
