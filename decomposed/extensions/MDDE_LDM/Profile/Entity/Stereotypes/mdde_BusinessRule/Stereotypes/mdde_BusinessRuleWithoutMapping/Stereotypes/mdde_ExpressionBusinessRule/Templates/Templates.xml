@@ -8,6 +8,5 @@
 <c:Categories>
 <xi:include href="mdde_Entity_Stereotyped_XmlExport_Template.xml" />
 <xi:include href="mdde_Entity_IsExpressionBusinessRule.xml" />
-<xi:include href="mdde_Entity_SapHanaExpression_Template.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
