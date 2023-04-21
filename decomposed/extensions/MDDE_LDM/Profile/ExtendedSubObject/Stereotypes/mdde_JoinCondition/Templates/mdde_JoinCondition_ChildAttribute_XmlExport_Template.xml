@@ -1,7 +1,7 @@
 <o:TemplateTargetItem Id="C63B4FF6-17A7-4D28-9AB1-548721F940C0">
 <a:ObjectID>C63B4FF6-17A7-4D28-9AB1-548721F940C0</a:ObjectID>
 <a:Name>mdde_JoinCondition_ChildAttribute_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>.if (%mdde_ChildAttribute.Code%)
+<a:TemplateTargetItem.Value>.if (%mdde_ChildAttribute%)
 %mdde_ChildAttribute.Code%
 .endif</a:TemplateTargetItem.Value>
 <a:CreationDate>1654156427</a:CreationDate>
