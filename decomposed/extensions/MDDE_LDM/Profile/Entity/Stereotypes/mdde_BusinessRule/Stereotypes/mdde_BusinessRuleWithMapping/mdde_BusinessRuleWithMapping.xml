@@ -1,0 +1,17 @@
+<o:StereotypeTargetItem Id="4985EEE6-7F0F-45A7-883E-B16DDC5D0E9C">
+<a:ObjectID>4985EEE6-7F0F-45A7-883E-B16DDC5D0E9C</a:ObjectID>
+<a:Name>mdde_BusinessRuleWithMapping</a:Name>
+<a:CreationDate>1679500316</a:CreationDate>
+<a:Creator>RijnbergenN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Abstract>1</a:Abstract>
+<c:ParentSttp>
+<o:StereotypeTargetItem Ref="4AD8DD8A-E421-435E-9559-6FD7A44BCDA3"/>
+</c:ParentSttp>
+<c:Categories>
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Stereotypes/Stereotypes.xml" />
+<xi:include href="Templates/Templates.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>
