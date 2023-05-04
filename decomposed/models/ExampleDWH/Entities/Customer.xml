@@ -6,8 +6,8 @@
 <a:Creator>MooOthman</a:Creator>
 <a:History>ORG {D0E60ADE-011C-4552-9039-2DA6D24313C8}
 DAT 1680508903
-ATT DFLTMAP</a:History>
-<a:Stereotype>xm_entity</a:Stereotype>
+ATT DFLTMAP
+ATT STRN</a:History>
 <c:DefaultMapping>
 <o:DefaultObjectMapping Ref="497A6AB6-A62C-4560-A047-F3E9C5424705"/>
 </c:DefaultMapping>
