@@ -1,0 +1,15 @@
+<o:StereotypeTargetItem Id="ADF31957-C038-4861-81C2-A3827139DCE2">
+<a:ObjectID>ADF31957-C038-4861-81C2-A3827139DCE2</a:ObjectID>
+<a:Name>mdde_BusinessRuleWithMapping</a:Name>
+<a:CreationDate>1683206184</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Business rule with a mapping. This can be subtyped for business rules with mappings.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Abstract>1</a:Abstract>
+<c:ParentSttp>
+<o:StereotypeTargetItem Ref="4AD8DD8A-E421-435E-9559-6FD7A44BCDA3"/>
+</c:ParentSttp>
+<c:Categories>
+<xi:include href="Stereotypes/Stereotypes.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

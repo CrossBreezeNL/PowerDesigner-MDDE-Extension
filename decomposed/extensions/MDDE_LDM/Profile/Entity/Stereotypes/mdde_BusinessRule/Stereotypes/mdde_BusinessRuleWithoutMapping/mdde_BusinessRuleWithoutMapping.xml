@@ -3,6 +3,7 @@
 <a:Name>mdde_BusinessRuleWithoutMapping</a:Name>
 <a:CreationDate>1656441185</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
+<a:Comment>Business rule without a mapping. This can be subtyped for mapping-less business rules.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Abstract>1</a:Abstract>
 <c:ParentSttp>
@@ -12,5 +13,10 @@
 <xi:include href="Stereotypes/Stereotypes.xml" />
 <xi:include href="Forms/Forms.xml" />
 <xi:include href="Templates/Templates.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Extended_Collections/Extended_Collections.xml" />
+<xi:include href="Methods/Methods.xml" />
+<xi:include href="Extended_Compositions/Extended_Compositions.xml" />
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>

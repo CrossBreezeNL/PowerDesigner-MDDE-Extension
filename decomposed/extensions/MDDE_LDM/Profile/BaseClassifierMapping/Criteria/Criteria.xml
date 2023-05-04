@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="A6BDFBAC-DE4F-4B04-B48D-668B7E2CC95E">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>A6BDFBAC-DE4F-4B04-B48D-668B7E2CC95E</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1683206883</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Criterion_ClassifierIsCustomBusinessRule/mdde_Criterion_ClassifierIsCustomBusinessRule.xml" />
+<xi:include href="mdde_Criterion_ClassifierIsNotCustomBusinessRule/mdde_Criterion_ClassifierIsNotCustomBusinessRule.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

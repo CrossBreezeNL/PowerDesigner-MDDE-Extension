@@ -1,0 +1,21 @@
+<o:FormTargetItem Id="63EEA77A-0BF8-4AE9-8050-5F253BBF5A6C">
+<a:ObjectID>63EEA77A-0BF8-4AE9-8050-5F253BBF5A6C</a:ObjectID>
+<a:Name>MappingDetails</a:Name>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;TabWindow Name=&quot;Details&quot; &gt;
+      &lt;VerticalLayout Name=&quot;Source objects&quot; &gt;
+         &lt;StandardCollection Collection=&quot;mdde_SourceObjects&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+      &lt;VerticalLayout Name=&quot;Mapping expression&quot; &gt;
+         &lt;ExtendedAttribute Attribute=&quot;mdde_Mapping_SqlExpression&quot; Caption=&quot;SQL Expression (MDDE)&quot; AttributeID=&quot;{31DE0464-1B4B-44ED-8B5A-ED6BD8CE1E1F}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+      &lt;VerticalLayout Name=&quot;Examples&quot; &gt;
+         &lt;StandardCollection Collection=&quot;mdde_Mapping_Examples&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+   &lt;/TabWindow&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1683207498</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:FormTargetItem>

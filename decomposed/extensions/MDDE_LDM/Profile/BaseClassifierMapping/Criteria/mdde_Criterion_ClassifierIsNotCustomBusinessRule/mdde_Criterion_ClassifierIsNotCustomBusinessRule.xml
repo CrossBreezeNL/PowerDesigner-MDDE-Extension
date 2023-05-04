@@ -1,0 +1,12 @@
+<o:CriterionTargetItem Id="272D5D90-4E84-4514-ABFC-2463B43547C2">
+<a:ObjectID>272D5D90-4E84-4514-ABFC-2463B43547C2</a:ObjectID>
+<a:Name>mdde_Criterion_ClassifierIsNotCustomBusinessRule</a:Name>
+<a:CriterionTargetItem.Value>%Classifier.Stereotype% !== &quot;mdde_CustomBusinessRule&quot;</a:CriterionTargetItem.Value>
+<a:CreationDate>1683207402</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Check whether the current mapping&#39;s target is NOT a custom business rule. If so, it should show the attribute mappings.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Forms/Forms.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

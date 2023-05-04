@@ -1,12 +1,11 @@
-<o:CustomSymbolTargetItem Id="C84CE44A-2401-482C-AB6C-E18F084C5CB6">
-<a:ObjectID>C84CE44A-2401-482C-AB6C-E18F084C5CB6</a:ObjectID>
+<o:CustomSymbolTargetItem Id="9FCA8291-97A9-4940-86B4-380ADB32020C">
+<a:ObjectID>9FCA8291-97A9-4940-86B4-380ADB32020C</a:ObjectID>
 <a:Name>Custom Symbol</a:Name>
-<a:CreationDate>1651576816</a:CreationDate>
+<a:CreationDate>1683208835</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
-<a:Comment>Scalar business rule symbol</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:CornerStyle>1</a:CornerStyle>
-<a:DefaultSize>(11250, 2250)</a:DefaultSize>
+<a:DefaultSize>(4800, 3975)</a:DefaultSize>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>4227327</a:FillColor>
 <a:FontList>STRN 0 Arial,8,N
@@ -18,13 +17,10 @@ Identifiers 0 Arial,8,N
 LABL 0 Arial,8,N</a:FontList>
 <a:BrushStyle>6</a:BrushStyle>
 <a:GradientFillMode>65</a:GradientFillMode>
-<a:CustomPictureType>1</a:CustomPictureType>
-<a:CustomTextMode>2</a:CustomTextMode>
-<a:CustomPictureID>39FC8F13-AD99-471F-ADD9-3C041F59D58A</a:CustomPictureID>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:SymbolContent>Entity.Stereotype 0
-Entity.Attributes 0 10 &quot;All attributes&quot; LDMPENTALL DomainOrDataType
-Entity.Identifiers 0 0 &quot;&quot; &quot;&quot; &lt;No Attr&gt;
+Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL &lt;No Attr&gt;
+Entity.Identifiers 0 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
 Entity.Comment 0
 Entity.IconPicture 0
 Entity.TextStyle 0</a:SymbolContent>
