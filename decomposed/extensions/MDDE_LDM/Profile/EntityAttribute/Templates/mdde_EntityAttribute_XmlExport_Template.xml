@@ -10,7 +10,7 @@
 .if (%DataType%)
  DataType=&quot;%mdde_EntityAttribute_DataType%&quot;
 .endif
-.if (%mdde_EntityAttribute_Length%)
+.if (%mdde_EntityAttribute_Length%) &amp;&amp; (%mdde_EntityAttribute_Length% != 0)
  Length=&quot;%mdde_EntityAttribute_Length%&quot;
 .endif
 .if (%mdde_EntityAttribute_Precision%)
