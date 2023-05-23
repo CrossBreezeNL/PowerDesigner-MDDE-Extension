@@ -1,7 +1,7 @@
 <o:TemplateTargetItem Id="07F279C0-229A-489C-96BE-436691FC93BA">
 <a:ObjectID>07F279C0-229A-489C-96BE-436691FC93BA</a:ObjectID>
 <a:Name>mdde_Identifier_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>&lt;Identifier
+<a:TemplateTargetItem.Value>&lt;Identifier %mdde_NamedObject_XmlAttributeExport_Template%
 .if (%PrimaryIdentifier%)
  PrimaryIdentifier=&quot;%PrimaryIdentifier%&quot;
 .endif

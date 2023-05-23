@@ -23,6 +23,12 @@
   .foreach_item(Relationships,\n  &lt;Relationships&gt;\n,\n  &lt;/Relationships&gt;)
     %mdde_Relationship_XmlExport_Template%
   .next(\n)
+  .foreach_item(InheritedBy,\n  &lt;InheritedBy&gt;\n,\n  &lt;/InheritedBy&gt;)
+    %mdde_Inheritence_XmlExport_Template%
+  .next(\n)
+  .foreach_item(InheritsFrom,\n  &lt;InheritsFrom&gt;\n,\n  &lt;/InheritsFrom&gt;)
+    %mdde_InheritenceLink_XmlExport_Template%
+  .next(\n)
 
   .comment If the stereotype of the current entity has it&#39;s own template, include it here.
   .if (%mdde_Entity_Stereotyped_XmlExport_Template?%)
