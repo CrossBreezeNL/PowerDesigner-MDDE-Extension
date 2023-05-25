@@ -1,10 +1,13 @@
 <o:TemplateTargetItem Id="DD5B45AB-6CC9-47F7-96F5-44A63BAA275F">
 <a:ObjectID>DD5B45AB-6CC9-47F7-96F5-44A63BAA275F</a:ObjectID>
 <a:Name>mdde_Inheritence_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>.comment Loop over the ChildEntities to list them.
-.foreach_item(ChildEntities,&lt;ChildEntities&gt;\n,\n&lt;/ChildEntities&gt;)
-  &lt;%mdde_NamedObject_XmlElementName% ModelCode=&quot;%.X:Model.Code%&quot; %mdde_NamedObject_XmlAttributeExport_Template% /&gt;
-.next(\n)</a:TemplateTargetItem.Value>
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+  .comment Loop over the ChildEntities to list them.
+  .foreach_item(ChildEntities,  &lt;ChildEntities&gt;\n,\n  &lt;/ChildEntities&gt;,%Generated%==true)
+    &lt;%mdde_NamedObject_XmlElementName% ModelCode=&quot;%.X:Model.Code%&quot; %mdde_NamedObject_XmlAttributeExport_Template% /&gt;
+  .next(\n)
+
+&lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1684842659</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>

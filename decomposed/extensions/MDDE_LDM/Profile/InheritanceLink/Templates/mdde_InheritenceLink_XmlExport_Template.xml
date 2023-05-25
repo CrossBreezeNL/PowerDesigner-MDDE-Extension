@@ -1,7 +1,7 @@
 <o:TemplateTargetItem Id="3FC14506-6D60-4F5E-9D69-DD25737ACC18">
 <a:ObjectID>3FC14506-6D60-4F5E-9D69-DD25737ACC18</a:ObjectID>
 <a:Name>mdde_InheritenceLink_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>&lt;InheritenceLink Id=&quot;%ObjectID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot; ParentEntityModelCode=&quot;%ParentEntity.Model.Code%&quot; ParentEntityCode=&quot;%ParentEntity.Code%&quot; ParentEntityName=&quot;%ParentEntity.Name%&quot; /&gt;</a:TemplateTargetItem.Value>
+<a:TemplateTargetItem.Value>&lt;InheritenceLink Id=&quot;%ObjectID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot; InheritanceCode=&quot;%Inheritance.Code%&quot; InheritanceName=&quot;%Inheritance.Name%&quot; ChildEntityCode=&quot;%ChildEntityCode%&quot; ChildEntityName=&quot;%ChildEntityName%&quot; ParentEntityModelCode=&quot;%ParentEntity.Model.Code%&quot; ParentEntityCode=&quot;%ParentEntity.Code%&quot; ParentEntityName=&quot;%ParentEntity.Name%&quot; /&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1684843769</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
