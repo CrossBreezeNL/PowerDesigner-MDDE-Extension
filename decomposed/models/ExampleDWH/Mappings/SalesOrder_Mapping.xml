@@ -37,6 +37,13 @@
 </o:ExtendedSubObject>
 </c:ExtendedComposition.Content>
 </o:ExtendedComposition>
+<o:ExtendedComposition Id="AC6DC32A-7B0A-41AC-AABF-1888D1A5850F">
+<a:ObjectID>AC6DC32A-7B0A-41AC-AABF-1888D1A5850F</a:ObjectID>
+<a:Name>Examples</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Mapping_Examples</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1683211634</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+</o:ExtendedComposition>
 </c:ExtendedCompositions>
 <c:Classifier>
 <o:Entity Ref="2CBE61AD-180C-485A-8F14-2F2CEA9C225F"/>

@@ -8,9 +8,9 @@
 .endif()
   .comment Include a list of source models.
   .set_value(CurrentModelID, %ObjectID%)
-  .foreach_item(TargetModels,\n  &lt;SourceModels&gt;\n,&quot;  &lt;/SourceModels&gt;&quot;,%TargetModelType%==&quot;Logical Data Model&quot;)
+  .foreach_item(TargetModels,\n  &lt;DependentModels&gt;\n,&quot;  &lt;/DependentModels&gt;&quot;,%TargetModelType%==&quot;Logical Data Model&quot;)
   .if (%Used%) &amp;&amp; (%TargetModelID% != %CurrentModelID%)
-    &lt;SourceModel Id=&quot;%TargetModelID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot; /&gt;
+    &lt;DependentModel Id=&quot;%TargetModelID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot; /&gt;
   .endif(\n)
   .next()
 

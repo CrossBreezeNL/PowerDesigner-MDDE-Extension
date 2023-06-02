@@ -96,6 +96,46 @@ When you want to create multiple examples, follow the the above steps for every 
 
 ![Filter business rule - Examples](img/filter_business_rule_examples.png)
 
+## Custom business rule
+
+> This business rule doesn't provide/guarantee attribute and entity level lineage. The custom business rule should only be used for constructs that are not (yet) supported otherwise in this modeling extension.
+
+A custom business rule is a business rule that can have one or more mappings with each it's own expression. This type of business rule is a fall-back component for when there is no business rule type available for your needs. Ideally it shouldn't be used, because this type of business rule is not providing any attribute level lineage (it does provide entity level lineage, but it's not guaranteed to be correct). The logic of the business rule is functionally described and technically implemented using a SQL expression in a mapping.
+
+Go through the following steps to model the custom business rule:
+
+### General
+
+On the 'General' tab:
+
+1. Set the Name of the custom business rule. This must be a short functional name which makes clear what the purpose of the rule is. The Code of the rule is automatically populated based on the Name you have entered.
+1. Functionally describe the business rule in the 'Comment' field.
+
+![Custom business rule - General](img/custom_business_rule_general.png)
+
+### Attributes
+
+On the 'Attributes' tab:
+1. Add the output of the rule as an attribute(s), set it's data type and set the Stereotype to 'Output attribute (MDDE)'
+
+![Custom business rule - Attributes](img/custom_business_rule_attributes.png)
+
+### Mappings
+
+On the mappings tab of the business rule you can add one or more mappings to the custom business rule. Each mapping adds a subset to the output of the rule. For every mapping the source objects need to be specified, so the SQL can be semi-validated and examples can be modelled.
+These mappings deviate from normal mappings a bit. Custom business rule mappings don't have an 'Attribute mappings' tab, but a 'Mapping expression' tab where you can specify the Sql Expression for the current mapping.
+
+1. To create a mapping, please follow the standard [Create a mapping](./Mapping.md#create-a-mapping) instructions.
+1. To add source objects, please follow the standard [Add source object](./Mapping.md#add-a-source-object) instructions. You don't have to specify the join conditions.
+ As mentioned above you cannot add attribute mappings, so you can skip these instructions and go to the steps below.
+ ![Custom business rule - Mapping - Source objects](img/custom_business_rule_mapping_source_objects.png)
+1. Write the SQL syntax for the custom business rule in the 'SQL Expression (MDDE)' field on the 'Mapping expression' tab. The expression should contain a full SQL statement starting with SELECT. Also include any set operation like JOIN, GROUP BY or somesort where needed. It is up to the modeler to make sure that the output definition of the SQL Expression is in line with the attribute definition that is defined on the entity.
+![Custom business rule - Mapping - Expression](img/custom_business_rule_mapping_expression.png)
+1. To add examples for the mapping, please follow the standard [Examples](./Mapping.md#examples) instructions.
+![Custom business rule - Mapping - Examples](img/custom_business_rule_mapping_examples.png)
+
+> Preferably use ANSI SQL syntax since it makes the expression re-usable when migrating to a different database platform.
+
 ***
 
 [Go back to main modeling page](./README.md)

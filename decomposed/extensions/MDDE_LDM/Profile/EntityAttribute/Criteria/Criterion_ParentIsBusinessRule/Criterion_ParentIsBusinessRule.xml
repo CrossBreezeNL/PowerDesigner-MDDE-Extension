@@ -6,7 +6,6 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="Custom_Checks/Custom_Checks.xml" />
 <xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:CriterionTargetItem>

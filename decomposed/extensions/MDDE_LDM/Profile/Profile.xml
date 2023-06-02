@@ -18,5 +18,7 @@
 <xi:include href="Identifier/Identifier.xml" />
 <xi:include href="Relationship/Relationship.xml" />
 <xi:include href="RelationshipJoin/RelationshipJoin.xml" />
+<xi:include href="Inheritance/Inheritance.xml" />
+<xi:include href="InheritanceLink/InheritanceLink.xml" />
 </c:Categories>
 </o:ProfileTargetItem>

@@ -7,5 +7,6 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_BusinessRuleWithoutMapping/mdde_BusinessRuleWithoutMapping.xml" />
+<xi:include href="mdde_BusinessRuleWithMapping/mdde_BusinessRuleWithMapping.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

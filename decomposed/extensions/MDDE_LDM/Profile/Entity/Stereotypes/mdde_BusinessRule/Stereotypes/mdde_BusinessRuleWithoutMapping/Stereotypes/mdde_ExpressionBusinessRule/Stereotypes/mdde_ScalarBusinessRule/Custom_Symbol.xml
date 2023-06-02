@@ -27,8 +27,6 @@ Entity.Attributes 0 10 &quot;All attributes&quot; LDMPENTALL DomainOrDataType
 Entity.Identifiers 0 0 &quot;&quot; &quot;&quot; &lt;No Attr&gt;
 Entity.Comment 0
 Entity.IconPicture 0
-Entity.TextStyle 0
-Entity.IconPicture 0
 Entity.TextStyle 0</a:SymbolContent>
 <a:SubSymbolsLayout>&lt;Form&gt;
  &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;

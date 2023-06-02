@@ -8,11 +8,5 @@
 <c:Categories>
 <xi:include href="Stereotypes/Stereotypes.xml" />
 <xi:include href="Templates/Templates.xml" />
-<xi:include href="Custom_Checks/Custom_Checks.xml" />
-<xi:include href="Forms/Forms.xml" />
-<xi:include href="Extended_Compositions/Extended_Compositions.xml" />
-<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
-<xi:include href="Extended_Collections/Extended_Collections.xml" />
-<xi:include href="Methods/Methods.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>

@@ -1,0 +1,12 @@
+<o:TemplateTargetItem Id="4438130B-C959-41B4-8DBF-A9B58798561F">
+<a:ObjectID>4438130B-C959-41B4-8DBF-A9B58798561F</a:ObjectID>
+<a:Name>mdde_Mapping_Stereotyped_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>.if (%mdde_Mapping_SqlExpression%)
+&lt;SqlExpression&gt;
+   %.X:mdde_Mapping_SqlExpression%
+&lt;/SqlExpression&gt;
+.endif()</a:TemplateTargetItem.Value>
+<a:CreationDate>1683209306</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

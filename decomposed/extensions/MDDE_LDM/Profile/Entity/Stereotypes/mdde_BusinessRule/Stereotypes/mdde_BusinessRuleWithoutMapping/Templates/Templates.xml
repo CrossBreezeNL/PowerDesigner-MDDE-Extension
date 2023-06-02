@@ -7,5 +7,8 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Entity_SourceObject_JoinTypeList.xml" />
+<xi:include href="mdde_BusinessRule_Examples_XmlExport_Template.xml" />
+<xi:include href="mdde_BusinessRule_DefaultExampleList.xml" />
+<xi:include href="mdde_BusinessRule_IsBusinessRuleWithMapping.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

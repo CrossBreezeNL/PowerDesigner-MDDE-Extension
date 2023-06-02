@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="A4D402D5-C9A1-45A8-81F4-D1A0F1FDA8D1">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>A4D402D5-C9A1-45A8-81F4-D1A0F1FDA8D1</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1683207632</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Mapping_SqlExpression.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

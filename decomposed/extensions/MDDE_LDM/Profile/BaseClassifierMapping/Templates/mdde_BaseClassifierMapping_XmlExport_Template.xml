@@ -8,10 +8,14 @@
   .foreach_item(StructuralFeatureMaps,\n  &lt;AttributeMappings&gt;\n,\n  &lt;/AttributeMappings&gt;)
     %mdde_BaseStructuralFeatureMapping_XmlExport_Template%
   .next(\n)
+  .comment If the stereotype of the current mapping has it&#39;s own template, include it here.
+  .if (%mdde_Mapping_Stereotyped_XmlExport_Template?%)
+
+  %mdde_Mapping_Stereotyped_XmlExport_Template%
+  .endif
   .foreach_item(mdde_Mapping_Examples,\n  &lt;Examples&gt;\n,\n  &lt;/Examples&gt;)
     %mdde_Example_XmlExport_Template%
   .next(\n)
-
 &lt;/Mapping&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651739964</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

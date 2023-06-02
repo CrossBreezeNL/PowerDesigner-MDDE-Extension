@@ -8,6 +8,68 @@ DAT 1680508903</a:History>
 <a:TargetID>60EC35C7-6DB5-44B9-92BD-A08887CA9005</a:TargetID>
 <a:TargetClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:TargetClassID>
 <a:TargetPackagePath>&lt;Model&gt;</a:TargetPackagePath>
+<c:SubShortcuts>
+<o:Shortcut Id="08C2D1E9-948E-4345-8CF7-5B1F0EB1914F">
+<a:ObjectID>08C2D1E9-948E-4345-8CF7-5B1F0EB1914F</a:ObjectID>
+<a:Name>Id</a:Name>
+<a:Code>ID</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>3FA0D49D-8A10-4769-B683-85960E9F353F</a:TargetID>
+<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;::SalesOrder</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="38348DF0-96CC-43D6-84B4-55AA1CB8B65F"/>
+</c:FullShortcutReplica>
+</o:Shortcut>
+<o:Shortcut Id="6999FF4A-74A2-41B4-A9B3-CCBBB8495F45">
+<a:ObjectID>6999FF4A-74A2-41B4-A9B3-CCBBB8495F45</a:ObjectID>
+<a:Name>OrderDate</a:Name>
+<a:Code>ORDERDATE</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>FE17C4F0-5C1E-4E50-A96E-D045E816ACAF</a:TargetID>
+<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;::SalesOrder</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="F3E14A2D-CAB8-45BB-B2BB-C0D3B4B5A5BF"/>
+</c:FullShortcutReplica>
+</o:Shortcut>
+<o:Shortcut Id="D03BC676-D8A6-47EF-879C-E4DDC42514B3">
+<a:ObjectID>D03BC676-D8A6-47EF-879C-E4DDC42514B3</a:ObjectID>
+<a:Name>OrderNumber</a:Name>
+<a:Code>ORDERNUMBER</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>485471FA-F386-4401-BDE8-7447D453FEBF</a:TargetID>
+<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;::SalesOrder</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="7D13C262-8BD5-4439-A23F-7EA836779CAA"/>
+</c:FullShortcutReplica>
+</o:Shortcut>
+<o:Shortcut Id="F9A54E73-D82B-4CD8-8261-BCEF67B6E3D6">
+<a:ObjectID>F9A54E73-D82B-4CD8-8261-BCEF67B6E3D6</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>EC1D061C-A80C-45FC-9210-404133B3EAC3</a:TargetID>
+<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;::SalesOrder</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="BC501E7A-1F4B-44E8-8EB3-900B0D12A3CA"/>
+</c:FullShortcutReplica>
+</o:Shortcut>
+<o:Shortcut Id="ABA5520A-2B16-4F5C-AB4F-519BEB2D5EBB">
+<a:ObjectID>ABA5520A-2B16-4F5C-AB4F-519BEB2D5EBB</a:ObjectID>
+<a:Name>TotalAmount</a:Name>
+<a:Code>TOTALAMOUNT</a:Code>
+<a:TargetStereotype/>
+<a:TargetID>493F6607-B532-4EA0-AD55-9161F8A30CAC</a:TargetID>
+<a:TargetClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:TargetClassID>
+<a:TargetPackagePath>&lt;Model&gt;::SalesOrder</a:TargetPackagePath>
+<c:FullShortcutReplica>
+<o:SubReplication Ref="8C96A825-FEFC-4926-9C24-B59ED61A3EDF"/>
+</c:FullShortcutReplica>
+</o:Shortcut>
+</c:SubShortcuts>
 <c:FullShortcutReplica>
 <o:SubReplication Ref="A7FDCE2D-A292-4E0D-8C16-0F5D8274D4C9"/>
 </c:FullShortcutReplica>

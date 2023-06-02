@@ -54,15 +54,16 @@ ATT FOPT</a:History>
 <c:Mappings>
 <xi:include href="Mappings/Mapping_Customer_ExampleSources_Customer_WithEnrichment.xml" />
 <xi:include href="Mappings/SalesOrder_Mapping.xml" />
+<xi:include href="Mappings/Mapping_Br_Custom_Business_Rule_Example.xml" />
 </c:Mappings>
 <c:SourceModels>
 <xi:include href="SourceModels/Shortcuts/EXAMPLESOURCE.xml" />
 <xi:include href="SourceModels/Shortcuts/REFERENCE.xml" />
 </c:SourceModels>
 <c:Entities>
-<xi:include href="Entities/xm_entity/Customer.xml" />
-<xi:include href="Entities/xm_entity/SalesOrder.xml" />
-<xi:include href="Entities/xm_entity/Country.xml" />
+<xi:include href="Entities/Customer.xml" />
+<xi:include href="Entities/SalesOrder.xml" />
+<xi:include href="Entities/Country.xml" />
 <xi:include href="Entities/mdde_ScalarBusinessRule/Calculate_Order_Age.xml" />
 <xi:include href="Entities/mdde_FilterBusinessRule/Filter_FromNL.xml" />
 <xi:include href="Entities/xm_entity/CustomerWithParent.xml" />
@@ -70,6 +71,7 @@ ATT FOPT</a:History>
 <xi:include href="Entities/Shortcuts/SalesOrder.xml" />
 <xi:include href="Entities/mdde_ScalarBusinessRule/Derive_Customer_FullName.xml" />
 <xi:include href="Entities/Shortcuts/Country.xml" />
+<xi:include href="Entities/mdde_CustomBusinessRule/Br_Last_SalesOrder_Per_Customer.xml" />
 </c:Entities>
 <c:Relationships>
 <xi:include href="Relationships/Customer_SalesOrder.xml" />

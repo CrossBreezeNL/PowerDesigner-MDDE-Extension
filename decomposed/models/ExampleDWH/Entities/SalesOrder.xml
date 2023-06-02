@@ -1,0 +1,122 @@
+<o:Entity Id="2CBE61AD-180C-485A-8F14-2F2CEA9C225F">
+<a:ObjectID>2CBE61AD-180C-485A-8F14-2F2CEA9C225F</a:ObjectID>
+<a:Name>SalesOrder</a:Name>
+<a:Code>SalesOrder</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {7CAE8E1F-34A4-44C8-814E-5CE4A25F3C8B}
+DAT 1680508903
+ATT DFLTMAP
+ATT STRN</a:History>
+<c:DefaultMapping>
+<o:DefaultObjectMapping Ref="810808D7-5A8C-494A-9265-911D49E3282B"/>
+</c:DefaultMapping>
+<c:Identifiers>
+<o:Identifier Id="75DB3191-6745-4050-AAFA-2333E6CC7728">
+<a:ObjectID>75DB3191-6745-4050-AAFA-2333E6CC7728</a:ObjectID>
+<a:Name>PK_Order</a:Name>
+<a:Code>PK_ORDER</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {0FA1A97C-D87D-4B74-B887-F01A15D954B9}
+DAT 1680508903</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="3D846A5E-5D6B-4E30-820A-1692473D8211"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="75DB3191-6745-4050-AAFA-2333E6CC7728"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="3D846A5E-5D6B-4E30-820A-1692473D8211">
+<a:ObjectID>3D846A5E-5D6B-4E30-820A-1692473D8211</a:ObjectID>
+<a:Name>OrderId</a:Name>
+<a:Code>ORDERID</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {FD7F8F9F-18A3-4873-BD89-0B4C4D771DC6}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_businessKey</a:Stereotype>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<c:Domain>
+<o:Domain Ref="B6DFED76-B916-4112-9B91-83D3F18CBAAE"/>
+</c:Domain>
+</o:EntityAttribute>
+<o:EntityAttribute Id="119AF58F-65A9-4302-AB5C-48125C92DC41">
+<a:ObjectID>119AF58F-65A9-4302-AB5C-48125C92DC41</a:ObjectID>
+<a:Name>OrderDate</a:Name>
+<a:Code>ORDERDATE</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {63A1D7D7-9FE6-4E74-81A4-E32CCF1FE29C}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>DT</a:DataType>
+<c:Domain>
+<o:Domain Ref="ECB65762-E655-4BC5-B258-10B469ED8866"/>
+</c:Domain>
+</o:EntityAttribute>
+<o:EntityAttribute Id="C04AC16A-42B7-4C30-A8B7-4BBBFC4630AF">
+<a:ObjectID>C04AC16A-42B7-4C30-A8B7-4BBBFC4630AF</a:ObjectID>
+<a:Name>OrderNumber</a:Name>
+<a:Code>ORDERNUMBER</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {FDB92DE3-49F5-4CF7-919C-574AC15A9DE7}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<c:Domain>
+<o:Domain Ref="1A9AEEEF-2BE5-4656-A70D-2944474CC875"/>
+</c:Domain>
+</o:EntityAttribute>
+<o:EntityAttribute Id="CDFD6CA7-C11D-49AE-9882-AC733F7943CF">
+<a:ObjectID>CDFD6CA7-C11D-49AE-9882-AC733F7943CF</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {B3A225E3-F2A7-4504-BDCF-B98B003D3793}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>I</a:DataType>
+<c:Domain>
+<o:Domain Ref="B6DFED76-B916-4112-9B91-83D3F18CBAAE"/>
+</c:Domain>
+</o:EntityAttribute>
+<o:EntityAttribute Id="170BF497-2F70-404A-A97D-3BAD41FE3D82">
+<a:ObjectID>170BF497-2F70-404A-A97D-3BAD41FE3D82</a:ObjectID>
+<a:Name>TotalAmount</a:Name>
+<a:Code>TOTALAMOUNT</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {1B9F0E7B-6D21-4B51-93C2-F6B6A0AF7B0D}
+DAT 1680508903</a:History>
+<a:Stereotype>xm_attribute</a:Stereotype>
+<a:DataType>DC12,2</a:DataType>
+<a:Length>12</a:Length>
+<a:Precision>2</a:Precision>
+<c:Domain>
+<o:Domain Ref="3813C360-5A71-4B09-B8F3-F37235EACD01"/>
+</c:Domain>
+</o:EntityAttribute>
+<o:EntityAttribute Id="12F67EA7-2C9F-4D03-B063-84C354E15884">
+<a:ObjectID>12F67EA7-2C9F-4D03-B063-84C354E15884</a:ObjectID>
+<a:Name>AgeInDays</a:Name>
+<a:Code>AGEINDAYS</a:Code>
+<a:CreationDate>1680508903</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:History>ORG {59ED4A77-A3A6-47B4-A9E9-5C0072240A29}
+DAT 1680508903
+ATT STRN</a:History>
+<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
+<a:DataType>I</a:DataType>
+<c:Domain>
+<o:Domain Ref="B6DFED76-B916-4112-9B91-83D3F18CBAAE"/>
+</c:Domain>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

@@ -1,0 +1,78 @@
+<o:Entity Id="B36D9631-10D6-4CC0-9C64-99E33E33F4DA">
+<a:ObjectID>B36D9631-10D6-4CC0-9C64-99E33E33F4DA</a:ObjectID>
+<a:Name>Br Last SalesOrder Per Customer</a:Name>
+<a:Code>Br_Last_SalesOrder_Per_Customer</a:Code>
+<a:CreationDate>1683207699</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Business rule to get the last sales order per customer. We use a custom business rule here, since we can&#39;t model it using the standard filter rule.</a:Comment>
+<a:Stereotype>mdde_CustomBusinessRule</a:Stereotype>
+<c:DefaultMapping>
+<o:DefaultObjectMapping Ref="A6827ADA-10AE-43AE-B2C0-45FCE77EB49B"/>
+</c:DefaultMapping>
+<c:Identifiers>
+<o:Identifier Id="1599EDFF-CF8C-40AA-8D3D-C238CAB9B0FB">
+<a:ObjectID>1599EDFF-CF8C-40AA-8D3D-C238CAB9B0FB</a:ObjectID>
+<a:Name>Identifier Br Last SalesOrder Per Customer</a:Name>
+<a:Code>IDENTIFIER_BR_LAST_SALESORDER_PER_CUSTOMER</a:Code>
+<a:CreationDate>1683208436</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="9BCD5A48-BEC6-449E-9828-4ECDA0676B84"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="1599EDFF-CF8C-40AA-8D3D-C238CAB9B0FB"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="9BCD5A48-BEC6-449E-9828-4ECDA0676B84">
+<a:ObjectID>9BCD5A48-BEC6-449E-9828-4ECDA0676B84</a:ObjectID>
+<a:Name>Id</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1683208380</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="8FDF18D8-C6C8-4792-9590-C220892C17A9">
+<a:ObjectID>8FDF18D8-C6C8-4792-9590-C220892C17A9</a:ObjectID>
+<a:Name>OrderDate</a:Name>
+<a:Code>ORDERDATE</a:Code>
+<a:CreationDate>1683208380</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="82CFD857-A8A9-4FB0-A058-C6DDC5D6C1B8">
+<a:ObjectID>82CFD857-A8A9-4FB0-A058-C6DDC5D6C1B8</a:ObjectID>
+<a:Name>OrderNumber</a:Name>
+<a:Code>ORDERNUMBER</a:Code>
+<a:CreationDate>1683208380</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="1C2D2AC7-6074-4243-A668-B1555250E1A7">
+<a:ObjectID>1C2D2AC7-6074-4243-A668-B1555250E1A7</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1683208380</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="8AA6B16C-2A07-4752-8B5B-A7275721D2E6">
+<a:ObjectID>8AA6B16C-2A07-4752-8B5B-A7275721D2E6</a:ObjectID>
+<a:Name>TotalAmount</a:Name>
+<a:Code>TOTALAMOUNT</a:Code>
+<a:CreationDate>1683208380</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
+<a:DataType>DC12,2</a:DataType>
+<a:Length>12</a:Length>
+<a:Precision>2</a:Precision>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

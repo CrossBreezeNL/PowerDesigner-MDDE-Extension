@@ -1,0 +1,10 @@
+<o:MetaClassTargetItem Id="C11C02C9-18C2-4AAD-AD4E-0B51D899A637">
+<a:ObjectID>C11C02C9-18C2-4AAD-AD4E-0B51D899A637</a:ObjectID>
+<a:Name>Inheritance</a:Name>
+<a:CreationDate>1684842659</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>

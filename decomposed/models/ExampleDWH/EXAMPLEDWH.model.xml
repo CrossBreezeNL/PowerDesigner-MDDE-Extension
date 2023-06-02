@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Model Id="3BC78F2D-650B-4443-9783-A97171290BFE" Code="EXAMPLEDWH" Name="ExampleDWH">
-  <SourceModels>
-    <SourceModel Id="D7F41E17-25EB-4620-B6EA-96957CAE246A" Code="EXAMPLESOURCE" Name="ExampleSource" />
-    <SourceModel Id="E0D7FF56-7977-4D8F-A64B-BB6D985687E7" Code="REFERENCE" Name="Reference" />
-  </SourceModels>
+  <DependentModels>
+    <DependentModel Id="D7F41E17-25EB-4620-B6EA-96957CAE246A" Code="EXAMPLESOURCE" Name="ExampleSource" />
+    <DependentModel Id="E0D7FF56-7977-4D8F-A64B-BB6D985687E7" Code="REFERENCE" Name="Reference" />
+  </DependentModels>
   <Entities>
-    <Entity Id="300B0E82-0073-4894-B364-9429B35F1D39" Code="Customer" Name="Customer" Stereotype="xm_entity">
+    <Entity Id="300B0E82-0073-4894-B364-9429B35F1D39" Code="Customer" Name="Customer">
       <Attributes>
         <Attribute Id="821996D6-42E2-4246-8CCF-60B3B757B5E2" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_businessKey" Ordinal="1" DataType="I" Primary="TRUE" Mandatory="TRUE"></Attribute>
         <Attribute Id="1C25B8C3-87B8-4ADD-846B-148F70ED6FA7" Code="FIRSTNAME" Name="FirstName" Stereotype="xm_attribute" Ordinal="2" DataType="VA" Length="50"></Attribute>
@@ -25,7 +25,7 @@
         <Attribute Id="E3E9AC40-81A1-4C5A-B15C-71F599A331A6" Code="PHONE2" Name="Phone2" Ordinal="16" DataType="VA" Length="20"></Attribute>
       </Attributes>
       <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
+        <Identifier Id="3763BC8D-F85E-4173-AFF3-97646E092560" Code="PK_CUSTOMER" Name="PK_Customer" PrimaryIdentifier="TRUE">
           <Attributes>
             <Attribute Id="821996D6-42E2-4246-8CCF-60B3B757B5E2" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_businessKey" Ordinal="1" />
           </Attributes></Identifier>
@@ -37,7 +37,7 @@
               <Entity Id="1352D98F-2A9C-42AA-AE82-2E68BA514F02" Code="Customer" Name="Customer" />
             </SourceObject>
             <SourceObject Id="946186C3-8F2F-41B9-9A7D-8AB9CB4F2146" Code="Country" Name="Country" Stereotype="mdde_SourceObject" JoinedObject="Country" JoinedObjectModel="EXAMPLEDWH" JoinType="LEFT JOIN">
-              <Entity Id="F7FFB923-8961-422F-9EB7-B5EA84C99262" Code="Country" Name="Country" Stereotype="xm_entity" />
+              <Entity Id="F7FFB923-8961-422F-9EB7-B5EA84C99262" Code="Country" Name="Country" />
               <JoinConditions>
                 <JoinCondition ChildAttribute="CODE" JoinOperator="=" ParentAttribute="Customer.COUNTRY" ParentIsLiteralValue="false" />
               </JoinConditions>
@@ -62,8 +62,7 @@
               <TargetAttribute Id="AEED4C8F-1536-4AA3-9882-2995E0D50FA8" Code="COUNTRY_DESCRIPTION" Name="Country_Description" Stereotype="xm_attribute" />
               <SourceAttribute SourceObjectId="946186C3-8F2F-41B9-9A7D-8AB9CB4F2146" Id="80ED7852-37E8-48C0-ADE2-B41FA9231ECB" Code="DESCRIPTION" Name="Description" Stereotype="xm_attribute" />
             </AttributeMapping>
-          </AttributeMappings>
-        </Mapping>
+          </AttributeMappings></Mapping>
       </Mappings>
       <Relationships>
         <Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955" Code="Customer_SalesOrder" Name="Customer_SalesOrder" ParentEntity="Customer" ParentEntityId="300B0E82-0073-4894-B364-9429B35F1D39" ChildEntity="SalesOrder" ChildEntityId="2CBE61AD-180C-485A-8F14-2F2CEA9C225F">
@@ -73,7 +72,7 @@
         </Relationship>
       </Relationships>
     </Entity>
-    <Entity Id="2CBE61AD-180C-485A-8F14-2F2CEA9C225F" Code="SalesOrder" Name="SalesOrder" Stereotype="xm_entity">
+    <Entity Id="2CBE61AD-180C-485A-8F14-2F2CEA9C225F" Code="SalesOrder" Name="SalesOrder">
       <Attributes>
         <Attribute Id="3D846A5E-5D6B-4E30-820A-1692473D8211" Code="ORDERID" Name="OrderId" Stereotype="xm_businessKey" Ordinal="1" DataType="I" Primary="TRUE" Mandatory="TRUE"></Attribute>
         <Attribute Id="119AF58F-65A9-4302-AB5C-48125C92DC41" Code="ORDERDATE" Name="OrderDate" Stereotype="xm_attribute" Ordinal="2" DataType="DT"></Attribute>
@@ -83,7 +82,7 @@
         <OutputAttribute Id="12F67EA7-2C9F-4D03-B063-84C354E15884" Code="AGEINDAYS" Name="AgeInDays" Stereotype="mdde_OutputAttribute" Ordinal="6" DataType="I"></OutputAttribute>
       </Attributes>
       <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
+        <Identifier Id="75DB3191-6745-4050-AAFA-2333E6CC7728" Code="PK_ORDER" Name="PK_Order" PrimaryIdentifier="TRUE">
           <Attributes>
             <Attribute Id="3D846A5E-5D6B-4E30-820A-1692473D8211" Code="ORDERID" Name="OrderId" Stereotype="xm_businessKey" Ordinal="1" />
           </Attributes></Identifier>
@@ -94,8 +93,7 @@
             <SourceObject Id="0F2EE1DB-8E68-424B-BBF5-0342A9EFE195" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_SourceObject" JoinedObject="Calculate_Order_Age" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
               <ScalarBusinessRule Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule" />
             </SourceObject>
-          </SourceObjects>
-        </Mapping>
+          </SourceObjects></Mapping>
       </Mappings>
       <Relationships>
         <Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955" Code="Customer_SalesOrder" Name="Customer_SalesOrder" ParentEntity="Customer" ParentEntityId="300B0E82-0073-4894-B364-9429B35F1D39" ChildEntity="SalesOrder" ChildEntityId="2CBE61AD-180C-485A-8F14-2F2CEA9C225F">
@@ -105,14 +103,14 @@
         </Relationship>
       </Relationships>
     </Entity>
-    <Entity Id="F7FFB923-8961-422F-9EB7-B5EA84C99262" Code="Country" Name="Country" Stereotype="xm_entity">
+    <Entity Id="F7FFB923-8961-422F-9EB7-B5EA84C99262" Code="Country" Name="Country">
       <Attributes>
         <Attribute Id="5C782765-BA26-49BC-8DA4-FDFDD7538643" Code="CODE" Name="Code" Stereotype="xm_businessKey" Ordinal="1" DataType="VMBT" Length="3" Primary="TRUE" Mandatory="TRUE"></Attribute>
         <Attribute Id="80ED7852-37E8-48C0-ADE2-B41FA9231ECB" Code="DESCRIPTION" Name="Description" Stereotype="xm_attribute" Ordinal="2" DataType="VMBT" Length="100"></Attribute>
         <Attribute Id="8A0765A7-C0F9-4068-A63C-80884F17A8D5" Code="CONTINENT" Name="Continent" Stereotype="xm_attribute" Ordinal="3" DataType="VMBT" Length="100"></Attribute>
       </Attributes>
       <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
+        <Identifier Id="90BFE7DC-ED2D-4B46-8D4C-84B7A37D713A" Code="PK_COUNTRY" Name="PK_Country" PrimaryIdentifier="TRUE">
           <Attributes>
             <Attribute Id="5C782765-BA26-49BC-8DA4-FDFDD7538643" Code="CODE" Name="Code" Stereotype="xm_businessKey" Ordinal="1" />
           </Attributes></Identifier>
@@ -181,5 +179,58 @@
         </Example>
       </Examples>
     </ScalarBusinessRule>
+    <CustomBusinessRule Id="B36D9631-10D6-4CC0-9C64-99E33E33F4DA" Code="Br_Last_SalesOrder_Per_Customer" Name="Br Last SalesOrder Per Customer" Stereotype="mdde_CustomBusinessRule">
+      <Attributes>
+        <OutputAttribute Id="9BCD5A48-BEC6-449E-9828-4ECDA0676B84" Code="ID" Name="Id" Stereotype="mdde_OutputAttribute" Ordinal="1" DataType="I" Primary="TRUE" Mandatory="TRUE"></OutputAttribute>
+        <OutputAttribute Id="8FDF18D8-C6C8-4792-9590-C220892C17A9" Code="ORDERDATE" Name="OrderDate" Stereotype="mdde_OutputAttribute" Ordinal="2" DataType="DT"></OutputAttribute>
+        <OutputAttribute Id="82CFD857-A8A9-4FB0-A058-C6DDC5D6C1B8" Code="ORDERNUMBER" Name="OrderNumber" Stereotype="mdde_OutputAttribute" Ordinal="3" DataType="VA" Length="50"></OutputAttribute>
+        <OutputAttribute Id="1C2D2AC7-6074-4243-A668-B1555250E1A7" Code="CUSTOMERID" Name="CustomerId" Stereotype="mdde_OutputAttribute" Ordinal="4" DataType="I"></OutputAttribute>
+        <OutputAttribute Id="8AA6B16C-2A07-4752-8B5B-A7275721D2E6" Code="TOTALAMOUNT" Name="TotalAmount" Stereotype="mdde_OutputAttribute" Ordinal="5" DataType="DC" Precision="12" Scale="2"></OutputAttribute>
+      </Attributes>
+      <Identifiers>
+        <Identifier Id="1599EDFF-CF8C-40AA-8D3D-C238CAB9B0FB" Code="IDENTIFIER_BR_LAST_SALESORDER_PER_CUSTOMER" Name="Identifier Br Last SalesOrder Per Customer" PrimaryIdentifier="TRUE">
+          <Attributes>
+            <OutputAttribute Id="9BCD5A48-BEC6-449E-9828-4ECDA0676B84" Code="ID" Name="Id" Stereotype="mdde_OutputAttribute" Ordinal="1" />
+          </Attributes></Identifier>
+      </Identifiers>
+      <Mappings>
+        <Mapping Id="A6827ADA-10AE-43AE-B2C0-45FCE77EB49B" Code="Mapping_Br_Custom_Business_Rule_Example" Name="Mapping Br Custom Business Rule Example">
+          <SourceObjects>
+            <SourceObject Id="CC0F100E-6AD2-444C-B660-97FA156927B4" Code="SalesOrder" Name="SalesOrder" Stereotype="mdde_SourceObject" JoinedObject="SalesOrder" JoinedObjectModel="EXAMPLESOURCE" JoinType="FROM">
+              <Entity Id="60EC35C7-6DB5-44B9-92BD-A08887CA9005" Code="SalesOrder" Name="SalesOrder" ForeignAttribute="CUSTOMERID" />
+            </SourceObject>
+          </SourceObjects>
+          <SqlExpression>
+             WITH SalesOrdersCTE AS (
+               SELECT
+                 Id,
+                 OrderDate,
+                 OrderNumber,
+                 CustomerId,
+                 TotalAmount,
+                 -- Create a row-number for the order per customer, this way we can filter on the last order.
+                 ROW_NUMBER() OVER (PARTITION BY CustomerId ORDER BY OrderDate DESC) AS CustomerOrderRowNumber
+               FROM SalesOrder
+             )
+             SELECT
+                 Id,
+                 OrderDate,
+                 OrderNumber,
+                 CustomerId,
+                 TotalAmount
+             FROM SalesOrdersCTE
+             -- Only the last SalesOrder record per customer.
+             WHERE CustomerOrderRowNumber = 1
+          </SqlExpression>
+          <Examples>
+            <Example Id="E63E55CB-EABE-4724-953B-F323B337FF62" Code="Return_last_SalesOrder" Name="Return last SalesOrder" Stereotype="mdde_Example">  
+              <EntityExampleData Type="Expected output" ExampleEntityId="B36D9631-10D6-4CC0-9C64-99E33E33F4DA" ExampleEntityModel="EXAMPLEDWH" ExampleEntity="Br_Last_SalesOrder_Per_Customer">  
+              </EntityExampleData>
+              <EntityExampleData Type="Source input" ExampleEntityId="60EC35C7-6DB5-44B9-92BD-A08887CA9005" ExampleEntityModel="EXAMPLESOURCE" ExampleEntity="SalesOrder">    
+              </EntityExampleData>
+            </Example>
+          </Examples></Mapping>
+      </Mappings>
+    </CustomBusinessRule>
   </Entities>
 </Model>

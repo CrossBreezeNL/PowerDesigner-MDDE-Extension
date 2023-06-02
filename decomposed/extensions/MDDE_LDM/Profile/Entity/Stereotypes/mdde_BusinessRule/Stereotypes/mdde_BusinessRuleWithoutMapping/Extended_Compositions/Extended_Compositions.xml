@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="9C0F53AA-E983-42ED-95A0-A51FBA520FA1">
+<a:TypePublicName>ExtendedCompositionTargetItem</a:TypePublicName>
+<a:ObjectID>9C0F53AA-E983-42ED-95A0-A51FBA520FA1</a:ObjectID>
+<a:Name>Extended Compositions</a:Name>
+<a:CreationDate>1683208720</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_BusinessRule_Examples.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

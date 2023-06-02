@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="E4ADE83E-5650-48F8-88A3-CDE72011381D">
+<a:TypePublicName>FormTargetItem</a:TypePublicName>
+<a:ObjectID>E4ADE83E-5650-48F8-88A3-CDE72011381D</a:ObjectID>
+<a:Name>Forms</a:Name>
+<a:CreationDate>1683207498</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="MappingDetails.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>
