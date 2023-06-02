@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Model Id="3BC78F2D-650B-4443-9783-A97171290BFE" Code="EXAMPLEDWH" Name="ExampleDWH">
-  <SourceModels>
-    <SourceModel Id="D7F41E17-25EB-4620-B6EA-96957CAE246A" Code="EXAMPLESOURCE" Name="ExampleSource" />
-    <SourceModel Id="E0D7FF56-7977-4D8F-A64B-BB6D985687E7" Code="REFERENCE" Name="Reference" />
-  </SourceModels>
+  <DependentModels>
+    <DependentModel Id="D7F41E17-25EB-4620-B6EA-96957CAE246A" Code="EXAMPLESOURCE" Name="ExampleSource" />
+    <DependentModel Id="E0D7FF56-7977-4D8F-A64B-BB6D985687E7" Code="REFERENCE" Name="Reference" />
+  </DependentModels>
   <Entities>
     <Entity Id="300B0E82-0073-4894-B364-9429B35F1D39" Code="Customer" Name="Customer">
       <Attributes>
@@ -25,7 +25,7 @@
         <Attribute Id="E3E9AC40-81A1-4C5A-B15C-71F599A331A6" Code="PHONE2" Name="Phone2" Ordinal="16" DataType="VA" Length="20"></Attribute>
       </Attributes>
       <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
+        <Identifier Id="3763BC8D-F85E-4173-AFF3-97646E092560" Code="PK_CUSTOMER" Name="PK_Customer" PrimaryIdentifier="TRUE">
           <Attributes>
             <Attribute Id="821996D6-42E2-4246-8CCF-60B3B757B5E2" Code="CUSTOMERID" Name="CustomerId" Stereotype="xm_businessKey" Ordinal="1" />
           </Attributes></Identifier>
@@ -82,7 +82,7 @@
         <OutputAttribute Id="12F67EA7-2C9F-4D03-B063-84C354E15884" Code="AGEINDAYS" Name="AgeInDays" Stereotype="mdde_OutputAttribute" Ordinal="6" DataType="I"></OutputAttribute>
       </Attributes>
       <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
+        <Identifier Id="75DB3191-6745-4050-AAFA-2333E6CC7728" Code="PK_ORDER" Name="PK_Order" PrimaryIdentifier="TRUE">
           <Attributes>
             <Attribute Id="3D846A5E-5D6B-4E30-820A-1692473D8211" Code="ORDERID" Name="OrderId" Stereotype="xm_businessKey" Ordinal="1" />
           </Attributes></Identifier>
@@ -110,7 +110,7 @@
         <Attribute Id="8A0765A7-C0F9-4068-A63C-80884F17A8D5" Code="CONTINENT" Name="Continent" Stereotype="xm_attribute" Ordinal="3" DataType="VMBT" Length="100"></Attribute>
       </Attributes>
       <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
+        <Identifier Id="90BFE7DC-ED2D-4B46-8D4C-84B7A37D713A" Code="PK_COUNTRY" Name="PK_Country" PrimaryIdentifier="TRUE">
           <Attributes>
             <Attribute Id="5C782765-BA26-49BC-8DA4-FDFDD7538643" Code="CODE" Name="Code" Stereotype="xm_businessKey" Ordinal="1" />
           </Attributes></Identifier>
@@ -188,7 +188,7 @@
         <OutputAttribute Id="8AA6B16C-2A07-4752-8B5B-A7275721D2E6" Code="TOTALAMOUNT" Name="TotalAmount" Stereotype="mdde_OutputAttribute" Ordinal="5" DataType="DC" Precision="12" Scale="2"></OutputAttribute>
       </Attributes>
       <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
+        <Identifier Id="1599EDFF-CF8C-40AA-8D3D-C238CAB9B0FB" Code="IDENTIFIER_BR_LAST_SALESORDER_PER_CUSTOMER" Name="Identifier Br Last SalesOrder Per Customer" PrimaryIdentifier="TRUE">
           <Attributes>
             <OutputAttribute Id="9BCD5A48-BEC6-449E-9828-4ECDA0676B84" Code="ID" Name="Id" Stereotype="mdde_OutputAttribute" Ordinal="1" />
           </Attributes></Identifier>
@@ -201,10 +201,26 @@
             </SourceObject>
           </SourceObjects>
           <SqlExpression>
-             SELECT Id, OrderDate, OrderNumber, CustomerId, TotalAmount
-             FROM SalesOrder
+             WITH SalesOrdersCTE AS (
+               SELECT
+                 Id,
+                 OrderDate,
+                 OrderNumber,
+                 CustomerId,
+                 TotalAmount,
+                 -- Create a row-number for the order per customer, this way we can filter on the last order.
+                 ROW_NUMBER() OVER (PARTITION BY CustomerId ORDER BY OrderDate DESC) AS CustomerOrderRowNumber
+               FROM SalesOrder
+             )
+             SELECT
+                 Id,
+                 OrderDate,
+                 OrderNumber,
+                 CustomerId,
+                 TotalAmount
+             FROM SalesOrdersCTE
              -- Only the last SalesOrder record per customer.
-             WHERE ROW_NUMBER() OVER (PARTITION BY CustomerId ORDER BY OrderDate DESC) = 1
+             WHERE CustomerOrderRowNumber = 1
           </SqlExpression>
           <Examples>
             <Example Id="E63E55CB-EABE-4724-953B-F323B337FF62" Code="Return_last_SalesOrder" Name="Return last SalesOrder" Stereotype="mdde_Example">  

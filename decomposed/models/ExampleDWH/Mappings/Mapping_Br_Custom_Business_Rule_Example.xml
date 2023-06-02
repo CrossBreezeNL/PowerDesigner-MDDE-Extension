@@ -4,10 +4,26 @@
 <a:Code>Mapping_Br_Custom_Business_Rule_Example</a:Code>
 <a:CreationDate>1683207735</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,276={31DE0464-1B4B-44ED-8B5A-ED6BD8CE1E1F},mdde_Mapping_SqlExpression,204=SELECT Id, OrderDate, OrderNumber, CustomerId, TotalAmount
-FROM SalesOrder
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,593={31DE0464-1B4B-44ED-8B5A-ED6BD8CE1E1F},mdde_Mapping_SqlExpression,521=WITH SalesOrdersCTE AS (
+  SELECT
+    Id,
+    OrderDate,
+    OrderNumber,
+    CustomerId,
+    TotalAmount,
+    -- Create a row-number for the order per customer, this way we can filter on the last order.
+    ROW_NUMBER() OVER (PARTITION BY CustomerId ORDER BY OrderDate DESC) AS CustomerOrderRowNumber
+  FROM SalesOrder
+)
+SELECT
+    Id,
+    OrderDate,
+    OrderNumber,
+    CustomerId,
+    TotalAmount
+FROM SalesOrdersCTE
 -- Only the last SalesOrder record per customer.
-WHERE ROW_NUMBER() OVER (PARTITION BY CustomerId ORDER BY OrderDate DESC) = 1
+WHERE CustomerOrderRowNumber = 1
 
 </a:ExtendedAttributesText>
 <c:ExtendedCompositions>
