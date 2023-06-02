@@ -98,9 +98,9 @@ When you want to create multiple examples, follow the the above steps for every 
 
 ## Custom business rule
 
-> This business rule doesn't provide/guarantee attribute and entity level lineage. Try to avoid using this type of business rule. The reason it exists is to support custom constructs which or not (yet) supported this modeling extension.
+> This business rule doesn't provide/guarantee attribute and entity level lineage. The custom business rule should only be used for constructs that are not (yet) supported otherwise in this modeling extension.
 
-A custom business rule is a business rule which can have one or more mappings with each it's own expression. This type of business rule is a fall-back component for when there is no business rule type available for your needs. Ideally it shouldn't be used, because this type of business rule is not providing any attribute level lineage (it does provide entity level lineage, but it's not guaranteed to be correct). The logic of the business rule is functionally described and technically implemented using a SQL expression in a mapping.
+A custom business rule is a business rule that can have one or more mappings with each it's own expression. This type of business rule is a fall-back component for when there is no business rule type available for your needs. Ideally it shouldn't be used, because this type of business rule is not providing any attribute level lineage (it does provide entity level lineage, but it's not guaranteed to be correct). The logic of the business rule is functionally described and technically implemented using a SQL expression in a mapping.
 
 Go through the following steps to model the custom business rule:
 
@@ -123,13 +123,13 @@ On the 'Attributes' tab:
 ### Mappings
 
 On the mappings tab of the business rule you can add one or more mappings to the custom business rule. Each mapping adds a subset to the output of the rule. For every mapping the source objects need to be specified, so the SQL can be semi-validated and examples can be modelled.
-These mappings deviate from normal mappings a bit. Customer business rule mappings don't have an 'Attribute mappings' tab, but a 'Mapping expression' tab where you can specify the Sql Expression for the current mapping.
+These mappings deviate from normal mappings a bit. Custom business rule mappings don't have an 'Attribute mappings' tab, but a 'Mapping expression' tab where you can specify the Sql Expression for the current mapping.
 
 1. To create a mapping, please follow the standard [Create a mapping](./Mapping.md#create-a-mapping) instructions.
 1. To add source objects, please follow the standard [Add source object](./Mapping.md#add-a-source-object) instructions. You don't have to specify the join conditions.
  As mentioned above you cannot add attribute mappings, so you can skip these instructions and go to the steps below.
  ![Custom business rule - Mapping - Source objects](img/custom_business_rule_mapping_source_objects.png)
-1. Write the SQL syntax for the custom business rule in the 'SQL Expression (MDDE)' field on the 'Mapping expression' tab. The expression should contain a full SQL statement starting with SELECT. Also include any set operation like JOIN, GROUP BY or somesort where needed. You must include the output alias of any expression in the SELECT part (like ` AS RESULTING_VALUE`). The output alias must match the 'Code' of an attribute of the business rule.
+1. Write the SQL syntax for the custom business rule in the 'SQL Expression (MDDE)' field on the 'Mapping expression' tab. The expression should contain a full SQL statement starting with SELECT. Also include any set operation like JOIN, GROUP BY or somesort where needed. It is up to the modeler to make sure that the output definition of the SQL Expression is in line with the attribute definition that is defined on the entity.
 ![Custom business rule - Mapping - Expression](img/custom_business_rule_mapping_expression.png)
 1. To add examples for the mapping, please follow the standard [Examples](./Mapping.md#examples) instructions.
 ![Custom business rule - Mapping - Examples](img/custom_business_rule_mapping_examples.png)
