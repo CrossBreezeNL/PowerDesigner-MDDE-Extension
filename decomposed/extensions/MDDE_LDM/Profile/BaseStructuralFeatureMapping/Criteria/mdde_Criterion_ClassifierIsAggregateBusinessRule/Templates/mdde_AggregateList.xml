@@ -1,0 +1,12 @@
+<o:TemplateTargetItem Id="1ABCA198-2EDE-491D-ADF5-148FEF659FC3">
+<a:ObjectID>1ABCA198-2EDE-491D-ADF5-148FEF659FC3</a:ObjectID>
+<a:Name>mdde_AggregateList</a:Name>
+<a:TemplateTargetItem.Value>Sum
+Average
+Minimum
+Maximum
+Count</a:TemplateTargetItem.Value>
+<a:CreationDate>1689073461</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

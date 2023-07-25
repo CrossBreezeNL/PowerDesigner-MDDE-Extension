@@ -8,5 +8,6 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Forms/Forms.xml" />
+<xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:CriterionTargetItem>

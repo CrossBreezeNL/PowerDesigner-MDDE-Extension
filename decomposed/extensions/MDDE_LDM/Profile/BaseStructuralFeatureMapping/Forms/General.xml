@@ -3,12 +3,12 @@
 <a:Name>General</a:Name>
 <a:Code>GENERAL</a:Code>
 <a:FormTargetItem.Value>&lt;Form  &gt;
-   &lt;StandardAttribute Attribute=&quot;DataSource&quot; Caption=&quot;Data Source:&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
-   &lt;StandardAttribute Attribute=&quot;Feature&quot; Caption=&quot;Target&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
-   &lt;StandardAttribute Attribute=&quot;FeatureParent&quot; Caption=&quot;Parent&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;DataSource&quot; Caption=&quot;Data Source:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Feature&quot; Caption=&quot;Target&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;FeatureParent&quot; Caption=&quot;Parent&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; LeftText=&quot;false&quot; /&gt;
    &lt;StandardAttribute Attribute=&quot;Comment&quot; Caption=&quot;Comment:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;No&quot; /&gt;
-   &lt;StandardAttribute Attribute=&quot;MappedTo&quot; Caption=&quot;Mapped to:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
-   &lt;ExtendedAttribute Attribute=&quot;mdde_SourceObject&quot; Caption=&quot;Source object (MDDE)&quot; AttributeID=&quot;{9C6B6DAA-C557-4D27-83B1-F6F7CF78EDB3}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;MappedTo&quot; Caption=&quot;Mapped to:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;ExtendedAttribute Attribute=&quot;mdde_SourceObject&quot; Caption=&quot;Source object (MDDE)&quot; AttributeID=&quot;{9C6B6DAA-C557-4D27-83B1-F6F7CF78EDB3}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
 &lt;/Form&gt;
 </a:FormTargetItem.Value>
 <a:CreationDate>1650378066</a:CreationDate>

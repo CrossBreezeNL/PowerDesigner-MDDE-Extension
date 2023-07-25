@@ -1,0 +1,14 @@
+<o:CriterionTargetItem Id="B862679C-5637-4605-989F-30E7DD21AE8F">
+<a:ObjectID>B862679C-5637-4605-989F-30E7DD21AE8F</a:ObjectID>
+<a:Name>mdde_Criterion_ClassifierIsAggregateBusinessRule</a:Name>
+<a:CriterionTargetItem.Value>%Classifier.Stereotype% == &quot;mdde_AggregateBusinessRule&quot;</a:CriterionTargetItem.Value>
+<a:CreationDate>1688646660</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:ParentCriterion>
+<o:CriterionTargetItem Ref="272D5D90-4E84-4514-ABFC-2463B43547C2"/>
+</c:ParentCriterion>
+<c:Categories>
+<xi:include href="Forms/Forms.xml" />
+</c:Categories>
+</o:CriterionTargetItem>
