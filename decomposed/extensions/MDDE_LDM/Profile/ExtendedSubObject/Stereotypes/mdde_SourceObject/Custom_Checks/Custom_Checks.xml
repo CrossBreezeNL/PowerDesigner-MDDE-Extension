@@ -7,5 +7,6 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Check_ValidateSourceObject.xml" />
+<xi:include href="mdde_Check_JoinConditionSpecified.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

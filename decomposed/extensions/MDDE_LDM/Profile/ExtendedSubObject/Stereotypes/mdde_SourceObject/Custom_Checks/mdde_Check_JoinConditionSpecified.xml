@@ -1,0 +1,56 @@
+<o:CustomCheckTargetItem Id="F2E72C54-CA55-42E2-B7E8-AD66365FA458">
+<a:ObjectID>F2E72C54-CA55-42E2-B7E8-AD66365FA458</a:ObjectID>
+<a:Name>mdde_Check_JoinConditionSpecified</a:Name>
+<a:CreationDate>1686821563</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:Comment>This check checks if a join condtion has been specified to a source object with a join type</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that if a join condtion has been specified to a source object with a join type</a:HelpMessage>
+<a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = True
+   &#39; Get the join type of the entity in current source object.
+   Dim JoinType : JoinType = obj.GetExtendedAttributeText(&quot;mdde_JoinType&quot;)
+   &#39;Exclude join type From&#39;
+   If Not(UCase(JoinType) = &quot;FROM&quot;) Then 
+      &#39;Make sure join codition is specified
+      Dim objJoinConditions : Set objJoinConditions = obj.GetExtendedCollection(&quot;mdde_JoinConditions&quot;, False)
+      Dim objMapping : Set objMapping = obj.ParentObject
+      Dim objEntity : Set objEntity = objMapping.Classifier
+      
+      &#39; Check whether the collection exists, if not or when it is empty print an error.
+      If objJoinConditions Is Nothing Then
+         WriteError( &quot;No join conditions specified for source object &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; in the mapping &#39;&quot; &amp; objMapping.DisplayName &amp; &quot;&#39; for entity &#39;&quot; &amp;  objEntity.DisplayName &amp; &quot;&#39;&quot;)
+         %Check% = False
+      ElseIf objJoinConditions.Count = 0 Then
+         WriteError( &quot;No join conditions specified for source object &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; in the mapping &#39;&quot; &amp; objMapping.DisplayName &amp; &quot;&#39; for entity &#39;&quot; &amp;  objEntity.DisplayName &amp; &quot;&#39;&quot;)
+         %Check% = False
+         
+      &#39; If the collection exists and contains records, check the entries.
+      Else
+         &#39; Check join condition completeness
+         Dim JoinCondition   
+         For Each JoinCondition In objJoinConditions 
+            Dim objChildAttribute : Set objChildAttribute = JoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;)
+            Dim objParentAttribute : Set objParentAttribute = JoinCondition.GetExtendedAttribute(&quot;mdde_ParentAttribute&quot;)
+            Dim strJoinOperator : strJoinOperator = JoinCondition.GetExtendedAttributeText(&quot;mdde_JoinOperator&quot;)
+            If (objChildAttribute is Nothing) Or (objParentAttribute Is Nothing) Or (Len(strJoinOperator) = 0) Then
+               WriteError( &quot;Part(s) of the join conditions are missing for source object &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; in the mapping &#39;&quot; &amp; objMapping.DisplayName &amp; &quot;&#39; for entity &#39;&quot; &amp;  objEntity.DisplayName &amp; &quot;&#39;&quot;)
+               %Check% = False
+               Exit For
+            End If
+         Next
+      End If    
+   End If
+   
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>
