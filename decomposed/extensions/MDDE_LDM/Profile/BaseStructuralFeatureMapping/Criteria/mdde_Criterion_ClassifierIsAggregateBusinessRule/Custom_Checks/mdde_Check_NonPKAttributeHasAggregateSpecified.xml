@@ -9,7 +9,7 @@
 <a:CheckScript>Function %Check%(obj)
    %Check% = True
    Dim strAggregate : strAggregate = obj.GetExtendedAttribute(&quot;mdde_Aggregate&quot;)
-   If obj.Feature.PrimaryIdentifier = False And Len(strAggregate) &lt;&gt; 0 Then
+   If obj.Feature.PrimaryIdentifier = False And Len(strAggregate) = 0 Then
       WriteError( &quot; Mapping: &quot; &amp; obj.ClassifierMap.DisplayName &amp; &quot; Attribute: &quot; &amp; obj.Feature.DisplayName &amp; &quot;&#39; for aggregate business rule: &quot; &amp; obj.ClassifierMap.Classifier.DisplayName &amp; &quot;&#39;&quot; &amp; &quot; has no Aggregate method specified.&quot;)
       %Check% = False
    End if
