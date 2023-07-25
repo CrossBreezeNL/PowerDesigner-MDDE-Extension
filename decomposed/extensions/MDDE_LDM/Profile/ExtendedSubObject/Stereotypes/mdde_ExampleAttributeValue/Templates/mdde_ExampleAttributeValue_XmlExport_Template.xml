@@ -4,24 +4,6 @@
 <a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName%
 .if (%mdde_Attribute%)
  Attribute=&quot;%.X:mdde_Attribute.Code%&quot;
-.comment Replace all single quotes to double-single-quotes since this is needed to escape them in SQL.
-.set_value(ValueEncapsulator, &quot;&quot;)
-.set_value(SqlValue, %.X:mdde_Value%)
-.comment Only encapsulate the value if the value is not null.
-.if (%mdde_Value%)
-.comment Store the attribute data type in a local variable so we only compute it once.
-.set_value(vAttributeDataType, %mdde_Attribute.mdde_EntityAttribute_DataType%)
-.comment Encapsulate the value if the attribute is a string or date/time type.
-.if (%vAttributeDataType% == &quot;A&quot;) || (%vAttributeDataType% == &quot;VA&quot;) || (%vAttributeDataType% == &quot;LA&quot;) || (%vAttributeDataType% == &quot;LVA&quot;) || (%vAttributeDataType% == &quot;TXT&quot;) || (%vAttributeDataType% == &quot;MBT&quot;) || (%vAttributeDataType% == &quot;VMBT&quot;) || (%vAttributeDataType% == &quot;D&quot;) || (%vAttributeDataType% == &quot;T&quot;) || (%vAttributeDataType% == &quot;DT&quot;) || (%vAttributeDataType% == &quot;ST&quot;)
-   .set_value(ValueEncapsulator, &quot;&#39;&quot;)
-.endif
-.comment If the value is empty, so the SqlValue to NULL.
-.else
-   .set_value(SqlValue, &quot;NULL&quot;)
-.endif
-.replace (&quot;&amp;#39;&quot;,&quot;&amp;#39;&amp;#39;&quot;)
- SqlValue=&quot;%ValueEncapsulator%%SqlValue%%ValueEncapsulator%&quot;
-.endreplace
 .endif()
  Value=&quot;%.X:mdde_Value%&quot; /&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1666185315</a:CreationDate>

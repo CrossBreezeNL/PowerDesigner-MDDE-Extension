@@ -7,9 +7,5 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_EntityAttribute_XmlExport_Template.xml" />
-<xi:include href="mdde_EntityAttribute_DataType.xml" />
-<xi:include href="mdde_EntityAttribute_Length.xml" />
-<xi:include href="mdde_EntityAttribute_Precision.xml" />
-<xi:include href="mdde_EntityAttribute_Scale.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
