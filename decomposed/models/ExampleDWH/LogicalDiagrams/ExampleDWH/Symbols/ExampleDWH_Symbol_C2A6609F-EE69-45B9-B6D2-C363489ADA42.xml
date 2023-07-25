@@ -1,6 +1,6 @@
 <o:ArchitectureAreaSymbol Id="ExampleDWH_Symbol_C2A6609F-EE69-45B9-B6D2-C363489ADA42">
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((9900,-9900), (46200,23100))</a:Rect>
+<a:Rect>((9900,824), (46200,23100))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>418425</a:LineColor>
 <a:FillColor>15399421</a:FillColor>
@@ -166,7 +166,7 @@ Entity.Comment 0</a:SymbolContent>
 <o:EntitySymbol Id="o23">
 <a:CreationDate>1690285337</a:CreationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((28875,4125), (40425,8249))</a:Rect>
+<a:Rect>((28050,4125), (42074,8249))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>12615808</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>

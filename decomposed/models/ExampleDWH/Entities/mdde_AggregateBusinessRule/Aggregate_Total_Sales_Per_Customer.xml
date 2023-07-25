@@ -1,9 +1,10 @@
 <o:Entity Id="B3B5F4BC-300B-4354-87E5-B5987AA01744">
 <a:ObjectID>B3B5F4BC-300B-4354-87E5-B5987AA01744</a:ObjectID>
-<a:Name>AggrTotalSalesPerCustomer</a:Name>
-<a:Code>AggrTotalSalesPerCustomer</a:Code>
+<a:Name>Aggregate Total Sales Per Customer</a:Name>
+<a:Code>Aggregate_Total_Sales_Per_Customer</a:Code>
 <a:CreationDate>1690285337</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
+<a:Comment>Aggregate the total of sales order to customer level.</a:Comment>
 <a:Stereotype>mdde_AggregateBusinessRule</a:Stereotype>
 <c:DefaultMapping>
 <o:DefaultObjectMapping Ref="7E67E354-8BFA-4CD1-8564-3190FBB0513C"/>

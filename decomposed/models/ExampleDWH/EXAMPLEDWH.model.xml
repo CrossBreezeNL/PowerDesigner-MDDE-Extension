@@ -36,8 +36,8 @@
                 <JoinCondition ChildAttribute="CODE" JoinOperator="=" ParentAttribute="Customer.COUNTRY" ParentIsLiteralValue="false" />
               </JoinConditions>
             </SourceObject>
-            <SourceObject Id="AEA474CB-9A03-41BC-8B68-2814C842020C" Code="AggrTotalSalesPerCustomer" Name="AggrTotalSalesPerCustomer" Stereotype="mdde_SourceObject" JoinedObject="AggrTotalSalesPerCustomer" JoinedObjectModel="EXAMPLEDWH" JoinType="LEFT JOIN">
-              <AggregateBusinessRule Id="B3B5F4BC-300B-4354-87E5-B5987AA01744" Code="AggrTotalSalesPerCustomer" Name="AggrTotalSalesPerCustomer" Stereotype="mdde_AggregateBusinessRule" />
+            <SourceObject Id="AEA474CB-9A03-41BC-8B68-2814C842020C" Code="AggrTotalSalesPerCustomer" Name="AggrTotalSalesPerCustomer" Stereotype="mdde_SourceObject" JoinedObject="Aggregate_Total_Sales_Per_Customer" JoinedObjectModel="EXAMPLEDWH" JoinType="LEFT JOIN">
+              <AggregateBusinessRule Id="B3B5F4BC-300B-4354-87E5-B5987AA01744" Code="Aggregate_Total_Sales_Per_Customer" Name="Aggregate Total Sales Per Customer" Stereotype="mdde_AggregateBusinessRule" />
               <JoinConditions>
                 <JoinCondition ChildAttribute="CUSTOMERID" JoinOperator="=" ParentAttribute="Customer.ID" ParentIsLiteralValue="false" />
               </JoinConditions>
@@ -248,16 +248,16 @@
     </ScalarBusinessRule>
     <CustomBusinessRule Id="B36D9631-10D6-4CC0-9C64-99E33E33F4DA" Code="Br_Last_SalesOrder_Per_Customer" Name="Br Last SalesOrder Per Customer" Stereotype="mdde_CustomBusinessRule">
       <Attributes>
-        <OutputAttribute Id="9BCD5A48-BEC6-449E-9828-4ECDA0676B84" Code="ID" Name="Id" Stereotype="mdde_OutputAttribute" Ordinal="1" PdDataType="I" PdLength="0" PdPrecision="0" Primary="TRUE" Mandatory="TRUE"></OutputAttribute>
-        <OutputAttribute Id="8FDF18D8-C6C8-4792-9590-C220892C17A9" Code="ORDERDATE" Name="OrderDate" Stereotype="mdde_OutputAttribute" Ordinal="2" PdDataType="DT" PdLength="0" PdPrecision="0"></OutputAttribute>
-        <OutputAttribute Id="82CFD857-A8A9-4FB0-A058-C6DDC5D6C1B8" Code="ORDERNUMBER" Name="OrderNumber" Stereotype="mdde_OutputAttribute" Ordinal="3" PdDataType="VA50" PdLength="50" PdPrecision="0"></OutputAttribute>
-        <OutputAttribute Id="1C2D2AC7-6074-4243-A668-B1555250E1A7" Code="CUSTOMERID" Name="CustomerId" Stereotype="mdde_OutputAttribute" Ordinal="4" PdDataType="I" PdLength="0" PdPrecision="0"></OutputAttribute>
-        <OutputAttribute Id="8AA6B16C-2A07-4752-8B5B-A7275721D2E6" Code="TOTALAMOUNT" Name="TotalAmount" Stereotype="mdde_OutputAttribute" Ordinal="5" PdDataType="DC12,2" PdLength="12" PdPrecision="2"></OutputAttribute>
+        <Attribute Id="9BCD5A48-BEC6-449E-9828-4ECDA0676B84" Code="ID" Name="Id" Ordinal="1" PdDataType="I" PdLength="0" PdPrecision="0" Primary="TRUE" Mandatory="TRUE"></Attribute>
+        <Attribute Id="8FDF18D8-C6C8-4792-9590-C220892C17A9" Code="ORDERDATE" Name="OrderDate" Ordinal="2" PdDataType="DT" PdLength="0" PdPrecision="0"></Attribute>
+        <Attribute Id="82CFD857-A8A9-4FB0-A058-C6DDC5D6C1B8" Code="ORDERNUMBER" Name="OrderNumber" Ordinal="3" PdDataType="VA50" PdLength="50" PdPrecision="0"></Attribute>
+        <Attribute Id="1C2D2AC7-6074-4243-A668-B1555250E1A7" Code="CUSTOMERID" Name="CustomerId" Ordinal="4" PdDataType="I" PdLength="0" PdPrecision="0"></Attribute>
+        <Attribute Id="8AA6B16C-2A07-4752-8B5B-A7275721D2E6" Code="TOTALAMOUNT" Name="TotalAmount" Ordinal="5" PdDataType="DC12,2" PdLength="12" PdPrecision="2"></Attribute>
       </Attributes>
       <Identifiers>
         <Identifier Id="1599EDFF-CF8C-40AA-8D3D-C238CAB9B0FB" Code="IDENTIFIER_BR_LAST_SALESORDER_PER_CUSTOMER" Name="Identifier Br Last SalesOrder Per Customer" PrimaryIdentifier="TRUE">
           <Attributes>
-            <OutputAttribute Id="9BCD5A48-BEC6-449E-9828-4ECDA0676B84" Code="ID" Name="Id" Stereotype="mdde_OutputAttribute" Ordinal="1" />
+            <Attribute Id="9BCD5A48-BEC6-449E-9828-4ECDA0676B84" Code="ID" Name="Id" Ordinal="1" />
           </Attributes></Identifier>
       </Identifiers>
       <Mappings>
@@ -299,7 +299,7 @@
           </Examples></Mapping>
       </Mappings>
     </CustomBusinessRule>
-    <AggregateBusinessRule Id="B3B5F4BC-300B-4354-87E5-B5987AA01744" Code="AggrTotalSalesPerCustomer" Name="AggrTotalSalesPerCustomer" Stereotype="mdde_AggregateBusinessRule">
+    <AggregateBusinessRule Id="B3B5F4BC-300B-4354-87E5-B5987AA01744" Code="Aggregate_Total_Sales_Per_Customer" Name="Aggregate Total Sales Per Customer" Stereotype="mdde_AggregateBusinessRule">
       <Attributes>
         <Attribute Id="40CF0476-2BED-40C9-B805-F2B1FC7A91B4" Code="CUSTOMERID" Name="CustomerId" Ordinal="1" PdDataType="I" PdLength="0" PdPrecision="0" Primary="TRUE" Mandatory="TRUE"></Attribute>
         <Attribute Id="FA20EE0F-7D0C-4315-A5CC-CAFF7A32C2FC" Code="TOTALREVENUE" Name="TotalRevenue" Ordinal="2" PdDataType="DC20,2" PdLength="20" PdPrecision="2"></Attribute>
