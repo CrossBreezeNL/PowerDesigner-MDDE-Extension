@@ -96,6 +96,39 @@ When you want to create multiple examples, follow the the above steps for every 
 
 ![Filter business rule - Examples](img/filter_business_rule_examples.png)
 
+
+## Aggregate business rule
+The aggregate business rule can be used to aggregate data from one or multiple sources. This rules is modelled like a normal entity, also supporting modelling mappings on the entity. The only differences is that a 'Aggregate' method can be specified on a mapped attribute where the target attribute is not part of the primary identifier (since the data is grouped on the identifier attributes).
+
+Go through the following steps to model the aggregate business rule:
+
+### General
+
+On the 'General' tab:
+
+1. Set the Name of the aggregate business rule. This must be a short functional name which makes clear what the purpose of the rule is. The Code of the rule is automatically populated based on the Name you have entered.
+1. Functionally describe the business rule in the 'Comment' field.
+
+![Custom business rule - General](img/aggregate_business_rule_general.png)
+
+### Attributes
+
+On the 'Attributes' tab:
+1. Add the output of the rule as attributes and set the data types. Also tick the 'Primary Identifier' boxes for the identifying attributes. These identifying attributes are used to group the mapped dataset on.
+
+![Custom business rule - Attributes](img/aggregate_business_rule_attributes.png)
+
+### Mappings
+
+On the mappings tab of the business rule you can add one or more mappings to the aggregate business rule. Each mapping adds a subset to the output of the aggregate rule where the aggregation is applied for each mapping seperately. Mappings are created exactly the same as for normal entities, with one addition where the aggregate function needs to be specified for each mapped non-identifying attribute. Follow the steps below to create the mapping.
+
+1. To create a mapping, please follow the standard [Mapping](./Mapping.md) instructions.
+1. When the mapping is modeled you can specify the aggregate method for each mapped attribute in the 'Aggregate (MDDE)' field for each non-identifying attribute on the 'Attribute mappings' tab.
+
+   > Make sure the column 'Aggregate (MDDE)' is visible. If not, you can add them using the 'Customize Columns and Filter' toolbar button.
+
+![Aggregate business rule - Mapping - Attribute mappings](img/aggregate_business_rule_attribute_mappings.png)
+
 ## Custom business rule
 
 > This business rule doesn't provide/guarantee attribute and entity level lineage. The custom business rule should only be used for constructs that are not (yet) supported otherwise in this modeling extension.
@@ -116,7 +149,7 @@ On the 'General' tab:
 ### Attributes
 
 On the 'Attributes' tab:
-1. Add the output of the rule as an attribute(s), set it's data type and set the Stereotype to 'Output attribute (MDDE)'
+1. Add the output of the rule as attributes and set the data types. Also tick the 'Primary Identifier' boxes for the identifying attributes.
 
 ![Custom business rule - Attributes](img/custom_business_rule_attributes.png)
 
@@ -128,13 +161,12 @@ These mappings deviate from normal mappings a bit. Custom business rule mappings
 1. To create a mapping, please follow the standard [Create a mapping](./Mapping.md#create-a-mapping) instructions.
 1. To add source objects, please follow the standard [Add source object](./Mapping.md#add-a-source-object) instructions. You don't have to specify the join conditions.
  As mentioned above you cannot add attribute mappings, so you can skip these instructions and go to the steps below.
- ![Custom business rule - Mapping - Source objects](img/custom_business_rule_mapping_source_objects.png)
+   ![Custom business rule - Mapping - Source objects](img/custom_business_rule_mapping_source_objects.png)
 1. Write the SQL syntax for the custom business rule in the 'SQL Expression (MDDE)' field on the 'Mapping expression' tab. The expression should contain a full SQL statement starting with SELECT. Also include any set operation like JOIN, GROUP BY or somesort where needed. It is up to the modeler to make sure that the output definition of the SQL Expression is in line with the attribute definition that is defined on the entity.
-![Custom business rule - Mapping - Expression](img/custom_business_rule_mapping_expression.png)
+   ![Custom business rule - Mapping - Expression](img/custom_business_rule_mapping_expression.png)
+   > Preferably use ANSI SQL syntax since it makes the expression re-usable when migrating to a different database platform.
 1. To add examples for the mapping, please follow the standard [Examples](./Mapping.md#examples) instructions.
-![Custom business rule - Mapping - Examples](img/custom_business_rule_mapping_examples.png)
-
-> Preferably use ANSI SQL syntax since it makes the expression re-usable when migrating to a different database platform.
+   ![Custom business rule - Mapping - Examples](img/custom_business_rule_mapping_examples.png)
 
 ***
 
