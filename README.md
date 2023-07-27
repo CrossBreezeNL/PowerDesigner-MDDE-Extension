@@ -33,7 +33,7 @@ There is a modeling manual available [here](./manual/) on how to use the PowerDe
 
 ### PowerShell settings
 
-In order to exucute the PowerShell scripts, make sure you run the following command once in PowerShell:
+In order to execute the PowerShell scripts, make sure you run the following command once in PowerShell:
 
 ``` powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
