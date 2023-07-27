@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="52859270-99E5-4D65-85CA-E2D6D9C1FACD">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>52859270-99E5-4D65-85CA-E2D6D9C1FACD</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1688646660</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Criterion_ClassifierIsAggregateBusinessRule/mdde_Criterion_ClassifierIsAggregateBusinessRule.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

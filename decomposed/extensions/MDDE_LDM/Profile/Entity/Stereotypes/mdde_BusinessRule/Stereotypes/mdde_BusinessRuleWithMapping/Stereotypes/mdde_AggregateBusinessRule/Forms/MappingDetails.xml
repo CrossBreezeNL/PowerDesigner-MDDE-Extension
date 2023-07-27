@@ -1,0 +1,14 @@
+<o:FormTargetItem Id="7E97F507-9C81-4CB1-AA1B-6FDE14937B5A">
+<a:ObjectID>7E97F507-9C81-4CB1-AA1B-6FDE14937B5A</a:ObjectID>
+<a:Name>MappingDetails</a:Name>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;TabWindow Name=&quot;Details&quot; &gt;
+   &lt;/TabWindow&gt;
+   &lt;VerticalLayout Name=&quot;Source Objects&quot; &gt;
+   &lt;/VerticalLayout&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1688644673</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:FormTargetItem>

@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="B6B95A39-DC56-461B-B42D-A04FE062AE5E">
+<a:TypePublicName>FormTargetItem</a:TypePublicName>
+<a:ObjectID>B6B95A39-DC56-461B-B42D-A04FE062AE5E</a:ObjectID>
+<a:Name>Forms</a:Name>
+<a:CreationDate>1688644673</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="MappingDetails.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

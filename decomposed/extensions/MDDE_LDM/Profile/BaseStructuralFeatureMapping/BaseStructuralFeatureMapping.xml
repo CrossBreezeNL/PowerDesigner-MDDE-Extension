@@ -12,5 +12,6 @@
 <xi:include href="Event_Handlers/Event_Handlers.xml" />
 <xi:include href="Custom_Checks/Custom_Checks.xml" />
 <xi:include href="Forms/Forms.xml" />
+<xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:MetaClassTargetItem>

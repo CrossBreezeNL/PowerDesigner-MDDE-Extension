@@ -6,18 +6,14 @@
 .if (%vAttributeOrdinal%)
  Ordinal=&quot;%vAttributeOrdinal%&quot;
 .endif
-.comment From LogicalAttribute metaclass.
 .if (%DataType%)
- DataType=&quot;%mdde_EntityAttribute_DataType%&quot;
+ PdDataType=&quot;%DataType%&quot;
 .endif
-.if (%mdde_EntityAttribute_Length%) &amp;&amp; (%mdde_EntityAttribute_Length% != 0)
- Length=&quot;%mdde_EntityAttribute_Length%&quot;
+.if (%Length%)
+ PdLength=&quot;%Length%&quot;
 .endif
-.if (%mdde_EntityAttribute_Precision%)
- Precision=&quot;%mdde_EntityAttribute_Precision%&quot;
-.endif
-.if (%mdde_EntityAttribute_Scale%)
- Scale=&quot;%mdde_EntityAttribute_Scale%&quot;
+.if (%Precision%)
+ PdPrecision=&quot;%Precision%&quot;
 .endif
 .if (%PrimaryIdentifier%)
  Primary=&quot;%PrimaryIdentifier%&quot;

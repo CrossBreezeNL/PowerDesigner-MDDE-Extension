@@ -34,7 +34,13 @@ DLD {428BB410-6800-4DA5-BC7C-EDD722423BA2}
 DLD {A55D7823-E7AF-427D-BC77-83DB4CAF7D8A}
 DLD {532BF904-78B3-4D9C-89DD-F9F2550F64C8}
 DLD {9FA8DF63-ABA6-44F5-8EFB-D7A4757E2B1E}
-ATT FOPT</a:History>
+ATT FOPT
+DLD {2F757B96-6519-4AF5-A4C1-4C412BFDC8F5}
+DLD {813C9305-0BD4-4DE2-9EF0-8F63A4012A3C}
+DLD {E6DA1E86-09E5-4A4E-B108-9882435F2CF0}
+DLD {CDDCF6FC-AAD6-4750-B6F0-D89A27F7FAC3}
+DLD {E65E8C99-8AC5-4EBA-A95C-E867C0CD0A06}
+DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}</a:History>
 <xi:include href="Model/a_ModelOptionsText.xml" />
 <c:GenerationOrigins>
 <xi:include href="GenerationOrigins/Shortcuts/ExampleDWH.xml" />
@@ -55,6 +61,7 @@ ATT FOPT</a:History>
 <xi:include href="Mappings/Mapping_Customer_ExampleSources_Customer_WithEnrichment.xml" />
 <xi:include href="Mappings/SalesOrder_Mapping.xml" />
 <xi:include href="Mappings/Mapping_Br_Custom_Business_Rule_Example.xml" />
+<xi:include href="Mappings/Mapping_AggrTotalSalesPerCustomer.xml" />
 </c:Mappings>
 <c:SourceModels>
 <xi:include href="SourceModels/Shortcuts/EXAMPLESOURCE.xml" />
@@ -72,6 +79,7 @@ ATT FOPT</a:History>
 <xi:include href="Entities/mdde_ScalarBusinessRule/Derive_Customer_FullName.xml" />
 <xi:include href="Entities/Shortcuts/Country.xml" />
 <xi:include href="Entities/mdde_CustomBusinessRule/Br_Last_SalesOrder_Per_Customer.xml" />
+<xi:include href="Entities/mdde_AggregateBusinessRule/Aggregate_Total_Sales_Per_Customer.xml" />
 </c:Entities>
 <c:Relationships>
 <xi:include href="Relationships/Customer_SalesOrder.xml" />

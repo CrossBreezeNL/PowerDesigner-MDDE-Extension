@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="D2D161B3-2EA8-429A-9283-36BE2541F908">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>D2D161B3-2EA8-429A-9283-36BE2541F908</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1689073908</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_BusinessRule_IsAggregateBusinessRule.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -31,7 +31,6 @@
 <a:Code>ID</a:Code>
 <a:CreationDate>1683208380</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
-<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
 <a:DataType>I</a:DataType>
 <a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
 </o:EntityAttribute>
@@ -41,7 +40,6 @@
 <a:Code>ORDERDATE</a:Code>
 <a:CreationDate>1683208380</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
-<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
 <a:DataType>DT</a:DataType>
 </o:EntityAttribute>
 <o:EntityAttribute Id="82CFD857-A8A9-4FB0-A058-C6DDC5D6C1B8">
@@ -50,7 +48,6 @@
 <a:Code>ORDERNUMBER</a:Code>
 <a:CreationDate>1683208380</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
-<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
 <a:DataType>VA50</a:DataType>
 <a:Length>50</a:Length>
 </o:EntityAttribute>
@@ -60,7 +57,6 @@
 <a:Code>CUSTOMERID</a:Code>
 <a:CreationDate>1683208380</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
-<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
 <a:DataType>I</a:DataType>
 </o:EntityAttribute>
 <o:EntityAttribute Id="8AA6B16C-2A07-4752-8B5B-A7275721D2E6">
@@ -69,7 +65,6 @@
 <a:Code>TOTALAMOUNT</a:Code>
 <a:CreationDate>1683208380</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
-<a:Stereotype>mdde_OutputAttribute</a:Stereotype>
 <a:DataType>DC12,2</a:DataType>
 <a:Length>12</a:Length>
 <a:Precision>2</a:Precision>

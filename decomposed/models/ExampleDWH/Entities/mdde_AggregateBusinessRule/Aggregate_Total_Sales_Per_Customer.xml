@@ -1,0 +1,48 @@
+<o:Entity Id="B3B5F4BC-300B-4354-87E5-B5987AA01744">
+<a:ObjectID>B3B5F4BC-300B-4354-87E5-B5987AA01744</a:ObjectID>
+<a:Name>Aggregate Total Sales Per Customer</a:Name>
+<a:Code>Aggregate_Total_Sales_Per_Customer</a:Code>
+<a:CreationDate>1690285337</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Aggregate the total of sales order to customer level.</a:Comment>
+<a:Stereotype>mdde_AggregateBusinessRule</a:Stereotype>
+<c:DefaultMapping>
+<o:DefaultObjectMapping Ref="7E67E354-8BFA-4CD1-8564-3190FBB0513C"/>
+</c:DefaultMapping>
+<c:Identifiers>
+<o:Identifier Id="C1AC3C95-8BB1-443C-9967-BEE886A2A496">
+<a:ObjectID>C1AC3C95-8BB1-443C-9967-BEE886A2A496</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>IDENTIFIER_1</a:Code>
+<a:CreationDate>1690285338</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="40CF0476-2BED-40C9-B805-F2B1FC7A91B4"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="C1AC3C95-8BB1-443C-9967-BEE886A2A496"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="40CF0476-2BED-40C9-B805-F2B1FC7A91B4">
+<a:ObjectID>40CF0476-2BED-40C9-B805-F2B1FC7A91B4</a:ObjectID>
+<a:Name>CustomerId</a:Name>
+<a:Code>CUSTOMERID</a:Code>
+<a:CreationDate>1690285338</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="FA20EE0F-7D0C-4315-A5CC-CAFF7A32C2FC">
+<a:ObjectID>FA20EE0F-7D0C-4315-A5CC-CAFF7A32C2FC</a:ObjectID>
+<a:Name>TotalRevenue</a:Name>
+<a:Code>TOTALREVENUE</a:Code>
+<a:CreationDate>1690285338</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:DataType>DC20,2</a:DataType>
+<a:Length>20</a:Length>
+<a:Precision>2</a:Precision>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
