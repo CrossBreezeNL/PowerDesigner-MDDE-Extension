@@ -4,6 +4,11 @@ description: 'Invoke powerdecomposer to compose the extension and example models
 runs:
   using: "composite"
   steps:
+    # activate the appropriate java version
+    - uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
+        java-version: '17'
     # invoke decompose on the models and extension
     - name: run_compose
       run: ./compose.ps1
