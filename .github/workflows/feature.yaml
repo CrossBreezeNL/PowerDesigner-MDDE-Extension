@@ -20,5 +20,5 @@ jobs:
       with:
         fetch-depth: 0
     # Use the compose file action.
-    - uses: ./.github/actions/compose_file
+    - uses: ./.github/actions/compose_and_publish_artifacts
       
