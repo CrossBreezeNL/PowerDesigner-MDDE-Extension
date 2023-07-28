@@ -7,7 +7,7 @@ runs:
     # invoke decompose on the models and extension
     - name: run_compose
       run: ./compose.ps1
-      shell: powershell
+      shell: pwsh
     - name: Publish installer
       uses: actions/upload-artifact@v3
       with:
