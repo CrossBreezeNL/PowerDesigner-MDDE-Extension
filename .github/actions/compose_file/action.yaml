@@ -13,8 +13,10 @@ runs:
     - name: run_compose
       run: ./compose.ps1
       shell: pwsh
-    - name: Publish installer
+    - name: Publish composed files
       uses: actions/upload-artifact@v3
       with:
-        name: MDDE Extension
-        path: ./composed/extensions/MDDE_LDM.xem
+        name: MDDE Extension + Sample models
+        path: |
+           ./composed/extensions/MDDE_LDM.xem
+           ./composed/models/*.ldm
