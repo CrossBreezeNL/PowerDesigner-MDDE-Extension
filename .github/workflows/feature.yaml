@@ -1,0 +1,21 @@
+name: feature
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    # Checkout the code.
+    - uses: actions/checkout@v3
+      # For the GitVersion to execute successfully, we need the checkout to fetch all gistory for all tags and branches (with fetch-depth: 0).
+      with:
+        fetch-depth: 0
+    # Use the build-addin action.
+    - uses: ./.github/actions/compose_file
+      

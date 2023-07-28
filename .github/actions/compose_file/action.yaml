@@ -1,0 +1,15 @@
+name: compose_file
+description: 'Invoke powerdecomposer to compose the extension and example models'
+
+runs:
+  using: "composite"
+  steps:
+    # invoke decompose on the models and extension
+    - name: run_compose
+      run: ./compose.ps1
+      shell: powershell
+    - name: Publish installer
+      uses: actions/upload-artifact@v3
+      with:
+        name: MDDE Extension
+        path: ./composed/extensions/MDDE_LDM.xem
