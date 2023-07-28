@@ -16,6 +16,6 @@ jobs:
       # For the GitVersion to execute successfully, we need the checkout to fetch all gistory for all tags and branches (with fetch-depth: 0).
       with:
         fetch-depth: 0
-    # Use the build-addin action.
+    # Use the compose file action.
     - uses: ./.github/actions/compose_file
       
