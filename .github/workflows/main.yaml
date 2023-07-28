@@ -1,0 +1,24 @@
+name: main
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    # first enable longpaths
+    - name: Support longpaths
+      run: git config --system core.longpaths true
+    # Checkout the code.
+    - uses: actions/checkout@v3
+      # For the GitVersion to execute successfully, we need the checkout to fetch all gistory for all tags and branches (with fetch-depth: 0).
+      with:
+        fetch-depth: 0
+    # Use the compose file action.
+    - uses: ./.github/actions/compose_and_publish_artifacts
+   

@@ -1,0 +1,26 @@
+name: compose_and_publish_artifacts
+description: 'Invoke powerdecomposer to compose the extension and example models'
+
+runs:
+  using: "composite"
+  steps:
+    # activate the appropriate java version
+    - uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
+        java-version: '17'
+    # invoke decompose on the models and extension
+    - name: run_compose
+      run: ./compose.ps1
+      shell: pwsh
+    - name: Publish XEM
+      uses: actions/upload-artifact@v3
+      with:
+        name: MDDE Extension
+        path: ./composed/extensions/MDDE_LDM.xem           
+    - name: Publish sample models
+      uses: actions/upload-artifact@v3
+      with:
+        name: Sample models
+        path: ./composed/models/*.ldm
+   # TODO: add logic to version and add to a tag/release  
