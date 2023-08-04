@@ -57,12 +57,6 @@
             <!-- Remove the History element from all GeneratedModels. -->
             <NodeRemoval xpath="//GeneratedModels/Shortcut/History" />
 
-            <!-- Remove the default mapping extended composition. -->
-            <NodeRemoval xpath="//ExtendedCollection[./ExtendedBaseCollection.CollectionName='mdde_Entity_DefaultMapping']" />
-            
-            <!-- Remove the default example extended composition. -->
-            <NodeRemoval xpath="//ExtendedCollection[./ExtendedBaseCollection.CollectionName ='mdde_BusinessRule_DefaultExample']" />
-
             <!-- Remove empty ExtendedCollection elements. -->
             <NodeRemoval xpath="//ExtendedCollection[count(child::*) = 0]" />
 
@@ -78,36 +72,16 @@
             <!-- Remove ExtendedDependencySymbols which are not Visible (a:BaseSymbol.Flags = 1). -->
             <NodeRemoval xpath="//ExtendedDependencySymbol[./BaseSymbol.Flags = 1]" />
 
-            <!-- Remove PackageOptionsText if there are no Packages. -->
-            <NodeRemoval xpath="/Model/RootObject/Children/Model[count(Packages/Package) = 0]/PackageOptionsText" />
-
             <!-- Remove the Rect element of Symbols if there is also a ListOfPoints element. -->
             <NodeRemoval xpath="//ProjectDiagram/Symbols/*[./ListOfPoints]/Rect" />
         </NodeRemovals>
 
 		<!-- Configuration on how to replace identifiers. -->
 		<IdentifierReplacements>
-            <IdentifierReplacement identifierNodeXPath="//*/@Id[../ObjectID]" replacementValueXPath="../ObjectID" referencingNodeXPath="//*/@Ref" />                                
-            <!-- The following code does the replacement of the Id for Symbols within diagrams (which previously was marked as o1 to on and changed very frequently)
-            This Id will be used later in the filename for symbols.
-            To ensure that there are no duplicate identifier replacements, we distinguish by Symbol type.
-            
-            There are a couple of situations when we could get duplicates : 
-            1. Multiple instances of the same entity dragged into the diagram - this will result in the original reference, since it is hard to create dynamically
-            2. InheritanceSymbol and InheritanceLinkSymbol with the same name in a diagram - These will contain their node name as part of the file name. 
-            During these changes we found out, it is not possible to use name() or local-name() as accessor within a filter, that is why we used hardcoded values.
-            -->
-            <IdentifierReplacement identifierNodeXPath="//Symbols/EntitySymbol/@Id[../Object/*/@Ref and not(../ClonePredecessor/*/@Ref)]" replacementValueXPath="concat(../../../Code,'_Entity_', ../Object/*/@Ref)" referencingNodeXPath="//*/@Ref"/>            
-            <IdentifierReplacement identifierNodeXPath="//Symbols/InheritanceLinkSymbol/@Id[../Object/*/@Ref and not(../ClonePredecessor/*/@Ref)]" replacementValueXPath="concat(../../../Code,'_InheritanceLink_', ../Object/*/@Ref)" referencingNodeXPath="//*/@Ref"/>
-            <IdentifierReplacement identifierNodeXPath="//Symbols/InheritanceRootLinkSymbol/@Id[../Object/*/@Ref and not(../ClonePredecessor/*/@Ref)]" replacementValueXPath="concat(../../../Code,'_InheritanceRootLink_', ../Object/*/@Ref)" referencingNodeXPath="//*/@Ref"/>            
-            <IdentifierReplacement identifierNodeXPath="//Symbols/InheritanceSymbol/@Id[../Object/*/@Ref and not(../ClonePredecessor/*/@Ref)]" replacementValueXPath="concat(../../../Code,'_Inheritance_', ../Object/*/@Ref)" referencingNodeXPath="//*/@Ref"/>
-            <!-- The following Identifier replacement excludes the 4 above and also the ones that contain ClonePreceeding element -->
-            <IdentifierReplacement identifierNodeXPath="//Symbols/*[not(name() ='o:EntitySymbol') and not(name() ='o:InheritanceLinkSymbol') and not(name() ='o:InheritanceRootLinkSymbol') and not(name() ='o:InheritanceSymbol')]/@Id[../Object/*/@Ref and not(../ClonePredecessor/*/@Ref)]" replacementValueXPath="concat(../../../Code,'_Symbol_', ../Object/*/@Ref)" referencingNodeXPath="//*/@Ref"/>            
-           
-            <!-- IdentifierReplacements for objects that contain ClonePreceeding will not be created using XPath for now 
-            since this did not work properly yet. These are (hopefully) only edge cases, and for those the original ref o1 -on will be used.-->
-            <!-- <IdentifierReplacement identifierNodeXPath="//Symbols/EntitySymbol/@Id[../Object/*/@Ref and ../ClonePredecessor/*/@Ref]" replacementValueXPath="concat(../../../Code,'_Entity_With_Clone_', ../Object/*/@Ref,'_',count(preceding::ClonePredecessor))" referencingNodeXPath="//*/@Ref"/> -->
+            <IdentifierReplacement identifierNodeXPath="//*/@Id[../ObjectID]" replacementValueXPath="../ObjectID" referencingNodeXPath="//*/@Ref" />
 
+            <!-- Identifier Replacement for Symbol elements which contain an Object reference without ClonePredecessor. -->
+            <IdentifierReplacement identifierNodeXPath="//Symbols/*/@Id[../Object/*/@Ref and not(../ClonePredecessor/*/@Ref)]" replacementValueXPath="concat(../../../Code,'_Symbol_', ../Object/*/@Ref)" referencingNodeXPath="//*/@Ref"/>
 		</IdentifierReplacements>
 
         <!-- Specify which elements should be decomposed. -->
@@ -122,9 +96,6 @@
                     <ElementCondition xpath="parent::node()[starts-with(name(), 'c:')]" />
                     <!-- Don't decompose the Children collection (this is the higher level collection of the model). -->
                     <ElementCondition xpath="parent::node()[name() != 'c:Children']" />
-                    <!-- LDM collections not to decompose. -->
-                    <ElementCondition xpath="parent::node()[name() != 'c:Attributes']" />
-                    <ElementCondition xpath="parent::node()[name() != 'c:Identifiers']" />
                     <!-- Don't decompose SubShortcuts collections. -->
                     <ElementCondition xpath="parent::node()[name() != 'c:SubShortcuts']" />
                     <!-- Don't decompose ExtendedComposition content collections. -->
@@ -144,7 +115,6 @@
                 <ElementCondition xpath="name() = 'a:PackageOptionsText'" />
                 <ElementCondition xpath="name() = 'a:ModelOptionsText'" />
                 <ElementCondition xpath="name() = 'a:DisplayPreferences'" />
-                <ElementCondition xpath="@Stereotype = 'dwa_TestScenarioExampleFieldValue'" />
 
             </OneOffConditions>
 			 
