@@ -1,0 +1,20 @@
+<o:DependencyLinkSymbol Id="ExampleProject_Symbol_F7892EA4-BA8F-469A-A77F-5490FD05421D">
+<a:CreationDate>1691151518</a:CreationDate>
+<a:CenterTextOffset>(1644, -4067)</a:CenterTextOffset>
+<a:ListOfPoints>((5469,4124),(0,4124),(0,-4199))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>5518853</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 Arial,8,N</a:FontList>
+<a:AutomaticRoutingState>2</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:ModelDocumentSymbol Ref="ExampleProject_Symbol_91F1369E-F688-43E5-A3AA-D743D29C0B64"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ModelDocumentSymbol Ref="ExampleProject_Symbol_B99B461C-48B6-428A-B9B9-ED8C86B88F48"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:DependencyLink Ref="F7892EA4-BA8F-469A-A77F-5490FD05421D"/>
+</c:Object>
+</o:DependencyLinkSymbol>

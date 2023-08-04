@@ -1,0 +1,11 @@
+<o:ModelDocument Id="B570EF35-BF42-4EC5-B5FF-0BF955A1BFDE">
+<a:ObjectID>B570EF35-BF42-4EC5-B5FF-0BF955A1BFDE</a:ObjectID>
+<a:Name>ExampleSource</a:Name>
+<a:Code>EXAMPLESOURCE</a:Code>
+<a:CreationDate>1691151512</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/models/ExampleSource.ldm</a:Location>
+<a:Extension>ldm</a:Extension>
+<a:ModelDocument.ModelID>D7F41E17-25EB-4620-B6EA-96957CAE246A</a:ModelDocument.ModelID>
+<a:ModelClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:ModelClassID>
+</o:ModelDocument>

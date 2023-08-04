@@ -4,7 +4,7 @@
 <a:Code>REFERENCE</a:Code>
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
-<a:TargetModelURL>file:///%MDDE_EXAMPLE_MODELS%/models/Reference.ldm</a:TargetModelURL>
+<a:TargetModelURL>file:///%[PRJ_ROOT_DIR]%/models/Reference.ldm</a:TargetModelURL>
 <a:TargetModelID>E0D7FF56-7977-4D8F-A64B-BB6D985687E7</a:TargetModelID>
 <a:TargetModelClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:TargetModelClassID>
 <c:SessionShortcuts>

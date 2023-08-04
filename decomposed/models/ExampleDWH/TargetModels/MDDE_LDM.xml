@@ -1,10 +1,10 @@
 <o:TargetModel Id="E24E96FF-1029-45FB-B1B9-7032D80F62E6">
 <a:ObjectID>E24E96FF-1029-45FB-B1B9-7032D80F62E6</a:ObjectID>
-<a:Name>Model Driven Data Engineering (MDDE)</a:Name>
+<a:Name>Model Driven Data Engineering - Logical Data Model Extension (MDDE)</a:Name>
 <a:Code>MDDE_LDM</a:Code>
 <a:CreationDate>1680509282</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
-<a:TargetModelURL>file:///%[XEM]%/MDDE_LDM.xem</a:TargetModelURL>
+<a:TargetModelURL>file:///%[PRJ_ROOT_DIR]%/extensions/MDDE_LDM.xem</a:TargetModelURL>
 <a:TargetModelID>1626A879-DBAC-4E54-8A36-28FCB761FF3A</a:TargetModelID>
 <a:TargetModelClassID>186C8AC3-D3DC-11D3-881C-00508B03C75C</a:TargetModelClassID>
 <c:SessionShortcuts>

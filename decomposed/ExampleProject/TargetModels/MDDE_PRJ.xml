@@ -1,0 +1,13 @@
+<o:TargetModel Id="9B1F5AF2-3F88-4489-8A3C-5E5271E5C14D">
+<a:ObjectID>9B1F5AF2-3F88-4489-8A3C-5E5271E5C14D</a:ObjectID>
+<a:Name>Model Driven Data Engineering - Project Extension (MDDE)</a:Name>
+<a:Code>MDDE_PRJ</a:Code>
+<a:CreationDate>1691152527</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetModelURL>file:///%[PRJ_ROOT_DIR]%/extensions/MDDE_PRJ.xem</a:TargetModelURL>
+<a:TargetModelID>E735B3B0-5F77-4676-949A-12D6F0E16146</a:TargetModelID>
+<a:TargetModelClassID>186C8AC3-D3DC-11D3-881C-00508B03C75C</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="3754C60C-4E48-4967-93EE-E92E17979DD1"/>
+</c:SessionShortcuts>
+</o:TargetModel>

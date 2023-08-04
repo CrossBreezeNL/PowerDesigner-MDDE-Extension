@@ -7,7 +7,8 @@
 <a:History>ORG {85AEC6F1-42A5-4718-931A-1E6438DB4A51}
 DAT 1680508822
 ATT MOPT
-ATT FOPT</a:History>
+ATT FOPT
+ATT SMDC</a:History>
 <xi:include href="Model/a_PackageOptionsText.xml" />
 <xi:include href="Model/a_ModelOptionsText.xml" />
 <c:ExtendedModelDefinitions>
@@ -30,7 +31,7 @@ ATT FOPT</a:History>
 <a:Creator>MooOthman</a:Creator>
 <a:OriginalID>799FB8E9-7272-480E-8BAF-38025AFB6F05</a:OriginalID>
 <a:OriginalClassID>362D41EC-9D82-11D1-8E5D-444553540000</a:OriginalClassID>
-<a:OriginalUOL>ExtendedModelDefinitions::Shortcut of extension &#39;Model Driven Data Engineering (MDDE)&#39;</a:OriginalUOL>
+<a:OriginalUOL>ExtendedModelDefinitions::Shortcut of extension &#39;Model Driven Data Engineering - Logical Data Model Extension (MDDE)&#39;</a:OriginalUOL>
 <c:ReplicaObject>
 <o:Shortcut Ref="FDFB400C-481A-41AC-8CC3-DB72710FC4E8"/>
 </c:ReplicaObject>

@@ -1,0 +1,9 @@
+<o:TargetCategory Id="0298A7B2-DE5B-4F15-A3F6-D995DEB34267">
+<a:ObjectID>0298A7B2-DE5B-4F15-A3F6-D995DEB34267</a:ObjectID>
+<a:Name>FrameworkCell</a:Name>
+<a:CreationDate>1691151961</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Categories>
+<xi:include href="FrameworkAction/FrameworkAction.xml" />
+</c:Categories>
+</o:TargetCategory>

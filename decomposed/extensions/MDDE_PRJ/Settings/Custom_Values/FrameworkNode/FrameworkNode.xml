@@ -1,0 +1,9 @@
+<o:TargetCategory Id="B9B9B488-09BB-4920-9782-AC704E5D7ADB">
+<a:ObjectID>B9B9B488-09BB-4920-9782-AC704E5D7ADB</a:ObjectID>
+<a:Name>FrameworkNode</a:Name>
+<a:CreationDate>1691151961</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Categories>
+<xi:include href="FrameworkAction/FrameworkAction.xml" />
+</c:Categories>
+</o:TargetCategory>

@@ -1,0 +1,11 @@
+<o:ModelDocument Id="B99B461C-48B6-428A-B9B9-ED8C86B88F48">
+<a:ObjectID>B99B461C-48B6-428A-B9B9-ED8C86B88F48</a:ObjectID>
+<a:Name>ExampleDWH</a:Name>
+<a:Code>EXAMPLEDWH</a:Code>
+<a:CreationDate>1691151518</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/models/ExampleDWH.ldm</a:Location>
+<a:Extension>ldm</a:Extension>
+<a:ModelDocument.ModelID>3BC78F2D-650B-4443-9783-A97171290BFE</a:ModelDocument.ModelID>
+<a:ModelClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:ModelClassID>
+</o:ModelDocument>

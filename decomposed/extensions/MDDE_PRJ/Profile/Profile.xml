@@ -1,0 +1,10 @@
+<o:ProfileTargetItem Id="E80CD37E-C9A1-4A67-912F-CEF6B88B2A1C">
+<a:ObjectID>E80CD37E-C9A1-4A67-912F-CEF6B88B2A1C</a:ObjectID>
+<a:Name>Profile</a:Name>
+<a:CreationDate>1691151961</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Shared.xml" />
+</c:Categories>
+</o:ProfileTargetItem>

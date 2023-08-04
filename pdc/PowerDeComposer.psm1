@@ -12,6 +12,8 @@ $LdmConfigFileLocation = Join-Path -Path $PSScriptRoot -ChildPath "pdc_config_ld
 $XemConfigFileLocation = Join-Path -Path $PSScriptRoot -ChildPath "pdc_config_xem.xml"
 # The location of the PowerDeComposer SWS config file.
 $SwsConfigFileLocation = Join-Path -Path $PSScriptRoot -ChildPath "pdc_config_sws.xml"
+# The location of the PowerDeComposer PRJ config file.
+$PrjConfigFileLocation = Join-Path -Path $PSScriptRoot -ChildPath "pdc_config_prj.xml"
 
 # Function to invoke PowerDeComposer as a java call.
 Function Invoke-PowerDeComposer {
@@ -101,7 +103,7 @@ function Invoke-ComposeModel {
 }
 Export-ModuleMember -Function Invoke-ComposeModel
 
-# Function to invoke a LDM model decompose.
+# Function to invoke a Logical Data Model decompose.
 function Invoke-DecomposeLDM {
     param (
         $ModelFileLocation,
@@ -113,7 +115,7 @@ function Invoke-DecomposeLDM {
 }
 Export-ModuleMember -Function Invoke-DecomposeLDM
 
-# Function to invoke a XEM decompose.
+# Function to invoke a Extension decompose.
 function Invoke-DecomposeXEM {
     param (
         $ModelFileLocation,
@@ -124,7 +126,7 @@ function Invoke-DecomposeXEM {
 }
 Export-ModuleMember -Function Invoke-DecomposeXEM
 
-# Function to invoke a XEM decompose.
+# Function to invoke a Workspace decompose.
 function Invoke-DecomposeSWS {
     param (
         $ModelFileLocation,
@@ -134,3 +136,14 @@ function Invoke-DecomposeSWS {
     Invoke-DecomposeModel -ModelFileLocation $ModelFileLocation -TargetFolderLocation $TargetFolderLocation -ConfigFileLocation $SwsConfigFileLocation
 }
 Export-ModuleMember -Function Invoke-DecomposeSWS
+
+# Function to invoke a Workspace decompose.
+function Invoke-DecomposePRJ {
+    param (
+        $ModelFileLocation,
+        $TargetFolderLocation
+    )
+
+    Invoke-DecomposeModel -ModelFileLocation $ModelFileLocation -TargetFolderLocation $TargetFolderLocation -ConfigFileLocation $PrjConfigFileLocation
+}
+Export-ModuleMember -Function Invoke-DecomposePRJ

@@ -55,7 +55,7 @@
             <NodeRemoval xpath="//TargetModel/TargetRepositoryId" />
 
             <!-- Remove the History element from all GeneratedModels. -->
-            <NodeRemoval xpath="//GeneratedModels/Shortcut/History" />      
+            <NodeRemoval xpath="//GeneratedModels/Shortcut/History" />
 
             <!-- Remove the default mapping extended composition. -->
             <NodeRemoval xpath="//ExtendedCollection[./ExtendedBaseCollection.CollectionName='mdde_Entity_DefaultMapping']" />
@@ -63,8 +63,17 @@
             <!-- Remove the default example extended composition. -->
             <NodeRemoval xpath="//ExtendedCollection[./ExtendedBaseCollection.CollectionName ='mdde_BusinessRule_DefaultExample']" />
 
-            <!-- Remove the empty extended collections. -->
+            <!-- Remove empty ExtendedCollection elements. -->
+            <NodeRemoval xpath="//ExtendedCollection[count(child::*) = 0]" />
+
+            <!-- Remove empty ExtendedCollections elements. -->
             <NodeRemoval xpath="//ExtendedCollections[count(child::*) = 0]" />
+
+            <!-- Remove empty ExtendedComposition elements. -->
+            <NodeRemoval xpath="//ExtendedComposition[count(child::*) = 0]" />
+
+            <!-- Remove empty ExtendedCompositions elements. -->
+            <NodeRemoval xpath="//ExtendedCompositions[count(child::*) = 0]" />
 
             <!-- Remove ExtendedDependencySymbols which are not Visible (a:BaseSymbol.Flags = 1). -->
             <NodeRemoval xpath="//ExtendedDependencySymbol[./BaseSymbol.Flags = 1]" />
@@ -135,7 +144,6 @@
                 <ElementCondition xpath="name() = 'a:PackageOptionsText'" />
                 <ElementCondition xpath="name() = 'a:ModelOptionsText'" />
                 <ElementCondition xpath="name() = 'a:DisplayPreferences'" />
-                <ElementCondition xpath="@Stereotype = 'dwa_TestScenarioExampleFieldValue'" />
 
             </OneOffConditions>
 			 
