@@ -12,5 +12,6 @@
 <xi:include href="Extended_Collections/Extended_Collections.xml" />
 <xi:include href="Methods/Methods.xml" />
 <xi:include href="Criteria/Criteria.xml" />
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
 </c:Categories>
 </o:MetaClassTargetItem>
