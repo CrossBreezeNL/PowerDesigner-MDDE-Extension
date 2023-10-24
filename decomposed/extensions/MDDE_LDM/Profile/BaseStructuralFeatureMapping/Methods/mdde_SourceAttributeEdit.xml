@@ -7,7 +7,7 @@
 <a:MethodScript>Sub %Method%(obj)
 
    &#39; Create a new selection object for the source objects.
-   Dim objSourceObjSelection : Set objSourceObjSelection = ActiveModel.CreateSelection
+   Dim objSourceObjSelection : Set objSourceObjSelection = obj.Model.CreateSelection
    
    &#39; Add all source objects of the current mapping to the selection.
    Dim objSource

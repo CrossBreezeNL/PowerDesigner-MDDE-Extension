@@ -6,7 +6,7 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
    &#39; Create a new selection object.
-   Dim objSelection : Set objSelection = ActiveModel.CreateSelection
+   Dim objSelection : Set objSelection = obj.Model.CreateSelection
    
    &#39; Add all source objects of the current mapping to the selection.
    Dim objSource
