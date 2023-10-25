@@ -30,4 +30,14 @@ When it is a custom model check (of MDDE) there will be extra information about 
 
 ![Output script tab](img/model_check_output_script_tab.png)
 
+## MDDE model checks
+
+In this section you will find information on model checks which are part of the MDDE extension.
+
+### Mapping > mdde_Check_OrderOfSourceObjects
+
+This check ensures that source objects are listed in the right order. Meaning when join conditions are specified on source objects, the referenced source objects are always listed before the current one.
+
+The automatic correction will try to sort the source objects in the right order, by looping through them and moving source object to the position where their join condition is only referencing parent objects which are listed higher.
+
 [Go back to main modeling page](./README.md)

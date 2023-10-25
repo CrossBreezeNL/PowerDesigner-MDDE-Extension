@@ -25,7 +25,7 @@
    
    &#39; There are multiple data sources, so the user should choose which data source this mapping belongs to.
    Else
-      Dim objDSSelection : Set objDSSelection = ActiveModel.CreateSelection
+      Dim objDSSelection : Set objDSSelection = obj.Model.CreateSelection
       &#39; Show an object picker for data sources (in this model) and store the selected object.
       Set objSelectedDS = objDSSelection.ShowObjectPicker(&quot;DefaultDataSource&quot;, &quot;&quot;, &quot;Please select a data source for the mapping&quot;, True, True, False)
       &#39; Delete the selection.
@@ -50,7 +50,7 @@
    End If
    
    &#39; Now we know we can create a mapping in the data source we ask the user to choose the primary source object (from any open model).
-   Dim objPrimarySourceSelection : Set objPrimarySourceSelection = ActiveModel.CreateSelection
+   Dim objPrimarySourceSelection : Set objPrimarySourceSelection = obj.Model.CreateSelection
    Dim objPrimarySource : Set objPrimarySource = objPrimarySourceSelection.ShowObjectPicker(&quot;Entity&quot;, &quot;&quot;, &quot;Please select the primary source object for the mapping&quot;, True, False, False)
    &#39; Delete the selection.
    objPrimarySourceSelection.Delete()

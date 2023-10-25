@@ -5,6 +5,10 @@
 .if (%mdde_BaseStructuralFeatureMapping_SourceAttribute_XmlExport_Template%)
  SourceAttribute=&quot;%mdde_BaseStructuralFeatureMapping_SourceAttribute_XmlExport_Template%&quot; IsLiteralValue=&quot;%mdde_IsLiteralValue%&quot;
 .endif()
+.comment Add the Aggregate function if it is specified.
+.if (%mdde_Aggregate?%)
+ Aggregate=&quot;%mdde_Aggregate%&quot;
+.endif()
 &gt;
   &lt;TargetAttribute %Feature.mdde_NamedObject_XmlAttributeExport_Template% /&gt;
 
