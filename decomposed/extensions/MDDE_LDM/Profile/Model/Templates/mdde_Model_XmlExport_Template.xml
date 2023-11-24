@@ -1,7 +1,9 @@
 <o:TemplateTargetItem Id="AA1A6038-8DC5-4DA1-98DE-9BE69845E914">
 <a:ObjectID>AA1A6038-8DC5-4DA1-98DE-9BE69845E914</a:ObjectID>
 <a:Name>mdde_Model_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>&lt;Model %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+<a:TemplateTargetItem.Value>.comment Get the template content from the Export Extension Template.
+.set_value(Model_Template_Extension, %mdde_GetExtendedTemplate(mdde_Model_Export_Template)%)
+&lt;Model %mdde_NamedObject_XmlAttributeExport_Template%&gt;
 .if (%mdde_NamedObject_XmlElementExport_Template%)
 
   %mdde_NamedObject_XmlElementExport_Template%
@@ -16,6 +18,10 @@
 
   .comment Include the package contents (a model is also a package).
   %mdde_BasePackage_XmlExport_Template%
+  .comment Add the content of the export extension template
+  .if (%Model_Template_Extension%)
+  %Model_Template_Extension%
+  .endif
 &lt;/Model&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651665197</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

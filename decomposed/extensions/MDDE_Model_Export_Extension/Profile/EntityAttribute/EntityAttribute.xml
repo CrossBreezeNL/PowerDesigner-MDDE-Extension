@@ -1,0 +1,10 @@
+<o:MetaClassTargetItem Id="390AC3C0-CF7F-4236-8376-8E940267EA27">
+<a:ObjectID>390AC3C0-CF7F-4236-8376-8E940267EA27</a:ObjectID>
+<a:Name>EntityAttribute</a:Name>
+<a:CreationDate>1700834168</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>

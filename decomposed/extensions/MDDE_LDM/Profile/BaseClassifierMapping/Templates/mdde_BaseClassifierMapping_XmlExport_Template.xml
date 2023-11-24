@@ -1,7 +1,9 @@
 <o:TemplateTargetItem Id="B49AB5B4-7643-4D17-AA8D-370BF65BDEB8">
 <a:ObjectID>B49AB5B4-7643-4D17-AA8D-370BF65BDEB8</a:ObjectID>
 <a:Name>mdde_BaseClassifierMapping_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>&lt;Mapping %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+<a:TemplateTargetItem.Value>.comment Get the template content from the Export Extension Template.
+.set_value(Mapping_Template_Extension, %mdde_GetExtendedTemplate(mdde_BaseClassifierMapping_Export_Template)%)
+&lt;Mapping %mdde_NamedObject_XmlAttributeExport_Template%&gt;
   .foreach_item(mdde_SourceObjects,\n  &lt;SourceObjects&gt;\n,\n  &lt;/SourceObjects&gt;)
     %mdde_SourceObject_XmlExport_Template%
   .next(\n)
@@ -16,6 +18,10 @@
   .foreach_item(mdde_Mapping_Examples,\n  &lt;Examples&gt;\n,\n  &lt;/Examples&gt;)
     %mdde_Example_XmlExport_Template%
   .next(\n)
+  .comment Add the content of the export extension template
+  .if (%Mapping_Template_Extension%)
+  %Mapping_Template_Extension%
+  .endif
 &lt;/Mapping&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651739964</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

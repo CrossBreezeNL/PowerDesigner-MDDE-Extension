@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="5CFE6EB6-9179-4EFA-82FA-EA0DFE5DE31C">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>5CFE6EB6-9179-4EFA-82FA-EA0DFE5DE31C</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1700834322</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_BaseStructuralFeatureMapping_Export_Template.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

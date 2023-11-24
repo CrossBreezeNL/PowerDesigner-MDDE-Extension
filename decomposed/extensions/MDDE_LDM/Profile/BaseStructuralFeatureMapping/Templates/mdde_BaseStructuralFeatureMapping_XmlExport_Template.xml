@@ -1,7 +1,9 @@
 <o:TemplateTargetItem Id="FBDD87E0-9853-41AC-BBD5-91F199B3A812">
 <a:ObjectID>FBDD87E0-9853-41AC-BBD5-91F199B3A812</a:ObjectID>
 <a:Name>mdde_BaseStructuralFeatureMapping_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>&lt;%Feature.mdde_NamedObject_XmlElementName%Mapping Id=&quot;%ObjectID%&quot; TargetAttribute=&quot;%Feature.Code%&quot;
+<a:TemplateTargetItem.Value>.comment Get the template content from the Export Extension Template.
+.set_value(AttributeMapping_Template_Extension, %mdde_GetExtendedTemplate(mdde_BaseStructuralFeatureMapping_Export_Template)%)
+&lt;%Feature.mdde_NamedObject_XmlElementName%Mapping Id=&quot;%ObjectID%&quot; TargetAttribute=&quot;%Feature.Code%&quot;
 .if (%mdde_BaseStructuralFeatureMapping_SourceAttribute_XmlExport_Template%)
  SourceAttribute=&quot;%mdde_BaseStructuralFeatureMapping_SourceAttribute_XmlExport_Template%&quot; IsLiteralValue=&quot;%mdde_IsLiteralValue%&quot;
 .endif()
@@ -27,6 +29,10 @@
 .endif
  %SourceFeature.mdde_NamedObject_XmlAttributeExport_Template% /&gt;
 .endif(\n)
+.comment Add the content of the export extension template
+.if (%AttributeMapping_Template_Extension%)
+%AttributeMapping_Template_Extension%
+.endif
 &lt;/%Feature.mdde_NamedObject_XmlElementName%Mapping&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651753617</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
