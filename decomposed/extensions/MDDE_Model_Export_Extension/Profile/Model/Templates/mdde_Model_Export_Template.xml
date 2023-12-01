@@ -1,8 +1,0 @@
-<o:TemplateTargetItem Id="EAF4A3B4-0376-46C8-981B-9D4E9EFB9DE4">
-<a:ObjectID>EAF4A3B4-0376-46C8-981B-9D4E9EFB9DE4</a:ObjectID>
-<a:Name>mdde_Model_Export_Template</a:Name>
-<a:CreationDate>1700834168</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
-<a:Comment>Use to extend the MDDE xml export with project specific content on model level</a:Comment>
-<a:TargetCategory.Type>1</a:TargetCategory.Type>
-</o:TemplateTargetItem>

@@ -1,10 +1,7 @@
 <o:TemplateTargetItem Id="84CC044E-7977-423E-8CB5-2CACFD002A4D">
 <a:ObjectID>84CC044E-7977-423E-8CB5-2CACFD002A4D</a:ObjectID>
 <a:Name>mdde_EntityAttribute_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>.comment Get the template content from the Export Extension Template.
-.set_value(EntityAttribute_Template_Extension, %mdde_GetExtendedTemplate(mdde_EntityAttribute_Export_Template)%)
-
-&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%
 .comment the vAttributeOrdinal variable is set by the mdde_Entity_XmlExport_Template template.
 .if (%vAttributeOrdinal%)
  Ordinal=&quot;%vAttributeOrdinal%&quot;
@@ -32,8 +29,9 @@
 \n  %mdde_NamedObject_XmlElementExport_Template%
 .endif(\n)
 .comment Add the content of the export extension template
-.if (%EntityAttribute_Template_Extension%)
-%EntityAttribute_Template_Extension%
+.if (%Model.mdde_export_extension_attached%)
+
+%.D:mddex_EntityAttribute_Export_Content%
 .endif
 &lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651670975</a:CreationDate>

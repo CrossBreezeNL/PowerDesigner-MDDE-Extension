@@ -1,0 +1,8 @@
+<o:TemplateTargetItem Id="A467E434-E3A6-4EDB-8A1A-19B5BF247596">
+<a:ObjectID>A467E434-E3A6-4EDB-8A1A-19B5BF247596</a:ObjectID>
+<a:Name>mddex_Entity_Export_Template</a:Name>
+<a:CreationDate>1700834168</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>Use to extend the MDDE xml export with project specific content on entity level</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

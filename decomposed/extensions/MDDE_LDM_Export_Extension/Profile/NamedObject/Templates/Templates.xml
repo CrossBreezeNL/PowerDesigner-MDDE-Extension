@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="757823F3-0D0F-473A-ABE5-B62A351E611A">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>757823F3-0D0F-473A-ABE5-B62A351E611A</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1700834322</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mddex_NamedObject_Attributes_Export_Template.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

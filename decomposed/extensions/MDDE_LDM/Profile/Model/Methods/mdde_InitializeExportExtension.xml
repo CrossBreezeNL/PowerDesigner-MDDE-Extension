@@ -1,0 +1,99 @@
+<o:MethodTargetItem Id="A2DF8843-2E87-46FC-9263-927B3E02D9E8">
+<a:ObjectID>A2DF8843-2E87-46FC-9263-927B3E02D9E8</a:ObjectID>
+<a:Name>mdde_InitializeExportExtension</a:Name>
+<a:CreationDate>1701423896</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39;Implement your method on &lt;obj&gt; here
+   &#39;Set success indicator to true
+   WriteInfo &quot;MDDE LDM Export extension initializion started&quot;
+   obj.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, True
+   
+   &#39;Set default template and attribute that apply to all object types
+   Dim attributeTemplateName: attributeTemplateName = &quot;mddex_NamedObject_Attributes_Export_Template&quot;
+   Dim attributeExtendedAttributeName: attributeExtendedAttributeName = &quot;mddex_NamedObject_Attributes_Export_Content&quot;
+   
+   
+   &#39;Set the mddex contents attribute on model
+   applyTemplateOnObject obj, obj, &quot;mddex_Model_Export_Template&quot;, &quot;mddex_Model_Export_Content&quot;
+   applyTemplateOnObject obj, obj, attributeTemplateName, attributeExtendedAttributeName
+   
+   &#39;Process all child objects recursively in all packages
+   processPackage obj, obj, attributeTemplateName, attributeExtendedAttributeName
+   WriteInfo &quot;MDDE LDM Export extension initializion finished&quot;
+End Sub
+
+&#39; Check if the GTL output contains errors
+Function GTLOutputHasErrors(GTLResult)
+   GTLOutputHasErrors = False
+   If InStr(GTLResult, cMDDE_EXPORT_EXTENSION_CODE &amp; &quot;::Profile&quot;) Then
+      GTLOutputHasErrors = True
+   End If
+End Function
+
+Sub processPackage(objModel, objPackage, attributeTemplateName, attributeExtendedAttributeName)
+
+   &#39;Loop over Entities
+   Dim ent
+   For Each ent in objPackage.Entities
+      If Not ent.IsShortCut Then
+         applyTemplateOnObject objModel, ent, &quot;mddex_Entity_Export_Template&quot;, &quot;mddex_Entity_Export_Content&quot;
+         applyTemplateOnObject objModel, ent, attributeTemplateName, attributeExtendedAttributeName            
+      End If   
+   Next
+   
+   &#39;Loop over EntityAttributes
+   Dim entAttr
+   For Each entAttr in objPackage.EntityAttributes
+      If Not entAttr.IsShortCut Then
+         applyTemplateOnObject objModel, entAttr, &quot;mddex_EntityAttribute_Export_Template&quot;, &quot;mddex_EntityAttribute_Export_Content&quot;
+         applyTemplateOnObject objModel, entAttr, attributeTemplateName, attributeExtendedAttributeName            
+      End If   
+   Next
+   
+   &#39;Loop over Mappings
+   Dim map
+   For Each map in objPackage.Mappings
+       If Not map.IsShortCut Then
+         applyTemplateOnObject objModel, map, &quot;mddex_BaseClassifierMapping_Export_Template&quot;, &quot;mddex_BaseClassifierMapping_Export_Content&quot;
+         applyTemplateOnObject objModel, map, attributeTemplateName, attributeExtendedAttributeName            
+      End If   
+   Next
+   
+   &#39;Loop over AttributeMappings
+   Dim attrMap
+   For Each attrMap in objPackage.ModelEntityAttributeMappings
+      If Not attrMap.IsShortCut Then
+         applyTemplateOnObject objModel, attrMap, &quot;mddex_BaseStructuralFeatureMapping_Export_Template&quot;, &quot;mddex_BaseStructuralFeatureMapping_Export_Content&quot;         
+      End If   
+   Next
+   
+   &#39;Loop over packages
+   Dim childPackage
+   For Each childPackage in objPackage.Packages
+      processPackage objModel, childPackage, attributeTemplateName, attributeExtendedAttributeName
+   Next
+   
+End Sub
+
+&#39;Apply template on object and check for translation errors
+Sub applyTemplateOnObject(objModel, objItem, templateName, extendedAttributeName)
+   &#39;Process the object specific template
+   Dim evaluatedTemplate: evaluatedTemplate = objItem.EvaluateTemplateFor(templateName, cMDDE_EXPORT_EXTENSION_CODE)
+   &#39;Clear the extended attribute if it is set
+   If Not objItem.getExtendedAttributeText(extendedAttributeName) = &quot;&quot; Then
+      objItem.setExtendedAttribute extendedAttributeName, Nothing
+   End If
+   
+   &#39; Only set the extended attribute if the template evaluation gave a non-empty result
+   If Not evaluatedTemplate = empty And Not evaluatedTemplate = &quot;&quot; Then
+      objItem.setExtendedAttribute extendedAttributeName, evaluatedTemplate     
+      If GTLOutputHasErrors(objItem.getExtendedAttribute(extendedAttributeName)) Then
+         WriteError (&quot;Error parsing template &quot; &amp; templateName &amp; &quot; for &quot; &amp; objItem.Code)
+         &#39;Set success indicator to false
+         objModel.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, False
+      End If
+   End If   
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

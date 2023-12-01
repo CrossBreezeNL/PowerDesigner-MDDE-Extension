@@ -7,6 +7,7 @@
       &lt;Command Name=&quot;mdde_ExportXml&quot; Caption=&quot;Export XML (MDDE)&quot; /&gt;
       &lt;Command Name=&quot;mdde_Decompose&quot; Caption=&quot;Decompose (MDDE)&quot; /&gt;
       &lt;Command Name=&quot;mdde_UpdateDiagramPreferences&quot; Caption=&quot;Update Diagram Preferences (MDDE)&quot; /&gt;
+      &lt;Command Name=&quot;mdde_InitializeExportExtension&quot; Caption=&quot;Initialize Export Extension (MDDE)&quot; /&gt;
    &lt;/Popup&gt;
 &lt;/Menu&gt;
 </a:MenuTargetItem.Value>

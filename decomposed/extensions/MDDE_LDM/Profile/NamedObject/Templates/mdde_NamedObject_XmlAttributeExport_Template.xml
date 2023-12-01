@@ -1,15 +1,13 @@
 <o:TemplateTargetItem Id="7179C912-7E25-4356-BCD4-BAAD6F883FD8">
 <a:ObjectID>7179C912-7E25-4356-BCD4-BAAD6F883FD8</a:ObjectID>
 <a:Name>mdde_NamedObject_XmlAttributeExport_Template</a:Name>
-<a:TemplateTargetItem.Value>.comment Get the template content from the Export Extension Template.
-.set_value(NamedObject_Attributes_Template_Extension, %mdde_GetExtendedTemplate(mdde_NamedObject_Attributes_Export_Template)%)
-Id=&quot;%ObjectID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot;
+<a:TemplateTargetItem.Value>Id=&quot;%ObjectID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot;
 .if (%Stereotype%)
  Stereotype=&quot;%Stereotype%&quot;
 .endif
 .comment Add the content of the export extension template
-.if (%NamedObject_Attributes_Template_Extension%)
-%NamedObject_Attributes_Template_Extension%
+.if (%Model.mdde_export_extension_attached%)
+ %.D:mddex_NamedObject_Attributes_Export_Content%
 .endif
 </a:TemplateTargetItem.Value>
 <a:CreationDate>1651665197</a:CreationDate>

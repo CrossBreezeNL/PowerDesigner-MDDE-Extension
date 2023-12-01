@@ -1,0 +1,19 @@
+<o:ExtendedAttributeTargetItem Id="FD029C97-577C-44C5-A0C5-BFB158940D76">
+<a:ObjectID>FD029C97-577C-44C5-A0C5-BFB158940D76</a:ObjectID>
+<a:Name>mdde_export_extension_attached</a:Name>
+<a:CreationDate>1701429225</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>Checks if the MDDE LDM Export extension is attached to the model</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Computed>1</a:Computed>
+<a:ComputedAccessType>RO</a:ComputedAccessType>
+<a:GetMethodScript>Function %Get%(obj)
+   &#39; Implement your getter method on &lt;obj&gt; here
+   &#39; and return the value
+   %Get% = False
+   &#39;Find the export extension   
+   Dim extensionObject: Set extensionObject = obj.FindChildByCode (&quot;MDDE_LDM_Export_Extension&quot;, Cls_ExtendedModelDefinition, &quot;&quot;, Nothing, True, True)   
+   %Get% = Not extensionObject is Nothing
+End Function</a:GetMethodScript>
+<a:Label>Indicator for export extension</a:Label>
+</o:ExtendedAttributeTargetItem>

@@ -1,8 +1,0 @@
-<a:CheckGlobalScript>&#39;******************************************************************************
-&#39;* Purpose:  This VB-Script holds global definitions shared by all the custom-
-&#39;*            checks scripts of the model extension.
-&#39;******************************************************************************
-
-Option Explicit &#39; This is to ensure all used variables are defined
-
-</a:CheckGlobalScript>

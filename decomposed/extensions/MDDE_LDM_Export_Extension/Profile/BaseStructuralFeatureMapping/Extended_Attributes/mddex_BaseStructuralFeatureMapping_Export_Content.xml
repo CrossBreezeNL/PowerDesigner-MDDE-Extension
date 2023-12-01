@@ -1,0 +1,11 @@
+<o:ExtendedAttributeTargetItem Id="9C5FF090-F453-401C-91AA-1A8E5476668A">
+<a:ObjectID>9C5FF090-F453-401C-91AA-1A8E5476668A</a:ObjectID>
+<a:Name>mddex_BaseStructuralFeatureMapping_Export_Content</a:Name>
+<a:CreationDate>1701335822</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>During XML export this property is set using the mddex template</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>14</a:ExtendedAttributeTargetItem.DataType>
+<a:Label>Placeholder for content of export extension</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+</o:ExtendedAttributeTargetItem>

@@ -10,6 +10,8 @@ Const cMDDE_EXT_CODE = &quot;MDDE_LDM&quot;
 Const cMDDE_PDC_COMPOSED_FOLDER = &quot;composed&quot;
 Const cMDDE_PDC_DECOMPOSED_FOLDER = &quot;decomposed&quot;
 Const cMDDE_JOIN_TYPE_APPLY = &quot;Apply&quot;
+Const cMDDE_EXPORT_EXTENSION_CODE = &quot;MDDE_LDM_Export_Extension&quot;
+Const cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR = &quot;mdde_export_extension_initialization_successful&quot;
 
 
 &#39;******************************************************************************

@@ -1,0 +1,10 @@
+<o:ExtendedAttributeTargetItem Id="3CB69645-4260-4DBC-A602-0536A9D4E6B3">
+<a:ObjectID>3CB69645-4260-4DBC-A602-0536A9D4E6B3</a:ObjectID>
+<a:Name>mdde_export_extension_initialization_successful</a:Name>
+<a:CreationDate>1701438410</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>Used to check if the export initialization was successful</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>MDDE Export extension initialized successful</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+</o:ExtendedAttributeTargetItem>

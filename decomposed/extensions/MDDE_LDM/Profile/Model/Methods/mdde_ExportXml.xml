@@ -17,6 +17,19 @@
    Dim strModelFolderLocaton : strModelFolderLocaton = objFileSystem.GetParentFolderName(obj.Filename) &amp; &quot;\&quot; &amp; objFileSystem.GetBaseName(obj.Filename)
    WriteDebug &quot;Model folder location: &quot; &amp; strModelFolderLocaton
    
+   &#39; Check if there is a MDDE Export extension enabled and invoke the initializer
+   If obj.getExtendedAttribute(cMDDE_EXT_CODE &amp;&quot;.mdde_export_extension_attached&quot;) Then
+      WriteInfo &quot;MDDE LDM Export extension found, start initializion&quot;
+      obj.ExecuteCustomMethod cMDDE_EXT_CODE &amp; &quot;.mdde_InitializeExportExtension&quot;
+      Dim exportInitializationSuccess: exportInitializationSuccess = obj.getExtendedAttribute (cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR)
+      If exportInitializationSuccess Then
+         WriteInfo &quot;MDDE LDM Export extension initializion successful&quot;
+      Else
+         WriteError &quot;MDDE LDM Export extension initializion failed&quot;
+         Exit Sub
+      End If
+   End If
+   
    &#39; Update the generation path so the XML export is written to the same folder as the decomposed model.
    obj.GetPackageOptions().GenerationPath = Replace(strModelFolderLocaton, cMDDE_PDC_COMPOSED_FOLDER, cMDDE_PDC_DECOMPOSED_FOLDER)
 
@@ -34,5 +47,7 @@
    &#39; Revert the generation path to the original value.
    obj.GetPackageOptions().GenerationPath = strGenerationPath
 
-End Sub</a:MethodScript>
+End Sub
+
+</a:MethodScript>
 </o:MethodTargetItem>

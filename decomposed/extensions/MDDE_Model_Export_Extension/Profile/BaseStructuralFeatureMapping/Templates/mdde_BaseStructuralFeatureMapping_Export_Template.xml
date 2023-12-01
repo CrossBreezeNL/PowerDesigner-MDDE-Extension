@@ -1,8 +1,0 @@
-<o:TemplateTargetItem Id="51BEB14F-7F2F-498C-9F2C-4C4A0B0106AE">
-<a:ObjectID>51BEB14F-7F2F-498C-9F2C-4C4A0B0106AE</a:ObjectID>
-<a:Name>mdde_BaseStructuralFeatureMapping_Export_Template</a:Name>
-<a:CreationDate>1700834322</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
-<a:Comment>Use to extend the MDDE xml export with project specific content on base structural feature mapping level</a:Comment>
-<a:TargetCategory.Type>1</a:TargetCategory.Type>
-</o:TemplateTargetItem>

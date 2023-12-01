@@ -1,10 +1,7 @@
 <o:TemplateTargetItem Id="F055D4E2-9816-4DBB-960D-C7743C707C8E">
 <a:ObjectID>F055D4E2-9816-4DBB-960D-C7743C707C8E</a:ObjectID>
 <a:Name>mdde_Entity_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>.comment Get the template content from the Export Extension Template.
-.set_value(Entity_Template_Extension, %mdde_GetExtendedTemplate(mdde_Entity_Export_Template)%)
-
-&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%&gt;
   .if (%mdde_NamedObject_XmlElementExport_Template%)
 
   %mdde_NamedObject_XmlElementExport_Template%
@@ -39,8 +36,9 @@
   %mdde_Entity_Stereotyped_XmlExport_Template%
   .endif
   .comment Add the content of the export extension template
-  .if (%Entity_Template_Extension%)
-  %Entity_Template_Extension%
+  .if (%Model.mdde_export_extension_attached%)
+
+  %.D:mddex_Entity_Export_Content%
   .endif
    
 &lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
