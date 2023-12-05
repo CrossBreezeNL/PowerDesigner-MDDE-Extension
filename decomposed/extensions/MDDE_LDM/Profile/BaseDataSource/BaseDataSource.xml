@@ -1,0 +1,10 @@
+<o:MetaClassTargetItem Id="CA291AB5-1822-415D-AC91-7E519EE8351F">
+<a:ObjectID>CA291AB5-1822-415D-AC91-7E519EE8351F</a:ObjectID>
+<a:Name>BaseDataSource</a:Name>
+<a:CreationDate>1701780848</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Stereotypes/Stereotypes.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>

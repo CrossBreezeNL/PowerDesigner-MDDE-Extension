@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="F671DC19-3B11-49D0-A158-037E29EF156D">
+<a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
+<a:ObjectID>F671DC19-3B11-49D0-A158-037E29EF156D</a:ObjectID>
+<a:Name>Stereotypes</a:Name>
+<a:CreationDate>1701780848</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_DataSource.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>
