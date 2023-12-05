@@ -14,6 +14,9 @@ Creating a mapping is standard PowerDesigner functionality, where you can add a 
 
 When you click on the button an object-picker screen will appear where you can select the data source (if there are multiple, otherwise it will automatically use the single existing one) and after selecting the data source it will ask to select the primary source object.
 
+> **Note**:
+> If mappings are also used for different purposes than MDDE modeling, be sure to set the stereotype on the relevant data sources to Data Source (MDDE). Mappings that serve a different purpose should be created using a data source that has a different (non-empty) stereotype. This way the 'Mapping (MDDE)' tabl will only display the MDDE mappings.
+
 ![Select primary source object](img/entity_mapping_primary_source_object.png)
 
 After adding the mapping you can go to it's properties by clicking the 'Properties' icon on the right of the drop-down list.
