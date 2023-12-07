@@ -1,0 +1,8 @@
+<o:Entity Id="ADF0E2F1-CD2E-4E79-A060-1B55843B9B01">
+<a:ObjectID>ADF0E2F1-CD2E-4E79-A060-1B55843B9B01</a:ObjectID>
+<a:Name>BusinessRelation</a:Name>
+<a:Code>BUSINESSRELATION</a:Code>
+<a:CreationDate>1701948146</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>Party we do business with</a:Comment>
+</o:Entity>

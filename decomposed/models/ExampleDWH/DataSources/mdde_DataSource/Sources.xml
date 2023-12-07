@@ -4,6 +4,7 @@
 <a:Code>Sources</a:Code>
 <a:CreationDate>1680509763</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_DataSource</a:Stereotype>
 <a:AccessType>RO</a:AccessType>
 <a:BaseDataSource.ModelType>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:BaseDataSource.ModelType>
 <c:BaseDataSource.SourceModels>

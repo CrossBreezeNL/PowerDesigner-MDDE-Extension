@@ -6,6 +6,9 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:Comment>Check whether the current mapping&#39;s target is a custom business rule. If so, it should NOT show the attribute mappings, but a expression box.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:ParentCriterion>
+<o:CriterionTargetItem Ref="A2A060E6-1927-4A9C-9BBC-0D3021B68C98"/>
+</c:ParentCriterion>
 <c:Categories>
 <xi:include href="Forms/Forms.xml" />
 <xi:include href="Templates/Templates.xml" />

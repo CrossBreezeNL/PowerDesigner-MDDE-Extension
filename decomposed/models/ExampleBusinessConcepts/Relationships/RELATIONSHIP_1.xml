@@ -1,0 +1,15 @@
+<o:Relationship Id="1EA0EFF0-9854-4C3C-9F15-A80D05F4951B">
+<a:ObjectID>1EA0EFF0-9854-4C3C-9F15-A80D05F4951B</a:ObjectID>
+<a:Name>Relationship_1</a:Name>
+<a:Code>RELATIONSHIP_1</a:Code>
+<a:CreationDate>1701947795</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="21AEC1DB-5FA1-4092-9265-A165EEB54D1F"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="FE814A09-B413-46E6-B862-8D9334562194"/>
+</c:Object2>
+</o:Relationship>

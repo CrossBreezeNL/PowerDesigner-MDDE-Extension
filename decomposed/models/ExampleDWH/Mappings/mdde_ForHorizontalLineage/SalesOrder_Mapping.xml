@@ -4,6 +4,7 @@
 <a:Code>SalesOrder_Mapping</a:Code>
 <a:CreationDate>1680618864</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ForHorizontalLineage</a:Stereotype>
 <c:ExtendedCompositions>
 <o:ExtendedComposition Id="BC2A9D59-31CC-4665-BDD7-C2F6D2D3ABE9">
 <a:ObjectID>BC2A9D59-31CC-4665-BDD7-C2F6D2D3ABE9</a:ObjectID>

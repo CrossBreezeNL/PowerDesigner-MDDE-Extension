@@ -1,0 +1,18 @@
+<o:FormTargetItem Id="62AA0ED9-0321-463D-ABEC-115D17AB3A53">
+<a:ObjectID>62AA0ED9-0321-463D-ABEC-115D17AB3A53</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StandardNameAndCode Attribute=&quot;NameAndCode&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;true&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Comment&quot; Caption=&quot;Comment:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;ModelType&quot; Caption=&quot;Model Type:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;AccessType&quot; Caption=&quot;Access Type:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Stereotype&quot; Caption=&quot;Stereotype&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;KeywordList&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1701781095</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>

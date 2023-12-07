@@ -5,11 +5,16 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %Validate%(obj, ByRef message)
-   WriteDebug &quot;[BaseStructuralFeatureMapping.Validate] &quot; &amp; obj.UOL
-   &#39; Check if the attribute mapping has a valid source object, and if not update it.
-   If (AttributeMappingHasValidSourceObject(obj) = false) Then
-      SetSourceObjectOnAttributeMapping(obj)
-   End If
+   &#39;Since event handlers cannot be defined under a criterion, first check that the validation is applicable for the object
+   If Not obj.ClassifierMap is nothing Then
+      If obj.ClassifierMap.DataSource.Stereotype = &quot;&quot; or obj.ClassifierMap.DataSource.Stereotype = cMDDE_DATASOURCE_STEREOTYPE Then
+         WriteDebug &quot;[BaseStructuralFeatureMapping.Validate] &quot; &amp; obj.UOL
+         &#39; Check if the attribute mapping has a valid source object, and if not update it.
+         If (AttributeMappingHasValidSourceObject(obj) = false) Then
+            SetSourceObjectOnAttributeMapping(obj)
+         End If
+      End If
+   End If   
    %Validate% = True
 End Function</a:HandlerScript>
 </o:EventHandlerTargetItem>

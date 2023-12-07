@@ -17,7 +17,7 @@
   .foreach_item(Identifiers,\n  &lt;Identifiers&gt;\n,\n  &lt;/Identifiers&gt;)
     %mdde_Identifier_XmlExport_Template%
   .next(\n)
-  .foreach_item(Mappings,\n  &lt;Mappings&gt;\n,\n  &lt;/Mappings&gt;)
+  .foreach_item(Mappings,\n  &lt;Mappings&gt;\n,\n  &lt;/Mappings&gt;,(DataSource.Stereotype==&quot;&quot;) Or (DataSource.Stereotype==&quot;mdde_DataSource&quot;))
     %mdde_BaseClassifierMapping_XmlExport_Template%
   .next(\n)
   .foreach_item(Relationships,\n  &lt;Relationships&gt;\n,\n  &lt;/Relationships&gt;)
