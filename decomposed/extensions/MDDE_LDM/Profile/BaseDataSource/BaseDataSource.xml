@@ -6,5 +6,6 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Stereotypes/Stereotypes.xml" />
+<xi:include href="Forms/Forms.xml" />
 </c:Categories>
 </o:MetaClassTargetItem>
