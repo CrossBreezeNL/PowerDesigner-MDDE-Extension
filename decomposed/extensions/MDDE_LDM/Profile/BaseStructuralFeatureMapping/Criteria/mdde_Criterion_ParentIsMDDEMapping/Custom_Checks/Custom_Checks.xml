@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="968AD01E-9187-4A70-95C5-64BF34DA8503">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>968AD01E-9187-4A70-95C5-64BF34DA8503</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1701945386</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Check_AttributeMappingHasValidSourceObject.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

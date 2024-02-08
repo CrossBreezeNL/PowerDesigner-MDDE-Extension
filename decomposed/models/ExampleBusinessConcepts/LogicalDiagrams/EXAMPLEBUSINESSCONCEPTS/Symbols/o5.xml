@@ -1,0 +1,13 @@
+<o:RectangleSymbol Id="o5">
+<a:Text>This model is included to illustrate how other, non-MDDE mappings can be used alongside MDDE mappings without conflicts. The ExampleDWH model contains a mapping to this model using a local extension that operates next to the MDDE extension.
+
+</a:Text>
+<a:CreationDate>1701948400</a:CreationDate>
+<a:Rect>((-61237,37050), (-27787,29925))</a:Rect>
+<a:TextStyle>4130</a:TextStyle>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>16777215</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontName>Arial,8,N</a:FontName>
+</o:RectangleSymbol>

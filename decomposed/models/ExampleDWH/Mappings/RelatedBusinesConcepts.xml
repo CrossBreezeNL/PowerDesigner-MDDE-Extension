@@ -1,0 +1,16 @@
+<o:DefaultObjectMapping Id="CB4B7C91-F23C-4355-AF07-DAB434BCF27D">
+<a:ObjectID>CB4B7C91-F23C-4355-AF07-DAB434BCF27D</a:ObjectID>
+<a:Name>RelatedBusinesConcepts</a:Name>
+<a:Code>RelatedBusinesConcepts</a:Code>
+<a:CreationDate>1701948146</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<c:Classifier>
+<o:Entity Ref="300B0E82-0073-4894-B364-9429B35F1D39"/>
+</c:Classifier>
+<c:SourceClassifiers>
+<o:Shortcut Ref="D32B89DA-336A-4F0E-851B-56A86DBD4568"/>
+</c:SourceClassifiers>
+<c:DataSource>
+<o:DefaultDataSource Ref="4D29EA96-F938-4870-B042-FEBABFFC87A8"/>
+</c:DataSource>
+</o:DefaultObjectMapping>

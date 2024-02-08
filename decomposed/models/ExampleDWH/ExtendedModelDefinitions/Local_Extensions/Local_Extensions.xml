@@ -1,0 +1,295 @@
+<o:ExtendedModelDefinition Id="EAC070D3-D054-46E2-B46B-8183E7DD5DAD">
+<a:ObjectID>EAC070D3-D054-46E2-B46B-8183E7DD5DAD</a:ObjectID>
+<a:Name>Local Extensions</a:Name>
+<a:Code>Local Extensions</a:Code>
+<a:CreationDate>1701781095</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>This is an example of an in-model extension. This example extends the model with the ability to define non-mdde mappings, for example to use mappings for relating entities to business concepts (vertical lineage). On Entity an additional tab called business concepts is displayed that can be used to create these mappings.
+
+These mappings are not included when running the custom MDDE checks and are also not part of the MDDE XML export.
+Purpose of this example is to illustrate that the MDDE extension can be used alongside other extensions or use cases in one model without conflicts</a:Comment>
+<a:LibraryID>26BBDCC2-15B0-4F8B-9176-3E9D3A44E3CC</a:LibraryID>
+<a:CheckGlobalScript>&#39;******************************************************************************
+&#39;* Purpose:  This VB-Script holds global definitions shared by all the custom-
+&#39;*            checks scripts of the model extension.
+&#39;******************************************************************************
+
+Option Explicit &#39; This is to ensure all used variables are defined
+
+</a:CheckGlobalScript>
+<c:Categories>
+<o:TargetCategory Id="037DF7D7-3F49-49AE-A2C0-8D85308A5309">
+<a:ObjectID>037DF7D7-3F49-49AE-A2C0-8D85308A5309</a:ObjectID>
+<a:Name>Generation</a:Name>
+<a:CreationDate>1701781095</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+</o:TargetCategory>
+<o:ProfileTargetItem Id="BF784056-3012-43A6-B176-9B4644BABB4B">
+<a:ObjectID>BF784056-3012-43A6-B176-9B4644BABB4B</a:ObjectID>
+<a:Name>Profile</a:Name>
+<a:CreationDate>1701781095</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Categories/Shared.xml" />
+<o:MetaClassTargetItem Id="D50809C3-3B59-4A86-ACC6-4EF99A8AD0C3">
+<a:ObjectID>D50809C3-3B59-4A86-ACC6-4EF99A8AD0C3</a:ObjectID>
+<a:Name>DefaultDataSource</a:Name>
+<a:CreationDate>1701781095</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:TypedCategoryTargetItem Id="0C86F92F-05C5-4D81-A45F-386A89FA2847">
+<a:TypePublicName>FormTargetItem</a:TypePublicName>
+<a:ObjectID>0C86F92F-05C5-4D81-A45F-386A89FA2847</a:ObjectID>
+<a:Name>Forms</a:Name>
+<a:CreationDate>1701781095</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Categories/GENERAL.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>
+</c:Categories>
+</o:MetaClassTargetItem>
+<o:MetaClassTargetItem Id="5BB98B73-2189-4CA6-9422-3E5FD4AD1E15">
+<a:ObjectID>5BB98B73-2189-4CA6-9422-3E5FD4AD1E15</a:ObjectID>
+<a:Name>DefaultObjectMapping</a:Name>
+<a:CreationDate>1701781355</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:MetaClassTargetItem>
+<o:MetaClassTargetItem Id="9FA8852C-90DF-48AE-AED2-1B36664544AD">
+<a:ObjectID>9FA8852C-90DF-48AE-AED2-1B36664544AD</a:ObjectID>
+<a:Name>Entity</a:Name>
+<a:CreationDate>1701946163</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:TypedCategoryTargetItem Id="BD5F1045-5D1A-4902-AFD1-56775AC199B9">
+<a:TypePublicName>FormTargetItem</a:TypePublicName>
+<a:ObjectID>BD5F1045-5D1A-4902-AFD1-56775AC199B9</a:ObjectID>
+<a:Name>Forms</a:Name>
+<a:CreationDate>1701946163</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:FormTargetItem Id="C16A264D-1DFF-4049-80CF-3237E09603DF">
+<a:ObjectID>C16A264D-1DFF-4049-80CF-3237E09603DF</a:ObjectID>
+<a:Name>BusinessConcepts</a:Name>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;HorizontalLayout Name=&quot;HorizontalLayout1&quot; &gt;
+      &lt;ExtendedAttribute Attribute=&quot;SelectedBusinessConceptMapping&quot; Caption=&quot;Selected mapping&quot; AttributeID=&quot;{1956216E-813A-4125-9C32-F19E254C0553}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+      &lt;CustomMethod Method=&quot;addBusinessConceptMapping&quot; Name=&quot;addBusinessConceptMapping&quot; Caption=&quot;Add mapping&quot; HorizontalResize=&quot;No&quot; Display=&quot;Img_Create&quot; /&gt;
+      &lt;CustomMethod Method=&quot;deleteBusinessConceptMapping&quot; Name=&quot;deleteBusinessConceptMapping&quot; Caption=&quot;Delete mapping&quot; HorizontalResize=&quot;No&quot; Display=&quot;Img_Delete&quot; /&gt;
+   &lt;/HorizontalLayout&gt;
+   &lt;Include Name=&quot;Mapping&quot; Context=&quot;SelectedBusinessConceptMapping&quot; Form=&quot;GENERAL&quot; SizeInChars=&quot;3&quot; LineNumber=&quot;1&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; ReadOnly=&quot;No&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1701946163</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Business concepts</a:Label>
+</o:FormTargetItem>
+</c:Categories>
+</o:TypedCategoryTargetItem>
+<o:TypedCategoryTargetItem Id="0B01DAEF-9FCC-4921-8143-2BA73AF65470">
+<a:TypePublicName>TemplateTargetItem</a:TypePublicName>
+<a:ObjectID>0B01DAEF-9FCC-4921-8143-2BA73AF65470</a:ObjectID>
+<a:Name>Templates</a:Name>
+<a:CreationDate>1701946163</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:TemplateTargetItem Id="E0230920-1351-4E73-86C4-EFEA05346AE8">
+<a:ObjectID>E0230920-1351-4E73-86C4-EFEA05346AE8</a:ObjectID>
+<a:Name>Entity_BusinessConceptMappingList_Template</a:Name>
+<a:TemplateTargetItem.Value>.collection(Mappings, %DataSource.Stereotype%==&quot;BusinessConcepts&quot;)</a:TemplateTargetItem.Value>
+<a:CreationDate>1701946163</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>
+</c:Categories>
+</o:TypedCategoryTargetItem>
+<o:TypedCategoryTargetItem Id="0554E64F-3823-470F-9BBE-DFD173344BD4">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>0554E64F-3823-470F-9BBE-DFD173344BD4</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1701946454</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:ExtendedAttributeTargetItem Id="1956216E-813A-4125-9C32-F19E254C0553">
+<a:ObjectID>1956216E-813A-4125-9C32-F19E254C0553</a:ObjectID>
+<a:Name>SelectedBusinessConceptMapping</a:Name>
+<a:CreationDate>1701946454</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%Entity_BusinessConceptMappingList_Template%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:DestinationClassID>E32D93EC-027C-4FD9-976E-3A94CD0AB996</a:DestinationClassID>
+<a:Label>Selected mapping</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="8A5567AD-486A-4332-AA03-76C31503C27E"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="0E07D1A9-0EF3-4305-921F-132B8517656E"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>
+</c:Categories>
+</o:TypedCategoryTargetItem>
+<o:TypedCategoryTargetItem Id="9A0144CF-732C-476C-9D12-6D5408130AFB">
+<a:TypePublicName>ExtendedCollectionTargetItem</a:TypePublicName>
+<a:ObjectID>9A0144CF-732C-476C-9D12-6D5408130AFB</a:ObjectID>
+<a:Name>Extended Collections</a:Name>
+<a:CreationDate>1701946454</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:ExtendedCollectionTargetItem Id="8A5567AD-486A-4332-AA03-76C31503C27E">
+<a:ObjectID>8A5567AD-486A-4332-AA03-76C31503C27E</a:ObjectID>
+<a:Name>SelectedBusinessConceptMapping</a:Name>
+<a:CreationDate>1701946454</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E32D93EC-027C-4FD9-976E-3A94CD0AB996</a:DestinationClassID>
+<a:DefaultColumnFilter>NAME 80 CODE 80</a:DefaultColumnFilter>
+</o:ExtendedCollectionTargetItem>
+</c:Categories>
+</o:TypedCategoryTargetItem>
+<o:TypedCategoryTargetItem Id="A12B28CD-E46D-4609-8244-84AE1B002D8C">
+<a:TypePublicName>MethodTargetItem</a:TypePublicName>
+<a:ObjectID>A12B28CD-E46D-4609-8244-84AE1B002D8C</a:ObjectID>
+<a:Name>Methods</a:Name>
+<a:CreationDate>1701946755</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:MethodTargetItem Id="0E07D1A9-0EF3-4305-921F-132B8517656E">
+<a:ObjectID>0E07D1A9-0EF3-4305-921F-132B8517656E</a:ObjectID>
+<a:Name>addBusinessConceptMapping</a:Name>
+<a:CreationDate>1701946755</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   
+   &#39;If there is no datasource, give an error
+   If (obj.Model.DataSources.Count = 0) Then
+      MsgBox _
+          &quot;There are no DataSources defined for this model!&quot; &amp; vbCrLf &amp; vbCrLf _
+            &amp; &quot;Please first add a data source with the required stereotype and conceptual models.&quot; _
+         ,vbExclamation _
+         ,&quot;No data sources available&quot;
+      Exit Sub
+   End If
+   
+  
+   &#39; Let the user select the appropriate data source
+   Dim objSelectedDS
+   Dim objDSSelection : Set objDSSelection = obj.Model.CreateSelection
+   &#39; Show an object picker for data sources (in this model) and store the selected object.
+   Set objSelectedDS = objDSSelection.ShowObjectPicker(&quot;DefaultDataSource&quot;, &quot;&quot;, &quot;Please select a data source for the mapping&quot;, True, True, False)
+   &#39; Delete the selection.
+   objDSSelection.Delete()
+   
+   
+   &#39; Exit the routine if there is no selected data source.
+   If (objSelectedDS Is Nothing) Then
+      Exit Sub
+   End If
+   
+   &#39; If we cannot create a mapping in the given data source, report an error.
+   If (objSelectedDS.CanCreateMapping(obj) = False) Then
+      MsgBox &quot;Cannot create a mapping on &quot; &amp; obj.Code &amp; &quot; using datasource &quot; &amp; objSelectedDS.Code
+      Exit Sub
+      
+      MsgBox _
+          &quot;Cannot create a mapping on &quot; &amp; obj.Code &amp; &quot; using datasource &quot; &amp; objSelectedDS.Code &amp; &quot;!&quot; _
+         ,vbExclamation _
+         ,&quot;Cannot create mapping&quot;
+      Exit Sub
+   End If
+   
+   &#39; Now we know we can create a mapping in the data source we ask the user to choose the primary source object (from any open model).
+   Dim objPrimarySourceSelection : Set objPrimarySourceSelection = obj.model.CreateSelection
+   Dim objPrimarySource : Set objPrimarySource = objPrimarySourceSelection.ShowObjectPicker(&quot;Entity&quot;, &quot;&quot;, &quot;Please select the primary business concept for the mapping&quot;, True, False, False)
+   &#39; Delete the selection.
+   objPrimarySourceSelection.Delete()
+   
+   &#39; If there is no primary source selected, the user pressed cancel, so we exit the routine.
+   If (objPrimarySource Is Nothing) Then
+      Exit Sub
+   End If
+   
+   &#39; If the primary source object is selected, we can create the mapping with it&#39;s primary source (from) object.
+   &#39; Create the new mapping in the selected data source for this entity (obj), set the new mapping as default and enforce the creation.
+   Dim objNewMapping : Set objNewMapping = objSelectedDS.CreateMapping(obj, Nothing, True, True)
+   objNewMapping.addSource objPrimarySource
+   obj.setExtendedAttribute &quot;SelectedBusinessConceptMapping&quot;, objNewMapping
+End Sub</a:MethodScript>
+</o:MethodTargetItem>
+<o:MethodTargetItem Id="FE2A2DD3-D59E-4152-B7AC-18CFBAB96B9E">
+<a:ObjectID>FE2A2DD3-D59E-4152-B7AC-18CFBAB96B9E</a:ObjectID>
+<a:Name>deleteBusinessConceptMapping</a:Name>
+<a:CreationDate>1701946797</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+  
+   &#39; Check whether there is a mapping selected (DefaultMapping), and if not report an error.
+   If (obj.getExtendedAttribute(&quot;SelectedBusinessConceptMapping&quot;) Is Nothing) Then
+      MsgBox _
+          &quot;There is no mapping selected to delete!&quot; &amp; vbCrLf &amp; vbCrLf _
+            &amp; &quot;Please select a mapping before trying to delete.&quot; _
+         ,vbExclamation _
+         ,&quot;No mapping selected&quot;
+      Exit Sub
+   End If
+   
+   &#39; Ask for confirmation to remove the mapping.
+   Dim iAnswer : iAnswer = MsgBox(&quot;Are you sure you want to delete mapping &quot; &amp; obj.getExtendedAttribute(&quot;SelectedBusinessConceptMapping&quot;).Name &amp; &quot;?&quot;, vbYesNo)
+   
+   &#39; If the user pressed &#39;Yes&#39;, delete the mapping.
+   If (iAnswer = vbYes) Then
+      &#39; Remove the mapping from the entity and remove the object (this will automatically reset the DefaultMapping).
+      obj.Mappings.Remove obj.getExtendedAttribute(&quot;SelectedBusinessConceptMapping&quot;), True
+   End If
+   
+End Sub</a:MethodScript>
+</o:MethodTargetItem>
+</c:Categories>
+</o:TypedCategoryTargetItem>
+</c:Categories>
+</o:MetaClassTargetItem>
+<o:MetaClassTargetItem Id="B5BEAB80-6ABC-48B1-8D35-80D88DDBEE61">
+<a:ObjectID>B5BEAB80-6ABC-48B1-8D35-80D88DDBEE61</a:ObjectID>
+<a:Name>BaseDataSource</a:Name>
+<a:CreationDate>1701946163</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:TypedCategoryTargetItem Id="71E002F2-7469-47CB-8594-0849B0439B85">
+<a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
+<a:ObjectID>71E002F2-7469-47CB-8594-0849B0439B85</a:ObjectID>
+<a:Name>Stereotypes</a:Name>
+<a:CreationDate>1701946163</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<o:StereotypeTargetItem Id="E859D7B3-B5A6-4B9B-ABE8-B445C1CAC5EC">
+<a:ObjectID>E859D7B3-B5A6-4B9B-ABE8-B445C1CAC5EC</a:ObjectID>
+<a:Name>BusinessConcepts</a:Name>
+<a:CreationDate>1701946163</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Business concepts</a:Label>
+</o:StereotypeTargetItem>
+</c:Categories>
+</o:TypedCategoryTargetItem>
+</c:Categories>
+</o:MetaClassTargetItem>
+</c:Categories>
+</o:ProfileTargetItem>
+</c:Categories>
+</o:ExtendedModelDefinition>

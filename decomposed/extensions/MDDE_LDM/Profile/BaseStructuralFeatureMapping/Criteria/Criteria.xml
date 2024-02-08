@@ -6,6 +6,6 @@
 <a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="mdde_Criterion_ClassifierIsAggregateBusinessRule/mdde_Criterion_ClassifierIsAggregateBusinessRule.xml" />
+<xi:include href="mdde_Criterion_ParentIsMDDEMapping/mdde_Criterion_ParentIsMDDEMapping.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
