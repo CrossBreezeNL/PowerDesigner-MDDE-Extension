@@ -8,8 +8,6 @@
 <a:Computed>1</a:Computed>
 <a:ComputedAccessType>RO</a:ComputedAccessType>
 <a:GetMethodScript>Function %Get%(obj)
-   &#39; Implement your getter method on &lt;obj&gt; here
-   &#39; and return the value
    %Get% = False
    &#39;Find the export extension   
    Dim extensionObject: Set extensionObject = obj.FindChildByCode (&quot;MDDE_LDM_Export_Extension&quot;, Cls_ExtendedModelDefinition, &quot;&quot;, Nothing, True, True)   
