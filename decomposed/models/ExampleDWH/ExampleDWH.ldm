@@ -40,13 +40,20 @@ DLD {813C9305-0BD4-4DE2-9EF0-8F63A4012A3C}
 DLD {E6DA1E86-09E5-4A4E-B108-9882435F2CF0}
 DLD {CDDCF6FC-AAD6-4750-B6F0-D89A27F7FAC3}
 DLD {E65E8C99-8AC5-4EBA-A95C-E867C0CD0A06}
-DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}</a:History>
+DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}
+ATT OBJEXA</a:History>
 <xi:include href="Model/a_ModelOptionsText.xml" />
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,95={3CB69645-4260-4DBC-A602-0536A9D4E6B3},mdde_Export_Extension_Initialization_Successful,4=true
+
+{0297A8FE-93C4-4612-A9E0-CD7292BFF652},MDDE_LDM_Export_Extension,70={AB204437-943D-4423-B8E6-E31186F8B700},mddex_Model_Export_Content,0=
+
+</a:ExtendedAttributesText>
 <c:GenerationOrigins>
 <xi:include href="GenerationOrigins/Shortcuts/ExampleDWH.xml" />
 </c:GenerationOrigins>
 <c:ExtendedModelDefinitions>
 <xi:include href="ExtendedModelDefinitions/Shortcuts/MDDE_LDM.xml" />
+<xi:include href="ExtendedModelDefinitions/Shortcuts/MDDE_LDM_Export_Extension.xml" />
 </c:ExtendedModelDefinitions>
 <c:LogicalDiagrams>
 <xi:include href="LogicalDiagrams/ExampleDWH/ExampleDWH.xml" />
@@ -106,6 +113,7 @@ DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}</a:History>
 <xi:include href="TargetModels/REFERENCE/REFERENCE.xml" />
 <xi:include href="TargetModels/ExampleDWH.xml" />
 <xi:include href="TargetModels/MDDE_LDM.xml" />
+<xi:include href="TargetModels/MDDE_LDM_Export_Extension.xml" />
 </c:TargetModels>
 </o:Model>
 </c:Children>

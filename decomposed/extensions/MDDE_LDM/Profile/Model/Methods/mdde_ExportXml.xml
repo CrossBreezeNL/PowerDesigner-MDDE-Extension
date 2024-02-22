@@ -18,7 +18,7 @@
    WriteDebug &quot;Model folder location: &quot; &amp; strModelFolderLocaton
    
    &#39; Check if there is a MDDE Export extension enabled and invoke the initializer
-   If obj.getExtendedAttribute(cMDDE_EXT_CODE &amp;&quot;.mdde_export_extension_attached&quot;) Then
+   If obj.getExtendedAttribute(cMDDE_EXT_CODE &amp;&quot;.mdde_Export_Extension_Attached&quot;) Then
       WriteInfo &quot;MDDE LDM Export extension found, start initializion&quot;
       obj.ExecuteCustomMethod cMDDE_EXT_CODE &amp; &quot;.mdde_InitializeExportExtension&quot;
       Dim exportInitializationSuccess: exportInitializationSuccess = obj.getExtendedAttribute (cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR)

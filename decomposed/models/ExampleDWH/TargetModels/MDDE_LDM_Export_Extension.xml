@@ -1,0 +1,13 @@
+<o:TargetModel Id="329CC2E4-8560-47E5-B3A2-F50B1E6C5D3C">
+<a:ObjectID>329CC2E4-8560-47E5-B3A2-F50B1E6C5D3C</a:ObjectID>
+<a:Name>Model Driven Data Engineering - Export Extension (MDDE)</a:Name>
+<a:Code>MDDE_LDM_Export_Extension</a:Code>
+<a:CreationDate>1708095266</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetModelURL>file:///%[XEM]%/MDDE_LDM_Export_Extension.xem</a:TargetModelURL>
+<a:TargetModelID>0297A8FE-93C4-4612-A9E0-CD7292BFF652</a:TargetModelID>
+<a:TargetModelClassID>186C8AC3-D3DC-11D3-881C-00508B03C75C</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="06F398D9-7F68-44F0-892B-6A835940A500"/>
+</c:SessionShortcuts>
+</o:TargetModel>

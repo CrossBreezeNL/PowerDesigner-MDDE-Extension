@@ -1,6 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="FD029C97-577C-44C5-A0C5-BFB158940D76">
 <a:ObjectID>FD029C97-577C-44C5-A0C5-BFB158940D76</a:ObjectID>
-<a:Name>mdde_export_extension_attached</a:Name>
+<a:Name>mdde_Export_Extension_Attached</a:Name>
 <a:CreationDate>1701429225</a:CreationDate>
 <a:Creator>WillemOtten</a:Creator>
 <a:Comment>Checks if the MDDE LDM Export extension is attached to the model</a:Comment>

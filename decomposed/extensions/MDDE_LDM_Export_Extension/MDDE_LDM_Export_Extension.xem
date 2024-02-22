@@ -10,6 +10,7 @@
 <a:Code>MDDE_LDM_Export_Extension</a:Code>
 <a:CreationDate>1700834012</a:CreationDate>
 <a:Creator>WillemOtten</a:Creator>
+<xi:include href="ExtendedModelDefinition/a_CheckGlobalScript.xml" />
 <c:Categories>
 <xi:include href="Generation.xml" />
 <xi:include href="Profile/Profile.xml" />

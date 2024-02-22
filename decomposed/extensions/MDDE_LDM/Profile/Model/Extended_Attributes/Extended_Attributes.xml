@@ -6,7 +6,7 @@
 <a:Creator>WillemOtten</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="mdde_export_extension_attached.xml" />
-<xi:include href="mdde_export_extension_initialization_successful.xml" />
+<xi:include href="mdde_Export_Extension_Attached.xml" />
+<xi:include href="mdde_Export_Extension_Initialization_Successful.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

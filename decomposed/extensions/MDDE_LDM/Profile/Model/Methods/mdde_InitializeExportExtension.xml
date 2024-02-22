@@ -3,25 +3,44 @@
 <a:Name>mdde_InitializeExportExtension</a:Name>
 <a:CreationDate>1701423896</a:CreationDate>
 <a:Creator>WillemOtten</a:Creator>
+<a:Comment>This method is included in the extension to load the contents of templates that are defined in the optionally attached export extension.
+Since it is not possible to directly access the GTL templates in another extension via GTL, the contents of these templates is loaded in local extended attributes so it can be included in the XML export</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
-   &#39;Implement your method on &lt;obj&gt; here
-   &#39;Set success indicator to true
+   
    WriteInfo &quot;MDDE LDM Export extension initializion started&quot;
-   obj.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, True
    
    &#39;Set default template and attribute that apply to all object types
    Dim attributeTemplateName: attributeTemplateName = &quot;mddex_NamedObject_Attributes_Export_Template&quot;
    Dim attributeExtendedAttributeName: attributeExtendedAttributeName = &quot;mddex_NamedObject_Attributes_Export_Content&quot;
-   
+   Dim errorsFound: ErrorsFound = False   
+   Dim success: Success = False
    
    &#39;Set the mddex contents attribute on model
-   applyTemplateOnObject obj, obj, &quot;mddex_Model_Export_Template&quot;, &quot;mddex_Model_Export_Content&quot;
-   applyTemplateOnObject obj, obj, attributeTemplateName, attributeExtendedAttributeName
+   success = applyTemplateOnObject (obj, obj, &quot;mddex_Model_Export_Template&quot;, &quot;mddex_Model_Export_Content&quot;)
+   If success = False Then
+      errorsFound = True
+   End If
+   
+   success = applyTemplateOnObject (obj, obj, attributeTemplateName, attributeExtendedAttributeName)
+   If success = False Then
+      errorsFound = True
+   End If
    
    &#39;Process all child objects recursively in all packages
-   processPackage obj, obj, attributeTemplateName, attributeExtendedAttributeName
+   success = processPackage (obj, obj, attributeTemplateName, attributeExtendedAttributeName)
+   If success = False Then
+      errorsFound = True
+   End If
+   
    WriteInfo &quot;MDDE LDM Export extension initializion finished&quot;
+   
+   &#39;Set success indicator to true
+   If errorsFound = True Then
+      Msgbox &quot;There where errors processing the MDDE LDM Export extension, consult the output window for more information.&quot;
+   Else
+      obj.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, True
+   End If
 End Sub
 
 &#39; Check if the GTL output contains errors
@@ -32,14 +51,21 @@ Function GTLOutputHasErrors(GTLResult)
    End If
 End Function
 
-Sub processPackage(objModel, objPackage, attributeTemplateName, attributeExtendedAttributeName)
+Function processPackage(objModel, objPackage, attributeTemplateName, attributeExtendedAttributeName)
 
    &#39;Loop over Entities
-   Dim ent
+   Dim ent, success1, success2
+   processPackage = True
+   success1 = False
+   success2 = False
    For Each ent in objPackage.Entities
       If Not ent.IsShortCut Then
-         applyTemplateOnObject objModel, ent, &quot;mddex_Entity_Export_Template&quot;, &quot;mddex_Entity_Export_Content&quot;
-         applyTemplateOnObject objModel, ent, attributeTemplateName, attributeExtendedAttributeName            
+         success1 = applyTemplateOnObject (objModel, ent, &quot;mddex_Entity_Export_Template&quot;, &quot;mddex_Entity_Export_Content&quot;)
+         success2 = applyTemplateOnObject (objModel, ent, attributeTemplateName, attributeExtendedAttributeName)
+         
+         If success1 = False Or success2 = False Then
+            processPackage = False
+         End If
       End If   
    Next
    
@@ -47,8 +73,12 @@ Sub processPackage(objModel, objPackage, attributeTemplateName, attributeExtende
    Dim entAttr
    For Each entAttr in objPackage.EntityAttributes
       If Not entAttr.IsShortCut Then
-         applyTemplateOnObject objModel, entAttr, &quot;mddex_EntityAttribute_Export_Template&quot;, &quot;mddex_EntityAttribute_Export_Content&quot;
-         applyTemplateOnObject objModel, entAttr, attributeTemplateName, attributeExtendedAttributeName            
+         success1 = applyTemplateOnObject (objModel, entAttr, &quot;mddex_EntityAttribute_Export_Template&quot;, &quot;mddex_EntityAttribute_Export_Content&quot;)
+         success2 = applyTemplateOnObject (objModel, entAttr, attributeTemplateName, attributeExtendedAttributeName)
+         
+         If success1 = False Or success2 = False Then
+            processPackage = False
+         End If
       End If   
    Next
    
@@ -56,8 +86,12 @@ Sub processPackage(objModel, objPackage, attributeTemplateName, attributeExtende
    Dim map
    For Each map in objPackage.Mappings
        If Not map.IsShortCut Then
-         applyTemplateOnObject objModel, map, &quot;mddex_BaseClassifierMapping_Export_Template&quot;, &quot;mddex_BaseClassifierMapping_Export_Content&quot;
-         applyTemplateOnObject objModel, map, attributeTemplateName, attributeExtendedAttributeName            
+         success1 = applyTemplateOnObject (objModel, map, &quot;mddex_BaseClassifierMapping_Export_Template&quot;, &quot;mddex_BaseClassifierMapping_Export_Content&quot;)
+         success2 = applyTemplateOnObject (objModel, map, attributeTemplateName, attributeExtendedAttributeName)
+         
+         If success1 = False Or success2 = False Then
+            processPackage = False
+         End If
       End If   
    Next
    
@@ -65,24 +99,32 @@ Sub processPackage(objModel, objPackage, attributeTemplateName, attributeExtende
    Dim attrMap
    For Each attrMap in objPackage.ModelEntityAttributeMappings
       If Not attrMap.IsShortCut Then
-         applyTemplateOnObject objModel, attrMap, &quot;mddex_BaseStructuralFeatureMapping_Export_Template&quot;, &quot;mddex_BaseStructuralFeatureMapping_Export_Content&quot;         
+         success1 = applyTemplateOnObject (objModel, attrMap, &quot;mddex_BaseStructuralFeatureMapping_Export_Template&quot;, &quot;mddex_BaseStructuralFeatureMapping_Export_Content&quot;)
+         
+         If success1 = False Then
+            processPackage = False
+         End If
       End If   
    Next
    
    &#39;Loop over packages
    Dim childPackage
    For Each childPackage in objPackage.Packages
-      processPackage objModel, childPackage, attributeTemplateName, attributeExtendedAttributeName
+      success1 = processPackage (objModel, childPackage, attributeTemplateName, attributeExtendedAttributeName)
+      If success1 = False Then
+         processPackage = False
+      End If
    Next
    
-End Sub
+End Function
 
 &#39;Apply template on object and check for translation errors
-Sub applyTemplateOnObject(objModel, objItem, templateName, extendedAttributeName)
+Function applyTemplateOnObject(objModel, objItem, templateName, extendedAttributeName)
    &#39;Process the object specific template
    Dim evaluatedTemplate: evaluatedTemplate = objItem.EvaluateTemplateFor(templateName, cMDDE_EXPORT_EXTENSION_CODE)
+   applyTemplateOnObject = True
    &#39;Clear the extended attribute if it is set
-   If Not objItem.getExtendedAttributeText(extendedAttributeName) = &quot;&quot; Then
+   If objItem.getExtendedAttributeText(extendedAttributeName) &lt;&gt; &quot;&quot; Then
       objItem.setExtendedAttribute extendedAttributeName, Nothing
    End If
    
@@ -93,7 +135,9 @@ Sub applyTemplateOnObject(objModel, objItem, templateName, extendedAttributeName
          WriteError (&quot;Error parsing template &quot; &amp; templateName &amp; &quot; for &quot; &amp; objItem.Code)
          &#39;Set success indicator to false
          objModel.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, False
+         applyTemplateOnObject = False
       End If
    End If   
-End Sub</a:MethodScript>
+   
+End Function</a:MethodScript>
 </o:MethodTargetItem>
