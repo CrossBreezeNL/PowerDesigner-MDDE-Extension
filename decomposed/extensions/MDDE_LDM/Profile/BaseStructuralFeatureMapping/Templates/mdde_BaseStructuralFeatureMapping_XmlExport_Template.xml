@@ -28,9 +28,10 @@
  %SourceFeature.mdde_NamedObject_XmlAttributeExport_Template% /&gt;
 .endif(\n)
 .comment Add the content of the export extension template
-.if (%Model.mdde_export_extension_attached%)
-
+.if (%Model.mdde_Export_Extension_Attached%)
+  .if(%.D:mddex_BaseStructuralFeatureMapping_Export_Content%)
 %.D:mddex_BaseStructuralFeatureMapping_Export_Content%
+  .endif
 .endif
 &lt;/%Feature.mdde_NamedObject_XmlElementName%Mapping&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651753617</a:CreationDate>

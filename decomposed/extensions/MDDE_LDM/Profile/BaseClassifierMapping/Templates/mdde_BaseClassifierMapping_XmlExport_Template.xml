@@ -17,10 +17,12 @@
     %mdde_Example_XmlExport_Template%
   .next(\n)
   .comment Add the content of the export extension template
-  .if (%Model.mdde_export_extension_attached%)
-
-  %.D:mddex_BaseClassifierMapping_Export_Content%
+  .if (%Model.mdde_Export_Extension_Attached%)
+    .if (%.D:mddex_BaseClassifierMapping_Export_Content%)
+%.D:mddex_BaseClassifierMapping_Export_Content%
+    .endif
   .endif
+
 &lt;/Mapping&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651739964</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

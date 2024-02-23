@@ -36,9 +36,10 @@
   %mdde_Entity_Stereotyped_XmlExport_Template%
   .endif
   .comment Add the content of the export extension template
-  .if (%Model.mdde_export_extension_attached%)
-
-  %.D:mddex_Entity_Export_Content%
+  .if (%Model.mdde_Export_Extension_Attached%)
+    .if(%.D:mddex_Entity_Export_Content%)
+%.D:mddex_Entity_Export_Content%
+    .endif
   .endif
    
 &lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
