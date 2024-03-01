@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="9969E47E-27FC-4049-8DE7-249134A328AC">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>9969E47E-27FC-4049-8DE7-249134A328AC</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1701335822</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mddex_BaseClassifierMapping_Export_Content.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

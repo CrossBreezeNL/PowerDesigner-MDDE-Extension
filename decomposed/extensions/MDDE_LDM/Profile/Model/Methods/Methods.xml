@@ -10,5 +10,6 @@
 <xi:include href="mdde_ExportXmlAndDecompose.xml" />
 <xi:include href="mdde_ExportXml.xml" />
 <xi:include href="mdde_UpdateDiagramPreferences.xml" />
+<xi:include href="mdde_InitializeExportExtension.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

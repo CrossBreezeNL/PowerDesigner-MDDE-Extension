@@ -17,7 +17,7 @@ runs:
       uses: actions/upload-artifact@v3
       with:
         name: MDDE Extension
-        path: ./composed/extensions/MDDE_LDM.xem           
+        path: ./composed/extensions/*.xem           
     - name: Publish sample models
       uses: actions/upload-artifact@v3
       with:

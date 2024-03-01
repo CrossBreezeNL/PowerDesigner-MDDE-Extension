@@ -1,0 +1,16 @@
+<o:ProfileTargetItem Id="624C3F32-CF52-4178-A418-D1DBE96EEF98">
+<a:ObjectID>624C3F32-CF52-4178-A418-D1DBE96EEF98</a:ObjectID>
+<a:Name>Profile</a:Name>
+<a:CreationDate>1700834012</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Shared.xml" />
+<xi:include href="NamedObject/NamedObject.xml" />
+<xi:include href="BaseClassifierMapping/BaseClassifierMapping.xml" />
+<xi:include href="BaseStructuralFeatureMapping/BaseStructuralFeatureMapping.xml" />
+<xi:include href="Model/Model.xml" />
+<xi:include href="Entity/Entity.xml" />
+<xi:include href="EntityAttribute/EntityAttribute.xml" />
+</c:Categories>
+</o:ProfileTargetItem>

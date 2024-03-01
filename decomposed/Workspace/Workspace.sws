@@ -7,7 +7,6 @@
 		<Model ID="{3BC78F2D-650B-4443-9783-A97171290BFE}" Name="ExampleDWH" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="file:///%MDDE_EXAMPLE_MODELS%/models/ExampleDWH.ldm"/>
 		<Model ID="{E0D7FF56-7977-4D8F-A64B-BB6D985687E7}" Name="Reference" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="file:///%MDDE_EXAMPLE_MODELS%/models/Reference.ldm"/>
 		<Model ID="{D7F41E17-25EB-4620-B6EA-96957CAE246A}" Name="ExampleSource" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="file:///%MDDE_EXAMPLE_MODELS%/models/ExampleSource.ldm"/>
-		<Model ID="{7FFD987F-402B-4A66-86B5-F3E8C4CF140F}" Name="ExampleBusinessConcepts" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="file:///%MDDE_EXAMPLE_MODELS%/models/ExampleBusinessConcepts.ldm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>

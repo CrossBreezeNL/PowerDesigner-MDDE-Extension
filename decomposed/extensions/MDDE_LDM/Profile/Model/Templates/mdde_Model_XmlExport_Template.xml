@@ -16,6 +16,13 @@
 
   .comment Include the package contents (a model is also a package).
   %mdde_BasePackage_XmlExport_Template%
+  .comment Add the content of the export extension template
+  .if (%mdde_Export_Extension_Attached%)
+    .if(%.D:mddex_Model_Export_Content%)
+%.D:mddex_Model_Export_Content%
+    .endif
+  .endif()
+
 &lt;/Model&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651665197</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

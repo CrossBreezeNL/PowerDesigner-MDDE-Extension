@@ -1,7 +1,7 @@
 # PowerDesigner-MDDE-Extension
 A PowerDesigner LDM extension to support Model Driven Data Engineering using PowerDesigner LDM models.
 
-This extensions is to add extra modeling possibilities to LDM models, where standard PowerDesigner functionalities are missing options to add metadata. These extra modeling options are listed below per object type.
+This extension is to add extra modeling possibilities to LDM models, where standard PowerDesigner functionalities are missing options to add metadata. These extra modeling options are listed below per object type.
 
 - Entity
   - Mapping
@@ -21,6 +21,8 @@ This extensions is to add extra modeling possibilities to LDM models, where stan
   - To allow version management of PowerDesigner files in Git the tool PowerDeComposer have been implemented. In this extension a menu item on models have been added to decompose a model using PowerDeComposer.
 - XML Export
   - To generate code, tests, etc. using CrossGenerate for the model an XML export has been implemented on model level.
+
+In many cases it is helpful to customize the XML Export to include project-specific extensions. The MDDE Model Export Extension can be used to include this type of project-specific model content in the MDDE XML Export without modifying the MDDE extension.
 
 ## Modeling manual
 There is a modeling manual available [here](./manual/) on how to use the PowerDesigner extension.

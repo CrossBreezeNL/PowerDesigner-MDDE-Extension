@@ -1,8 +1,0 @@
-<o:Entity Id="21AEC1DB-5FA1-4092-9265-A165EEB54D1F">
-<a:ObjectID>21AEC1DB-5FA1-4092-9265-A165EEB54D1F</a:ObjectID>
-<a:Name>BusinessTransaction</a:Name>
-<a:Code>BUSINESSTRANSACTION</a:Code>
-<a:CreationDate>1701947722</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
-<a:Comment>Transaction that involves one or more business relations</a:Comment>
-</o:Entity>

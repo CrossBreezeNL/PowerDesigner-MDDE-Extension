@@ -10,6 +10,7 @@ In the following section the modeling options are elaborated per topic.
 - [Mapping](./Mapping.md)
 - [Model checks](./Model%20checks.md)
 - [PowerDeComposer](./PowerDeComposer.md)
+- [Customize the XML export](./ModelExportExtension.md)
 - [Frequently asked questions](./FAQs.md)
 - [Modeling guidelines](./ModelingWiki.md)
 

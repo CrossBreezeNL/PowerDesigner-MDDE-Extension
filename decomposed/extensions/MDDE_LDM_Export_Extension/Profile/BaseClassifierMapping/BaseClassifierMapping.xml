@@ -1,0 +1,11 @@
+<o:MetaClassTargetItem Id="9C88FE62-2B4E-49ED-85B3-2829ECE34E5C">
+<a:ObjectID>9C88FE62-2B4E-49ED-85B3-2829ECE34E5C</a:ObjectID>
+<a:Name>BaseClassifierMapping</a:Name>
+<a:CreationDate>1700834168</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Templates/Templates.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>

@@ -1,0 +1,11 @@
+<o:ExtendedAttributeTargetItem Id="BE48A5A3-4D25-4C3B-A44C-D2DB83835A79">
+<a:ObjectID>BE48A5A3-4D25-4C3B-A44C-D2DB83835A79</a:ObjectID>
+<a:Name>mddex_Entity_Export_Content</a:Name>
+<a:CreationDate>1701336008</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>During XML export this property is set using the mddex template</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>14</a:ExtendedAttributeTargetItem.DataType>
+<a:Label>Placeholder for content of export extension</a:Label>
+<a:ValidateDataType>0</a:ValidateDataType>
+</o:ExtendedAttributeTargetItem>

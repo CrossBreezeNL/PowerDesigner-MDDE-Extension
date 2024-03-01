@@ -43,19 +43,23 @@ DLD {E65E8C99-8AC5-4EBA-A95C-E867C0CD0A06}
 DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}
 ATT DEFTXEM</a:History>
 <xi:include href="Model/a_ModelOptionsText.xml" />
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,95={3CB69645-4260-4DBC-A602-0536A9D4E6B3},mdde_Export_Extension_Initialization_Successful,4=true
+
+{0297A8FE-93C4-4612-A9E0-CD7292BFF652},MDDE_LDM_Export_Extension,70={AB204437-943D-4423-B8E6-E31186F8B700},mddex_Model_Export_Content,0=
+
+</a:ExtendedAttributesText>
 <c:GenerationOrigins>
 <xi:include href="GenerationOrigins/Shortcuts/ExampleDWH.xml" />
 </c:GenerationOrigins>
 <c:ExtendedModelDefinitions>
 <xi:include href="ExtendedModelDefinitions/Shortcuts/MDDE_LDM.xml" />
-<xi:include href="ExtendedModelDefinitions/Local_Extensions/Local_Extensions.xml" />
+<xi:include href="ExtendedModelDefinitions/Shortcuts/MDDE_LDM_Export_Extension.xml" />
 </c:ExtendedModelDefinitions>
 <c:LogicalDiagrams>
 <xi:include href="LogicalDiagrams/ExampleDWH/ExampleDWH.xml" />
 </c:LogicalDiagrams>
 <c:DataSources>
 <xi:include href="DataSources/mdde_DataSource/Sources.xml" />
-<xi:include href="DataSources/BusinessConcepts/Concepts.xml" />
 </c:DataSources>
 <c:DefaultDiagram>
 <o:LogicalDiagram Ref="C4A1A5C6-9074-45E9-8765-83FEF618758B"/>
@@ -65,16 +69,11 @@ ATT DEFTXEM</a:History>
 <xi:include href="Mappings/mdde_ForHorizontalLineage/SalesOrder_Mapping.xml" />
 <xi:include href="Mappings/mdde_ForHorizontalLineage/Mapping_Br_Custom_Business_Rule_Example.xml" />
 <xi:include href="Mappings/mdde_ForHorizontalLineage/Mapping_AggrTotalSalesPerCustomer.xml" />
-<xi:include href="Mappings/RelatedBusinesConcepts.xml" />
 </c:Mappings>
 <c:SourceModels>
 <xi:include href="SourceModels/Shortcuts/EXAMPLESOURCE.xml" />
 <xi:include href="SourceModels/Shortcuts/REFERENCE.xml" />
-<xi:include href="SourceModels/Shortcuts/EXAMPLEBUSINESSCONCEPTS.xml" />
 </c:SourceModels>
-<c:DefaultExtendedModelDefinition>
-<o:ExtendedModelDefinition Ref="EAC070D3-D054-46E2-B46B-8183E7DD5DAD"/>
-</c:DefaultExtendedModelDefinition>
 <c:Entities>
 <xi:include href="Entities/Customer.xml" />
 <xi:include href="Entities/SalesOrder.xml" />
@@ -88,7 +87,6 @@ ATT DEFTXEM</a:History>
 <xi:include href="Entities/Shortcuts/Country.xml" />
 <xi:include href="Entities/mdde_CustomBusinessRule/Br_Last_SalesOrder_Per_Customer.xml" />
 <xi:include href="Entities/mdde_AggregateBusinessRule/Aggregate_Total_Sales_Per_Customer.xml" />
-<xi:include href="Entities/Shortcuts/BUSINESSRELATION.xml" />
 </c:Entities>
 <c:Relationships>
 <xi:include href="Relationships/Customer_SalesOrder.xml" />
@@ -115,7 +113,7 @@ ATT DEFTXEM</a:History>
 <xi:include href="TargetModels/REFERENCE/REFERENCE.xml" />
 <xi:include href="TargetModels/ExampleDWH.xml" />
 <xi:include href="TargetModels/MDDE_LDM.xml" />
-<xi:include href="TargetModels/EXAMPLEBUSINESSCONCEPTS/EXAMPLEBUSINESSCONCEPTS.xml" />
+<xi:include href="TargetModels/MDDE_LDM_Export_Extension.xml" />
 </c:TargetModels>
 </o:Model>
 </c:Children>

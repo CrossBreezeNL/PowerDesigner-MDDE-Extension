@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="3F846174-6D7A-4F57-A4A6-FAA31EED85CD">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>3F846174-6D7A-4F57-A4A6-FAA31EED85CD</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1701336326</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mddex_NamedObject_Attributes_Export_Content.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

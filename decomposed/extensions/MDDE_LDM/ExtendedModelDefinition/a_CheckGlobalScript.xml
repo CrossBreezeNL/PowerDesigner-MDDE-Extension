@@ -10,6 +10,10 @@ Const cMDDE_EXT_CODE = &quot;MDDE_LDM&quot;
 Const cMDDE_PDC_COMPOSED_FOLDER = &quot;composed&quot;
 Const cMDDE_PDC_DECOMPOSED_FOLDER = &quot;decomposed&quot;
 Const cMDDE_JOIN_TYPE_APPLY = &quot;Apply&quot;
+Const cMDDE_EXPORT_EXTENSION_CODE = &quot;MDDE_LDM_Export_Extension&quot;
+Const cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR = &quot;mdde_Export_Extension_Initialization_Successful&quot;
+Const cMDDE_NAMEDOBJECT_ATTRIBUTE_EXPORT_TEMPLATE_NAME = &quot;mddex_NamedObject_Attributes_Export_Template&quot;
+Const cMDDE_NAMEDOBJECT_ATTRIBUTE_EXPORT_ATTRIBUTE_NAME = &quot;mddex_NamedObject_Attributes_Export_Content&quot;
 Const cMDDE_DATASOURCE_STEREOTYPE = &quot;mdde_DataSource&quot;
 
 

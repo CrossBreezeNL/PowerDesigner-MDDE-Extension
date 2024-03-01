@@ -6,7 +6,7 @@
 <a:ShadowColor>12632256</a:ShadowColor>
 <a:FontList>CENTER 0 Arial,8,N</a:FontList>
 <c:SourceSymbol>
-<o:EntitySymbol Ref="o34"/>
+<o:EntitySymbol Ref="o12"/>
 </c:SourceSymbol>
 <c:DestinationSymbol>
 <o:EntitySymbol Ref="ExampleDWH_Entity_300B0E82-0073-4894-B364-9429B35F1D39"/>

@@ -8,18 +8,6 @@
 DAT 1680508903
 ATT DFLTMAP
 ATT STRN</a:History>
-<c:ExtendedCollections>
-<o:ExtendedCollection Id="9CC3AEAE-87A9-4FDB-B319-B5A62EE25C61">
-<a:ObjectID>9CC3AEAE-87A9-4FDB-B319-B5A62EE25C61</a:ObjectID>
-<a:Name>SelectedBusinessConceptMapping</a:Name>
-<a:ExtendedBaseCollection.CollectionName>SelectedBusinessConceptMapping</a:ExtendedBaseCollection.CollectionName>
-<a:CreationDate>1701948146</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
-<c:Content>
-<o:DefaultObjectMapping Ref="CB4B7C91-F23C-4355-AF07-DAB434BCF27D"/>
-</c:Content>
-</o:ExtendedCollection>
-</c:ExtendedCollections>
 <c:DefaultMapping>
 <o:DefaultObjectMapping Ref="497A6AB6-A62C-4560-A047-F3E9C5424705"/>
 </c:DefaultMapping>

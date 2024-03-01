@@ -1,0 +1,11 @@
+<o:MetaClassTargetItem Id="EEE50520-D725-4237-88DF-B939334270C4">
+<a:ObjectID>EEE50520-D725-4237-88DF-B939334270C4</a:ObjectID>
+<a:Name>Entity</a:Name>
+<a:CreationDate>1700834168</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Templates/Templates.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>
