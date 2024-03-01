@@ -41,7 +41,7 @@ DLD {E6DA1E86-09E5-4A4E-B108-9882435F2CF0}
 DLD {CDDCF6FC-AAD6-4750-B6F0-D89A27F7FAC3}
 DLD {E65E8C99-8AC5-4EBA-A95C-E867C0CD0A06}
 DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}
-ATT OBJEXA</a:History>
+ATT DEFTXEM</a:History>
 <xi:include href="Model/a_ModelOptionsText.xml" />
 <a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,95={3CB69645-4260-4DBC-A602-0536A9D4E6B3},mdde_Export_Extension_Initialization_Successful,4=true
 
@@ -59,16 +59,16 @@ ATT OBJEXA</a:History>
 <xi:include href="LogicalDiagrams/ExampleDWH/ExampleDWH.xml" />
 </c:LogicalDiagrams>
 <c:DataSources>
-<xi:include href="DataSources/Sources.xml" />
+<xi:include href="DataSources/mdde_DataSource/Sources.xml" />
 </c:DataSources>
 <c:DefaultDiagram>
 <o:LogicalDiagram Ref="C4A1A5C6-9074-45E9-8765-83FEF618758B"/>
 </c:DefaultDiagram>
 <c:Mappings>
-<xi:include href="Mappings/Mapping_Customer_ExampleSources_Customer_WithEnrichment.xml" />
-<xi:include href="Mappings/SalesOrder_Mapping.xml" />
-<xi:include href="Mappings/Mapping_Br_Custom_Business_Rule_Example.xml" />
-<xi:include href="Mappings/Mapping_AggrTotalSalesPerCustomer.xml" />
+<xi:include href="Mappings/mdde_ForHorizontalLineage/Mapping_Customer_ExampleSources_Customer_WithEnrichment.xml" />
+<xi:include href="Mappings/mdde_ForHorizontalLineage/SalesOrder_Mapping.xml" />
+<xi:include href="Mappings/mdde_ForHorizontalLineage/Mapping_Br_Custom_Business_Rule_Example.xml" />
+<xi:include href="Mappings/mdde_ForHorizontalLineage/Mapping_AggrTotalSalesPerCustomer.xml" />
 </c:Mappings>
 <c:SourceModels>
 <xi:include href="SourceModels/Shortcuts/EXAMPLESOURCE.xml" />

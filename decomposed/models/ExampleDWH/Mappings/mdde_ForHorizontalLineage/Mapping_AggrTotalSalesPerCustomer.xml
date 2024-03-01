@@ -4,6 +4,7 @@
 <a:Code>Mapping_AggrTotalSalesPerCustomer</a:Code>
 <a:CreationDate>1690285383</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
+<a:Stereotype>mdde_ForHorizontalLineage</a:Stereotype>
 <c:ExtendedCompositions>
 <o:ExtendedComposition Id="4A510756-562B-4648-A814-5C093BD3C6F3">
 <a:ObjectID>4A510756-562B-4648-A814-5C093BD3C6F3</a:ObjectID>

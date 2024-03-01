@@ -6,7 +6,6 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="mdde_Criterion_ClassifierIsCustomBusinessRule/mdde_Criterion_ClassifierIsCustomBusinessRule.xml" />
-<xi:include href="mdde_Criterion_ClassifierIsNotCustomBusinessRule/mdde_Criterion_ClassifierIsNotCustomBusinessRule.xml" />
+<xi:include href="mdde_Classifier_IsMDDEMapping/mdde_Classifier_IsMDDEMapping.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="E26DF128-17C0-4DC5-8385-BBCA9D1C6C9F">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>E26DF128-17C0-4DC5-8385-BBCA9D1C6C9F</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1701944918</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Criterion_ClassifierIsCustomBusinessRule/mdde_Criterion_ClassifierIsCustomBusinessRule.xml" />
+<xi:include href="mdde_Criterion_ClassifierIsNotCustomBusinessRule/mdde_Criterion_ClassifierIsNotCustomBusinessRule.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

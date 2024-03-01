@@ -4,6 +4,7 @@
 <a:Code>Mapping_Customer_ExampleSources_Customer_WithEnrichment</a:Code>
 <a:CreationDate>1680511465</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ForHorizontalLineage</a:Stereotype>
 <c:ExtendedCompositions>
 <o:ExtendedComposition Id="3A9089D3-4ABF-4D70-B733-E605F5CF4884">
 <a:ObjectID>3A9089D3-4ABF-4D70-B733-E605F5CF4884</a:ObjectID>
@@ -112,8 +113,8 @@
 </o:ExtendedSubObject>
 <o:ExtendedSubObject Id="AEA474CB-9A03-41BC-8B68-2814C842020C">
 <a:ObjectID>AEA474CB-9A03-41BC-8B68-2814C842020C</a:ObjectID>
-<a:Name>AggrTotalSalesPerCustomer</a:Name>
-<a:Code>AggrTotalSalesPerCustomer</a:Code>
+<a:Name>Aggregate Total Sales Per Customer</a:Name>
+<a:Code>Aggregate_Total_Sales_Per_Customer</a:Code>
 <a:CreationDate>1690285426</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
