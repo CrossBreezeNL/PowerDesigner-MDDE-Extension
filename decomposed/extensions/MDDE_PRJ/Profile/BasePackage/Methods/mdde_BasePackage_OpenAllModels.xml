@@ -5,11 +5,28 @@
 <a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
-   Dim objChild
-   For Each objChild In obj.Children
-      WriteDebug(&quot;Found child of type: &quot; &amp; objChild.ClassKind)
-      If (objChild.ClassKind = PdLDM.cls_Model) Then
-         WriteDebug(&quot;Found LDM: &quot; &amp; objChild.Name)
+   OpenAllModels(obj)
+End Sub
+
+Sub OpenAllModels(ByRef objBasePackage)
+   WriteDebug(&quot;Opening models in &quot; &amp; objBasePackage.Name &amp; &quot; folder&quot;)
+   
+   Dim objFolder
+   For Each objFolder In objBasePackage.Children
+      If objFolder.ObjectType = &quot;ProjectFolder&quot; Then
+         OpenAllModels(objFolder)
+      End If
+   Next
+   
+   Dim objModel
+   For Each objModel in objBasePackage.ModelDocuments
+      &#39; Check whether the referenced model inside the project, it is a model file and it isn&#39;t loaded yet (TargetModelObject is Nothing).
+      If (objModel.InsideProject) And (objModel.ModelClassKind = PdLDM.cls_Model) And (objModel.TargetModelObject Is Nothing) Then 
+         WriteDebug &quot;Opening model &quot; &amp; objModel.Name
+         &#39; Open the model.
+         If Not(objModel.OpenDocument()) Then
+            WriteError &quot;Error while opening model &quot; &amp; objModel.Name
+         End If
       End If
    Next
 End Sub</a:MethodScript>
