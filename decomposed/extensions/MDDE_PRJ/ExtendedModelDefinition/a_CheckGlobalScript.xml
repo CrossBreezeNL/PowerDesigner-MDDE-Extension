@@ -5,4 +5,44 @@
 
 Option Explicit &#39; This is to ensure all used variables are defined
 
-</a:CheckGlobalScript>
+Const cMDDE_EXT_CODE = &quot;MDDE_PRJ&quot;
+
+&#39;******************************************************************************
+&#39; Routine to write an error to the output.
+&#39;******************************************************************************
+Sub WriteError (strMsg)
+   Output now() &amp; vbtab &amp; &quot; ERROR: &quot; &amp; strMsg
+End Sub
+
+
+&#39;******************************************************************************
+&#39; Routine to write an debug message to the output.
+&#39;******************************************************************************
+Sub WriteInfo (strMsg)
+   Output now() &amp; vbtab &amp; &quot; INFO: &quot; &amp; strMsg
+End Sub
+
+
+&#39;******************************************************************************
+&#39; Routine to write an debug message to the output.
+&#39; To enable or disable debug mode:
+&#39; &gt; In Tools -&gt; General Options -&gt; Variables
+&#39; &gt; Create an environment variable named MDDE_DEBUG_MODE with the value True or False.
+&#39;******************************************************************************
+Sub WriteDebug (strMsg)
+   &#39;Initialize the debug mode to be disabled.
+   Dim bDebugMode : bDebugMode = False
+   
+   &#39; Check whether debug mode is configured.
+   If Not(ActiveModel Is Nothing) Then
+      &#39; If the MDDE_DEBUG_MODE variable is configured, use it.
+      If Len(ActiveModel.EvaluateText(&quot;%$MDDE_DEBUG_MODE%&quot;)) &gt; 0 Then
+         bDebugMode = CBool(ActiveModel.EvaluateText(&quot;%$MDDE_DEBUG_MODE%&quot;))
+      End If
+   End If
+   
+   &#39; Write the output if debug mode is enabled.
+   If (bDebugMode) Then
+      Output now() &amp; vbtab &amp; &quot; DEBUG: &quot; &amp; strMsg
+   End If
+End Sub</a:CheckGlobalScript>

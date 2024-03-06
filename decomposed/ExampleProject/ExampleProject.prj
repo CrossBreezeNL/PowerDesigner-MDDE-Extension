@@ -22,6 +22,9 @@
 <c:ProjectDiagrams>
 <xi:include href="ProjectDiagrams/ExampleProject/ExampleProject.xml" />
 </c:ProjectDiagrams>
+<c:Folders>
+<xi:include href="Folders/Sources/Sources.xml" />
+</c:Folders>
 <c:DefaultDiagram>
 <o:ProjectDiagram Ref="E4B278F6-21C1-400B-9038-805D9657B31F"/>
 </c:DefaultDiagram>
@@ -76,8 +79,6 @@
 </o:DependencyLink>
 </c:DependencyLinks>
 <c:ModelsAndFiles>
-<xi:include href="ModelsAndFiles/REFERENCE.xml" />
-<xi:include href="ModelsAndFiles/EXAMPLESOURCE.xml" />
 <xi:include href="ModelsAndFiles/EXAMPLEDWH.xml" />
 </c:ModelsAndFiles>
 <c:TargetModels>

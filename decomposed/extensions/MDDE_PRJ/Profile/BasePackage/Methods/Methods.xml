@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="7A40E294-25B6-494C-B37D-DA6E562E5ACF">
+<a:TypePublicName>MethodTargetItem</a:TypePublicName>
+<a:ObjectID>7A40E294-25B6-494C-B37D-DA6E562E5ACF</a:ObjectID>
+<a:Name>Methods</a:Name>
+<a:CreationDate>1691157789</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_BasePackage_OpenAllModels.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

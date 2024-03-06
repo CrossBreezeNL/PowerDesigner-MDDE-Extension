@@ -1,0 +1,16 @@
+<o:MethodTargetItem Id="DFEF902A-75E1-4F54-B771-188D226EB778">
+<a:ObjectID>DFEF902A-75E1-4F54-B771-188D226EB778</a:ObjectID>
+<a:Name>mdde_BasePackage_OpenAllModels</a:Name>
+<a:CreationDate>1691157771</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   Dim objChild
+   For Each objChild In obj.Children
+      WriteDebug(&quot;Found child of type: &quot; &amp; objChild.ClassKind)
+      If (objChild.ClassKind = PdLDM.cls_Model) Then
+         WriteDebug(&quot;Found LDM: &quot; &amp; objChild.Name)
+      End If
+   Next
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

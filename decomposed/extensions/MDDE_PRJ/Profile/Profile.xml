@@ -6,5 +6,6 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Shared.xml" />
+<xi:include href="BasePackage/BasePackage.xml" />
 </c:Categories>
 </o:ProfileTargetItem>

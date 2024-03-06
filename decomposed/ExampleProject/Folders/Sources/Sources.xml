@@ -1,0 +1,11 @@
+<o:ProjectFolder Id="DD063CDB-41CB-463C-B221-C69294DD5546">
+<a:ObjectID>DD063CDB-41CB-463C-B221-C69294DD5546</a:ObjectID>
+<a:Name>Sources</a:Name>
+<a:Code>Sources</a:Code>
+<a:CreationDate>1691157906</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:ModelsAndFiles>
+<xi:include href="ModelsAndFiles/EXAMPLESOURCE.xml" />
+<xi:include href="ModelsAndFiles/REFERENCE.xml" />
+</c:ModelsAndFiles>
+</o:ProjectFolder>

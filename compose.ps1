@@ -12,7 +12,7 @@ $DecomposedFolder = Join-Path -Path $PSScriptRoot -ChildPath "decomposed"
 # Compose all decomposed model files.
 # Enable the Measure-Command to measure the run times (uncomment line 14 and 27).
 #Measure-Command -Expression {
-    Get-ChildItem -Path "$DecomposedFolder" -Include "*.ldm", "*.sws", "*.xem" -Recurse -Depth 2 |
+    Get-ChildItem -Path "$DecomposedFolder" -Include "*.ldm", "*.prj", "*.sws", "*.xem" -Recurse -Depth 2 |
     ForEach-Object -Parallel {
         Import-Module -Name $using:PDCModuleLocation -Force
         # The model file location is the full name of the found file.

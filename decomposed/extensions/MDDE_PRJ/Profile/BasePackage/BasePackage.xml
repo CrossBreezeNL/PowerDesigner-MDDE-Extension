@@ -1,0 +1,11 @@
+<o:MetaClassTargetItem Id="16DEE18A-273F-425F-831C-96ACB816E5AC">
+<a:ObjectID>16DEE18A-273F-425F-831C-96ACB816E5AC</a:ObjectID>
+<a:Name>BasePackage</a:Name>
+<a:CreationDate>1691157789</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Menus/Menus.xml" />
+<xi:include href="Methods/Methods.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>
