@@ -1,0 +1,18 @@
+<o:CriterionTargetItem Id="A2A060E6-1927-4A9C-9BBC-0D3021B68C98">
+<a:ObjectID>A2A060E6-1927-4A9C-9BBC-0D3021B68C98</a:ObjectID>
+<a:Name>mdde_Classifier_IsMDDEMapping</a:Name>
+<a:CriterionTargetItem.Value>(%DataSource.Stereotype%==&quot;&quot;) Or (%DataSource.Stereotype%==&quot;mdde_DataSource&quot;)</a:CriterionTargetItem.Value>
+<a:CreationDate>1701944918</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Criteria/Criteria.xml" />
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Extended_Collections/Extended_Collections.xml" />
+<xi:include href="Extended_Compositions/Extended_Compositions.xml" />
+<xi:include href="Forms/Forms.xml" />
+<xi:include href="Methods/Methods.xml" />
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

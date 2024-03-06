@@ -21,7 +21,7 @@
             <RelationshipJoin ParentEntity="Customer" ParentAttribute="ID" ChildEntity="SalesOrder" ChildAttribute="CUSTOMERID" />
           </RelationshipJoins>
         </Relationship>
-      </Relationships>
+      </Relationships>   
     </Entity>
     <Entity Id="1352D98F-2A9C-42AA-AE82-2E68BA514F02" Code="Customer" Name="Customer">
       <Attributes>
@@ -44,7 +44,6 @@
             <RelationshipJoin ParentEntity="Customer" ParentAttribute="ID" ChildEntity="SalesOrder" ChildAttribute="CUSTOMERID" />
           </RelationshipJoins>
         </Relationship>
-      </Relationships>
+      </Relationships>   
     </Entity>
-  </Entities>
-</Model>
+  </Entities></Model>

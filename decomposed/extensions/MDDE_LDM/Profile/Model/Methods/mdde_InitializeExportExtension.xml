@@ -1,0 +1,143 @@
+<o:MethodTargetItem Id="A2DF8843-2E87-46FC-9263-927B3E02D9E8">
+<a:ObjectID>A2DF8843-2E87-46FC-9263-927B3E02D9E8</a:ObjectID>
+<a:Name>mdde_InitializeExportExtension</a:Name>
+<a:CreationDate>1701423896</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>This method is included in the extension to load the contents of templates that are defined in the optionally attached export extension.
+Since it is not possible to directly access the GTL templates in another extension via GTL, the contents of these templates is loaded in local extended attributes so it can be included in the XML export</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   
+   WriteInfo &quot;MDDE LDM Export extension initializion started&quot;
+   
+   
+   Dim errorsFound: errorsFound = False   
+   Dim templateAppliedWithoutErrors: templateAppliedWithoutErrors = False
+   Dim childPackagesProcessedWithoutErrors: childPackagesProcessedWithoutErrors = False
+ 
+   &#39;Set the mddex contents attribute on model
+   templateAppliedWithoutErrors = applyTemplateOnObject (obj, obj, &quot;mddex_Model_Export_Template&quot;, &quot;mddex_Model_Export_Content&quot;)
+   If templateAppliedWithoutErrors = False Then
+      errorsFound = True
+   End If
+   
+   templateAppliedWithoutErrors = applyTemplateOnObject (obj, obj, cMDDE_NAMEDOBJECT_ATTRIBUTE_EXPORT_TEMPLATE_NAME, cMDDE_NAMEDOBJECT_ATTRIBUTE_EXPORT_ATTRIBUTE_NAME)
+   If templateAppliedWithoutErrors = False Then
+      errorsFound = True
+   End If
+   
+   &#39;Process all child objects recursively in all packages
+   childPackagesProcessedWithoutErrors = processPackage (obj, obj)
+   If childPackagesProcessedWithoutErrors = False Then
+      errorsFound = True
+   End If
+   
+   WriteInfo &quot;MDDE LDM Export extension initializion finished&quot;
+   
+   &#39;Set initialization indicator to true
+   If errorsFound = True Then
+      Msgbox &quot;There where errors processing the MDDE LDM Export extension, consult the script output window for more information.&quot;
+   Else
+      obj.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, True
+   End If
+End Sub
+
+&#39; Check if the GTL output contains errors
+Function GTLOutputHasErrors(GTLResult)
+   GTLOutputHasErrors = False
+   If InStr(GTLResult, cMDDE_EXPORT_EXTENSION_CODE &amp; &quot;::Profile&quot;) Then
+      GTLOutputHasErrors = True
+   End If
+End Function
+
+Function processPackage(objModel, objPackage)
+
+   Dim collectionProcessedWithoutErrors, childPackagesProcessedWithoutErrors
+   processPackage = True
+   collectionProcessedWithoutErrors = False
+   childPackagesProcessedWithoutErrors = False
+   
+   &#39;Loop over Entities   
+   collectionProcessedWithoutErrors = applyTemplateOnCollection(objModel, objPackage.Entities, &quot;mddex_Entity_Export_Template&quot;, &quot;mddex_Entity_Export_Content&quot;, True)
+   If collectionProcessedWithoutErrors = False Then
+      processPackage = False
+   End If
+   
+   &#39;Loop over Entity Attributes
+   collectionProcessedWithoutErrors = applyTemplateOnCollection(objModel, objPackage.EntityAttributes, &quot;mddex_EntityAttribute_Export_Template&quot;, &quot;mddex_EntityAttribute_Export_Content&quot;, True)
+   If collectionProcessedWithoutErrors = False Then
+      processPackage = False
+   End If
+      
+   &#39;Loop over Mappings
+   collectionProcessedWithoutErrors = applyTemplateOnCollection(objModel, objPackage.Mappings, &quot;mddex_BaseClassifierMapping_Export_Template&quot;, &quot;mddex_BaseClassifierMapping_Export_Content&quot;, True)
+   If collectionProcessedWithoutErrors = False Then
+      processPackage = False
+   End If
+      
+   &#39;Loop over AttributeMappings
+   collectionProcessedWithoutErrors = applyTemplateOnCollection(objModel, objPackage.ModelEntityAttributeMappings, &quot;mddex_BaseStructuralFeatureMapping_Export_Template&quot;, &quot;mddex_BaseStructuralFeatureMapping_Export_Content&quot;, False)
+   If collectionProcessedWithoutErrors = False Then
+      processPackage = False
+   End If
+   
+   &#39;Loop over packages
+   Dim childPackage
+   For Each childPackage in objPackage.Packages
+      childPackagesProcessedWithoutErrors = processPackage (objModel, childPackage)
+      If childPackagesProcessedWithoutErrors = False Then
+         processPackage = False
+      End If
+   Next
+   
+End Function
+
+&#39;Apply template on object and check for translation errors
+Function applyTemplateOnObject(objModel, objItem, templateName, extendedAttributeName)
+   &#39;Process the object specific template
+   Dim evaluatedTemplate: evaluatedTemplate = objItem.EvaluateTemplateFor(templateName, cMDDE_EXPORT_EXTENSION_CODE)
+   applyTemplateOnObject = True
+   &#39;Clear the extended attribute if it is set
+   If objItem.getExtendedAttributeText(extendedAttributeName) &lt;&gt; &quot;&quot; Then
+      objItem.setExtendedAttribute extendedAttributeName, Nothing
+   End If
+   
+   &#39; Only set the extended attribute if the template evaluation gave a non-empty result
+   If Not evaluatedTemplate = empty And Not evaluatedTemplate = &quot;&quot; Then
+      objItem.setExtendedAttribute extendedAttributeName, evaluatedTemplate     
+      If GTLOutputHasErrors(objItem.getExtendedAttribute(extendedAttributeName)) Then
+         WriteError (&quot;Error parsing template &quot; &amp; templateName &amp; &quot; for &quot; &amp; objItem.Code)
+         &#39;Set success indicator to false
+         objModel.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, False
+         applyTemplateOnObject = False
+      End If
+   End If   
+   
+End Function
+
+
+Function applyTemplateOnCollection(objModel, objCollection, templateName, extendedAttributeName, applyNamedObjectTemplate)
+   Dim obj, metaClassTemplateAppliedWithoutErrors, namedObjectTemplateAppliedWithoutErrors
+    &#39;Set default template and attribute that apply to all object types
+   Dim attributeTemplateName: attributeTemplateName = &quot;mddex_NamedObject_Attributes_Export_Template&quot;
+   Dim attributeExtendedAttributeName: attributeExtendedAttributeName = &quot;mddex_NamedObject_Attributes_Export_Content&quot;
+ 
+   applyTemplateOnCollection = True
+   metaClassTemplateAppliedWithoutErrors = True
+   namedObjectTemplateAppliedWithoutErrors = True
+   &#39;Loop over collection and set the extended attribute based on the export template
+   &#39;If specified, also apply the namedobject template for adding custom attributes to the element 
+   For Each obj in objCollection
+      If Not obj.IsShortCut Then
+         metaClassTemplateAppliedWithoutErrors = applyTemplateOnObject (objModel, obj, templateName, extendedAttributeName)
+         If applyNamedObjectTemplate Then
+            namedObjectTemplateAppliedWithoutErrors = applyTemplateOnObject (objModel, obj, attributeTemplateName, attributeExtendedAttributeName)
+         End If
+         If metaClassTemplateAppliedWithoutErrors = False Or namedObjectTemplateAppliedWithoutErrors = False Then
+            applyTemplateOnCollection = False
+         End If
+      End If   
+   Next
+End Function
+</a:MethodScript>
+</o:MethodTargetItem>

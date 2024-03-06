@@ -4,7 +4,14 @@
 <a:TemplateTargetItem.Value>Id=&quot;%ObjectID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot;
 .if (%Stereotype%)
  Stereotype=&quot;%Stereotype%&quot;
-.endif</a:TemplateTargetItem.Value>
+.endif
+.comment Add the content of the export extension template
+.if (%Model.mdde_Export_Extension_Attached%)
+  .if(%.D:mddex_NamedObject_Attributes_Export_Content%)
+%.D:mddex_NamedObject_Attributes_Export_Content%
+  .endif
+.endif
+</a:TemplateTargetItem.Value>
 <a:CreationDate>1651665197</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>

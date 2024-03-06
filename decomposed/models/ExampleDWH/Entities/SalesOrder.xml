@@ -8,9 +8,6 @@
 DAT 1680508903
 ATT DFLTMAP
 ATT STRN</a:History>
-<c:DefaultMapping>
-<o:DefaultObjectMapping Ref="810808D7-5A8C-494A-9265-911D49E3282B"/>
-</c:DefaultMapping>
 <c:Identifiers>
 <o:Identifier Id="75DB3191-6745-4050-AAFA-2333E6CC7728">
 <a:ObjectID>75DB3191-6745-4050-AAFA-2333E6CC7728</a:ObjectID>

@@ -22,10 +22,9 @@
    Dim objSelectedDS
    If (obj.Model.DataSources.Count = 1) Then
       Set objSelectedDS = obj.Model.DataSources.Item(0)
-   
    &#39; There are multiple data sources, so the user should choose which data source this mapping belongs to.
    Else
-      Dim objDSSelection : Set objDSSelection = ActiveModel.CreateSelection
+      Dim objDSSelection : Set objDSSelection = obj.Model.CreateSelection
       &#39; Show an object picker for data sources (in this model) and store the selected object.
       Set objSelectedDS = objDSSelection.ShowObjectPicker(&quot;DefaultDataSource&quot;, &quot;&quot;, &quot;Please select a data source for the mapping&quot;, True, True, False)
       &#39; Delete the selection.
@@ -36,6 +35,19 @@
    If (objSelectedDS Is Nothing) Then
       Exit Sub
    End If
+
+   &#39; Exit the routine if the datasource selected is not valid
+   If Not(objSelectedDS.stereotype = &quot;&quot; Or objSelectedDS.Stereotype = &quot;mdde_DataSource&quot;) Then
+      MsgBox _
+         &quot;The Data Source &quot; &amp; objSelectedDS.Code &amp; &quot; has stereotype &quot; &amp; objSelectedDS.stereotype &amp; &quot; and cannot be used for creating MDDE mappings.&quot; &amp; vbCrLf &amp; vbCrLf _
+         &amp; &quot;Please select or add a Data Source with a valid stereotype.&quot; &amp; vbCrlf &amp; vbCrLf &amp; _
+         &quot;Valid stereotypes are: &quot; &amp; vbCrlf &amp; vbCrLf &amp; _
+         &quot;- Data Source (MDDE)&quot;  &amp; vbCrlf &amp; _
+         &quot;- (empty)&quot; _
+         ,vbExclamation _
+         ,&quot;No valid datasource available&quot;
+      Exit Sub
+   End If 
    
    &#39; If we cannot create a mapping in the given data source, report an error.
    If (objSelectedDS.CanCreateMapping(obj) = False) Then
@@ -50,7 +62,7 @@
    End If
    
    &#39; Now we know we can create a mapping in the data source we ask the user to choose the primary source object (from any open model).
-   Dim objPrimarySourceSelection : Set objPrimarySourceSelection = ActiveModel.CreateSelection
+   Dim objPrimarySourceSelection : Set objPrimarySourceSelection = obj.Model.CreateSelection
    Dim objPrimarySource : Set objPrimarySource = objPrimarySourceSelection.ShowObjectPicker(&quot;Entity&quot;, &quot;&quot;, &quot;Please select the primary source object for the mapping&quot;, True, False, False)
    &#39; Delete the selection.
    objPrimarySourceSelection.Delete()

@@ -1,0 +1,273 @@
+<o:DefaultObjectMapping Id="810808D7-5A8C-494A-9265-911D49E3282B">
+<a:ObjectID>810808D7-5A8C-494A-9265-911D49E3282B</a:ObjectID>
+<a:Name>SalesOrder_Mapping</a:Name>
+<a:Code>SalesOrder_Mapping</a:Code>
+<a:CreationDate>1680618864</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_ForHorizontalLineage</a:Stereotype>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="BC2A9D59-31CC-4665-BDD7-C2F6D2D3ABE9">
+<a:ObjectID>BC2A9D59-31CC-4665-BDD7-C2F6D2D3ABE9</a:ObjectID>
+<a:Name>Source objects (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObjects</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680618864</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="40917FB0-D3E0-46A9-B991-CCC50FC38BCB">
+<a:ObjectID>40917FB0-D3E0-46A9-B991-CCC50FC38BCB</a:ObjectID>
+<a:Name>SalesOrder</a:Name>
+<a:Code>SalesOrder</a:Code>
+<a:CreationDate>1690285622</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Stereotype>mdde_SourceObject</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,61={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,4=From
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="EF6B54F3-A2CA-41CF-AD67-2EA049296AC9">
+<a:ObjectID>EF6B54F3-A2CA-41CF-AD67-2EA049296AC9</a:ObjectID>
+<a:Name>mdde_JoinedObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinedObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285622</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:Shortcut Ref="58505E7D-8D8A-43D4-91D8-0C5D0B9022BA"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="0F2EE1DB-8E68-424B-BBF5-0342A9EFE195">
+<a:ObjectID>0F2EE1DB-8E68-424B-BBF5-0342A9EFE195</a:ObjectID>
+<a:Name>Calculate_Order_Age</a:Name>
+<a:Code>Calculate_Order_Age</a:Code>
+<a:CreationDate>1680618864</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_SourceObject</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,62={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,5=Apply
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="EA539496-2F3C-460C-9CDC-90C4ADC3ACB2">
+<a:ObjectID>EA539496-2F3C-460C-9CDC-90C4ADC3ACB2</a:ObjectID>
+<a:Name>mdde_JoinedObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinedObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1680618864</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<c:Content>
+<o:Entity Ref="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="A00C028A-5AB1-4ED1-81F4-DF7E1405EEB2">
+<a:ObjectID>A00C028A-5AB1-4ED1-81F4-DF7E1405EEB2</a:ObjectID>
+<a:Name>Join conditions (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinConditions</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285644</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="2B91D851-B4F2-45B4-9762-0340E02D5CB2">
+<a:ObjectID>2B91D851-B4F2-45B4-9762-0340E02D5CB2</a:ObjectID>
+<a:Name>Join condition_1</a:Name>
+<a:Code>Join_condition_1</a:Code>
+<a:CreationDate>1690285644</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Stereotype>mdde_JoinCondition</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="29645ABC-FDC1-4E11-AEC0-4E4A2051935E">
+<a:ObjectID>29645ABC-FDC1-4E11-AEC0-4E4A2051935E</a:ObjectID>
+<a:Name>mdde_ChildAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ChildAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285648</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="53DE74F2-F420-48D6-A2A7-176CC3150818"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="F63C3BD9-B547-4E5E-AEFF-E5E37A0322EF">
+<a:ObjectID>F63C3BD9-B547-4E5E-AEFF-E5E37A0322EF</a:ObjectID>
+<a:Name>mdde_ParentSourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ParentSourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285654</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="40917FB0-D3E0-46A9-B991-CCC50FC38BCB"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="A3932025-D1D4-444C-BD55-140C7F63F0FF">
+<a:ObjectID>A3932025-D1D4-444C-BD55-140C7F63F0FF</a:ObjectID>
+<a:Name>mdde_ParentAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ParentAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285654</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:Shortcut Ref="6999FF4A-74A2-41B4-A9B3-CCBBB8495F45"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="AC6DC32A-7B0A-41AC-AABF-1888D1A5850F">
+<a:ObjectID>AC6DC32A-7B0A-41AC-AABF-1888D1A5850F</a:ObjectID>
+<a:Name>Examples</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_Mapping_Examples</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1683211634</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+<c:Classifier>
+<o:Entity Ref="2CBE61AD-180C-485A-8F14-2F2CEA9C225F"/>
+</c:Classifier>
+<c:SourceClassifiers>
+<o:Entity Ref="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0"/>
+<o:Shortcut Ref="58505E7D-8D8A-43D4-91D8-0C5D0B9022BA"/>
+</c:SourceClassifiers>
+<c:StructuralFeatureMaps>
+<o:DefaultStructuralFeatureMapping Id="339523B3-CB02-4BA0-ACD7-534F0C97FE36">
+<a:ObjectID>339523B3-CB02-4BA0-ACD7-534F0C97FE36</a:ObjectID>
+<a:CreationDate>1690285641</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="123A7672-FBCA-43BD-A37E-97744DE10CED">
+<a:ObjectID>123A7672-FBCA-43BD-A37E-97744DE10CED</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285689</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="40917FB0-D3E0-46A9-B991-CCC50FC38BCB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="08C2D1E9-948E-4345-8CF7-5B1F0EB1914F"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="3D846A5E-5D6B-4E30-820A-1692473D8211"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="9C0E4971-DA7B-4025-8181-4776750E7DD0">
+<a:ObjectID>9C0E4971-DA7B-4025-8181-4776750E7DD0</a:ObjectID>
+<a:CreationDate>1690285641</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="550808E6-9C78-4C21-8B09-2CA5438FE552">
+<a:ObjectID>550808E6-9C78-4C21-8B09-2CA5438FE552</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285693</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="40917FB0-D3E0-46A9-B991-CCC50FC38BCB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="6999FF4A-74A2-41B4-A9B3-CCBBB8495F45"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="119AF58F-65A9-4302-AB5C-48125C92DC41"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="98D00E52-DFCC-4EFA-8A8C-3CC719419019">
+<a:ObjectID>98D00E52-DFCC-4EFA-8A8C-3CC719419019</a:ObjectID>
+<a:CreationDate>1690285641</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="53717537-FA9B-4F6C-8901-8DAE36CB3B31">
+<a:ObjectID>53717537-FA9B-4F6C-8901-8DAE36CB3B31</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285699</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="40917FB0-D3E0-46A9-B991-CCC50FC38BCB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="D03BC676-D8A6-47EF-879C-E4DDC42514B3"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="C04AC16A-42B7-4C30-A8B7-4BBBFC4630AF"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="2AED17E5-370A-4C17-9F3E-79397698C017">
+<a:ObjectID>2AED17E5-370A-4C17-9F3E-79397698C017</a:ObjectID>
+<a:CreationDate>1690285641</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="A561D97B-30B5-43C8-B46B-6AFD5D8CD324">
+<a:ObjectID>A561D97B-30B5-43C8-B46B-6AFD5D8CD324</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285703</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="40917FB0-D3E0-46A9-B991-CCC50FC38BCB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="F9A54E73-D82B-4CD8-8261-BCEF67B6E3D6"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="CDFD6CA7-C11D-49AE-9882-AC733F7943CF"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="D2E4056A-5337-40EB-ABAF-69EA3B0BF3A3">
+<a:ObjectID>D2E4056A-5337-40EB-ABAF-69EA3B0BF3A3</a:ObjectID>
+<a:CreationDate>1690285641</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="BDB816D6-9559-4ADB-B468-71ACAA3E8714">
+<a:ObjectID>BDB816D6-9559-4ADB-B468-71ACAA3E8714</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285706</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="40917FB0-D3E0-46A9-B991-CCC50FC38BCB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="ABA5520A-2B16-4F5C-AB4F-519BEB2D5EBB"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="170BF497-2F70-404A-A97D-3BAD41FE3D82"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+<o:DefaultStructuralFeatureMapping Id="C05F4489-2B7B-473C-BF46-8ADD3CD0C694">
+<a:ObjectID>C05F4489-2B7B-473C-BF46-8ADD3CD0C694</a:ObjectID>
+<a:CreationDate>1690285641</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="54096018-00B3-423E-81DA-C541F492C67E">
+<a:ObjectID>54096018-00B3-423E-81DA-C541F492C67E</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1690285709</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="0F2EE1DB-8E68-424B-BBF5-0342A9EFE195"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:EntityAttribute Ref="742B3F05-D053-4323-9052-6D641E3BF52F"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="12F67EA7-2C9F-4D03-B063-84C354E15884"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+</c:StructuralFeatureMaps>
+<c:DataSource>
+<o:DefaultDataSource Ref="2682665A-5174-4E1B-9085-251EA01809FA"/>
+</c:DataSource>
+</o:DefaultObjectMapping>

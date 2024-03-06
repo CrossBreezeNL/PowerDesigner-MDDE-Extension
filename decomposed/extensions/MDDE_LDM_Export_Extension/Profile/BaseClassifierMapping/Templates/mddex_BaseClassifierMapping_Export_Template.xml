@@ -1,0 +1,8 @@
+<o:TemplateTargetItem Id="15B4C6C1-C042-4830-A532-C8E1DFE7F2E9">
+<a:ObjectID>15B4C6C1-C042-4830-A532-C8E1DFE7F2E9</a:ObjectID>
+<a:Name>mddex_BaseClassifierMapping_Export_Template</a:Name>
+<a:CreationDate>1700834322</a:CreationDate>
+<a:Creator>WillemOtten</a:Creator>
+<a:Comment>Use to extend the MDDE xml export with project specific content on base classifier mapping level</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>
