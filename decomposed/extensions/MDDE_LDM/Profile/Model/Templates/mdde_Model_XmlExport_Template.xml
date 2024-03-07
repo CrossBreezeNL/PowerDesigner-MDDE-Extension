@@ -8,7 +8,7 @@
 .endif()
   .comment Include a list of source models.
   .set_value(CurrentModelID, %ObjectID%)
-  .foreach_item(TargetModels,\n  &lt;DependentModels&gt;\n,&quot;  &lt;/DependentModels&gt;&quot;,%TargetModelType%==&quot;Logical Data Model&quot;)
+  .foreach_item(TargetModels,\n  &lt;DependentModels&gt;\n,&quot;  &lt;/DependentModels&gt;&quot;,%TargetModelType%==&quot;Logical Data Model&quot;,%Item1.Code% &gt; %Item2.Code%)
   .if (%Used%) &amp;&amp; (%TargetModelID% != %CurrentModelID%)
     &lt;DependentModel Id=&quot;%TargetModelID%&quot; Code=&quot;%Code%&quot; Name=&quot;%Name%&quot; /&gt;
   .endif(\n)
@@ -19,7 +19,8 @@
   .comment Add the content of the export extension template
   .if (%mdde_Export_Extension_Attached%)
     .if(%.D:mddex_Model_Export_Content%)
-%.D:mddex_Model_Export_Content%
+
+  %.D:mddex_Model_Export_Content%
     .endif
   .endif()
 

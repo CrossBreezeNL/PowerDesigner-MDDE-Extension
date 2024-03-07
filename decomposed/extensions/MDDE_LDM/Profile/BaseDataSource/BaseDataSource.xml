@@ -7,5 +7,6 @@
 <c:Categories>
 <xi:include href="Stereotypes/Stereotypes.xml" />
 <xi:include href="Forms/Forms.xml" />
+<xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:MetaClassTargetItem>

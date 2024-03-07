@@ -2,6 +2,10 @@
 <a:ObjectID>1098748A-0062-4042-8B95-04FA34ECAE2B</a:ObjectID>
 <a:Name>mdde_Example_XmlExport_Template</a:Name>
 <a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template%&gt;
+.if (%mdde_NamedObject_XmlElementExport_Template%)
+
+  %mdde_NamedObject_XmlElementExport_Template%
+.endif
 .if(%mdde_Example_Stereotyped_XmlExport_Template?%)
   %mdde_Example_Stereotyped_XmlExport_Template%
 .endif()

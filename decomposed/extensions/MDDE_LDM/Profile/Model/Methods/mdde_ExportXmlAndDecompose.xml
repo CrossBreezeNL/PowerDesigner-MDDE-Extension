@@ -16,7 +16,8 @@
    
    &#39; Save any change to the model file before exporting and decomposing.
    WriteDebug &quot;Saving the model&quot;
-   obj.Save()
+   &#39; We force save the file in XML format here to make sure it&#39;s XML before decomposing.
+   obj.Save obj.Filename, False, &quot;XML&quot;
    
    &#39; Decompose the model.
    obj.ExecuteCustomMethod(cMDDE_EXT_CODE &amp; &quot;.mdde_Decompose&quot;)

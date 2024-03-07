@@ -11,10 +11,21 @@
    %Check% = True
    &#39; Get the join type of the entity in current source object.
    Dim JoinType : JoinType = obj.GetExtendedAttributeText(&quot;mdde_JoinType&quot;)
-   &#39;Exclude join type From&#39;
-   If Not(UCase(JoinType) = &quot;FROM&quot;) Then 
+   &#39; Get the join conditions of the source object.
+   Dim objJoinConditions : Set objJoinConditions = obj.GetExtendedCollection(&quot;mdde_JoinConditions&quot;, False)
+
+   &#39; For FROM join types we expect an empty list of join conditions.
+   If (UCase(JoinType) = &quot;FROM&quot;) Then
+      If Not(objJoinConditions Is Nothing) Then
+         If objJoinConditions.Count &gt; 0 Then
+            WriteError(&quot;Join conditions are specified for the FROM source object &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39;, there should be none.&quot;)
+            %Check% = False
+         End If
+      End If
+
+   &#39; For all non-FROM join types we check the contents.
+   Else
       &#39;Make sure join codition is specified
-      Dim objJoinConditions : Set objJoinConditions = obj.GetExtendedCollection(&quot;mdde_JoinConditions&quot;, False)
       Dim objMapping : Set objMapping = obj.ParentObject
       Dim objEntity : Set objEntity = objMapping.Classifier
       
@@ -30,19 +41,31 @@
       Else
          &#39; Check join condition completeness
          Dim JoinCondition   
-         For Each JoinCondition In objJoinConditions 
-            Dim objChildAttribute : Set objChildAttribute = JoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;)
-            Dim objParentAttribute : Set objParentAttribute = JoinCondition.GetExtendedAttribute(&quot;mdde_ParentAttribute&quot;)
-            Dim strJoinOperator : strJoinOperator = JoinCondition.GetExtendedAttributeText(&quot;mdde_JoinOperator&quot;)
-            If (objChildAttribute is Nothing) Or (objParentAttribute Is Nothing) Or (Len(strJoinOperator) = 0) Then
-               WriteError( &quot;Part(s) of the join conditions are missing for source object &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; in the mapping &#39;&quot; &amp; objMapping.DisplayName &amp; &quot;&#39; for entity &#39;&quot; &amp;  objEntity.DisplayName &amp; &quot;&#39;&quot;)
+         For Each JoinCondition In objJoinConditions
+            
+            Dim objChildAttribute : Set objChildAttribute = JoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;)  
+            If (objChildAttribute is Nothing) Then 
+               WriteError( &quot;The Child Attribute of the join condition is missing for the source object &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; in the mapping &#39;&quot; &amp; objMapping.DisplayName &amp; &quot;&#39; for entity &#39;&quot; &amp;  objEntity.DisplayName &amp; &quot;&#39;&quot;)
                %Check% = False
-               Exit For
             End If
+     
+            Dim strJoinOperator : strJoinOperator = JoinCondition.GetExtendedAttributeText(&quot;mdde_JoinOperator&quot;)
+            If (Len(strJoinOperator) = 0) Then
+              WriteError( &quot;The Join Operator of the join condition is missing for the source object &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; in the mapping &#39;&quot; &amp; objMapping.DisplayName &amp; &quot;&#39; for entity &#39;&quot; &amp;  objEntity.DisplayName &amp; &quot;&#39;&quot;)
+               %Check% = False 
+            End If
+            
+            &#39; Check if parent attribute is a literal value if False and Parent Attribute is empty the error message below will be executed
+            Dim parentIsLiteralValue : parentIsLiteralValue = JoinCondition.GetExtendedAttribute(&quot;mdde_ParentIsLiteralValue&quot;)
+            Dim objParentAttribute : Set objParentAttribute = JoinCondition.GetExtendedAttribute(&quot;mdde_ParentAttribute&quot;)
+
+            If (parentIsLiteralValue = False) and (objParentAttribute is Nothing) Then
+               WriteError( &quot;The Parent Attribute of the join condition is missing for the source object &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; in the mapping &#39;&quot; &amp; objMapping.DisplayName &amp; &quot;&#39; for entity &#39;&quot; &amp;  objEntity.DisplayName &amp; &quot;&#39;&quot;)
+              %Check% = False
+            End If                           
          Next
       End If    
    End If
-   
 End Function</a:CheckScript>
 <a:AutoFixScrpt>Function %Fix%(obj, outmsg)
    &#39; Implement your automatic correction on &lt;obj&gt; here

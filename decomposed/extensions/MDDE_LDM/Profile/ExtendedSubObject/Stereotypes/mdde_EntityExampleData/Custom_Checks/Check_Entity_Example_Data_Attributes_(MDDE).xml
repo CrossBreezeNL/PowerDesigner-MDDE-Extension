@@ -1,0 +1,88 @@
+<o:CustomCheckTargetItem Id="D515BB63-1DD5-41D2-9C5E-46424B854D49">
+<a:ObjectID>D515BB63-1DD5-41D2-9C5E-46424B854D49</a:ObjectID>
+<a:Name>Check Entity Example Data Attributes (MDDE)</a:Name>
+<a:CreationDate>1709626112</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>This model check verifies that for example data of an entity, the attributes used across the example records are all the same.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This model check verifies that for example data of an entity, the attributes used across the example records are all the same.</a:HelpMessage>
+<a:OutputMessage>The following entity example data don&#39;t have consistant usage of attributes:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   &#39; Initialize the output with true.
+   %Check% = True
+   
+   &#39; Get the example records.
+   Dim colExampleRecords : Set colExampleRecords = obj.GetExtendedCollection(&quot;mdde_ExampleRecords&quot;)
+
+   &#39; If there are no or 1 record, we don&#39;t need to check anything.
+   If (colExampleRecords.Count &lt;= 1) Then
+      Exit Function
+   End If
+   
+   &#39; There are multiple records, so we need to verify all used attributes are the same across the records.
+   Dim objExampleRecord
+   Dim colExampleAttributes
+   Dim intExampleRecordCount : intExampleRecordCount = 0
+   For Each objExampleRecord In colExampleRecords
+      &#39; Increase the example record count.
+      intExampleRecordCount = intExampleRecordCount + 1
+      &#39; When this is the first iteration in the loop, store the example attributes of the first record.
+      If intExampleRecordCount = 1 Then
+         Set colExampleAttributes = CreateObject(&quot;System.Collections.ArrayList&quot;)
+         
+         &#39; Get the record values for the current record.
+         Dim colFirstExampleRecordValues : Set colFirstExampleRecordValues = objExampleRecord.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
+         
+         Dim objFirstExampleRecordValue
+         &#39; Loop through the attributes and store them in the array list.
+         For Each objFirstExampleRecordValue In colFirstExampleRecordValues
+            Dim objFirstAttribute : Set objFirstAttribute = objFirstExampleRecordValue.GetExtendedAttribute(&quot;mdde_Attribute&quot;)
+            colExampleAttributes.Add objFirstAttribute   
+         Next
+      
+      &#39; For all remaining records (so after the first record), we check whether they all use the same attributes.   
+      Else
+
+         &#39; Get the record values for the current record.
+         Dim colExampleRecordValues : Set colExampleRecordValues = objExampleRecord.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
+         &#39; If the number of values is different then the first row, we can stop checking.
+         If (colExampleRecordValues.Count &lt;&gt; colExampleAttributes.Count) Then
+            WriteError(&quot;The number of attributes specified for example record &quot; &amp; intExampleRecordCount &amp; &quot; is different then the first one. They should all be the same!&quot;)
+            %Check% = False
+            Exit Function
+         End If
+         
+         &#39; Loop through the attributes and check whether they are in the colExampleAttributes array.
+         Dim objExampleRecordValue
+         Dim intExampleRecordValueCount : intExampleRecordValueCount = 0
+         For Each objExampleRecordValue In colExampleRecordValues
+            intExampleRecordValueCount = intExampleRecordValueCount + 1
+            Dim objAttribute : Set objAttribute = objExampleRecordValue.GetExtendedAttribute(&quot;mdde_Attribute&quot;)
+            
+            If (objAttribute Is Nothing) Then
+               WriteError(&quot;Example value &quot; &amp; intExampleRecordValueCount &amp; &quot; within record &quot; &amp; intExampleRecordCount &amp; &quot; doesn&#39;t reference an attribute!&quot;)
+               %Check% = False
+               Exit Function
+            End If
+            
+            If (Not(colExampleAttributes.Contains(objAttribute))) Then
+               WriteError(&quot;Example record &quot; &amp; intExampleRecordCount &amp; &quot; uses an attribute &#39;&quot; &amp; objAttribute.DisplayName &amp; &quot;&#39; which is not used in the first record. All records within one example must specify the same attributes!&quot;)
+               %Check% = False
+               Exit Function
+            End If
+         Next
+      
+      End If
+   Next
+   
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

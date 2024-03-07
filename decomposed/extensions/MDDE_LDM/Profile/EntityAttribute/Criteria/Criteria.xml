@@ -7,5 +7,7 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criterion_ParentIsBusinessRule/Criterion_ParentIsBusinessRule.xml" />
+<xi:include href="Criterion_AttributeIsNotInherited/Criterion_AttributeIsNotInherited.xml" />
+<xi:include href="Criterion_AttributeIsInherited/Criterion_AttributeIsInherited.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
