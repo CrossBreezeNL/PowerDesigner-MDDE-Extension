@@ -35,7 +35,7 @@ Function CheckOrFixJoinConditions(objSourceObject, boolAutoFix)
    Dim intLastBRAttributeIndex : intLastBRAttributeIndex = objExpressionBusinessRule.Attributes.Count - 1
    Dim intCurrentAttributeIndex
    &#39; Keep track of the number of input attributes we processed.
-   &#39; We start with -1, so in the first cycle it jump to 0 and that&#39;s the index of the join condition this attribute should be references.
+   &#39; We start with -1, so in the first cycle it jumps to 0 and that&#39;s the index of the join condition this attribute should be references.
    Dim intCurrentInputAttributeIndex : intCurrentInputAttributeIndex = -1
    For intCurrentAttributeIndex = 0 To intLastBRAttributeIndex
       Dim objBRAttribute : Set objBRAttribute = objExpressionBusinessRule.Attributes.Item(intCurrentAttributeIndex)
