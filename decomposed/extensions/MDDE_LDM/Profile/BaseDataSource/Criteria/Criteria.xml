@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="8EC2655D-4D06-4870-8B2B-C0CC4132546B">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>8EC2655D-4D06-4870-8B2B-C0CC4132546B</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1709820290</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Criterion_IsMDDEDataSource/mdde_Criterion_IsMDDEDataSource.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

@@ -5,8 +5,10 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Business rule (MDDE)</a:Label>
+<a:Abstract>1</a:Abstract>
 <c:Categories>
 <xi:include href="Stereotypes/Stereotypes.xml" />
 <xi:include href="Templates/Templates.xml" />
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>

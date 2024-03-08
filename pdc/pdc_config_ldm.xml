@@ -64,7 +64,10 @@
             <NodeRemoval xpath="//ExtendedCollection[./ExtendedBaseCollection.CollectionName ='mdde_BusinessRule_DefaultExample']" />
 
             <!-- Remove the empty extended collections. -->
+            <NodeRemoval xpath="//ExtendedCollection[count(./Content/child::*) = 0]" />
             <NodeRemoval xpath="//ExtendedCollections[count(child::*) = 0]" />
+            <NodeRemoval xpath="//ExtendedComposition[count(./ExtendedComposition.Content/child::*) = 0]" />
+            <NodeRemoval xpath="//ExtendedCompositions[count(child::*) = 0]" />
 
             <!-- Remove ExtendedDependencySymbols which are not Visible (a:BaseSymbol.Flags = 1). -->
             <NodeRemoval xpath="//ExtendedDependencySymbol[./BaseSymbol.Flags = 1]" />

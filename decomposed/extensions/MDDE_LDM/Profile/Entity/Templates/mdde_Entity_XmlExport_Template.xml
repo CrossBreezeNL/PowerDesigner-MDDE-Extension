@@ -17,7 +17,7 @@
   .foreach_item(Identifiers,\n  &lt;Identifiers&gt;\n,\n  &lt;/Identifiers&gt;)
     %mdde_Identifier_XmlExport_Template%
   .next(\n)
-  .foreach_item(Mappings,\n  &lt;Mappings&gt;\n,\n  &lt;/Mappings&gt;,(DataSource.Stereotype==&quot;&quot;) Or (DataSource.Stereotype==&quot;mdde_DataSource&quot;))
+  .foreach_item(Mappings,\n  &lt;Mappings&gt;\n,\n  &lt;/Mappings&gt;,%DataSource.mdde_IsMDDEDataSource% == &quot;True&quot;)
     %mdde_BaseClassifierMapping_XmlExport_Template%
   .next(\n)
   .foreach_item(Relationships,\n  &lt;Relationships&gt;\n,\n  &lt;/Relationships&gt;)
@@ -29,7 +29,6 @@
   .foreach_item(InheritsFrom,\n  &lt;InheritsFrom&gt;\n,\n  &lt;/InheritsFrom&gt;)
     %mdde_InheritenceLink_XmlExport_Template%
   .next(\n)
-
   .comment If the stereotype of the current entity has it&#39;s own template, include it here.
   .if (%mdde_Entity_Stereotyped_XmlExport_Template?%)
 
@@ -38,10 +37,11 @@
   .comment Add the content of the export extension template
   .if (%Model.mdde_Export_Extension_Attached%)
     .if(%.D:mddex_Entity_Export_Content%)
-%.D:mddex_Entity_Export_Content%
+
+  %.D:mddex_Entity_Export_Content%
     .endif
   .endif
-   
+
 &lt;/%mdde_NamedObject_XmlElementName%&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651670451</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

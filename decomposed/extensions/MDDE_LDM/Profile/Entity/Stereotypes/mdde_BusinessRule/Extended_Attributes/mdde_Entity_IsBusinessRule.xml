@@ -1,0 +1,10 @@
+<o:ExtendedAttributeTargetItem Id="6FE423BC-A49D-4AF7-ABB8-7CCBE29FD58A">
+<a:ObjectID>6FE423BC-A49D-4AF7-ABB8-7CCBE29FD58A</a:ObjectID>
+<a:Name>mdde_Entity_IsBusinessRule</a:Name>
+<a:CreationDate>1706689760</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:Comment>This is a extended attribute for other extentions to evaluate whether an Entity has a stereotype BusinessRule. Since GTL doesn&#39;t have a HasStereotype type of function this is a workaround to check one template.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.Value>True</a:ExtendedAttributeTargetItem.Value>
+</o:ExtendedAttributeTargetItem>

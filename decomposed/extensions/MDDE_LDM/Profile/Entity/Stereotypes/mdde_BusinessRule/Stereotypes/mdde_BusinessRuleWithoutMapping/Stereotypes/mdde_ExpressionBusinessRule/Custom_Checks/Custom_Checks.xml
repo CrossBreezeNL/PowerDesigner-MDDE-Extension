@@ -7,5 +7,7 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_ExpressionBusinessRule_Example_CheckAttributeAndValues.xml" />
+<xi:include href="mdde_Check_BusinessRuleHasAtLeastOneExample.xml" />
+<xi:include href="mdde_Check_BusinessRuleHasAtLeastOneInputAttribute.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

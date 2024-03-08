@@ -10,9 +10,9 @@
    If Not(objSel Is Nothing) Then
       Dim objSourceEntity
       For Each objSourceEntity in obj.ParentObject.ParentObject.SourceClassifiers
-         &#39; Skip busienss rules.
+         &#39; Skip business rules without mapping.
          Dim objRealSourceEntity : Set objRealSourceEntity = GetRealObject(objSourceEntity)
-         If Not(objRealSourceEntity.HasStereotype(&quot;mdde_BusinessRule&quot;)) Then
+         If Not(objRealSourceEntity.HasStereotype(&quot;mdde_BusinessRuleWithoutMapping&quot;)) Then
             objSel.Objects.Add objSourceEntity
          End If
       Next

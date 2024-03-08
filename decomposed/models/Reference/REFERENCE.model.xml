@@ -3,12 +3,12 @@
   <Entities>
     <Entity Id="BC120FD8-8AF8-4F3F-86C8-474D1B5B207F" Code="Country" Name="Country">
       <Attributes>
-        <Attribute Id="93CCB3E8-5C2F-4C63-A061-68CAE43ACFE2" Code="COUNTRY_CODE" Name="Country_Code" Ordinal="1" DataType="VMBT" Length="3" Primary="TRUE" Mandatory="TRUE"></Attribute>
-        <Attribute Id="3B30B067-59BC-4062-9C19-166AB3C2179C" Code="COUNTRY_DESCRIPTION" Name="Country_Description" Ordinal="2" DataType="VMBT" Length="100"></Attribute>
-        <Attribute Id="A31CD79D-0ACE-484B-AFFD-77BFF4707757" Code="COUNTRY_CONTINENT" Name="Country_Continent" Ordinal="3" DataType="VMBT" Length="100"></Attribute>
+        <Attribute Id="93CCB3E8-5C2F-4C63-A061-68CAE43ACFE2" Code="COUNTRY_CODE" Name="Country_Code" Ordinal="1" PdDataType="VMBT3" PdLength="3" PdPrecision="0" Primary="TRUE" Mandatory="TRUE"></Attribute>
+        <Attribute Id="3B30B067-59BC-4062-9C19-166AB3C2179C" Code="COUNTRY_DESCRIPTION" Name="Country_Description" Ordinal="2" PdDataType="VMBT100" PdLength="100" PdPrecision="0"></Attribute>
+        <Attribute Id="A31CD79D-0ACE-484B-AFFD-77BFF4707757" Code="COUNTRY_CONTINENT" Name="Country_Continent" Ordinal="3" PdDataType="VMBT100" PdLength="100" PdPrecision="0"></Attribute>
       </Attributes>
       <Identifiers>
-        <Identifier PrimaryIdentifier="TRUE">
+        <Identifier Id="E8F4ACA6-7532-4525-86F4-0F468CCE212D" Code="PK_COUNTRY" Name="PK_Country" PrimaryIdentifier="TRUE">
           <Attributes>
             <Attribute Id="93CCB3E8-5C2F-4C63-A061-68CAE43ACFE2" Code="COUNTRY_CODE" Name="Country_Code" Ordinal="1" />
           </Attributes></Identifier>

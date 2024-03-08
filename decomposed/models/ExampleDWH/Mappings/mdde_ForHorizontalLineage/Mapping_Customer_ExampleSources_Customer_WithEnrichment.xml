@@ -375,13 +375,6 @@
 </o:ExtendedSubObject>
 </c:ExtendedComposition.Content>
 </o:ExtendedComposition>
-<o:ExtendedComposition Id="BAFDF681-F2A0-41EC-9E6A-89C26225BAD0">
-<a:ObjectID>BAFDF681-F2A0-41EC-9E6A-89C26225BAD0</a:ObjectID>
-<a:Name>Examples</a:Name>
-<a:ExtendedBaseCollection.CollectionName>mdde_Mapping_Examples</a:ExtendedBaseCollection.CollectionName>
-<a:CreationDate>1680597084</a:CreationDate>
-<a:Creator>MooOthman</a:Creator>
-</o:ExtendedComposition>
 </c:ExtendedCompositions>
 <c:Classifier>
 <o:Entity Ref="300B0E82-0073-4894-B364-9429B35F1D39"/>

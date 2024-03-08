@@ -1,0 +1,11 @@
+<o:CriterionTargetItem Id="078B9AFB-C42D-4955-B7C1-9488775BD364">
+<a:ObjectID>078B9AFB-C42D-4955-B7C1-9488775BD364</a:ObjectID>
+<a:Name>mdde_Criterion_IsMDDEDataSource</a:Name>
+<a:CriterionTargetItem.Value>(%Stereotype% == null) Or (%Stereotype% == &quot;&quot;) Or (%Stereotype% == &quot;mdde_DataSource&quot;)</a:CriterionTargetItem.Value>
+<a:CreationDate>1709820290</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

@@ -1,0 +1,123 @@
+<o:CustomCheckTargetItem Id="70F744D4-1B3D-4C91-948B-1095EF0DFD02">
+<a:ObjectID>70F744D4-1B3D-4C91-948B-1095EF0DFD02</a:ObjectID>
+<a:Name>Check duplicate source objects (MDDE)</a:Name>
+<a:CreationDate>1704977369</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>Check whether there are duplicate source objects in the mapping (meaning the same joined object with join conditions and offset period exists as a source object more then once).</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that there are no are duplicate source objects in the mapping (meaning the same joined object with join conditions and offset period exists as a source object more then once).</a:HelpMessage>
+<a:OutputMessage>The following mapping have one or more duplicate source objects:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   &#39; Create all arrays to be used in this function.
+   &#39; The arrays must be created at the beginning, otherwise VBScript will complain (because of compile issues).
+   Dim arrSourceObjectKeyParts(), arrJoinConditionKeyParts()
+
+   &#39; Initialize the result with true.
+   %Check% = True
+   
+   &#39; Create an array to store the source objects found so far.
+   Dim colSourceObjectKeys : Set colSourceObjectKeys = CreateObject(&quot;System.Collections.ArrayList&quot;)
+   
+   &#39; Retrieve the source objects from the mapping.
+   Dim colSourceObjects : Set colSourceObjects = obj.GetExtendedCollection(&quot;mdde_SourceObjects&quot;)
+   
+   &#39; If the mapping has no source objects, stop here.
+   If colSourceObjects.Count = 0 Then
+      Exit Function
+   End If
+   
+   &#39; Now loop though all source objects and construct a unique string to compare the source objects on.
+   Dim objSourceObject
+   For Each objSourceObject In colSourceObjects
+      &#39; Get the joined object.
+      Dim objJoinedObject : Set objJoinedObject = objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;)
+      
+      &#39; If the joined object is nothing (unset), skip this source object.
+      If Not(objJoinedObject Is Nothing) Then
+      
+         &#39; We will use: SourceObject.JoinedObject.Code + SourceObject.JoinType + SourceObject.OffsetPeriod + SourceObject.OffsetValue + SourceObject.JoinConditions
+         &#39; The JoinConditions collection should be alphabetically sorted to make sure we also find equal onces if the order of the joins is different.
+      
+         &#39; Get the collection with join conditions of the current source object.
+         Dim objJoinConditions : Set objJoinConditions = objSourceObject.GetExtendedCollection(&quot;mdde_JoinConditions&quot;)
+         
+         &#39; If there are no join conditions, skip creating the join conditions part.
+         If Not(objJoinConditions Is Nothing) And objJoinConditions.Count &gt; 0 Then
+         
+            &#39; Create an array to contain the join condition key parts.
+            ReDim arrJoinConditionKeyParts(objJoinConditions.Count)
+            &#39; Loop through the join conditions and make a sortable array of join conditions.
+            Dim intCurrentJoinConditionIndex
+            For intCurrentJoinConditionIndex = 0 To objJoinConditions.Count - 1
+               Dim objJoinCondition : Set objJoinCondition = objJoinConditions.Item(intCurrentJoinConditionIndex)
+               &#39; Use the Xml Export template to get a textual representation of the join condition.
+               Dim TTI : Set TTI = obj.Model.FindMetaExtensionByName(objJoinCondition, PdCommon.cls_TemplateTargetItem, &quot;mdde_JoinCondition_XmlExport_Template&quot;)
+               Dim strJoinConditionKey : strJoinConditionKey = objJoinCondition.EvaluateTemplate(&quot;mdde_JoinCondition_XmlExport_Template&quot;, TTI)
+               
+               &#39; Now we need to insert the key at the right place in the array (so the array stays alphabetically sorted).
+               &#39; So we loop over the array until we find a join condition key which is larger then the current one (or we reach the end).
+               &#39; Then we know at which position the new key needs to be and which keys to move up one position.
+               Dim intCompareJoinConditionIndex
+               Dim intNewJoinConditionKeyIndex : intNewJoinConditionKeyIndex = intCurrentJoinConditionIndex
+               For intCompareJoinConditionIndex = 0 To intCurrentJoinConditionIndex
+                  &#39; If we find the first key which is larger then the current one, we have found the position to store the new key in.
+                  If arrJoinConditionKeyParts(intCompareJoinConditionIndex) &gt; strJoinConditionKey Then
+                     &#39; Update the new join condition key index to the found position.
+                     intNewJoinConditionKeyIndex = intCompareJoinConditionIndex
+                     &#39; This means we have to move all keys from this position onwards one index further.
+                     &#39; So we loop from the index of the new key to the last index in reverse order
+                     Dim intOldJoinConditionIndex
+                     For intOldJoinConditionIndex = intCurrentJoinConditionIndex - 1 To intNewJoinConditionKeyIndex Step -1
+                        &#39; Move the value of the key one index further.
+                        arrJoinConditionKeyParts(intOldJoinConditionIndex + 1) = arrJoinConditionKeyParts(intOldJoinConditionIndex)
+                        &#39; To be sure, empty the value on the old position.
+                        arrJoinConditionKeyParts(intOldJoinConditionIndex) = vbEmpty
+                     Next
+                     
+                     &#39; Since we found the right place, we can exit the loop.
+                     Exit For
+                  End If
+               Next
+               
+               &#39; Update the array to have the new join condition key at the designated index.
+               arrJoinConditionKeyParts(intNewJoinConditionKeyIndex) = strJoinConditionKey
+            Next
+         End If
+         
+         &#39; Create an array to store the source object key parts.
+         &#39; Initialize the array for 5 items in it (so upperbound 4).
+         ReDim arrSourceObjectKeyParts(4)
+      
+         &#39; Construct the first part of the source object key.
+         arrSourceObjectKeyParts(0) = objJoinedObject.Code
+         arrSourceObjectKeyParts(1) = objSourceObject.GetExtendedAttributeText(&quot;mdde_JoinType&quot;)
+         arrSourceObjectKeyParts(2) = objSourceObject.GetExtendedAttributeText(&quot;mdde_OffsetPeriod&quot;)
+         arrSourceObjectKeyParts(3) = objSourceObject.GetExtendedAttributeText(&quot;mdde_OffsetValue&quot;)
+         arrSourceObjectKeyParts(4) = Join(arrJoinConditionKeyParts, &quot;&amp;&quot;)
+      
+         &#39; Construct the textual representation of the source object key by joining the key parts together.
+         Dim strSourceObjectKey : strSourceObjectKey = Join(arrSourceObjectKeyParts, &quot;|&quot;)
+         &#39; Now check whether the source object key already exists in the keys collection.
+         &#39; If so we have found a duplicate, so report it.
+         If colSourceObjectKeys.Contains(strSourceObjectKey) Then
+            WriteError(&quot;The mapping &#39;&quot; &amp; obj.DisplayName &amp; &quot;&#39; contains duplicate source objects, where the duplicate source object is: &#39;&quot; &amp; objSourceObject.DisplayName &amp; &quot;&#39;&quot;)
+            WriteDebug(&quot; &gt; Duplicate key: &quot; &amp; strSourceObjectKey)
+            %Check% = False
+         &#39; If we haven&#39;t found the key yet, add it to the key collection.
+         Else
+            colSourceObjectKeys.Add strSourceObjectKey
+         End If 
+         
+      End If
+   Next
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

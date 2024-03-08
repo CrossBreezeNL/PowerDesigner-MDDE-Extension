@@ -6,6 +6,6 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="Criterion_ParentIsIsBusinessRuleWithMapping/Criterion_ParentIsIsBusinessRuleWithMapping.xml" />
+<xi:include href="Criterion_ParentIsBusinessRuleWithoutMapping/Criterion_ParentIsBusinessRuleWithoutMapping.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
