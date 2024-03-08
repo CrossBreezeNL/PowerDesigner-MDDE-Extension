@@ -37,6 +37,13 @@
          &#39; Loop through the attributes and store them in the array list.
          For Each objFirstExampleRecordValue In colFirstExampleRecordValues
             Dim objFirstAttribute : Set objFirstAttribute = objFirstExampleRecordValue.GetExtendedAttribute(&quot;mdde_Attribute&quot;)
+            
+            If (objFirstAttribute Is Nothing) Then
+               WriteError(&quot;Example value &#39;&quot; &amp; objFirstExampleRecordValue.DisplayName &amp; &quot;&#39; within record &quot; &amp; intExampleRecordCount &amp; &quot; doesn&#39;t reference an attribute!&quot;)
+               %Check% = False
+               Exit Function
+            End If
+
             colExampleAttributes.Add objFirstAttribute   
          Next
       
@@ -60,7 +67,7 @@
             Dim objAttribute : Set objAttribute = objExampleRecordValue.GetExtendedAttribute(&quot;mdde_Attribute&quot;)
             
             If (objAttribute Is Nothing) Then
-               WriteError(&quot;Example value &quot; &amp; intExampleRecordValueCount &amp; &quot; within record &quot; &amp; intExampleRecordCount &amp; &quot; doesn&#39;t reference an attribute!&quot;)
+               WriteError(&quot;Example value &#39;&quot; &amp; objExampleRecordValue.DisplayName &amp; &quot;&#39; within record &quot; &amp; intExampleRecordCount &amp; &quot; doesn&#39;t reference an attribute!&quot;)
                %Check% = False
                Exit Function
             End If
