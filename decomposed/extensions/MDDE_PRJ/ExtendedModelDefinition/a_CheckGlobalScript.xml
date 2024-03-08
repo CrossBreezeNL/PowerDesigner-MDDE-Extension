@@ -5,7 +5,8 @@
 
 Option Explicit &#39; This is to ensure all used variables are defined
 
-Const cMDDE_EXT_CODE = &quot;MDDE_PRJ&quot;
+Const cMDDE_PRJ_EXT_CODE = &quot;MDDE_PRJ&quot;
+Const cMDDE_LDM_EXT_CODE = &quot;MDDE_LDM&quot;
 
 &#39;******************************************************************************
 &#39; Routine to write an error to the output.
