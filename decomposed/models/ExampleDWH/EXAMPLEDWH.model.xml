@@ -301,6 +301,7 @@
               <ScalarBusinessRule Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule" />
               <JoinConditions>
                 <JoinCondition ChildAttribute="ORDER_DATE" JoinOperator="=" ParentAttribute="SalesOrder.ORDERDATE" ParentIsLiteralValue="false" />
+                <JoinCondition ChildAttribute="CURRENT_DATE" JoinOperator="=" ParentAttribute="'2023-12-31'" ParentIsLiteralValue="true" />
               </JoinConditions>
             </SourceObject>
           </SourceObjects>
