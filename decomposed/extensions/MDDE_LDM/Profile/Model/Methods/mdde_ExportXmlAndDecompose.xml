@@ -22,7 +22,7 @@
    &#39; Decompose the model.
    obj.ExecuteCustomMethod(cMDDE_EXT_CODE &amp; &quot;.mdde_Decompose&quot;)
    
-   &#39; Export XML of the model.
+   &#39; Export XML of the model (has to be done after decompose, since the FileRemoval strategy will remove the XML export).
    obj.ExecuteCustomMethod(cMDDE_EXT_CODE &amp; &quot;.mdde_ExportXml&quot;)
    
    &#39; Save any changes to the model file after decomposing.
