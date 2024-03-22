@@ -2,6 +2,10 @@
 
 # Frequently asked questions
 
+## How do I attach a PowerDesigner extension to a model?
+
+Instruction on how to attach an extension to an existing PowerDesigner model can be found [here](https://help.sap.com/docs/SAP_POWERDESIGNER/31c48596e34446a68956e0aa7e700a2e/c7e1ddda6e1b101482c096290e45387b.html?locale=en-US).
+
 ## Why don't I see the tab mentioned in the manual?
 
 If you don't see a certain tab on an object, click on the 'More >>' button in the bottom left of the object dialog (the button is '<< Less' if the tab is already visible).
