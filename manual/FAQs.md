@@ -4,7 +4,9 @@
 
 ## How do I attach a PowerDesigner extension to a model?
 
-Instruction on how to attach an extension to an existing PowerDesigner model can be found [here](https://help.sap.com/docs/SAP_POWERDESIGNER/31c48596e34446a68956e0aa7e700a2e/c7e1ddda6e1b101482c096290e45387b.html?locale=en-US).
+To attach an extension to an existing PowerDesigner model, 2 steps need to be taken.
+1. Setup the [XEM] named path in PowerDesigner so the folder where the extension is stored is added to the path. Make sure to leave the existing paths in the [XEM] named path in place. The instructions can be found [here](https://help.sap.com/docs/SAP_POWERDESIGNER/abd3434b4987485c92057ab9392aadbe/c7e182f46e1b1014a4c38d524df99995.html).
+2. Attach an extension to an existing PowerDesigner model. The instructions can be found [here](https://help.sap.com/docs/SAP_POWERDESIGNER/31c48596e34446a68956e0aa7e700a2e/c7e1ddda6e1b101482c096290e45387b.html).
 
 ## Why don't I see the tab mentioned in the manual?
 
