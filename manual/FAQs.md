@@ -14,7 +14,7 @@ When you are in a screen where you can edit a list of data (in a table grid) you
 
 ## How can I import an LDM from a database?
 
-In order to create an LDM from a database, we first need to reverse engineer a PDM from the database and then generate/update the LDM from the PDM.
+In order to create an LDM from a database, we first need to reverse engineer a physical data model (PDM) from the database and then generate/update the logical data model (LDM) from the PDM.
 
 The first step, reverse engineering a PDM from a database, can either be from a live database connection or SQL scripts. For instructions choose one of the links below:
 - [Reverse engineering a PDM from a live database](https://help.sap.com/docs/SAP_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7cbc2a36e1b10149b25d0a193caf56c.html)
