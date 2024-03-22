@@ -12,6 +12,17 @@ When you are in a screen where you can edit a list of data (in a table grid) you
 
 ![Customize Columns and Filters](img/faq_table_grid_add_columns.png)
 
+## How can I import an LDM from a database?
+
+In order to create an LDM from a database, we first need to reverse engineer a PDM from the database and then generate/update the LDM from the PDM.
+
+The first step, reverse engineering a PDM from a database, can either be from a live database connection or SQL scripts. For instructions choose one of the links below:
+- [Reverse engineering a PDM from a live database](https://help.sap.com/docs/SAP_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7cbc2a36e1b10149b25d0a193caf56c.html)
+- [Reverse engineering a PDM from a script](https://help.sap.com/docs/SAP_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7cbaea46e1b1014a962e24470da14db.html)
+
+The second step, generate/update LDM from PDM, can be done with the instructions below:
+- [Generating a LDM from an PDM](https://help.sap.com/docs/SAP_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7c994ac6e1b1014a7cee7aac852831e.html?locale=en-US)
+
 ## I get a confirmation dialog to commit changes, what to do?
 
 Sometimes a dialog screen pops up with the question whether you want to commit, like in the image below:
