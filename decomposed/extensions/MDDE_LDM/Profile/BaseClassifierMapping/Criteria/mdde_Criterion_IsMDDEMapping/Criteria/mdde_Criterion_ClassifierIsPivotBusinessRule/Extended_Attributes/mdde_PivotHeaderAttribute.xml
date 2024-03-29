@@ -1,0 +1,17 @@
+<o:ExtendedAttributeTargetItem Id="B8F3920C-469B-4E13-A5A9-7352238C8F79">
+<a:ObjectID>B8F3920C-469B-4E13-A5A9-7352238C8F79</a:ObjectID>
+<a:Name>mdde_PivotHeaderAttribute</a:Name>
+<a:CreationDate>1711014643</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:Comment>The attribute which contains the values that will become added column headers in the result set. </a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:DestinationClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:DestinationClassID>
+<a:Label>(internal) Pivot Header Attribute (MDDE)</a:Label>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="050CEA34-C49D-4849-A245-F28E98E8E3E2"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="87F8F082-C3AC-419B-B153-B9892BC7F4B8"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

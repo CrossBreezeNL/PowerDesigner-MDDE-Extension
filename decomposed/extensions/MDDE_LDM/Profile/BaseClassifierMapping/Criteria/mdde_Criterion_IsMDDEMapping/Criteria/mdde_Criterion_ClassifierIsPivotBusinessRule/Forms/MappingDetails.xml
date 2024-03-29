@@ -1,0 +1,32 @@
+<o:FormTargetItem Id="BE9D30C4-5DFD-41DF-9120-F29F7B69606D">
+<a:ObjectID>BE9D30C4-5DFD-41DF-9120-F29F7B69606D</a:ObjectID>
+<a:Name>MappingDetails</a:Name>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;TabWindow Name=&quot;Details&quot; &gt;
+      &lt;VerticalLayout Name=&quot;Source objects&quot; &gt;
+         &lt;StandardCollection Collection=&quot;mdde_SourceObjects&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+      &lt;VerticalLayout Name=&quot;Attribute mappings&quot; &gt;
+         &lt;StandardCollection Collection=&quot;StructuralFeatureMaps&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+      &lt;VerticalLayout Name=&quot;Pivot Target Attributes&quot; &gt;
+         &lt;StaticText Name=&quot;Pivot Target Attributes Text&quot; Caption=&quot;In the table below the mapping can be configured for header attributes values to the target attributes of the current entity. Create an entry for every header attribute value, type the value in the &#39;Name&#39; field and select the target attribute in the &#39;Target Attribute (MDDE)&#39; field.&quot; /&gt;
+         &lt;StandardCollection Collection=&quot;mdde_PivotHeaderTargetAttributes&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+      &lt;VerticalLayout Name=&quot;Examples&quot; &gt;
+         &lt;StandardCollection Collection=&quot;mdde_Mapping_Examples&quot; SizeInChars=&quot;10&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
+      &lt;/VerticalLayout&gt;
+   &lt;/TabWindow&gt;
+   &lt;GroupBox Name=&quot;Pivot Config&quot; Caption=&quot;Pivot Configuration&quot; ControlAsLabel=&quot;No&quot; &gt;
+      &lt;HorizontalLayout Name=&quot;HorizontalLayout_PivotAggregateConfig&quot; &gt;
+         &lt;ExtendedAttribute Attribute=&quot;mdde_PivotHeaderAttributeSelector&quot; Caption=&quot;Header Attribute&quot; AttributeID=&quot;{042239EA-6837-4D2E-B54A-D0FC74910F35}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+         &lt;ExtendedAttribute Attribute=&quot;mdde_PivotAggregatedAttributeSelector&quot; Caption=&quot;Aggregated Attribute&quot; AttributeID=&quot;{AA8BC38B-53F0-42EB-B52B-0F4FFFC6C044}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+         &lt;ExtendedAttribute Attribute=&quot;mdde_PivotAggregateFunction&quot; Caption=&quot;Aggregate Function&quot; AttributeID=&quot;{133DCD84-E635-4065-9F31-65C1A390A38A}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+      &lt;/HorizontalLayout&gt;
+   &lt;/GroupBox&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1710869829</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:FormTargetItem>

@@ -1,0 +1,14 @@
+<o:TypedCategoryTargetItem Id="03EF5F0C-1CE1-4C0B-890C-23FCF2A3C056">
+<a:TypePublicName>ExtendedCollectionTargetItem</a:TypePublicName>
+<a:ObjectID>03EF5F0C-1CE1-4C0B-890C-23FCF2A3C056</a:ObjectID>
+<a:Name>Extended Collections</a:Name>
+<a:CreationDate>1711013563</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_PivotAggregatedAttribute.xml" />
+<xi:include href="mdde_PivotHeaderAttribute.xml" />
+<xi:include href="mdde_PivotAggregatedAttribute_SourceObject.xml" />
+<xi:include href="mdde_PivotHeaderAttribute_SourceObject.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

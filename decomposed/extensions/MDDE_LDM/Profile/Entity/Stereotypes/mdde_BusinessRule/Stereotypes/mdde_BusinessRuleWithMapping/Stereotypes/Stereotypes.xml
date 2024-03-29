@@ -8,5 +8,6 @@
 <c:Categories>
 <xi:include href="mdde_CustomBusinessRule/mdde_CustomBusinessRule.xml" />
 <xi:include href="mdde_AggregateBusinessRule/mdde_AggregateBusinessRule.xml" />
+<xi:include href="mdde_PivotBusinessRule/mdde_PivotBusinessRule.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

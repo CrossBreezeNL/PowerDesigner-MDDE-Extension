@@ -1,0 +1,19 @@
+<o:MethodTargetItem Id="0D09E6A9-1417-481C-949B-68F40CAA0E21">
+<a:ObjectID>0D09E6A9-1417-481C-949B-68F40CAA0E21</a:ObjectID>
+<a:Name>mdde_TargetAttributeEdit</a:Name>
+<a:CreationDate>1711663686</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39; Store a reference to the target entity so we can open an object picker on it&#39;s attributes.
+   Dim objTargetEntity : Set objTargetEntity = obj.ParentObject.Classifier
+   
+   &#39; Show an object picker on the target entity attributes.
+   Dim objSelAttribute : Set objSelAttribute = SelectAnyAttribute(objTargetEntity)
+   
+   &#39; If an attribute was chosen, store it.
+   If Not(objSelAttribute Is Nothing) Then
+      obj.SetExtendedAttribute &quot;mdde_TargetAttribute&quot;, objSelAttribute
+   End If
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

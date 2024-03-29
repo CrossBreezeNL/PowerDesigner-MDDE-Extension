@@ -22,6 +22,7 @@
 .if (%SourceFeature.Package%) &amp;&amp; (%SourceFeature.Package.ObjectID% != %SourceFeature.Model.ObjectID%)
  Package=&quot;%SourceFeature.Package.Code%&quot;
 .endif
+ Entity=&quot;%SourceFeature.Entity.Code%&quot;
 .if (%mdde_SourceObject%)
  SourceObjectId=&quot;%mdde_SourceObject.ObjectID%&quot;
 .endif

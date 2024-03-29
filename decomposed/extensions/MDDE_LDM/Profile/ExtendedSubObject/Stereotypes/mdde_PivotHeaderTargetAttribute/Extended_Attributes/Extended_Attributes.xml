@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="22061B2C-1834-411C-ADDE-502781456360">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>22061B2C-1834-411C-ADDE-502781456360</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1711015293</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_TargetAttribute.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

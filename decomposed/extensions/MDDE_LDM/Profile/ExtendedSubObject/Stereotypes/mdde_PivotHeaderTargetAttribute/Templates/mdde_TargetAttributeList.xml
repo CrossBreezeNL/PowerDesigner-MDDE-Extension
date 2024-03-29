@@ -1,0 +1,8 @@
+<o:TemplateTargetItem Id="2FF4A52A-F990-4B43-A2A2-E3D9457D936A">
+<a:ObjectID>2FF4A52A-F990-4B43-A2A2-E3D9457D936A</a:ObjectID>
+<a:Name>mdde_TargetAttributeList</a:Name>
+<a:TemplateTargetItem.Value>.collection(ParentObject.Classifier.Attributes)</a:TemplateTargetItem.Value>
+<a:CreationDate>1711663993</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

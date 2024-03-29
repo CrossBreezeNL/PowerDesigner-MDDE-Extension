@@ -1,12 +1,12 @@
-<o:MethodTargetItem Id="96C373F5-913B-4D7F-A44B-33751986AB3C">
-<a:ObjectID>96C373F5-913B-4D7F-A44B-33751986AB3C</a:ObjectID>
-<a:Name>mdde_SourceAttributeEdit</a:Name>
-<a:CreationDate>1651650809</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
+<o:MethodTargetItem Id="D9FC6F39-06CB-46F8-BBCF-2D812AA7F5C9">
+<a:ObjectID>D9FC6F39-06CB-46F8-BBCF-2D812AA7F5C9</a:ObjectID>
+<a:Name>mdde_PivotAggregatedAttributeEdit</a:Name>
+<a:CreationDate>1711018645</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
    &#39; Show the object picker and fetch the selected source object.
-   Dim selSourceObj : Set selSourceObj = SelectSourceObject(obj.Parent)
+   Dim selSourceObj : Set selSourceObj = SelectSourceObject(obj)
    
    &#39; If a source object was selected, go on.
    If Not(selSourceObj Is Nothing) Then
@@ -17,9 +17,8 @@
       &#39; If a source object was selected update attribute mapping.
       If Not(selAttribute Is Nothing) Then
          &#39; Update the source object.
-         obj.SetExtendedAttribute &quot;mdde_SourceObject&quot;, selSourceObj
-         &#39; Update the source feature.
-         obj.SourceFeature = selAttribute
+         obj.SetExtendedAttribute &quot;mdde_PivotAggregatedAttribute&quot;, selAttribute
+         obj.SetExtendedAttribute &quot;mdde_PivotAggregatedAttribute_SourceObject&quot;, selSourceObj
       End If    
       
    End If
