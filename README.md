@@ -58,13 +58,13 @@ git config --local core.longpaths true
 
 ## PowerDesigner named paths
 
-Create the following named paths in PowerDesigner (via Tools -> General Options... -> Named Paths). In the Path the {Git-Folder} part should be replaced with the folder reference relative to the root of this repository on your machine. For the [XEM] config, only add the path, don't remove existing entries. The MDDE_EXAMPLE_MODELS entry is only for the example models in this repository, it's not needed for using the extension in your own models.
+Create the following named paths in PowerDesigner (via Tools -> General Options... -> Named Paths). In the Path the {Git-Folder} part should be replaced with the folder reference relative to the root of this repository on your machine. For the [XEM] config, only add the path, don't remove existing entries. The MDDE_EXT_MODELS entry is only for the example models in this repository, it's not needed for using the extension in your own models.
 
 | Name                 | Path                              |
 |----------------------|-----------------------------------|
 | PDC_SCRIPT_PATH      | {Git-Folder}\pdc\                 |
 | [XEM]                | {Git-Folder}\composed\extensions\ |
-| MDDE_EXAMPLE_MODELS  | {Git-Folder}\composed\            |
+| MDDE_EXT_MODELS      | {Git-Folder}\composed\            |
 
 ## On branch clone/switch
 
