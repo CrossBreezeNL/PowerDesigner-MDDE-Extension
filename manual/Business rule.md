@@ -156,18 +156,18 @@ On the 'Attributes' tab:
 On the mappings tab of the business rule you can add one or more mappings to the pivot business rule. Each mapping adds a subset to the output of the pivot rule where the pivot operation is applied for each mapping seperately. Mappings are created exactly the same as for normal entities, with one addition where the pivot configuration needs to be specified for each mapped. Follow the steps below to create the mapping.
 
 1. To create a mapping with examples, please follow the standard [Mapping](./Mapping.md) instructions.
-   > Make sure to only add attribute mappings for output attributes which are not part of the pivot operation.
+   > Only create attribute mappings here for attributes which are sources directly from the source objects. The attributes which are the result of the pivot operation are mapped in step 3 (using the 'Pivot Target Attributes' tab).
 
    ![Pivot business rule - Mapping - Attribute mappings](img/pivot_business_rule_mapping_attribute_mappings.png)
 
-   In our example only the 'OrderDate' is in the attribute mapping.
+   In our example only the 'OrderDate' is in the attribute mapping. The other attributes which we modelled on the attributes tab ('NLD', 'DEU' and 'FRA') are the result of the pivot operation, and thus cannot be sourced directly from a source object.
 1. When the mapping is modeled you can specify the header attribute, aggregated attribute and aggregate function in the 'Pivot Configuration' section at the bottom of the mapping deails.
    ![Pivot business rule - Mapping - Pivot configuration](img/pivot_business_rule_mapping_configuration.png)
-   - The *header attribute* is the attribute which contains the values which be translated to new attribute names during the pivot operation.
+   - The *header attribute* is the attribute which contains the values to be translated to new attributes during the pivot operation.
    - The *aggregated attribute* is the attribute which contains the values to be aggregated during the pivot operation.
    - The *aggregate function* is the function to use on the aggregated attribute during the pivot operation.
-1. On the 'Pivot Target Attributes' tab of the mapping the translation between the header attribute values and the target attribute of the pivot entity must be configured. Make sure to list each header attribute value which needs to be transalted during the pivot operation. Store the value in the 'Name' field and select the target attribute in the 'Target Attribute (MDDE)' field.
-   ![Pivot business rule - Mapping - Target attributes](img\pivot_business_rule_mapping_target_attributes.png)
+1. On the 'Pivot Target Attributes' tab of the mapping the translation between the header attribute values and the target attribute of the pivot entity must be configured. Make sure to list each header attribute value which needs to be translated during the pivot operation. Store the value in the 'Name' field and select the target attribute in the 'Target Attribute (MDDE)' field.
+   ![Pivot business rule - Mapping - Target attributes](img/pivot_business_rule_mapping_target_attributes.png)
 
    In the example above, when in the input 'Customer.Country' attribute the value is 'Netherlands' the output of the Count(Customer.Id) operation will be stored in the 'NLD' attribute of the pivot output.
 
