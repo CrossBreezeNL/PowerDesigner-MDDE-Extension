@@ -297,6 +297,49 @@
         </Example>
       </Examples>
     </FilterBusinessRule>
+    <PivotBusinessRule Id="956E4868-71C1-4A26-B399-F9C1EEB70FF4" Code="Pivot_Orders_Per_Country_Per_Date" Name="Pivot Orders Per Country Per Date" Stereotype="mdde_PivotBusinessRule">
+      <Comment>Pivot the sales orders data so we have a column per country with the amount of order per country per date.</Comment>
+      <Attributes>
+        <Attribute Id="C4547423-339C-4795-960F-92D49D53CC55" Code="ORDERDATE" Name="OrderDate" Ordinal="1" PdDataType="DT" PdLength="0" PdPrecision="0" Primary="TRUE" Mandatory="TRUE" IsAttributeMapped="TRUE"></Attribute>
+        <Attribute Id="962CA2F6-437A-44C8-A224-78AFD2F215AB" Code="NLD" Name="NLD" Ordinal="2" PdDataType="I" PdLength="0" PdPrecision="0"></Attribute>
+        <Attribute Id="F4198C70-42BA-4414-8A3A-C9EF5FAC5F15" Code="DEU" Name="DEU" Ordinal="3" PdDataType="I" PdLength="0" PdPrecision="0"></Attribute>
+        <Attribute Id="2C36A04C-DD96-4C5D-956F-C607C3665547" Code="FRA" Name="FRA" Ordinal="4" PdDataType="I" PdLength="0" PdPrecision="0"></Attribute>
+      </Attributes>
+      <Identifiers>
+        <Identifier Id="8C01BE81-13F4-43D3-B5F8-28BA5AA61FF9" Code="IDENTIFIER_PIVOT_ORDERS_PER_COUNTRY_PER_DATE" Name="Identifier Pivot Orders Per Country Per Date" PrimaryIdentifier="TRUE">
+          <Attributes>
+            <Attribute Id="C4547423-339C-4795-960F-92D49D53CC55" Code="ORDERDATE" Name="OrderDate" Ordinal="1" />
+          </Attributes></Identifier>
+      </Identifiers>
+      <Mappings>
+        <Mapping Id="82FC457D-EC73-4204-A67E-E0E1E54279F9" Code="Mapping_Pivot_Orders_Per_Country_Per_Date" Name="Mapping Pivot Orders Per Country Per Date">
+          <SourceObjects>
+            <SourceObject Id="28920BA9-47C9-45CC-A738-6157059ABCCC" Code="SalesOrder" Name="SalesOrder" Stereotype="mdde_SourceObject" JoinedObject="SalesOrder" JoinedObjectModel="EXAMPLESOURCE" JoinType="FROM">
+              <Entity Id="60EC35C7-6DB5-44B9-92BD-A08887CA9005" Code="SalesOrder" Name="SalesOrder" ForeignAttribute="CUSTOMERID" />
+            </SourceObject>
+            <SourceObject Id="AADE6651-C2A7-433D-BD10-B52D14E0F0CA" Code="Customer" Name="Customer" Stereotype="mdde_SourceObject" JoinedObject="Customer" JoinedObjectModel="EXAMPLESOURCE" JoinType="INNER JOIN">
+              <Entity Id="1352D98F-2A9C-42AA-AE82-2E68BA514F02" Code="Customer" Name="Customer" />
+              <JoinConditions>
+                <JoinCondition ChildAttribute="ID" JoinOperator="=" ParentAttribute="SalesOrder.CUSTOMERID" ParentIsLiteralValue="false" />
+              </JoinConditions>
+            </SourceObject>
+          </SourceObjects>
+          <AttributeMappings>
+            <AttributeMapping Id="00CAAC6A-D28B-4102-9E15-46C6B9C24EC0" TargetAttribute="ORDERDATE" SourceAttribute="SalesOrder.ORDERDATE" IsLiteralValue="false">
+              <TargetAttribute Id="C4547423-339C-4795-960F-92D49D53CC55" Code="ORDERDATE" Name="OrderDate" />
+              <SourceAttribute Model="EXAMPLESOURCE" Entity="SalesOrder" SourceObjectId="28920BA9-47C9-45CC-A738-6157059ABCCC" Id="FE17C4F0-5C1E-4E50-A96E-D045E816ACAF" Code="ORDERDATE" Name="OrderDate" />
+            </AttributeMapping>
+          </AttributeMappings>
+          <PivotConfig PivotHeaderAttribute="Customer.COUNTRY" PivotAggregatedAttribute="Customer.ID" PivotAggregateFunction="Count">
+            <HeaderTargetAttributes>
+              <HeaderTargetAttribute HeaderValue="Netherlands" TargetAttribute="NLD" />
+              <HeaderTargetAttribute HeaderValue="Germany" TargetAttribute="DEU" />
+              <HeaderTargetAttribute HeaderValue="France" TargetAttribute="FRA" />
+            </HeaderTargetAttributes>
+          </PivotConfig>
+        </Mapping>
+      </Mappings>
+    </PivotBusinessRule>
     <Entity Id="2CBE61AD-180C-485A-8F14-2F2CEA9C225F" Code="SalesOrder" Name="SalesOrder">
       <Attributes>
         <Attribute Id="3D846A5E-5D6B-4E30-820A-1692473D8211" Code="ORDERID" Name="OrderId" Stereotype="xm_businessKey" Ordinal="1" PdDataType="I" PdLength="0" PdPrecision="0" Primary="TRUE" Mandatory="TRUE" IsAttributeMapped="TRUE"></Attribute>
