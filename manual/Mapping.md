@@ -1,4 +1,4 @@
-> [Modeling](./README.md) > Mapping
+> [Manual](./README.md) > Mapping
 
 # Mapping
 

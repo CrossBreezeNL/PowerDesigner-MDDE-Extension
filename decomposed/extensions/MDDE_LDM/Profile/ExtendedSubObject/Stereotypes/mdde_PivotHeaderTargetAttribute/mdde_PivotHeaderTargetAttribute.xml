@@ -1,0 +1,15 @@
+<o:StereotypeTargetItem Id="97315F5E-9321-4702-BB36-938B91BB72FA">
+<a:ObjectID>97315F5E-9321-4702-BB36-938B91BB72FA</a:ObjectID>
+<a:Name>mdde_PivotHeaderTargetAttribute</a:Name>
+<a:CreationDate>1711014864</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:Comment>This object represents a mapping from a header attribute value on the input of the Pivot and the target attribute of the Pivot Business Rule.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Pivot Header Target Attribute (MDDE)</a:Label>
+<c:Categories>
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Extended_Collections/Extended_Collections.xml" />
+<xi:include href="Methods/Methods.xml" />
+<xi:include href="Templates/Templates.xml" />
+</c:Categories>
+</o:StereotypeTargetItem>

@@ -1,0 +1,14 @@
+<o:ExtendedAttributeTargetItem Id="4E4C63E1-9D58-46B6-BDA2-DD045805442F">
+<a:ObjectID>4E4C63E1-9D58-46B6-BDA2-DD045805442F</a:ObjectID>
+<a:Name>mdde_PivotHeaderAttribute_SourceObject</a:Name>
+<a:CreationDate>1711659289</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_SourceObject</a:DestinationStereotype>
+<a:Label>(internal) Source Object for Pivot Header Attribute (MDDE)</a:Label>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="B2691F8D-9E11-4196-989D-3FCC9E867F68"/>
+</c:ExtendedCollection>
+</o:ExtendedAttributeTargetItem>

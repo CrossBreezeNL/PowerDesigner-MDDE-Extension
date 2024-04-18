@@ -1,6 +1,6 @@
 <o:ArchitectureAreaSymbol Id="ExampleDWH_Symbol_C2A6609F-EE69-45B9-B6D2-C363489ADA42">
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((9900,824), (46200,23100))</a:Rect>
+<a:Rect>((9900,-1650), (46200,23100))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>418425</a:LineColor>
 <a:FillColor>15399421</a:FillColor>
@@ -166,7 +166,7 @@ Entity.Comment 0</a:SymbolContent>
 <o:EntitySymbol Id="o24">
 <a:CreationDate>1690285337</a:CreationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((28050,4125), (42074,8249))</a:Rect>
+<a:Rect>((28875,7425), (42899,11549))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>12615808</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -196,6 +196,41 @@ Entity.Comment 0</a:SymbolContent>
 &lt;/Form&gt;</a:SubSymbolsLayout>
 <c:Object>
 <o:Entity Ref="B3B5F4BC-300B-4354-87E5-B5987AA01744"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o26">
+<a:CreationDate>1712049767</a:CreationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((28875,824), (42075,6600))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>60416</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:SymbolContent>Entity.Stereotype 0
+Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL &lt;No Attr&gt;
+Entity.Identifiers 0 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
+Entity.Comment 0</a:SymbolContent>
+<a:SubSymbolsLayout>&lt;Form&gt;
+ &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+ &lt;Separator Name=&quot;Separator&quot; /&gt;
+ &lt;StandardCollection Name=&quot;Attributes&quot; Collection=&quot;Attributes&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;\r\nDataType No\r\nDomainOrDataType No &amp;quot;Domain or Data type&amp;quot;\r\nDomain No\r\nNullIndicator No Mandatory&quot; Filters=&quot;&amp;quot;All attributes&amp;quot;  LDMPENTALL &amp;quot;&amp;quot;\r\n&amp;quot;Primary attributes&amp;quot;  LDMPENTPK &amp;quot;\&amp;quot;PIDTF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;\r\n&amp;quot;Identifying attributes&amp;quot;  LDMPENTIDTF &amp;quot;\&amp;quot;AIDF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardCollection Name=&quot;Identifiers&quot; Collection=&quot;Identifiers&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+ &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;
+&lt;/Form&gt;</a:SubSymbolsLayout>
+<c:Object>
+<o:Entity Ref="956E4868-71C1-4A26-B399-F9C1EEB70FF4"/>
 </c:Object>
 </o:EntitySymbol>
 </c:SubSymbols>

@@ -1,0 +1,16 @@
+<o:ExtendedAttributeTargetItem Id="A25FC77F-2164-4A9D-9E84-0B49363941BF">
+<a:ObjectID>A25FC77F-2164-4A9D-9E84-0B49363941BF</a:ObjectID>
+<a:Name>mdde_PivotAggregatedAttribute</a:Name>
+<a:CreationDate>1710869087</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:DestinationClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:DestinationClassID>
+<a:Label>(internal) Pivot Aggregated Attribute (MDDE)</a:Label>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="CE48E336-AF79-43A1-9980-1B5A5921FA85"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="D9FC6F39-06CB-46F8-BBCF-2D812AA7F5C9"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

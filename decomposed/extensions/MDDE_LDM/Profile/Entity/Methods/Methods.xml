@@ -8,5 +8,6 @@
 <c:Categories>
 <xi:include href="mdde_Entity_AddMapping.xml" />
 <xi:include href="mdde_Entity_DeleteMapping.xml" />
+<xi:include href="mdde_Entity_CleanEntity.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

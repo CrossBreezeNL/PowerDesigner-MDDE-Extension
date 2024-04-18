@@ -1,0 +1,36 @@
+<o:ExtendedAttributeTargetItem Id="042239EA-6837-4D2E-B54A-D0FC74910F35">
+<a:ObjectID>042239EA-6837-4D2E-B54A-D0FC74910F35</a:ObjectID>
+<a:Name>mdde_PivotHeaderAttributeSelector</a:Name>
+<a:CreationDate>1711659361</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
+<a:Computed>1</a:Computed>
+<a:GetMethodScript>Function %Get%(obj)
+   &#39;Initialize the return value to an empty string.
+   %Get% = &quot;&quot;
+   
+   &#39; Get the source object to select the attribute from.
+   Dim objSourceObject : Set objSourceObject = obj.GetExtendedAttribute(&quot;mdde_PivotHeaderAttribute_SourceObject&quot;)
+   Dim objHeaderAttribute: Set objHeaderAttribute = obj.GetExtendedAttribute(&quot;mdde_PivotHeaderAttribute&quot;)
+   
+   &#39; If the source feature is not empty, the source is a real attribute.
+   If Not(objHeaderAttribute Is Nothing) Then
+      &#39; If the source object is also known, the mapping is correct and we present the source attribute.
+      If Not(objSourceObject Is Nothing) Then
+         %Get% = objSourceObject.DisplayName &amp; &quot;.&quot; &amp; objHeaderAttribute.DisplayName
+      End If
+   End If
+   
+End Function</a:GetMethodScript>
+<a:SetMethodScript>Sub %Set%(obj, value)
+  MsgBox &quot;Manual input is not allowed.&quot; &amp; vbCrLf &amp; vbCrLf _
+    &amp; &quot;Please use the [...] button to select an attribute.&quot; _
+    , vbExclamation _
+    , &quot;Please select an attribute&quot;
+End Sub</a:SetMethodScript>
+<a:Label>Pivot Header Attribute (MDDE)</a:Label>
+<c:EditMethod>
+<o:MethodTargetItem Ref="87F8F082-C3AC-419B-B153-B9892BC7F4B8"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

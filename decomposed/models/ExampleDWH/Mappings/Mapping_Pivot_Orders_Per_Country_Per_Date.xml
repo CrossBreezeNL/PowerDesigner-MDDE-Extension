@@ -1,0 +1,264 @@
+<o:DefaultObjectMapping Id="82FC457D-EC73-4204-A67E-E0E1E54279F9">
+<a:ObjectID>82FC457D-EC73-4204-A67E-E0E1E54279F9</a:ObjectID>
+<a:Name>Mapping Pivot Orders Per Country Per Date</a:Name>
+<a:Code>Mapping_Pivot_Orders_Per_Country_Per_Date</a:Code>
+<a:CreationDate>1712057668</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,76={133DCD84-E635-4065-9F31-65C1A390A38A},mdde_PivotAggregateFunction,5=Count
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="9B8A5695-29F8-43BC-AFD9-F4978DC02387">
+<a:ObjectID>9B8A5695-29F8-43BC-AFD9-F4978DC02387</a:ObjectID>
+<a:Name>mdde_PivotHeaderAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_PivotHeaderAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712057682</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:Shortcut Ref="16CA98D6-6762-4DDE-B801-FED3E0161E48"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="71D77A78-FEEF-4CD8-97F8-2ED9A4DBA512">
+<a:ObjectID>71D77A78-FEEF-4CD8-97F8-2ED9A4DBA512</a:ObjectID>
+<a:Name>mdde_PivotHeaderAttribute_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_PivotHeaderAttribute_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712057682</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="AADE6651-C2A7-433D-BD10-B52D14E0F0CA"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="21F4C8E3-A0C7-4EBF-BE24-7C0291C50F6D">
+<a:ObjectID>21F4C8E3-A0C7-4EBF-BE24-7C0291C50F6D</a:ObjectID>
+<a:Name>mdde_PivotAggregatedAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_PivotAggregatedAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712057685</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:Shortcut Ref="871AB45F-ADD2-454E-AFDD-6D4331ABEEBF"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="9408EB61-E128-4584-AE1A-64FD219ABD02">
+<a:ObjectID>9408EB61-E128-4584-AE1A-64FD219ABD02</a:ObjectID>
+<a:Name>mdde_PivotAggregatedAttribute_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_PivotAggregatedAttribute_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712057685</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="AADE6651-C2A7-433D-BD10-B52D14E0F0CA"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="47C8B401-C37A-4D80-BB1D-2F44F4F7E853">
+<a:ObjectID>47C8B401-C37A-4D80-BB1D-2F44F4F7E853</a:ObjectID>
+<a:Name>Source objects (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObjects</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712057668</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="28920BA9-47C9-45CC-A738-6157059ABCCC">
+<a:ObjectID>28920BA9-47C9-45CC-A738-6157059ABCCC</a:ObjectID>
+<a:Name>SalesOrder</a:Name>
+<a:Code>SalesOrder</a:Code>
+<a:CreationDate>1712058332</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Stereotype>mdde_SourceObject</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,61={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,4=From
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="3C4AEB09-7AE4-436F-912D-3AE4FAE13422">
+<a:ObjectID>3C4AEB09-7AE4-436F-912D-3AE4FAE13422</a:ObjectID>
+<a:Name>mdde_JoinedObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinedObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058332</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:Shortcut Ref="58505E7D-8D8A-43D4-91D8-0C5D0B9022BA"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="AADE6651-C2A7-433D-BD10-B52D14E0F0CA">
+<a:ObjectID>AADE6651-C2A7-433D-BD10-B52D14E0F0CA</a:ObjectID>
+<a:Name>Customer</a:Name>
+<a:Code>Customer</a:Code>
+<a:CreationDate>1712057668</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Stereotype>mdde_SourceObject</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,68={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,10=Inner join
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="CE6D7D48-0901-4017-99DA-4F4BB67F7849">
+<a:ObjectID>CE6D7D48-0901-4017-99DA-4F4BB67F7849</a:ObjectID>
+<a:Name>mdde_JoinedObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinedObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712057668</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:Shortcut Ref="AAB39AC0-8B7A-4424-9F9D-2862C68E941B"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:ExtendedCompositions>
+<o:ExtendedComposition Id="EAA5C43A-329A-4CF5-8D67-02BA7D47F523">
+<a:ObjectID>EAA5C43A-329A-4CF5-8D67-02BA7D47F523</a:ObjectID>
+<a:Name>Join conditions (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_JoinConditions</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058131</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="927622FD-37EB-4F03-B680-14B8D73A00AD">
+<a:ObjectID>927622FD-37EB-4F03-B680-14B8D73A00AD</a:ObjectID>
+<a:Name>Join condition_1</a:Name>
+<a:Code>Join_condition_1</a:Code>
+<a:CreationDate>1712058474</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Stereotype>mdde_JoinCondition</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="F4396F5B-FED0-4347-AB9A-0D6715F2F36B">
+<a:ObjectID>F4396F5B-FED0-4347-AB9A-0D6715F2F36B</a:ObjectID>
+<a:Name>mdde_ChildAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ChildAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058479</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:Shortcut Ref="871AB45F-ADD2-454E-AFDD-6D4331ABEEBF"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="4D2771E9-3D1B-4262-9AF6-1E227AF25072">
+<a:ObjectID>4D2771E9-3D1B-4262-9AF6-1E227AF25072</a:ObjectID>
+<a:Name>mdde_ParentSourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ParentSourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058483</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="28920BA9-47C9-45CC-A738-6157059ABCCC"/>
+</c:Content>
+</o:ExtendedCollection>
+<o:ExtendedCollection Id="D35922DE-1093-40DA-A34A-947CE80D4277">
+<a:ObjectID>D35922DE-1093-40DA-A34A-947CE80D4277</a:ObjectID>
+<a:Name>mdde_ParentAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ParentAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058483</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:Shortcut Ref="F9A54E73-D82B-4CD8-8261-BCEF67B6E3D6"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+<o:ExtendedComposition Id="44D2605B-FED5-4FD0-950D-1689C0620E13">
+<a:ObjectID>44D2605B-FED5-4FD0-950D-1689C0620E13</a:ObjectID>
+<a:Name>Pivot Header Target Attributes (MDDE)</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_PivotHeaderTargetAttributes</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712057663</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:ExtendedComposition.Content>
+<o:ExtendedSubObject Id="A72AB745-2958-43A9-B61C-3123920EA791">
+<a:ObjectID>A72AB745-2958-43A9-B61C-3123920EA791</a:ObjectID>
+<a:Name>Netherlands</a:Name>
+<a:Code>Netherlands</a:Code>
+<a:CreationDate>1712057994</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Stereotype>mdde_PivotHeaderTargetAttribute</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="AEC6735C-04AC-4D6F-A009-F6D5629CC53C">
+<a:ObjectID>AEC6735C-04AC-4D6F-A009-F6D5629CC53C</a:ObjectID>
+<a:Name>mdde_TargetAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_TargetAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058009</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="962CA2F6-437A-44C8-A224-78AFD2F215AB"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="AFD54B96-8F08-4F86-B8BF-DD4D4C2A4B5C">
+<a:ObjectID>AFD54B96-8F08-4F86-B8BF-DD4D4C2A4B5C</a:ObjectID>
+<a:Name>Germany</a:Name>
+<a:Code>Germany</a:Code>
+<a:CreationDate>1712057994</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Stereotype>mdde_PivotHeaderTargetAttribute</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="DEEF08D2-7839-4434-8491-D98FFB409D01">
+<a:ObjectID>DEEF08D2-7839-4434-8491-D98FFB409D01</a:ObjectID>
+<a:Name>mdde_TargetAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_TargetAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058017</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="F4198C70-42BA-4414-8A3A-C9EF5FAC5F15"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+<o:ExtendedSubObject Id="AC6AE014-7626-4C51-A05E-FB086E5A1E2E">
+<a:ObjectID>AC6AE014-7626-4C51-A05E-FB086E5A1E2E</a:ObjectID>
+<a:Name>France</a:Name>
+<a:Code>France</a:Code>
+<a:CreationDate>1712057994</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Stereotype>mdde_PivotHeaderTargetAttribute</a:Stereotype>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="DEF02317-D1DA-441B-B40E-7E9B7E1796E6">
+<a:ObjectID>DEF02317-D1DA-441B-B40E-7E9B7E1796E6</a:ObjectID>
+<a:Name>mdde_TargetAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_TargetAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058025</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="2C36A04C-DD96-4C5D-956F-C607C3665547"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
+</c:ExtendedComposition.Content>
+</o:ExtendedComposition>
+</c:ExtendedCompositions>
+<c:Classifier>
+<o:Entity Ref="956E4868-71C1-4A26-B399-F9C1EEB70FF4"/>
+</c:Classifier>
+<c:SourceClassifiers>
+<o:Shortcut Ref="AAB39AC0-8B7A-4424-9F9D-2862C68E941B"/>
+<o:Shortcut Ref="58505E7D-8D8A-43D4-91D8-0C5D0B9022BA"/>
+</c:SourceClassifiers>
+<c:StructuralFeatureMaps>
+<o:DefaultStructuralFeatureMapping Id="00CAAC6A-D28B-4102-9E15-46C6B9C24EC0">
+<a:ObjectID>00CAAC6A-D28B-4102-9E15-46C6B9C24EC0</a:ObjectID>
+<a:CreationDate>1712058402</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="ACD8E775-DD21-4D1F-A710-2013B747F0EC">
+<a:ObjectID>ACD8E775-DD21-4D1F-A710-2013B747F0EC</a:ObjectID>
+<a:Name>mdde_SourceObject</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_SourceObject</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1712058417</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:ExtendedSubObject Ref="28920BA9-47C9-45CC-A738-6157059ABCCC"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+<c:SourceFeatures>
+<o:Shortcut Ref="6999FF4A-74A2-41B4-A9B3-CCBBB8495F45"/>
+</c:SourceFeatures>
+<c:BaseStructuralFeatureMapping.Feature>
+<o:EntityAttribute Ref="C4547423-339C-4795-960F-92D49D53CC55"/>
+</c:BaseStructuralFeatureMapping.Feature>
+</o:DefaultStructuralFeatureMapping>
+</c:StructuralFeatureMaps>
+<c:DataSource>
+<o:DefaultDataSource Ref="2682665A-5174-4E1B-9085-251EA01809FA"/>
+</c:DataSource>
+</o:DefaultObjectMapping>

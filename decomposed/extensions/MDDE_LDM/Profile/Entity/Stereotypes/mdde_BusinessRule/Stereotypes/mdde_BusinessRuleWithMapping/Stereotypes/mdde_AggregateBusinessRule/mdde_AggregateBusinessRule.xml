@@ -5,6 +5,7 @@
 <a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Aggregate business rule (MDDE)</a:Label>
+<a:PluralLabel>Aggregate business rules (MDDE)</a:PluralLabel>
 <a:EnableTool>1</a:EnableTool>
 <a:ToolIcon>0D0000000800000008000000424D7E000000000000003E000000280000001000
 0000100000000100010000000000400000000000000000000000000000000000
@@ -195,7 +196,5 @@ A6A5A4FFA19F9FFF9B9A9AFF8E8E8EFF777878FF646363FF494949FF86EEFFFF
 </c:ParentSttp>
 <c:Categories>
 <xi:include href="Custom_Symbol.xml" />
-<xi:include href="Forms/Forms.xml" />
-<xi:include href="Templates/Templates.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>

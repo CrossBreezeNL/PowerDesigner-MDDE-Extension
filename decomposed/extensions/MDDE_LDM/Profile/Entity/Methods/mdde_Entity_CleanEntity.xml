@@ -1,0 +1,40 @@
+<o:MethodTargetItem Id="F09A6BFB-76E2-411B-84BD-EA6E582D223D">
+<a:ObjectID>F09A6BFB-76E2-411B-84BD-EA6E582D223D</a:ObjectID>
+<a:Name>mdde_Entity_CleanEntity</a:Name>
+<a:CreationDate>1711699392</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39; The CleanObject function on any Extensible object returns true if anything was cleaned.
+   &#39; False return value doesn&#39;t mean something went wrong, only that nothing was cleaned.
+
+   &#39; Clean the attributes.
+   Dim objAttribute
+   
+   If obj.IsShortcut Then
+      WriteError &quot;Cannot clean a shortcut!&quot;
+      Exit Sub
+   End if
+   
+   For Each objAttribute In obj.Attributes
+      If objAttribute.CleanObject() Then
+         WriteInfo(&quot;Succesfully cleaned &quot; &amp; objAttribute.DisplayName)
+      End If
+   Next
+
+   &#39; Clean the mappings.
+   Dim objMapping
+   For Each objMapping In obj.Mappings
+      If objMapping.CleanObject() Then
+         WriteInfo(&quot;Succesfully cleaned &quot; &amp; objMapping.DisplayName)
+      End If
+   Next
+
+   &#39; Clean the entity.
+   If obj.CleanObject() Then
+      WriteInfo(&quot;Succesfully cleaned &quot; &amp; obj.DisplayName)
+   End If
+   
+   WriteInfo(&quot;Done cleaned &quot; &amp; obj.DisplayName)
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

@@ -1,0 +1,17 @@
+<o:ExtendedAttributeTargetItem Id="1B55E430-6EEB-4F5B-A234-0512517A72D7">
+<a:ObjectID>1B55E430-6EEB-4F5B-A234-0512517A72D7</a:ObjectID>
+<a:Name>mdde_TargetAttribute</a:Name>
+<a:CreationDate>1711016894</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
+<a:ExtendedAttributeTargetItem.ListOfValues>%mdde_TargetAttributeList%</a:ExtendedAttributeTargetItem.ListOfValues>
+<a:DestinationClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:DestinationClassID>
+<a:Label>Target Attribute (MDDE)</a:Label>
+<c:ExtendedCollection>
+<o:ExtendedCollectionTargetItem Ref="3AA8CE35-FDDC-40C3-BCB2-C00453EBF75B"/>
+</c:ExtendedCollection>
+<c:EditMethod>
+<o:MethodTargetItem Ref="0D09E6A9-1417-481C-949B-68F40CAA0E21"/>
+</c:EditMethod>
+</o:ExtendedAttributeTargetItem>

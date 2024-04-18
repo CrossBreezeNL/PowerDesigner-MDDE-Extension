@@ -1,16 +1,21 @@
-> Modeling
+> Manual
 
-# Modeling
+# MDDE Extension manual
 
-For modeling data structures and lineage a PowerDesigner extensions has been develop to add the necessary modeling options for logical data models in PowerDesigner.
+For modeling data structures and lineage a PowerDesigner extensions have been develop to add the necessary modeling options for logical data models in PowerDesigner.
 
 In the following section the modeling options are elaborated per topic.
 
+## Modeling capabilities
 - [Business rule](./Business%20rule.md)
 - [Mapping](./Mapping.md)
 - [Model checks](./Model%20checks.md)
+
+## Integration
 - [PowerDeComposer](./PowerDeComposer.md)
 - [Customize the XML export](./ModelExportExtension.md)
+
+## Other topics
 - [Frequently asked questions](./FAQs.md)
 - [Modeling guidelines](./ModelingWiki.md)
 

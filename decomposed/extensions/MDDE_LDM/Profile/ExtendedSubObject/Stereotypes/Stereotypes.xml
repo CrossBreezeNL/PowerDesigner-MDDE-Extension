@@ -12,5 +12,6 @@
 <xi:include href="mdde_ExampleAttributeValue/mdde_ExampleAttributeValue.xml" />
 <xi:include href="mdde_EntityExampleData/mdde_EntityExampleData.xml" />
 <xi:include href="mdde_ExampleRecord/mdde_ExampleRecord.xml" />
+<xi:include href="mdde_PivotHeaderTargetAttribute/mdde_PivotHeaderTargetAttribute.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

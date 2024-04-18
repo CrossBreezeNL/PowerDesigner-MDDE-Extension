@@ -1,4 +1,4 @@
-> [Modeling](./README.md) > Business rule
+> [Manual](./README.md) > Business rule
 
 # Business rule
 
@@ -98,7 +98,7 @@ When you want to create multiple examples, follow the the above steps for every 
 
 
 ## Aggregate business rule
-The aggregate business rule can be used to aggregate data from one or multiple sources. This rules is modelled like a normal entity, also supporting modelling mappings on the entity. The only differences is that a 'Aggregate' method can be specified on a mapped attribute where the target attribute is not part of the primary identifier (since the data is grouped on the identifier attributes).
+The aggregate business rule can be used to aggregate data from one or multiple sources. This rule is modelled like a normal entity, also supporting modelling mappings on the entity. The only difference is that a 'Aggregate' method can be specified on a mapped attribute where the target attribute is not part of the primary identifier (since the data is grouped on the identifier attributes).
 
 Go through the following steps to model the aggregate business rule:
 
@@ -109,25 +109,70 @@ On the 'General' tab:
 1. Set the Name of the aggregate business rule. This must be a short functional name which makes clear what the purpose of the rule is. The Code of the rule is automatically populated based on the Name you have entered.
 1. Functionally describe the business rule in the 'Comment' field.
 
-![Custom business rule - General](img/aggregate_business_rule_general.png)
+![Aggregate business rule - General](img/aggregate_business_rule_general.png)
 
 ### Attributes
 
 On the 'Attributes' tab:
 1. Add the output of the rule as attributes and set the data types. Also tick the 'Primary Identifier' boxes for the identifying attributes. These identifying attributes are used to group the mapped dataset on.
 
-![Custom business rule - Attributes](img/aggregate_business_rule_attributes.png)
+![Aggregate business rule - Attributes](img/aggregate_business_rule_attributes.png)
 
 ### Mappings
 
 On the mappings tab of the business rule you can add one or more mappings to the aggregate business rule. Each mapping adds a subset to the output of the aggregate rule where the aggregation is applied for each mapping seperately. Mappings are created exactly the same as for normal entities, with one addition where the aggregate function needs to be specified for each mapped non-identifying attribute. Follow the steps below to create the mapping.
 
-1. To create a mapping, please follow the standard [Mapping](./Mapping.md) instructions.
+1. To create a mapping with examples, please follow the standard [Mapping](./Mapping.md) instructions.
 1. When the mapping is modeled you can specify the aggregate method for each mapped attribute in the 'Aggregate (MDDE)' field for each non-identifying attribute on the 'Attribute mappings' tab.
 
    > Make sure the column 'Aggregate (MDDE)' is visible. If not, you can add them using the 'Customize Columns and Filter' toolbar button.
 
 ![Aggregate business rule - Mapping - Attribute mappings](img/aggregate_business_rule_attribute_mappings.png)
+
+
+## Pivot business rule
+The pivot business rule can be used to pivot data from one or multiple sources. This rule is modelled like a normal entity, also supporting modelling mappings on the entity. The only difference is that on a mapping the pivot configuration needs to be modelled.
+
+Go through the following steps to model the pivot business rule:
+
+### General
+
+On the 'General' tab:
+
+1. Set the Name of the pivot business rule. This must be a short functional name which makes clear what the purpose of the rule is. The Code of the rule is automatically populated based on the Name you have entered.
+1. Functionally describe the business rule in the 'Comment' field.
+
+![Pivot business rule - General](img/pivot_business_rule_general.png)
+
+### Attributes
+
+On the 'Attributes' tab:
+1. Add the output of the rule as attributes and set the data types. Also tick the 'Primary Identifier' boxes for the identifying attributes. For the pivot business rule the output attributes are the expected output attributes of the pivot operation.
+
+> It's recommended not to specify output attributes of the pivot operation as primary identifiers, since it is very likely that these columns will not always be populated.
+
+![Custom business rule - Attributes](img/pivot_business_rule_attributes.png)
+
+### Mappings
+
+On the mappings tab of the business rule you can add one or more mappings to the pivot business rule. Each mapping adds a subset to the output of the pivot rule where the pivot operation is applied for each mapping separately. Mappings are created exactly the same as for normal entities, with one additional tab where the pivot configuration needs to be specified for each mapping. Follow the steps below to create the mapping.
+
+1. To create a mapping with examples, please follow the standard [Mapping](./Mapping.md) instructions.
+   > Only create attribute mappings here for attributes which are sources directly from the source objects. The attributes which are the result of the pivot operation are mapped in step 3 (using the 'Pivot Target Attributes' tab).
+
+   ![Pivot business rule - Mapping - Attribute mappings](img/pivot_business_rule_mapping_attribute_mappings.png)
+
+   In our example only the 'OrderDate' is in the attribute mapping. The other attributes which we modelled on the attributes tab ('NLD', 'DEU' and 'FRA') are the result of the pivot operation, and thus cannot be sourced directly from a source object.
+1. When the mapping is modeled you can specify the header attribute, aggregated attribute and aggregate function in the 'Pivot Configuration' section at the bottom of the mapping deails.
+   ![Pivot business rule - Mapping - Pivot configuration](img/pivot_business_rule_mapping_configuration.png)
+   - The *header attribute* is the attribute which contains the values to be translated to new attributes during the pivot operation.
+   - The *aggregated attribute* is the attribute which contains the values to be aggregated during the pivot operation.
+   - The *aggregate function* is the function to use on the aggregated attribute during the pivot operation.
+1. On the 'Pivot Target Attributes' tab of the mapping the translation from the header attribute values to the target attribute of the pivot entity must be configured. Make sure to list each header attribute value which needs to be translated during the pivot operation. Store the value in the 'Name' field and select the target attribute in the 'Target Attribute (MDDE)' field.
+   ![Pivot business rule - Mapping - Target attributes](img/pivot_business_rule_mapping_target_attributes.png)
+
+   In the example above, when in the input 'Customer.Country' attribute the value is 'Netherlands' the output of the Count(Customer.Id) operation will be stored in the 'NLD' attribute of the pivot output.
+
 
 ## Custom business rule
 

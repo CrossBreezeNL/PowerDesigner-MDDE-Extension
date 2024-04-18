@@ -1,0 +1,26 @@
+<o:MethodTargetItem Id="87F8F082-C3AC-419B-B153-B9892BC7F4B8">
+<a:ObjectID>87F8F082-C3AC-419B-B153-B9892BC7F4B8</a:ObjectID>
+<a:Name>mdde_PivotHeaderAttributeEdit</a:Name>
+<a:CreationDate>1711659399</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39; Show the object picker and fetch the selected source object.
+   Dim selSourceObj : Set selSourceObj = SelectSourceObject(obj)
+   
+   &#39; If a source object was selected, go on.
+   If Not(selSourceObj Is Nothing) Then
+
+      &#39; Show the object picker and fetch the selected source attribute.
+      Dim selAttribute : Set selAttribute = SelectSourceObjectAttribute(selSourceObj)
+   
+      &#39; If a source object was selected update attribute mapping.
+      If Not(selAttribute Is Nothing) Then
+         &#39; Update the source object.
+         obj.SetExtendedAttribute &quot;mdde_PivotHeaderAttribute&quot;, selAttribute
+         obj.SetExtendedAttribute &quot;mdde_PivotHeaderAttribute_SourceObject&quot;, selSourceObj
+      End If    
+      
+   End If
+End Sub</a:MethodScript>
+</o:MethodTargetItem>
