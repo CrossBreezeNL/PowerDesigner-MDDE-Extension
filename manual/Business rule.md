@@ -1,4 +1,4 @@
-> [Modeling](./README.md) > Business rule
+> [Manual](./README.md) > Business rule
 
 # Business rule
 

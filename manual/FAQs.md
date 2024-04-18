@@ -1,4 +1,4 @@
-> [Modeling](./README.md) > Frequently asked questions
+> [Manual](./README.md) > Frequently asked questions
 
 # Frequently asked questions
 
