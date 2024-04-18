@@ -1,5 +1,13 @@
 # PowerDesigner-MDDE-Extension
+
 A PowerDesigner LDM extension to support Model Driven Data Engineering using PowerDesigner LDM models.
+
+- [Introduction](#introduction)
+- [Getting started](#getting-started)
+- [Manual](#manual)
+- [Contributing](#contributing)
+
+## Introduction
 
 This extension is to add extra modeling possibilities to LDM models, where standard PowerDesigner functionalities are missing options to add metadata. These extra modeling options are listed below per object type.
 
@@ -15,6 +23,9 @@ This extension is to add extra modeling possibilities to LDM models, where stand
     - Supported sub-stereotypes:
       - Scalar business rule
       - Filter business rule
+      - Aggregate business rule
+      - Pivot business rule
+      - Custom business rule
 - Model checks
   - Extra model checks have been implemented to verify the newly supported objects.
 - PowerDeComposer integration
@@ -24,14 +35,33 @@ This extension is to add extra modeling possibilities to LDM models, where stand
 
 In many cases it is helpful to customize the XML Export to include project-specific extensions. The MDDE Model Export Extension can be used to include this type of project-specific model content in the MDDE XML Export without modifying the MDDE extension.
 
-## Modeling manual
-There is a modeling manual available [here](./manual/) on how to use the PowerDesigner extension.
+## Getting started
 
-## Prerequisites
+These prerequisites are needed when you want to start using the extension(s).
 
-> Prerequisites on your machine:
-> - PowerShell 7 or higher installed. Download it [here](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows#msi)
-> - Java JRE/JDK >= 11.
+- PowerDesigner 16.6 or higher.
+
+In order to get started with the extension(s), perform the following steps:
+
+1. Download the MDDE Extension from the latest [release](https://github.com/CrossBreezeNL/PowerDesigner-MDDE-Extension/releases/).
+1. Attach the extension to an existing or new Logical Data Model in PowerDesigner. Instructions can be found [here](./manual/FAQs.md#how-do-i-attach-a-powerdesigner-extension-to-a-model).
+1. Start using the extension. Consult the modeling [manual](./manual/README.md) for instructions.
+
+
+## Manual
+
+There is a modeling manual available [here](./manual/README.md) on how to use the PowerDesigner extension.
+
+
+## Contributing
+
+Contribution are very welcome. Please follow the instructions below on how to setup your local environment and how to decompose the extensions/models.
+
+### Prerequisites
+These prerequisties are only needed when you want to compose or decompose the extensions and/or example models. This is not neccessary if you only want to use the extension as is, which can be downloaded from any [release](https://github.com/CrossBreezeNL/PowerDesigner-MDDE-Extension/releases/).
+
+- PowerShell 7 or higher. Download it [here](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows#msi)
+- Java JRE/JDK >= 11.
 
 ### PowerShell settings
 
@@ -56,7 +86,7 @@ git config --local core.fileMode false
 git config --local core.longpaths true
 ```
 
-## PowerDesigner named paths
+### PowerDesigner named paths
 
 Create the following named paths in PowerDesigner (via Tools -> General Options... -> Named Paths). In the Path the {Git-Folder} part should be replaced with the folder reference relative to the root of this repository on your machine. For the [XEM] config, only add the path, don't remove existing entries. The MDDE_EXT_MODELS entry is only for the example models in this repository, it's not needed for using the extension in your own models.
 
@@ -66,7 +96,7 @@ Create the following named paths in PowerDesigner (via Tools -> General Options.
 | [XEM]                | {Git-Folder}\composed\extensions\ |
 | MDDE_EXT_MODELS      | {Git-Folder}\composed\            |
 
-## On branch clone/switch
+### On branch clone/switch
 
 > Before switching branch, make sure all your changes in PowerDesigner models are decomposed and commited into Git.
 
