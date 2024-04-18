@@ -10,6 +10,12 @@
 
    &#39; Clean the attributes.
    Dim objAttribute
+   
+   If obj.IsShortcut Then
+      WriteError &quot;Cannot clean a shortcut!&quot;
+      Exit Sub
+   End if
+   
    For Each objAttribute In obj.Attributes
       If objAttribute.CleanObject() Then
          WriteInfo(&quot;Succesfully cleaned &quot; &amp; objAttribute.DisplayName)
