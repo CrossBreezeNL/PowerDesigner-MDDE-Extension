@@ -213,7 +213,7 @@ Function SelectSourceObjectAttribute(objSourceObject)
          Exit Function
       End If
    
-      &#39; Get a reference the real source object
+      &#39; Get a reference to the real source object
       Dim objRealSourceObject : Set objRealSourceObject = GetRealObject(objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;))
       
       &#39; If the selected source object is a scalar business rule, we automatically set the output attribute here without showing the object picker (if there is only one output attribute).
@@ -223,13 +223,13 @@ Function SelectSourceObjectAttribute(objSourceObject)
          For Each objAttribute in objRealSourceObject.Attributes
             &#39; If the current attribute is an output attribute, select this one (for now, if it turns output there where multiple outputs, the variable will be unset later and object picker will be shown).
             If objAttribute.HasStereotype(&quot;mdde_OutputAttribute&quot;) Then
-               Set SelectMappingSourceAttribute = objAttribute
+               Set SelectSourceObjectAttribute = objAttribute
                intOutputAttributeCount = intOutputAttributeCount + 1
             End If
          Next
          
          &#39; Of the output attribute wasn&#39;t found, show an error and stop the method.   
-         If SelectMappingSourceAttribute Is Nothing Then
+         If intOutputAttributeCount = 0 Then
             MsgBox _
                 &quot;The selected scalar business rule doesn&#39;t have an output attribute!&quot; &amp; vbCrLf &amp; vbCrLf _
                   &amp; &quot;Please make sure there is only one attribute in the scalar business rule with the stereotype &#39;Output attribute (MDDE)&#39;.&quot; _
@@ -238,7 +238,7 @@ Function SelectSourceObjectAttribute(objSourceObject)
             Exit Function
          &#39; If there are multiple output attributes, show the object picker.
          ElseIf intOutputAttributeCount &gt; 1 Then
-            Set SelectMappingSourceAttribute = Nothing
+            Set SelectSourceObjectAttribute = Nothing
          End If
       End If   
          
