@@ -5,7 +5,7 @@
 .if %mdde_ParentLiteralValue%
 %mdde_ParentLiteralValue%
 .elsif (%mdde_ParentSourceObject%) &amp;&amp; (%mdde_ParentAttribute%)
-%mdde_ParentSourceObject.Code%.%mdde_ParentAttribute.Code%
+&amp;quot;%mdde_ParentSourceObject.Code%&amp;quot;.&amp;quot;%mdde_ParentAttribute.Code%&amp;quot;
 .endif</a:TemplateTargetItem.Value>
 <a:CreationDate>1654155830</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

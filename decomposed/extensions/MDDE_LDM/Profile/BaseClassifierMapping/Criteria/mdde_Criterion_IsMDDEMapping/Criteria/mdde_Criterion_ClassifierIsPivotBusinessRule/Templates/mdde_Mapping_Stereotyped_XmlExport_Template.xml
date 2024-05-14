@@ -3,10 +3,10 @@
 <a:Name>mdde_Mapping_Stereotyped_XmlExport_Template</a:Name>
 <a:TemplateTargetItem.Value>&lt;PivotConfig
 .if (%mdde_PivotHeaderAttributeSelector%)
- PivotHeaderAttribute=&quot;%mdde_PivotAggregatedAttribute_SourceObject.Code%.%mdde_PivotHeaderAttribute.Code%&quot;
+ PivotHeaderAttribute=&quot;&amp;quot;%mdde_PivotAggregatedAttribute_SourceObject.Code%&amp;quot;.&amp;quot;%mdde_PivotHeaderAttribute.Code%&amp;quot;&quot;
 .endif()
 .if (%mdde_PivotAggregatedAttributeSelector%)
- PivotAggregatedAttribute=&quot;%mdde_PivotAggregatedAttribute_SourceObject.Code%.%mdde_PivotAggregatedAttribute.Code%&quot;
+ PivotAggregatedAttribute=&quot;&amp;quot;%mdde_PivotAggregatedAttribute_SourceObject.Code%&amp;quot;.&amp;quot;%mdde_PivotAggregatedAttribute.Code%&amp;quot;&quot;
 .endif()
 .if (%mdde_PivotAggregateFunction%)
  PivotAggregateFunction=&quot;%.X:mdde_PivotAggregateFunction%&quot;
