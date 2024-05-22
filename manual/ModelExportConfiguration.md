@@ -9,7 +9,7 @@ The XML export of the MDDE extension can be configured to include/exclude certai
 On this tab you can tick the boxes for the metadata which you want to include in the XML export.
 
 > **Note**:
-> If you have multiple models and want to keep these settings in sync, it's adviced to create a model check for you project/organisation (in a project/organisation specific extension) to check and autofix these settings.
+> If you have multiple models and want to keep these settings in sync, it's adviced to create a model check for your project/organisation (in a project/organisation specific extension) to check and autofix these settings.
 
 
 
