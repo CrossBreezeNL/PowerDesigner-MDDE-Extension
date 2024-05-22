@@ -44,9 +44,8 @@ DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}
 ATT DEFTXEM
 ATT OBJEXA</a:History>
 <xi:include href="Model/a_ModelOptionsText.xml" />
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,96={3CB69645-4260-4DBC-A602-0536A9D4E6B3},mdde_Export_Extension_Initialization_Successful,5=false
-
-{0297A8FE-93C4-4612-A9E0-CD7292BFF652},MDDE_LDM_Export_Extension,70={AB204437-943D-4423-B8E6-E31186F8B700},mddex_Model_Export_Content,0=
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,205={A3455CE1-6457-40F7-9C0B-599E355AF4DE},mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression,4=true
+{3CB69645-4260-4DBC-A602-0536A9D4E6B3},mdde_Export_Extension_Initialization_Successful,5=false
 
 </a:ExtendedAttributesText>
 <c:GenerationOrigins>

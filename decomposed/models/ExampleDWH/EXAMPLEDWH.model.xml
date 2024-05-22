@@ -115,18 +115,20 @@
       </Mappings>
     </CustomBusinessRule>
     <ScalarBusinessRule Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule">
-      <Comment>Calculate the age of order</Comment>
+      <Comment>Calculate the age of order
+               
+               Note: the Date_ and Date_Order attribute names are like this to verify the behaviour of the RegExp replacement for the resolved SQL Expression in source objects where expression business rules are used.</Comment>
       <Attributes>
-        <InputAttribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818" Code="ORDER_DATE" Name="Order Date" Stereotype="mdde_InputAttribute" Ordinal="1" PdDataType="DT" PdLength="0" PdPrecision="0"></InputAttribute>
-        <InputAttribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458" Code="CURRENT_DATE" Name="Current Date" Stereotype="mdde_InputAttribute" Ordinal="2" PdDataType="DT" PdLength="0" PdPrecision="0"></InputAttribute>
+        <InputAttribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458" Code="DATE_" Name="Date_" Stereotype="mdde_InputAttribute" Ordinal="1" PdDataType="DT" PdLength="0" PdPrecision="0"></InputAttribute>
+        <InputAttribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818" Code="DATE_ORDER" Name="Date_Order" Stereotype="mdde_InputAttribute" Ordinal="2" PdDataType="DT" PdLength="0" PdPrecision="0"></InputAttribute>
         <OutputAttribute Id="742B3F05-D053-4323-9052-6D641E3BF52F" Code="ORDER_AGE_IN_DAYS" Name="Order Age In Days" Stereotype="mdde_OutputAttribute" Ordinal="3" PdDataType="I" PdLength="0" PdPrecision="0"></OutputAttribute>
       </Attributes>
-      <SqlExpression>DATEDIFF(DAY, @ORDER_DATE, @CURRENT_DATE) AS ORDER_AGE_IN_DAYS</SqlExpression>
+      <SqlExpression>DATEDIFF(DAY, @DATE_ORDER, @DATE_) AS ORDER_AGE_IN_DAYS</SqlExpression>
       <Examples>
         <Example Id="3A317AF5-67EA-441F-B1EE-014074A069BE" Code="Example_Order_Age" Name="Example Order Age" Stereotype="mdde_Example">  
           <ExampleInput>
-            <ExampleInputAttributeValue Attribute="ORDER_DATE" Value="&#39;2023-04-01&#39;" />
-            <ExampleInputAttributeValue Attribute="CURRENT_DATE" Value="&#39;2023&#39;" />
+            <ExampleInputAttributeValue Attribute="DATE_ORDER" Value="&#39;2023-04-01&#39;" />
+            <ExampleInputAttributeValue Attribute="DATE_" Value="&#39;2023&#39;" />
           </ExampleInput>
           <ExpectedScalarOutput>
             <ExpectedOutputAttributeValue Attribute="ORDER_AGE_IN_DAYS" Value="2" />
@@ -190,12 +192,14 @@
                 <JoinCondition ChildAttribute="FIRST_NAME" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;FIRSTNAME&quot;" ParentIsLiteralValue="false" />
                 <JoinCondition ChildAttribute="LAST_NAME" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;LASTNAME&quot;" ParentIsLiteralValue="false" />
               </JoinConditions>
+              <SqlExpression>Customer.FirstName || &#39; &#39; || Customer.LastName AS FULL_NAME</SqlExpression>
             </SourceObject>
             <SourceObject Id="6DB43891-22B1-48D1-8BDC-27987FA6D4D0" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_SourceObject" JoinedObject="Filter_FromNL" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
               <FilterBusinessRule Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule" />
               <JoinConditions>
                 <JoinCondition ChildAttribute="COUNTRY_CODE" JoinOperator="=" ParentAttribute="&quot;Country&quot;.&quot;CODE&quot;" ParentIsLiteralValue="false" />
               </JoinConditions>
+              <SqlExpression>Country.Code = &#39;NL&#39;</SqlExpression>
             </SourceObject>
           </SourceObjects>
           <AttributeMappings>
@@ -268,7 +272,7 @@
         <InputAttribute Id="01123E25-DC0F-4396-A487-1328F1D44134" Code="LAST_NAME" Name="Last Name" Stereotype="mdde_InputAttribute" Ordinal="2" PdDataType="VA55" PdLength="55" PdPrecision="0"></InputAttribute>
         <OutputAttribute Id="C979CF59-70EA-4B3F-B2FE-2919D9BABF85" Code="FULL_NAME" Name="Full Name" Stereotype="mdde_OutputAttribute" Ordinal="3" PdDataType="VA110" PdLength="110" PdPrecision="0"></OutputAttribute>
       </Attributes>
-      <SqlExpression>FIRST_NAME || &#39; &#39; || LAST_NAME AS FULL_NAME</SqlExpression>
+      <SqlExpression>@FIRST_NAME || &#39; &#39; || @LAST_NAME AS FULL_NAME</SqlExpression>
       <Examples>
         <Example Id="6AB09887-AA4D-4A92-BD85-34A26EF2DAEF" Code="Example_full_name" Name="Example full name" Stereotype="mdde_Example">  
           <ExampleInput>
@@ -364,9 +368,10 @@
             <SourceObject Id="0F2EE1DB-8E68-424B-BBF5-0342A9EFE195" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_SourceObject" JoinedObject="Calculate_Order_Age" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
               <ScalarBusinessRule Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule" />
               <JoinConditions>
-                <JoinCondition ChildAttribute="ORDER_DATE" JoinOperator="=" ParentAttribute="&quot;SalesOrder&quot;.&quot;ORDERDATE&quot;" ParentIsLiteralValue="false" />
-                <JoinCondition ChildAttribute="CURRENT_DATE" JoinOperator="=" ParentAttribute="'2023-12-31'" ParentIsLiteralValue="true" />
+                <JoinCondition ChildAttribute="DATE_" JoinOperator="=" ParentAttribute="'2023-12-31'" ParentIsLiteralValue="true" />
+                <JoinCondition ChildAttribute="DATE_ORDER" JoinOperator="=" ParentAttribute="&quot;SalesOrder&quot;.&quot;ORDERDATE&quot;" ParentIsLiteralValue="false" />
               </JoinConditions>
+              <SqlExpression>DATEDIFF(DAY, SalesOrder.OrderDate, &#39;2023-12-31&#39;) AS ORDER_AGE_IN_DAYS</SqlExpression>
             </SourceObject>
           </SourceObjects>
           <AttributeMappings>
