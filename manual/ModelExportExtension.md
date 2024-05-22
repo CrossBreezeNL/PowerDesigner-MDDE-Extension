@@ -1,4 +1,4 @@
-> [Manual](./README.md) > Customize the XML export
+> [Manual](./README.md) > Extend the XML export
 
 # MDDE Model Export Extension
 

@@ -1,0 +1,14 @@
+<o:CriterionTargetItem Id="B563A315-904B-4685-8EB7-AB8793FE4DDC">
+<a:ObjectID>B563A315-904B-4685-8EB7-AB8793FE4DDC</a:ObjectID>
+<a:Name>Export SourceObject ExpressionBusinessRule SqlExpression</a:Name>
+<a:CriterionTargetItem.Value>%Model.mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression%</a:CriterionTargetItem.Value>
+<a:CreationDate>1716368643</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:ParentCriterion>
+<o:CriterionTargetItem Ref="1940325C-3F83-4AB2-ABD7-BAA59E936DB1"/>
+</c:ParentCriterion>
+<c:Categories>
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

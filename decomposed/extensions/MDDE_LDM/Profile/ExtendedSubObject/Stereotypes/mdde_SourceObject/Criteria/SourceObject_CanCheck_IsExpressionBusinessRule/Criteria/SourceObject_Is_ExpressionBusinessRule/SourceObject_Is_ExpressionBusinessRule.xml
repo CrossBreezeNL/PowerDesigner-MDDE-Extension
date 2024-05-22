@@ -10,5 +10,6 @@
 </c:ParentCriterion>
 <c:Categories>
 <xi:include href="Custom_Checks/Custom_Checks.xml" />
+<xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:CriterionTargetItem>
