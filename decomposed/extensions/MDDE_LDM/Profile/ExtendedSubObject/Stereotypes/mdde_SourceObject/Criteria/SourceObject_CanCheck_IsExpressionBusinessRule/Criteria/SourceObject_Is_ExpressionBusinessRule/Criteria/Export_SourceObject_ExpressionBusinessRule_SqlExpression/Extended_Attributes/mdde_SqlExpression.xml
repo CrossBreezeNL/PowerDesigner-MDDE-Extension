@@ -8,7 +8,6 @@
 <a:Computed>1</a:Computed>
 <a:ComputedAccessType>RO</a:ComputedAccessType>
 <a:GetMethodScript>Function %Get%(obj)
-   WriteDebug(&quot;mdde_SqlExpression Get method executed&quot;)
    &#39; Get the expression business rule object.
    Dim objExpressionBusinessRule : Set objExpressionBusinessRule = GetRealObject(obj.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;))
    
