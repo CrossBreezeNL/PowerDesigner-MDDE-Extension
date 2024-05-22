@@ -13,7 +13,8 @@ In the following section the modeling options are elaborated per topic.
 
 ## Integration
 - [PowerDeComposer](./PowerDeComposer.md)
-- [Customize the XML export](./ModelExportExtension.md)
+- [Configure the XML export](./ModelExportConfiguration.md)
+- [Extend the XML export](./ModelExportExtension.md)
 
 ## Other topics
 - [Frequently asked questions](./FAQs.md)
