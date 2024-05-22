@@ -11,5 +11,6 @@
 <xi:include href="Templates/Templates.xml" />
 <xi:include href="Generated_Files/Generated_Files.xml" />
 <xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Forms/Forms.xml" />
 </c:Categories>
 </o:MetaClassTargetItem>
