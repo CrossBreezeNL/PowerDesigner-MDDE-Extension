@@ -184,6 +184,7 @@
               <AggregateBusinessRule Id="B3B5F4BC-300B-4354-87E5-B5987AA01744" Code="Aggregate_Total_Sales_Per_Customer" Name="Aggregate Total Sales Per Customer" Stereotype="mdde_AggregateBusinessRule" />
               <JoinConditions>
                 <JoinCondition ChildAttribute="CUSTOMERID" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;ID&quot;" ParentIsLiteralValue="false" />
+                <JoinCondition ChildAttribute="TOTALREVENUE" JoinOperator="&gt;" ParentAttribute="0" ParentIsLiteralValue="true" />
               </JoinConditions>
             </SourceObject>
             <SourceObject Id="BFE7CB1D-E29F-43F8-80A1-8A39D28FDA94" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_SourceObject" JoinedObject="Derive_Customer_FullName" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">

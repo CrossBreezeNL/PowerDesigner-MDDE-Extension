@@ -181,6 +181,30 @@
 </o:ExtendedCollection>
 </c:ExtendedCollections>
 </o:ExtendedSubObject>
+<o:ExtendedSubObject Id="85CFC2BE-B656-47C5-841E-AE65AE3D4D71">
+<a:ObjectID>85CFC2BE-B656-47C5-841E-AE65AE3D4D71</a:ObjectID>
+<a:Name>Join condition_2</a:Name>
+<a:Code>Join_condition_2</a:Code>
+<a:CreationDate>1716562359</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Stereotype>mdde_JoinCondition</a:Stereotype>
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,130={2AA569D6-094E-4EA8-BBFF-713196E44D4E},mdde_JoinOperator,1=&gt;
+{E9D50277-1E36-464C-9842-5008646943AB},mdde_ParentLiteralValue,1=0
+
+</a:ExtendedAttributesText>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="20E4AF57-4F49-4E82-A5F4-D634372917E4">
+<a:ObjectID>20E4AF57-4F49-4E82-A5F4-D634372917E4</a:ObjectID>
+<a:Name>mdde_ChildAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ChildAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1716562363</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="FA20EE0F-7D0C-4315-A5CC-CAFF7A32C2FC"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
 </c:ExtendedComposition.Content>
 </o:ExtendedComposition>
 </c:ExtendedCompositions>
