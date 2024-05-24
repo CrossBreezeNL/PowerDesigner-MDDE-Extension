@@ -6,7 +6,7 @@
  ChildAttribute=&quot;%mdde_JoinCondition_ChildAttribute_XmlExport_Template%&quot;
 .endif
 .if (%mdde_JoinOperator%)
- JoinOperator=&quot;%mdde_JoinOperator%&quot;
+ JoinOperator=&quot;%.X:mdde_JoinOperator%&quot;
 .endif
 .if (%mdde_JoinCondition_ParentAttribute_XmlExport_Template%)
  ParentAttribute=&quot;%mdde_JoinCondition_ParentAttribute_XmlExport_Template%&quot; ParentIsLiteralValue=&quot;%mdde_ParentIsLiteralValue%&quot;
