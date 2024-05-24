@@ -1,0 +1,29 @@
+<o:ExtendedAttributeTargetItem Id="AC1FE8D6-AC72-4421-9229-DADA2CCE8F04">
+<a:ObjectID>AC1FE8D6-AC72-4421-9229-DADA2CCE8F04</a:ObjectID>
+<a:Name>mdde_ParentAttributeFQCode</a:Name>
+<a:CreationDate>1716562498</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
+<a:Computed>1</a:Computed>
+<a:ComputedAccessType>RO</a:ComputedAccessType>
+<a:GetMethodScript>Function %Get%(obj)
+   &#39;Initialize the return value to an empty string.
+   %Get% = &quot;&quot;
+   
+   &#39; Get the parent source object and attribute.
+   Dim objParentSourceObject : Set objParentSourceObject = obj.GetExtendedAttribute(&quot;mdde_ParentSourceObject&quot;)
+   Dim objParentAttribute : Set objParentAttribute = obj.GetExtendedAttribute(&quot;mdde_ParentAttribute&quot;)
+   Dim strParentLiteralValue : strParentLiteralValue = obj.GetExtendedAttribute(&quot;mdde_ParentLiteralValue&quot;)
+   
+   &#39; If a literal value is specified, use that.
+   If Len(strParentLiteralValue) &gt; 0 Then
+      %Get% = strParentLiteralValue
+   &#39; If the child attribute is not empty, return the FQ name.
+   ElseIf Not(objParentSourceObject Is Nothing) And Not(objParentAttribute Is Nothing) Then
+      %Get% = objParentSourceObject.Code &amp; &quot;.&quot; &amp; objParentAttribute.Code
+   End If
+
+End Function</a:GetMethodScript>
+<a:Label>Fully qualified parent attribute code</a:Label>
+</o:ExtendedAttributeTargetItem>

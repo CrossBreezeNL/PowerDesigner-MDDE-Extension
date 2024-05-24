@@ -26,7 +26,7 @@
       &#39; Get a reference to the child attribute of the join condition (which is the input attribute / parameter).
       Dim objChildAttribute : Set objChildAttribute = objJoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;)
       &#39; Get the fully qualified parent attribute, so alias + attribute.
-      Dim strFQParentAttribute : strFQParentAttribute = objJoinCondition.GetExtendedAttribute(&quot;mdde_ParentAttributeSelector&quot;)
+      Dim strFQParentAttribute : strFQParentAttribute = objJoinCondition.GetExtendedAttribute(&quot;mdde_ParentAttributeFQCode&quot;)
       &#39; Replace the parameter in the SQL Expression with the fully qualified parent attribute (or literal).
       &#39; NOTE: the \b at the end make sure it&#39;s only replacing whole words (so if two parameters have overlapping names, like @A and @AA, it still works correctly).
       oRegExp.Pattern = &quot;@&quot; &amp; objChildAttribute.Code &amp; &quot;\b&quot;
