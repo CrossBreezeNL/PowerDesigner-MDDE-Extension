@@ -193,14 +193,14 @@
                 <JoinCondition ChildAttribute="FIRST_NAME" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;FIRSTNAME&quot;" ParentIsLiteralValue="false" />
                 <JoinCondition ChildAttribute="LAST_NAME" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;LASTNAME&quot;" ParentIsLiteralValue="false" />
               </JoinConditions>
-              <SqlExpression>Customer.FirstName || &#39; &#39; || Customer.LastName AS FULL_NAME</SqlExpression>
+              <SqlExpression>Customer.FIRSTNAME || &#39; &#39; || Customer.LASTNAME AS FULL_NAME</SqlExpression>
             </SourceObject>
             <SourceObject Id="6DB43891-22B1-48D1-8BDC-27987FA6D4D0" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_SourceObject" JoinedObject="Filter_FromNL" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
               <FilterBusinessRule Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule" />
               <JoinConditions>
                 <JoinCondition ChildAttribute="COUNTRY_CODE" JoinOperator="=" ParentAttribute="&quot;Country&quot;.&quot;CODE&quot;" ParentIsLiteralValue="false" />
               </JoinConditions>
-              <SqlExpression>Country.Code = &#39;NL&#39;</SqlExpression>
+              <SqlExpression>Country.CODE = &#39;NL&#39;</SqlExpression>
             </SourceObject>
           </SourceObjects>
           <AttributeMappings>
@@ -372,7 +372,7 @@
                 <JoinCondition ChildAttribute="DATE_" JoinOperator="=" ParentAttribute="'2023-12-31'" ParentIsLiteralValue="true" />
                 <JoinCondition ChildAttribute="DATE_ORDER" JoinOperator="=" ParentAttribute="&quot;SalesOrder&quot;.&quot;ORDERDATE&quot;" ParentIsLiteralValue="false" />
               </JoinConditions>
-              <SqlExpression>DATEDIFF(DAY, SalesOrder.OrderDate, &#39;2023-12-31&#39;) AS ORDER_AGE_IN_DAYS</SqlExpression>
+              <SqlExpression>DATEDIFF(DAY, SalesOrder.ORDERDATE, &#39;2023-12-31&#39;) AS ORDER_AGE_IN_DAYS</SqlExpression>
             </SourceObject>
           </SourceObjects>
           <AttributeMappings>
