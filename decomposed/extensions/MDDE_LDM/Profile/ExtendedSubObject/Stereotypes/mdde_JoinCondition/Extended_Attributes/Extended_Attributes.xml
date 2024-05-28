@@ -14,6 +14,5 @@
 <xi:include href="mdde_ParentAttributeSelector.xml" />
 <xi:include href="mdde_ParentLiteralValue.xml" />
 <xi:include href="mdde_ParentIsLiteralValue.xml" />
-<xi:include href="mdde_ParentAttributeFQCode.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

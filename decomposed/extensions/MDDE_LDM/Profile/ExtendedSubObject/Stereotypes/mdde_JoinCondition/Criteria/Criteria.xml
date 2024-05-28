@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="896544FE-B9C0-47B5-A4EC-3C33B120B4CB">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>896544FE-B9C0-47B5-A4EC-3C33B120B4CB</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1716882613</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Export_SourceObject_ExpressionBusinessRule_SqlExpression/Export_SourceObject_ExpressionBusinessRule_SqlExpression.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>
