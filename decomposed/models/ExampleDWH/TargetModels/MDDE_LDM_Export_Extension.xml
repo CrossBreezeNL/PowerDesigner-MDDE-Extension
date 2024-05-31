@@ -4,7 +4,7 @@
 <a:Code>MDDE_LDM_Export_Extension</a:Code>
 <a:CreationDate>1708095266</a:CreationDate>
 <a:Creator>WillemOtten</a:Creator>
-<a:TargetModelURL>file:///%[XEM]%/MDDE_LDM_Export_Extension.xem</a:TargetModelURL>
+<a:TargetModelURL>file:///%[PRJ_ROOT_DIR]%/extensions/MDDE_LDM_Export_Extension.xem</a:TargetModelURL>
 <a:TargetModelID>0297A8FE-93C4-4612-A9E0-CD7292BFF652</a:TargetModelID>
 <a:TargetModelClassID>186C8AC3-D3DC-11D3-881C-00508B03C75C</a:TargetModelClassID>
 <c:SessionShortcuts>
