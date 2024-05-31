@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="64C754F1-C12B-4723-B2FB-227C7CFDC0DE">
+<a:TypePublicName>MenuTargetItem</a:TypePublicName>
+<a:ObjectID>64C754F1-C12B-4723-B2FB-227C7CFDC0DE</a:ObjectID>
+<a:Name>Menus</a:Name>
+<a:CreationDate>1717165137</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_FileExtension_Menu.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

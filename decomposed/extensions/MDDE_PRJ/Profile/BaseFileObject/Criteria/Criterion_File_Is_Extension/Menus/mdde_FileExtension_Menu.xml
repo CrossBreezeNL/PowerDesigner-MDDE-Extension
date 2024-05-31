@@ -1,0 +1,11 @@
+<o:MenuTargetItem Id="4DA6FC19-A524-4A91-80A8-A7B86DF222DD">
+<a:ObjectID>4DA6FC19-A524-4A91-80A8-A7B86DF222DD</a:ObjectID>
+<a:Name>mdde_FileExtension_Menu</a:Name>
+<a:MenuTargetItem.Value>&lt;Menu&gt;
+   &lt;Command Name=&quot;mdde_Decompose&quot; Caption=&quot;Decompose (MDDE)&quot; /&gt;
+&lt;/Menu&gt;
+</a:MenuTargetItem.Value>
+<a:CreationDate>1717163911</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:MenuTargetItem>
