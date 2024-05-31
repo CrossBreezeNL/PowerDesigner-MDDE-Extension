@@ -1,4 +1,4 @@
-> [Modeling](./README.md) > Model checks
+> [Manual](./README.md) > Model checks
 
 # Modeling guidelines
 

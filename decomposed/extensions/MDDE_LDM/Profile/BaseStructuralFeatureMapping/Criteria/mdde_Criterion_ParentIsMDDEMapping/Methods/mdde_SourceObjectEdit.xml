@@ -5,19 +5,8 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
-   &#39; Create a new selection object.
-   Dim objSelection : Set objSelection = obj.Model.CreateSelection
-   
-   &#39; Add all source objects of the current mapping to the selection.
-   Dim objSource
-   For Each objSource In obj.Parent.GetExtendedCollection(&quot;mdde_SourceObjects&quot;)
-      objSelection.Objects.add objSource
-   Next
-   
    &#39; Show the object picker and fetch the selected source object.
-   Dim selObj : Set selObj = objSelection.ShowObjectPicker
-   &#39; Cleanup the selection object.
-   objSelection.Delete()
+   Dim selObj : Set selObj = SelectSourceObject(obj.Parent)
    
    &#39; If a source object was selection update the joiner.
    If Not(selObj Is Nothing) Then

@@ -26,6 +26,9 @@
   .foreach_item(mdde_JoinConditions,&quot;  &lt;JoinConditions&gt;\n&quot;,&quot;\n  &lt;/JoinConditions&gt;\n&quot;)
     %mdde_JoinCondition_XmlExport_Template%
   .next(\n)
+  .if (%mdde_SqlExpression?%)
+  &lt;SqlExpression&gt;%.X:mdde_SqlExpression%&lt;/SqlExpression&gt;
+  .endif(\n)
 &lt;/SourceObject&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651741182</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

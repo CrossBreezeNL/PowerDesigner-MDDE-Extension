@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="11B6F5A1-D243-445F-AD2F-841F3E4AB8D9">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>11B6F5A1-D243-445F-AD2F-841F3E4AB8D9</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1700599454</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Expression_business_rule_join_conditions_are_in_same_order_as_attributes_(MDDE).xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

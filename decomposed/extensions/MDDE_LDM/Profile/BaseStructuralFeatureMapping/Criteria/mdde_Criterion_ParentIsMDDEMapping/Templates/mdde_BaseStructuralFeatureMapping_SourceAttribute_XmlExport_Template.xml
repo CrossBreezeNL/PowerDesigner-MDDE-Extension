@@ -6,7 +6,7 @@
   .if (%SourceFeature%)
     .comment If the source object is also known, the mapping is correct and we present the source attribute.
     .if (%mdde_SourceObject%)
-%mdde_SourceObject.Code%.%SourceFeature.Code%
+&quot;%mdde_SourceObject.Code%&quot;.&quot;%SourceFeature.Code%&quot;
     .endif
   .comment If the mapped to value is a numeric value or encapsulated in single quotes, it&#39;s a static value.
   .elsif (%mdde_IsLiteralValue%)

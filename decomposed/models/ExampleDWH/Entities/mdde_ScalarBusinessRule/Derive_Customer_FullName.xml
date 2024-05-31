@@ -6,7 +6,7 @@
 <a:Creator>MooOthman</a:Creator>
 <a:Comment>Merge the firstname and lastname of a customer.</a:Comment>
 <a:Stereotype>mdde_ScalarBusinessRule</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,106={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,43=FIRST_NAME || &#39; &#39; || LAST_NAME AS FULL_NAME
+<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,108={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,45=@FIRST_NAME || &#39; &#39; || @LAST_NAME AS FULL_NAME
 
 </a:ExtendedAttributesText>
 <c:ExtendedCompositions>

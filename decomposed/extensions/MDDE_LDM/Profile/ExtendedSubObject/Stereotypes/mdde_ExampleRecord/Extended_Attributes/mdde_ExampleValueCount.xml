@@ -1,0 +1,14 @@
+<o:ExtendedAttributeTargetItem Id="D1FC66EF-286B-4E30-AD2D-E857ECC49A95">
+<a:ObjectID>D1FC66EF-286B-4E30-AD2D-E857ECC49A95</a:ObjectID>
+<a:Name>mdde_ExampleValueCount</a:Name>
+<a:CreationDate>1705399732</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.DataType>10</a:ExtendedAttributeTargetItem.DataType>
+<a:Computed>1</a:Computed>
+<a:ComputedAccessType>RO</a:ComputedAccessType>
+<a:GetMethodScript>Function %Get%(obj)
+   %Get% = obj.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;).Count
+End Function</a:GetMethodScript>
+<a:Label>Example value count (MDDE)</a:Label>
+</o:ExtendedAttributeTargetItem>

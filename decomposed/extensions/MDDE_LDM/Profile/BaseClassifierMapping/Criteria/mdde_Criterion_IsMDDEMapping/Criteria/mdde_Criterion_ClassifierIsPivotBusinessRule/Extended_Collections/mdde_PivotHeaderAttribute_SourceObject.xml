@@ -1,0 +1,13 @@
+<o:ExtendedCollectionTargetItem Id="B2691F8D-9E11-4196-989D-3FCC9E867F68">
+<a:ObjectID>B2691F8D-9E11-4196-989D-3FCC9E867F68</a:ObjectID>
+<a:Name>mdde_PivotHeaderAttribute_SourceObject</a:Name>
+<a:CreationDate>1711659289</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_SourceObject</a:DestinationStereotype>
+<a:DefaultColumnFilter>NAME 80 CODE 80</a:DefaultColumnFilter>
+<c:DestinationStereotypeObject>
+<o:StereotypeTargetItem Ref="BA25C1AC-4885-46E1-B0D1-7C737D2CECCE"/>
+</c:DestinationStereotypeObject>
+</o:ExtendedCollectionTargetItem>

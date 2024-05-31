@@ -4,7 +4,9 @@
 <a:Code>Calculate_Order_Age</a:Code>
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
-<a:Comment>Calculate the age of order</a:Comment>
+<a:Comment>Calculate the age of order
+
+Note: the Date_ and Date_Order attribute names are like this to verify the behaviour of the RegExp replacement for the resolved SQL Expression in source objects where expression business rules are used.</a:Comment>
 <a:History>ORG {41D1B62B-F9B1-4135-AF2D-439AFB15F96E}
 DAT 1680508903
 ATT STRN
@@ -18,7 +20,7 @@ ATT LABL</a:History>
 </a:Description>
 <a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,66={29131F46-42B1-4DD8-9C6B-A955E3CD33F4},xm_stereotype,9=calculate
 
-{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,125={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,62=DATEDIFF(DAY, @ORDER_DATE, @CURRENT_DATE) AS ORDER_AGE_IN_DAYS
+{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,118={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,55=DATEDIFF(DAY, @DATE_ORDER, @DATE_) AS ORDER_AGE_IN_DAYS
 
 </a:ExtendedAttributesText>
 <c:ExtendedCompositions>
@@ -130,10 +132,19 @@ ATT LABL</a:History>
 </o:ExtendedComposition>
 </c:ExtendedCompositions>
 <c:Attributes>
+<o:EntityAttribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458">
+<a:ObjectID>7B8233A5-359F-4372-9693-5AA2D4A3E458</a:ObjectID>
+<a:Name>Date_</a:Name>
+<a:Code>DATE_</a:Code>
+<a:CreationDate>1680525535</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_InputAttribute</a:Stereotype>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
 <o:EntityAttribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818">
 <a:ObjectID>53DE74F2-F420-48D6-A2A7-176CC3150818</a:ObjectID>
-<a:Name>Order Date</a:Name>
-<a:Code>ORDER_DATE</a:Code>
+<a:Name>Date_Order</a:Name>
+<a:Code>DATE_ORDER</a:Code>
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:History>ORG {87D08732-95C1-401E-9FFF-33AB904D3D4B}
@@ -141,15 +152,6 @@ DAT 1680508903
 ATT NAME
 ATT CODE
 ATT STRN</a:History>
-<a:Stereotype>mdde_InputAttribute</a:Stereotype>
-<a:DataType>DT</a:DataType>
-</o:EntityAttribute>
-<o:EntityAttribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458">
-<a:ObjectID>7B8233A5-359F-4372-9693-5AA2D4A3E458</a:ObjectID>
-<a:Name>Current Date</a:Name>
-<a:Code>CURRENT_DATE</a:Code>
-<a:CreationDate>1680525535</a:CreationDate>
-<a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_InputAttribute</a:Stereotype>
 <a:DataType>DT</a:DataType>
 </o:EntityAttribute>

@@ -1,0 +1,127 @@
+<o:CustomCheckTargetItem Id="B032A37D-0C10-44F1-A7BD-C7BCDE0F4A61">
+<a:ObjectID>B032A37D-0C10-44F1-A7BD-C7BCDE0F4A61</a:ObjectID>
+<a:Name>Expression business rule join conditions are in same order as attributes (MDDE)</a:Name>
+<a:CreationDate>1700599454</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:Comment>For expression business rules the join conditions need to be in the same order as the attributes of the business rule. Meaning when applying a business rule the order of the business rule attribute in the join conditions must be the same order as the list of attributes of the business rule itself.
+
+If this isn&#39;t the case this model check will report an error, and with autofix the order can be automatically updated.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that all join conditions for expression business rules are in the correct order.</a:HelpMessage>
+<a:OutputMessage>The following source objects have the join conditions in the wrong order:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = CheckOrFixJoinConditions(obj, False)
+End Function
+
+Function CheckOrFixJoinConditions(objSourceObject, boolAutoFix)
+   &#39; Initialize result with True, only return False if an error is found.
+   CheckOrFixJoinConditions = True
+   
+   &#39; Get the join conditions.
+   Dim colJoinConditions : Set colJoinConditions = objSourceObject.GetExtendedCollection(&quot;mdde_JoinConditions&quot;)
+   
+   &#39; If there are no join conditions, stop checking since this is handled in another model check.
+   If colJoinConditions Is Nothing Then
+      Exit Function
+   End If
+   If colJoinConditions.Count = 0 Then
+      Exit Function
+   End If
+
+   &#39; Get the source object.
+   &#39; We don&#39;t need to check whether the source object is defined, this is handled by the criteria.
+   Dim objExpressionBusinessRule : Set objExpressionBusinessRule = objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;)
+   &#39; The last attribute index, so it&#39;s the count minus 1 (since it&#39;s zero based index).
+   Dim intLastBRAttributeIndex : intLastBRAttributeIndex = objExpressionBusinessRule.Attributes.Count - 1
+   Dim intCurrentAttributeIndex
+   &#39; Keep track of the number of input attributes we processed.
+   &#39; We start with -1, so in the first cycle it jumps to 0 and that&#39;s the index of the join condition this attribute should be referencing.
+   Dim intCurrentInputAttributeIndex : intCurrentInputAttributeIndex = -1
+   For intCurrentAttributeIndex = 0 To intLastBRAttributeIndex
+      Dim objBRAttribute : Set objBRAttribute = objExpressionBusinessRule.Attributes.Item(intCurrentAttributeIndex)
+      
+      &#39; If the business rule attribute is an input attribute, continu checking...
+      If objBRAttribute.HasStereotype(&quot;mdde_InputAttribute&quot;) Then
+         &#39; We found an input attribute, so lets increase the input attribute index.
+         intCurrentInputAttributeIndex = intCurrentInputAttributeIndex + 1
+         
+         &#39; If the index is higher then the number of join conditions, report an error (count minus 1 because zero based indexes).
+         If intCurrentInputAttributeIndex &gt; colJoinConditions.Count - 1  Then
+            CheckOrFixJoinConditions = False
+            WriteError(&quot;There are less join conditions specified then input attributes exist on the business rule!&quot;)
+            Exit Function
+         End If
+         
+         &#39; Get the join condition on the input attribute index.
+         Dim objCurrentJoinCondition : Set objCurrentJoinCondition = colJoinConditions.Item(intCurrentInputAttributeIndex)
+         
+         &#39; Get a reference on the join condition child attribute.
+         Dim objJoinConditionChildAttribute : Set objJoinConditionChildAttribute = objCurrentJoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;)
+         
+         &#39; Check whether the child attribute is set.
+         If objJoinConditionChildAttribute Is Nothing Then
+            CheckOrFixJoinConditions = False
+            WriteError(&quot;The join conditions on position &quot; &amp; (intCurrentInputAttributeIndex + 1) &amp; &quot; has no child attribute specified!&quot;)
+            Exit Function
+         End If
+         
+         &#39; Check the join condition references to the input attribute, if not report an error.
+         If objJoinConditionChildAttribute.ObjectID &lt;&gt; objBRAttribute.ObjectID Then
+            If boolAutoFix = True Then
+               &#39; We are asked to autofix the issue, so let&#39;s see whether we can find another join condition which is the right one for the current position.
+               &#39; We start at the next position.
+               Dim intOtherJoinConditionIndex
+               Dim boolMovedSomething : boolMovedSomething = False
+               For intOtherJoinConditionIndex = intCurrentInputAttributeIndex + 1 To colJoinConditions.Count - 1
+                  &#39; Get a reference on the other join condition.
+                  Dim objOtherJoinCondition : Set objOtherJoinCondition = colJoinConditions.Item(intOtherJoinConditionIndex)
+                  &#39; Get a reference on the join condition child attribute.
+                  Dim objOtherJoinConditionChildAttribute : Set objOtherJoinConditionChildAttribute = objOtherJoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;)
+                  &#39; Check whether the other join condition child attribute is the one we are looking for.
+                  If Not(objOtherJoinConditionChildAttribute Is Nothing) Then
+                     If objOtherJoinConditionChildAttribute.ObjectID = objBRAttribute.ObjectID Then
+                        &#39; We have found the right join condition for the current position, so let&#39;s move it.
+                        colJoinConditions.Move intCurrentInputAttributeIndex, intOtherJoinConditionIndex
+                        boolMovedSomething = True
+                        &#39; Exit the For loop.
+                        Exit For
+                     End If
+                  End If
+               Next
+               
+               If boolMovedSomething = False Then
+                  CheckOrFixJoinConditions = False
+                  WriteError(&quot;Couldn&#39;t find join condition for business rule attribute &#39;&quot; &amp; objBRAttribute.DisplayName &amp; &quot;&#39;!&quot;)
+                  Exit Function
+               End If
+               
+            Else
+               CheckOrFixJoinConditions = False
+               WriteError(&quot;The join condition on the &quot; &amp; (intCurrentInputAttributeIndex + 1) &amp; &quot; position is not referencing the child attribute &#39;&quot; &amp; objBRAttribute.DisplayName &amp; &quot;&#39;!&quot;)
+               Exit Function            
+            End If
+         End If
+      End If
+   Next
+   
+   &#39; At this point we handled all business rule input attributes.
+   &#39; If there are still unchecked join conditions, there are to many, so we report an error.
+   If (colJoinConditions.Count - 1) &gt; intCurrentInputAttributeIndex Then
+         CheckOrFixJoinConditions = False
+         WriteError(&quot;There are more join conditions specified (&quot; &amp; colJoinConditions.Count &amp; &quot;) then input attributes exist on the business rule (&quot; &amp; (intCurrentInputAttributeIndex + 1) &amp; &quot;)!&quot;)
+         Exit Function
+   End If
+End Function
+</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   Dim boolAutoCorrected : boolAutoCorrected = CheckOrFixJoinConditions(obj, True)
+   If boolAutoCorrected Then
+      outmsg = &quot;The join conditions where successfully re-arranged to the right order.&quot;
+   Else
+      outmsg = &quot;An error occured while re-arragning the join conditions!&quot;
+   End If
+   
+   %Fix% = boolAutoCorrected
+End Function</a:AutoFixScrpt>
+<a:EnableAutoFix>1</a:EnableAutoFix>
+</o:CustomCheckTargetItem>

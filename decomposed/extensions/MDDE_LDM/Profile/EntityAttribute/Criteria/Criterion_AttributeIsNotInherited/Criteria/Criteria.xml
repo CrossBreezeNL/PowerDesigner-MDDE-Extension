@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="CBD9CFEE-94F6-43A0-B454-EC5792C9A3C9">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>CBD9CFEE-94F6-43A0-B454-EC5792C9A3C9</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1699373856</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Criterion_AttributeIsMapped/Criterion_AttributeIsMapped.xml" />
+<xi:include href="Criterion_AttributeIsNotMapped/Criterion_AttributeIsNotMapped.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

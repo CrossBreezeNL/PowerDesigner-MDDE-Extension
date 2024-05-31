@@ -1,0 +1,14 @@
+<o:ExtendedCompositionTargetItem Id="DC9035CB-4DB4-4BE8-A2A5-9A55C811B0D8">
+<a:ObjectID>DC9035CB-4DB4-4BE8-A2A5-9A55C811B0D8</a:ObjectID>
+<a:Name>mdde_PivotHeaderTargetAttributes</a:Name>
+<a:CreationDate>1711017278</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
+<a:DestinationStereotype>mdde_PivotHeaderTargetAttribute</a:DestinationStereotype>
+<a:Label>Pivot Header Target Attributes (MDDE)</a:Label>
+<a:DefaultColumnFilter>NAME 80 CODE -1 PRNT -1 DISPNAME -1 OBJTYPE -1 CDAT -1 CUSR -1 MDAT -1 MUSR -1 OMDAT -1 CLSSNAME -1 FLDR -1 SDSC -1 OLOC -1 GPRT -1 PCKG -1 NOTETEXT -1 DESCTEXT -1 KYWD -1 LABL -1 GENEORGN -1 STRN -1 MODL -1 CPNM -1 MSTP -1 DESC -1 NOTE -1 HASNOTE -1 RPLA -1 &quot;_MDDE_LDM.mdde_TargetAttribute.{1B55E430-6EEB-4F5B-A234-0512517A72D7}&quot; 80</a:DefaultColumnFilter>
+<c:DestinationStereotypeObject>
+<o:StereotypeTargetItem Ref="97315F5E-9321-4702-BB36-938B91BB72FA"/>
+</c:DestinationStereotypeObject>
+</o:ExtendedCompositionTargetItem>

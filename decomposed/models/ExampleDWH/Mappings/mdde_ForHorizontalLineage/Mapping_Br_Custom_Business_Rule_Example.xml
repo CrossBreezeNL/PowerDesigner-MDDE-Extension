@@ -118,13 +118,6 @@ WHERE CustomerOrderRowNumber = 1
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleRecord</a:Stereotype>
 <c:ExtendedCompositions>
-<o:ExtendedComposition Id="1ED1616E-7888-404C-9287-6BC9FE07D3D8">
-<a:ObjectID>1ED1616E-7888-404C-9287-6BC9FE07D3D8</a:ObjectID>
-<a:Name>Example attribute values (MDDE)</a:Name>
-<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
-<a:CreationDate>1683208654</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
-</o:ExtendedComposition>
 <o:ExtendedComposition Id="FE0CDEF3-F95B-43F4-BCFB-7F7DC8A8716A">
 <a:ObjectID>FE0CDEF3-F95B-43F4-BCFB-7F7DC8A8716A</a:ObjectID>
 <a:Name>Example attribute values (MDDE)</a:Name>
@@ -290,13 +283,6 @@ WHERE CustomerOrderRowNumber = 1
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleRecord</a:Stereotype>
 <c:ExtendedCompositions>
-<o:ExtendedComposition Id="F27C71C6-CA41-420D-96E4-E3AC75C26D5F">
-<a:ObjectID>F27C71C6-CA41-420D-96E4-E3AC75C26D5F</a:ObjectID>
-<a:Name>Example attribute values (MDDE)</a:Name>
-<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
-<a:CreationDate>1683208556</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
-</o:ExtendedComposition>
 <o:ExtendedComposition Id="BD6587FF-A6FC-47B3-809F-ED0267892461">
 <a:ObjectID>BD6587FF-A6FC-47B3-809F-ED0267892461</a:ObjectID>
 <a:Name>Example attribute values (MDDE)</a:Name>
@@ -431,13 +417,6 @@ WHERE CustomerOrderRowNumber = 1
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleRecord</a:Stereotype>
 <c:ExtendedCompositions>
-<o:ExtendedComposition Id="BE0BBD80-679F-42DD-A996-75D84AED865E">
-<a:ObjectID>BE0BBD80-679F-42DD-A996-75D84AED865E</a:ObjectID>
-<a:Name>Example attribute values (MDDE)</a:Name>
-<a:ExtendedBaseCollection.CollectionName>mdde_ExampleAttributeValues</a:ExtendedBaseCollection.CollectionName>
-<a:CreationDate>1683208607</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
-</o:ExtendedComposition>
 <o:ExtendedComposition Id="83BE5AE2-C2CA-42FD-B90C-495A0BBC9DC5">
 <a:ObjectID>83BE5AE2-C2CA-42FD-B90C-495A0BBC9DC5</a:ObjectID>
 <a:Name>Example attribute values (MDDE)</a:Name>

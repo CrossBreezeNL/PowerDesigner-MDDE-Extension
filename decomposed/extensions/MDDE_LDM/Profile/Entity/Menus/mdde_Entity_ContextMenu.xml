@@ -1,0 +1,13 @@
+<o:MenuTargetItem Id="6D5E3390-8A85-4091-9D0F-5B8AD767C170">
+<a:ObjectID>6D5E3390-8A85-4091-9D0F-5B8AD767C170</a:ObjectID>
+<a:Name>mdde_Entity_ContextMenu</a:Name>
+<a:MenuTargetItem.Value>&lt;Menu&gt;
+   &lt;Popup Caption=&quot;Debugging (MDDE)&quot; &gt;
+      &lt;Command Name=&quot;mdde_Entity_CleanEntity&quot; Caption=&quot;Cleanup extended metadata (MDDE)&quot; /&gt;
+   &lt;/Popup&gt;
+&lt;/Menu&gt;
+</a:MenuTargetItem.Value>
+<a:CreationDate>1711699366</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:MenuTargetItem>

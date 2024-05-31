@@ -1,0 +1,58 @@
+<o:MethodTargetItem Id="B3C83083-F981-4187-BC97-B9ABB057A46C">
+<a:ObjectID>B3C83083-F981-4187-BC97-B9ABB057A46C</a:ObjectID>
+<a:Name>mdde_UninitializeExportExtension</a:Name>
+<a:CreationDate>1711025135</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(objModel)
+   WriteDebug &quot;MDDE LDM Export extension un-initializion started&quot;
+   
+   &#39; Clear the export attribute on the model.
+   objModel.setExtendedAttribute &quot;mddex_Model_Export_Template&quot;, Empty
+   objModel.setExtendedAttribute cMDDE_NAMEDOBJECT_ATTRIBUTE_EXPORT_ATTRIBUTE_NAME, Empty
+   
+   &#39; Clear export attributes in packages recursively, where the model is the root package
+   clearExportAttributesInPackage objModel, objModel
+   
+   &#39; Set initialization indicator to False
+   objModel.SetExtendedAttribute cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, False
+   
+   WriteDebug &quot;MDDE LDM Export extension un-initializion finished&quot;
+End Sub
+
+Sub clearExportAttributesInPackage(objModel, objPackage)
+   &#39;Loop over Entities   
+   clearExportAttributesOnCollection objModel, objPackage.Entities, &quot;mddex_Entity_Export_Content&quot;, True
+   
+   &#39;Loop over Entity Attributes
+   clearExportAttributesOnCollection objModel, objPackage.EntityAttributes, &quot;mddex_EntityAttribute_Export_Content&quot;, True
+      
+   &#39;Loop over Mappings
+   clearExportAttributesOnCollection objModel, objPackage.Mappings, &quot;mddex_BaseClassifierMapping_Export_Content&quot;, True
+      
+   &#39;Loop over AttributeMappings
+   clearExportAttributesOnCollection objModel, objPackage.ModelEntityAttributeMappings, &quot;mddex_BaseStructuralFeatureMapping_Export_Content&quot;, False
+   
+   &#39; Loop over packages and clear them recursively.
+   Dim childPackage
+   For Each childPackage in objPackage.Packages
+      clearExportAttributesInPackage objModel, childPackage
+   Next
+End Sub
+
+Sub clearExportAttributesOnCollection(objModel, objCollection, extendedAttributeName, applyNamedObjectTemplate)
+   &#39; Loop over collection and set the extended attribute based on the export template
+   Dim obj
+   For Each obj in objCollection
+      &#39; Skip shortcuts.
+      If Not obj.IsShortCut Then
+         obj.SetExtendedAttribute extendedAttributeName, Empty
+         &#39; If specified, also clear the namedobject variable.
+         If applyNamedObjectTemplate Then
+            obj.SetExtendedAttribute cMDDE_NAMEDOBJECT_ATTRIBUTE_EXPORT_ATTRIBUTE_NAME, Empty
+         End If
+      End If   
+   Next
+End Sub
+</a:MethodScript>
+</o:MethodTargetItem>

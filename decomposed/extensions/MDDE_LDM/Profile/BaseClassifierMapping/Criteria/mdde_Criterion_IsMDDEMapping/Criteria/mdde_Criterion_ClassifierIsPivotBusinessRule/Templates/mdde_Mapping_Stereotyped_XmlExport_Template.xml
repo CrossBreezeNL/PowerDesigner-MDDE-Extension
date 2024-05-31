@@ -1,0 +1,23 @@
+<o:TemplateTargetItem Id="9A82349B-865E-41C4-8886-9C58089B7F28">
+<a:ObjectID>9A82349B-865E-41C4-8886-9C58089B7F28</a:ObjectID>
+<a:Name>mdde_Mapping_Stereotyped_XmlExport_Template</a:Name>
+<a:TemplateTargetItem.Value>&lt;PivotConfig
+.if (%mdde_PivotHeaderAttributeSelector%)
+ PivotHeaderAttribute=&quot;&amp;quot;%mdde_PivotAggregatedAttribute_SourceObject.Code%&amp;quot;.&amp;quot;%mdde_PivotHeaderAttribute.Code%&amp;quot;&quot;
+.endif()
+.if (%mdde_PivotAggregatedAttributeSelector%)
+ PivotAggregatedAttribute=&quot;&amp;quot;%mdde_PivotAggregatedAttribute_SourceObject.Code%&amp;quot;.&amp;quot;%mdde_PivotAggregatedAttribute.Code%&amp;quot;&quot;
+.endif()
+.if (%mdde_PivotAggregateFunction%)
+ PivotAggregateFunction=&quot;%.X:mdde_PivotAggregateFunction%&quot;
+.endif()
+&gt;
+.foreach_item(mdde_PivotHeaderTargetAttributes,\n  &lt;HeaderTargetAttributes&gt;\n,\n  &lt;/HeaderTargetAttributes&gt;)
+    %mdde_PivotHeaderTargetAttribute_XmlExport_Template%
+.next(\n)
+
+&lt;/PivotConfig&gt;</a:TemplateTargetItem.Value>
+<a:CreationDate>1711665057</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

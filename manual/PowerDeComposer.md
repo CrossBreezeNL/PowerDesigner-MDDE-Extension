@@ -1,4 +1,4 @@
-> [Modeling](./README.md) > PowerDeComposer
+> [Manual](./README.md) > PowerDeComposer
 
 # PowerDeComposer
 

@@ -1,0 +1,11 @@
+<o:CriterionTargetItem Id="B3DFB1EF-527F-47A4-A73A-E42686D05059">
+<a:ObjectID>B3DFB1EF-527F-47A4-A73A-E42686D05059</a:ObjectID>
+<a:Name>Criterion_AttributeIsNotInherited</a:Name>
+<a:CriterionTargetItem.Value>%InheritedBy.Count% == 0</a:CriterionTargetItem.Value>
+<a:CreationDate>1699372201</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Criteria/Criteria.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

@@ -1,0 +1,23 @@
+<o:ExtendedAttributeTargetItem Id="20A707A0-DBC3-445C-846A-68390FE90F11">
+<a:ObjectID>20A707A0-DBC3-445C-846A-68390FE90F11</a:ObjectID>
+<a:Name>mdde_IsAttributeMapped</a:Name>
+<a:CreationDate>1699373940</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Computed>1</a:Computed>
+<a:ComputedAccessType>RO</a:ComputedAccessType>
+<a:GetMethodScript>Function %Get%(obj)
+   Dim objInheritedByAttribute
+   For Each objInheritedByAttribute In obj.InheritedBy
+      Dim inheritedAttributeMapped : inheritedAttributeMapped = objInheritedByAttribute.GetExtendedAttribute(&quot;mdde_IsAttributeMapped&quot;)
+      &#39; If we find an inherited attribute which is mapped, then return true. Otherwise continue.
+      If (inheritedAttributeMapped = True) Then
+         %Get% = True
+         Exit Function
+      End If
+   Next
+
+   &#39; If we reach this point, there is no inherited attribute mapped, so we return False.
+   %Get% = False
+End Function</a:GetMethodScript>
+</o:ExtendedAttributeTargetItem>

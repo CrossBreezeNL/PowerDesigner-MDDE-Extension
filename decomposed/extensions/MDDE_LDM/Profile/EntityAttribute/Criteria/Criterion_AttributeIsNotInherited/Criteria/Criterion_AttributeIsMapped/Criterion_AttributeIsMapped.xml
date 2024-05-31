@@ -1,0 +1,14 @@
+<o:CriterionTargetItem Id="AB3A132C-E7EA-4852-85C1-2CCFCADDA758">
+<a:ObjectID>AB3A132C-E7EA-4852-85C1-2CCFCADDA758</a:ObjectID>
+<a:Name>Criterion_AttributeIsMapped</a:Name>
+<a:CriterionTargetItem.Value>%Mappings.Count% &gt; 0</a:CriterionTargetItem.Value>
+<a:CreationDate>1699373856</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:ParentCriterion>
+<o:CriterionTargetItem Ref="B3DFB1EF-527F-47A4-A73A-E42686D05059"/>
+</c:ParentCriterion>
+<c:Categories>
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

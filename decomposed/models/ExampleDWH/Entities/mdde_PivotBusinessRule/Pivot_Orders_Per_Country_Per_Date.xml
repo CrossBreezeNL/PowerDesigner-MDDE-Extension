@@ -1,0 +1,62 @@
+<o:Entity Id="956E4868-71C1-4A26-B399-F9C1EEB70FF4">
+<a:ObjectID>956E4868-71C1-4A26-B399-F9C1EEB70FF4</a:ObjectID>
+<a:Name>Pivot Orders Per Country Per Date</a:Name>
+<a:Code>Pivot_Orders_Per_Country_Per_Date</a:Code>
+<a:CreationDate>1712049767</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Comment>Pivot the sales orders data so we have a column per country with the amount of order per country per date.</a:Comment>
+<a:Stereotype>mdde_PivotBusinessRule</a:Stereotype>
+<c:DefaultMapping>
+<o:DefaultObjectMapping Ref="82FC457D-EC73-4204-A67E-E0E1E54279F9"/>
+</c:DefaultMapping>
+<c:Identifiers>
+<o:Identifier Id="8C01BE81-13F4-43D3-B5F8-28BA5AA61FF9">
+<a:ObjectID>8C01BE81-13F4-43D3-B5F8-28BA5AA61FF9</a:ObjectID>
+<a:Name>Identifier Pivot Orders Per Country Per Date</a:Name>
+<a:Code>IDENTIFIER_PIVOT_ORDERS_PER_COUNTRY_PER_DATE</a:Code>
+<a:CreationDate>1712058526</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="C4547423-339C-4795-960F-92D49D53CC55"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="8C01BE81-13F4-43D3-B5F8-28BA5AA61FF9"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="C4547423-339C-4795-960F-92D49D53CC55">
+<a:ObjectID>C4547423-339C-4795-960F-92D49D53CC55</a:ObjectID>
+<a:Name>OrderDate</a:Name>
+<a:Code>ORDERDATE</a:Code>
+<a:CreationDate>1712058375</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:DataType>DT</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="962CA2F6-437A-44C8-A224-78AFD2F215AB">
+<a:ObjectID>962CA2F6-437A-44C8-A224-78AFD2F215AB</a:ObjectID>
+<a:Name>NLD</a:Name>
+<a:Code>NLD</a:Code>
+<a:CreationDate>1712057817</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="F4198C70-42BA-4414-8A3A-C9EF5FAC5F15">
+<a:ObjectID>F4198C70-42BA-4414-8A3A-C9EF5FAC5F15</a:ObjectID>
+<a:Name>DEU</a:Name>
+<a:Code>DEU</a:Code>
+<a:CreationDate>1712057822</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="2C36A04C-DD96-4C5D-956F-C607C3665547">
+<a:ObjectID>2C36A04C-DD96-4C5D-956F-C607C3665547</a:ObjectID>
+<a:Name>FRA</a:Name>
+<a:Code>FRA</a:Code>
+<a:CreationDate>1712057827</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>

@@ -1,7 +1,7 @@
 <o:TemplateTargetItem Id="1D4B8202-E351-446D-BAD7-FEC0DEA4300A">
 <a:ObjectID>1D4B8202-E351-446D-BAD7-FEC0DEA4300A</a:ObjectID>
 <a:Name>mdde_ExampleRecord_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>.foreach_item(mdde_ExampleAttributeValues,\n&lt;ExampleRecord&gt;\n,\n&lt;/ExampleRecord&gt;)
+<a:TemplateTargetItem.Value>.foreach_item(mdde_ExampleAttributeValues,\n&lt;ExampleRecord&gt;\n,\n&lt;/ExampleRecord&gt;,,%Item1.Code% &gt; %Item2.Code%)
   %mdde_ExampleAttributeValue_XmlExport_Template%
 .next(\n)</a:TemplateTargetItem.Value>
 <a:CreationDate>1666188164</a:CreationDate>

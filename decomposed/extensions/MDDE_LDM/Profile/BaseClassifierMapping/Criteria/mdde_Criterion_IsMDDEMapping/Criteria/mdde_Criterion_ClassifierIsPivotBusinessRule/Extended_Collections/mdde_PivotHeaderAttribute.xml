@@ -1,0 +1,9 @@
+<o:ExtendedCollectionTargetItem Id="050CEA34-C49D-4849-A245-F28E98E8E3E2">
+<a:ObjectID>050CEA34-C49D-4849-A245-F28E98E8E3E2</a:ObjectID>
+<a:Name>mdde_PivotHeaderAttribute</a:Name>
+<a:CreationDate>1711014643</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:DestinationClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:DestinationClassID>
+<a:DefaultColumnFilter>NAME 80 CODE 80 DTTP 60 MAND 20</a:DefaultColumnFilter>
+</o:ExtendedCollectionTargetItem>

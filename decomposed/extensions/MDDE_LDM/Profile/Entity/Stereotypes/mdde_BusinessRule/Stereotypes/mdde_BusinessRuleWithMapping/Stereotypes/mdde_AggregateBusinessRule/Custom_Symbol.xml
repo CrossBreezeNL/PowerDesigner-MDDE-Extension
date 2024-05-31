@@ -23,6 +23,8 @@ Entity.Attributes 1 -5 &quot;All attributes&quot; LDMPENTALL &lt;No Attr&gt;
 Entity.Identifiers 0 0 &quot;&quot; &quot;&quot; Stereotype IdentifierIndicator
 Entity.Comment 0
 Entity.IconPicture 0
+Entity.TextStyle 0
+Entity.IconPicture 0
 Entity.TextStyle 0</a:SymbolContent>
 <a:SubSymbolsLayout>&lt;Form&gt;
  &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;

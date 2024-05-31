@@ -20,6 +20,7 @@
 <xi:include href="RelationshipJoin/RelationshipJoin.xml" />
 <xi:include href="Inheritance/Inheritance.xml" />
 <xi:include href="InheritanceLink/InheritanceLink.xml" />
+<xi:include href="ShortcutBase/ShortcutBase.xml" />
 <xi:include href="BaseDataSource/BaseDataSource.xml" />
 </c:Categories>
 </o:ProfileTargetItem>

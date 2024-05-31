@@ -1,0 +1,11 @@
+<o:CriterionTargetItem Id="A175F5B7-FE9F-4312-9248-A8D851CFC307">
+<a:ObjectID>A175F5B7-FE9F-4312-9248-A8D851CFC307</a:ObjectID>
+<a:Name>Export SourceObject ExpressionBusinessRule SqlExpression</a:Name>
+<a:CriterionTargetItem.Value>%Model.mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression%</a:CriterionTargetItem.Value>
+<a:CreationDate>1716882613</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+</c:Categories>
+</o:CriterionTargetItem>
