@@ -6,9 +6,11 @@
 <a:Creator>MooOthman</a:Creator>
 <a:History>ORG {F64B5547-8E05-465A-AD15-AFD8C2732AE4}
 DAT 1680508855</a:History>
-<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,74={41F8D165-86A1-4DE2-A7DC-6EFD4541DAB2},xm_stereotype,16=ExampleTableType
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="2B8936D7-8688-4269-BCA9-64EBA2E802A8" Name="XBreeze_Model_Extension">
+<ExtendedAttribute ObjectID="41F8D165-86A1-4DE2-A7DC-6EFD4541DAB2" Name="xm_stereotype">ExampleTableType</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:Identifiers>
 <o:Identifier Id="98A9FBE8-8157-4CA6-B66B-E73E846E985B">
 <a:ObjectID>98A9FBE8-8157-4CA6-B66B-E73E846E985B</a:ObjectID>

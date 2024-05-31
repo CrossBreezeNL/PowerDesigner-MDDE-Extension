@@ -5,7 +5,9 @@
 <a:CreationDate>1683207735</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ForHorizontalLineage</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,593={31DE0464-1B4B-44ED-8B5A-ED6BD8CE1E1F},mdde_Mapping_SqlExpression,521=WITH SalesOrdersCTE AS (
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="31DE0464-1B4B-44ED-8B5A-ED6BD8CE1E1F" Name="mdde_Mapping_SqlExpression">WITH SalesOrdersCTE AS (
   SELECT
     Id,
     OrderDate,
@@ -24,9 +26,9 @@ SELECT
     TotalAmount
 FROM SalesOrdersCTE
 -- Only the last SalesOrder record per customer.
-WHERE CustomerOrderRowNumber = 1
-
-</a:ExtendedAttributesText>
+WHERE CustomerOrderRowNumber = 1</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCompositions>
 <o:ExtendedComposition Id="13A1FF52-80F5-42F0-B96E-9B7848CC8329">
 <a:ObjectID>13A1FF52-80F5-42F0-B96E-9B7848CC8329</a:ObjectID>
@@ -42,9 +44,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683207735</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,61={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,4=From
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">From</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="F9AA091B-0914-4F1B-BCDD-7ABC17FB917E">
 <a:ObjectID>F9AA091B-0914-4F1B-BCDD-7ABC17FB917E</a:ObjectID>
@@ -132,9 +136,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208655</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=2
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">2</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="5086D5DE-2319-43F8-AFDC-8B13117AEB8A">
 <a:ObjectID>5086D5DE-2319-43F8-AFDC-8B13117AEB8A</a:ObjectID>
@@ -155,9 +161,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208655</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,65={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,10=2001-01-01
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">2001-01-01</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="365CDF05-57FE-4DD6-8357-1ABB6D7B4563">
 <a:ObjectID>365CDF05-57FE-4DD6-8357-1ABB6D7B4563</a:ObjectID>
@@ -178,9 +186,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208655</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=102
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">102</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="94E7CC02-424B-48EB-A608-E8F5A4BA8626">
 <a:ObjectID>94E7CC02-424B-48EB-A608-E8F5A4BA8626</a:ObjectID>
@@ -201,9 +211,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208655</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=1
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">1</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="636252DD-E72B-4C81-AE47-ABEE23B13526">
 <a:ObjectID>636252DD-E72B-4C81-AE47-ABEE23B13526</a:ObjectID>
@@ -224,9 +236,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208655</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=200
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">200</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="F037491C-53D9-4E51-B873-C6DB8A3AFA7F">
 <a:ObjectID>F037491C-53D9-4E51-B873-C6DB8A3AFA7F</a:ObjectID>
@@ -297,9 +311,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208556</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=1
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">1</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="DA45A125-8668-4790-B497-BA3CB054D6EA">
 <a:ObjectID>DA45A125-8668-4790-B497-BA3CB054D6EA</a:ObjectID>
@@ -320,9 +336,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208556</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,65={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,10=2000-01-01
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">2000-01-01</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="6EC55C6A-927A-4DBF-AB9D-278955338BCC">
 <a:ObjectID>6EC55C6A-927A-4DBF-AB9D-278955338BCC</a:ObjectID>
@@ -343,9 +361,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208556</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=101
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">101</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="63D5A8EB-8DFE-4484-8A95-90F51B5614B3">
 <a:ObjectID>63D5A8EB-8DFE-4484-8A95-90F51B5614B3</a:ObjectID>
@@ -366,9 +386,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208556</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=1
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">1</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="E6C2FC96-7E19-4E8A-8C10-A6BA409A3AF7">
 <a:ObjectID>E6C2FC96-7E19-4E8A-8C10-A6BA409A3AF7</a:ObjectID>
@@ -389,9 +411,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208556</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=100
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">100</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="BB485702-D58A-4F2B-BF5A-6C40918E62D5">
 <a:ObjectID>BB485702-D58A-4F2B-BF5A-6C40918E62D5</a:ObjectID>
@@ -431,9 +455,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208608</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=2
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">2</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="2B134103-7B77-48A3-A855-B4791449C786">
 <a:ObjectID>2B134103-7B77-48A3-A855-B4791449C786</a:ObjectID>
@@ -454,9 +480,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208608</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,65={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,10=2001-01-01
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">2001-01-01</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="D220A9FD-DA73-43CE-B953-EDE0692EF6E3">
 <a:ObjectID>D220A9FD-DA73-43CE-B953-EDE0692EF6E3</a:ObjectID>
@@ -477,9 +505,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208608</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=102
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">102</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="2D73FE50-B3A6-440D-B744-C074FE99EDE2">
 <a:ObjectID>2D73FE50-B3A6-440D-B744-C074FE99EDE2</a:ObjectID>
@@ -500,9 +530,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208608</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=1
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">1</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="288E071F-7BD9-4C3B-ACE5-840D5BF0223B">
 <a:ObjectID>288E071F-7BD9-4C3B-ACE5-840D5BF0223B</a:ObjectID>
@@ -523,9 +555,11 @@ WHERE CustomerOrderRowNumber = 1
 <a:CreationDate>1683208608</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_ExampleAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,57={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,3=200
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">200</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="93531462-8F88-412F-AA99-D392D88F882C">
 <a:ObjectID>93531462-8F88-412F-AA99-D392D88F882C</a:ObjectID>

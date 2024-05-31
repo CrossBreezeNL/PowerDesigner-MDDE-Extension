@@ -44,10 +44,12 @@ DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}
 ATT DEFTXEM
 ATT OBJEXA</a:History>
 <xi:include href="Model/a_ModelOptionsText.xml" />
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,205={A3455CE1-6457-40F7-9C0B-599E355AF4DE},mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression,4=true
-{3CB69645-4260-4DBC-A602-0536A9D4E6B3},mdde_Export_Extension_Initialization_Successful,5=false
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="A3455CE1-6457-40F7-9C0B-599E355AF4DE" Name="mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression">true</ExtendedAttribute>
+<ExtendedAttribute ObjectID="3CB69645-4260-4DBC-A602-0536A9D4E6B3" Name="mdde_Export_Extension_Initialization_Successful">false</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:GenerationOrigins>
 <xi:include href="GenerationOrigins/Shortcuts/ExampleDWH.xml" />
 </c:GenerationOrigins>
