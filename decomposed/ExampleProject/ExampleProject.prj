@@ -24,6 +24,7 @@
 </c:ProjectDiagrams>
 <c:Folders>
 <xi:include href="Folders/Sources/Sources.xml" />
+<xi:include href="Folders/Extensions/Extensions.xml" />
 </c:Folders>
 <c:DefaultDiagram>
 <o:ProjectDiagram Ref="E4B278F6-21C1-400B-9038-805D9657B31F"/>

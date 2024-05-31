@@ -1,9 +1,8 @@
 <o:DependencyLinkSymbol Id="ExampleProject_Symbol_4456CA17-8704-4045-B1E6-C083FD981C86">
 <a:CreationDate>1691151518</a:CreationDate>
-<a:ListOfPoints>((-1,-4199),(6668,-4199),(6668,2403))</a:ListOfPoints>
+<a:ListOfPoints>((-1,-4199),(6483,-4199),(6483,2403))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
-<a:BaseSymbol.Flags>1</a:BaseSymbol.Flags>
 <a:LineColor>5518853</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
 <a:FontList>CENTER 0 Arial,8,N</a:FontList>
