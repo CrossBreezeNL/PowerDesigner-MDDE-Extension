@@ -7,6 +7,6 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_BasePackage_OpenAllModels.xml" />
-<xi:include href="mdde_BasePackage_DecomposeOpenModels.xml" />
+<xi:include href="mdde_BasePackage_ExportAndDecomposeOpenModels.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

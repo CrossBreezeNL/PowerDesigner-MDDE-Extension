@@ -3,7 +3,7 @@
 <a:Name>mdde_BasePackage_ContextMenu</a:Name>
 <a:MenuTargetItem.Value>&lt;Menu&gt;
    &lt;Command Name=&quot;mdde_BasePackage_OpenAllModels&quot; Caption=&quot;Open all models (MDDE)&quot; /&gt;
-   &lt;Command Name=&quot;mdde_BasePackage_DecomposeOpenModels&quot; Caption=&quot;Decompose open models (MDDE)&quot; /&gt;
+   &lt;Command Name=&quot;mdde_BasePackage_ExportAndDecomposeOpenModels&quot; Caption=&quot;Export &amp;amp; decompose open models (MDDE)&quot; /&gt;
 &lt;/Menu&gt;
 </a:MenuTargetItem.Value>
 <a:CreationDate>1691157719</a:CreationDate>

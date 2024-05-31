@@ -1,0 +1,52 @@
+<o:MethodTargetItem Id="335C30EC-ABA4-4464-8E67-D32CB6717023">
+<a:ObjectID>335C30EC-ABA4-4464-8E67-D32CB6717023</a:ObjectID>
+<a:Name>mdde_BasePackage_ExportAndDecomposeOpenModels</a:Name>
+<a:CreationDate>1709737126</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39; Inform the user it may take a while.
+   Dim startDecompose : startDecompose = MsgBox(&quot;Exporting &amp; decomposing all open models will start.&quot; &amp; vbCrLf &amp; &quot;This might take a while.&quot;, vbOKCancel + vbQuestion, &quot;Export &amp; decompose open models&quot;)
+   
+   If startDecompose = vbOk Then
+
+      Dim decomposeSucceeded : decomposeSucceeded = DecomposeOpenModels(obj)
+      &#39; Inform the user decomposing is done.
+      If decomposeSucceeded = vbTrue Then
+         MsgBox &quot;Export &amp; decompose succeeded.&quot;, vbInformation, &quot;Export &amp; decompose&quot;
+      Else
+         MsgBox &quot;Export &amp; decompose failed.&quot; &amp; vbCrLf &amp; vbCrLf &amp; &quot;Please check &#39;Script&#39; output window.&quot;, vbCritical, &quot;Export &amp; decompose failed!&quot;
+      End If
+
+   End If   
+      
+End Sub
+
+Function DecomposeOpenModels(ByRef objBasePackage)
+   &#39; Initialize the return value to true.
+   DecomposeOpenModels = True
+
+   WriteDebug(&quot;Exporting &amp; decomposing models in &quot; &amp; objBasePackage.Name &amp; &quot; folder&quot;)
+   
+   Dim objFolder
+   For Each objFolder In objBasePackage.Children
+      If objFolder.ObjectType = &quot;ProjectFolder&quot; Then
+         DecomposeOpenModels(objFolder)
+      End If
+   Next
+   
+   Dim objModel
+   For Each objModel in objBasePackage.ModelDocuments
+      &#39; Check whether the referenced model inside the project, it is a model file and it is loaded (TargetModelObject is not Nothing).
+      If (objModel.InsideProject) And (objModel.ModelClassKind = PdLDM.cls_Model) And Not(objModel.TargetModelObject Is Nothing) Then 
+         WriteDebug &quot;Exporting &amp; decomposing model &quot; &amp; objModel.Name
+         &#39; Execute the decompose method on the LDM model.
+         DecomposeOpenModels = objModel.TargetModelObject.ExecuteCustomMethod(cMDDE_LDM_EXT_CODE &amp; &quot;.mdde_ExportXmlAndDecompose&quot;)
+         If Not DecomposeOpenModels Then
+            WriteError &quot;An error occured while decomposing &quot; &amp; objModel.Name &amp; &quot;, stopping exporting &amp; decomposing other models.&quot;
+            Exit Function
+         End If
+      End If
+   Next
+End Function</a:MethodScript>
+</o:MethodTargetItem>
