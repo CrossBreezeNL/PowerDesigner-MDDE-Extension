@@ -37,12 +37,14 @@ DAT 1680508903</a:History>
 <a:DataType>VMBT3</a:DataType>
 <a:Length>3</a:Length>
 <a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
-<a:ExtendedAttributesText>{9AA965AB-581D-4C13-8165-852F9A00B38F},MSSQLSRV2016,238={8C784170-CF5C-47B8-92C4-6F55CB5C20C7},ExtDeftConstName,0=
-{2B8CA186-41D1-4259-8C4A-3070140AEB80},ExtNullConstName,0=
-{80BA5E36-A6B9-415A-BB91-F7EF95528DCC},ExtCollation,0=
-{3175F5EA-150A-478F-823F-1D40A26994A8},ExtIdentitySeedInc,0=
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="9AA965AB-581D-4C13-8165-852F9A00B38F" Name="MSSQLSRV2016">
+<ExtendedAttribute ObjectID="8C784170-CF5C-47B8-92C4-6F55CB5C20C7" Name="ExtDeftConstName"></ExtendedAttribute>
+<ExtendedAttribute ObjectID="2B8CA186-41D1-4259-8C4A-3070140AEB80" Name="ExtNullConstName"></ExtendedAttribute>
+<ExtendedAttribute ObjectID="80BA5E36-A6B9-415A-BB91-F7EF95528DCC" Name="ExtCollation"></ExtendedAttribute>
+<ExtendedAttribute ObjectID="3175F5EA-150A-478F-823F-1D40A26994A8" Name="ExtIdentitySeedInc"></ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 </o:EntityAttribute>
 <o:EntityAttribute Id="80ED7852-37E8-48C0-ADE2-B41FA9231ECB">
 <a:ObjectID>80ED7852-37E8-48C0-ADE2-B41FA9231ECB</a:ObjectID>

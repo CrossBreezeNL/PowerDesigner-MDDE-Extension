@@ -20,9 +20,11 @@
 <a:CreationDate>1690285622</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,61={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,4=From
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">From</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="EF6B54F3-A2CA-41CF-AD67-2EA049296AC9">
 <a:ObjectID>EF6B54F3-A2CA-41CF-AD67-2EA049296AC9</a:ObjectID>
@@ -43,9 +45,11 @@
 <a:CreationDate>1680618864</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,62={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,5=Apply
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">Apply</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="EA539496-2F3C-460C-9CDC-90C4ADC3ACB2">
 <a:ObjectID>EA539496-2F3C-460C-9CDC-90C4ADC3ACB2</a:ObjectID>
@@ -73,9 +77,11 @@
 <a:CreationDate>1709911284</a:CreationDate>
 <a:Creator>HarmenWessels</a:Creator>
 <a:Stereotype>mdde_JoinCondition</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,80={E9D50277-1E36-464C-9842-5008646943AB},mdde_ParentLiteralValue,12=&#39;2023-12-31&#39;
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="E9D50277-1E36-464C-9842-5008646943AB" Name="mdde_ParentLiteralValue">&apos;2023-12-31&apos;</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="C41485A7-B110-438D-A20F-9E5950576C5D">
 <a:ObjectID>C41485A7-B110-438D-A20F-9E5950576C5D</a:ObjectID>

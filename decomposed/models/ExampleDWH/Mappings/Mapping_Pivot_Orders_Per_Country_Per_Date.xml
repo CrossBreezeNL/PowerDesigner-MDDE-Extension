@@ -4,9 +4,11 @@
 <a:Code>Mapping_Pivot_Orders_Per_Country_Per_Date</a:Code>
 <a:CreationDate>1712057668</a:CreationDate>
 <a:Creator>HarmenWessels</a:Creator>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,76={133DCD84-E635-4065-9F31-65C1A390A38A},mdde_PivotAggregateFunction,5=Count
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="133DCD84-E635-4065-9F31-65C1A390A38A" Name="mdde_PivotAggregateFunction">Count</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="9B8A5695-29F8-43BC-AFD9-F4978DC02387">
 <a:ObjectID>9B8A5695-29F8-43BC-AFD9-F4978DC02387</a:ObjectID>
@@ -64,9 +66,11 @@
 <a:CreationDate>1712058332</a:CreationDate>
 <a:Creator>HarmenWessels</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,61={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,4=From
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">From</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="3C4AEB09-7AE4-436F-912D-3AE4FAE13422">
 <a:ObjectID>3C4AEB09-7AE4-436F-912D-3AE4FAE13422</a:ObjectID>
@@ -87,9 +91,11 @@
 <a:CreationDate>1712057668</a:CreationDate>
 <a:Creator>HarmenWessels</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,68={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,10=Inner join
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">Inner join</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="CE6D7D48-0901-4017-99DA-4F4BB67F7849">
 <a:ObjectID>CE6D7D48-0901-4017-99DA-4F4BB67F7849</a:ObjectID>
