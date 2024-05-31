@@ -9,7 +9,6 @@
 <o:CriterionTargetItem Ref="5D26D36B-FC93-4D44-B0CF-FB7A4ED2FB2D"/>
 </c:ParentCriterion>
 <c:Categories>
-<xi:include href="Templates/Templates.xml" />
 <xi:include href="Extended_Attributes/Extended_Attributes.xml" />
 <xi:include href="Custom_Checks/Custom_Checks.xml" />
 </c:Categories>

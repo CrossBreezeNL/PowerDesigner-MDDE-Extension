@@ -1,6 +1,12 @@
-> [Modeling](./README.md) > Frequently asked questions
+> [Manual](./README.md) > Frequently asked questions
 
 # Frequently asked questions
+
+## How do I attach a PowerDesigner extension to a model?
+
+To attach an extension to an existing PowerDesigner model, 2 steps need to be taken.
+1. Setup the [XEM] named path in PowerDesigner so the folder where the extension is stored is added to the path. Make sure to leave the existing paths in the [XEM] named path in place. The instructions can be found [here](https://help.sap.com/docs/SAP_POWERDESIGNER/abd3434b4987485c92057ab9392aadbe/c7e182f46e1b1014a4c38d524df99995.html).
+2. Attach an extension to an existing PowerDesigner model. The instructions can be found [here](https://help.sap.com/docs/SAP_POWERDESIGNER/31c48596e34446a68956e0aa7e700a2e/c7e1ddda6e1b101482c096290e45387b.html).
 
 ## Why don't I see the tab mentioned in the manual?
 
@@ -11,6 +17,17 @@ If you don't see a certain tab on an object, click on the 'More >>' button in th
 When you are in a screen where you can edit a list of data (in a table grid) you can add properties using the 'Customize Columns and Filter' toolbar button.
 
 ![Customize Columns and Filters](img/faq_table_grid_add_columns.png)
+
+## How can I import an LDM from a database?
+
+In order to create an LDM from a database, we first need to reverse engineer a physical data model (PDM) from the database and then generate/update the logical data model (LDM) from the PDM.
+
+The first step, reverse engineering a PDM from a database, can either be from a live database connection or SQL scripts. For instructions choose one of the links below:
+- [Reverse engineering a PDM from a live database](https://help.sap.com/docs/SAP_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7cbc2a36e1b10149b25d0a193caf56c.html)
+- [Reverse engineering a PDM from a script](https://help.sap.com/docs/SAP_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7cbaea46e1b1014a962e24470da14db.html)
+
+The second step, generate/update LDM from PDM, can be done with the instructions below:
+- [Generating a LDM from an PDM](https://help.sap.com/docs/SAP_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7c994ac6e1b1014a7cee7aac852831e.html?locale=en-US)
 
 ## I get a confirmation dialog to commit changes, what to do?
 

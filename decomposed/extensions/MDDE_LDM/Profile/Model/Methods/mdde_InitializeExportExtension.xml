@@ -7,9 +7,7 @@
 Since it is not possible to directly access the GTL templates in another extension via GTL, the contents of these templates is loaded in local extended attributes so it can be included in the XML export</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
-   
-   WriteInfo &quot;MDDE LDM Export extension initializion started&quot;
-   
+   WriteDebug &quot;MDDE LDM Export extension initializion started&quot;
    
    Dim errorsFound: errorsFound = False   
    Dim templateAppliedWithoutErrors: templateAppliedWithoutErrors = False
@@ -32,13 +30,14 @@ Since it is not possible to directly access the GTL templates in another extensi
       errorsFound = True
    End If
    
-   WriteInfo &quot;MDDE LDM Export extension initializion finished&quot;
+   WriteDebug &quot;MDDE LDM Export extension initializion finished&quot;
    
    &#39;Set initialization indicator to true
    If errorsFound = True Then
+      obj.SetExtendedAttribute cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, False
       Msgbox &quot;There where errors processing the MDDE LDM Export extension, consult the script output window for more information.&quot;
    Else
-      obj.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, True
+      obj.SetExtendedAttribute cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, True
    End If
 End Sub
 
@@ -94,47 +93,61 @@ End Function
 
 &#39;Apply template on object and check for translation errors
 Function applyTemplateOnObject(objModel, objItem, templateName, extendedAttributeName)
-   &#39;Process the object specific template
-   Dim evaluatedTemplate: evaluatedTemplate = objItem.EvaluateTemplateFor(templateName, cMDDE_EXPORT_EXTENSION_CODE)
+   &#39; Initialize return value to True.
    applyTemplateOnObject = True
-   &#39;Clear the extended attribute if it is set
-   If objItem.getExtendedAttributeText(extendedAttributeName) &lt;&gt; &quot;&quot; Then
-      objItem.setExtendedAttribute extendedAttributeName, Nothing
+   
+   &#39; Process the object specific template
+   Dim evaluatedTemplate: evaluatedTemplate = objItem.EvaluateTemplateFor(templateName, cMDDE_EXPORT_EXTENSION_CODE)
+   
+   &#39; Clear the extended attribute if it is set
+   If objItem.GetExtendedAttributeText(extendedAttributeName) &lt;&gt; &quot;&quot; Then
+      objItem.SetExtendedAttribute extendedAttributeName, Empty
+   End If
+
+   &#39; Check whether the    
+   If GTLOutputHasErrors(evaluatedTemplate) Then
+      WriteError (&quot;Error parsing template &quot; &amp; templateName &amp; &quot; for &quot; &amp; objItem.Code)
+      &#39; Set success indicator to false and exit function (so we don&#39;t continue).
+      applyTemplateOnObject = False
+      Exit Function
    End If
    
-   &#39; Only set the extended attribute if the template evaluation gave a non-empty result
-   If Not evaluatedTemplate = empty And Not evaluatedTemplate = &quot;&quot; Then
-      objItem.setExtendedAttribute extendedAttributeName, evaluatedTemplate     
-      If GTLOutputHasErrors(objItem.getExtendedAttribute(extendedAttributeName)) Then
-         WriteError (&quot;Error parsing template &quot; &amp; templateName &amp; &quot; for &quot; &amp; objItem.Code)
-         &#39;Set success indicator to false
-         objModel.setExtendedAttribute cMDDE_EXT_CODE &amp; &quot;.&quot; &amp; cMDDE_EXPORT_EXTENSION_INITIALIZATION_INDICATOR, False
-         applyTemplateOnObject = False
-      End If
+   &#39; Set the extended attribute if the template evaluation gave a non-empty result.
+   If Not evaluatedTemplate = Empty And Not evaluatedTemplate = &quot;&quot; Then
+      objItem.SetExtendedAttributeText extendedAttributeName, evaluatedTemplate
    End If   
    
 End Function
 
 
 Function applyTemplateOnCollection(objModel, objCollection, templateName, extendedAttributeName, applyNamedObjectTemplate)
-   Dim obj, metaClassTemplateAppliedWithoutErrors, namedObjectTemplateAppliedWithoutErrors
-    &#39;Set default template and attribute that apply to all object types
-   Dim attributeTemplateName: attributeTemplateName = &quot;mddex_NamedObject_Attributes_Export_Template&quot;
-   Dim attributeExtendedAttributeName: attributeExtendedAttributeName = &quot;mddex_NamedObject_Attributes_Export_Content&quot;
- 
+   &#39; Initialize return value to True.
    applyTemplateOnCollection = True
-   metaClassTemplateAppliedWithoutErrors = True
-   namedObjectTemplateAppliedWithoutErrors = True
-   &#39;Loop over collection and set the extended attribute based on the export template
-   &#39;If specified, also apply the namedobject template for adding custom attributes to the element 
+   
+   &#39; Create variables to be used inside the for loop, for tracking status.
+   Dim metaClassTemplateAppliedWithoutErrors
+   Dim namedObjectTemplateAppliedWithoutErrors
+   
+   &#39; Loop over collection and set the extended attribute based on the export template
+   Dim obj
    For Each obj in objCollection
+      &#39; Intitialize status variables to True.
+      metaClassTemplateAppliedWithoutErrors = True
+      namedObjectTemplateAppliedWithoutErrors = True
+
+      &#39; Skip shortcuts.
       If Not obj.IsShortCut Then
          metaClassTemplateAppliedWithoutErrors = applyTemplateOnObject (objModel, obj, templateName, extendedAttributeName)
+         &#39; If specified, also apply the namedobject template for adding custom attributes to the element
          If applyNamedObjectTemplate Then
-            namedObjectTemplateAppliedWithoutErrors = applyTemplateOnObject (objModel, obj, attributeTemplateName, attributeExtendedAttributeName)
+            namedObjectTemplateAppliedWithoutErrors = applyTemplateOnObject (objModel, obj, cMDDE_NAMEDOBJECT_ATTRIBUTE_EXPORT_TEMPLATE_NAME, cMDDE_NAMEDOBJECT_ATTRIBUTE_EXPORT_ATTRIBUTE_NAME)
          End If
+         &#39; If one of the previous operations failed, return False.
          If metaClassTemplateAppliedWithoutErrors = False Or namedObjectTemplateAppliedWithoutErrors = False Then
+            &#39; Update return value to False.
             applyTemplateOnCollection = False
+            &#39; If it failed we stop.             
+            Exit Function
          End If
       End If   
    Next

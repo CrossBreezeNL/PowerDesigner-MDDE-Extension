@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="F1C3F8C5-1474-4721-B59A-5FD6DB9C3D81">
+<a:TypePublicName>FormTargetItem</a:TypePublicName>
+<a:ObjectID>F1C3F8C5-1474-4721-B59A-5FD6DB9C3D81</a:ObjectID>
+<a:Name>Forms</a:Name>
+<a:CreationDate>1716375491</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_XmlExportConfiguration.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

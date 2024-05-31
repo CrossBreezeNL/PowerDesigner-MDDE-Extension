@@ -20,9 +20,11 @@
 <a:CreationDate>1680525378</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,61={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,4=From
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">From</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="1BA408D0-CDE7-4F6C-B2B8-F2B6F18A129A">
 <a:ObjectID>1BA408D0-CDE7-4F6C-B2B8-F2B6F18A129A</a:ObjectID>
@@ -43,10 +45,12 @@
 <a:CreationDate>1680521521</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,126={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,9=Left join
-{C9302863-5616-46A3-89FA-EF8548AE7D8D},mdde_OffsetValue,0=
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">Left join</ExtendedAttribute>
+<ExtendedAttribute ObjectID="C9302863-5616-46A3-89FA-EF8548AE7D8D" Name="mdde_OffsetValue"></ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="628F3E69-A2E6-49CF-A98C-0B11C54070B3">
 <a:ObjectID>628F3E69-A2E6-49CF-A98C-0B11C54070B3</a:ObjectID>
@@ -118,9 +122,11 @@
 <a:CreationDate>1690285426</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,66={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,9=Left join
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">Left join</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="778D8533-A686-4D7F-8E83-C6E8A12CA637">
 <a:ObjectID>778D8533-A686-4D7F-8E83-C6E8A12CA637</a:ObjectID>
@@ -181,6 +187,32 @@
 </o:ExtendedCollection>
 </c:ExtendedCollections>
 </o:ExtendedSubObject>
+<o:ExtendedSubObject Id="85CFC2BE-B656-47C5-841E-AE65AE3D4D71">
+<a:ObjectID>85CFC2BE-B656-47C5-841E-AE65AE3D4D71</a:ObjectID>
+<a:Name>Join condition_2</a:Name>
+<a:Code>Join_condition_2</a:Code>
+<a:CreationDate>1716562359</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Stereotype>mdde_JoinCondition</a:Stereotype>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="2AA569D6-094E-4EA8-BBFF-713196E44D4E" Name="mdde_JoinOperator">&gt;</ExtendedAttribute>
+<ExtendedAttribute ObjectID="E9D50277-1E36-464C-9842-5008646943AB" Name="mdde_ParentLiteralValue">0</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
+<c:ExtendedCollections>
+<o:ExtendedCollection Id="20E4AF57-4F49-4E82-A5F4-D634372917E4">
+<a:ObjectID>20E4AF57-4F49-4E82-A5F4-D634372917E4</a:ObjectID>
+<a:Name>mdde_ChildAttribute</a:Name>
+<a:ExtendedBaseCollection.CollectionName>mdde_ChildAttribute</a:ExtendedBaseCollection.CollectionName>
+<a:CreationDate>1716562363</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Content>
+<o:EntityAttribute Ref="FA20EE0F-7D0C-4315-A5CC-CAFF7A32C2FC"/>
+</c:Content>
+</o:ExtendedCollection>
+</c:ExtendedCollections>
+</o:ExtendedSubObject>
 </c:ExtendedComposition.Content>
 </o:ExtendedComposition>
 </c:ExtendedCompositions>
@@ -192,9 +224,11 @@
 <a:CreationDate>1680511859</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,62={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,5=Apply
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">Apply</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="A2BD9666-94A2-4513-BBDA-A8D06D7AE138">
 <a:ObjectID>A2BD9666-94A2-4513-BBDA-A8D06D7AE138</a:ObjectID>
@@ -306,9 +340,11 @@
 <a:CreationDate>1680512394</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,62={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,5=Apply
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">Apply</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="A1EAE587-6912-4646-95A5-B2BE0DA6B53B">
 <a:ObjectID>A1EAE587-6912-4646-95A5-B2BE0DA6B53B</a:ObjectID>
@@ -374,13 +410,6 @@
 </c:ExtendedCompositions>
 </o:ExtendedSubObject>
 </c:ExtendedComposition.Content>
-</o:ExtendedComposition>
-<o:ExtendedComposition Id="BAFDF681-F2A0-41EC-9E6A-89C26225BAD0">
-<a:ObjectID>BAFDF681-F2A0-41EC-9E6A-89C26225BAD0</a:ObjectID>
-<a:Name>Examples</a:Name>
-<a:ExtendedBaseCollection.CollectionName>mdde_Mapping_Examples</a:ExtendedBaseCollection.CollectionName>
-<a:CreationDate>1680597084</a:CreationDate>
-<a:Creator>MooOthman</a:Creator>
 </o:ExtendedComposition>
 </c:ExtendedCompositions>
 <c:Classifier>

@@ -4,7 +4,9 @@
 <a:Code>Calculate_Order_Age</a:Code>
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
-<a:Comment>Calculate the age of order</a:Comment>
+<a:Comment>Calculate the age of order
+
+Note: the Date_ and Date_Order attribute names are like this to verify the behaviour of the RegExp replacement for the resolved SQL Expression in source objects where expression business rules are used.</a:Comment>
 <a:History>ORG {41D1B62B-F9B1-4135-AF2D-439AFB15F96E}
 DAT 1680508903
 ATT STRN
@@ -16,11 +18,14 @@ ATT LABL</a:History>
 \pard\f0\fs17 Calculates the age of the order by examining the datediff in days between the order date and current date\par
 }
 </a:Description>
-<a:ExtendedAttributesText>{2B8936D7-8688-4269-BCA9-64EBA2E802A8},XBreeze_Model_Extension,66={29131F46-42B1-4DD8-9C6B-A955E3CD33F4},xm_stereotype,9=calculate
-
-{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,125={38253E88-8698-4A5B-8398-0FA2B14556C0},mdde_SqlExpression,62=DATEDIFF(DAY, @ORDER_DATE, @CURRENT_DATE) AS ORDER_AGE_IN_DAYS
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="2B8936D7-8688-4269-BCA9-64EBA2E802A8" Name="XBreeze_Model_Extension">
+<ExtendedAttribute ObjectID="29131F46-42B1-4DD8-9C6B-A955E3CD33F4" Name="xm_stereotype">calculate</ExtendedAttribute>
+</OriginatingExtension>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="38253E88-8698-4A5B-8398-0FA2B14556C0" Name="mdde_SqlExpression">DATEDIFF(DAY, @DATE_ORDER, @DATE_) AS ORDER_AGE_IN_DAYS</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCompositions>
 <o:ExtendedComposition Id="FA0AD357-2F6F-426E-898E-294E91868DC6">
 <a:ObjectID>FA0AD357-2F6F-426E-898E-294E91868DC6</a:ObjectID>
@@ -51,9 +56,11 @@ ATT LABL</a:History>
 <a:CreationDate>1680524690</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_ExampleInputAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,67={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,12=&#39;2023-04-01&#39;
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">&apos;2023-04-01&apos;</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="A97001EB-6B77-492D-BB1E-A330B80C94C8">
 <a:ObjectID>A97001EB-6B77-492D-BB1E-A330B80C94C8</a:ObjectID>
@@ -74,9 +81,11 @@ ATT LABL</a:History>
 <a:CreationDate>1680525535</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_ExampleInputAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,60={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,6=&#39;2023&#39;
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">&apos;2023&apos;</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="2114C45E-75D8-4F46-AC04-EE1A18FC1AC0">
 <a:ObjectID>2114C45E-75D8-4F46-AC04-EE1A18FC1AC0</a:ObjectID>
@@ -106,9 +115,11 @@ ATT LABL</a:History>
 <a:CreationDate>1680524690</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_ExpectedOutputAttributeValue</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,55={C1E04409-79C8-4E5A-A0F8-3877AEB28F39},mdde_Value,1=2
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="C1E04409-79C8-4E5A-A0F8-3877AEB28F39" Name="mdde_Value">2</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="BCDAB75A-5E67-4494-B334-790CE744F9E1">
 <a:ObjectID>BCDAB75A-5E67-4494-B334-790CE744F9E1</a:ObjectID>
@@ -130,10 +141,19 @@ ATT LABL</a:History>
 </o:ExtendedComposition>
 </c:ExtendedCompositions>
 <c:Attributes>
+<o:EntityAttribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458">
+<a:ObjectID>7B8233A5-359F-4372-9693-5AA2D4A3E458</a:ObjectID>
+<a:Name>Date_</a:Name>
+<a:Code>DATE_</a:Code>
+<a:CreationDate>1680525535</a:CreationDate>
+<a:Creator>MooOthman</a:Creator>
+<a:Stereotype>mdde_InputAttribute</a:Stereotype>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
 <o:EntityAttribute Id="53DE74F2-F420-48D6-A2A7-176CC3150818">
 <a:ObjectID>53DE74F2-F420-48D6-A2A7-176CC3150818</a:ObjectID>
-<a:Name>Order Date</a:Name>
-<a:Code>ORDER_DATE</a:Code>
+<a:Name>Date_Order</a:Name>
+<a:Code>DATE_ORDER</a:Code>
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:History>ORG {87D08732-95C1-401E-9FFF-33AB904D3D4B}
@@ -141,15 +161,6 @@ DAT 1680508903
 ATT NAME
 ATT CODE
 ATT STRN</a:History>
-<a:Stereotype>mdde_InputAttribute</a:Stereotype>
-<a:DataType>DT</a:DataType>
-</o:EntityAttribute>
-<o:EntityAttribute Id="7B8233A5-359F-4372-9693-5AA2D4A3E458">
-<a:ObjectID>7B8233A5-359F-4372-9693-5AA2D4A3E458</a:ObjectID>
-<a:Name>Current Date</a:Name>
-<a:Code>CURRENT_DATE</a:Code>
-<a:CreationDate>1680525535</a:CreationDate>
-<a:Creator>MooOthman</a:Creator>
 <a:Stereotype>mdde_InputAttribute</a:Stereotype>
 <a:DataType>DT</a:DataType>
 </o:EntityAttribute>

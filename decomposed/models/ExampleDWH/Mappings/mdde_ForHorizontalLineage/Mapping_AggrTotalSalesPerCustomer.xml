@@ -20,9 +20,11 @@
 <a:CreationDate>1690285383</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:Stereotype>mdde_SourceObject</a:Stereotype>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,61={08A86AD4-3F3F-40E1-AFC2-24CB6B49E316},mdde_JoinType,4=From
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="08A86AD4-3F3F-40E1-AFC2-24CB6B49E316" Name="mdde_JoinType">From</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="96D4BA92-2AC9-46FD-81C9-6D73B28AC5F3">
 <a:ObjectID>96D4BA92-2AC9-46FD-81C9-6D73B28AC5F3</a:ObjectID>
@@ -37,13 +39,6 @@
 </c:ExtendedCollections>
 </o:ExtendedSubObject>
 </c:ExtendedComposition.Content>
-</o:ExtendedComposition>
-<o:ExtendedComposition Id="E90EA032-CB5B-4F07-8C83-D4CA5AE60D75">
-<a:ObjectID>E90EA032-CB5B-4F07-8C83-D4CA5AE60D75</a:ObjectID>
-<a:Name>Examples</a:Name>
-<a:ExtendedBaseCollection.CollectionName>mdde_Mapping_Examples</a:ExtendedBaseCollection.CollectionName>
-<a:CreationDate>1690285517</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 </o:ExtendedComposition>
 </c:ExtendedCompositions>
 <c:Classifier>
@@ -80,9 +75,11 @@
 <a:ObjectID>827DCDA0-95DE-4FD6-86CD-02025D301D92</a:ObjectID>
 <a:CreationDate>1690285378</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,61={651907C9-2521-4FE9-9183-CBB584AB0AEE},mdde_Aggregate,3=Sum
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="651907C9-2521-4FE9-9183-CBB584AB0AEE" Name="mdde_Aggregate">Sum</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:ExtendedCollections>
 <o:ExtendedCollection Id="D3C8D849-0A3B-4AA9-A0B0-7108AC8DABF8">
 <a:ObjectID>D3C8D849-0A3B-4AA9-A0B0-7108AC8DABF8</a:ObjectID>

@@ -51,7 +51,7 @@ ConvTablePath=%_HOME%\Resource Files\Conversion Tables
 [ModelOptions\Logical options\ClssNamingOptions\FILO\Code]
 Template=
 MaxLen=254
-Case=U
+Case=M
 ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_. &quot;
 InvldChar=
 AllValid=No
@@ -79,7 +79,7 @@ ConvTablePath=%_HOME%\Resource Files\Conversion Tables
 [ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ\Code]
 Template=
 MaxLen=254
-Case=U
+Case=M
 ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
 InvldChar=
 AllValid=No
@@ -107,7 +107,7 @@ ConvTablePath=%_HOME%\Resource Files\Conversion Tables
 [ModelOptions\Logical options\ClssNamingOptions\FRMELNK\Code]
 Template=
 MaxLen=254
-Case=U
+Case=M
 ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
 InvldChar=
 AllValid=No
@@ -135,7 +135,7 @@ ConvTablePath=%_HOME%\Resource Files\Conversion Tables
 [ModelOptions\Logical options\ClssNamingOptions\AREA\Code]
 Template=
 MaxLen=254
-Case=U
+Case=M
 ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
 InvldChar=
 AllValid=No
@@ -191,7 +191,7 @@ ConvTablePath=%_HOME%\Resource Files\Conversion Tables
 [ModelOptions\Logical options\ClssNamingOptions\LDMPCKG\Code]
 Template=
 MaxLen=254
-Case=U
+Case=M
 ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
 InvldChar=
 AllValid=No
@@ -275,7 +275,7 @@ ConvTablePath=%_HOME%\Resource Files\Conversion Tables
 [ModelOptions\Logical options\ClssNamingOptions\LDMPROP\Code]
 Template=
 MaxLen=254
-Case=U
+Case=M
 ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
 InvldChar=
 AllValid=No
@@ -303,7 +303,7 @@ ConvTablePath=%_HOME%\Resource Files\Conversion Tables
 [ModelOptions\Logical options\ClssNamingOptions\LDMIDTF\Code]
 Template=
 MaxLen=254
-Case=U
+Case=M
 ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
 InvldChar=
 AllValid=No

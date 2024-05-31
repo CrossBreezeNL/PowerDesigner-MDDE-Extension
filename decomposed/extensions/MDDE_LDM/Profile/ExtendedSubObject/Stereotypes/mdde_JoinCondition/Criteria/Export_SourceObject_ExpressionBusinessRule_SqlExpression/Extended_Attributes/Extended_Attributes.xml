@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="5F15B528-548B-41BE-9EF3-F5A13C5592B4">
+<a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
+<a:ObjectID>5F15B528-548B-41BE-9EF3-F5A13C5592B4</a:ObjectID>
+<a:Name>Extended Attributes</a:Name>
+<a:CreationDate>1716882694</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_ParentAttributeFQCode.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

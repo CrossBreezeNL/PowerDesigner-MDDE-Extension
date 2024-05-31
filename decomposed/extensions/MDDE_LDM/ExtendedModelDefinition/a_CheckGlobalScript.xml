@@ -106,8 +106,43 @@ End Function
 
 
 &#39;******************************************************************************
+&#39; Show an object picker for a source objects of the given
+&#39; mapping (BaseClassifierMapping) and return the selected one.
+&#39;******************************************************************************
+Function SelectSourceObject(objMapping)
+   &#39; Init the return value to Nothing.
+   Set SelectSourceObject = Nothing
+
+   If Not(objMapping Is Nothing) Then
+      Dim colSourceObjects : Set colSourceObjects = objMapping.GetExtendedCollection(&quot;mdde_SourceObjects&quot;)
+      
+      &#39; If there is exactly one source object, return that one i.s.o. showing the object picker.
+      If colSourceObjects.Count = 1 Then
+         Set SelectSourceObject = colSourceObjects.Item(0)
+         Exit Function
+      End If
+      
+      &#39; Create a new selection object for the source objects.
+      Dim objSourceObjSelection : Set objSourceObjSelection = objMapping.Model.CreateSelection
+   
+      &#39; Add all source objects of the current mapping to the selection.
+      Dim objSource
+      For Each objSource In colSourceObjects
+         objSourceObjSelection.Objects.Add objSource
+      Next
+   
+      &#39; Show the object picker and fetch the selected source object.
+      Set SelectSourceObject = objSourceObjSelection.ShowObjectPicker(&quot;&quot;, &quot;&quot;, &quot;Select the source object of the source attribute&quot;, True, True, False)
+   
+      &#39; Cleanup the selection object.
+      objSourceObjSelection.Delete()
+   End If   
+End Function
+
+
+&#39;******************************************************************************
 &#39; Show an object picker for an attribute of the given entity
-&#39; and return the selected on.
+&#39; and return the selected one.
 &#39;******************************************************************************
 Function SelectAttribute(objEntity, strExcludeStereotype)  
    Set objEntity = GetRealObject(objEntity)
@@ -135,8 +170,9 @@ Function SelectAttribute(objEntity, strExcludeStereotype)
 
          &#39; Display the object picker on the selection
          Set SelectAttribute = objSel.ShowObjectPicker(&quot;&quot;, &quot;&quot;, &quot;Select an attribute&quot;, True, True, False)
-         &#39; Empty the selection.
-         objSel.Delete
+         
+         &#39; Cleanup the selection object.
+         objSel.Delete()
        End If
    End If       
 End Function
@@ -156,8 +192,70 @@ Function SelectOutputAttribute(objEntity)
    Set SelectOutputAttribute = SelectAttribute(objEntity, &quot;mdde_InputAttribute&quot;)
 End Function
 
+
+&#39;******************************************************************************
+&#39; Workflow to pick a source attribute of a source object within a mapping.
+&#39;******************************************************************************
+Function SelectSourceObjectAttribute(objSourceObject)
+   &#39; Init the return value to Nothing.
+   Set SelectSourceObjectAttribute = Nothing
+   
+   &#39; If a source object was selected, go on.
+   If Not(objSourceObject Is Nothing) Then
+   
+      &#39; If the selected source object has no joined object set, show a warning and exit.
+      If (objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;) Is Nothing) Then
+         MsgBox _
+             &quot;The selected source object doesn&#39;t have a joined object set!&quot; &amp; vbCrLf &amp; vbCrLf _
+               &amp; &quot;The joined object must be set before we can retrieve its attributes.&quot; _
+            ,vbExclamation _
+            ,&quot;Invalid source object&quot;
+         Exit Function
+      End If
+   
+      &#39; Get a reference to the real source object
+      Dim objRealSourceObject : Set objRealSourceObject = GetRealObject(objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;))
+      
+      &#39; If the selected source object is a scalar business rule, we automatically set the output attribute here without showing the object picker (if there is only one output attribute).
+      If objRealSourceObject.HasStereotype(&quot;mdde_ScalarBusinessRule&quot;) Then
+         Dim objAttribute
+         Dim intOutputAttributeCount : intOutputAttributeCount = 0
+         For Each objAttribute in objRealSourceObject.Attributes
+            &#39; If the current attribute is an output attribute, select this one (for now, if it turns output there where multiple outputs, the variable will be unset later and object picker will be shown).
+            If objAttribute.HasStereotype(&quot;mdde_OutputAttribute&quot;) Then
+               Set SelectSourceObjectAttribute = objAttribute
+               intOutputAttributeCount = intOutputAttributeCount + 1
+            End If
+         Next
+         
+         &#39; Of the output attribute wasn&#39;t found, show an error and stop the method.   
+         If intOutputAttributeCount = 0 Then
+            MsgBox _
+                &quot;The selected scalar business rule doesn&#39;t have an output attribute!&quot; &amp; vbCrLf &amp; vbCrLf _
+                  &amp; &quot;Please make sure there is only one attribute in the scalar business rule with the stereotype &#39;Output attribute (MDDE)&#39;.&quot; _
+               ,vbExclamation _
+               ,&quot;Invalid scalar business rule&quot;
+            Exit Function
+         &#39; If there are multiple output attributes, show the object picker.
+         ElseIf intOutputAttributeCount &gt; 1 Then
+            Set SelectSourceObjectAttribute = Nothing
+         End If
+      End If   
+         
+      &#39; If the source attribute is not set so far, we show the object picker for attributes of the source object.
+      If SelectSourceObjectAttribute Is Nothing Then
+         &#39; Show the object picker and fetch the selected source object.
+         Set SelectSourceObjectAttribute = SelectOutputAttribute(objRealSourceObject)
+      End If  
+      
+   End If
+End Function
+
+
+&#39;******************************************************************************
 &#39; Function to check whether the value is a valid literal.
 &#39; It&#39;s a valid literal if the input value is numeric or encapsulated with quotes.
+&#39;******************************************************************************
 Function IsLiteralValue(strValue)
    IsLiteralValue = (IsNumeric(strValue) Or (Left(strValue, 1) = &quot;&#39;&quot; And Right(strValue, 1) = &quot;&#39;&quot;))
 End Function

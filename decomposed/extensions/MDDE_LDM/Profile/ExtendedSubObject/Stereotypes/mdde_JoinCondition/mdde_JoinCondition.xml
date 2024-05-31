@@ -14,5 +14,6 @@
 <xi:include href="Templates/Templates.xml" />
 <xi:include href="Forms/Forms.xml" />
 <xi:include href="Methods/Methods.xml" />
+<xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>

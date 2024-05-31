@@ -37,9 +37,9 @@
    End If
 
    &#39; Exit the routine if the datasource selected is not valid
-   If Not(objSelectedDS.stereotype = &quot;&quot; Or objSelectedDS.Stereotype = &quot;mdde_DataSource&quot;) Then
+   If Not(objSelectedDS.Stereotype = &quot;&quot; Or objSelectedDS.Stereotype = cMDDE_DATASOURCE_STEREOTYPE) Then
       MsgBox _
-         &quot;The Data Source &quot; &amp; objSelectedDS.Code &amp; &quot; has stereotype &quot; &amp; objSelectedDS.stereotype &amp; &quot; and cannot be used for creating MDDE mappings.&quot; &amp; vbCrLf &amp; vbCrLf _
+         &quot;The Data Source &quot; &amp; objSelectedDS.Code &amp; &quot; has stereotype &quot; &amp; objSelectedDS.Stereotype &amp; &quot; and cannot be used for creating MDDE mappings.&quot; &amp; vbCrLf &amp; vbCrLf _
          &amp; &quot;Please select or add a Data Source with a valid stereotype.&quot; &amp; vbCrlf &amp; vbCrLf &amp; _
          &quot;Valid stereotypes are: &quot; &amp; vbCrlf &amp; vbCrLf &amp; _
          &quot;- Data Source (MDDE)&quot;  &amp; vbCrlf &amp; _

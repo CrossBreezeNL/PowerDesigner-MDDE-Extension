@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="64A8CED9-630A-40B5-A61B-F25FC2E6E71A">
+<a:TypePublicName>ExtendedCollectionTargetItem</a:TypePublicName>
+<a:ObjectID>64A8CED9-630A-40B5-A61B-F25FC2E6E71A</a:ObjectID>
+<a:Name>Extended Collections</a:Name>
+<a:CreationDate>1711016995</a:CreationDate>
+<a:Creator>burggraaffc</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_TargetAttribute.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

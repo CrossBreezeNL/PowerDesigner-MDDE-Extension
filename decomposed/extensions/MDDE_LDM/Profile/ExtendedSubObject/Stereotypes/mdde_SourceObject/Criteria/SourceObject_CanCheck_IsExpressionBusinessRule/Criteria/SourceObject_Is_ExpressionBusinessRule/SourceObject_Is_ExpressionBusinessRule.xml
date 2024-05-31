@@ -1,0 +1,15 @@
+<o:CriterionTargetItem Id="1940325C-3F83-4AB2-ABD7-BAA59E936DB1">
+<a:ObjectID>1940325C-3F83-4AB2-ABD7-BAA59E936DB1</a:ObjectID>
+<a:Name>SourceObject Is ExpressionBusinessRule</a:Name>
+<a:CriterionTargetItem.Value>%mdde_JoinedObject.mdde_Entity_IsExpressionBusinessRule% == &quot;True&quot;</a:CriterionTargetItem.Value>
+<a:CreationDate>1700599379</a:CreationDate>
+<a:Creator>WesselsH1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:ParentCriterion>
+<o:CriterionTargetItem Ref="361D1062-019C-434A-8065-8CEF093B1556"/>
+</c:ParentCriterion>
+<c:Categories>
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
+<xi:include href="Criteria/Criteria.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

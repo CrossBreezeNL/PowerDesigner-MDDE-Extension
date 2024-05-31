@@ -200,5 +200,6 @@ A05477FF9E5376FF9C5275FF9B4F73FF994C71FF4D2639800000000000000000
 <xi:include href="Forms/Forms.xml" />
 <xi:include href="Event_Handlers/Event_Handlers.xml" />
 <xi:include href="Custom_Checks/Custom_Checks.xml" />
+<xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>

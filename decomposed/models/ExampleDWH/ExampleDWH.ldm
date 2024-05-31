@@ -41,13 +41,15 @@ DLD {E6DA1E86-09E5-4A4E-B108-9882435F2CF0}
 DLD {CDDCF6FC-AAD6-4750-B6F0-D89A27F7FAC3}
 DLD {E65E8C99-8AC5-4EBA-A95C-E867C0CD0A06}
 DLD {CA5B68AA-5F42-423A-BA26-0A3F9DE54F2F}
-ATT DEFTXEM</a:History>
+ATT DEFTXEM
+ATT OBJEXA</a:History>
 <xi:include href="Model/a_ModelOptionsText.xml" />
-<a:ExtendedAttributesText>{1626A879-DBAC-4E54-8A36-28FCB761FF3A},MDDE_LDM,95={3CB69645-4260-4DBC-A602-0536A9D4E6B3},mdde_Export_Extension_Initialization_Successful,4=true
-
-{0297A8FE-93C4-4612-A9E0-CD7292BFF652},MDDE_LDM_Export_Extension,70={AB204437-943D-4423-B8E6-E31186F8B700},mddex_Model_Export_Content,0=
-
-</a:ExtendedAttributesText>
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="A3455CE1-6457-40F7-9C0B-599E355AF4DE" Name="mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression">true</ExtendedAttribute>
+<ExtendedAttribute ObjectID="3CB69645-4260-4DBC-A602-0536A9D4E6B3" Name="mdde_Export_Extension_Initialization_Successful">false</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:GenerationOrigins>
 <xi:include href="GenerationOrigins/Shortcuts/ExampleDWH.xml" />
 </c:GenerationOrigins>
@@ -69,6 +71,7 @@ ATT DEFTXEM</a:History>
 <xi:include href="Mappings/mdde_ForHorizontalLineage/SalesOrder_Mapping.xml" />
 <xi:include href="Mappings/mdde_ForHorizontalLineage/Mapping_Br_Custom_Business_Rule_Example.xml" />
 <xi:include href="Mappings/mdde_ForHorizontalLineage/Mapping_AggrTotalSalesPerCustomer.xml" />
+<xi:include href="Mappings/Mapping_Pivot_Orders_Per_Country_Per_Date.xml" />
 </c:Mappings>
 <c:SourceModels>
 <xi:include href="SourceModels/Shortcuts/EXAMPLESOURCE.xml" />
@@ -87,6 +90,7 @@ ATT DEFTXEM</a:History>
 <xi:include href="Entities/Shortcuts/Country.xml" />
 <xi:include href="Entities/mdde_CustomBusinessRule/Br_Last_SalesOrder_Per_Customer.xml" />
 <xi:include href="Entities/mdde_AggregateBusinessRule/Aggregate_Total_Sales_Per_Customer.xml" />
+<xi:include href="Entities/mdde_PivotBusinessRule/Pivot_Orders_Per_Country_Per_Date.xml" />
 </c:Entities>
 <c:Relationships>
 <xi:include href="Relationships/Customer_SalesOrder.xml" />
