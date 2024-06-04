@@ -6,7 +6,7 @@
 <a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="mdde_BasePackage_OpenAllModels.xml" />
-<xi:include href="mdde_BasePackage_ExportAndDecomposeOpenModels.xml" />
+<xi:include href="mdde_BasePackage_OpenAllLDMs.xml" />
+<xi:include href="mdde_BasePackage_ExportAndDecomposeOpenLDMs.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

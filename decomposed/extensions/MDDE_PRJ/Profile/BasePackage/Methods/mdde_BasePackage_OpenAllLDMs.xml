@@ -1,6 +1,6 @@
 <o:MethodTargetItem Id="DFEF902A-75E1-4F54-B771-188D226EB778">
 <a:ObjectID>DFEF902A-75E1-4F54-B771-188D226EB778</a:ObjectID>
-<a:Name>mdde_BasePackage_OpenAllModels</a:Name>
+<a:Name>mdde_BasePackage_OpenAllLDMs</a:Name>
 <a:CreationDate>1691157771</a:CreationDate>
 <a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
@@ -9,7 +9,7 @@
 End Sub
 
 Sub OpenAllModels(ByRef objBasePackage)
-   WriteDebug(&quot;Opening models in &quot; &amp; objBasePackage.Name &amp; &quot; folder&quot;)
+   WriteDebug(&quot;Opening LDMs in &quot; &amp; objBasePackage.Name &amp; &quot; folder&quot;)
    
    Dim objFolder
    For Each objFolder In objBasePackage.Children
@@ -22,7 +22,7 @@ Sub OpenAllModels(ByRef objBasePackage)
    For Each objModel in objBasePackage.ModelDocuments
       &#39; Check whether the referenced model inside the project, it is a model file and it isn&#39;t loaded yet (TargetModelObject is Nothing).
       If (objModel.InsideProject) And (objModel.ModelClassKind = PdLDM.cls_Model) And (objModel.TargetModelObject Is Nothing) Then 
-         WriteDebug &quot;Opening model &quot; &amp; objModel.Name
+         WriteDebug &quot;Opening LDM &quot; &amp; objModel.Name
          &#39; Open the model.
          If Not(objModel.OpenDocument()) Then
             WriteError &quot;Error while opening model &quot; &amp; objModel.Name
