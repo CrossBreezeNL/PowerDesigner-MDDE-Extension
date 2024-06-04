@@ -15,6 +15,7 @@ In the following section the modeling options are elaborated per topic.
 - [PowerDeComposer](./PowerDeComposer.md)
 - [Configure the XML export](./ModelExportConfiguration.md)
 - [Extend the XML export](./ModelExportExtension.md)
+- [Project extension](./ProjectExtension.md)
 
 ## Other topics
 - [Frequently asked questions](./FAQs.md)
