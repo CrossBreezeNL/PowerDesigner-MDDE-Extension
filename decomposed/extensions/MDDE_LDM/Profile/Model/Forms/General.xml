@@ -1,0 +1,24 @@
+<o:FormTargetItem Id="9DD2EE19-51E5-42B7-A2C0-6355A5C59C90">
+<a:ObjectID>9DD2EE19-51E5-42B7-A2C0-6355A5C59C90</a:ObjectID>
+<a:Name>General</a:Name>
+<a:Code>GENERAL</a:Code>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StandardNameAndCode Attribute=&quot;NameAndCode&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;true&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Comment&quot; Caption=&quot;Comment:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Filename&quot; Caption=&quot;File name:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Author&quot; Caption=&quot;Author:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;HorizontalLayout Name=&quot;HorizontalLayout&quot; &gt;
+      &lt;StandardAttribute Attribute=&quot;Version&quot; Caption=&quot;Version:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+      &lt;StandardAttribute Attribute=&quot;ExtractionFullVersion&quot; Caption=&quot;Repository:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;/HorizontalLayout&gt;
+   &lt;StandardAttribute Attribute=&quot;DefaultDiagram&quot; Caption=&quot;Default Diagram:&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;KeywordList&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Stereotype&quot; Caption=&quot;Stereotype&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1717621987</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Comment>This form is the standard General tab for a Model. where the Stereotype property is added.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:FormType>GENERAL</a:FormType>
+</o:FormTargetItem>
