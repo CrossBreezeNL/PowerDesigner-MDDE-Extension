@@ -29,6 +29,12 @@
   .if (%mdde_SqlExpression?%)
   &lt;SqlExpression&gt;%.X:mdde_SqlExpression%&lt;/SqlExpression&gt;
   .endif(\n)
+  .comment Add the content of the export extension template
+  .if (%Model.mdde_Export_Extension_Attached%)
+   .if(%.D:mddex_ExtendedSubObject_SourceObject_Export_Content%)
+  %.D:mddex_ExtendedSubObject_SourceObject_Export_Content%
+   .endif(\n)
+  .endif
 &lt;/SourceObject&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651741182</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>

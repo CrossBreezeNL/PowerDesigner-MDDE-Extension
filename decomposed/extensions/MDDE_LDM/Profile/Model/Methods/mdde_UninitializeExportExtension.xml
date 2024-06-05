@@ -33,6 +33,9 @@ Sub clearExportAttributesInPackage(objModel, objPackage)
    &#39;Loop over AttributeMappings
    clearExportAttributesOnCollection objModel, objPackage.ModelEntityAttributeMappings, &quot;mddex_BaseStructuralFeatureMapping_Export_Content&quot;, False
    
+   &#39;Loop over SourceObjects within Mappings
+   clearExportAttributesOnExtCollection objModel, objPackage.Mappings, &quot;mdde_SourceObjects&quot;, &quot;mddex_ExtendedSubObject_SourceObject_Export_Content&quot;, True   
+   
    &#39; Loop over packages and clear them recursively.
    Dim childPackage
    For Each childPackage in objPackage.Packages
@@ -54,5 +57,18 @@ Sub clearExportAttributesOnCollection(objModel, objCollection, extendedAttribute
       End If   
    Next
 End Sub
-</a:MethodScript>
+
+Sub clearExportAttributesOnExtCollection(objModel, colWithObjectsWithExtCol, strExtColName, extendedAttributeName, applyNamedObjectTemplate)
+   Dim objCurrentObjectWithExtCol, colExtCol
+   &#39; Loop through the objects which have the extended collection.
+   For Each objCurrentObjectWithExtCol In colWithObjectsWithExtCol
+      &#39; Get the extended collection.
+      Set colExtCol = objCurrentObjectWithExtCol.GetExtendedCollection(strExtColName)
+      &#39; Only proceed if there is an extended collection with the given name.
+      If Not(colExtCol Is Nothing) Then
+         &#39; Clear the extended attribute for each items in the extended collection.
+         clearExportAttributesOnCollection objModel, colExtCol, extendedAttributeName, applyNamedObjectTemplate
+      End If
+   Next
+End Sub</a:MethodScript>
 </o:MethodTargetItem>

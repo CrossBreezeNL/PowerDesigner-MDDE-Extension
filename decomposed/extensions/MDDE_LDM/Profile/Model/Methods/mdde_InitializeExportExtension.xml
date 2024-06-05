@@ -80,6 +80,12 @@ Function processPackage(objModel, objPackage)
       processPackage = False
    End If
    
+   &#39;Loop over SourceObjects within Mappings
+   collectionProcessedWithoutErrors = applyTemplateOnExtendedCollection(objModel, objPackage.Mappings, &quot;mdde_SourceObjects&quot;, &quot;mddex_ExtendedSubObject_SourceObject_Export_Template&quot;, &quot;mddex_ExtendedSubObject_SourceObject_Export_Content&quot;, True)
+   If collectionProcessedWithoutErrors = False Then
+      processPackage = False
+   End If
+   
    &#39;Loop over packages
    Dim childPackage
    For Each childPackage in objPackage.Packages
@@ -93,6 +99,7 @@ End Function
 
 &#39;Apply template on object and check for translation errors
 Function applyTemplateOnObject(objModel, objItem, templateName, extendedAttributeName)
+   'WriteDebug(&quot;Applying template &#39;&quot; &amp; templateName &amp; &quot;&#39; on object &#39;&quot; &amp; objItem.DisplayName &amp; &quot;&#39;&quot;)
    &#39; Initialize return value to True.
    applyTemplateOnObject = True
    
@@ -106,7 +113,7 @@ Function applyTemplateOnObject(objModel, objItem, templateName, extendedAttribut
 
    &#39; Check whether the    
    If GTLOutputHasErrors(evaluatedTemplate) Then
-      WriteError (&quot;Error parsing template &quot; &amp; templateName &amp; &quot; for &quot; &amp; objItem.Code)
+      WriteError (&quot;Error parsing template &quot; &amp; templateName &amp; &quot; for &quot; &amp; objItem.DisplayName)
       &#39; Set success indicator to false and exit function (so we don&#39;t continue).
       applyTemplateOnObject = False
       Exit Function
@@ -119,7 +126,7 @@ Function applyTemplateOnObject(objModel, objItem, templateName, extendedAttribut
    
 End Function
 
-
+&#39; Apply template on collection and check for translation errors.
 Function applyTemplateOnCollection(objModel, objCollection, templateName, extendedAttributeName, applyNamedObjectTemplate)
    &#39; Initialize return value to True.
    applyTemplateOnCollection = True
@@ -146,11 +153,33 @@ Function applyTemplateOnCollection(objModel, objCollection, templateName, extend
          If metaClassTemplateAppliedWithoutErrors = False Or namedObjectTemplateAppliedWithoutErrors = False Then
             &#39; Update return value to False.
             applyTemplateOnCollection = False
-            &#39; If it failed we stop.             
+            &#39; If it failed we stop.         
             Exit Function
          End If
       End If   
    Next
 End Function
-</a:MethodScript>
+
+&#39; Apply template on a collection containing objects with an extended collection (colWithObjectsWithExtCol)
+Function applyTemplateOnExtendedCollection(objModel, colWithObjectsWithExtCol, strExtColName, templateName, extendedAttributeName, applyNamedObjectTemplate)
+   Dim objCurrentObjectWithExtCol, colExtCol
+   &#39; Initialize the return value with True.
+   applyTemplateOnExtendedCollection = True
+   &#39; Loop through the objects which have the extended collection.
+   For Each objCurrentObjectWithExtCol In colWithObjectsWithExtCol
+      WriteDebug(&quot;Searching for extended collection items &#39;&quot; &amp; strExtColName &amp; &quot;&#39; on object &#39;&quot; &amp; objCurrentObjectWithExtCol.DisplayName &amp; &quot;&#39;.&quot;)
+      &#39; Get the extended collection.
+      Set colExtCol = objCurrentObjectWithExtCol.GetExtendedCollection(strExtColName)
+      &#39; Only proceed if there is an extended collection with the given name.
+      If Not(colExtCol Is Nothing) Then
+         WriteDebug(&quot;Found &quot; &amp; colExtCol.Count &amp; &quot; &#39;&quot; &amp; strExtColName &amp; &quot;&#39; extended collection items&quot;)
+         &#39; Apply the template on the extende collection and store the return value in the current function return value.
+         applyTemplateOnExtendedCollection = applyTemplateOnCollection(objModel, colExtCol, templateName, extendedAttributeName, applyNamedObjectTemplate)
+         &#39; If something whent wrong uptill now we stop.
+         If applyTemplateOnExtendedCollection = False Then
+            Exit Function
+         End If  
+      End If
+   Next
+End Function </a:MethodScript>
 </o:MethodTargetItem>
