@@ -1,0 +1,11 @@
+<o:MenuTargetItem Id="6140DA62-9148-40C5-828F-612DFC9100A9">
+<a:ObjectID>6140DA62-9148-40C5-828F-612DFC9100A9</a:ObjectID>
+<a:Name>mdde_Project_ContextMenu</a:Name>
+<a:MenuTargetItem.Value>&lt;Menu&gt;
+   &lt;Command Name=&quot;mdde_Decompose&quot; Caption=&quot;Decompose project (MDDE)&quot; /&gt;
+&lt;/Menu&gt;
+</a:MenuTargetItem.Value>
+<a:CreationDate>1717592237</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:MenuTargetItem>

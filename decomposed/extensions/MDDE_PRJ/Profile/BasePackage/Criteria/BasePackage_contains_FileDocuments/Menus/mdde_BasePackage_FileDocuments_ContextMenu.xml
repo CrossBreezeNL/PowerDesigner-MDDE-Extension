@@ -1,0 +1,11 @@
+<o:MenuTargetItem Id="9450D194-E555-4ED1-A5B1-590A81276541">
+<a:ObjectID>9450D194-E555-4ED1-A5B1-590A81276541</a:ObjectID>
+<a:Name>mdde_BasePackage_FileDocuments_ContextMenu</a:Name>
+<a:MenuTargetItem.Value>&lt;Menu&gt;
+   &lt;Command Name=&quot;mdde_BasePackage_DecomposeAllExtDefs&quot; Caption=&quot;Decompose all XEMs (MDDE)&quot; /&gt;
+&lt;/Menu&gt;
+</a:MenuTargetItem.Value>
+<a:CreationDate>1717593641</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:MenuTargetItem>

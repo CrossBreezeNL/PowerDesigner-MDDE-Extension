@@ -8,5 +8,6 @@
 <xi:include href="Shared.xml" />
 <xi:include href="BasePackage/BasePackage.xml" />
 <xi:include href="BaseFileObject/BaseFileObject.xml" />
+<xi:include href="Project/Project.xml" />
 </c:Categories>
 </o:ProfileTargetItem>

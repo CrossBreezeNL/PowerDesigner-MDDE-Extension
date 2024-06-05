@@ -5,7 +5,6 @@
 <a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="Menus/Menus.xml" />
-<xi:include href="Methods/Methods.xml" />
+<xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:MetaClassTargetItem>

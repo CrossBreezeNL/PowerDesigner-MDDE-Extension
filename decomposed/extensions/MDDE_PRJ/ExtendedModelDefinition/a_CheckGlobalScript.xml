@@ -46,4 +46,20 @@ Sub WriteDebug (strMsg)
    If (bDebugMode) Then
       Output now() &amp; vbtab &amp; &quot; DEBUG: &quot; &amp; strMsg
    End If
+End Sub
+
+Sub DecomposeModel(strDisplayName, strFileUrl)
+   &#39; Log that we will start decomposing.
+   WriteInfo &quot;Start decomposing &quot; &amp; strDisplayName
+
+   &#39; Resolve the decompose.ps1 script location.
+   Dim strDecomposeScriptLocation : strDecomposeScriptLocation = EvaluateNamedPath(&quot;%PDC_SCRIPT_PATH%/decompose.ps1&quot;)
+   &#39; For some reason the colon in the file URL is a pipe. So we replace the pipe with colon so the resulting path is correct.
+   Dim strFileLocation : strFileLocation = Replace(Replace(Replace(strFileUrl, &quot;file:///&quot;, &quot;&quot;), &quot;/&quot;, &quot;\&quot;), &quot;|&quot;, &quot;:&quot;)
+   Dim strDecomposeCommand : strDecomposeCommand = &quot; -File &quot;&quot;&quot; &amp; strDecomposeScriptLocation &amp; &quot;&quot;&quot; &quot;&quot;&quot; &amp; strFileLocation &amp; &quot;&quot;&quot;&quot;
+   &#39; Execute the PowerShell command and pipe the output to the script output.
+   Dim strCommandResults : strCommandResults = ExecuteCommand(&quot;pwsh.exe&quot;, strDecomposeCommand, cmd_PipeOutput)
+
+   &#39; Log that we are done.
+   WriteInfo &quot;Done decomposing &quot; &amp; strDisplayName
 End Sub</a:CheckGlobalScript>
