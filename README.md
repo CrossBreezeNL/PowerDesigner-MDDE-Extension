@@ -22,14 +22,21 @@ These LDM extension add extra modeling possibilities to PowerDesigner, where sta
       - To specify join type and conditions on source objects.
       - To specify period offsets on source objects (for example last month).
     - Examples tab on mappings so example input and output data can be specified in the model.
+
+    ![Mapping a filter business rule](manual/img/mapping_source_object_overview.png)
+    
   - Business rule (stereotype)
     - Add support for modeling business rules with input/output attributes and examples.
     - Supported sub-stereotypes:
-      - Scalar business rule
       - Filter business rule
+      - Scalar business rule
+      - Custom business rule
       - Aggregate business rule
       - Pivot business rule
-      - Custom business rule
+
+      ![PowerDesigner Toolbox Business Rule](manual/img/business_rule_toolbox.png)
+
+
 - Model checks
   - Extra model checks have been implemented to verify the newly supported objects.
 - PowerDeComposer integration
