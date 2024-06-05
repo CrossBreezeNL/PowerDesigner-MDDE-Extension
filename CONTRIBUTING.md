@@ -5,7 +5,7 @@ The PowerDesigner MDDE extension is an open-source project. One of the goals is 
 Please follow the instructions below on how to setup your local environment and how to compose and decompose the extensions/models.
 
 ## Prerequisites
-These prerequisties are only needed when you want to compose or decompose the extensions and/or example models. This is not neccessary if you only want to use the extension as is, which can be downloaded from any [release](https://github.com/CrossBreezeNL/PowerDesigner-MDDE-Extension/releases/).
+These prerequisites are only needed when you want to compose or decompose the extensions and/or example models. This is not necessary if you only want to use the extension as is, which can be downloaded from any [release](https://github.com/CrossBreezeNL/PowerDesigner-MDDE-Extension/releases/).
 
 - PowerShell 7 or higher. Download it [here](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows#msi)
 - Java JRE/JDK >= 11.
@@ -45,7 +45,7 @@ Create the following named paths in PowerDesigner (via Tools -> General Options.
 
 ## On branch clone/switch
 
-> Before switching branch, make sure all your changes in PowerDesigner models are decomposed and commited into Git.
+> Before switching branch, make sure all your changes in PowerDesigner models are decomposed and committed into Git.
 
 Model changes can be decomposed using the context menu of the model (see [PowerDeComposer manual](./manual/PowerDeComposer.md)).
 
@@ -62,4 +62,4 @@ compose.ps1
 
 This will compose all models based on the decomposed folder contents. The composed models are not automatically updated on a branch change.
 
-> If a merge conflict accured during the branch change in de decomposed models somewhere, merge it manually carefully. If you're done you can run compose.ps1 and open the models in PowerDesigner to check whether everything is merged correctly.
+> If a merge conflict occurs during the branch change in de decomposed models somewhere, merge it manually carefully. If you're done you can run compose.ps1 and open the models in PowerDesigner to check whether everything is merged correctly.

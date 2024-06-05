@@ -13,7 +13,7 @@ This repository contains several PowerDesigner extensions. These are described b
 
 ### LDM modeling extension
 
-These LDM extension add extra modeling possibilities to PowerDesigner, where standard PowerDesigner functionalities are missing options to add metadata. These extra modeling options are listed below per object type.
+These LDM extension add additional modeling capabilities to PowerDesigner. These extra modeling options are listed below per object type.
 
 - Entity
   - Mapping

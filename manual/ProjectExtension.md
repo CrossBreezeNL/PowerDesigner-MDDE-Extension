@@ -2,11 +2,11 @@
 
 # Project Extension
 
-When you are working with multiple models for a data product it can be helpfull to group these models into a "Project" model. A project can contain multiple models organized into a folder structure (only visually in the PowerDesigner workspace). For more information using projects, please consult the [PowerDesigner documentation](https://help.sap.com/docs/SAP_POWERDESIGNER/abd3434b4987485c92057ab9392aadbe/c7db7e5c6e1b10148a38c1ad75beaa04.html?locale=en-US).
+When you are working with multiple models for a data product it can be helpful to group these models into a "Project" model. A project can contain multiple models organized into a folder structure (only visually in the PowerDesigner workspace). For more information using projects, please consult the [PowerDesigner documentation](https://help.sap.com/docs/SAP_POWERDESIGNER/abd3434b4987485c92057ab9392aadbe/c7db7e5c6e1b10148a38c1ad75beaa04.html?locale=en-US).
 
 ## Attaching the project extension
 
-To start using the project extension, it must be attachted to the project. Attach the MDDE Project Extension to the project by opening the project diagram and in the main menu go to "Model" > "Extensions".
+To start using the project extension, it must be attached to the project. Attach the MDDE Project Extension to the project by opening the project diagram and in the main menu go to "Model" > "Extensions".
 
 ![Extension is attached to the project](img/project_extension_on_project.png)
 
@@ -19,12 +19,12 @@ When the project extension is attached new menu items will appear in the context
 
 ### Project / folder
 
-On the main project and any subfolder the followng menu items appear:
+On the main project and any subfolder the following menu items appear:
 
 - Open all logical data models (MDDE)
   - Opens all models in the project or folder (and any subfolder).
 - Export and decompose open logical data models (MDDE)
-  - Executes the export of XML and decompose methods on all open LDM models in the selected project or folder (and any subfolder).
+  - Executes the export of XML and decompose methods on all open LDM models in the selected project or folder (and any subfolder) that have the MDDE_LDM extension attached.
 
 ![Project extension menu options](img/project_extension_menu_options.png)
 
