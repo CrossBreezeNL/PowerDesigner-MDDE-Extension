@@ -38,13 +38,17 @@ Function DecomposeOpenModels(ByRef objBasePackage)
    Dim objModel
    For Each objModel in objBasePackage.ModelDocuments
       &#39; Check whether the referenced model inside the project, it is a model file and it is loaded (TargetModelObject is not Nothing).
-      If (objModel.InsideProject) And (objModel.ModelClassKind = PdLDM.cls_Model) And Not(objModel.TargetModelObject Is Nothing) Then 
-         WriteDebug &quot;Exporting &amp; decomposing model &quot; &amp; objModel.Name
-         &#39; Execute the decompose method on the LDM model.
-         DecomposeOpenModels = objModel.TargetModelObject.ExecuteCustomMethod(cMDDE_LDM_EXT_CODE &amp; &quot;.mdde_ExportXmlAndDecompose&quot;)
-         If Not DecomposeOpenModels Then
-            WriteError &quot;An error occured while decomposing &quot; &amp; objModel.Name &amp; &quot;, stopping exporting &amp; decomposing other models.&quot;
-            Exit Function
+      If (objModel.InsideProject) And (objModel.ModelClassKind = PdLDM.cls_Model) And Not(objModel.TargetModelObject Is Nothing) Then
+         &#39; Check whether the MDDE_LDM extension is attached to the LDM, if so run the export.
+         Dim objMddeExtension : Set objMddeExtension = objModel.TargetModelObject.FindChildByCode(&quot;MDDE_LDM&quot;, Cls_ExtendedModelDefinition, &quot;&quot;, Nothing, True, True)   
+         If Not(objMddeExtension Is Nothing) Then
+            WriteDebug &quot;Exporting &amp; decomposing model &quot; &amp; objModel.Name
+            &#39; Execute the decompose method on the LDM model.
+            DecomposeOpenModels = objModel.TargetModelObject.ExecuteCustomMethod(cMDDE_LDM_EXT_CODE &amp; &quot;.mdde_ExportXmlAndDecompose&quot;)
+            If Not DecomposeOpenModels Then
+               WriteError &quot;An error occured while decomposing &quot; &amp; objModel.Name &amp; &quot;, stopping exporting &amp; decomposing other models.&quot;
+               Exit Function
+            End If
          End If
       End If
    Next
