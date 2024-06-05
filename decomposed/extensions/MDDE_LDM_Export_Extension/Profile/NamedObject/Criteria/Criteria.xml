@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="115D7C93-495A-4A3C-BF65-8D4B2BDFBF3E">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>115D7C93-495A-4A3C-BF65-8D4B2BDFBF3E</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1717577398</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="ExtendedSubObject_-_SourceObject_(MDDE)/ExtendedSubObject_-_SourceObject_(MDDE).xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

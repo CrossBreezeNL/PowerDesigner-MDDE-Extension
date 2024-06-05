@@ -12,5 +12,6 @@
 <xi:include href="Model/Model.xml" />
 <xi:include href="Entity/Entity.xml" />
 <xi:include href="EntityAttribute/EntityAttribute.xml" />
+<xi:include href="ExtendedSubObject/ExtendedSubObject.xml" />
 </c:Categories>
 </o:ProfileTargetItem>

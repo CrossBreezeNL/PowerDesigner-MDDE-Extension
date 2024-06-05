@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="87E796C7-28BD-4490-8651-70E58561F2DB">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>87E796C7-28BD-4490-8651-70E58561F2DB</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1717515149</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="SourceObject_(MDDE)/SourceObject_(MDDE).xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>
