@@ -34,7 +34,6 @@
 .comment Add the content of the export extension template
 .if (%Model.mdde_Export_Extension_Attached%)
   .if(%.D:mddex_BaseStructuralFeatureMapping_Export_Content%)
-
   %.D:mddex_BaseStructuralFeatureMapping_Export_Content%
   .endif(\n)
 .endif
