@@ -1,0 +1,23 @@
+<o:MapTargetItem Id="972C98BE-E94C-4928-A230-85F2AF0E5E06">
+<a:ObjectID>972C98BE-E94C-4928-A230-85F2AF0E5E06</a:ObjectID>
+<a:Name>TypeMap</a:Name>
+<a:CreationDate>1691151961</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:MapTargetItem.Value>Diagram=Diagram
+File=File
+Generation=Model Generation
+List=List
+Matrix=Matrix
+Model=Model
+ObjectGeneration=Object Generation
+Script=Script</a:MapTargetItem.Value>
+<a:List>Diagram
+File
+Generation
+List
+Matrix
+Model
+ObjectGeneration
+Script
+</a:List>
+</o:MapTargetItem>

@@ -1,0 +1,11 @@
+<o:MethodTargetItem Id="2FAE8D4A-F45F-4413-9C27-4E6730076D6A">
+<a:ObjectID>2FAE8D4A-F45F-4413-9C27-4E6730076D6A</a:ObjectID>
+<a:Name>mdde_Decompose</a:Name>
+<a:CreationDate>1717591856</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39; Decompose the model file using the method in the Global Script.
+   DecomposeModel obj.DisplayName, obj.FilePath
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

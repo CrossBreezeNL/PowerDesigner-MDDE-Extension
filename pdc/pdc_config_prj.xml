@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PowerDeComposerConfig>
+	<Decompose fileRemovalStrategy="files">
+	
+		<!-- Specify a XPath to execute on both sides (composed and decomposed) to decide whether the decompose. -->
+		<!-- The value of the XPath must be found in the root XML document of the decomposed model, so it can be in a decompose part of the model. -->
+		<!-- If the value doesn't exist on both sides we do nothing. -->
+		<!-- If the value exists on one side but not on the other side, we decompose. -->
+		<!-- If the value exists on both sides, we decompose if the value is different. -->
+		<ChangeDetection xpath="/processing-instruction('PowerDesigner')/@LastModificationDate" />
+	
+		<!-- Specify the nodes to remove before decomposing. -->
+        <NodeRemovals>
+            <!-- Remove the object count on the PowerDesigner processing instruction. -->
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@Objects" />
+            <!-- Remove the symbols count on the PowerDesigner processing instruction. -->
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@Symbols" />
+            <!-- Remove the symbols count on the PowerDesigner processing instruction. -->
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@LastModificationDate" />
+
+            <!-- Remove the PD Repository information. -->
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@RepositoryId" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractionId" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractionBranch" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractionVersion" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractionDate" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@ExtractEndDate" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@OriginalExtractionBranch" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@OriginalExtractionDate" />
+            <NodeRemoval xpath="/processing-instruction('PowerDesigner')/@OriginalExtractionId" />
+            
+            <!-- Remove RepositoryInformation element on ExtendedModelDefinition and Model-->
+            <NodeRemoval xpath="//RepositoryInformation" />
+
+            <!-- Remove the RepositoryFilename element from the model. -->
+            <NodeRemoval xpath="//RepositoryFilename" />
+
+            <!-- Remove the CreationDate, Creator from all Shortcuts. -->
+            <NodeRemoval xpath="//Shortcut/CreationDate" />
+            <NodeRemoval xpath="//Shortcut/Creator" />
+ 
+            <!-- Remove the Modifier & ModificationDate from all elements (including Shortcut elements). -->
+            <!-- This is needed for less unneeded conflicts, since these are updated in to many elements when something is changed. -->
+            <NodeRemoval xpath="//Modifier" />
+            <NodeRemoval xpath="//ModificationDate" />
+ 
+            <!-- Remove the TargetModelLastModificationDate from all TargetModels. -->
+            <NodeRemoval xpath="//TargetModel/TargetModelLastModificationDate" />
+            <NodeRemoval xpath="//TargetModel/RepositoryID" />
+            <NodeRemoval xpath="//TargetModel/ExtractionID" />
+            <NodeRemoval xpath="//TargetModel/ExtractionBranchID" />
+            <NodeRemoval xpath="//TargetModel/ExtractionBranchName" />
+            <NodeRemoval xpath="//TargetModel/ExtractionVersion" />
+            <NodeRemoval xpath="//TargetModel/ExtractionDate" />
+            <NodeRemoval xpath="//TargetModel/TargetRepositoryId" />
+
+            <!-- Remove the History element from all GeneratedModels. -->
+            <NodeRemoval xpath="//GeneratedModels/Shortcut/History" />
+
+            <!-- Remove empty ExtendedCollection elements. -->
+            <NodeRemoval xpath="//ExtendedCollection[count(child::*) = 0]" />
+
+            <!-- Remove empty ExtendedCollections elements. -->
+            <NodeRemoval xpath="//ExtendedCollections[count(child::*) = 0]" />
+
+            <!-- Remove empty ExtendedComposition elements. -->
+            <NodeRemoval xpath="//ExtendedComposition[count(child::*) = 0]" />
+
+            <!-- Remove empty ExtendedCompositions elements. -->
+            <NodeRemoval xpath="//ExtendedCompositions[count(child::*) = 0]" />
+
+            <!-- Remove ExtendedDependencySymbols which are not Visible (a:BaseSymbol.Flags = 1). -->
+            <NodeRemoval xpath="//ExtendedDependencySymbol[./BaseSymbol.Flags = 1]" />
+
+            <!-- Remove the Rect element of Symbols if there is also a ListOfPoints element. -->
+            <NodeRemoval xpath="//ProjectDiagram/Symbols/*[./ListOfPoints]/Rect" />
+        </NodeRemovals>
+
+		<!-- Configuration on how to replace identifiers. -->
+		<IdentifierReplacements>
+            <IdentifierReplacement identifierNodeXPath="//*/@Id[../ObjectID]" replacementValueXPath="../ObjectID" referencingNodeXPath="//*/@Ref" />
+
+            <!-- Identifier Replacement for Symbol elements which contain an Object reference without ClonePredecessor. -->
+            <IdentifierReplacement identifierNodeXPath="//Symbols/*/@Id[../Object/*/@Ref and not(../ClonePredecessor/*/@Ref)]" replacementValueXPath="concat(../../../Code,'_Symbol_', ../Object/*/@Ref)" referencingNodeXPath="//*/@Ref"/>
+		</IdentifierReplacements>
+
+        <!-- Specify which elements should be decomposed. -->
+        <!-- The DecomposableElement is implicitly a AllConditions group. -->
+        <DecomposableElement>
+            <OneOffConditions>
+
+                <!-- All condition for collection elements. -->
+                <AllConditions>
+                    <!-- Use the parent axis on the current node to set a predicate on the parent. -->
+                    <!-- Decompose all elements where the parent name starts with 'c:' (these are the collections in PowerDesigner). -->
+                    <ElementCondition xpath="parent::node()[starts-with(name(), 'c:')]" />
+                    <!-- Don't decompose the Children collection (this is the higher level collection of the model). -->
+                    <ElementCondition xpath="parent::node()[name() != 'c:Children']" />
+                    <!-- Don't decompose SubShortcuts collections. -->
+                    <ElementCondition xpath="parent::node()[name() != 'c:SubShortcuts']" />
+                    <!-- Don't decompose ExtendedComposition content collections. -->
+                    <ElementCondition xpath="parent::node()[name() != 'c:ExtendedComposition.Content']" />
+
+                    <OneOffConditions>
+                        <!-- The element must have a ObjectID and a Code element as childs. -->
+                        <ElementCondition xpath="./ObjectID and ./Code" />
+                        <!-- The element is in the Symbols collection. -->
+                        <ElementCondition xpath="parent::node()[name() = 'c:Symbols']" />
+                        <!-- The element is in the ChildTraceabilityLinks collection. -->
+                        <ElementCondition xpath="parent::node()[name() = 'c:ChildTraceabilityLinks']" />
+                    </OneOffConditions>
+                </AllConditions>
+
+                <!-- Decompose the following elements into their own file. -->
+                <ElementCondition xpath="name() = 'a:PackageOptionsText'" />
+                <ElementCondition xpath="name() = 'a:ModelOptionsText'" />
+                <ElementCondition xpath="name() = 'a:DisplayPreferences'" />
+
+            </OneOffConditions>
+			 
+            <!-- Here we specify the xpath to execute on a decomposable element to get the folder name to store the file in. -->
+            <TargetFolderNames>
+            	<!-- For items with a Stereotype element, we use the Stereotype. -->
+            	<TargetFolderName xpath="./Stereotype" condition="string-length(./Stereotype) > 0" />
+            	<!-- For items with a TargetStereotype element, we use the TargetStereotype (the TargetStereotype is specified in case of shortcuts). -->
+            	<TargetFolderName xpath="./TargetStereotype" condition="string-length(./TargetStereotype) > 0" />
+                <!-- Decompose shortcuts in their own folder. -->
+                <TargetFolderName xpath="'Shortcuts'" condition="name() = 'o:Shortcut'" />
+            </TargetFolderNames>
+			
+			<!-- Here we specify the xpath to execute on a decomposable element to get the file name (without .xml). -->
+            <!-- Target target file names are considered in order of appearance in the config. Once a value has been found which hasen't been written before in the current run, the value is used. -->
+            <!-- For example if the first TargetFileName would lead to the same file name (in the same target folder) for 2 decomposed elements,
+                 the first one would get the name of the TargetFileName specified
+                 and the second one will get the TargetFileName of the next configuration which leads to a value.
+             -->
+            <!-- If no value is found using any configuration an exception is thrown. -->
+            <TargetFileNames>
+            	<!-- For items with a Code element and it is unique for the given TargetFolder, we use the Code. -->
+            	<TargetFileName xpath="translate(normalize-space(./Code), ' ', '_')" condition="string-length(./Code) > 0" />
+            	<!-- For items with a Code and ObjectID element and it is NOT unique for the given TargetFolder, we use the Code and ObjectID. -->
+            	<TargetFileName xpath="concat(translate(normalize-space(./Code), ' ', '_'), '_', ./ObjectID)" condition="string-length(./Code) > 0 and string-length(./ObjectID) > 0" />
+            	<!-- For items without a Code element, but with an ObjectID we use the ObjectID. -->
+            	<TargetFileName xpath="./ObjectID" condition="string-length(./ObjectID) > 0" />
+                <!-- For items without a Code element or ObjectID we use the @Id. -->
+                <TargetFileName xpath="./@Id" condition="string-length(./@Id) > 0" />                    
+            	<!-- For items which don't have a Code and ObjectID element, we use the name of the element. -->
+            	<TargetFileName xpath="translate(name(), ':', '_')" />
+            </TargetFileNames>
+
+            <!-- Here we specify which information to include as an attribute on the xi:include tag. -->
+			<IncludeAttributes />
+
+		</DecomposableElement>
+
+	</Decompose>
+</PowerDeComposerConfig>

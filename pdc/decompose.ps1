@@ -36,6 +36,10 @@ switch ($FileExtension) {
         # TODO: Change this to call a DecomposePDM function and have a specific configuration for this.
         Invoke-DecomposeLDM -ModelFileLocation $ComposedFileLocation -TargetFolderLocation $TargetFolderLocation
     }
+    ".prj" {  
+        # Invoke the Decompose on the PRJ.
+        Invoke-DecomposePRJ -ModelFileLocation $ComposedFileLocation -TargetFolderLocation $TargetFolderLocation
+    }  
     ".sws" {  
         # Invoke the Decompose on the SWS.
         Invoke-DecomposeSWS -ModelFileLocation $ComposedFileLocation -TargetFolderLocation $TargetFolderLocation

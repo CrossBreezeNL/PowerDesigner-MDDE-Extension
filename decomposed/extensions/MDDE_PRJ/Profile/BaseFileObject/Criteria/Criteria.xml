@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="0FF0C877-65AC-4A31-BB53-7E7B4FE44962">
+<a:TypePublicName>CriterionTargetItem</a:TypePublicName>
+<a:ObjectID>0FF0C877-65AC-4A31-BB53-7E7B4FE44962</a:ObjectID>
+<a:Name>Criteria</a:Name>
+<a:CreationDate>1717165137</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Criterion_File_Is_Extension/Criterion_File_Is_Extension.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

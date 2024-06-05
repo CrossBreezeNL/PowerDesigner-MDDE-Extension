@@ -1,0 +1,6 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# We want to make sure for our test files (so .feature and .xml) that all files are stored and retrieved from git as is created, no matter what the the originating operating system is.
+# So we disable autocrlf for XML and Feature files.
+*.xml -text

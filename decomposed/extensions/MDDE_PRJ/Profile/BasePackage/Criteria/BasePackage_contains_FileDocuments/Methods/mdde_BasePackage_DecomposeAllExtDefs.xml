@@ -1,0 +1,52 @@
+<o:MethodTargetItem Id="812ADA5D-D7A8-48CD-8184-00CEB2BFA280">
+<a:ObjectID>812ADA5D-D7A8-48CD-8184-00CEB2BFA280</a:ObjectID>
+<a:Name>mdde_BasePackage_DecomposeAllExtDefs</a:Name>
+<a:CreationDate>1717592752</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39; Inform the user it may take a while.
+   Dim startDecompose : startDecompose = MsgBox(&quot;Decomposing all extended model definitions will start.&quot; &amp; vbCrLf &amp; &quot;This might take a while.&quot;, vbOKCancel + vbQuestion, &quot;Decompose all XEMs&quot;)
+   
+   If startDecompose = vbOk Then
+
+      Dim decomposeSucceeded : decomposeSucceeded = DecomposeXEMs(obj)
+      &#39; Inform the user decomposing is done.
+      If decomposeSucceeded = vbTrue Then
+         MsgBox &quot;Decompose succeeded.&quot;, vbInformation, &quot;Decompose XEMs&quot;
+      Else
+         MsgBox &quot;Decompose failed.&quot; &amp; vbCrLf &amp; vbCrLf &amp; &quot;Please check &#39;Script&#39; output window.&quot;, vbCritical, &quot;Decompose of XEMs failed!&quot;
+      End If
+
+   End If   
+      
+End Sub
+
+Function DecomposeXEMs(ByRef objBasePackage)
+   &#39; Initialize the return value to true.
+   DecomposeXEMs = True
+
+   WriteDebug(&quot;Decomposing XEMs in &#39;&quot; &amp; objBasePackage.Name &amp; &quot;&#39; folder&quot;)
+   
+   Dim objFolder
+   For Each objFolder In objBasePackage.Children
+      If objFolder.ObjectType = &quot;ProjectFolder&quot; Then
+         DecomposeXEMs(objFolder)
+      End If
+   Next
+   
+   Dim objXEM
+   For Each objXEM in objBasePackage.FileDocuments
+      &#39; Check whether the extension of the file is a xem.
+      If (objXEM.Extension = &quot;xem&quot;) Then
+         WriteDebug &quot;Decomposing extension &#39;&quot; &amp; objXEM.Name &amp; &quot;&#39;&quot;
+         &#39; Execute the decompose method on the XEM.
+         DecomposeXEMs = objXEM.ExecuteCustomMethod(cMDDE_PRJ_EXT_CODE &amp; &quot;.mdde_Decompose&quot;)
+         If Not DecomposeXEMs Then
+            WriteError &quot;An error occured while decomposing &#39;&quot; &amp; objXEM.Name &amp; &quot;&#39;, stopping decomposing other extensions.&quot;
+            Exit Function
+         End If
+      End If
+   Next
+End Function</a:MethodScript>
+</o:MethodTargetItem>

@@ -1,0 +1,13 @@
+<o:CriterionTargetItem Id="D8D007D4-420C-4E5D-8283-2F0A7F937FF2">
+<a:ObjectID>D8D007D4-420C-4E5D-8283-2F0A7F937FF2</a:ObjectID>
+<a:Name>BasePackage contains ModelDocuments</a:Name>
+<a:CriterionTargetItem.Value>%Children.Count% &gt; %FileDocuments.Count%</a:CriterionTargetItem.Value>
+<a:CreationDate>1717593771</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Comment>If there is a folder or a model (so not only files) in the current folder/project it can contain models (recursively).</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Methods/Methods.xml" />
+<xi:include href="Menus/Menus.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

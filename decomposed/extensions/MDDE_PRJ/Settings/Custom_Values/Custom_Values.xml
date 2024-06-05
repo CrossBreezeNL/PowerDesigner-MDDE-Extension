@@ -1,0 +1,10 @@
+<o:TargetCategory Id="A79DB6DD-5709-4E08-9BB5-78B6B53C3E53">
+<a:ObjectID>A79DB6DD-5709-4E08-9BB5-78B6B53C3E53</a:ObjectID>
+<a:Name>Custom Values</a:Name>
+<a:CreationDate>1691151961</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<c:Categories>
+<xi:include href="FrameworkCell/FrameworkCell.xml" />
+<xi:include href="FrameworkNode/FrameworkNode.xml" />
+</c:Categories>
+</o:TargetCategory>

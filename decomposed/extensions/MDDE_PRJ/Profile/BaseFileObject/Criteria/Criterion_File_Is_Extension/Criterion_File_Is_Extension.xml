@@ -1,0 +1,12 @@
+<o:CriterionTargetItem Id="462FE800-F578-4D8F-8E22-D483F5509067">
+<a:ObjectID>462FE800-F578-4D8F-8E22-D483F5509067</a:ObjectID>
+<a:Name>Criterion File Is Extension</a:Name>
+<a:CriterionTargetItem.Value>%Extension% == &quot;xem&quot;</a:CriterionTargetItem.Value>
+<a:CreationDate>1717164431</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Menus/Menus.xml" />
+<xi:include href="Methods/Methods.xml" />
+</c:Categories>
+</o:CriterionTargetItem>

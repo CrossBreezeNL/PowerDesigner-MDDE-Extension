@@ -55,7 +55,7 @@
             <NodeRemoval xpath="//TargetModel/TargetRepositoryId" />
 
             <!-- Remove the History element from all GeneratedModels. -->
-            <NodeRemoval xpath="//GeneratedModels/Shortcut/History" />      
+            <NodeRemoval xpath="//GeneratedModels/Shortcut/History" />
 
             <!-- Remove the default mapping extended composition. -->
             <NodeRemoval xpath="//ExtendedCollection[./ExtendedBaseCollection.CollectionName='mdde_Entity_DefaultMapping']" />
@@ -138,7 +138,6 @@
                 <ElementCondition xpath="name() = 'a:PackageOptionsText'" />
                 <ElementCondition xpath="name() = 'a:ModelOptionsText'" />
                 <ElementCondition xpath="name() = 'a:DisplayPreferences'" />
-                <ElementCondition xpath="@Stereotype = 'dwa_TestScenarioExampleFieldValue'" />
 
             </OneOffConditions>
 			 

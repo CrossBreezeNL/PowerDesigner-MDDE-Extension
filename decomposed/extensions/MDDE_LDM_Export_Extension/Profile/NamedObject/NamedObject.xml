@@ -7,5 +7,6 @@
 <c:Categories>
 <xi:include href="Templates/Templates.xml" />
 <xi:include href="Extended_Attributes/Extended_Attributes.xml" />
+<xi:include href="Criteria/Criteria.xml" />
 </c:Categories>
 </o:MetaClassTargetItem>

@@ -2,7 +2,7 @@
 <a:ObjectID>1D7A420C-7255-425E-99AE-B83F0B87B5DF</a:ObjectID>
 <a:Name>mdde_Model_ContextMenu</a:Name>
 <a:MenuTargetItem.Value>&lt;Menu&gt;
-   &lt;Command Name=&quot;mdde_ExportXmlAndDecompose&quot; Caption=&quot;Export XML and Decompose (MDDE)&quot; /&gt;
+   &lt;Command Name=&quot;mdde_ExportXmlAndDecompose&quot; Caption=&quot;Export and decompose (MDDE)&quot; /&gt;
    &lt;Popup Caption=&quot;Debugging (MDDE)&quot; &gt;
       &lt;Command Name=&quot;mdde_ExportXml&quot; Caption=&quot;Export XML (MDDE)&quot; /&gt;
       &lt;Command Name=&quot;mdde_Decompose&quot; Caption=&quot;Decompose (MDDE)&quot; /&gt;

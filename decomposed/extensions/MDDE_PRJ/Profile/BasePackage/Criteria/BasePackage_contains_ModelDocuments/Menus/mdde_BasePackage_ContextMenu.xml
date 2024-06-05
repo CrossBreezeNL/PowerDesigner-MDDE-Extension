@@ -1,0 +1,12 @@
+<o:MenuTargetItem Id="378AE4EA-45A6-4C63-A49D-C57D0D5836DA">
+<a:ObjectID>378AE4EA-45A6-4C63-A49D-C57D0D5836DA</a:ObjectID>
+<a:Name>mdde_BasePackage_ContextMenu</a:Name>
+<a:MenuTargetItem.Value>&lt;Menu&gt;
+   &lt;Command Name=&quot;mdde_BasePackage_OpenAllLDMs&quot; Caption=&quot;Open all logical data models (MDDE)&quot; /&gt;
+   &lt;Command Name=&quot;mdde_BasePackage_ExportAndDecomposeOpenLDMs&quot; Caption=&quot;Export and decompose open logical data models (MDDE)&quot; /&gt;
+&lt;/Menu&gt;
+</a:MenuTargetItem.Value>
+<a:CreationDate>1691157719</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:MenuTargetItem>

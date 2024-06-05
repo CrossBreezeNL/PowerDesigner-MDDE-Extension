@@ -1,0 +1,22 @@
+<o:ModelDocumentSymbol Id="ExampleProject_Symbol_91F1369E-F688-43E5-A3AA-D743D29C0B64">
+<a:CreationDate>1691151512</a:CreationDate>
+<a:IconMode>2</a:IconMode>
+<a:EmptyAreaSize>(1200, 1200)</a:EmptyAreaSize>
+<a:Rect>((5469,2403), (7868,4802))</a:Rect>
+<a:LineColor>12034707</a:LineColor>
+<a:FillColor>16437422</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>OBJSTRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:CustomPictureType>4</a:CustomPictureType>
+<a:CustomTextMode>1</a:CustomTextMode>
+<a:CustomPictureID>05616D99-57B0-4D54-93F8-6AC0FA46CD12</a:CustomPictureID>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:KeepAspect>1</a:KeepAspect>
+<c:Object>
+<o:ModelDocument Ref="91F1369E-F688-43E5-A3AA-D743D29C0B64"/>
+</c:Object>
+</o:ModelDocumentSymbol>

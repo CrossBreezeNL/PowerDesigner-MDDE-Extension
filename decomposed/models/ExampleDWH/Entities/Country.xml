@@ -42,7 +42,8 @@ DAT 1680508903</a:History>
 <ExtendedAttribute ObjectID="8C784170-CF5C-47B8-92C4-6F55CB5C20C7" Name="ExtDeftConstName"></ExtendedAttribute>
 <ExtendedAttribute ObjectID="2B8CA186-41D1-4259-8C4A-3070140AEB80" Name="ExtNullConstName"></ExtendedAttribute>
 <ExtendedAttribute ObjectID="80BA5E36-A6B9-415A-BB91-F7EF95528DCC" Name="ExtCollation"></ExtendedAttribute>
-<ExtendedAttribute ObjectID="3175F5EA-150A-478F-823F-1D40A26994A8" Name="ExtIdentitySeedInc"></ExtendedAttribute>
+</OriginatingExtension>
+<OriginatingExtension ObjectID="3175F5EA-150A-478F-823F-1D40A26994A8" Name="ExtIdentitySeedInc">
 </OriginatingExtension>
 </ExtendedAttributes>
 </o:EntityAttribute>

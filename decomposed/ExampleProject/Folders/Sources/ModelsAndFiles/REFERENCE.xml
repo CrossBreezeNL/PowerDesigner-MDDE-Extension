@@ -1,0 +1,11 @@
+<o:ModelDocument Id="91F1369E-F688-43E5-A3AA-D743D29C0B64">
+<a:ObjectID>91F1369E-F688-43E5-A3AA-D743D29C0B64</a:ObjectID>
+<a:Name>Reference</a:Name>
+<a:Code>REFERENCE</a:Code>
+<a:CreationDate>1691151512</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/models/Reference.ldm</a:Location>
+<a:Extension>ldm</a:Extension>
+<a:ModelDocument.ModelID>E0D7FF56-7977-4D8F-A64B-BB6D985687E7</a:ModelDocument.ModelID>
+<a:ModelClassID>5F45F978-C4F3-4E35-A3FC-AF3318663A0F</a:ModelClassID>
+</o:ModelDocument>

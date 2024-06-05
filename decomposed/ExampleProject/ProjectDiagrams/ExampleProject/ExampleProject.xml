@@ -1,0 +1,24 @@
+<o:ProjectDiagram Id="E4B278F6-21C1-400B-9038-805D9657B31F">
+<a:ObjectID>E4B278F6-21C1-400B-9038-805D9657B31F</a:ObjectID>
+<a:Name>ExampleProject</a:Name>
+<a:Code>ExampleProject</a:Code>
+<a:CreationDate>1691151501</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<xi:include href="ProjectDiagram/a_DisplayPreferences.xml" />
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>261</a:PaperSource>
+<c:Symbols>
+<xi:include href="Symbols/ExampleProject_Symbol_F7892EA4-BA8F-469A-A77F-5490FD05421D.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_19EE1D74-45E8-463B-917D-AA44FA9B8F44.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_4456CA17-8704-4045-B1E6-C083FD981C86.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_E9FCDB6E-781A-49D7-954A-D6E2EDE52691.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_B570EF35-BF42-4EC5-B5FF-0BF955A1BFDE.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_91F1369E-F688-43E5-A3AA-D743D29C0B64.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_B99B461C-48B6-428A-B9B9-ED8C86B88F48.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_F42E701F-5D49-42AD-9E74-B5CF17F4B565.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_7E36A23E-6356-433E-8220-A1DB3A9866C8.xml" />
+<xi:include href="Symbols/ExampleProject_Symbol_651E97A0-8571-4917-B83C-55DFA0FE9C01.xml" />
+</c:Symbols>
+</o:ProjectDiagram>

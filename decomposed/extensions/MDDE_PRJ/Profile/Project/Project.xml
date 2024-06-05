@@ -1,0 +1,11 @@
+<o:MetaClassTargetItem Id="2E113CA4-9B2A-415E-9D20-AFE7079DD1CA">
+<a:ObjectID>2E113CA4-9B2A-415E-9D20-AFE7079DD1CA</a:ObjectID>
+<a:Name>Project</a:Name>
+<a:CreationDate>1717591856</a:CreationDate>
+<a:Creator>HarmenWessels</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Methods/Methods.xml" />
+<xi:include href="Menus/Menus.xml" />
+</c:Categories>
+</o:MetaClassTargetItem>
