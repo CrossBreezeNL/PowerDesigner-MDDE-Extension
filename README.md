@@ -24,7 +24,7 @@ These LDM extension add extra modeling possibilities to PowerDesigner, where sta
     - Examples tab on mappings so example input and output data can be specified in the model.
 
     ![Mapping a filter business rule](manual/img/mapping_source_object_overview.png)
-    
+
   - Business rule (stereotype)
     - Add support for modeling business rules with input/output attributes and examples.
     - Supported sub-stereotypes:
@@ -35,7 +35,6 @@ These LDM extension add extra modeling possibilities to PowerDesigner, where sta
       - Pivot business rule
 
       ![PowerDesigner Toolbox Business Rule](manual/img/business_rule_toolbox.png)
-
 
 - Model checks
   - Extra model checks have been implemented to verify the newly supported objects.
@@ -48,7 +47,7 @@ In many cases it is helpful to customize the XML Export to include project-speci
 
 ### LDM export extension
 
-To extend the XML export as part of the [LDM modeling extension](#ldm-modeling-extension), this extension is a bootstrap file which can be extended by end-users to add any needed metadata into the XML export.
+To extend the XML export part of the [LDM modeling extension](#ldm-modeling-extension), this extension is a bootstrap file which can be extended by end-users to add any needed metadata into the XML export.
 
 ### Project extension
 
