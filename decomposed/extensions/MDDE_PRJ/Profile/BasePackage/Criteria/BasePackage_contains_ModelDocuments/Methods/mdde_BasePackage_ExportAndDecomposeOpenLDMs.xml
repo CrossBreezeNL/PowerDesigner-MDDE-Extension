@@ -50,7 +50,7 @@ Function DecomposeOpenModels(ByRef objBasePackage)
                Exit Function
             End If
          Else
-            WriteInfo &quot;MDDE LDM extension ot attached to &#39;&quot; &amp; objModel.DisplayName &amp; &quot;&#39;, so skipping export &amp; decompose.&quot;   
+            WriteInfo &quot;MDDE LDM extension not attached to &#39;&quot; &amp; objModel.DisplayName &amp; &quot;&#39;, so skipping export &amp; decompose.&quot;   
          End If
       End If
    Next
