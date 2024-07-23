@@ -30,7 +30,7 @@ Function CheckOrFixJoinConditions(objSourceObject, boolAutoFix)
 
    &#39; Get the source object.
    &#39; We don&#39;t need to check whether the source object is defined, this is handled by the criteria.
-   Dim objExpressionBusinessRule : Set objExpressionBusinessRule = objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;)
+   Dim objExpressionBusinessRule : Set objExpressionBusinessRule = GetRealObject(objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;))
    &#39; The last attribute index, so it&#39;s the count minus 1 (since it&#39;s zero based index).
    Dim intLastBRAttributeIndex : intLastBRAttributeIndex = objExpressionBusinessRule.Attributes.Count - 1
    Dim intCurrentAttributeIndex
@@ -56,7 +56,7 @@ Function CheckOrFixJoinConditions(objSourceObject, boolAutoFix)
          Dim objCurrentJoinCondition : Set objCurrentJoinCondition = colJoinConditions.Item(intCurrentInputAttributeIndex)
          
          &#39; Get a reference on the join condition child attribute.
-         Dim objJoinConditionChildAttribute : Set objJoinConditionChildAttribute = objCurrentJoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;)
+         Dim objJoinConditionChildAttribute : Set objJoinConditionChildAttribute = GetRealObject(objCurrentJoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;))
          
          &#39; Check whether the child attribute is set.
          If objJoinConditionChildAttribute Is Nothing Then
@@ -76,7 +76,7 @@ Function CheckOrFixJoinConditions(objSourceObject, boolAutoFix)
                   &#39; Get a reference on the other join condition.
                   Dim objOtherJoinCondition : Set objOtherJoinCondition = colJoinConditions.Item(intOtherJoinConditionIndex)
                   &#39; Get a reference on the join condition child attribute.
-                  Dim objOtherJoinConditionChildAttribute : Set objOtherJoinConditionChildAttribute = objOtherJoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;)
+                  Dim objOtherJoinConditionChildAttribute : Set objOtherJoinConditionChildAttribute = GetRealObject(objOtherJoinCondition.GetExtendedAttribute(&quot;mdde_ChildAttribute&quot;))
                   &#39; Check whether the other join condition child attribute is the one we are looking for.
                   If Not(objOtherJoinConditionChildAttribute Is Nothing) Then
                      If objOtherJoinConditionChildAttribute.ObjectID = objBRAttribute.ObjectID Then
