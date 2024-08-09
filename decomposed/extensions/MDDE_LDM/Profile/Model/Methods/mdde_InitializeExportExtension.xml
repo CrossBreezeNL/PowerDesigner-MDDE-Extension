@@ -99,7 +99,7 @@ End Function
 
 &#39;Apply template on object and check for translation errors
 Function applyTemplateOnObject(objModel, objItem, templateName, extendedAttributeName)
-   'WriteDebug(&quot;Applying template &#39;&quot; &amp; templateName &amp; &quot;&#39; on object &#39;&quot; &amp; objItem.DisplayName &amp; &quot;&#39;&quot;)
+   &#39;WriteDebug(&quot;Applying template &#39;&quot; &amp; templateName &amp; &quot;&#39; on object &#39;&quot; &amp; objItem.DisplayName &amp; &quot;&#39;&quot;)
    &#39; Initialize return value to True.
    applyTemplateOnObject = True
    
