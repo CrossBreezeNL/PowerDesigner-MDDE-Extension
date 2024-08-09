@@ -5,7 +5,11 @@
 <a:CreationDate>1680508903</a:CreationDate>
 <a:Creator>MooOthman</a:Creator>
 <a:History>ORG {B9ECDFCE-F7E2-41DE-B1D7-5408928BFFCB}
-DAT 1680508903</a:History>
+DAT 1680508903
+ATT NAMA
+ATT NAMB</a:History>
+<a:Entity1ToEntity2Role>Buyer</a:Entity1ToEntity2Role>
+<a:Entity2ToEntity1Role>Bought</a:Entity2ToEntity1Role>
 <a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
