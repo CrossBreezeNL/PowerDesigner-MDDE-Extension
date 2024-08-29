@@ -11,6 +11,12 @@
 .if (%mdde_JoinCondition_ParentAttribute_XmlExport_Template%)
  ParentAttribute=&quot;%mdde_JoinCondition_ParentAttribute_XmlExport_Template%&quot; ParentIsLiteralValue=&quot;%mdde_ParentIsLiteralValue%&quot;
 .endif
+.if (%mdde_ParentSourceObject%)
+ ParentSourceObjectId=&quot;%mdde_ParentSourceObject.ObjectID%&quot; ParentSourceObjectCode=&quot;%mdde_ParentSourceObject.Code%&quot;
+.endif 
+.if (%mdde_ParentAttribute%)
+ ParentAttributeId=&quot;%mdde_ParentAttribute.ObjectID%&quot; ParentAttributeCode=&quot;%mdde_ParentAttribute.Code%&quot;
+.endif
  /&gt;</a:TemplateTargetItem.Value>
 <a:CreationDate>1651762677</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
