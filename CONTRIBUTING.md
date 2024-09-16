@@ -8,7 +8,7 @@ Please follow the instructions below on how to setup your local environment and 
 These prerequisites are only needed when you want to compose or decompose the extensions and/or example models. This is not necessary if you only want to use the extension as is, which can be downloaded from any [release](https://github.com/CrossBreezeNL/PowerDesigner-MDDE-Extension/releases/).
 
 - PowerShell 7 or higher. Download it [here](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows#msi)
-- Java JRE/JDK >= 11.
+- Java JRE/JDK >= 11. Like [Apache Temurin](https://adoptium.net/temurin/releases/).
 
 ## PowerShell settings
 

@@ -177,28 +177,28 @@
             <SourceObject Id="946186C3-8F2F-41B9-9A7D-8AB9CB4F2146" Code="Country" Name="Country" Stereotype="mdde_SourceObject" JoinedObject="Country" JoinedObjectModel="EXAMPLEDWH" JoinType="LEFT JOIN">
               <Entity Id="F7FFB923-8961-422F-9EB7-B5EA84C99262" Code="Country" Name="Country" />
               <JoinConditions>
-                <JoinCondition ChildAttribute="CODE" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;COUNTRY&quot;" ParentIsLiteralValue="false" />
+                <JoinCondition ChildAttribute="CODE" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;COUNTRY&quot;" ParentIsLiteralValue="false" ParentSourceObjectId="BD5952F1-0868-4FC7-A3AC-273126B9E7AA" ParentSourceObjectCode="Customer" ParentAttributeId="95EA4A3A-B2E7-4F50-AEA3-8209C2AC0C46" ParentAttributeCode="COUNTRY" />
               </JoinConditions>
             </SourceObject>
             <SourceObject Id="AEA474CB-9A03-41BC-8B68-2814C842020C" Code="Aggregate_Total_Sales_Per_Customer" Name="Aggregate Total Sales Per Customer" Stereotype="mdde_SourceObject" JoinedObject="Aggregate_Total_Sales_Per_Customer" JoinedObjectModel="EXAMPLEDWH" JoinType="LEFT JOIN">
               <AggregateBusinessRule Id="B3B5F4BC-300B-4354-87E5-B5987AA01744" Code="Aggregate_Total_Sales_Per_Customer" Name="Aggregate Total Sales Per Customer" Stereotype="mdde_AggregateBusinessRule" />
               <JoinConditions>
-                <JoinCondition ChildAttribute="CUSTOMERID" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;ID&quot;" ParentIsLiteralValue="false" />
+                <JoinCondition ChildAttribute="CUSTOMERID" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;ID&quot;" ParentIsLiteralValue="false" ParentSourceObjectId="BD5952F1-0868-4FC7-A3AC-273126B9E7AA" ParentSourceObjectCode="Customer" ParentAttributeId="071EB08F-6D7D-428D-BBB0-14B5B9D81201" ParentAttributeCode="ID" />
                 <JoinCondition ChildAttribute="TOTALREVENUE" JoinOperator="&gt;" ParentAttribute="0" ParentIsLiteralValue="true" />
               </JoinConditions>
             </SourceObject>
             <SourceObject Id="BFE7CB1D-E29F-43F8-80A1-8A39D28FDA94" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_SourceObject" JoinedObject="Derive_Customer_FullName" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
               <ScalarBusinessRule Id="FEEBABF2-3F57-42F3-B5AB-485037997805" Code="Derive_Customer_FullName" Name="Derive Customer FullName" Stereotype="mdde_ScalarBusinessRule" />
               <JoinConditions>
-                <JoinCondition ChildAttribute="FIRST_NAME" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;FIRSTNAME&quot;" ParentIsLiteralValue="false" />
-                <JoinCondition ChildAttribute="LAST_NAME" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;LASTNAME&quot;" ParentIsLiteralValue="false" />
+                <JoinCondition ChildAttribute="FIRST_NAME" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;FIRSTNAME&quot;" ParentIsLiteralValue="false" ParentSourceObjectId="BD5952F1-0868-4FC7-A3AC-273126B9E7AA" ParentSourceObjectCode="Customer" ParentAttributeId="E15BA61C-22E8-480F-8854-32B66E2001C0" ParentAttributeCode="FIRSTNAME" />
+                <JoinCondition ChildAttribute="LAST_NAME" JoinOperator="=" ParentAttribute="&quot;Customer&quot;.&quot;LASTNAME&quot;" ParentIsLiteralValue="false" ParentSourceObjectId="BD5952F1-0868-4FC7-A3AC-273126B9E7AA" ParentSourceObjectCode="Customer" ParentAttributeId="B47EB33C-682A-4199-845A-C2B47D086F72" ParentAttributeCode="LASTNAME" />
               </JoinConditions>
               <SqlExpression>Customer.FIRSTNAME || &#39; &#39; || Customer.LASTNAME AS FULL_NAME</SqlExpression>
             </SourceObject>
             <SourceObject Id="6DB43891-22B1-48D1-8BDC-27987FA6D4D0" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_SourceObject" JoinedObject="Filter_FromNL" JoinedObjectModel="EXAMPLEDWH" JoinType="APPLY">
               <FilterBusinessRule Id="E1395C49-53C1-4F30-A69D-5E523DF67CD1" Code="Filter_FromNL" Name="Filter_FromNL" Stereotype="mdde_FilterBusinessRule" />
               <JoinConditions>
-                <JoinCondition ChildAttribute="COUNTRY_CODE" JoinOperator="=" ParentAttribute="&quot;Country&quot;.&quot;CODE&quot;" ParentIsLiteralValue="false" />
+                <JoinCondition ChildAttribute="COUNTRY_CODE" JoinOperator="=" ParentAttribute="&quot;Country&quot;.&quot;CODE&quot;" ParentIsLiteralValue="false" ParentSourceObjectId="946186C3-8F2F-41B9-9A7D-8AB9CB4F2146" ParentSourceObjectCode="Country" ParentAttributeId="5C782765-BA26-49BC-8DA4-FDFDD7538643" ParentAttributeCode="CODE" />
               </JoinConditions>
               <SqlExpression>Country.CODE = &#39;NL&#39;</SqlExpression>
             </SourceObject>
@@ -325,7 +325,7 @@
             <SourceObject Id="AADE6651-C2A7-433D-BD10-B52D14E0F0CA" Code="Customer" Name="Customer" Stereotype="mdde_SourceObject" JoinedObject="Customer" JoinedObjectModel="EXAMPLESOURCE" JoinType="INNER JOIN">
               <Entity Id="1352D98F-2A9C-42AA-AE82-2E68BA514F02" Code="Customer" Name="Customer" />
               <JoinConditions>
-                <JoinCondition ChildAttribute="ID" JoinOperator="=" ParentAttribute="&quot;SalesOrder&quot;.&quot;CUSTOMERID&quot;" ParentIsLiteralValue="false" />
+                <JoinCondition ChildAttribute="ID" JoinOperator="=" ParentAttribute="&quot;SalesOrder&quot;.&quot;CUSTOMERID&quot;" ParentIsLiteralValue="false" ParentSourceObjectId="28920BA9-47C9-45CC-A738-6157059ABCCC" ParentSourceObjectCode="SalesOrder" ParentAttributeId="EC1D061C-A80C-45FC-9210-404133B3EAC3" ParentAttributeCode="CUSTOMERID" />
               </JoinConditions>
             </SourceObject>
           </SourceObjects>
@@ -370,7 +370,7 @@
               <ScalarBusinessRule Id="5C9CA8A8-333C-4FC6-9C9A-84546F24EDE0" Code="Calculate_Order_Age" Name="Calculate_Order_Age" Stereotype="mdde_ScalarBusinessRule" />
               <JoinConditions>
                 <JoinCondition ChildAttribute="DATE_" JoinOperator="=" ParentAttribute="'2023-12-31'" ParentIsLiteralValue="true" />
-                <JoinCondition ChildAttribute="DATE_ORDER" JoinOperator="=" ParentAttribute="&quot;SalesOrder&quot;.&quot;ORDERDATE&quot;" ParentIsLiteralValue="false" />
+                <JoinCondition ChildAttribute="DATE_ORDER" JoinOperator="=" ParentAttribute="&quot;SalesOrder&quot;.&quot;ORDERDATE&quot;" ParentIsLiteralValue="false" ParentSourceObjectId="40917FB0-D3E0-46A9-B991-CCC50FC38BCB" ParentSourceObjectCode="SalesOrder" ParentAttributeId="FE17C4F0-5C1E-4E50-A96E-D045E816ACAF" ParentAttributeCode="ORDERDATE" />
               </JoinConditions>
               <SqlExpression>DATEDIFF(DAY, SalesOrder.ORDERDATE, &#39;2023-12-31&#39;) AS ORDER_AGE_IN_DAYS</SqlExpression>
             </SourceObject>
