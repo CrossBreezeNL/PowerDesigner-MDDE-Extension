@@ -9,20 +9,16 @@
 <a:ComputedAccessType>RO</a:ComputedAccessType>
 <a:GetMethodScript>Function %Get%(obj)
    Dim joinConditions
-   Dim joinCondition
    Dim joinCount
-   joinCount = 0
+   
+   Set joinConditions = obj.GetExtendedCollection(&quot;mdde_JoinConditions&quot;, False)
 
-   If Not obj Is Nothing Then
-      Set joinConditions = obj.GetExtendedCollection(&quot;mdde_JoinConditions&quot;, False)
-
-      If Not joinConditions Is Nothing Then
-         For Each joinCondition In joinConditions
-            joinCount = joinCount + 1
-         Next        
-      End If
+   If Not joinConditions Is Nothing Then
+     joinCount = joinConditions.Count
+   Else
+     joinCount = 0
    End If
-
+   
    %Get% = joinCount
 End Function</a:GetMethodScript>
 <a:Label>No. of Join Conditions</a:Label>
