@@ -51,7 +51,11 @@ Click 'Apply' to save the changes in the model.
 
 ### Specifying join conditions
 
-When you added a source object with a join type which needs join conditions you must add these by opening the source object properties. You can do this by double-clicking on the number left of the source object you want to specify the join conditions on. A 'Source object Properties' screen should appear and the 'General' tab should be selected. On this tab the join conditions can be added/updated. The following properties per join condition need to be filled:
+When you added a source object with a join type which needs join conditions you must add these by opening the source object properties. 
+
+![No. of Join Conditions](img/source_object_join_conditions_with_No_of_Join_Conditions.png)
+
+You can do this by double-clicking on the number left of the source object you want to specify the join conditions on. A 'Source object Properties' screen should appear and the 'General' tab should be selected. On this tab the join conditions can be added/updated. The following properties per join condition need to be filled:
 
 | Property               | Description                                                  |
 |------------------------|--------------------------------------------------------------|
