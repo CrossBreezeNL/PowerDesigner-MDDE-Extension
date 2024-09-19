@@ -11,5 +11,6 @@
 <xi:include href="mdde_JoinedObject.xml" />
 <xi:include href="mdde_OffsetPeriod.xml" />
 <xi:include href="mdde_OffsetValue.xml" />
+<xi:include href="mdde_NumberOfJoinConditions.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
