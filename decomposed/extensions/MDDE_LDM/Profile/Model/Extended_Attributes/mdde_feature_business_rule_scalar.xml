@@ -1,0 +1,9 @@
+<o:ExtendedAttributeTargetItem Id="380C3059-E59A-4556-AF67-19B74A862155">
+<a:ObjectID>380C3059-E59A-4556-AF67-19B74A862155</a:ObjectID>
+<a:Name>mdde_feature_business_rule_scalar</a:Name>
+<a:CreationDate>1726841036</a:CreationDate>
+<a:Creator>RichaneRamsoedit</a:Creator>
+<a:Comment>This extended attribute is added to refer to the event handler CanCreate to be able to enable the scalar business rule </a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>MDDE enable scalar business rule</a:Label>
+</o:ExtendedAttributeTargetItem>

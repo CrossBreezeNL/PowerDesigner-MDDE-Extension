@@ -197,5 +197,6 @@ C59EA3FFC59FA3FFC59FA4FFC7A0A5FFC7A0A6FFB5838AFF9A5360EF9A53602F
 </c:ParentSttp>
 <c:Categories>
 <xi:include href="Custom_Symbol.xml" />
+<xi:include href="Event_Handlers/Event_Handlers.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>
