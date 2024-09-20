@@ -2,12 +2,17 @@
 <a:ObjectID>82A848B3-38C7-40F2-AB0F-ECE90F5DB908</a:ObjectID>
 <a:Name>mdde_XmlExportConfiguration</a:Name>
 <a:FormTargetItem.Value>&lt;Form  &gt;
-   &lt;StaticText Name=&quot;XML Export Configuration&quot; Caption=&quot;With the options below you can enable/disable the export of certain metadata.\n\nThe reason to disable unneeded metadata is to increase the export speed and keep the model export as small as possible.&quot; /&gt;
-   &lt;ExtendedAttribute Attribute=&quot;mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression&quot; Caption=&quot;SourceObject &amp;lt;&amp;lt;ExpressionBusinessRule&amp;gt;&amp;gt; SQL Expression&quot; AttributeID=&quot;{A3455CE1-6457-40F7-9C0B-599E355AF4DE}&quot; GrayHiddenAttributes=&quot;Yes&quot; Display=&quot;Checkbox&quot; LeftText=&quot;No&quot; /&gt;
+   &lt;GroupBox Name=&quot;Enabling Business Rule features&quot; Caption=&quot;Enable features&quot; ControlAsLabel=&quot;No&quot; &gt;
+      &lt;ExtendedAttribute Attribute=&quot;mdde_feature_business_rule_pivot&quot; Caption=&quot;Enable pivot business rule&quot; AttributeID=&quot;{B3CFF5CB-A1B0-4149-AF6A-AAD39EF84993}&quot; GrayHiddenAttributes=&quot;Yes&quot; Display=&quot;Checkbox&quot; LeftText=&quot;No&quot; /&gt;
+   &lt;/GroupBox&gt;
+   &lt;GroupBox Name=&quot;GroupBox1&quot; Caption=&quot;XML Export&quot; ControlAsLabel=&quot;No&quot; &gt;
+      &lt;StaticText Name=&quot;XML Export Configuration&quot; Caption=&quot;With the options below you can enable/disable the export of certain metadata.\n\nThe reason to disable unneeded metadata is to increase the export speed and keep the model export as small as possible.&quot; /&gt;
+      &lt;ExtendedAttribute Attribute=&quot;mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression&quot; Caption=&quot;SourceObject &amp;lt;&amp;lt;ExpressionBusinessRule&amp;gt;&amp;gt; SQL Expression&quot; AttributeID=&quot;{A3455CE1-6457-40F7-9C0B-599E355AF4DE}&quot; GrayHiddenAttributes=&quot;Yes&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;true&quot; VerticalResize=&quot;true&quot; Display=&quot;Checkbox&quot; LeftText=&quot;No&quot; /&gt;
+   &lt;/GroupBox&gt;
 &lt;/Form&gt;
 </a:FormTargetItem.Value>
 <a:CreationDate>1716375491</a:CreationDate>
 <a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
-<a:Label>XML Export (MDDE)</a:Label>
+<a:Label>Configuration (MDDE)</a:Label>
 </o:FormTargetItem>

@@ -9,5 +9,6 @@
 <xi:include href="mdde_Export_Extension_Attached.xml" />
 <xi:include href="mdde_Export_Extension_Initialization_Successful.xml" />
 <xi:include href="mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression.xml" />
+<xi:include href="mdde_feature_business_rule_pivot.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
