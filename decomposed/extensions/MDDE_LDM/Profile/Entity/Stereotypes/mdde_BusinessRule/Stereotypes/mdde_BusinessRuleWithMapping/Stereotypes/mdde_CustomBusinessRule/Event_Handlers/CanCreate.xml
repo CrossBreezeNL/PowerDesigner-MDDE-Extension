@@ -1,0 +1,17 @@
+<o:EventHandlerTargetItem Id="D1DB87F4-7902-45D2-83EA-E01AFD8ABD62">
+<a:ObjectID>D1DB87F4-7902-45D2-83EA-E01AFD8ABD62</a:ObjectID>
+<a:Name>CanCreate</a:Name>
+<a:CreationDate>1726841992</a:CreationDate>
+<a:Creator>RichaneRamsoedit</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HandlerScript>Function %CanCreate%(parent)
+   &#39;the parent represents the CustomBusinessRule which communicaties with the model object&#39; 
+   &#39;the default value for the attribute is set to TRUE in the form&#39;
+   
+   %CanCreate% = False
+    &#39; If the parent is known return the value of the MDDE configuration extended attribute.
+   If Not (parent Is Nothing) Then
+     %CanCreate% = parent.Model.GetExtendedAttribute(&quot;mdde_Feature_BusinessRule_Custom&quot;)
+   End If
+End Function</a:HandlerScript>
+</o:EventHandlerTargetItem>

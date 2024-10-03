@@ -198,5 +198,6 @@ EFE5E0FF78737080000000000000000000000000000000000000000000000000
 <c:Categories>
 <xi:include href="Custom_Symbol.xml" />
 <xi:include href="Custom_Checks/Custom_Checks.xml" />
+<xi:include href="Event_Handlers/Event_Handlers.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>

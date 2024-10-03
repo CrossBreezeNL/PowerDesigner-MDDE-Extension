@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="B4C49304-F4C0-4FA2-84AA-C0657EA5377F">
+<a:TypePublicName>EventHandlerTargetItem</a:TypePublicName>
+<a:ObjectID>B4C49304-F4C0-4FA2-84AA-C0657EA5377F</a:ObjectID>
+<a:Name>Event Handlers</a:Name>
+<a:CreationDate>1726842683</a:CreationDate>
+<a:Creator>RichaneRamsoedit</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="CanCreate.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

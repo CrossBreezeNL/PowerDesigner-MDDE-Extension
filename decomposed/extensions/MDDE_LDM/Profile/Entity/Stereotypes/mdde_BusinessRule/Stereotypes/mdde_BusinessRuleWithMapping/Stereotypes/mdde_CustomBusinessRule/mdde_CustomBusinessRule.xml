@@ -14,5 +14,6 @@
 </c:ParentSttp>
 <c:Categories>
 <xi:include href="Custom_Symbol.xml" />
+<xi:include href="Event_Handlers/Event_Handlers.xml" />
 </c:Categories>
 </o:StereotypeTargetItem>
