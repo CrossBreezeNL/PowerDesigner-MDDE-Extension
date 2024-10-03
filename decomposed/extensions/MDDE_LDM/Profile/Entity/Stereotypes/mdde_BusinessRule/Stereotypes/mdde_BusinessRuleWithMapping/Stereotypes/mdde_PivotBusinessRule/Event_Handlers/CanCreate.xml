@@ -14,7 +14,7 @@
       Exit function
    End If
    
-   Dim pivotAttribute : pivotAttribute = model.GetExtendedAttribute(&quot;mdde_feature_business_rule_pivot&quot;, 1)
+   Dim pivotAttribute : pivotAttribute = model.GetExtendedAttribute(&quot;mdde_Feature_BusinessRule_Pivot&quot;, 1)
    
    If pivotAttribute = False Then
       %CanCreate% = False
