@@ -5,5 +5,6 @@
 <a:Creator>RichaneRamsoedit</a:Creator>
 <a:Comment>This extended attribute is added to refer to the event handler CanCreate to be able to enable the scalar business rule </a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.Value>true</a:ExtendedAttributeTargetItem.Value>
 <a:Label>MDDE enable scalar business rule</a:Label>
 </o:ExtendedAttributeTargetItem>

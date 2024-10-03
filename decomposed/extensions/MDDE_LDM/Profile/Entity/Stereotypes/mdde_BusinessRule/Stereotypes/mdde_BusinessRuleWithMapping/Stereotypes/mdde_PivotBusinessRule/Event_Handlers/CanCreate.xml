@@ -5,21 +5,13 @@
 <a:Creator>RichaneRamsoedit</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %CanCreate%(parent)
-   Dim model : Set model = parent.Model
+  &#39;the parent represents the PivotBusinessRule which communicaties with the model object&#39; 
+  &#39;the default value for the attribute is set to TRUE in the form&#39;
    
-   &#39;Foutafhandeling wanneer er geen model is
-   If model Is Nothing Then
-      MsgBox &quot;Het model object kon niet worden opgehaald&quot;
-      %CanCreate% = false
-      Exit function
-   End If
-   
-   Dim pivotAttribute : pivotAttribute = model.GetExtendedAttribute(&quot;mdde_Feature_BusinessRule_Pivot&quot;)
-   
-   If pivotAttribute = False Then
-      %CanCreate% = False
-   Else
-      %CanCreate% = True
+   %CanCreate% = False
+    &#39; If the parent is known return the value of the MDDE configuration extended attribute.
+   If Not (parent Is Nothing) Then
+     %CanCreate% = parent.Model.GetExtendedAttribute(&quot;mdde_Feature_BusinessRule_Pivot&quot;)
    End If
 End Function</a:HandlerScript>
 </o:EventHandlerTargetItem>
