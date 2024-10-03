@@ -6,7 +6,7 @@
 <a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="mdde_XmlExportConfiguration.xml" />
+<xi:include href="mdde_Configuration.xml" />
 <xi:include href="General.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>
