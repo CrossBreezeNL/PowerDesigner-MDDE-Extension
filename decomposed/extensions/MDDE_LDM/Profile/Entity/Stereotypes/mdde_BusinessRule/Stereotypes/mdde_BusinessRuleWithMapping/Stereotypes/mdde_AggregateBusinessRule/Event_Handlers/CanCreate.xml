@@ -5,6 +5,8 @@
 <a:Creator>RichaneRamsoedit</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %CanCreate%(parent)
+   %CanCreate% = True
+   
    Dim model : Set model = parent.Model
    
    &#39;Foutafhandeling wanneer er geen model is
@@ -14,7 +16,7 @@
       Exit function
    End If
    
-   Dim pivotAttribute : pivotAttribute = model.GetExtendedAttribute(&quot;mdde_Feature_BusinessRule_Aggregate&quot;, 1)
+   Dim pivotAttribute : pivotAttribute = model.GetExtendedAttribute(&quot;mdde_Feature_BusinessRule_Aggregate&quot;)
    
    If pivotAttribute = False Then
       %CanCreate% = False
