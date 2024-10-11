@@ -13,7 +13,7 @@ In the following section the modeling options are explained per topic.
 
 ## Integration
 - [PowerDeComposer](./PowerDeComposer.md)
-- [MDDE model configuration](./ModelExportConfiguration.md)
+- [MDDE model configuration](./MDDE Model configuration.md)
 - [Extend the XML export](./ModelExportExtension.md)
 - [Project extension](./ProjectExtension.md)
 
