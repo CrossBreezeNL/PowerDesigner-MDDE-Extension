@@ -6,7 +6,4 @@
 <a:TargetID>BC120FD8-8AF8-4F3F-86C8-474D1B5B207F</a:TargetID>
 <a:TargetClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:TargetClassID>
 <a:TargetPackagePath>&lt;Model&gt;</a:TargetPackagePath>
-<c:FullShortcutReplica>
-<o:SubReplication Ref="3E2B5E57-F725-4F68-B614-21324DD2E1CE"/>
-</c:FullShortcutReplica>
 </o:Shortcut>

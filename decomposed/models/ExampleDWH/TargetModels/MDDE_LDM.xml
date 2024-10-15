@@ -8,8 +8,6 @@
 <a:TargetModelID>1626A879-DBAC-4E54-8A36-28FCB761FF3A</a:TargetModelID>
 <a:TargetModelClassID>186C8AC3-D3DC-11D3-881C-00508B03C75C</a:TargetModelClassID>
 <c:SessionShortcuts>
-<o:Shortcut Ref="FDFB400C-481A-41AC-8CC3-DB72710FC4E8"/>
-<o:Shortcut Ref="13573CAB-C0E7-45FC-808B-9C0D4A25B293"/>
 <o:Shortcut Ref="94E72575-5836-43D7-89AE-2F429FE6B915"/>
 </c:SessionShortcuts>
 </o:TargetModel>

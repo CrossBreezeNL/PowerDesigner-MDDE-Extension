@@ -23,26 +23,4 @@
 <o:Shortcut Ref="994B60FA-2E9F-40E0-B512-FB9F360FD742"/>
 <o:Shortcut Ref="A1E90679-73A2-46F8-B6B9-7C85155EA35D"/>
 </c:SessionShortcuts>
-<c:SessionReplications>
-<o:Replication Ref="7BC2450A-E429-40C2-B459-49F00D74C766"/>
-<o:SubReplication Ref="B3238EE1-EC39-4BAF-876F-5A8DE22A7E4F"/>
-<o:SubReplication Ref="99B5B7BB-436C-4EE3-A464-F8D3B9025BD8"/>
-<o:SubReplication Ref="1FB2EA31-0546-43DE-9209-0DB2492D8DE8"/>
-<o:SubReplication Ref="661C159C-A098-41DC-8435-47A433A1156F"/>
-<o:SubReplication Ref="DA95A914-B5E0-4796-A778-9A5205C5B646"/>
-<o:SubReplication Ref="0A90A221-D1F5-44A4-87C8-5F906DD5B55F"/>
-<o:SubReplication Ref="9C026F36-EFF1-4D98-9F17-D67AD160A53F"/>
-<o:SubReplication Ref="3DB59E91-A04B-4CEA-AFD0-5E85E8D6AADA"/>
-<o:SubReplication Ref="A7FDCE2D-A292-4E0D-8C16-0F5D8274D4C9"/>
-<o:SubReplication Ref="9E8140BB-9724-4ED4-A5C8-2B9E219C289F"/>
-<o:SubReplication Ref="38348DF0-96CC-43D6-84B4-55AA1CB8B65F"/>
-<o:SubReplication Ref="F3E14A2D-CAB8-45BB-B2BB-C0D3B4B5A5BF"/>
-<o:SubReplication Ref="7D13C262-8BD5-4439-A23F-7EA836779CAA"/>
-<o:SubReplication Ref="BC501E7A-1F4B-44E8-8EB3-900B0D12A3CA"/>
-<o:SubReplication Ref="8C96A825-FEFC-4926-9C24-B59ED61A3EDF"/>
-<o:SubReplication Ref="D1A67288-025B-44C1-A0DC-FEF58E954559"/>
-</c:SessionReplications>
-<c:FullShortcutModel>
-<xi:include href="FullShortcutModel/EXAMPLESOURCE/EXAMPLESOURCE.xml" />
-</c:FullShortcutModel>
 </o:TargetModel>
