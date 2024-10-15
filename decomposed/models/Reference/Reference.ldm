@@ -17,8 +17,18 @@
 DAT 1680508822
 ATT MOPT
 ATT FOPT
-ATT SMDC</a:History>
+ATT SMDC
+ATT OBJEXA</a:History>
 <xi:include href="Model/a_ModelOptionsText.xml" />
+<ExtendedAttributes>
+<OriginatingExtension ObjectID="1626A879-DBAC-4E54-8A36-28FCB761FF3A" Name="MDDE_LDM">
+<ExtendedAttribute ObjectID="B3CFF5CB-A1B0-4149-AF6A-AAD39EF84993" Name="mdde_Feature_BusinessRule_Pivot">false</ExtendedAttribute>
+<ExtendedAttribute ObjectID="0DEE60FE-69C3-4B1B-BE43-B4721C19FC70" Name="mdde_Feature_BusinessRule_Filter">false</ExtendedAttribute>
+<ExtendedAttribute ObjectID="52F0CC72-6B0C-44B8-A875-5DC31F6A52BA" Name="mdde_Feature_BusinessRule_Aggregate">false</ExtendedAttribute>
+<ExtendedAttribute ObjectID="380C3059-E59A-4556-AF67-19B74A862155" Name="mdde_Feature_BusinessRule_Scalar">false</ExtendedAttribute>
+<ExtendedAttribute ObjectID="89500EF5-C44B-4220-A363-A2620305F64A" Name="mdde_Feature_BusinessRule_Custom">false</ExtendedAttribute>
+</OriginatingExtension>
+</ExtendedAttributes>
 <c:GenerationOrigins>
 <xi:include href="GenerationOrigins/Shortcuts/Reference.xml" />
 </c:GenerationOrigins>
