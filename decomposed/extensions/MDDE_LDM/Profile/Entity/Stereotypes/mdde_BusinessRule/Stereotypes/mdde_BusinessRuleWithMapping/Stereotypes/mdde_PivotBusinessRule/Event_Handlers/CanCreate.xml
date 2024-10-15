@@ -1,0 +1,17 @@
+<o:EventHandlerTargetItem Id="C4D48095-33A0-4455-8D05-5478F6C651DD">
+<a:ObjectID>C4D48095-33A0-4455-8D05-5478F6C651DD</a:ObjectID>
+<a:Name>CanCreate</a:Name>
+<a:CreationDate>1726754458</a:CreationDate>
+<a:Creator>RichaneRamsoedit</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HandlerScript>Function %CanCreate%(parent)
+  &#39;the parent represents the PivotBusinessRule which communicaties with the model object&#39; 
+  &#39;the default value for the attribute is set to TRUE in the form&#39;
+   
+   %CanCreate% = False
+    &#39; If the parent is known return the value of the MDDE configuration extended attribute.
+   If Not (parent Is Nothing) Then
+     %CanCreate% = parent.Model.GetExtendedAttribute(&quot;mdde_Feature_BusinessRule_Pivot&quot;)
+   End If
+End Function</a:HandlerScript>
+</o:EventHandlerTargetItem>

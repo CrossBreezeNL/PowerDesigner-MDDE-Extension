@@ -1,0 +1,10 @@
+<o:ExtendedAttributeTargetItem Id="0DEE60FE-69C3-4B1B-BE43-B4721C19FC70">
+<a:ObjectID>0DEE60FE-69C3-4B1B-BE43-B4721C19FC70</a:ObjectID>
+<a:Name>mdde_Feature_BusinessRule_Filter</a:Name>
+<a:CreationDate>1726841633</a:CreationDate>
+<a:Creator>RichaneRamsoedit</a:Creator>
+<a:Comment>This extended attribute is added to refer to the event handler CanCreate to be able to enable the filter business rule </a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:ExtendedAttributeTargetItem.Value>true</a:ExtendedAttributeTargetItem.Value>
+<a:Label>MDDE enable filter business rule</a:Label>
+</o:ExtendedAttributeTargetItem>

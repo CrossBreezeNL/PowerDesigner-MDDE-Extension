@@ -213,6 +213,10 @@ These mappings deviate from normal mappings a bit. Custom business rule mappings
 1. To add examples for the mapping, please follow the standard [Examples](./Mapping.md#examples) instructions.
    ![Custom business rule - Mapping - Examples](img/custom_business_rule_mapping_examples.png)
 
+
+# Enabling/Disabling Business rules
+The MDDE extension has the option to enable/disable business rules at a model level. Go to [MDDE Model Configuration](./MDDE%20Model%20configuration.md) for more information about this. 
+
 ***
 
 [Go back to main modeling page](./README.md)
