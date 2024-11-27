@@ -6,6 +6,7 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
+<xi:include href="mdde_Entity_IsWindowBusinessRule.xml" />
 <xi:include href="mdde_SqlExpression.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

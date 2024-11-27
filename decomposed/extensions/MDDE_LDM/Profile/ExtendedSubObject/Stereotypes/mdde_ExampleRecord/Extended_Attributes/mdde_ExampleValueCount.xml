@@ -8,7 +8,11 @@
 <a:Computed>1</a:Computed>
 <a:ComputedAccessType>RO</a:ComputedAccessType>
 <a:GetMethodScript>Function %Get%(obj)
-   %Get% = obj.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;).Count
+   If obj.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;, False) Is Nothing Then
+      %Get% = 0
+   Else
+      %Get% = obj.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;, False).Count
+   End If
 End Function</a:GetMethodScript>
 <a:Label>Example value count (MDDE)</a:Label>
 </o:ExtendedAttributeTargetItem>

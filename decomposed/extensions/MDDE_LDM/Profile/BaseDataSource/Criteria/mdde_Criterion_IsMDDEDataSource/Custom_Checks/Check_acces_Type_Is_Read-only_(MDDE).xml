@@ -1,0 +1,26 @@
+<o:CustomCheckTargetItem Id="7E963ECB-133F-4252-8652-347D96A4D90E">
+<a:ObjectID>7E963ECB-133F-4252-8652-347D96A4D90E</a:ObjectID>
+<a:Name>Check acces Type Is Read-only (MDDE)</a:Name>
+<a:CreationDate>1730454757</a:CreationDate>
+<a:Creator>DijkC1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that the datasource has the Access Type set to Read-Only</a:HelpMessage>
+<a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = True
+   
+   If obj.AccessType &lt;&gt; &quot;RO&quot; Then
+         %Check% = False
+   End if 
+   
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   %Fix% = False  
+   obj.AccessType = &quot;RO&quot;
+   If obj.AccessType = &quot;RO&quot; Then
+         %Fix% = True
+         outmsg = &quot;Datasource &quot; &amp; obj.Name &amp; &quot; set to Read-Only&quot;
+   End if 
+End Function</a:AutoFixScrpt>
+<a:EnableAutoFix>1</a:EnableAutoFix>
+</o:CustomCheckTargetItem>

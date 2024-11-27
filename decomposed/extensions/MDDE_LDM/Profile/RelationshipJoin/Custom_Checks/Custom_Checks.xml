@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="814BE7D7-A90A-4587-BF3B-1CDD00733EA0">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>814BE7D7-A90A-4587-BF3B-1CDD00733EA0</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1728547835</a:CreationDate>
+<a:Creator>DijkC1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Check_RelationshipJoinHasParentChildAttributes.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

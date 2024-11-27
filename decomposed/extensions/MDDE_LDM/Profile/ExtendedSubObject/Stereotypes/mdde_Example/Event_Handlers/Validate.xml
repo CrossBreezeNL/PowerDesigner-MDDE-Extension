@@ -12,9 +12,18 @@
    
    &#39; If the parent is a mapping, let&#39;s create the ExpectedOutput object.
    If obj.ParentObject.IsKindOf(PdCommon.cls_BaseClassifierMapping) Then
-      Dim colExampleEntityData : Set colExampleEntityData = obj.GetExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+      &#39; Invoke the getExtendedCollection method with False as second parameter to prevent it from being created automatically
+      &#39; During initialization it is created at some point and duplicate creation leads to unexpected behaviour      
+      Dim colExampleEntityData : Set colExampleEntityData = obj.GetExtendedCollection(&quot;mdde_ExampleEntityData&quot;, False)
       
-      &#39; If the example data collection is empty, create the target entity object.
+      &#39; If the example data collections is not yet initialized, do not add example for target entity 
+      &#39; since it can lead to a duplicate collection
+      If colExampleEntityData Is Nothing Then
+         %Validate% = True
+         Exit Function
+      End If
+      
+      &#39; If the example data collection is empty, create the target entity object.      
       If colExampleEntityData.Count = 0 Then
          WriteDebug &quot;Creating expected output&quot;
          Dim objExpectedOutput : Set objExpectedOutput = colExampleEntityData.CreateNew()

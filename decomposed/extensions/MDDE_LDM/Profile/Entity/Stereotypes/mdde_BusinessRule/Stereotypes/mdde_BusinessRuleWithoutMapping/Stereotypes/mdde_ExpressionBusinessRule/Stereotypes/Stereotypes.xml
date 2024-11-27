@@ -8,5 +8,6 @@
 <c:Categories>
 <xi:include href="mdde_FilterBusinessRule/mdde_FilterBusinessRule.xml" />
 <xi:include href="mdde_ScalarBusinessRule/mdde_ScalarBusinessRule.xml" />
+<xi:include href="mdde_WindowBusinessRule/mdde_WindowBusinessRule.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

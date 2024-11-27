@@ -66,11 +66,16 @@ Function GetRealObject(objItemOrShortcut)
       Set GetRealObject = Nothing
       Exit Function
    End If
-   If (objItemOrShortcut.IsShortcut) Then
+   If (objItemOrShortcut.IsShortcut) Then      
+      Set GetRealObject = Nothing
       &#39; If the object is a shortcut, open the target model.
-      objItemOrShortcut.TargetModelDefinition.AskForLoad False
-      &#39; Return the TargetObject of the shortcut.
-      Set GetRealObject = objItemOrShortcut.TargetObject
+      If not objItemOrShortcut.TargetModelDefinition is Nothing Then      
+         objItemOrShortcut.TargetModelDefinition.AskForLoad False
+         &#39; Return the TargetObject of the shortcut.
+         If not objItemOrShortcut.TargetObject Is Nothing Then
+            Set GetRealObject = objItemOrShortcut.TargetObject         
+         End if         
+      End if
    Else
       &#39; If the object is not a shortcut, return the passed object.
       Set GetRealObject = objItemOrShortcut

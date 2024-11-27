@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="55D68311-CF03-41A3-BB3B-6C9C8C8CBE10">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>55D68311-CF03-41A3-BB3B-6C9C8C8CBE10</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1730454757</a:CreationDate>
+<a:Creator>DijkC1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Check_acces_Type_Is_Read-only_(MDDE).xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

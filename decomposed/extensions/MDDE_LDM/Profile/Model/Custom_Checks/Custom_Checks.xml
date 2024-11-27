@@ -1,0 +1,12 @@
+<o:TypedCategoryTargetItem Id="DA92FC4F-A0B7-43BF-91AE-4377D1C2D264">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>DA92FC4F-A0B7-43BF-91AE-4377D1C2D264</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1719473199</a:CreationDate>
+<a:Creator>BurggraaffC</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="mdde_Check_FullShortcutDisabled.xml" />
+<xi:include href="mdde_Check_SourceObject_SQLExpression_Enabled.xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

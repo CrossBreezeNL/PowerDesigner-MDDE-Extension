@@ -1,0 +1,29 @@
+<o:CustomCheckTargetItem Id="F4057629-402E-450E-8ABE-3D371B4F0130">
+<a:ObjectID>F4057629-402E-450E-8ABE-3D371B4F0130</a:ObjectID>
+<a:Name>Check Entity Example Has An Example Record (MDDE)</a:Name>
+<a:CreationDate>1730813751</a:CreationDate>
+<a:Creator>DijkC1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that an entity example has a valid record</a:HelpMessage>
+<a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = True
+   Dim exampleRecords : Set exampleRecords = obj.GetExtendedCollection(&quot;mdde_ExampleRecords&quot;, False)
+   Dim exampleDatatype 
+   exampleDatatype = obj.GetExtendedAttributeText(&quot;mdde_ExampleDataType&quot;)
+   &#39;we raise an error if there is no example record found for the example entity
+   If exampleRecords is nothing Or exampleRecords.Count = 0 Then
+      %Check% = False
+      WriteInfo(&quot;ExampleEntity: [&quot; &amp; obj.Name &amp; &quot;] with type: [&quot; &amp; exampleDatatype &amp; &quot;] is missing an example record&quot;)
+   End if
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

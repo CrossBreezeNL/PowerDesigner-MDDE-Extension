@@ -4,17 +4,36 @@
 <a:CreationDate>1655828611</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
-<a:HelpMessage>This check ensures that all input and output attributes occur at least once in the Sql Expression.</a:HelpMessage>
-<a:OutputMessage>The following attributes do not occur in the Sql Expression of the scalar business rule:</a:OutputMessage>
+<a:HelpMessage>This check ensures that all input and output attributes occur at least once in the business rule Sql Expression. When the business rule is a window business rule, the output attribute should not be used in the Sql Expression.</a:HelpMessage>
+<a:OutputMessage>The following attributes are not used appropriately in the Sql Expression of the scalar or window business rule:</a:OutputMessage>
 <a:CheckScript>Function %Check%(obj)
    &#39; Create a RegExp object to perform a regular expression search.
    Dim objAttrCodeRegex : Set objAttrCodeRegex = New RegExp
-   &#39; Make sure we search case-sensitive.
-   objAttrCodeRegex.IgnoreCase = False
+
    &#39; Use word boundary (\b) to match whole words.
    objAttrCodeRegex.Pattern = &quot;\b&quot; + obj.Code + &quot;\b&quot;
-   &#39; Check whether the Code of the current attribute occurs exactly (so with same casing) in the scalar business rule (parent entity) Sql Expression.
-   %Check% = objAttrCodeRegex.Test(obj.Entity.GetExtendedAttributeText(&quot;mdde_SqlExpression&quot;))
+   
+   Dim attributeFound   
+   &#39;In case of a window businessrule and an output attribute, the the attribute should not be found in the SQL Expression
+   If (obj.Entity.Stereotype = &quot;mdde_WindowBusinessRule&quot; and obj.Stereotype = &quot;mdde_OutputAttribute&quot;) Then
+      &#39; Make sure we search case-insensitive.
+      objAttrCodeRegex.IgnoreCase = True
+       &#39; Check whether the Code of the current attribute occurs in the window business rule (parent entity) Sql Expression.
+      attributeFound = objAttrCodeRegex.Test(obj.Entity.GetExtendedAttributeText(&quot;mdde_SqlExpression&quot;))
+      If attributeFound = True Then
+         WriteError(&quot;Output attribute &quot; &amp; obj.Code &amp; &quot; should not be used in the SQL Expression of window business rule &quot;&amp; obj.Entity.Code)
+      End If
+      %Check% = Not attributeFound
+   Else
+      &#39; Make sure we search case-sensitive.
+      objAttrCodeRegex.IgnoreCase = False
+       &#39; Check whether the Code of the current attribute occurs in the right casing in the scalar business rule (parent entity) Sql Expression.
+      attributeFound = objAttrCodeRegex.Test(obj.Entity.GetExtendedAttributeText(&quot;mdde_SqlExpression&quot;))
+      If attributeFound = False Then
+         WriteError(&quot;Attribute &quot; &amp; obj.Code &amp; &quot; should be used in the SQL Expression of business rule &quot;&amp; obj.Entity.Code)
+      End If
+      %Check% = attributeFound
+   End If
 End Function</a:CheckScript>
 <a:AutoFixScrpt>Function %Fix%(obj, outmsg)
    &#39; Implement your automatic correction on &lt;obj&gt; here

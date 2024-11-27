@@ -7,6 +7,8 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Check_OrderOfSourceObjects.xml" />
+<xi:include href="Check_window_business_rule_not_a_source_of_another_joined_object_(MDDE).xml" />
+<xi:include href="Check_window_businessrule_only_allowed_on_entity_and_aggregrate_(MDDE).xml" />
 <xi:include href="Check_duplicate_source_objects_(MDDE).xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

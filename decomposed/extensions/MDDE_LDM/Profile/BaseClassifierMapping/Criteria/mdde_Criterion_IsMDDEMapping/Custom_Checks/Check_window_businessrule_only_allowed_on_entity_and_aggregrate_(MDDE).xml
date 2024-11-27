@@ -1,0 +1,46 @@
+<o:CustomCheckTargetItem Id="C234C787-E4C5-4E8B-BD58-432AA676EF37">
+<a:ObjectID>C234C787-E4C5-4E8B-BD58-432AA676EF37</a:ObjectID>
+<a:Name>Check window businessrule only allowed on entity and aggregrate (MDDE)</a:Name>
+<a:CreationDate>1725522003</a:CreationDate>
+<a:Creator>DijkC1</a:Creator>
+<a:Comment>A window businessrule can only be implemented on an entity and an aggregrate.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that window businessrule can only be implemented on entities and aggregrates and for example not on pivot&#39;s. </a:HelpMessage>
+<a:OutputMessage>The following objects have implemented window businessrule where they are not allowed:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = True
+   
+   &#39;only run the check for pivotbusinessrules. Regular entities have no stereotype, Aggregrates have and staging and output entitiies do not have a
+   &#39;mapping
+   If Not obj.Classifier.Stereotype = &quot;mdde_PivotBusinessRule&quot; Then
+      Exit Function
+   End if
+   
+   &#39; Retrieve the source objects from the mapping.
+   Dim colSourceObjects : Set colSourceObjects = obj.GetExtendedCollection(&quot;mdde_SourceObjects&quot;)
+   
+   &#39; If the mapping has no source objects, stop here.
+   If colSourceObjects.Count = 0 Then
+      Exit Function
+   End If
+   
+   Dim objSourceObject
+   For Each objSourceObject In colSourceObjects
+      Dim joinedObject : Set joinedObject = GetRealObject(objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;))      
+      If joinedObject.HasStereotype(&quot;mdde_WindowBusinessRule&quot;) Then
+         %Check% = False
+         WriteError &quot;Usage of Window Business Rule is not allowed on this entity.&quot;
+      End if
+   Next
+   
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

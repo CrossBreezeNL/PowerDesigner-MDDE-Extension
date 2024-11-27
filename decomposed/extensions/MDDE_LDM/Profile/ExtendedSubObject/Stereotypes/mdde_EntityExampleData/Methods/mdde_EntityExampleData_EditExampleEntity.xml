@@ -17,6 +17,9 @@
          End If
       Next
 
+      &#39; Add the target entity to the object picker
+      objSel.Objects.Add obj.ParentObject.ParentObject.Classifier
+      
       &#39; Display the object picker on the selection
       Dim objExampleEntity : Set objExampleEntity = objSel.ShowObjectPicker
       &#39; Remove the selection.
