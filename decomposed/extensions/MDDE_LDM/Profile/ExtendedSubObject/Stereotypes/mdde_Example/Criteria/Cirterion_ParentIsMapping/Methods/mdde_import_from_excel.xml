@@ -20,18 +20,18 @@
 
      &#39; Open the Excel file
      WriteInfo &quot;Opening:&quot; &amp; sFileSelected
-	  Set x1 = CreateObject(&quot;Excel.Application&quot;) 
-	  x1.Visible = True 
+	 Set x1 = CreateObject(&quot;Excel.Application&quot;) 
+	 x1.Visible = True 
      Set wb = x1.Workbooks.Open(sFileSelected)
      
-     Dim objExampleEntityData2
+     Dim objCurrentExampleEntityData
      Dim exampleRecord
-     Dim objExampleRec
+     Dim objCurrentExampleRec
      &#39;Delete current example records
-     For Each objExampleEntityData2 In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
-         For each objExampleRec in objExampleEntityData2.getExtendedCollection(&quot;mdde_ExampleRecords&quot;)
-            objExampleRec.Delete
-            WriteInfo &quot;Delete record &quot; &amp; objExampleRec.Code
+     For Each objCurrentExampleEntityData In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+         For each objCurrentExampleRec in objCurrentExampleEntityData.getExtendedCollection(&quot;mdde_ExampleRecords&quot;)
+            objCurrentExampleRec.Delete
+            WriteInfo &quot;Delete old record &quot; &amp; objCurrentExampleRec.Code
          Next
      Next
      
@@ -40,12 +40,12 @@
         For Each objWorksheet In x1.Worksheets
         &#39;Search for corresponding objExampleEntityData
         Dim objExampleEntityData : Set objExampleEntityData = nothing
-        Dim objExampleEntityData3
+        Dim objExampleEntityDataCheck
         Dim objEntity
-        For each objExampleEntityData3 in obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
-         Set objEntity = objExampleEntityData3.getExtendedCollection(&quot;mdde_ExampleEntity&quot;).Item(0)
+        For each objExampleEntityDataCheck in obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+         Set objEntity = objExampleEntityDataCheck.getExtendedCollection(&quot;mdde_ExampleEntity&quot;).Item(0)
          If objEntity.Code = objWorksheet.Cells(1,1) then
-            Set objExampleEntityData = objExampleEntityData3
+            Set objExampleEntityData = objExampleEntityDataCheck
             Exit for 
          End if
         Next
@@ -64,16 +64,16 @@
             Dim recordCode : recordCode = objWorksheet.Cells(recordCount + 1, 1)
             If recordCode &gt; &quot;&quot; then
                &#39;Create test record
-               Dim objExampleRec2 : Set objExampleRec2 = colExampleRec.createNew()
-               objExampleRec2.Code = recordCode
-               objExampleRec2.Name = recordCode
-               WriteInfo &quot;Created record: &quot; &amp; objExampleRec2.Name
+               Dim objExampleRec : Set objExampleRec = colExampleRec.createNew()
+               objExampleRec.Code = recordCode
+               objExampleRec.Name = recordCode
+               WriteInfo &quot;Created record: &quot; &amp; objExampleRec.Name
                
                &#39;Get all attributes for the example record
                Dim attributeCount : attributeCount = 1
                Dim nextAttribute : nextAttribute = true
                
-               Dim colExampleAttribute : Set colExampleAttribute = objExampleRec2.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
+               Dim colExampleAttribute : Set colExampleAttribute = objExampleRec.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
                
                Do while nextAttribute
                   &#39; Get attribute-code from header
@@ -93,9 +93,9 @@
                   
                   If nextAttribute then
                      &#39; write attribute here
-                     Dim objExampleAttribute2 : Set objExampleAttribute2 = colExampleAttribute.createNew()
-                     objExampleAttribute2.Code = attributeCode
-                     objExampleAttribute2.Name = attributeCode
+                     Dim objExampleAttribute : Set objExampleAttribute = colExampleAttribute.createNew()
+                     objExampleAttribute.Code = attributeCode
+                     objExampleAttribute.Name = attributeCode
                      
                      &#39;search the actual attribute
                      Dim entityAttribute
@@ -105,8 +105,8 @@
                         End if
                      Next
                      
-                     objExampleAttribute2.SetExtendedAttribute &quot;mdde_Attribute&quot;, entityAttribute
-                     objExampleAttribute2.SetExtendedAttribute &quot;mdde_Value&quot;, attributeValue
+                     objExampleAttribute.SetExtendedAttribute &quot;mdde_Attribute&quot;, entityAttribute
+                     objExampleAttribute.SetExtendedAttribute &quot;mdde_Value&quot;, attributeValue
                      WriteInfo &quot;Created attribute: &quot; &amp; attributeCode &amp; &quot; - &quot; &amp; attributeValue
                   End if
                   
