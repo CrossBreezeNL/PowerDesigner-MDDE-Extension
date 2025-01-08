@@ -13,15 +13,16 @@
      
      Dim actModel : Set actModel = ActiveModel
      
-     Dim path
-     &#39;path = InputBox(&quot;Please Enter a FileName&quot;,,&quot;.xlsx&quot;)
-     path =&quot;test.xlsx&quot;
-     
-     WriteInfo path
-     
+     &#39; Select a file
+     Dim wShell : Set wShell=CreateObject(&quot;WScript.Shell&quot;)
+     Dim oExec : Set oExec=wShell.Exec(&quot;mshta.exe &quot;&quot;about:&lt;input type=file id=FILE&gt;&lt;script&gt;FILE.click();new ActiveXObject(&#39;Scripting.FileSystemObject&#39;).GetStandardStream(1).WriteLine(FILE.value);close();resizeTo(0,0);&lt;/script&gt;&quot;&quot;&quot;)
+     Dim sFileSelected : sFileSelected = oExec.StdOut.ReadLine
+
+     &#39; Open the Excel file
+     WriteInfo &quot;Opening:&quot; &amp; sFileSelected
 	  Set x1 = CreateObject(&quot;Excel.Application&quot;) 
 	  x1.Visible = True 
-     Set wb = x1.Workbooks.Open(&quot;test.xlsx&quot;)
+     Set wb = x1.Workbooks.Open(sFileSelected)
      
      Dim objExampleEntityData2
      Dim exampleRecord
