@@ -1,0 +1,93 @@
+<o:MethodTargetItem Id="12D80A5C-0BE3-4C92-B3FF-C94AB71D45AB">
+<a:ObjectID>12D80A5C-0BE3-4C92-B3FF-C94AB71D45AB</a:ObjectID>
+<a:Name>mdde_export_to_excel</a:Name>
+<a:CreationDate>1736328878</a:CreationDate>
+<a:Creator>BasBosman</a:Creator>
+<a:Comment>Export Example data to Excel</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+
+	&#39; Log that we will start exporting.
+	WriteInfo &quot;Start exporting &quot; &amp; obj.Code
+
+	&#39; Open &amp; Create Excel Document
+	Dim x1  &#39;
+   Dim activeWorksheet
+	Set x1 = CreateObject(&quot;Excel.Application&quot;) 
+	x1.Visible = True 
+   x1.Workbooks.Add
+
+   Dim attributeCount
+	Dim exampleEntity
+   Dim entityCount : entityCount = 0
+	For Each exampleEntity In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+		Dim entity : Set entity = exampleEntity.getExtendedCollection(&quot;mdde_ExampleEntity&quot;).Item(0)
+		Dim exampleRecord
+      Dim attributeHeader
+		Dim recordCount : recordCount = 0
+      Dim headerCount
+      Dim headerFound
+      Dim headerAttr
+      entityCount = entityCount + 1
+      
+      &#39; Create a new worksheet
+      If entityCount = 1 Then
+         Set activeWorksheet = x1.Worksheets(1)
+      Else
+         Set activeWorksheet = x1.Worksheets.Add
+      End if
+      activeWorksheet.Name = Left(entity.Code,31)
+      x1.Cells(1,1).Value = entity.Code
+      
+      &#39; Write a row for each Example Record
+		For each exampleRecord in exampleEntity.getExtendedCollection(&quot;mdde_ExampleRecords&quot;)
+         Dim testAttribute
+         recordCount = recordCount + 1
+         x1.Cells(recordCount + 1, 1).Value = exampleRecord.Code
+         attributeCount = 0
+         
+         If recordCount = 1 Then
+            Set attributeHeader = exampleRecord.getExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
+         End if
+         
+			For each testAttribute in exampleRecord.getExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
+            attributeCount = attributeCount + 1
+				If recordCount = 1 Then
+					&#39; First test case: write header
+					x1.Cells(1, attributeCount + 1).Value = testAttribute.Name
+               x1.Cells(recordCount + 1, attributeCount + 1).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
+            Else
+               &#39; Match Attribute with Header
+               headerFound = false
+               headerCount = 0
+               For each headerAttr in attributeHeader
+                  If testAttribute.Code = headerAttr.Code Then
+                     x1.Cells(recordCount + 1, headerCount + 2).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
+                     headerFound = true
+                     Exit For 
+                  End if
+                  headerCount = headerCount + 1
+               Next
+               &#39; If header not found, add it
+               If headerFound = false Then
+                 x1.Cells(1, headerCount + 2).Value = testAttribute.Name
+                  x1.Cells(recordCount + 1, headerCount + 2).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
+                  attributeHeader.Add testAttribute
+               End if
+				End if
+			Next
+		Next
+		   
+		&#39;If we do not have test cases, write attributes from entity
+		if recordCount = 0 Then
+		   WriteInfo &quot;No test records found&quot;
+		   attributeCount = 0
+		   Dim attribute
+		   For Each attribute In entity.Attributes
+            attributeCount = attributeCount + 1
+		      x1.Cells(1, attributeCount + 1).Value = attribute.Name
+		   Next
+		End if
+    Next      
+End Sub</a:MethodScript>
+</o:MethodTargetItem>

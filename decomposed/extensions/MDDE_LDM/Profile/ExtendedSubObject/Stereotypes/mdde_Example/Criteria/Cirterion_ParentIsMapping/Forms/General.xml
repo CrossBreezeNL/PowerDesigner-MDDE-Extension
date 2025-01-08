@@ -3,8 +3,10 @@
 <a:Name>General</a:Name>
 <a:Code>GENERAL</a:Code>
 <a:FormTargetItem.Value>&lt;Form  &gt;
-   &lt;StandardAttribute Attribute=&quot;Name&quot; Caption=&quot;Name&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;true&quot; LeftText=&quot;false&quot; /&gt;
-   &lt;StandardAttribute Attribute=&quot;Comment&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; LeftText=&quot;false&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Name&quot; Caption=&quot;Name&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
+   &lt;CustomMethod Method=&quot;mdde_export_to_excel&quot; Name=&quot;Export to Excel&quot; Caption=&quot;Export to Excel&quot; HorizontalResize=&quot;No&quot; /&gt;
+   &lt;CustomMethod Method=&quot;mdde_import_from_excel&quot; Name=&quot;Import from Excel&quot; Caption=&quot;Import from Excel&quot; HorizontalResize=&quot;No&quot; /&gt;
+   &lt;StandardAttribute Attribute=&quot;Comment&quot; SizeInChars=&quot;1&quot; LineNumber=&quot;3&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; /&gt;
    &lt;StaticText Name=&quot;StaticText_ExampleInput&quot; Caption=&quot;Select or add an input entity and specify the example input data.&quot; /&gt;
    &lt;HorizontalLayout Name=&quot;HorizontalLayout_ExampleData&quot; &gt;
       &lt;StaticText Name=&quot;Label_ExampleData&quot; Caption=&quot;Example data:&quot; /&gt;

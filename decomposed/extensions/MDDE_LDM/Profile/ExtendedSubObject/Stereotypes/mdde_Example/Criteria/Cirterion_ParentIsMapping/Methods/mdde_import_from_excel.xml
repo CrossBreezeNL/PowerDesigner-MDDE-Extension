@@ -1,0 +1,127 @@
+<o:MethodTargetItem Id="98A9ACE6-BE1A-441F-83E4-E80B8916B0C5">
+<a:ObjectID>98A9ACE6-BE1A-441F-83E4-E80B8916B0C5</a:ObjectID>
+<a:Name>mdde_import_from_excel</a:Name>
+<a:CreationDate>1736328921</a:CreationDate>
+<a:Creator>BasBosman</a:Creator>
+<a:Comment>Import example data from Excel</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+   &#39; Implement your method on &lt;obj&gt; here
+     Dim x1
+     Dim wb
+     Dim activeWorksheet
+     
+     Dim actModel : Set actModel = ActiveModel
+     
+     Dim path
+     &#39;path = InputBox(&quot;Please Enter a FileName&quot;,,&quot;.xlsx&quot;)
+     path =&quot;test.xlsx&quot;
+     
+     WriteInfo path
+     
+	  Set x1 = CreateObject(&quot;Excel.Application&quot;) 
+	  x1.Visible = True 
+     Set wb = x1.Workbooks.Open(&quot;test.xlsx&quot;)
+     
+     Dim objExampleEntityData2
+     Dim exampleRecord
+     Dim objExampleRec
+     &#39;Delete current example records
+     For Each objExampleEntityData2 In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+         For each objExampleRec in objExampleEntityData2.getExtendedCollection(&quot;mdde_ExampleRecords&quot;)
+            objExampleRec.Delete
+            WriteInfo &quot;Delete record &quot; &amp; objExampleRec.Code
+         Next
+     Next
+     
+     &#39;Add new example records
+     Dim objWorksheet
+        For Each objWorksheet In x1.Worksheets
+        &#39;Create mdde_ExampleEntityData
+        &#39;Dim colExampleEntityData : Set colExampleEntityData = obj.GetExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+        &#39;Dim objExampleEntityData : Set objExampleEntityData = colExampleEntityData.createNew()
+        
+        &#39;Dim objEntity : Set objEntity = actModel.FindChildByCode(objWorksheet.Cells(1,1), cls_entity)
+        &#39;If (objEntity is Nothing) then
+        &#39;    WriteInfo &quot;Entity &quot; &amp; objWorksheet.Cells(1,1) &amp; &quot; not found&quot;
+        &#39;End if
+        
+        &#39;objExampleEntityData.Stereotype = &quot;mdde_EntityExampleData&quot;
+        &#39;objExampleEntityData.Name = objWorksheet.Cells(1,1)
+        &#39;objExampleEntityData.Code = objWorksheet.Cells(1,1)
+        &#39;objExampleEntityData.SetExtendedAttribute &quot;mdde_ExampleEntity&quot;, objEntity
+        
+        &#39;Search for corresponding objExampleEntityData
+        Dim objExampleEntityData : Set objExampleEntityData = nothing
+        Dim objExampleEntityData3
+        Dim objEntity
+        For each objExampleEntityData3 in obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+         Set objEntity = objExampleEntityData3.getExtendedCollection(&quot;mdde_ExampleEntity&quot;).Item(0)
+         WriteInfo &quot;check entity&quot; &amp; objEntity.Code
+         If objEntity.Code = objWorksheet.Cells(1,1) then
+            Set objExampleEntityData = objExampleEntityData3
+            Exit for 
+         End if
+        Next
+        If (objExampleEntityData is Nothing) then
+            WriteInfo &quot;Entity &quot; &amp; objWorksheet.Cells(1,1) &amp; &quot; not found&quot;
+            Exit for
+        End if
+
+        Dim recordCount : recordCount = 1 
+        Dim nextRecord : nextRecord = true
+        Dim totalAttributeCount : totalAttributeCount = 0
+        
+        Dim colExampleRec : Set colExampleRec = objExampleEntityData.GetExtendedCollection(&quot;mdde_ExampleRecords&quot;)
+        Do while nextRecord
+            &#39;Select next line
+            Dim recordCode : recordCode = objWorksheet.Cells(recordCount + 1, 1)
+            If recordCode &gt; &quot;&quot; then
+               &#39;Create record
+               Dim objExampleRec2 : Set objExampleRec2 = colExampleRec.createNew()
+               objExampleRec2.Code = recordCode
+               objExampleRec2.Name = recordCode
+               WriteInfo &quot;Created record: &quot; &amp; objExampleRec2.Name
+               
+               &#39;Get all attributes
+               Dim attributeCount : attributeCount = 1
+               Dim nextAttribute : nextAttribute = true
+               
+               Do while nextAttribute
+                  &#39; First  : get attribute-code from header
+                  If recordCount = 1 then
+                     Dim attributeCode : attributeCode = objWorksheet.Cells(1, attributeCount + 1)
+                     If attributeCode &gt; &quot;&quot; then
+                        &#39; Append attribute code to list with attributes
+                        totalAttributeCount = attributeCount
+                     Else
+                        nextAttribute = false
+                     End if
+                  End if
+                  Dim attributeValue : attributeValue = objWorksheet.Cells(recordCount + 1, attributeCount + 1)
+                  
+                  If nextAttribute then
+                     &#39; write actual attribute here
+                  End if
+                  
+                  &#39; Subsequent records: check if we need to stop
+                  If (recordCount &gt; 1 and (attributeCount = totalAttributeCount)) then
+                     nextAttribute = false
+                  End if
+                  attributeCount = attributeCount + 1
+               Loop
+               
+               recordCount = recordCount + 1
+            Else
+               nextRecord = false
+            End if
+            
+        Loop
+        
+        &#39; Read data from cell A1
+        WriteInfo objWorksheet.Cells(1, 1).Value
+     Next
+     
+     x1.Workbooks.Close
+End Sub</a:MethodScript>
+</o:MethodTargetItem>
