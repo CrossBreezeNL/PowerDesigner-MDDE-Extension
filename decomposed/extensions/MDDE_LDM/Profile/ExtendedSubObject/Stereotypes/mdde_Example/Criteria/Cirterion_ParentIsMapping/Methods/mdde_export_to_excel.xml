@@ -11,7 +11,7 @@
 	WriteInfo &quot;Start exporting &quot; &amp; obj.Code
 
 	&#39; Open &amp; Create Excel Document
-	Dim x1  &#39;
+	Dim x1
    Dim activeWorksheet
 	Set x1 = CreateObject(&quot;Excel.Application&quot;) 
 	x1.Visible = True 
@@ -20,49 +20,62 @@
    Dim attributeCount
 	Dim exampleEntity
    Dim entityCount : entityCount = 0
+   Dim headerRows : headerRows = 2
+   
 	For Each exampleEntity In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
-		Dim entity : Set entity = exampleEntity.getExtendedCollection(&quot;mdde_ExampleEntity&quot;).Item(0)
+		Dim entity : Set entity = exampleEntity.getExtendedAttribute(&quot;mdde_ExampleEntity&quot;)
+      Set entity = getRealObject(entity)
+      Dim entityType: entityType = exampleEntity.getExtendedAttribute(&quot;mdde_ExampleDataType&quot;)
+      
 		Dim exampleRecord
       Dim attributeHeader
 		Dim recordCount : recordCount = 0
       Dim headerCount
       Dim headerFound
       Dim headerAttr
+      Dim workSheetNamePrefix
+      &#39; Use a prefix in worksheet name since often source and target entities might have the same name
+      &#39; Add the entity count in the worksheet name to prevent duplicate worksheet names
       entityCount = entityCount + 1
-      
-      &#39; Create a new worksheet
+      workSheetNamePrefix = &quot;In-&quot; &amp; entityCount &amp; &quot;-&quot;
+      If entityType = &quot;Expected output&quot; Then
+         workSheetNamePrefix = &quot;Out-&quot;
+      End If
+            
+      &#39; Create a new worksheet if needed and set the proper name
       If entityCount = 1 Then
          Set activeWorksheet = x1.Worksheets(1)
       Else
          Set activeWorksheet = x1.Worksheets.Add
       End if
-      activeWorksheet.Name = Left(entity.Code,31)
+      activeWorksheet.Name = Left(workSheetNamePrefix &amp; entity.Code,31)
       x1.Cells(1,1).Value = entity.Code
       
       &#39; Write a row for each Example Record
 		For each exampleRecord in exampleEntity.getExtendedCollection(&quot;mdde_ExampleRecords&quot;)
          Dim testAttribute
          recordCount = recordCount + 1
-         x1.Cells(recordCount + 1, 1).Value = exampleRecord.Code
+         x1.Cells(recordCount + headerRows, 1).Value = exampleRecord.Code
          attributeCount = 0
          
          If recordCount = 1 Then
             Set attributeHeader = exampleRecord.getExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
+            x1.Cells(headerRows, 1).Value = &quot;RecordID&quot;
          End if
          
 			For each testAttribute in exampleRecord.getExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
             attributeCount = attributeCount + 1
 				If recordCount = 1 Then
 					&#39; First test case: write header
-					x1.Cells(1, attributeCount + 1).Value = testAttribute.Name
-               x1.Cells(recordCount + 1, attributeCount + 1).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
+					x1.Cells(headerRows, attributeCount + 1).Value = testAttribute.Name
+               x1.Cells(recordCount + headerRows, attributeCount + 1).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
             Else
                &#39; Match Attribute with Header
                headerFound = false
                headerCount = 0
                For each headerAttr in attributeHeader
                   If testAttribute.Code = headerAttr.Code Then
-                     x1.Cells(recordCount + 1, headerCount + 2).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
+                     x1.Cells(recordCount + headerRows, headerCount + 1).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
                      headerFound = true
                      Exit For 
                   End if
@@ -70,8 +83,8 @@
                Next
                &#39; If header not found, add it
                If headerFound = false Then
-                 x1.Cells(1, headerCount + 2).Value = testAttribute.Name
-                  x1.Cells(recordCount + 1, headerCount + 2).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
+                 x1.Cells(headerRows, headerCount + 1).Value = testAttribute.Name
+                  x1.Cells(recordCount + headerRows, headerCount + 1).Value = testAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
                   attributeHeader.Add testAttribute
                End if
 				End if
@@ -79,13 +92,14 @@
 		Next
 		   
 		&#39;If we do not have test cases, write attributes from entity
-		if recordCount = 0 Then
-		   WriteInfo &quot;No test records found&quot;
+		If recordCount = 0 Then
+		   WriteInfo &quot;No test records found, initializing sheets for example entities&quot;
 		   attributeCount = 0
-		   Dim attribute
-		   For Each attribute In entity.Attributes
+		   x1.Cells(headerRows, 1).Value = &quot;RecordID&quot; 
+         Dim attribute
+         For Each attribute In entity.Attributes
             attributeCount = attributeCount + 1
-		      x1.Cells(1, attributeCount + 1).Value = attribute.Name
+		      x1.Cells(headerRows, attributeCount + 1).Value = attribute.Name
 		   Next
 		End if
     Next      

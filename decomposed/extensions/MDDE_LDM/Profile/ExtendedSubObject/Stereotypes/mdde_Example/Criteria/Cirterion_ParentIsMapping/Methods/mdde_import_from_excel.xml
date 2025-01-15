@@ -12,42 +12,51 @@
      Dim activeWorksheet
      
      Dim actModel : Set actModel = ActiveModel
-     
+     Dim headerRows : headerRows = 2   
      &#39; Select a file
      Dim wShell : Set wShell=CreateObject(&quot;WScript.Shell&quot;)
      Dim oExec : Set oExec=wShell.Exec(&quot;mshta.exe &quot;&quot;about:&lt;input type=file id=FILE&gt;&lt;script&gt;FILE.click();new ActiveXObject(&#39;Scripting.FileSystemObject&#39;).GetStandardStream(1).WriteLine(FILE.value);close();resizeTo(0,0);&lt;/script&gt;&quot;&quot;&quot;)
      Dim sFileSelected : sFileSelected = oExec.StdOut.ReadLine
-
-     &#39; Open the Excel file
-     WriteInfo &quot;Opening:&quot; &amp; sFileSelected
-	 Set x1 = CreateObject(&quot;Excel.Application&quot;) 
-	 x1.Visible = True 
-     Set wb = x1.Workbooks.Open(sFileSelected)
-     
+  
      Dim objCurrentExampleEntityData
      Dim exampleRecord
      Dim objCurrentExampleRec
      &#39;Delete current example records
-     For Each objCurrentExampleEntityData In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
-         For each objCurrentExampleRec in objCurrentExampleEntityData.getExtendedCollection(&quot;mdde_ExampleRecords&quot;)
+     For Each objCurrentExampleEntityData In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;, False)
+         For each objCurrentExampleRec in objCurrentExampleEntityData.getExtendedCollection(&quot;mdde_ExampleRecords&quot;, False)
             objCurrentExampleRec.Delete
             WriteInfo &quot;Delete old record &quot; &amp; objCurrentExampleRec.Code
          Next
      Next
+      
+      &#39; Open the Excel file
+      WriteInfo &quot;Opening:&quot; &amp; sFileSelected
+	   Set x1 = CreateObject(&quot;Excel.Application&quot;) 
+	   x1.Visible = True 
+      Set wb = x1.Workbooks.Open(sFileSelected)
+   
      
      &#39;Add new example records
      Dim objWorksheet
         For Each objWorksheet In x1.Worksheets
+        WriteInfo &quot;Processing worksheet &quot; &amp; objWorksheet.name
         &#39;Search for corresponding objExampleEntityData
         Dim objExampleEntityData : Set objExampleEntityData = nothing
         Dim objExampleEntityDataCheck
-        Dim objEntity
-        For each objExampleEntityDataCheck in obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
-         Set objEntity = objExampleEntityDataCheck.getExtendedCollection(&quot;mdde_ExampleEntity&quot;).Item(0)
-         If objEntity.Code = objWorksheet.Cells(1,1) then
-            Set objExampleEntityData = objExampleEntityDataCheck
-            Exit for 
-         End if
+        Dim targetEntityType: targetEntityType = &quot;Expected output&quot;
+        If left(objWorksheet.name, 3) = &quot;In-&quot; Then
+            targetEntityType = &quot;Source input&quot; 
+        End If
+        
+              
+        For each objExampleEntityDataCheck in obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;, False)
+            Dim objEntity: set objEntity = objExampleEntityDataCheck.getExtendedAttribute(&quot;mdde_ExampleEntity&quot;)
+            Dim entityType: entityType = objExampleEntityDataCheck.getExtendedAttribute(&quot;mdde_ExampleDataType&quot;)
+            Set objEntity = getRealObject(objEntity)
+            If objEntity.Code = objWorksheet.Cells(1,1) And entityType = targetEntityType Then
+               Set objExampleEntityData = objExampleEntityDataCheck
+               Exit for 
+            End if
         Next
         If (objExampleEntityData is Nothing) then
             WriteInfo &quot;Entity &quot; &amp; objWorksheet.Cells(1,1) &amp; &quot; not found&quot;
@@ -61,7 +70,7 @@
         Dim colExampleRec : Set colExampleRec = objExampleEntityData.GetExtendedCollection(&quot;mdde_ExampleRecords&quot;)
         Do while nextRecord
             &#39;Select next line
-            Dim recordCode : recordCode = objWorksheet.Cells(recordCount + 1, 1)
+            Dim recordCode : recordCode = objWorksheet.Cells(recordCount + headerRows, 1)
             If recordCode &gt; &quot;&quot; then
                &#39;Create test record
                Dim objExampleRec : Set objExampleRec = colExampleRec.createNew()
@@ -77,8 +86,8 @@
                
                Do while nextAttribute
                   &#39; Get attribute-code from header
-                  Dim attributeCode : attributeCode = objWorksheet.Cells(1, attributeCount + 1)
-                  Dim attributeValue : attributeValue = objWorksheet.Cells(recordCount + 1, attributeCount + 1)
+                  Dim attributeCode : attributeCode = objWorksheet.Cells(headerRows, attributeCount + 1)
+                  Dim attributeValue : attributeValue = objWorksheet.Cells(recordCount + headerRows, attributeCount + 1)
 
                   
                   &#39; First record : count number of attributes
