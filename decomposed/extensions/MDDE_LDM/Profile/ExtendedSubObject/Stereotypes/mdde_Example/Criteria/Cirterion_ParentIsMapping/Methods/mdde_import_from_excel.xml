@@ -6,7 +6,6 @@
 <a:Comment>Import example data from Excel</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
-   &#39; Implement your method on &lt;obj&gt; here
      Dim x1
      Dim wb
      Dim activeWorksheet
@@ -14,10 +13,22 @@
      Dim actModel : Set actModel = ActiveModel
      Dim headerRows : headerRows = 2   
      &#39; Select a file
-     Dim wShell : Set wShell=CreateObject(&quot;WScript.Shell&quot;)
-     Dim oExec : Set oExec=wShell.Exec(&quot;mshta.exe &quot;&quot;about:&lt;input type=file id=FILE&gt;&lt;script&gt;FILE.click();new ActiveXObject(&#39;Scripting.FileSystemObject&#39;).GetStandardStream(1).WriteLine(FILE.value);close();resizeTo(0,0);&lt;/script&gt;&quot;&quot;&quot;)
-     Dim sFileSelected : sFileSelected = oExec.StdOut.ReadLine
-  
+     
+     
+     &#39;Dim wShell : Set wShell=CreateObject(&quot;WScript.Shell&quot;)
+     &#39;Dim oExec : Set oExec=wShell.Exec(&quot;mshta.exe &quot;&quot;about:&lt;input type=file id=FILE&gt;&lt;script&gt;FILE.click();new ActiveXObject(&#39;Scripting.FileSystemObject&#39;).GetStandardStream(1).WriteLine(FILE.value);close();resizeTo(0,0);&lt;/script&gt;&quot;&quot;&quot;)
+     &#39;Dim sFileSelected : sFileSelected = oExec.StdOut.ReadLine
+     
+     &#39;Create a file open dialog
+     Dim shell: Set shell = CreateObject(&quot;Shell.Application&quot;)
+     Dim file: Set file = shell.BrowseForFolder(0, &quot;Select file:&quot;, &amp;H4000, &quot;%HOMEPATH%&quot;)
+     If file is Nothing Then
+      msgbox &quot;No file selected, aborting import&quot;
+      Exit Sub
+     End If
+     
+     Dim sFileSelected: sFileSelected = file.self.Path
+     
      Dim objCurrentExampleEntityData
      Dim exampleRecord
      Dim objCurrentExampleRec
