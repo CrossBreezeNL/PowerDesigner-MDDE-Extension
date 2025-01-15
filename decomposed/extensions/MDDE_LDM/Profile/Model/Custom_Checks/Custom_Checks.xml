@@ -6,7 +6,7 @@
 <a:Creator>BurggraaffC</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="mdde_Check_FullShortcutDisabled.xml" />
-<xi:include href="mdde_Check_SourceObject_SQLExpression_Enabled.xml" />
+<xi:include href="Check_full_shortcut_mode_is_disabled_on_model_(MDDE).xml" />
+<xi:include href="Check_source_object_SQL_expression_export_is_enabled_(MDDE).xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

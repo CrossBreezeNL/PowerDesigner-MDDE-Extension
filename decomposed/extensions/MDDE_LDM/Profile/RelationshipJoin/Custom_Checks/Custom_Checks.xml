@@ -6,6 +6,6 @@
 <a:Creator>DijkC1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
-<xi:include href="mdde_Check_RelationshipJoinHasParentChildAttributes.xml" />
+<xi:include href="Check_relationship_join_has_parent_and_child_attributes_(MDDE).xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

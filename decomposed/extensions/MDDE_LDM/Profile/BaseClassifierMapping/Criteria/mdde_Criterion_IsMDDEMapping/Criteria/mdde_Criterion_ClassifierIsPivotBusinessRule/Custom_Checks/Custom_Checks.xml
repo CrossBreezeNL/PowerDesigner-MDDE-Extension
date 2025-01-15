@@ -1,0 +1,11 @@
+<o:TypedCategoryTargetItem Id="CF376183-4E9E-435F-B877-E4333D72215E">
+<a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
+<a:ObjectID>CF376183-4E9E-435F-B877-E4333D72215E</a:ObjectID>
+<a:Name>Custom Checks</a:Name>
+<a:CreationDate>1736938699</a:CreationDate>
+<a:Creator>OttenW</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<c:Categories>
+<xi:include href="Check_window_business_rule_not_a_source_of_a_pivot_business_rule_(MDDE).xml" />
+</c:Categories>
+</o:TypedCategoryTargetItem>

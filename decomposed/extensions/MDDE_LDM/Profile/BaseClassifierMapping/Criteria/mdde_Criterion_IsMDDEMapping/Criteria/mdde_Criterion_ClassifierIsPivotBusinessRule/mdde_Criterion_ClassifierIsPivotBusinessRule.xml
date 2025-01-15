@@ -15,5 +15,6 @@
 <xi:include href="Extended_Compositions/Extended_Compositions.xml" />
 <xi:include href="Methods/Methods.xml" />
 <xi:include href="Templates/Templates.xml" />
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
 </c:Categories>
 </o:CriterionTargetItem>

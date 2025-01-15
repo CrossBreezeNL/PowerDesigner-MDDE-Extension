@@ -1,6 +1,6 @@
 <o:CustomCheckTargetItem Id="278FD680-EA0D-49BF-A657-FBA47CE012C4">
 <a:ObjectID>278FD680-EA0D-49BF-A657-FBA47CE012C4</a:ObjectID>
-<a:Name>mdde_CheckAttributeMappingHasValidTargetAttribute</a:Name>
+<a:Name>Check attribute mapping has valid target attribute (MDDE)</a:Name>
 <a:CreationDate>1728549772</a:CreationDate>
 <a:Creator>DijkC1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
@@ -10,7 +10,7 @@
   %Check% = True  
   If obj.Feature Is Nothing Then
     %Check% = False
-    WriteError(&quot;Mapping &#39;&quot; &amp; obj.Parent.Name &amp; &quot; on entity &quot; &amp; obj.SourceFeature.Parent.Code &amp; &quot; is missing a target attribute in the attribute mapping.&quot;)
+    WriteError(&quot;Mapping &#39;&quot; &amp; obj.Parent.DisplayName &amp; &quot; on entity &quot; &amp; obj.Parent.Classifier.DisplayName &amp; &quot; is missing a target attribute in one of the attribute mappings.&quot;)
   End if
 End Function</a:CheckScript>
 <a:AutoFixScrpt>Function %Fix%(obj, outmsg)

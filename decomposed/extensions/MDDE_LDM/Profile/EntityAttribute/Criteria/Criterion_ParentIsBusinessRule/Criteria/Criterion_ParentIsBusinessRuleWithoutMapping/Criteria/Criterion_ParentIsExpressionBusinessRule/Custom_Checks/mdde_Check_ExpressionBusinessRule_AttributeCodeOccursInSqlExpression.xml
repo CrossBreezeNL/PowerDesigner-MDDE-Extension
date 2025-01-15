@@ -15,13 +15,13 @@
    
    Dim attributeFound   
    &#39;In case of a window businessrule and an output attribute, the the attribute should not be found in the SQL Expression
-   If (obj.Entity.Stereotype = &quot;mdde_WindowBusinessRule&quot; and obj.Stereotype = &quot;mdde_OutputAttribute&quot;) Then
+   If (obj.Entity.HasStereotype(&quot;mdde_WindowBusinessRule&quot;) and obj.HasStereotype(&quot;mdde_OutputAttribute&quot;))    Then
       &#39; Make sure we search case-insensitive.
       objAttrCodeRegex.IgnoreCase = True
        &#39; Check whether the Code of the current attribute occurs in the window business rule (parent entity) Sql Expression.
       attributeFound = objAttrCodeRegex.Test(obj.Entity.GetExtendedAttributeText(&quot;mdde_SqlExpression&quot;))
       If attributeFound = True Then
-         WriteError(&quot;Output attribute &quot; &amp; obj.Code &amp; &quot; should not be used in the SQL Expression of window business rule &quot;&amp; obj.Entity.Code)
+         WriteError(&quot;Output attribute &quot; &amp; obj.DisplayName &amp; &quot; should not be used in the SQL Expression of window business rule &quot;&amp; obj.Entity.DisplayName)
       End If
       %Check% = Not attributeFound
    Else
@@ -30,7 +30,7 @@
        &#39; Check whether the Code of the current attribute occurs in the right casing in the scalar business rule (parent entity) Sql Expression.
       attributeFound = objAttrCodeRegex.Test(obj.Entity.GetExtendedAttributeText(&quot;mdde_SqlExpression&quot;))
       If attributeFound = False Then
-         WriteError(&quot;Attribute &quot; &amp; obj.Code &amp; &quot; should be used in the SQL Expression of business rule &quot;&amp; obj.Entity.Code)
+         WriteError(&quot;Attribute &quot; &amp; obj.DisplayName &amp; &quot; should be used in the SQL Expression of business rule &quot;&amp; obj.Entity.DisplayName)
       End If
       %Check% = attributeFound
    End If

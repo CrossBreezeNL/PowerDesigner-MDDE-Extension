@@ -1,20 +1,18 @@
 <o:CustomCheckTargetItem Id="B41DD905-3733-4C53-8B0F-C4E8F25D9DEC">
 <a:ObjectID>B41DD905-3733-4C53-8B0F-C4E8F25D9DEC</a:ObjectID>
-<a:Name>mdde_Check_FullShortcutDisabled</a:Name>
+<a:Name>Check full shortcut mode is disabled on model (MDDE)</a:Name>
 <a:CreationDate>1719473199</a:CreationDate>
 <a:Creator>BurggraaffC</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
-<a:HelpMessage>This check ensures that ...</a:HelpMessage>
+<a:HelpMessage>This check ensures that full shortcut mode is disabled on the model</a:HelpMessage>
 <a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>
-<a:CheckScript>Function %Check%(obj)
-   &#39; Implement your check on &lt;obj&gt; here
-   &#39; and return True if check passed
-   &#39; or  return False if not.
-If (obj.GetModelOptions().FullShortCut = True) Then
-WriteError &quot;Please change the Model Options from Full Shortcut Model to Name/Code&quot;
-  %Check% = False
-  Else %Check% = True
-End If
+<a:CheckScript>Function %Check%(obj) 
+   %Check% = True
+   &#39;If FullShortCut is true in model options, output an error message and fail the check
+   If (obj.GetModelOptions().FullShortCut = True) Then
+      WriteError &quot;Please change the Model Options from Full Shortcut Model to Name/Code&quot;
+      %Check% = False
+   End If
 End Function
 </a:CheckScript>
 <a:AutoFixScrpt>Function %Fix%(obj, outmsg)
@@ -23,7 +21,7 @@ End Function
    &#39; and return True if successful.
 
    outmsg = &quot;Automatic correction not implemented&quot;
-
+ 
    %Fix% = False
 End Function</a:AutoFixScrpt>
 </o:CustomCheckTargetItem>

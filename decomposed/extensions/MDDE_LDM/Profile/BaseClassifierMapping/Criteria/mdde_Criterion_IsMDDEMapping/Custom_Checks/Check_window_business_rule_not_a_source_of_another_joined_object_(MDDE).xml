@@ -61,7 +61,7 @@ Function windowFunctionUsedAsParent(ByRef objWindowFunctionSourceObject, ByRef c
                &#39;WriteDebug(&quot;objParentSourceObject: &quot; &amp; objParentSourceObject.ObjectType &amp; &quot; name: &quot; &amp; objParentSourceObject.DisplayName &amp; &quot; stereotype: &quot; &amp; objParentSourceObject.StereoType)
                &#39;if the parentobject is the window function object then set the variable to true
                If objParentSourceObject = objWindowFunctionSourceObject Then
-                  windowFunctionUsedAsParent = True\
+                  windowFunctionUsedAsParent = True
                   Exit Function
                End if
             End if

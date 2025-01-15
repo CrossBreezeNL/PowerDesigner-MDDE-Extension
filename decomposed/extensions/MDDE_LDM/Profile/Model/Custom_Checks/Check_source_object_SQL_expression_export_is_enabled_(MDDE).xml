@@ -1,0 +1,40 @@
+<o:CustomCheckTargetItem Id="5E3AECB0-F77F-4B10-A1EB-6945FF0B889B">
+<a:ObjectID>5E3AECB0-F77F-4B10-A1EB-6945FF0B889B</a:ObjectID>
+<a:Name>Check source object SQL expression export is enabled (MDDE)</a:Name>
+<a:CreationDate>1725533973</a:CreationDate>
+<a:Creator>DijkC1</a:Creator>
+<a:Comment>When window business rules are created we should also enable the export of the SQL expression. If this is enabled for sql expressions the source attributes will be used instead of the input attributes.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that if a window Business Rule is modelled the SourceObject SQL expression is set.</a:HelpMessage>
+<a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = True    
+    &#39;check if one of the entities in the model is a windowbusinessrule.
+    &#39;make sure to also do this for windows business rules that are implemented through a shortcut.
+    Dim entity, windowBusinessRuleFound, realObject
+    If obj.GetExtendedAttributeText(&quot;mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression&quot;) = &quot;true&quot; Then
+      Exit Function
+    End If
+    
+    For Each entity in obj.Entities
+      Set realObject = GetRealObject(entity)
+      If not realObject Is Nothing Then
+         If realObject.HasStereotype(&quot;mdde_WindowBusinessRule&quot;) Then
+            %Check% = False
+            WriteError &quot;In model configuration (MDDE) the XML Export option [SourceObject &lt;&lt;ExpressionBusinessRule&gt;&gt; SQL Expression] should be selected.&quot;
+            Exit Function
+         End If
+      End if
+    Next
+ End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   %Fix% = False   
+   obj.SetExtendedAttribute &quot;mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression&quot;, True
+   outmsg = &quot;Updated model configuration (MDDE), set XML export [SourceObject &lt;&lt;ExpressionBusinessRule&gt;&gt; SQL Expression] to true&quot;
+   WriteInfo outmsg
+   %Fix% = True   
+End Function
+</a:AutoFixScrpt>
+<a:DefaultAutoFixExecution>1</a:DefaultAutoFixExecution>
+<a:EnableAutoFix>1</a:EnableAutoFix>
+</o:CustomCheckTargetItem>

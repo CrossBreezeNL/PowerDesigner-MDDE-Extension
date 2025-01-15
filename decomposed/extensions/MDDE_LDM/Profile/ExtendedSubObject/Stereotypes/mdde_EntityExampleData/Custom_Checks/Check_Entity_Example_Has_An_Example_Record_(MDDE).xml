@@ -14,7 +14,7 @@
    &#39;we raise an error if there is no example record found for the example entity
    If exampleRecords is nothing Or exampleRecords.Count = 0 Then
       %Check% = False
-      WriteInfo(&quot;ExampleEntity: [&quot; &amp; obj.Name &amp; &quot;] with type: [&quot; &amp; exampleDatatype &amp; &quot;] is missing an example record&quot;)
+      WriteInfo(exampleDatatype &amp; &quot; object &quot; &amp; obj.DisplayName &amp; &quot; contains no example records&quot;)
    End if
 End Function</a:CheckScript>
 <a:AutoFixScrpt>Function %Fix%(obj, outmsg)
