@@ -73,8 +73,12 @@ Function GetRealObject(objItemOrShortcut)
          objItemOrShortcut.TargetModelDefinition.AskForLoad False
          &#39; Return the TargetObject of the shortcut.
          If not objItemOrShortcut.TargetObject Is Nothing Then
-            Set GetRealObject = objItemOrShortcut.TargetObject         
-         End if         
+            Set GetRealObject = objItemOrShortcut.TargetObject
+         Else
+            WriteError objectItemOrShortcut.code &amp; &quot; Appears to be a broken shortcut, target object could not be found in target model&quot; 
+         End if
+      Else
+        WriteError objectItemOrShortcut.code &amp; &quot; Appears to be a broken shortcut, target model could not be resolved&quot;         
       End if
    Else
       &#39; If the object is not a shortcut, return the passed object.
