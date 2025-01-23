@@ -1,0 +1,13 @@
+<o:FormTargetItem Id="E16995CB-3EA6-4706-8377-F4CC5B81EB2A">
+<a:ObjectID>E16995CB-3EA6-4706-8377-F4CC5B81EB2A</a:ObjectID>
+<a:Name>mdde_BusinessRule_Examples</a:Name>
+<a:FormTargetItem.Value>&lt;Form  &gt;
+   &lt;StaticText Name=&quot;mdde_ExamplesNotAllowed&quot; Caption=&quot;Examples are not allowed on this type of business rule.&quot; /&gt;
+&lt;/Form&gt;
+</a:FormTargetItem.Value>
+<a:CreationDate>1724146166</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:Comment>Overwrite the standard MDDE example tab to block examples.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:Label>Examples (MDDE)</a:Label>
+</o:FormTargetItem>

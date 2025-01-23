@@ -31,6 +31,14 @@
 .if (%Comment%)
   &lt;Comment&gt;%.X:Comment%&lt;/Comment&gt;
 .endif(\n)
+.comment only display the sql expression if stereotype is a mdde_sourceobject of type business rule
+.if (%.D:mdde_SourceObject%) &amp;&amp; (%SourceFeature%)
+   .if (%SourceFeature.Entity.Stereotype% == &quot;mdde_WindowBusinessRule&quot;)
+      .if (%.D:mdde_SourceObject.mdde_SqlExpression?%)
+  &lt;SourceObjectSqlExpression&gt;&quot;%.XD:mdde_SourceObject.mdde_SqlExpression%&quot;&lt;/SourceObjectSqlExpression&gt;
+      .endif(\n)  
+   .endif
+.endif
 .comment Add the content of the export extension template
 .if (%Model.mdde_Export_Extension_Attached%)
   .if(%.D:mddex_BaseStructuralFeatureMapping_Export_Content%)

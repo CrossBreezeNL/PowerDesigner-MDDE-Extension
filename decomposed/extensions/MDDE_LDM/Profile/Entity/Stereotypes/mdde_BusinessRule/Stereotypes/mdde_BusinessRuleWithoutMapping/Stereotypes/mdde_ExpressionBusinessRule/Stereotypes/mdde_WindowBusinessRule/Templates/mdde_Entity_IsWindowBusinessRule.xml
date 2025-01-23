@@ -1,0 +1,9 @@
+<o:TemplateTargetItem Id="3E4E71D9-4267-49AA-B23B-C57DCA2956FC">
+<a:ObjectID>3E4E71D9-4267-49AA-B23B-C57DCA2956FC</a:ObjectID>
+<a:Name>mdde_Entity_IsWindowBusinessRule</a:Name>
+<a:TemplateTargetItem.Value>True</a:TemplateTargetItem.Value>
+<a:CreationDate>1724141357</a:CreationDate>
+<a:Creator>BuwaldaN</a:Creator>
+<a:Comment>This is a template which is used in the IsEntityNotWindowFunction criterion in mdde_ExpressionBusinessRule. Since GTL doesn&#39;t have a HasStereotype type of function this is a workaround to check one template.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+</o:TemplateTargetItem>

@@ -1,6 +1,6 @@
-<o:TypedCategoryTargetItem Id="7BBEDCB3-FEE6-4532-9465-2D4764511DF3">
+<o:TypedCategoryTargetItem Id="1DAAE9C4-578C-483D-BF9B-047769B1EDFF">
 <a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
-<a:ObjectID>7BBEDCB3-FEE6-4532-9465-2D4764511DF3</a:ObjectID>
+<a:ObjectID>1DAAE9C4-578C-483D-BF9B-047769B1EDFF</a:ObjectID>
 <a:Name>Custom Checks</a:Name>
 <a:CreationDate>1657120038</a:CreationDate>
 <a:Creator>WesselsH1</a:Creator>
@@ -8,6 +8,5 @@
 <c:Categories>
 <xi:include href="mdde_ExpressionBusinessRule_Example_CheckAttributeAndValues.xml" />
 <xi:include href="mdde_Check_BusinessRuleHasAtLeastOneExample.xml" />
-<xi:include href="mdde_Check_BusinessRuleHasAtLeastOneInputAttribute.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

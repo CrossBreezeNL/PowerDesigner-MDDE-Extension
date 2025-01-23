@@ -7,5 +7,6 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Check_Entity_Example_Data_Attributes_(MDDE).xml" />
+<xi:include href="Check_Entity_Example_Has_An_Example_Record_(MDDE).xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

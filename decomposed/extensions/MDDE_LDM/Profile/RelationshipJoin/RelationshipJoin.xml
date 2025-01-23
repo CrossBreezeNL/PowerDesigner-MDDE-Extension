@@ -5,6 +5,7 @@
 <a:Creator>WaniYP</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
 <xi:include href="Templates/Templates.xml" />
 </c:Categories>
 </o:MetaClassTargetItem>

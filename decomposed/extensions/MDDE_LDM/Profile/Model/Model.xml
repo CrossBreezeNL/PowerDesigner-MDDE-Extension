@@ -6,6 +6,7 @@
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:EnableSelectionGeneration>1</a:EnableSelectionGeneration>
 <c:Categories>
+<xi:include href="Custom_Checks/Custom_Checks.xml" />
 <xi:include href="Methods/Methods.xml" />
 <xi:include href="Menus/Menus.xml" />
 <xi:include href="Templates/Templates.xml" />

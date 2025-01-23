@@ -1,0 +1,29 @@
+<o:CustomCheckTargetItem Id="F6063A1C-2669-41C9-A916-DAD7FD65BD69">
+<a:ObjectID>F6063A1C-2669-41C9-A916-DAD7FD65BD69</a:ObjectID>
+<a:Name>Check relationship join has parent and child attributes (MDDE)</a:Name>
+<a:CreationDate>1728547835</a:CreationDate>
+<a:Creator>DijkC1</a:Creator>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that a relationship has the parent and child attributes filled correctly.</a:HelpMessage>
+<a:OutputMessage>The following RelationshipJoins do not pass custom check:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = True
+   If obj.ParentAttribute Is Nothing Then
+      %Check% = False
+       WriteError &quot;Relationship: &quot; &amp; obj.RelationShip.DisplayName &amp; &quot; is missing a parent attribute.&quot;
+   End If
+   If obj.ChildAttribute Is Nothing Then
+      %Check% = False
+      WriteError &quot;Relationship: &quot; &amp; obj.RelationShip.DisplayName &amp; &quot; is missing a child attribute for: &quot; &amp; obj.DisplayName
+   End If   
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

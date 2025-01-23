@@ -6,6 +6,7 @@
 <a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
+<xi:include href="Check_attribute_mapping_has_valid_target_attribute_(MDDE).xml" />
 <xi:include href="mdde_Check_AttributeMappingHasValidSourceObject.xml" />
 </c:Categories>
 </o:TypedCategoryTargetItem>

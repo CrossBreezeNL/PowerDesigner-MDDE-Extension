@@ -1,0 +1,42 @@
+<o:CustomCheckTargetItem Id="C234C787-E4C5-4E8B-BD58-432AA676EF37">
+<a:ObjectID>C234C787-E4C5-4E8B-BD58-432AA676EF37</a:ObjectID>
+<a:Name>Check window business rule not a source of a pivot business rule (MDDE)</a:Name>
+<a:CreationDate>1725522003</a:CreationDate>
+<a:Creator>DijkC1</a:Creator>
+<a:Comment>A window business rule cannot be used as a source for a pivot business rule.</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:HelpMessage>This check ensures that window business rules cannot be used as a source for a pivot business rule. </a:HelpMessage>
+<a:OutputMessage>The following objects have implemented window business rule where they are not allowed:</a:OutputMessage>
+<a:CheckScript>Function %Check%(obj)
+   %Check% = True
+   
+   &#39; Retrieve the source objects from the mapping.
+   Dim colSourceObjects : Set colSourceObjects = obj.GetExtendedCollection(&quot;mdde_SourceObjects&quot;)
+   
+   &#39; If the mapping has no source objects, stop here.
+   If colSourceObjects.Count = 0 Then
+      Exit Function
+   End If
+   
+   Dim objSourceObject
+   For Each objSourceObject In colSourceObjects
+      Dim joinedObject : Set joinedObject = GetRealObject(objSourceObject.GetExtendedAttribute(&quot;mdde_JoinedObject&quot;))      
+      If Not joinedObject Is Nothing Then
+         If joinedObject.HasStereotype(&quot;mdde_WindowBusinessRule&quot;) Then
+            %Check% = False
+            WriteError joinedObject.DisplayName &amp; &quot; is a window business rule and cannot be used as source in a mapping on a pivot business rules.&quot;
+         End if
+      End If   
+   Next
+   
+End Function</a:CheckScript>
+<a:AutoFixScrpt>Function %Fix%(obj, outmsg)
+   &#39; Implement your automatic correction on &lt;obj&gt; here
+   &#39; filling &lt;outmsg&gt; as you wish
+   &#39; and return True if successful.
+
+   outmsg = &quot;Automatic correction not implemented&quot;
+
+   %Fix% = False
+End Function</a:AutoFixScrpt>
+</o:CustomCheckTargetItem>

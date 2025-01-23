@@ -1,7 +1,7 @@
 <o:TemplateTargetItem Id="4E7F85A7-6B6D-4339-971F-88181158091F">
 <a:ObjectID>4E7F85A7-6B6D-4339-971F-88181158091F</a:ObjectID>
 <a:Name>mdde_Relationship_XmlExport_Template</a:Name>
-<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template% ParentEntity=&quot;%Entity1.Code%&quot; ParentEntityId=&quot;%Entity1.ObjectID%&quot; ChildEntity=&quot;%Entity2.Code%&quot; ChildEntityId=&quot;%Entity2.ObjectID%&quot;
+<a:TemplateTargetItem.Value>&lt;%mdde_NamedObject_XmlElementName% %mdde_NamedObject_XmlAttributeExport_Template% ParentModel=&quot;%Entity1.Model.Code%&quot; ParentEntity=&quot;%Entity1.Code%&quot; ParentEntityId=&quot;%Entity1.ObjectID%&quot; ChildModel=&quot;%Entity2.Model.Code%&quot; ChildEntity=&quot;%Entity2.Code%&quot; ChildEntityId=&quot;%Entity2.ObjectID%&quot;
 .if (%Entity1ToEntity2Role%)
  ParentRole=&quot;%.X:Entity1ToEntity2Role%&quot;
 .endif
