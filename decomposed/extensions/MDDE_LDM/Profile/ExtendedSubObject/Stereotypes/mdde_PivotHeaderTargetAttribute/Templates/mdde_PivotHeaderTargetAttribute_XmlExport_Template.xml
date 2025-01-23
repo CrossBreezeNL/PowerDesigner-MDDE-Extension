@@ -2,7 +2,5 @@
 <a:ObjectID>96B5C269-3713-4C0B-B9EA-669CA390DAB7</a:ObjectID>
 <a:Name>mdde_PivotHeaderTargetAttribute_XmlExport_Template</a:Name>
 <a:TemplateTargetItem.Value>&lt;HeaderTargetAttribute HeaderValue=&quot;%.X:Name%&quot; TargetAttribute=&quot;%mdde_TargetAttribute.Code%&quot; /&gt;</a:TemplateTargetItem.Value>
-<a:CreationDate>1711665235</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

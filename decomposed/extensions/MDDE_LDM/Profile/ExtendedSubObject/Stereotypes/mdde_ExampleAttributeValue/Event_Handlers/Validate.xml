@@ -1,8 +1,6 @@
 <o:EventHandlerTargetItem Id="380D3A01-E3C1-4BF0-9559-89D8594E44FC">
 <a:ObjectID>380D3A01-E3C1-4BF0-9559-89D8594E44FC</a:ObjectID>
 <a:Name>Validate</a:Name>
-<a:CreationDate>1657099186</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>On Validate update the Name and Code</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %Validate%(obj, ByRef message)

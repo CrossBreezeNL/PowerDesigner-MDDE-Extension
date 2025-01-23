@@ -1,8 +1,6 @@
 <o:TargetCategory Id="556E5475-1A09-40CF-BB18-911C12A5D0EE">
 <a:ObjectID>556E5475-1A09-40CF-BB18-911C12A5D0EE</a:ObjectID>
 <a:Name>Settings</a:Name>
-<a:CreationDate>1691151961</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <c:Categories>
 <xi:include href="Custom_Values/Custom_Values.xml" />
 <xi:include href="Metric_Maps.xml" />

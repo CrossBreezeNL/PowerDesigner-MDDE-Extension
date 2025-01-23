@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="BA25C1AC-4885-46E1-B0D1-7C737D2CECCE">
 <a:ObjectID>BA25C1AC-4885-46E1-B0D1-7C737D2CECCE</a:ObjectID>
 <a:Name>mdde_SourceObject</a:Name>
-<a:CreationDate>1650359819</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>This extended sub object represents a source object in a mapping. This object is to add extra metadata to a mapped source object (which is not possible on the SourceClassifiers collection by default, since this collection contains IndentifiedObject objects).</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Source object (MDDE)</a:Label>

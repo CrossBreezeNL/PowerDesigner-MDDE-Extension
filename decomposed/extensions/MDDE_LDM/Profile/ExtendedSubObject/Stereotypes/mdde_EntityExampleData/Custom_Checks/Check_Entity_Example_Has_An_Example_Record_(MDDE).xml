@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="F4057629-402E-450E-8ABE-3D371B4F0130">
 <a:ObjectID>F4057629-402E-450E-8ABE-3D371B4F0130</a:ObjectID>
 <a:Name>Check Entity Example Has An Example Record (MDDE)</a:Name>
-<a:CreationDate>1730813751</a:CreationDate>
-<a:Creator>DijkC1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that an entity example has a valid record</a:HelpMessage>
 <a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>

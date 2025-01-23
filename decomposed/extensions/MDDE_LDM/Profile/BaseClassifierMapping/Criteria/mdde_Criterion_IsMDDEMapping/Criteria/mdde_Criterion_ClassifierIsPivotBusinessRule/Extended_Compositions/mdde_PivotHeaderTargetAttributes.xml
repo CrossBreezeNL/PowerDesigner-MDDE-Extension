@@ -1,8 +1,6 @@
 <o:ExtendedCompositionTargetItem Id="DC9035CB-4DB4-4BE8-A2A5-9A55C811B0D8">
 <a:ObjectID>DC9035CB-4DB4-4BE8-A2A5-9A55C811B0D8</a:ObjectID>
 <a:Name>mdde_PivotHeaderTargetAttributes</a:Name>
-<a:CreationDate>1711017278</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
 <a:DestinationStereotype>mdde_PivotHeaderTargetAttribute</a:DestinationStereotype>

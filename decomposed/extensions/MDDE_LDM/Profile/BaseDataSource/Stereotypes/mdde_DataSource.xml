@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="B2441580-993F-4A68-A9BF-144D64F70237">
 <a:ObjectID>B2441580-993F-4A68-A9BF-144D64F70237</a:ObjectID>
 <a:Name>mdde_DataSource</a:Name>
-<a:CreationDate>1701780848</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Data Source (MDDE)</a:Label>
 </o:StereotypeTargetItem>

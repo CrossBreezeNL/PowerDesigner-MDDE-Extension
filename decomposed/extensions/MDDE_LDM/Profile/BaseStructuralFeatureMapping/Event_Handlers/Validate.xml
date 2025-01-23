@@ -1,8 +1,6 @@
 <o:EventHandlerTargetItem Id="509EF454-F34D-480F-B713-20AE384DED96">
 <a:ObjectID>509EF454-F34D-480F-B713-20AE384DED96</a:ObjectID>
 <a:Name>Validate</a:Name>
-<a:CreationDate>1650375759</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %Validate%(obj, ByRef message)
    &#39;Since event handlers cannot be defined under a criterion, first check that the validation is applicable for the object

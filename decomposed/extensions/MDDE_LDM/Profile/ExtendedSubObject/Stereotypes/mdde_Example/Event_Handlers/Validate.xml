@@ -1,8 +1,6 @@
 <o:EventHandlerTargetItem Id="B0FF036C-3CBE-4E39-913B-3D908EDEC7AA">
 <a:ObjectID>B0FF036C-3CBE-4E39-913B-3D908EDEC7AA</a:ObjectID>
 <a:Name>Validate</a:Name>
-<a:CreationDate>1657100828</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %Validate%(obj, ByRef message)
    WriteDebug &quot;[mdde_Example.Validate] &quot; &amp; obj.UOL

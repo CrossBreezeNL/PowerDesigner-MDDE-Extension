@@ -2,8 +2,6 @@
 <a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
 <a:ObjectID>BB065AFA-729F-4712-B250-558BEEED188A</a:ObjectID>
 <a:Name>Custom Checks</a:Name>
-<a:CreationDate>1650377393</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Check_attribute_mapping_has_valid_target_attribute_(MDDE).xml" />

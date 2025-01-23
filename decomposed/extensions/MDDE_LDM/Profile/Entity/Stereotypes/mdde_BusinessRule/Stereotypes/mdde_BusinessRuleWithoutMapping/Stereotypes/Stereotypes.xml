@@ -2,8 +2,6 @@
 <a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
 <a:ObjectID>B7100755-CEF6-4B3C-BC6B-D136A120D5EE</a:ObjectID>
 <a:Name>Stereotypes</a:Name>
-<a:CreationDate>1656441185</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_ExpressionBusinessRule/mdde_ExpressionBusinessRule.xml" />

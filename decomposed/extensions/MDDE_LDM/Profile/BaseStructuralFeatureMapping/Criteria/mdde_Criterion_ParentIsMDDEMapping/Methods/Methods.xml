@@ -2,8 +2,6 @@
 <a:TypePublicName>MethodTargetItem</a:TypePublicName>
 <a:ObjectID>801857D5-627A-4C60-AE34-BCC64D8B57FB</a:ObjectID>
 <a:Name>Methods</a:Name>
-<a:CreationDate>1650375571</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_SourceObjectEdit.xml" />

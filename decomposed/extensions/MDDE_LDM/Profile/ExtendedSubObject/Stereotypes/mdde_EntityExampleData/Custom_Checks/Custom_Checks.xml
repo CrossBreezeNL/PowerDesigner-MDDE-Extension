@@ -2,8 +2,6 @@
 <a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
 <a:ObjectID>062D6982-786F-4CDB-9014-4752AF115899</a:ObjectID>
 <a:Name>Custom Checks</a:Name>
-<a:CreationDate>1709626112</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Check_Entity_Example_Data_Attributes_(MDDE).xml" />

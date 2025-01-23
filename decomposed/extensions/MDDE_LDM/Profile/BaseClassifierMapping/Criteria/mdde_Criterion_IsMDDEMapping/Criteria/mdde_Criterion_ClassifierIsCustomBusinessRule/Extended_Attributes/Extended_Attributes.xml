@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
 <a:ObjectID>F2BFF5A5-2016-4088-ADE6-241D7C1068FC</a:ObjectID>
 <a:Name>Extended Attributes</a:Name>
-<a:CreationDate>1688645587</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Mapping_SqlExpression.xml" />

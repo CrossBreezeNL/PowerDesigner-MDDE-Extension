@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="0BFEE5D0-3651-4D8E-AED6-122ED808BF22">
 <a:ObjectID>0BFEE5D0-3651-4D8E-AED6-122ED808BF22</a:ObjectID>
 <a:Name>mdde_FilterBusinessRule</a:Name>
-<a:CreationDate>1656441091</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Filter business rule (MDDE)</a:Label>
 <a:PluralLabel>Filter business rules (MDDE)</a:PluralLabel>

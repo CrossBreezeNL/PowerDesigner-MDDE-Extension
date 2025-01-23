@@ -1,8 +1,6 @@
 <o:ExtendedCollectionTargetItem Id="B9C292A0-E0C4-4E1D-8C42-9C4DC5E52130">
 <a:ObjectID>B9C292A0-E0C4-4E1D-8C42-9C4DC5E52130</a:ObjectID>
 <a:Name>mdde_Mapping_DefaultExample</a:Name>
-<a:CreationDate>1661244392</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
 <a:DestinationStereotype>mdde_Example</a:DestinationStereotype>

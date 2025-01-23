@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="3268E67B-02F5-49E6-8F21-5315420B1DF9">
 <a:ObjectID>3268E67B-02F5-49E6-8F21-5315420B1DF9</a:ObjectID>
 <a:Name>mdde_ExampleDataType</a:Name>
-<a:CreationDate>1661354165</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>Whether the example data is a source input or expected output.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>

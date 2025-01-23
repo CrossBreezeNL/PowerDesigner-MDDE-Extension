@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="2507123F-240C-4F0B-873A-C35A738DBA2F">
 <a:ObjectID>2507123F-240C-4F0B-873A-C35A738DBA2F</a:ObjectID>
 <a:Name>mdde_OffsetPeriod</a:Name>
-<a:CreationDate>1673526008</a:CreationDate>
-<a:Creator>palanis</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
 <a:ExtendedAttributeTargetItem.ListOfValues>%mdde_SourceObject_OffsetTypeList%</a:ExtendedAttributeTargetItem.ListOfValues>

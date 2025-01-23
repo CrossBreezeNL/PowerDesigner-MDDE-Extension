@@ -2,8 +2,6 @@
 <a:TypePublicName>MethodTargetItem</a:TypePublicName>
 <a:ObjectID>786651D2-9F2C-4FEE-8C26-BFFC613269E3</a:ObjectID>
 <a:Name>Methods</a:Name>
-<a:CreationDate>1650405522</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Decompose.xml" />

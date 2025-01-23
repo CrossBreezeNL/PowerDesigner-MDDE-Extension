@@ -5,8 +5,6 @@
    &lt;StaticText Name=&quot;mdde_ExamplesNotAllowed&quot; Caption=&quot;Examples are not allowed on this type of business rule.&quot; /&gt;
 &lt;/Form&gt;
 </a:FormTargetItem.Value>
-<a:CreationDate>1724146166</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:Comment>Overwrite the standard MDDE example tab to block examples.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Examples (MDDE)</a:Label>

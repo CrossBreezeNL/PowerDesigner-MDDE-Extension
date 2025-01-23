@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="B903497F-9515-4292-9A7E-90E3B07F8D10">
 <a:ObjectID>B903497F-9515-4292-9A7E-90E3B07F8D10</a:ObjectID>
 <a:Name>mdde_Entity_DeleteMapping</a:Name>
-<a:CreationDate>1653999127</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>Delete the currently selected mapping</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)

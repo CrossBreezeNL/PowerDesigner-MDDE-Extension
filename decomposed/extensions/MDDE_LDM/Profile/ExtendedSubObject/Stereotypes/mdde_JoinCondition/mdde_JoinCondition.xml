@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="8217DEE6-7977-4E4B-8E3A-FC0ACC05FFD3">
 <a:ObjectID>8217DEE6-7977-4E4B-8E3A-FC0ACC05FFD3</a:ObjectID>
 <a:Name>mdde_JoinCondition</a:Name>
-<a:CreationDate>1650360904</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Join condition</a:Label>
 <a:PluralLabel>Join conditions</a:PluralLabel>

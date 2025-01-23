@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="B032A37D-0C10-44F1-A7BD-C7BCDE0F4A61">
 <a:ObjectID>B032A37D-0C10-44F1-A7BD-C7BCDE0F4A61</a:ObjectID>
 <a:Name>Expression business rule join conditions are in same order as attributes (MDDE)</a:Name>
-<a:CreationDate>1700599454</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>For expression business rules the join conditions need to be in the same order as the attributes of the business rule. Meaning when applying a business rule the order of the business rule attribute in the join conditions must be the same order as the list of attributes of the business rule itself.
 
 If this isn&#39;t the case this model check will report an error, and with autofix the order can be automatically updated.</a:Comment>

@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="519633D6-A20C-445A-88CF-A982BB083F78">
 <a:ObjectID>519633D6-A20C-445A-88CF-A982BB083F78</a:ObjectID>
 <a:Name>mdde_ScalarBusinessRule</a:Name>
-<a:CreationDate>1651576644</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Scalar business rule (MDDE)</a:Label>
 <a:PluralLabel>Scalar business rules (MDDE)</a:PluralLabel>

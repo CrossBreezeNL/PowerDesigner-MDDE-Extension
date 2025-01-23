@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="D9CC2DCC-1FEB-4F7A-86A7-5D15E7147302">
 <a:ObjectID>D9CC2DCC-1FEB-4F7A-86A7-5D15E7147302</a:ObjectID>
 <a:Name>NamedObject</a:Name>
-<a:CreationDate>1651665549</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Templates/Templates.xml" />

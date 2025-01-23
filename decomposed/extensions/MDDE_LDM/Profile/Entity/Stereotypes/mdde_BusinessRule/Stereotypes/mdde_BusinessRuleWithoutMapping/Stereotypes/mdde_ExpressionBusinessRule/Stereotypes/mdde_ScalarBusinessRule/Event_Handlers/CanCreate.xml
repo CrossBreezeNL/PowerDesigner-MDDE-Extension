@@ -1,8 +1,6 @@
 <o:EventHandlerTargetItem Id="7A536EA2-A24B-47FA-B288-442F690950B1">
 <a:ObjectID>7A536EA2-A24B-47FA-B288-442F690950B1</a:ObjectID>
 <a:Name>CanCreate</a:Name>
-<a:CreationDate>1726842683</a:CreationDate>
-<a:Creator>RichaneRamsoedit</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %CanCreate%(parent)
   &#39;the parent represents the ScalarBusinessRule which communicaties with the model object&#39; 

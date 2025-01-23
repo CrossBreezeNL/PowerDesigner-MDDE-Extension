@@ -2,8 +2,6 @@
 <a:ObjectID>D26B9611-B8A9-4140-9C4A-FD642D3446DF</a:ObjectID>
 <a:Name>Criterion_AttributeIsNotMapped</a:Name>
 <a:CriterionTargetItem.Value>%Mappings.Count% == 0</a:CriterionTargetItem.Value>
-<a:CreationDate>1699373856</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:ParentCriterion>
 <o:CriterionTargetItem Ref="B3DFB1EF-527F-47A4-A73A-E42686D05059"/>

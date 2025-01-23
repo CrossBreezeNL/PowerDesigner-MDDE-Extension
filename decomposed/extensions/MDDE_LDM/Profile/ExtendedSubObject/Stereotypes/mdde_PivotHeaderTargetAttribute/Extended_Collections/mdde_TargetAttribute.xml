@@ -1,8 +1,6 @@
 <o:ExtendedCollectionTargetItem Id="3AA8CE35-FDDC-40C3-BCB2-C00453EBF75B">
 <a:ObjectID>3AA8CE35-FDDC-40C3-BCB2-C00453EBF75B</a:ObjectID>
 <a:Name>mdde_TargetAttribute</a:Name>
-<a:CreationDate>1711016995</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:DestinationClassID>
 <a:DefaultColumnFilter>NAME 80 CODE 80 DTTP 60 MAND 20</a:DefaultColumnFilter>

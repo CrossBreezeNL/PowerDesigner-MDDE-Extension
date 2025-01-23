@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="2B7291DE-C73B-46B7-B343-39CCB0396231">
 <a:ObjectID>2B7291DE-C73B-46B7-B343-39CCB0396231</a:ObjectID>
 <a:Name>ExtendedSubObject</a:Name>
-<a:CreationDate>1717515149</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criteria/Criteria.xml" />

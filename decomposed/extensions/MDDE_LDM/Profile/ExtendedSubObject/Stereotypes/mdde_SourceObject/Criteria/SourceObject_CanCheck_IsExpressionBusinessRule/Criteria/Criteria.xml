@@ -2,8 +2,6 @@
 <a:TypePublicName>CriterionTargetItem</a:TypePublicName>
 <a:ObjectID>4DAEAC12-195E-4FF9-9AB0-61643B788616</a:ObjectID>
 <a:Name>Criteria</a:Name>
-<a:CreationDate>1700599379</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="SourceObject_Is_ExpressionBusinessRule/SourceObject_Is_ExpressionBusinessRule.xml" />

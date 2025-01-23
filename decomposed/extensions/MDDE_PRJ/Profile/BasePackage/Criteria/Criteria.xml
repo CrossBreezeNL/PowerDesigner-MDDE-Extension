@@ -2,8 +2,6 @@
 <a:TypePublicName>CriterionTargetItem</a:TypePublicName>
 <a:ObjectID>BACE4AA9-3F84-4555-89E5-F9282A1CBB2A</a:ObjectID>
 <a:Name>Criteria</a:Name>
-<a:CreationDate>1717593641</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="BasePackage_contains_FileDocuments/BasePackage_contains_FileDocuments.xml" />

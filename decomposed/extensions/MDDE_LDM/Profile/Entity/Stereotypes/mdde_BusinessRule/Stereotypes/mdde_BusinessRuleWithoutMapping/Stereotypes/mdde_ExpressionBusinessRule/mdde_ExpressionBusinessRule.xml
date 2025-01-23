@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="C1302E59-40DA-47AA-9C22-66448061611E">
 <a:ObjectID>C1302E59-40DA-47AA-9C22-66448061611E</a:ObjectID>
 <a:Name>mdde_ExpressionBusinessRule</a:Name>
-<a:CreationDate>1656441233</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Abstract>1</a:Abstract>
 <c:ParentSttp>

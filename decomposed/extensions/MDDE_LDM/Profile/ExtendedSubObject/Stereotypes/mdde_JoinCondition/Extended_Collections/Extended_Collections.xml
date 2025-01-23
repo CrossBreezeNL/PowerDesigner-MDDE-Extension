@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedCollectionTargetItem</a:TypePublicName>
 <a:ObjectID>2C421640-F372-4D16-9427-00F8ED2F9A73</a:ObjectID>
 <a:Name>Extended Collections</a:Name>
-<a:CreationDate>1650360904</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_ChildAttribute.xml" />

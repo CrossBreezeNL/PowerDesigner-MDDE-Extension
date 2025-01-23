@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="E7A6EB32-19C0-4076-AA95-AF544F02CACE">
 <a:ObjectID>E7A6EB32-19C0-4076-AA95-AF544F02CACE</a:ObjectID>
 <a:Name>mdde_ExampleAttributeValue</a:Name>
-<a:CreationDate>1657013652</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>This extended sub object represents an example attribute.
 
 The attribute Name and Code are copied from the attribute the value is for.</a:Comment>

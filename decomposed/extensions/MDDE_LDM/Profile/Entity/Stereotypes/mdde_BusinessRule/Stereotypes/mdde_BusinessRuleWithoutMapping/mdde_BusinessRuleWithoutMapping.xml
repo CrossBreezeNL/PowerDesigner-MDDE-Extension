@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="75250F30-4C0A-4599-888D-D0AFBFD6AF7E">
 <a:ObjectID>75250F30-4C0A-4599-888D-D0AFBFD6AF7E</a:ObjectID>
 <a:Name>mdde_BusinessRuleWithoutMapping</a:Name>
-<a:CreationDate>1656441185</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>Business rule without a mapping. This can be subtyped for mapping-less business rules.
 Model checks on this level did not become visiable in the model check list, so they are moved to the level of mdde_ExpressionBusinessRule</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>

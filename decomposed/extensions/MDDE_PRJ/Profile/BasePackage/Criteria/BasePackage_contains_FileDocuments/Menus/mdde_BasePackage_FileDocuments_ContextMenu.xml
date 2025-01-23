@@ -5,7 +5,5 @@
    &lt;Command Name=&quot;mdde_BasePackage_DecomposeAllExtDefs&quot; Caption=&quot;Decompose all XEMs (MDDE)&quot; /&gt;
 &lt;/Menu&gt;
 </a:MenuTargetItem.Value>
-<a:CreationDate>1717593641</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:MenuTargetItem>

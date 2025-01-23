@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="DF8DA599-B7F1-40CE-90BB-A640914CBB95">
 <a:ObjectID>DF8DA599-B7F1-40CE-90BB-A640914CBB95</a:ObjectID>
 <a:Name>mdde_ExampleRecordCount</a:Name>
-<a:CreationDate>1661342832</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>10</a:ExtendedAttributeTargetItem.DataType>
 <a:Computed>1</a:Computed>

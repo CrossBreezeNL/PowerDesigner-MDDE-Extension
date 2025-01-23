@@ -2,8 +2,6 @@
 <a:ObjectID>1A60F8F7-CAE0-4E94-8B53-92A8C2515851</a:ObjectID>
 <a:Name>mdde_BusinessRule_IsBusinessRuleWithoutMapping</a:Name>
 <a:TemplateTargetItem.Value>True</a:TemplateTargetItem.Value>
-<a:CreationDate>1685648282</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>This is a template which is used in the Criterion_ParentIsIsBusinessRuleWithoutMapping criterion on EntityAttribute. Since GTL doesn&#39;t have a HasStereotype type of function this is a workaround to check one template.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

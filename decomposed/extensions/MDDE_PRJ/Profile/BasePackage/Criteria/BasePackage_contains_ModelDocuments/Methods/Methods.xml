@@ -2,8 +2,6 @@
 <a:TypePublicName>MethodTargetItem</a:TypePublicName>
 <a:ObjectID>2E4BE163-EF3A-44F1-B219-46AEB47DCE5D</a:ObjectID>
 <a:Name>Methods</a:Name>
-<a:CreationDate>1717593824</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_BasePackage_OpenAllLDMs.xml" />

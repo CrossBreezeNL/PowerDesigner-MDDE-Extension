@@ -2,8 +2,6 @@
 <a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
 <a:ObjectID>1DAAE9C4-578C-483D-BF9B-047769B1EDFF</a:ObjectID>
 <a:Name>Custom Checks</a:Name>
-<a:CreationDate>1657120038</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_ExpressionBusinessRule_Example_CheckAttributeAndValues.xml" />

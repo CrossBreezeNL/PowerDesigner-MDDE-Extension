@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="AA8BC38B-53F0-42EB-B52B-0F4FFFC6C044">
 <a:ObjectID>AA8BC38B-53F0-42EB-B52B-0F4FFFC6C044</a:ObjectID>
 <a:Name>mdde_PivotAggregatedAttributeSelector</a:Name>
-<a:CreationDate>1711019545</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
 <a:Computed>1</a:Computed>

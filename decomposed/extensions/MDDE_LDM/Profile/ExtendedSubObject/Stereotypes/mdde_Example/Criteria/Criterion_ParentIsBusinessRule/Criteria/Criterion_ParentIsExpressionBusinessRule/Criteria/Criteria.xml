@@ -2,8 +2,6 @@
 <a:TypePublicName>CriterionTargetItem</a:TypePublicName>
 <a:ObjectID>A2796A1D-F4A5-41EB-B2E7-F5A5D5D2140C</a:ObjectID>
 <a:Name>Criteria</a:Name>
-<a:CreationDate>1657093866</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criterion_ParentIsScalarBusinessRule/Criterion_ParentIsScalarBusinessRule.xml" />

@@ -1,8 +1,6 @@
 <o:ExtendedCompositionTargetItem Id="42900E7B-A71A-4102-AD5C-B5B6980F9718">
 <a:ObjectID>42900E7B-A71A-4102-AD5C-B5B6980F9718</a:ObjectID>
 <a:Name>mdde_Mapping_Examples</a:Name>
-<a:CreationDate>1661244392</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
 <a:DestinationStereotype>mdde_Example</a:DestinationStereotype>

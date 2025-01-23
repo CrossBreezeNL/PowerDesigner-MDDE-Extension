@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="ECD23216-6877-4D0F-850F-9A70A7F0D6AD">
 <a:ObjectID>ECD23216-6877-4D0F-850F-9A70A7F0D6AD</a:ObjectID>
 <a:Name>mdde_PivotBusinessRule</a:Name>
-<a:CreationDate>1710867972</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Pivot business rule (MDDE)</a:Label>
 <a:PluralLabel>Pivot business rules (MDDE)</a:PluralLabel>

@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="FCCA60D2-047C-4361-8030-B1CBEC8AA429">
 <a:ObjectID>FCCA60D2-047C-4361-8030-B1CBEC8AA429</a:ObjectID>
 <a:Name>Check window business rule not a source of another joined object  (MDDE)</a:Name>
-<a:CreationDate>1724147078</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that the output of a window business rule cannot be used as the input of another joined object</a:HelpMessage>
 <a:OutputMessage>The following objects are using the output of a window business rule as the input of another joined object:</a:OutputMessage>

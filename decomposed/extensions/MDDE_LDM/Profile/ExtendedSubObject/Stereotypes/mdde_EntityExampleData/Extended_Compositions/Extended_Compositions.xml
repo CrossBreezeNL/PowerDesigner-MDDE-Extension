@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedCompositionTargetItem</a:TypePublicName>
 <a:ObjectID>4DDAE911-5D47-4244-A634-51F01B47F1A4</a:ObjectID>
 <a:Name>Extended Compositions</a:Name>
-<a:CreationDate>1661255784</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_ExampleRecords.xml" />

@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="62124CD9-2E0F-4EEC-B039-0D589659CA04">
 <a:ObjectID>62124CD9-2E0F-4EEC-B039-0D589659CA04</a:ObjectID>
 <a:Name>BasePackage</a:Name>
-<a:CreationDate>1651667836</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>We use the BasePackage as the common parent metaclass for Model and Package.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>

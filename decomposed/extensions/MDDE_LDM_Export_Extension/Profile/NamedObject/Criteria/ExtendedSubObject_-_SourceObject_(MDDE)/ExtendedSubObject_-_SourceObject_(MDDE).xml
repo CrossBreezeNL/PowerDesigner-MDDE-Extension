@@ -2,8 +2,6 @@
 <a:ObjectID>2E5F52D4-46BC-406A-82F2-AFE4A9EBDDA8</a:ObjectID>
 <a:Name>ExtendedSubObject - SourceObject (MDDE)</a:Name>
 <a:CriterionTargetItem.Value>%Stereotype% == &quot;mdde_SourceObject&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1717577398</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Templates/Templates.xml" />

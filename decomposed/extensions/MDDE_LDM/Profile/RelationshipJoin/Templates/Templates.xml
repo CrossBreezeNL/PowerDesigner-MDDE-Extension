@@ -2,8 +2,6 @@
 <a:TypePublicName>TemplateTargetItem</a:TypePublicName>
 <a:ObjectID>184A8671-EA71-487E-B314-2D094B71E4F7</a:ObjectID>
 <a:Name>Templates</a:Name>
-<a:CreationDate>1663316907</a:CreationDate>
-<a:Creator>WaniYP</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_RelationshipJoin_XmlExport_Template.xml" />

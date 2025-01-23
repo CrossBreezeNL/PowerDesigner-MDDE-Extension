@@ -6,8 +6,6 @@
    &lt;StaticText Name=&quot;mdde_MappingNotAllowed&quot; Caption=&quot;Mapping is not allowed on this business rule type.&quot; /&gt;
 &lt;/Form&gt;
 </a:FormTargetItem.Value>
-<a:CreationDate>1651587776</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Mapping (MDDE)</a:Label>
 <a:FormType>MAPS</a:FormType>

@@ -5,7 +5,5 @@
 .foreach_item(mdde_ExpectedScalarOutput,\n&lt;ExpectedScalarOutput&gt;\n,\n&lt;/ExpectedScalarOutput&gt;)
   %mdde_ExampleAttributeValue_XmlExport_Template%
 .next(\n)</a:TemplateTargetItem.Value>
-<a:CreationDate>1666183120</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

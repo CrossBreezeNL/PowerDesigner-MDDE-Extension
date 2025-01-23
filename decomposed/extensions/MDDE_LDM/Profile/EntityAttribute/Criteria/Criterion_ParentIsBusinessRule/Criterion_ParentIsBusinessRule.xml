@@ -2,8 +2,6 @@
 <a:ObjectID>3036E274-F8CB-42DD-B174-F77297794541</a:ObjectID>
 <a:Name>Criterion_ParentIsBusinessRule</a:Name>
 <a:CriterionTargetItem.Value>%Parent.mdde_Entity_IsBusinessRule% == &quot;True&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1655827518</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criteria/Criteria.xml" />

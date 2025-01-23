@@ -2,8 +2,6 @@
 <a:ObjectID>5D26D36B-FC93-4D44-B0CF-FB7A4ED2FB2D</a:ObjectID>
 <a:Name>mdde_Criterion_ParentIsMDDEMapping</a:Name>
 <a:CriterionTargetItem.Value>%ClassifierMap.DataSource.mdde_IsMDDEDataSource% == &quot;True&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1701945219</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criteria/Criteria.xml" />

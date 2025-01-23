@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="C234C787-E4C5-4E8B-BD58-432AA676EF37">
 <a:ObjectID>C234C787-E4C5-4E8B-BD58-432AA676EF37</a:ObjectID>
 <a:Name>Check window business rule not a source of a pivot business rule (MDDE)</a:Name>
-<a:CreationDate>1725522003</a:CreationDate>
-<a:Creator>DijkC1</a:Creator>
 <a:Comment>A window business rule cannot be used as a source for a pivot business rule.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that window business rules cannot be used as a source for a pivot business rule. </a:HelpMessage>

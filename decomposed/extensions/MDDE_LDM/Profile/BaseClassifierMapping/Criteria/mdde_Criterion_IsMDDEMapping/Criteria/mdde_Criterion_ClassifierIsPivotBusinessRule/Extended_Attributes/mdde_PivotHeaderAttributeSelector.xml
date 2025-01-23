@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="042239EA-6837-4D2E-B54A-D0FC74910F35">
 <a:ObjectID>042239EA-6837-4D2E-B54A-D0FC74910F35</a:ObjectID>
 <a:Name>mdde_PivotHeaderAttributeSelector</a:Name>
-<a:CreationDate>1711659361</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
 <a:Computed>1</a:Computed>

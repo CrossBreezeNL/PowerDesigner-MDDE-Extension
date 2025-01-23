@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="B3E7954D-881A-407E-8EAC-9477BDF18F9D">
 <a:ObjectID>B3E7954D-881A-407E-8EAC-9477BDF18F9D</a:ObjectID>
 <a:Name>mdde_ExpressionBusinessRule_Example_CheckAttributeAndValues</a:Name>
-<a:CreationDate>1657120027</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that business rule example have an example value for all attributes.</a:HelpMessage>
 <a:OutputMessage>The following business rules have incomplete examples:</a:OutputMessage>

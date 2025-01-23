@@ -2,8 +2,6 @@
 <a:TypePublicName>CriterionTargetItem</a:TypePublicName>
 <a:ObjectID>69723AD0-FBFD-40D1-BFCC-73527B302F80</a:ObjectID>
 <a:Name>Criteria</a:Name>
-<a:CreationDate>1724142194</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="IsEntityNotWindowFunction/IsEntityNotWindowFunction.xml" />

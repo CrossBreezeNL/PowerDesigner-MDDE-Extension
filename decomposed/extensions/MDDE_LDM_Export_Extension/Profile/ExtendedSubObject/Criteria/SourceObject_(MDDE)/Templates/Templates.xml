@@ -2,8 +2,6 @@
 <a:TypePublicName>TemplateTargetItem</a:TypePublicName>
 <a:ObjectID>CB23A0A4-C6D2-42B7-8970-18DA7B554D64</a:ObjectID>
 <a:Name>Templates</a:Name>
-<a:CreationDate>1717515233</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mddex_ExtendedSubObject_SourceObject_Export_Template.xml" />

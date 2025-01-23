@@ -2,8 +2,6 @@
 <a:TypePublicName>MethodTargetItem</a:TypePublicName>
 <a:ObjectID>571D4730-6665-47AC-A6A8-D465391710DD</a:ObjectID>
 <a:Name>Methods</a:Name>
-<a:CreationDate>1711018645</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_PivotAggregatedAttributeEdit.xml" />

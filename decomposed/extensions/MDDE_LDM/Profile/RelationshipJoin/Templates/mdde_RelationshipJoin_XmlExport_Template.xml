@@ -2,7 +2,5 @@
 <a:ObjectID>33B4692E-31BC-43D7-BA67-72E84C60EE5B</a:ObjectID>
 <a:Name>mdde_RelationshipJoin_XmlExport_Template</a:Name>
 <a:TemplateTargetItem.Value>&lt;RelationshipJoin ParentEntity=&quot;%ParentAttribute.Parent.Code%&quot; ParentAttribute=&quot;%ParentAttribute.Code%&quot; ChildEntity=&quot;%ChildAttribute.Parent.Code%&quot; ChildAttribute=&quot;%ChildAttribute.Code%&quot; /&gt;</a:TemplateTargetItem.Value>
-<a:CreationDate>1663316907</a:CreationDate>
-<a:Creator>WaniYP</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

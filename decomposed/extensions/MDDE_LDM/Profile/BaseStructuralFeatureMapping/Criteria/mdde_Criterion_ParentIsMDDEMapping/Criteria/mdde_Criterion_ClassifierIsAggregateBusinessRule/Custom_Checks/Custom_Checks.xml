@@ -2,8 +2,6 @@
 <a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
 <a:ObjectID>003C01FC-20A9-4C29-8295-6FBB0B900243</a:ObjectID>
 <a:Name>Custom Checks</a:Name>
-<a:CreationDate>1689666913</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Check_NonPKAttributeHasAggregateSpecified.xml" />

@@ -2,8 +2,6 @@
 <a:TypePublicName>CriterionTargetItem</a:TypePublicName>
 <a:ObjectID>358ABFDA-AFCE-4EC9-84B4-426C8D6B94AE</a:ObjectID>
 <a:Name>Criteria</a:Name>
-<a:CreationDate>1716368643</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Export_SourceObject_ExpressionBusinessRule_SqlExpression/Export_SourceObject_ExpressionBusinessRule_SqlExpression.xml" />

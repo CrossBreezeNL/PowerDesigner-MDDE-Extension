@@ -248,7 +248,7 @@
         </Mapping>
       </Mappings>
       <Relationships>
-        <Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955" Code="Customer_SalesOrder" Name="Customer_SalesOrder" ParentEntity="Customer" ParentEntityId="300B0E82-0073-4894-B364-9429B35F1D39" ChildEntity="SalesOrder" ChildEntityId="2CBE61AD-180C-485A-8F14-2F2CEA9C225F" ParentRole="Buyer" ChildRole="Bought">
+        <Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955" Code="Customer_SalesOrder" Name="Customer_SalesOrder" ParentModel="EXAMPLEDWH" ParentEntity="Customer" ParentEntityId="300B0E82-0073-4894-B364-9429B35F1D39" ChildModel="EXAMPLEDWH" ChildEntity="SalesOrder" ChildEntityId="2CBE61AD-180C-485A-8F14-2F2CEA9C225F" ParentRole="Buyer" ChildRole="Bought">
           <RelationshipJoins>
             <RelationshipJoin ParentEntity="Customer" ParentAttribute="CUSTOMERID" ChildEntity="SalesOrder" ChildAttribute="CUSTOMERID" />
           </RelationshipJoins>
@@ -404,7 +404,7 @@
         </Mapping>
       </Mappings>
       <Relationships>
-        <Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955" Code="Customer_SalesOrder" Name="Customer_SalesOrder" ParentEntity="Customer" ParentEntityId="300B0E82-0073-4894-B364-9429B35F1D39" ChildEntity="SalesOrder" ChildEntityId="2CBE61AD-180C-485A-8F14-2F2CEA9C225F" ParentRole="Buyer" ChildRole="Bought">
+        <Relationship Id="4CE7D49B-DF58-4436-A6A0-E8FD88A97955" Code="Customer_SalesOrder" Name="Customer_SalesOrder" ParentModel="EXAMPLEDWH" ParentEntity="Customer" ParentEntityId="300B0E82-0073-4894-B364-9429B35F1D39" ChildModel="EXAMPLEDWH" ChildEntity="SalesOrder" ChildEntityId="2CBE61AD-180C-485A-8F14-2F2CEA9C225F" ParentRole="Buyer" ChildRole="Bought">
           <RelationshipJoins>
             <RelationshipJoin ParentEntity="Customer" ParentAttribute="CUSTOMERID" ChildEntity="SalesOrder" ChildAttribute="CUSTOMERID" />
           </RelationshipJoins>

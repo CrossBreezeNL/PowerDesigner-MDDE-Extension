@@ -1,8 +1,6 @@
 <o:TemplateTargetItem Id="EB69897C-BC9E-4C68-A6B1-EEF079BA4205">
 <a:ObjectID>EB69897C-BC9E-4C68-A6B1-EEF079BA4205</a:ObjectID>
 <a:Name>mddex_NamedObject_Attributes_Export_Template</a:Name>
-<a:CreationDate>1700834322</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
 <a:Comment>Use to extend the MDDE xml export with project specific attributes on named object level. Use filtering to add attributes to a specific metaclass subtype of NamedObject</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

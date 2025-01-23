@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="278FD680-EA0D-49BF-A657-FBA47CE012C4">
 <a:ObjectID>278FD680-EA0D-49BF-A657-FBA47CE012C4</a:ObjectID>
 <a:Name>Check attribute mapping has valid target attribute (MDDE)</a:Name>
-<a:CreationDate>1728549772</a:CreationDate>
-<a:Creator>DijkC1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that every attribute mapping has a valid target attribute. To correct this delete the attribute mapping and recreate it.</a:HelpMessage>
 <a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>

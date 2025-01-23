@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="E607DA50-E8CC-4C94-9032-C57F5D895E64">
 <a:ObjectID>E607DA50-E8CC-4C94-9032-C57F5D895E64</a:ObjectID>
 <a:Name>mdde_OutputAttribute</a:Name>
-<a:CreationDate>1651586835</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Output attribute (MDDE)</a:Label>
 <a:ToolIcon>0D0000000800000008000000424D7E000000000000003E000000280000001000

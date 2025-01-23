@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="651907C9-2521-4FE9-9183-CBB584AB0AEE">
 <a:ObjectID>651907C9-2521-4FE9-9183-CBB584AB0AEE</a:ObjectID>
 <a:Name>mdde_Aggregate</a:Name>
-<a:CreationDate>1689065886</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
 <a:ExtendedAttributeTargetItem.ListOfValues>%mdde_AggregateList%</a:ExtendedAttributeTargetItem.ListOfValues>

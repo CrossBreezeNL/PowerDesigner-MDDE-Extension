@@ -2,8 +2,6 @@
 <a:ObjectID>366C8C4C-536C-430D-A714-D5AA49608E63</a:ObjectID>
 <a:Name>IsEntityNotWindowFunction</a:Name>
 <a:CriterionTargetItem.Value>%mdde_Entity_IsWindowBusinessRule% == &quot;False&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1724142194</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Custom_Checks/Custom_Checks.xml" />

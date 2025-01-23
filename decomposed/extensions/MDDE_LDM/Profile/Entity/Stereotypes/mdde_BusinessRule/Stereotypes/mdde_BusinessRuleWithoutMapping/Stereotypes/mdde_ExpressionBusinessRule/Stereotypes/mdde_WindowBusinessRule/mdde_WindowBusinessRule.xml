@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="2DB04C09-6E02-4217-B1B7-ADC5F4496773">
 <a:ObjectID>2DB04C09-6E02-4217-B1B7-ADC5F4496773</a:ObjectID>
 <a:Name>mdde_WindowBusinessRule</a:Name>
-<a:CreationDate>1724141357</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Window Business Rule (MDDE)</a:Label>
 <a:EnableTool>1</a:EnableTool>

@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="1549FBF2-C0CD-4855-B4B4-AC3A43C0C8F8">
 <a:ObjectID>1549FBF2-C0CD-4855-B4B4-AC3A43C0C8F8</a:ObjectID>
 <a:Name>mdde_BusinessRuleAttribute</a:Name>
-<a:CreationDate>1655827913</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Abstract>1</a:Abstract>
 <c:ParentSttp>

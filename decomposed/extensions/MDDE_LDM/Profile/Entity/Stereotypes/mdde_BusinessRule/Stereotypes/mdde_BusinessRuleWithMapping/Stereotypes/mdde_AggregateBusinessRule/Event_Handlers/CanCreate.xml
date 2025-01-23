@@ -1,8 +1,6 @@
 <o:EventHandlerTargetItem Id="7768AB67-15D8-4C68-8754-5697D2960D23">
 <a:ObjectID>7768AB67-15D8-4C68-8754-5697D2960D23</a:ObjectID>
 <a:Name>CanCreate</a:Name>
-<a:CreationDate>1726842611</a:CreationDate>
-<a:Creator>RichaneRamsoedit</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %CanCreate%(parent)
    &#39;the parent represents the AggregateBusinessRule which communicaties with the model object&#39; 

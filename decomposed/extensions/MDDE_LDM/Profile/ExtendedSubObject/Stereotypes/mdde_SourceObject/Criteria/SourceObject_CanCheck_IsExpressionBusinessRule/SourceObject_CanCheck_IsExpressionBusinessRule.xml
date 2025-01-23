@@ -2,8 +2,6 @@
 <a:ObjectID>361D1062-019C-434A-8065-8CEF093B1556</a:ObjectID>
 <a:Name>SourceObject CanCheck IsExpressionBusinessRule</a:Name>
 <a:CriterionTargetItem.Value>%mdde_JoinedObject.mdde_Entity_IsExpressionBusinessRule?%</a:CriterionTargetItem.Value>
-<a:CreationDate>1700599237</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criteria/Criteria.xml" />

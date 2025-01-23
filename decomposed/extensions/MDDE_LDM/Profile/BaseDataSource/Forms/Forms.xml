@@ -2,8 +2,6 @@
 <a:TypePublicName>FormTargetItem</a:TypePublicName>
 <a:ObjectID>F3AA0057-9196-4BB9-AB82-2372BCEF1794</a:ObjectID>
 <a:Name>Forms</a:Name>
-<a:CreationDate>1702289894</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="General.xml" />

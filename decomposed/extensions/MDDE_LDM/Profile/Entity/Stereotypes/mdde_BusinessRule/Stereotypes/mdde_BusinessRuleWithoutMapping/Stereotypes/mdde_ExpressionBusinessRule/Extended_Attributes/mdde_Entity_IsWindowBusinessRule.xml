@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="C7730B89-A250-48FC-95BF-7D60F3CCD3BC">
 <a:ObjectID>C7730B89-A250-48FC-95BF-7D60F3CCD3BC</a:ObjectID>
 <a:Name>mdde_Entity_IsWindowBusinessRule</a:Name>
-<a:CreationDate>1724142057</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
 <a:ExtendedAttributeTargetItem.Value>False</a:ExtendedAttributeTargetItem.Value>

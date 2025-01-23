@@ -3,8 +3,6 @@
 <a:Name>mdde_Model_XmlExport_File</a:Name>
 <a:TemplateTargetItem.Value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 %mdde_Model_XmlExport_Template%</a:TemplateTargetItem.Value>
-<a:CreationDate>1651665549</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>The Model XML Export file.</a:Comment>
 <a:FileType>.xml</a:FileType>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>

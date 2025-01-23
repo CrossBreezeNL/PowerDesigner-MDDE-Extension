@@ -1,8 +1,6 @@
 <o:ExtendedCollectionTargetItem Id="A3C745A6-6100-46DD-8240-BF48F5B17227">
 <a:ObjectID>A3C745A6-6100-46DD-8240-BF48F5B17227</a:ObjectID>
 <a:Name>mdde_ParentSourceObject</a:Name>
-<a:CreationDate>1650361231</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
 <a:DestinationStereotype>mdde_SourceObject</a:DestinationStereotype>

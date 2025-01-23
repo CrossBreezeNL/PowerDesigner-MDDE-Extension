@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="6898FDF0-510D-4FB4-9BD8-9B506FFDE4F0">
 <a:ObjectID>6898FDF0-510D-4FB4-9BD8-9B506FFDE4F0</a:ObjectID>
 <a:Name>mdde_NumberOfJoinConditions</a:Name>
-<a:CreationDate>1726576155</a:CreationDate>
-<a:Creator>RichaneRamsoedit</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>10</a:ExtendedAttributeTargetItem.DataType>
 <a:Computed>1</a:Computed>

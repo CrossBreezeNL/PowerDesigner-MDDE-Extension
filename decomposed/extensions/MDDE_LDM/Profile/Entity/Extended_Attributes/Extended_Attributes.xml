@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
 <a:ObjectID>0D062952-1FAF-4FB3-98F0-D297BAF02006</a:ObjectID>
 <a:Name>Extended Attributes</a:Name>
-<a:CreationDate>1653996426</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Entity_DefaultMappingSelector.xml" />

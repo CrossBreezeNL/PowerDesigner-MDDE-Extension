@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="7FDC0878-90A9-4754-A8CE-1E69513C976B">
 <a:ObjectID>7FDC0878-90A9-4754-A8CE-1E69513C976B</a:ObjectID>
 <a:Name>mdde_SourceObjectEdit</a:Name>
-<a:CreationDate>1650375571</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
    &#39; Show the object picker and fetch the selected source object.

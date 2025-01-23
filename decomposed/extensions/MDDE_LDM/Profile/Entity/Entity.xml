@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="338E8763-A009-47FF-A8EE-EDD5F6D6C607">
 <a:ObjectID>338E8763-A009-47FF-A8EE-EDD5F6D6C607</a:ObjectID>
 <a:Name>Entity</a:Name>
-<a:CreationDate>1650359819</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Forms/Forms.xml" />

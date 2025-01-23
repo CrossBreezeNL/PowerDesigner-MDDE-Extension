@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="2484ABA2-1E95-43EF-AF0A-7B2068D58FFE">
 <a:ObjectID>2484ABA2-1E95-43EF-AF0A-7B2068D58FFE</a:ObjectID>
 <a:Name>BaseClassifierMapping</a:Name>
-<a:CreationDate>1650359819</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criteria/Criteria.xml" />

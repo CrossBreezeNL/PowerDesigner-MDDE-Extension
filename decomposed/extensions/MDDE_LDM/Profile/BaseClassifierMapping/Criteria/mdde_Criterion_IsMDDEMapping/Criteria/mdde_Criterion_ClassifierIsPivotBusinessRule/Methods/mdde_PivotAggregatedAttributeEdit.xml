@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="D9FC6F39-06CB-46F8-BBCF-2D812AA7F5C9">
 <a:ObjectID>D9FC6F39-06CB-46F8-BBCF-2D812AA7F5C9</a:ObjectID>
 <a:Name>mdde_PivotAggregatedAttributeEdit</a:Name>
-<a:CreationDate>1711018645</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
    &#39; Show the object picker and fetch the selected source object.

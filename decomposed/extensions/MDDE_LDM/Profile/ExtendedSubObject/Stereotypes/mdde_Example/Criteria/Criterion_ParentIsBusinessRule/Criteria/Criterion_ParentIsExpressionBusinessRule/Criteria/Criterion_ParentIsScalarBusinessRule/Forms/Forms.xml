@@ -2,8 +2,6 @@
 <a:TypePublicName>FormTargetItem</a:TypePublicName>
 <a:ObjectID>F2FAA294-9A4B-4721-B28B-904C523B7808</a:ObjectID>
 <a:Name>Forms</a:Name>
-<a:CreationDate>1657094145</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Example_Details.xml" />

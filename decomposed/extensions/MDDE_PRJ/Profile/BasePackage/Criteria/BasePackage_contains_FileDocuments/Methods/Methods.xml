@@ -2,8 +2,6 @@
 <a:TypePublicName>MethodTargetItem</a:TypePublicName>
 <a:ObjectID>13725806-778C-48EF-8997-60558D7E8B3B</a:ObjectID>
 <a:Name>Methods</a:Name>
-<a:CreationDate>1717593641</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_BasePackage_DecomposeAllExtDefs.xml" />

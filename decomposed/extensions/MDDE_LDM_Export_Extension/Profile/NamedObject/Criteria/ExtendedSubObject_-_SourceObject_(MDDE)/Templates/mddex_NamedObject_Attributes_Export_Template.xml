@@ -1,8 +1,6 @@
 <o:TemplateTargetItem Id="24FFBE78-4B31-40F5-AD33-664E66E061B5">
 <a:ObjectID>24FFBE78-4B31-40F5-AD33-664E66E061B5</a:ObjectID>
 <a:Name>mddex_NamedObject_Attributes_Export_Template</a:Name>
-<a:CreationDate>1717577467</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:Comment>Use to extend the MDDE xml export with project specific attributes on source object inside a mapping.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="AA5782B2-9902-4933-9B6E-77F576EABE9A">
 <a:ObjectID>AA5782B2-9902-4933-9B6E-77F576EABE9A</a:ObjectID>
 <a:Name>mdde_SourceAttribute</a:Name>
-<a:CreationDate>1651650809</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
 <a:Computed>1</a:Computed>

@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="EFA340AF-B273-4EF0-B06B-BAA909E4FA74">
 <a:ObjectID>EFA340AF-B273-4EF0-B06B-BAA909E4FA74</a:ObjectID>
 <a:Name>mdde_Check_OrderOfSourceObjects</a:Name>
-<a:CreationDate>1698132582</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>Check whether the order of the source objects is valid (looking at dependencies). If source objects are references in a join condition, the parent side must be listed before the child side.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that source objects are listed in the right order. Meaning when join conditions are specified on source objects, the referenced source objects are always listed before the current one.

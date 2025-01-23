@@ -16,8 +16,6 @@
    &lt;StandardAttribute Attribute=&quot;Stereotype&quot; Caption=&quot;Stereotype&quot; SizeInChars=&quot;1&quot; HorizontalResize=&quot;Yes&quot; /&gt;
 &lt;/Form&gt;
 </a:FormTargetItem.Value>
-<a:CreationDate>1717621987</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:Comment>This form is the standard General tab for a Model. where the Stereotype property is added.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:FormType>GENERAL</a:FormType>

@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
 <a:ObjectID>0E9F3025-183C-4BD8-A128-B0F18A71E441</a:ObjectID>
 <a:Name>Extended Attributes</a:Name>
-<a:CreationDate>1706689760</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Entity_IsBusinessRule.xml" />

@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="70110D6C-3164-40F9-BBEF-798165B49121">
 <a:ObjectID>70110D6C-3164-40F9-BBEF-798165B49121</a:ObjectID>
 <a:Name>InheritanceLink</a:Name>
-<a:CreationDate>1684843769</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Templates/Templates.xml" />

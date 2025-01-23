@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="D515BB63-1DD5-41D2-9C5E-46424B854D49">
 <a:ObjectID>D515BB63-1DD5-41D2-9C5E-46424B854D49</a:ObjectID>
 <a:Name>Check Entity Example Data Attributes (MDDE)</a:Name>
-<a:CreationDate>1709626112</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>This model check verifies that for example data of an entity, the attributes used across the example records are all the same.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This model check verifies that for example data of an entity, the attributes used across the example records are all the same.</a:HelpMessage>
