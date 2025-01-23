@@ -75,10 +75,10 @@ Function GetRealObject(objItemOrShortcut)
          If not objItemOrShortcut.TargetObject Is Nothing Then
             Set GetRealObject = objItemOrShortcut.TargetObject
          Else
-            WriteError (objectItemOrShortcut.DisplayName &amp; &quot; appears to be a broken shortcut, target object could not be found in target model&quot;)
+            WriteError objectItemOrShortcut.DisplayName &amp; &quot; appears to be a broken shortcut, target object could not be found in target model&quot;
          End if
       Else
-        WriteError (objectItemOrShortcut.DisplayName &amp; &quot; appears to be a broken shortcut, target model could not be resolved&quot;)
+        WriteError objectItemOrShortcut.DisplayName &amp; &quot; appears to be a broken shortcut, target model could not be resolved&quot;
       End if
    Else
       &#39; If the object is not a shortcut, return the passed object.
