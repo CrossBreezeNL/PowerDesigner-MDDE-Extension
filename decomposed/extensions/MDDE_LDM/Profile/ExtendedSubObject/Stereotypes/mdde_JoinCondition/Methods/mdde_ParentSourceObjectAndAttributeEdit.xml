@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="4D852F7B-D579-4592-8BD2-AF7A0C6A12C3">
 <a:ObjectID>4D852F7B-D579-4592-8BD2-AF7A0C6A12C3</a:ObjectID>
 <a:Name>mdde_ParentSourceObjectAndAttributeEdit</a:Name>
-<a:CreationDate>1650362434</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>&#39; Create a selection object on all source objects, except the source object of the current condition.
 &#39; Show the object picker on the selection and store the selected one.

@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="A2DF8843-2E87-46FC-9263-927B3E02D9E8">
 <a:ObjectID>A2DF8843-2E87-46FC-9263-927B3E02D9E8</a:ObjectID>
 <a:Name>mdde_InitializeExportExtension</a:Name>
-<a:CreationDate>1701423896</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
 <a:Comment>This method is included in the extension to load the contents of templates that are defined in the optionally attached export extension.
 Since it is not possible to directly access the GTL templates in another extension via GTL, the contents of these templates is loaded in local extended attributes so it can be included in the XML export</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>

@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="64B91716-B0D3-4665-BB2C-DA1967229297">
 <a:ObjectID>64B91716-B0D3-4665-BB2C-DA1967229297</a:ObjectID>
 <a:Name>mdde_ExpectedOutputAttributeValue</a:Name>
-<a:CreationDate>1657022157</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:ParentSttp>
 <o:StereotypeTargetItem Ref="E7A6EB32-19C0-4076-AA95-AF544F02CACE"/>

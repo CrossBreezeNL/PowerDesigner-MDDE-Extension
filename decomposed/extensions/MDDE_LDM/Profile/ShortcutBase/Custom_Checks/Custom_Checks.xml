@@ -2,8 +2,6 @@
 <a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
 <a:ObjectID>08E6782A-222D-48CE-95A3-CEA23D66540B</a:ObjectID>
 <a:Name>Custom Checks</a:Name>
-<a:CreationDate>1699530450</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Shortcut_is_broken_(MDDE).xml" />

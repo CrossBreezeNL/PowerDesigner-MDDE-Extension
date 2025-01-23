@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="D7A9435E-CEA7-46AF-9043-8353E24D2DF1">
 <a:ObjectID>D7A9435E-CEA7-46AF-9043-8353E24D2DF1</a:ObjectID>
 <a:Name>mdde_BusinessRule_EditDefaultExample</a:Name>
-<a:CreationDate>1657022418</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
 

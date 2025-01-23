@@ -2,8 +2,6 @@
 <a:ObjectID>D2E0987D-DAD5-4427-B815-2B59F9095584</a:ObjectID>
 <a:Name>mdde_Criterion_ClassifierIsAggregateBusinessRule</a:Name>
 <a:CriterionTargetItem.Value>(%ClassifierMap.Classifier.Stereotype% == &quot;mdde_AggregateBusinessRule&quot;) &amp;&amp; (%Feature.PrimaryIdentifier% == false)</a:CriterionTargetItem.Value>
-<a:CreationDate>1689064338</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:ParentCriterion>
 <o:CriterionTargetItem Ref="5D26D36B-FC93-4D44-B0CF-FB7A4ED2FB2D"/>

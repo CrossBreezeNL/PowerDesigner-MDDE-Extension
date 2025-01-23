@@ -2,8 +2,6 @@
 <a:ObjectID>88991D54-46B0-4559-97EB-CB00EC7C803B</a:ObjectID>
 <a:Name>mdde_Criterion_ClassifierIsPivotBusinessRule</a:Name>
 <a:CriterionTargetItem.Value>%Classifier.Stereotype% == &quot;mdde_PivotBusinessRule&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1710869536</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:ParentCriterion>
 <o:CriterionTargetItem Ref="A2A060E6-1927-4A9C-9BBC-0D3021B68C98"/>

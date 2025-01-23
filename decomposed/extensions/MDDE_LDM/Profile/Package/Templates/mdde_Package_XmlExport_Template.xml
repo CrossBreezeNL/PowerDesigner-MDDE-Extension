@@ -8,7 +8,5 @@
   .endif(\n)
   %mdde_BasePackage_XmlExport_Template%
 &lt;/Package&gt;</a:TemplateTargetItem.Value>
-<a:CreationDate>1651667836</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

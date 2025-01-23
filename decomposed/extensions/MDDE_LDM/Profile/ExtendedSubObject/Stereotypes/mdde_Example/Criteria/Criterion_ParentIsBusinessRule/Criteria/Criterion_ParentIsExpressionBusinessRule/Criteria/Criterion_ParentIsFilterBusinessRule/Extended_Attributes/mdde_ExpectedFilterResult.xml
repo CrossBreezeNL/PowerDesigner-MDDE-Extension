@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="D5BB84DB-C630-4A91-B0AB-0C86D1F2D0F9">
 <a:ObjectID>D5BB84DB-C630-4A91-B0AB-0C86D1F2D0F9</a:ObjectID>
 <a:Name>mdde_ExpectedFilterResult</a:Name>
-<a:CreationDate>1657094253</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>Specify here whether we expect the filter to return true or false. True means the record will be included, false means the record will be excluded from the resultset.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.Value>true</a:ExtendedAttributeTargetItem.Value>

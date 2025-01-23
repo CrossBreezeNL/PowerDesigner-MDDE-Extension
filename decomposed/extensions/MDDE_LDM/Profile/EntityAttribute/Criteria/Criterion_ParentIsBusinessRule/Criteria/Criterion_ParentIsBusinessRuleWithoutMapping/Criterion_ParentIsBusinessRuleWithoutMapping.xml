@@ -2,8 +2,6 @@
 <a:ObjectID>A6FE577D-0DC1-411C-96B1-CA7D7CD594FD</a:ObjectID>
 <a:Name>Criterion_ParentIsBusinessRuleWithoutMapping</a:Name>
 <a:CriterionTargetItem.Value>%Parent.mdde_BusinessRule_IsBusinessRuleWithoutMapping% == &quot;True&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1685648453</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:ParentCriterion>
 <o:CriterionTargetItem Ref="3036E274-F8CB-42DD-B174-F77297794541"/>

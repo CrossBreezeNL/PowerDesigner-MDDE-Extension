@@ -2,8 +2,6 @@
 <a:TypePublicName>CriterionTargetItem</a:TypePublicName>
 <a:ObjectID>15CBCC90-9230-4320-8B1B-FE4107D58CB4</a:ObjectID>
 <a:Name>Criteria</a:Name>
-<a:CreationDate>1689064338</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Criterion_ParentIsMDDEMapping/mdde_Criterion_ParentIsMDDEMapping.xml" />

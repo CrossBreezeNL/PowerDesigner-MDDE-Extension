@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="C9302863-5616-46A3-89FA-EF8548AE7D8D">
 <a:ObjectID>C9302863-5616-46A3-89FA-EF8548AE7D8D</a:ObjectID>
 <a:Name>mdde_OffsetValue</a:Name>
-<a:CreationDate>1673529901</a:CreationDate>
-<a:Creator>palanis</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>10</a:ExtendedAttributeTargetItem.DataType>
 <a:Label>Offset Value (MDDE)</a:Label>

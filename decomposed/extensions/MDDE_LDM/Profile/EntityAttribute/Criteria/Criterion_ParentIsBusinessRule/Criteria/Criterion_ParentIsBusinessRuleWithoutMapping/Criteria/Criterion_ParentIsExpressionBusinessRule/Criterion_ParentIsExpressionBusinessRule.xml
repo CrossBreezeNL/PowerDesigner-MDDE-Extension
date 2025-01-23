@@ -2,8 +2,6 @@
 <a:ObjectID>8C9B108F-52F6-4072-9F90-5E163DFBC735</a:ObjectID>
 <a:Name>Criterion_ParentIsExpressionBusinessRule</a:Name>
 <a:CriterionTargetItem.Value>%Parent.mdde_Entity_IsExpressionBusinessRule% == &quot;True&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1655828676</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:ParentCriterion>
 <o:CriterionTargetItem Ref="A6FE577D-0DC1-411C-96B1-CA7D7CD594FD"/>

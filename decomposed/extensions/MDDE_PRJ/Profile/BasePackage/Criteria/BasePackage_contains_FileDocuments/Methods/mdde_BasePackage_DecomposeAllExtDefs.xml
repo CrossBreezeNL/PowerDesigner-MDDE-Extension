@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="812ADA5D-D7A8-48CD-8184-00CEB2BFA280">
 <a:ObjectID>812ADA5D-D7A8-48CD-8184-00CEB2BFA280</a:ObjectID>
 <a:Name>mdde_BasePackage_DecomposeAllExtDefs</a:Name>
-<a:CreationDate>1717592752</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
    &#39; Inform the user it may take a while.

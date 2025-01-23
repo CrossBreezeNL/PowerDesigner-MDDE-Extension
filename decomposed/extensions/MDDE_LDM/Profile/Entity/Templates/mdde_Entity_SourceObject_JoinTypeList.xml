@@ -5,8 +5,6 @@
 Inner join
 Left join
 Full join</a:TemplateTargetItem.Value>
-<a:CreationDate>1652263054</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>The list of supported join types of the current entity. This template is overriden for speicifc stereotypes, like for scalar business rules only Apply is supported.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

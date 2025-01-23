@@ -2,8 +2,6 @@
 <a:TypePublicName>TemplateTargetItem</a:TypePublicName>
 <a:ObjectID>981A562D-08C5-4185-B746-92A739FFA469</a:ObjectID>
 <a:Name>Templates</a:Name>
-<a:CreationDate>1656441324</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Entity_Stereotyped_XmlExport_Template.xml" />

@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="74944D52-7CEE-4632-B6D9-1333EBDF268F">
 <a:ObjectID>74944D52-7CEE-4632-B6D9-1333EBDF268F</a:ObjectID>
 <a:Name>mdde_ParentSourceObject</a:Name>
-<a:CreationDate>1650361231</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>For a join condition we need to know the alias of the parent field object, so next the parent field we also need to source object.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>

@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="70F744D4-1B3D-4C91-948B-1095EF0DFD02">
 <a:ObjectID>70F744D4-1B3D-4C91-948B-1095EF0DFD02</a:ObjectID>
 <a:Name>Check duplicate source objects (MDDE)</a:Name>
-<a:CreationDate>1704977369</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>Check whether there are duplicate source objects in the mapping (meaning the same joined object with join conditions and offset period exists as a source object more then once).</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that there are no are duplicate source objects in the mapping (meaning the same joined object with join conditions and offset period exists as a source object more then once).</a:HelpMessage>

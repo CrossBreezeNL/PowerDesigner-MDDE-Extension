@@ -2,8 +2,6 @@
 <a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
 <a:ObjectID>F1E71420-F4EC-4FB6-9055-8325CC9B5005</a:ObjectID>
 <a:Name>Stereotypes</a:Name>
-<a:CreationDate>1657022013</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_ExampleInputAttributeValue.xml" />

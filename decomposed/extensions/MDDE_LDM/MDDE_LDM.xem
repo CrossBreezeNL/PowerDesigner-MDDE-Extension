@@ -8,8 +8,6 @@
 <a:ObjectID>1626A879-DBAC-4E54-8A36-28FCB761FF3A</a:ObjectID>
 <a:Name>Model Driven Data Engineering - Logical Data Model Extension (MDDE)</a:Name>
 <a:Code>MDDE_LDM</a:Code>
-<a:CreationDate>1650359230</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>Model Driven Data Engineering (MDDE) extension for LDM models.
 
 This extensions is to add extra modeling possibilities to LDM models, where standard PowerDesigner functionalities are missing options to add metadata.

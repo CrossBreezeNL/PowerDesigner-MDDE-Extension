@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="87B75161-B819-4EEB-92AA-41C34A672293">
 <a:ObjectID>87B75161-B819-4EEB-92AA-41C34A672293</a:ObjectID>
 <a:Name>ExtendedSubObject</a:Name>
-<a:CreationDate>1650359819</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Stereotypes/Stereotypes.xml" />

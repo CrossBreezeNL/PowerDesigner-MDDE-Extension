@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="AD553B0B-A45A-4382-8EA8-041874AAFA2C">
 <a:ObjectID>AD553B0B-A45A-4382-8EA8-041874AAFA2C</a:ObjectID>
 <a:Name>mdde_Check_BusinessRuleAttribute</a:Name>
-<a:CreationDate>1655827518</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that every business rule attribute has a stereotype assigned.</a:HelpMessage>
 <a:OutputMessage>The following business rule attributes have no (correct) stereotype set:</a:OutputMessage>

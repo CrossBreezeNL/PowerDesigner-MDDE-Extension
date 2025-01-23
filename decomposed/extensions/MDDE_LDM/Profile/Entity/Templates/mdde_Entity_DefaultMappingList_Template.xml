@@ -2,7 +2,5 @@
 <a:ObjectID>69DA0FB4-8F13-4F07-BD2D-BB70AC5D51DE</a:ObjectID>
 <a:Name>mdde_Entity_DefaultMappingList_Template</a:Name>
 <a:TemplateTargetItem.Value>.collection(Mappings, %DataSource.mdde_IsMDDEDataSource% == &quot;True&quot;)</a:TemplateTargetItem.Value>
-<a:CreationDate>1653998220</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

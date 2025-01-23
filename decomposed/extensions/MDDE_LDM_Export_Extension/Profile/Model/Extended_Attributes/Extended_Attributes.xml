@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
 <a:ObjectID>A06203DF-21BC-4671-A907-547A87116108</a:ObjectID>
 <a:Name>Extended Attributes</a:Name>
-<a:CreationDate>1701336326</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mddex_Model_Export_Content.xml" />

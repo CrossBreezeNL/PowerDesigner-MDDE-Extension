@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="F769AEF0-639D-4941-8C5B-2F2928B75278">
 <a:ObjectID>F769AEF0-639D-4941-8C5B-2F2928B75278</a:ObjectID>
 <a:Name>mdde_ParentAttribute</a:Name>
-<a:CreationDate>1650361159</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
 <a:ExtendedAttributeTargetItem.ListOfValues>%mdde_EmptyList%</a:ExtendedAttributeTargetItem.ListOfValues>

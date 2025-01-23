@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="5D222C7D-25BA-4C3E-B039-1B04238DB377">
 <a:ObjectID>5D222C7D-25BA-4C3E-B039-1B04238DB377</a:ObjectID>
 <a:Name>mdde_Check_NonPKAttributeHasAggregateSpecified</a:Name>
-<a:CreationDate>1689666913</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that an aggregate is specified for all attribute(s) that are not part of the primary key.</a:HelpMessage>
 <a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>

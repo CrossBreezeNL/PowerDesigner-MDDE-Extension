@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="AC1FE8D6-AC72-4421-9229-DADA2CCE8F04">
 <a:ObjectID>AC1FE8D6-AC72-4421-9229-DADA2CCE8F04</a:ObjectID>
 <a:Name>mdde_ParentAttributeFQCode</a:Name>
-<a:CreationDate>1716562498</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>12</a:ExtendedAttributeTargetItem.DataType>
 <a:Computed>1</a:Computed>

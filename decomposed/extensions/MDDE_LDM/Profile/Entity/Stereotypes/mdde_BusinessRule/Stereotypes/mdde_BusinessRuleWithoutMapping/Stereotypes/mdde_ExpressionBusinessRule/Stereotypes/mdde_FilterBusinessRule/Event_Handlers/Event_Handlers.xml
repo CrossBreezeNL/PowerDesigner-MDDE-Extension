@@ -2,8 +2,6 @@
 <a:TypePublicName>EventHandlerTargetItem</a:TypePublicName>
 <a:ObjectID>67229A03-E6AA-4682-B62A-A059A7C7F183</a:ObjectID>
 <a:Name>Event Handlers</a:Name>
-<a:CreationDate>1726842654</a:CreationDate>
-<a:Creator>RichaneRamsoedit</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="CanCreate.xml" />

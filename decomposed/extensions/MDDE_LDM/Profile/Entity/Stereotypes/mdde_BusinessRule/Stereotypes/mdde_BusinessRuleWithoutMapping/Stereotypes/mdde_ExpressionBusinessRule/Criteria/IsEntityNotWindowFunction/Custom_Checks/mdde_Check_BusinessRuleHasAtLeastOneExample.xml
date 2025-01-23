@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="77F9CA88-2C29-46E5-9147-3AB8F74382D8">
 <a:ObjectID>77F9CA88-2C29-46E5-9147-3AB8F74382D8</a:ObjectID>
 <a:Name>mdde_Check_BusinessRuleHasAtLeastOneExample</a:Name>
-<a:CreationDate>1657118746</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>This should be on the level op mdde_BusinessRuleWithout mapping, but checks on that level are not visable in the modelcheck list.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that every business rule has at least one example</a:HelpMessage>

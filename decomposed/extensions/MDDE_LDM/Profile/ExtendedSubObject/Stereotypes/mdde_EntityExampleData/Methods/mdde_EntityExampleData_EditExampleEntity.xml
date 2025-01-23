@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="D9090CE6-1F1F-4FFD-9235-E3380FC66569">
 <a:ObjectID>D9090CE6-1F1F-4FFD-9235-E3380FC66569</a:ObjectID>
 <a:Name>mdde_EntityExampleData_EditExampleEntity</a:Name>
-<a:CreationDate>1661341961</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
    Dim objSel : Set objSel = obj.Model.CreateSelection

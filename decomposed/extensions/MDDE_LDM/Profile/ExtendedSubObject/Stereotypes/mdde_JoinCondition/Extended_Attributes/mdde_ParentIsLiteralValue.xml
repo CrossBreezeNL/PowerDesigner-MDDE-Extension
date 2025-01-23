@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="967EFA92-4FA1-4896-8F45-E9EBC8B917C1">
 <a:ObjectID>967EFA92-4FA1-4896-8F45-E9EBC8B917C1</a:ObjectID>
 <a:Name>mdde_ParentIsLiteralValue</a:Name>
-<a:CreationDate>1654078023</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Computed>1</a:Computed>
 <a:ComputedAccessType>RO</a:ComputedAccessType>

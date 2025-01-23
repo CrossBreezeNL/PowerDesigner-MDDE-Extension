@@ -1,8 +1,6 @@
 <o:ExtendedCompositionTargetItem Id="93AA4671-34CB-469F-BBA0-7D7321C15EBE">
 <a:ObjectID>93AA4671-34CB-469F-BBA0-7D7321C15EBE</a:ObjectID>
 <a:Name>mdde_SourceObjects</a:Name>
-<a:CreationDate>1650362434</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
 <a:DestinationStereotype>mdde_SourceObject</a:DestinationStereotype>

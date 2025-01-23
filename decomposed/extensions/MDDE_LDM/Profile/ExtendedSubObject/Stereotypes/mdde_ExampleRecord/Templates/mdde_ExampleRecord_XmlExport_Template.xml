@@ -4,7 +4,5 @@
 <a:TemplateTargetItem.Value>.foreach_item(mdde_ExampleAttributeValues,\n&lt;ExampleRecord&gt;\n,\n&lt;/ExampleRecord&gt;,,%Item1.Code% &gt; %Item2.Code%)
   %mdde_ExampleAttributeValue_XmlExport_Template%
 .next(\n)</a:TemplateTargetItem.Value>
-<a:CreationDate>1666188164</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

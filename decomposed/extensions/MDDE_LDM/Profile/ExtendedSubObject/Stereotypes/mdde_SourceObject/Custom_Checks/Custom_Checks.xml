@@ -2,8 +2,6 @@
 <a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
 <a:ObjectID>CC0F1AC2-FCC3-4976-92E9-4FB5124E8AB5</a:ObjectID>
 <a:Name>Custom Checks</a:Name>
-<a:CreationDate>1656598365</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Check_ValidateSourceObject.xml" />

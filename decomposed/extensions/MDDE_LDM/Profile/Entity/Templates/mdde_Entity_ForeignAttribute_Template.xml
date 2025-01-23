@@ -4,8 +4,6 @@
 <a:TemplateTargetItem.Value>.foreach_item(Attributes,,,%Foreign%)
 %Code%
 .next(,)</a:TemplateTargetItem.Value>
-<a:CreationDate>1652879903</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>Template to get the name of the foreign identifier attribute (there should only be one for the parent Hub in case of satelites).</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>
