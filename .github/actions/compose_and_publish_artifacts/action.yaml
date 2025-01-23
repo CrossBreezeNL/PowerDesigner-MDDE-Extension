@@ -14,12 +14,12 @@ runs:
       run: ./compose.ps1
       shell: pwsh
     - name: Publish XEM
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: MDDE Extension
         path: ./composed/extensions/*.xem           
     - name: Publish sample models
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Sample models
         path: ./composed/models/*.ldm
