@@ -9,7 +9,7 @@
 <a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>
 <a:CheckScript>Function %Check%(obj)
    %Check% = True    
-    &#39;check if one of the entities in the model is a window businessrule.
+    &#39;check if one of the entities in the model is a window business rule.
     &#39;make sure to also do this for window business rules that are implemented through a shortcut.
     Dim entity, windowBusinessRuleFound, realObject
     If obj.GetExtendedAttributeText(&quot;mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression&quot;) = &quot;true&quot; Then
@@ -21,7 +21,7 @@
     Dim Set collWindowBusinessRules = obj.GetCollectionByStereotype (&quot;mdde_WindowBusinessRule&quot;)
     If obj.GetCollectionByStereotype (&quot;mdde_WindowBusinessRule&quot;).Count &gt; 0 Then
       %Check% = False
-      WriteError &quot;Since this model contains a window businessrule, in model configuration (MDDE) the XML Export option [SourceObject &lt;&lt;ExpressionBusinessRule&gt;&gt; SQL Expression] should be selected.&quot;
+      WriteError &quot;Since this model contains a window business rule, in model configuration (MDDE) the XML Export option [SourceObject &lt;&lt;ExpressionBusinessRule&gt;&gt; SQL Expression] should be enabled.&quot;
     End If
       
  End Function</a:CheckScript>
