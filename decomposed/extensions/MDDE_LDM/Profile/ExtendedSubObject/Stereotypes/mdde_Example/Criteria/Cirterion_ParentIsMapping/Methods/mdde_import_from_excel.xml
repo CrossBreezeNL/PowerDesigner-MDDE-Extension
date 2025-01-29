@@ -6,28 +6,21 @@
 <a:Comment>Import example data from Excel</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
-     Dim x1
-     Dim wb
-     Dim activeWorksheet
+     Dim objExcelApp
+     Dim objWorkbook
+     Dim objActiveWorksheet
      
-     Dim actModel : Set actModel = ActiveModel
-     Dim headerRows : headerRows = 2   
-     &#39; Select a file
-     
-     
-     &#39;Dim wShell : Set wShell=CreateObject(&quot;WScript.Shell&quot;)
-     &#39;Dim oExec : Set oExec=wShell.Exec(&quot;mshta.exe &quot;&quot;about:&lt;input type=file id=FILE&gt;&lt;script&gt;FILE.click();new ActiveXObject(&#39;Scripting.FileSystemObject&#39;).GetStandardStream(1).WriteLine(FILE.value);close();resizeTo(0,0);&lt;/script&gt;&quot;&quot;&quot;)
-     &#39;Dim sFileSelected : sFileSelected = oExec.StdOut.ReadLine
-     
-     &#39;Create a file open dialog
+     Dim objActiveModel : Set objActiveModel = ActiveModel
+     Dim intHeaderRows : intHeaderRows = 2   
+     &#39;Create a file open dialog to select a file
      Dim shell: Set shell = CreateObject(&quot;Shell.Application&quot;)
-     Dim file: Set file = shell.BrowseForFolder(0, &quot;Select file:&quot;, &amp;H4000, &quot;%HOMEPATH%&quot;)
-     If file is Nothing Then
+     Dim objFile: Set objFile = shell.BrowseForFolder(0, &quot;Select file:&quot;, &amp;H4000, &quot;%HOMEPATH%&quot;)
+     If objFile is Nothing Then
       msgbox &quot;No file selected, aborting import&quot;
       Exit Sub
      End If
      
-     Dim sFileSelected: sFileSelected = file.self.Path
+     Dim strFileSelected: strFileSelected = objFile.self.Path
      
      Dim objCurrentExampleEntityData
      Dim exampleRecord
@@ -36,35 +29,35 @@
      For Each objCurrentExampleEntityData In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;, False)
          For each objCurrentExampleRec in objCurrentExampleEntityData.getExtendedCollection(&quot;mdde_ExampleRecords&quot;, False)
             objCurrentExampleRec.Delete
-            WriteInfo &quot;Delete old record &quot; &amp; objCurrentExampleRec.Code
+            WriteDebug &quot;Delete old record &quot; &amp; objCurrentExampleRec.Code
          Next
      Next
       
       &#39; Open the Excel file
-      WriteInfo &quot;Opening:&quot; &amp; sFileSelected
-	   Set x1 = CreateObject(&quot;Excel.Application&quot;) 
-	   x1.Visible = True 
-      Set wb = x1.Workbooks.Open(sFileSelected)
+      WriteDebug &quot;Opening:&quot; &amp; strFileSelected
+	   Set objExcelApp = CreateObject(&quot;Excel.Application&quot;) 
+	   objExcelApp.Visible = True 
+      Set objWorkbook = objExcelApp.Workbooks.Open(strFileSelected)
    
      
      &#39;Add new example records
      Dim objWorksheet
-        For Each objWorksheet In x1.Worksheets
-        WriteInfo &quot;Processing worksheet &quot; &amp; objWorksheet.name
+        For Each objWorksheet In objWorkbook.Worksheets
+        WriteDebug &quot;Processing worksheet &quot; &amp; objWorksheet.name
         &#39;Search for corresponding objExampleEntityData
         Dim objExampleEntityData : Set objExampleEntityData = nothing
         Dim objExampleEntityDataCheck
-        Dim targetEntityType: targetEntityType = &quot;Expected output&quot;
+        Dim strTargetEntityType: strTargetEntityType = &quot;Expected output&quot;
         If left(objWorksheet.name, 3) = &quot;In-&quot; Then
-            targetEntityType = &quot;Source input&quot; 
+            strTargetEntityType = &quot;Source input&quot; 
         End If
         
               
         For each objExampleEntityDataCheck in obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;, False)
             Dim objEntity: set objEntity = objExampleEntityDataCheck.getExtendedAttribute(&quot;mdde_ExampleEntity&quot;)
-            Dim entityType: entityType = objExampleEntityDataCheck.getExtendedAttribute(&quot;mdde_ExampleDataType&quot;)
+            Dim strEntityType: strEntityType = objExampleEntityDataCheck.getExtendedAttribute(&quot;mdde_ExampleDataType&quot;)
             Set objEntity = getRealObject(objEntity)
-            If objEntity.Code = objWorksheet.Cells(1,1) And entityType = targetEntityType Then
+            If objEntity.Code = objWorksheet.Cells(1,1) And strEntityType = strTargetEntityType Then
                Set objExampleEntityData = objExampleEntityDataCheck
                Exit for 
             End if
@@ -74,79 +67,84 @@
             Exit for
         End if
 
-        Dim recordCount : recordCount = 1 
-        Dim nextRecord : nextRecord = true
-        Dim totalAttributeCount : totalAttributeCount = 0
+        Dim intRecordCount : intRecordCount = 1 
+        Dim bNextRecord : bNextRecord = true
+        Dim intTotalAttributeCount : intTotalAttributeCount = 0
         
         Dim colExampleRec : Set colExampleRec = objExampleEntityData.GetExtendedCollection(&quot;mdde_ExampleRecords&quot;)
-        Do while nextRecord
+        Do while bNextRecord
             &#39;Select next line
-            Dim recordCode : recordCode = objWorksheet.Cells(recordCount + headerRows, 1)
-            If recordCode &gt; &quot;&quot; then
+            Dim strRecordCode : strRecordCode = objWorksheet.Cells(intRecordCount + intHeaderRows, 1)
+            If strRecordCode &gt; &quot;&quot; then
                &#39;Create test record
                Dim objExampleRec : Set objExampleRec = colExampleRec.createNew()
-               objExampleRec.Code = recordCode
-               objExampleRec.Name = recordCode
-               WriteInfo &quot;Created record: &quot; &amp; objExampleRec.Name
+               objExampleRec.Code = strRecordCode
+               objExampleRec.Name = strRecordCode
+               WriteDebug &quot;Created record: &quot; &amp; objExampleRec.Name
                
                &#39;Get all attributes for the example record
-               Dim attributeCount : attributeCount = 1
-               Dim nextAttribute : nextAttribute = true
+               Dim intAttributeCount : intAttributeCount = 1
+               Dim bNextAttribute : bNextAttribute = true
                
                Dim colExampleAttribute : Set colExampleAttribute = objExampleRec.GetExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
                
-               Do while nextAttribute
+               Do while bNextAttribute
                   &#39; Get attribute-code from header
-                  Dim attributeCode : attributeCode = objWorksheet.Cells(headerRows, attributeCount + 1)
-                  Dim attributeValue : attributeValue = objWorksheet.Cells(recordCount + headerRows, attributeCount + 1)
+                  Dim strAttributeCode : strAttributeCode = objWorksheet.Cells(intHeaderRows, intAttributeCount + 1)
+                  &#39; Get the text instead of the value to use proper formatting. First autosize the column to prevent ###### values when column is too small to display content
+                  If intRecordCount = 1 Then
+                     objWorksheet.Cells(intRecordCount + intHeaderRows, intAttributeCount + 1).EntireColumn.AutoFit
+                  End If
 
-                  
+                  Dim strAttributeValue : strAttributeValue = objWorksheet.Cells(intRecordCount + intHeaderRows, intAttributeCount + 1).Text
+
                   &#39; First record : count number of attributes
-                  If recordCount = 1 then
-                     If attributeCode &gt; &quot;&quot; then
+                  If intRecordCount = 1 then
+                     If strAttributeCode &gt; &quot;&quot; then
                         &#39; Append attribute code to list with attributes
-                        totalAttributeCount = attributeCount
+                        intTotalAttributeCount = intAttributeCount
                      Else
-                        nextAttribute = false
+                        bNextAttribute = false
                      End if
                   End if
                   
-                  If nextAttribute then
+                  If bNextAttribute then
                      &#39; write attribute here
                      Dim objExampleAttribute : Set objExampleAttribute = colExampleAttribute.createNew()
-                     objExampleAttribute.Code = attributeCode
-                     objExampleAttribute.Name = attributeCode
+                     objExampleAttribute.Code = strAttributeCode
+                     objExampleAttribute.Name = strAttributeCode
                      
                      &#39;search the actual attribute
-                     Dim entityAttribute
-                     For each entityAttribute in objEntity.attributes
-                        If entityAttribute.Name = attributeCode then
+                     Dim objEntityAttribute
+                     For each objEntityAttribute in objEntity.attributes
+                        If objEntityAttribute.Name = strAttributeCode then
                            Exit for
                         End if
                      Next
                      
-                     objExampleAttribute.SetExtendedAttribute &quot;mdde_Attribute&quot;, entityAttribute
-                     objExampleAttribute.SetExtendedAttribute &quot;mdde_Value&quot;, attributeValue
-                     WriteInfo &quot;Created attribute: &quot; &amp; attributeCode &amp; &quot; - &quot; &amp; attributeValue
+                     objExampleAttribute.SetExtendedAttribute &quot;mdde_Attribute&quot;, objEntityAttribute
+                     objExampleAttribute.SetExtendedAttribute &quot;mdde_Value&quot;, strAttributeValue
+                     WriteDebug &quot;Created attribute: &quot; &amp; strAttributeCode &amp; &quot; - &quot; &amp; strAttributeValue
                   End if
                   
                   &#39; Subsequent records: check if we added all attributes
-                  If (recordCount &gt; 1 and (attributeCount = totalAttributeCount)) then
-                     nextAttribute = false
+                  If (intRecordCount &gt; 1 and (intAttributeCount = intTotalAttributeCount)) then
+                     bNextAttribute = false
                   End if
-                  attributeCount = attributeCount + 1
+                  intAttributeCount = intAttributeCount + 1
                Loop
                
-               attributeCount = attributeCount + 1
+               intAttributeCount = intAttributeCount + 1
             Else
-               nextRecord = false
+               bNextRecord = false
             End if
             
             &#39; Select next row in Excel
-            recordCount = recordCount + 1      
+            intRecordCount = intRecordCount + 1      
         Loop
      Next
      
-     x1.Workbooks.Close
+     objWorkbook.Close False
+     objExcelApp.Quit    
 End Sub</a:MethodScript>
 </o:MethodTargetItem>
