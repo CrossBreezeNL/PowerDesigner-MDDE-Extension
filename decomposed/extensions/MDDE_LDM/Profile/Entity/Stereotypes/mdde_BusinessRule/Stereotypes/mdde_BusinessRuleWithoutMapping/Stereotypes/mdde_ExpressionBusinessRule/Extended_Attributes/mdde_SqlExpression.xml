@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="38253E88-8698-4A5B-8398-0FA2B14556C0">
 <a:ObjectID>38253E88-8698-4A5B-8398-0FA2B14556C0</a:ObjectID>
 <a:Name>mdde_SqlExpression</a:Name>
-<a:CreationDate>1651577176</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>14</a:ExtendedAttributeTargetItem.DataType>
 <a:TextFormat>SQL</a:TextFormat>

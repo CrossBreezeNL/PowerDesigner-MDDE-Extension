@@ -1,8 +1,6 @@
 <o:ExtendedCollectionTargetItem Id="A2800213-EE60-4B5A-A61E-256C8630BAA7">
 <a:ObjectID>A2800213-EE60-4B5A-A61E-256C8630BAA7</a:ObjectID>
 <a:Name>mdde_ExampleEntity</a:Name>
-<a:CreationDate>1661255728</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>D86B0751-A544-42AE-AAA6-6E32C602F706</a:DestinationClassID>
 <a:DefaultColumnFilter>NAME 80 CODE 80</a:DefaultColumnFilter>

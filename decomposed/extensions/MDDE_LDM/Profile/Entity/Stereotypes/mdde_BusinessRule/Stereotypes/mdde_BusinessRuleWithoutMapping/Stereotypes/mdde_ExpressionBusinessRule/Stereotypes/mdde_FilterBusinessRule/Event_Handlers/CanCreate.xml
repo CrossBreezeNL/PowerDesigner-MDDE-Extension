@@ -1,8 +1,6 @@
 <o:EventHandlerTargetItem Id="290DC1CF-77B8-47D6-90F6-F868A176A63A">
 <a:ObjectID>290DC1CF-77B8-47D6-90F6-F868A176A63A</a:ObjectID>
 <a:Name>CanCreate</a:Name>
-<a:CreationDate>1726842654</a:CreationDate>
-<a:Creator>RichaneRamsoedit</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HandlerScript>Function %CanCreate%(parent)
   &#39;the parent represents the FilterBusinessRule which communicaties with the model object&#39; 

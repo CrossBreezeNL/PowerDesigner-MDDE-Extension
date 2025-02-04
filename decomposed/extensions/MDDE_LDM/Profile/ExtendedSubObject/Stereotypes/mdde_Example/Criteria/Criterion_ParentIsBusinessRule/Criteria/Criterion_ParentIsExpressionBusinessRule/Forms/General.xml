@@ -7,8 +7,6 @@
    &lt;Include Name=&quot;mdde_Example_Details&quot; Form=&quot;mdde_Example_Details&quot; SizeInChars=&quot;3&quot; LineNumber=&quot;1&quot; HorizontalResize=&quot;Yes&quot; VerticalResize=&quot;Yes&quot; ReadOnly=&quot;No&quot; /&gt;
 &lt;/Form&gt;
 </a:FormTargetItem.Value>
-<a:CreationDate>1657028746</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:FormType>GENERAL</a:FormType>
 </o:FormTargetItem>

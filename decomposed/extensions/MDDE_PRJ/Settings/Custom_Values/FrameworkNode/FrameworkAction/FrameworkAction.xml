@@ -1,8 +1,6 @@
 <o:TargetCategory Id="A6FFAB6B-2CFA-4253-88B9-F0A94D557C5A">
 <a:ObjectID>A6FFAB6B-2CFA-4253-88B9-F0A94D557C5A</a:ObjectID>
 <a:Name>FrameworkAction</a:Name>
-<a:CreationDate>1691151961</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <c:Categories>
 <xi:include href="TypeMap.xml" />
 </c:Categories>

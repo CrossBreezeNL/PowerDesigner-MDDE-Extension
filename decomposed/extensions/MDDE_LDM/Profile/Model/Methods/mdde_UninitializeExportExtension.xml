@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="B3C83083-F981-4187-BC97-B9ABB057A46C">
 <a:ObjectID>B3C83083-F981-4187-BC97-B9ABB057A46C</a:ObjectID>
 <a:Name>mdde_UninitializeExportExtension</a:Name>
-<a:CreationDate>1711025135</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(objModel)
    WriteDebug &quot;MDDE LDM Export extension un-initializion started&quot;

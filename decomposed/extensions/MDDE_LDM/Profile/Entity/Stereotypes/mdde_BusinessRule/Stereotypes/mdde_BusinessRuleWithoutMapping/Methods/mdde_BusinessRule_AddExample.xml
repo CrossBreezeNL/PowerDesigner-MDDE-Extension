@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="5043FF47-2CA9-472E-8C98-2AD04315C5B1">
 <a:ObjectID>5043FF47-2CA9-472E-8C98-2AD04315C5B1</a:ObjectID>
 <a:Name>mdde_BusinessRule_AddExample</a:Name>
-<a:CreationDate>1657029012</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
    WriteDebug &quot;[mdde_BusinessRule_AddExample] &quot; &amp; obj.UOL

@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="632D5806-0218-4A45-A661-8FE4135BD32F">
 <a:ObjectID>632D5806-0218-4A45-A661-8FE4135BD32F</a:ObjectID>
 <a:Name>mdde_Entity_DefaultMappingSelector</a:Name>
-<a:CreationDate>1653996426</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>This extended attribute is an alternative to the &#39;Mapping&#39; attribute of a mapping which stores the default mapping of the entity. The reason we override this attribute is so we can implement our own custom Edit method to support the workflow of a modeller.
 
 This is a calculated attribute which stores the selection in the DefaultMapping attribute of the entity.</a:Comment>

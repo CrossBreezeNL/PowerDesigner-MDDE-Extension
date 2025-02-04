@@ -8,8 +8,6 @@
 <a:ObjectID>E735B3B0-5F77-4676-949A-12D6F0E16146</a:ObjectID>
 <a:Name>Model Driven Data Engineering - Project Extension (MDDE)</a:Name>
 <a:Code>MDDE_PRJ</a:Code>
-<a:CreationDate>1691151961</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:Comment>Model Driven Data Engineering (MDDE) extension for Project models.
 
 This extensions is to add extra modeling possibilities to Project models, where standard PowerDesigner functionalities are missing options to add metadata.

@@ -2,8 +2,6 @@
 <a:ObjectID>EABDCEE5-D711-47A0-A2BB-F4A17F0FCED5</a:ObjectID>
 <a:Name>Shared</a:Name>
 <a:Code>Shared</a:Code>
-<a:CreationDate>1650359230</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Templates/Templates.xml" />

@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="366F8297-99DB-42C9-A203-4E51858E8E5E">
 <a:ObjectID>366F8297-99DB-42C9-A203-4E51858E8E5E</a:ObjectID>
 <a:Name>mdde_AttributeEdit</a:Name>
-<a:CreationDate>1657022244</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>This edit method is used for the attribute object picker for parent attributes.
 
 Based on the stereotype (input or output) we filter on attribute types.

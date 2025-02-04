@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="CB714F5D-95BD-49ED-B4FF-15117009E522">
 <a:ObjectID>CB714F5D-95BD-49ED-B4FF-15117009E522</a:ObjectID>
 <a:Name>BaseFileObject</a:Name>
-<a:CreationDate>1717165113</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criteria/Criteria.xml" />

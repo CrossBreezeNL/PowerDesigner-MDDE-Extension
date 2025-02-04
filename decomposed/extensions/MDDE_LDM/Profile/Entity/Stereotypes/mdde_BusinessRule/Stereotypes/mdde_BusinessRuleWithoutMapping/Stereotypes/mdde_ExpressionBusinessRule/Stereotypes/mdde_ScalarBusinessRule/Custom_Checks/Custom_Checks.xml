@@ -2,8 +2,6 @@
 <a:TypePublicName>CustomCheckTargetItem</a:TypePublicName>
 <a:ObjectID>9A328079-8CD3-4846-BBD4-AE0CAC2DEC8F</a:ObjectID>
 <a:Name>Custom Checks</a:Name>
-<a:CreationDate>1655828495</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Check_ScalarBusinessRule_HasAtLeastOneOutputAttribute.xml" />

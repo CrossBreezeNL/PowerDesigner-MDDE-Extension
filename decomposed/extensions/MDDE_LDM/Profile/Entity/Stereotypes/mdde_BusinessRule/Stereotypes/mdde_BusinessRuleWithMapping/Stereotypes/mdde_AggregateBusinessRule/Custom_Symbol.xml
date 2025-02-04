@@ -1,8 +1,6 @@
 <o:CustomSymbolTargetItem Id="DD0E537C-E39C-4445-BB8B-D2C4158AB9D4">
 <a:ObjectID>DD0E537C-E39C-4445-BB8B-D2C4158AB9D4</a:ObjectID>
 <a:Name>Custom Symbol</a:Name>
-<a:CreationDate>1688125881</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:CornerStyle>1</a:CornerStyle>
 <a:DefaultSize>(11250, 2250)</a:DefaultSize>

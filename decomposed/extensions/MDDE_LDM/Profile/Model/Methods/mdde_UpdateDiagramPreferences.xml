@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="A62E167B-7A86-4487-81C8-068350A08A67">
 <a:ObjectID>A62E167B-7A86-4487-81C8-068350A08A67</a:ObjectID>
 <a:Name>mdde_UpdateDiagramPreferences</a:Name>
-<a:CreationDate>1656502390</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(objModel)
    SetDiagramPreferencesForPackage(objModel)

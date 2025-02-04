@@ -1,8 +1,6 @@
 <o:ExtendedCompositionTargetItem Id="E2620892-24D2-458D-9ABA-710598992C23">
 <a:ObjectID>E2620892-24D2-458D-9ABA-710598992C23</a:ObjectID>
 <a:Name>mdde_ExpectedScalarOutput</a:Name>
-<a:CreationDate>1657018741</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
 <a:DestinationStereotype>mdde_ExpectedOutputAttributeValue</a:DestinationStereotype>

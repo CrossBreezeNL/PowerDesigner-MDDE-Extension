@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedCompositionTargetItem</a:TypePublicName>
 <a:ObjectID>250FDDFE-8FA9-45C0-9C98-285061B16769</a:ObjectID>
 <a:Name>Extended Compositions</a:Name>
-<a:CreationDate>1711017278</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_PivotHeaderTargetAttributes.xml" />

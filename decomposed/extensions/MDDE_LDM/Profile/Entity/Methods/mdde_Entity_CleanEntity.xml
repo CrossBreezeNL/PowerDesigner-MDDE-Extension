@@ -1,8 +1,6 @@
 <o:MethodTargetItem Id="F09A6BFB-76E2-411B-84BD-EA6E582D223D">
 <a:ObjectID>F09A6BFB-76E2-411B-84BD-EA6E582D223D</a:ObjectID>
 <a:Name>mdde_Entity_CleanEntity</a:Name>
-<a:CreationDate>1711699392</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:MethodScript>Sub %Method%(obj)
    &#39; The CleanObject function on any Extensible object returns true if anything was cleaned.

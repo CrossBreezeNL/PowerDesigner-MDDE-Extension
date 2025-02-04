@@ -2,8 +2,6 @@
 <a:TypePublicName>MenuTargetItem</a:TypePublicName>
 <a:ObjectID>EB489559-261B-4D38-8C5E-32E8F761B341</a:ObjectID>
 <a:Name>Menus</a:Name>
-<a:CreationDate>1717593641</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_BasePackage_FileDocuments_ContextMenu.xml" />

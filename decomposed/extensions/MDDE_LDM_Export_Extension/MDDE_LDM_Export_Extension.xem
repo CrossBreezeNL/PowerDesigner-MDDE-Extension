@@ -8,8 +8,6 @@
 <a:ObjectID>0297A8FE-93C4-4612-A9E0-CD7292BFF652</a:ObjectID>
 <a:Name>Model Driven Data Engineering - Export Extension (MDDE)</a:Name>
 <a:Code>MDDE_LDM_Export_Extension</a:Code>
-<a:CreationDate>1700834012</a:CreationDate>
-<a:Creator>WillemOtten</a:Creator>
 <xi:include href="ExtendedModelDefinition/a_CheckGlobalScript.xml" />
 <c:Categories>
 <xi:include href="Generation.xml" />

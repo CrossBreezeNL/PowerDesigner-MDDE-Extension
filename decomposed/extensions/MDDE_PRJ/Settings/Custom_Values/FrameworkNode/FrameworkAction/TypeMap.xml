@@ -1,8 +1,6 @@
 <o:MapTargetItem Id="EBC810DA-576F-4ED4-80E0-34EFCB2281DD">
 <a:ObjectID>EBC810DA-576F-4ED4-80E0-34EFCB2281DD</a:ObjectID>
 <a:Name>TypeMap</a:Name>
-<a:CreationDate>1691151961</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:MapTargetItem.Value>Model=Model
 Generation=Model Generation
 Diagram=Diagram

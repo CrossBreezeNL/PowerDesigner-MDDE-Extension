@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
 <a:ObjectID>6D922CD1-8590-40D3-9620-55DDE7B11D1C</a:ObjectID>
 <a:Name>Extended Attributes</a:Name>
-<a:CreationDate>1656441286</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Entity_IsWindowBusinessRule.xml" />

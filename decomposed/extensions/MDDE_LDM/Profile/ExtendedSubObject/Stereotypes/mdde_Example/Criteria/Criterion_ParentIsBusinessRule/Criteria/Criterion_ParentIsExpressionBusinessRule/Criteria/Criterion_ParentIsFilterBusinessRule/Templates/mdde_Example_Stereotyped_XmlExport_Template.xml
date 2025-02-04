@@ -3,7 +3,5 @@
 <a:Name>mdde_Example_Stereotyped_XmlExport_Template</a:Name>
 <a:TemplateTargetItem.Value>%mdde_Example_ExampleInput_XmlExport_Template%
 &lt;ExpectedFilterResult&gt;%.X:mdde_ExpectedFilterResult%&lt;/ExpectedFilterResult&gt;</a:TemplateTargetItem.Value>
-<a:CreationDate>1666183120</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

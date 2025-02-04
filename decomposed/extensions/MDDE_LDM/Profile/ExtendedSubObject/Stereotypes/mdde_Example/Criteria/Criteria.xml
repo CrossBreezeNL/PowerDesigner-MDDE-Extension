@@ -2,8 +2,6 @@
 <a:TypePublicName>CriterionTargetItem</a:TypePublicName>
 <a:ObjectID>0E622596-33C9-47C6-9BE5-EBDAECF50C97</a:ObjectID>
 <a:Name>Criteria</a:Name>
-<a:CreationDate>1657013919</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Criterion_ParentIsBusinessRule/Criterion_ParentIsBusinessRule.xml" />

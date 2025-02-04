@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="7E963ECB-133F-4252-8652-347D96A4D90E">
 <a:ObjectID>7E963ECB-133F-4252-8652-347D96A4D90E</a:ObjectID>
 <a:Name>Check data source acces type is read-only (MDDE)</a:Name>
-<a:CreationDate>1730454757</a:CreationDate>
-<a:Creator>DijkC1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that the datasource has the Access Type set to Read-Only</a:HelpMessage>
 <a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>

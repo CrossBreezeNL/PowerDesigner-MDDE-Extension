@@ -33,8 +33,12 @@
             <!-- Remove library information. -->
             <NodeRemoval xpath="//ExtendedModelDefinition/LibraryID" />
 
+            <!-- Remove the Creator & CreationDate from all elements (including Shortcut elements). -->
+            <!-- Creator is removed for privacy reasons (username). CreationDate is removed since it is not relevant in case of merges. -->
+            <NodeRemoval xpath="//Creator" />
+            <NodeRemoval xpath="//CreationDate" />
             <!-- Remove the Modifier & ModificationDate from all elements (including Shortcut elements). -->
-            <!-- This is needed for less unneeded conflicts, since these are updated in to many elements when something is changed. -->
+            <!-- This is needed for less unneeded conflicts since these are updated in too many elements when something is changed. -->
             <NodeRemoval xpath="//Modifier" />
             <NodeRemoval xpath="//ModificationDate" />            
             

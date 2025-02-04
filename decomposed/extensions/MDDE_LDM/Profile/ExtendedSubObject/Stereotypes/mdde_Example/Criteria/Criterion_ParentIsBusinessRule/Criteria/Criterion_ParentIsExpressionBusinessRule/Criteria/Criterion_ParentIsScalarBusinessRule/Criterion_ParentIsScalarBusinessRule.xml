@@ -2,8 +2,6 @@
 <a:ObjectID>6CD07E8E-5BD6-423A-B6B1-D25E195069B2</a:ObjectID>
 <a:Name>Criterion_ParentIsScalarBusinessRule</a:Name>
 <a:CriterionTargetItem.Value>%ParentObject.Stereotype% == &quot;mdde_ScalarBusinessRule&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1657093866</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:ParentCriterion>
 <o:CriterionTargetItem Ref="39B72C95-9AAD-436D-98E6-164B607A36F8"/>

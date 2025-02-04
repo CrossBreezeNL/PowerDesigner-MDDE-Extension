@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="5CA1FF92-8AB6-4DB1-A273-11DD1ED0A3DE">
 <a:ObjectID>5CA1FF92-8AB6-4DB1-A273-11DD1ED0A3DE</a:ObjectID>
 <a:Name>Shortcut is broken (MDDE)</a:Name>
-<a:CreationDate>1699530450</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>The model check, checks whether the current shortcut is broken.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>The model check, checks whether the current shortcut is broken. Meaning it cannot find the object it points to. In PowerDesigner the Shortcut has the status &#39;Not Found&#39; when this is the case.

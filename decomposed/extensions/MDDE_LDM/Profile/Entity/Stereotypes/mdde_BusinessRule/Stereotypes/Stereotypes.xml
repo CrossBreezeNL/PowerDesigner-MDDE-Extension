@@ -2,8 +2,6 @@
 <a:TypePublicName>StereotypeTargetItem</a:TypePublicName>
 <a:ObjectID>95C9997F-48C7-4A6B-AD26-8275118CEE97</a:ObjectID>
 <a:Name>Stereotypes</a:Name>
-<a:CreationDate>1651576644</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_BusinessRuleWithoutMapping/mdde_BusinessRuleWithoutMapping.xml" />

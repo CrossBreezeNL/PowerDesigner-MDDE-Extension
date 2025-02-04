@@ -2,8 +2,6 @@
 <a:TypePublicName>FormTargetItem</a:TypePublicName>
 <a:ObjectID>1CDB1BBD-A6EC-4F00-8246-8128D624724D</a:ObjectID>
 <a:Name>Forms</a:Name>
-<a:CreationDate>1724146166</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_BusinessRule_Examples.xml" />

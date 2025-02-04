@@ -1,8 +1,6 @@
 <o:ExtendedCollectionTargetItem Id="BFF92CAD-675F-4C38-ABE3-1E0CA84ABEA8">
 <a:ObjectID>BFF92CAD-675F-4C38-ABE3-1E0CA84ABEA8</a:ObjectID>
 <a:Name>mdde_ChildAttribute</a:Name>
-<a:CreationDate>1650360904</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E1690028-F3DD-4986-B6CB-1509A400BE2B</a:DestinationClassID>
 <a:DefaultColumnFilter>NAME 80 CODE 80 DTTP 60 MAND 20</a:DefaultColumnFilter>

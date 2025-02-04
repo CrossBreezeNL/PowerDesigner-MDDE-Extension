@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedCollectionTargetItem</a:TypePublicName>
 <a:ObjectID>B1FF9C77-15AE-4995-BA7C-9E616DB67241</a:ObjectID>
 <a:Name>Extended Collections</a:Name>
-<a:CreationDate>1650375353</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_SourceObject.xml" />

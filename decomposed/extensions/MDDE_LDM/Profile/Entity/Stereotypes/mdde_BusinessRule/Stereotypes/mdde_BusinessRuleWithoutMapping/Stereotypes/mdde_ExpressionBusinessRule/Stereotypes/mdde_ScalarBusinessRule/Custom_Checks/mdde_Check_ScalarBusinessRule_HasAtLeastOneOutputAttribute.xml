@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="DB2ABEB5-CB49-4B90-8E9F-61330B71877F">
 <a:ObjectID>DB2ABEB5-CB49-4B90-8E9F-61330B71877F</a:ObjectID>
 <a:Name>mdde_Check_ScalarBusinessRule_HasAtLeastOneOutputAttribute</a:Name>
-<a:CreationDate>1655828495</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that every scalar business rule has at least one output attribute</a:HelpMessage>
 <a:OutputMessage>The following scalar business rules have no attribute(s) with the output stereotype:</a:OutputMessage>

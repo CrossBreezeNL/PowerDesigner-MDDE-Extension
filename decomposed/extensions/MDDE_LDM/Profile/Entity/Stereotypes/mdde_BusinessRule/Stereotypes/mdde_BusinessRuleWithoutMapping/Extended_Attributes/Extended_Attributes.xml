@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
 <a:ObjectID>C73C5FD7-85F9-43D3-986C-696344429868</a:ObjectID>
 <a:Name>Extended Attributes</a:Name>
-<a:CreationDate>1683208720</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_BusinessRule_DefaultExample.xml" />

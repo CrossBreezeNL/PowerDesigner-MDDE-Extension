@@ -6,7 +6,5 @@
  Attribute=&quot;%.X:mdde_Attribute.Code%&quot;
 .endif()
  Value=&quot;%.X:mdde_Value%&quot; /&gt;</a:TemplateTargetItem.Value>
-<a:CreationDate>1666185315</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

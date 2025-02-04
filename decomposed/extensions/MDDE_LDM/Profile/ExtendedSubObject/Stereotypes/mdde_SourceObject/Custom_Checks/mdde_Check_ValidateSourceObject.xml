@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="49802D2D-925D-4F82-8855-854FD33B7F7A">
 <a:ObjectID>49802D2D-925D-4F82-8855-854FD33B7F7A</a:ObjectID>
 <a:Name>mdde_Check_ValidateSourceObject</a:Name>
-<a:CreationDate>1656598365</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>A custom check to make sure the Validate function is called to update the source object Name and Code before exporting the model.
 
 This is needed so when a joined object it&#39;s Name or Code is changed the source object Name and Code is also update (without opening the mapping).</a:Comment>

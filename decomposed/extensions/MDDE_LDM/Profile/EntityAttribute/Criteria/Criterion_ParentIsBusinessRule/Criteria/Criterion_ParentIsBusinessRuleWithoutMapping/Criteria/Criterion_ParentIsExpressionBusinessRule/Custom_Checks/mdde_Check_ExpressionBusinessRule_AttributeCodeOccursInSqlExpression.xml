@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="DE43B8C8-A0B8-4522-8AB4-770DD48156AD">
 <a:ObjectID>DE43B8C8-A0B8-4522-8AB4-770DD48156AD</a:ObjectID>
 <a:Name>mdde_Check_ExpressionBusinessRule_AttributeCodeOccursInSqlExpression</a:Name>
-<a:CreationDate>1655828611</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that all input and output attributes occur at least once in the business rule Sql Expression. When the business rule is a window business rule, the output attribute should not be used in the Sql Expression.</a:HelpMessage>
 <a:OutputMessage>The following attributes are not used appropriately in the Sql Expression of the scalar or window business rule:</a:OutputMessage>

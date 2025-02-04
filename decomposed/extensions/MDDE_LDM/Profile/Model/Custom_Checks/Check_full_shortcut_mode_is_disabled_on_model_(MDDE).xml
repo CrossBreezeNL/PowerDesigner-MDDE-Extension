@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="B41DD905-3733-4C53-8B0F-C4E8F25D9DEC">
 <a:ObjectID>B41DD905-3733-4C53-8B0F-C4E8F25D9DEC</a:ObjectID>
 <a:Name>Check full shortcut mode is disabled on model (MDDE)</a:Name>
-<a:CreationDate>1719473199</a:CreationDate>
-<a:Creator>BurggraaffC</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that full shortcut mode is disabled on the model</a:HelpMessage>
 <a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>

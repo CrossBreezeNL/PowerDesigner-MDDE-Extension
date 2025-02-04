@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="4DD6EFB5-B8C3-4C28-BE88-6D0709895850">
 <a:ObjectID>4DD6EFB5-B8C3-4C28-BE88-6D0709895850</a:ObjectID>
 <a:Name>mdde_BusinessRule_DefaultExample</a:Name>
-<a:CreationDate>1657021238</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
 <a:ExtendedAttributeTargetItem.ListOfValues>%mdde_BusinessRule_DefaultExampleList%</a:ExtendedAttributeTargetItem.ListOfValues>

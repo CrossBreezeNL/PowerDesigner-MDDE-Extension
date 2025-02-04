@@ -2,8 +2,6 @@
 <a:ObjectID>8FFFA3A9-8B8E-4638-82C8-36FFCA4C9774</a:ObjectID>
 <a:Name>mdde_IsMapping</a:Name>
 <a:TemplateTargetItem.Value>True</a:TemplateTargetItem.Value>
-<a:CreationDate>1661254438</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:Comment>This is a template which is used in the Criterion_ParentIsMapping criterion on mdde_Example.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 </o:TemplateTargetItem>

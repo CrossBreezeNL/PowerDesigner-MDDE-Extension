@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="7C0C0F9B-4AEB-4F2D-95C5-197D1FA8B3BF">
 <a:ObjectID>7C0C0F9B-4AEB-4F2D-95C5-197D1FA8B3BF</a:ObjectID>
 <a:Name>mdde_Check_AttributeMappingHasValidSourceObject</a:Name>
-<a:CreationDate>1650377393</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that an attribute mapping has a vlid source object attached.</a:HelpMessage>
 <a:OutputMessage>The following objects do not pass custom check:</a:OutputMessage>

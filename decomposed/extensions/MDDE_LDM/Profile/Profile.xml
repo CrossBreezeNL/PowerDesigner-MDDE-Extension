@@ -1,8 +1,6 @@
 <o:ProfileTargetItem Id="AC8C4A3D-DB68-4669-91B2-6306DA6CADBC">
 <a:ObjectID>AC8C4A3D-DB68-4669-91B2-6306DA6CADBC</a:ObjectID>
 <a:Name>Profile</a:Name>
-<a:CreationDate>1650359230</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Shared/Shared.xml" />

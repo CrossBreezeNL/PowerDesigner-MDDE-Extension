@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="1630832E-9E5C-4A38-8566-B2600525CC44">
 <a:ObjectID>1630832E-9E5C-4A38-8566-B2600525CC44</a:ObjectID>
 <a:Name>mdde_AggregateBusinessRule</a:Name>
-<a:CreationDate>1688125428</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Aggregate business rule (MDDE)</a:Label>
 <a:PluralLabel>Aggregate business rules (MDDE)</a:PluralLabel>

@@ -2,8 +2,6 @@
 <a:ObjectID>4F0FBD10-F3FE-4B74-A87D-BBC6E069755A</a:ObjectID>
 <a:Name>Criterion_ParentIsFilterBusinessRule</a:Name>
 <a:CriterionTargetItem.Value>%ParentObject.Stereotype% == &quot;mdde_FilterBusinessRule&quot;</a:CriterionTargetItem.Value>
-<a:CreationDate>1657094118</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:ParentCriterion>
 <o:CriterionTargetItem Ref="39B72C95-9AAD-436D-98E6-164B607A36F8"/>

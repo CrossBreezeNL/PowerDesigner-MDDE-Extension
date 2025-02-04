@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="F6063A1C-2669-41C9-A916-DAD7FD65BD69">
 <a:ObjectID>F6063A1C-2669-41C9-A916-DAD7FD65BD69</a:ObjectID>
 <a:Name>Check relationship join has parent and child attributes (MDDE)</a:Name>
-<a:CreationDate>1728547835</a:CreationDate>
-<a:Creator>DijkC1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that a relationship has the parent and child attributes filled correctly.</a:HelpMessage>
 <a:OutputMessage>The following RelationshipJoins do not pass custom check:</a:OutputMessage>

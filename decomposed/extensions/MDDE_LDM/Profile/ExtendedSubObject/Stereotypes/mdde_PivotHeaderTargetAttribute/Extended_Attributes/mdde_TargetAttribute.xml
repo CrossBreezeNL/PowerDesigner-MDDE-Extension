@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="1B55E430-6EEB-4F5B-A234-0512517A72D7">
 <a:ObjectID>1B55E430-6EEB-4F5B-A234-0512517A72D7</a:ObjectID>
 <a:Name>mdde_TargetAttribute</a:Name>
-<a:CreationDate>1711016894</a:CreationDate>
-<a:Creator>burggraaffc</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>15</a:ExtendedAttributeTargetItem.DataType>
 <a:ExtendedAttributeTargetItem.ListOfValues>%mdde_TargetAttributeList%</a:ExtendedAttributeTargetItem.ListOfValues>

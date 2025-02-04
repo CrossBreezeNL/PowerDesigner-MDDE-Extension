@@ -2,8 +2,6 @@
 <a:TypePublicName>ExtendedAttributeTargetItem</a:TypePublicName>
 <a:ObjectID>53C7F9DD-E25E-4E69-A270-8374F3C8984E</a:ObjectID>
 <a:Name>Extended Attributes</a:Name>
-<a:CreationDate>1689164889</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="mdde_Aggregate.xml" />

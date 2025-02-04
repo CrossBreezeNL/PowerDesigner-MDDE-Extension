@@ -1,8 +1,6 @@
 <o:StereotypeTargetItem Id="7E855C98-4A94-45D1-AD39-2A08FCFBE125">
 <a:ObjectID>7E855C98-4A94-45D1-AD39-2A08FCFBE125</a:ObjectID>
 <a:Name>mdde_CustomBusinessRule</a:Name>
-<a:CreationDate>1683206764</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:Label>Custom business rule (MDDE)</a:Label>
 <a:PluralLabel>Custom business rules (MDDE)</a:PluralLabel>

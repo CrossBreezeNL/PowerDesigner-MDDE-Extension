@@ -1,8 +1,6 @@
 <o:MetaClassTargetItem Id="C3E997FF-AE50-4B25-B467-35494A00FA90">
 <a:ObjectID>C3E997FF-AE50-4B25-B467-35494A00FA90</a:ObjectID>
 <a:Name>BaseStructuralFeatureMapping</a:Name>
-<a:CreationDate>1650375353</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <c:Categories>
 <xi:include href="Event_Handlers/Event_Handlers.xml" />

@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="B1F33CF8-4AF7-4F22-99FD-E7C702E2147C">
 <a:ObjectID>B1F33CF8-4AF7-4F22-99FD-E7C702E2147C</a:ObjectID>
 <a:Name>mddex_ExtendedSubObject_SourceObject_Export_Content</a:Name>
-<a:CreationDate>1717515309</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:Comment>During XML export this property is set using the mddex template</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.DataType>14</a:ExtendedAttributeTargetItem.DataType>

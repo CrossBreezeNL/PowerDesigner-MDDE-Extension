@@ -1,8 +1,6 @@
 <o:ExtendedAttributeTargetItem Id="A3455CE1-6457-40F7-9C0B-599E355AF4DE">
 <a:ObjectID>A3455CE1-6457-40F7-9C0B-599E355AF4DE</a:ObjectID>
 <a:Name>mdde_Export_SourceObject_ExpressionBusinessRule_SqlExpression</a:Name>
-<a:CreationDate>1716368457</a:CreationDate>
-<a:Creator>HarmenWessels</a:Creator>
 <a:Comment>Indicator whether to include the resolved SQL expression of expression business rules (like scalar and filter) in the XML export of source objects.</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:ExtendedAttributeTargetItem.Value>false</a:ExtendedAttributeTargetItem.Value>

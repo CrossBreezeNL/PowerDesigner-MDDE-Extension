@@ -1,8 +1,6 @@
 <o:ExtendedCompositionTargetItem Id="A2604219-B6D6-483E-B2B7-867A561FDECA">
 <a:ObjectID>A2604219-B6D6-483E-B2B7-867A561FDECA</a:ObjectID>
 <a:Name>mdde_BusinessRule_Examples</a:Name>
-<a:CreationDate>1657014166</a:CreationDate>
-<a:Creator>WesselsH1</a:Creator>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:DestinationClassID>E66E5B1D-A046-4482-ADC2-5D6CCF8CBB85</a:DestinationClassID>
 <a:DestinationStereotype>mdde_Example</a:DestinationStereotype>

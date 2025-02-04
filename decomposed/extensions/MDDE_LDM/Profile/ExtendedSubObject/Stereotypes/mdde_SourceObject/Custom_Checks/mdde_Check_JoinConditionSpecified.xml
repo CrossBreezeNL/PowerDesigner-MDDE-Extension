@@ -1,8 +1,6 @@
 <o:CustomCheckTargetItem Id="F2E72C54-CA55-42E2-B7E8-AD66365FA458">
 <a:ObjectID>F2E72C54-CA55-42E2-B7E8-AD66365FA458</a:ObjectID>
 <a:Name>mdde_Check_JoinConditionSpecified</a:Name>
-<a:CreationDate>1686821563</a:CreationDate>
-<a:Creator>BuwaldaN</a:Creator>
 <a:Comment>This check checks if a join condtion has been specified to a source object with a join type</a:Comment>
 <a:TargetCategory.Type>1</a:TargetCategory.Type>
 <a:HelpMessage>This check ensures that if a join condtion has been specified to a source object with a join type</a:HelpMessage>
