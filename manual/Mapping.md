@@ -140,6 +140,9 @@ In the 'Example (MDDE) properties' screen:
 1. Open the example input by double clicking on the new example data row (in the grey area).
 
 ### Specify example data records
+Example data records can either be created manually in PowerDesigner or they can be created using the Excel Import/Export buttons. 
+
+#### Manually create example data records in PowerDesigner
 To specify example data records (either for source input or expected output), double click on the grey area of the example data in the 'Example (MDDE) Properties' window.
 
 1. In the new dialog screen on the 'General' tab you can add example records for clicking 'Add a Row'.
@@ -158,6 +161,15 @@ To specify example data records (either for source input or expected output), do
    ![Mapping example - Create example record attribute value](img/mapping_example_attribute_create.png)
 
 > Make sure for all example records within an example data set (input or output) (as created in the 'Example data' section) the same attributes are used. So if in the first record for 3 attributes example values are given, make sure for the other records for the same attributes example values are given.
+
+#### Create example data records using the Excel Import/Export buttons
+The easiest way to use the Excel Import/Export feature is to follow the following steps:
+1. Create Example input entries for all needed source entities.
+2. Export the example to Excel, you will now have an Excel file with sheets for the output entity and for all input entities.
+3. Create the example input and output records in Excel for the output and input entities.
+4. Save the Excel file and import it back to PowerDesigner.
+
+> Note: When importing a testscenario from Excel, all existing example records defined on the testscenario in PowerDesigner are removed and replaced by the example records in the Excel file.
 
 A complete example should contain expected input and output records as shown below:
 
