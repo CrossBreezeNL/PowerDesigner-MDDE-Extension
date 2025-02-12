@@ -163,17 +163,35 @@ To specify example data records (either for source input or expected output), do
 > Make sure for all example records within an example data set (input or output) (as created in the 'Example data' section) the same attributes are used. So if in the first record for 3 attributes example values are given, make sure for the other records for the same attributes example values are given.
 
 #### Create example data records using the Excel Import/Export buttons
-The easiest way to use the Excel Import/Export feature is to follow the following steps:
+The easiest way to use the Excel Import/Export feature is to follow the steps below:
 1. Create Example input entries for all needed source entities.
-2. Export the example to Excel, you will now have an Excel file with sheets for the output entity and for all input entities.
-3. Create the example input and output records in Excel for the output and input entities.
+
+   ![Mapping example - Create input entries for all needed sources](img/mapping_example_data_input_output.png)
+
+2. Export the example to Excel, you will now have an Excel file with sheets for the output entity and for all input entities specified in the example.
+
+   ![Mapping example - Initial Excel file](img/mapping_example_excel_export_initial.png)
+
+3. Create the example input and output records in Excel for the output and input entities. Note that the first row in each sheet might contain information on the expected data format for the specific column. In the example below, the Id column for Customer needs to be numeric (integer), which is indicated by the # in the first row. For each record the RecordID should be defined. This is used as an identifier for the data in PowerDesigner. Make sure the RecordID is unique within the worksheet/table.
+
+   Customer input example:
+   ![Mapping example - Example Customer input](img/mapping_example_excel_export_input_customer.png)
+   
+   Country input example:
+   ![Mapping example - Example Country input](img/mapping_example_excel_export_input_country.png)
+   
+   Customer expected output example (note the format indication on CustomerId and TotalRevenue):
+   ![Mapping example -Example Customer output](img/mapping_example_excel_export_output.png)
+
 4. Save the Excel file and import it back to PowerDesigner.
+5. After the import is complete, close and re-open the example to inspect the imported example data records.
 
 > Note: When importing a testscenario from Excel, all existing example records defined on the testscenario in PowerDesigner are removed and replaced by the example records in the Excel file.
 
 A complete example should contain expected input and output records as shown below:
 
 ![Mapping example - complete example](img/mapping_example_total.png)
+
 When you want to create multiple examples, follow the the above steps for every example.
 
 ***

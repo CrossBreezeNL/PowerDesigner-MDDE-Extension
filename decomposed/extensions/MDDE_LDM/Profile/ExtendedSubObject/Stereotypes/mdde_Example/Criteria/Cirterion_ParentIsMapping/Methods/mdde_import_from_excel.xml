@@ -42,7 +42,7 @@
      
      &#39;Add new example records
      Dim objWorksheet
-        For Each objWorksheet In objWorkbook.Worksheets
+     For Each objWorksheet In objWorkbook.Worksheets
         WriteDebug &quot;Processing worksheet &quot; &amp; objWorksheet.name
         &#39;Search for corresponding objExampleEntityData
         Dim objExampleEntityData : Set objExampleEntityData = nothing
@@ -145,6 +145,7 @@
      Next
      
      objWorkbook.Close False
-     objExcelApp.Quit    
+     objExcelApp.Quit
+     WriteInfo &quot;Import of examples finished. Close and re-open the example to inspect the imported example records.&quot;
 End Sub</a:MethodScript>
 </o:MethodTargetItem>
