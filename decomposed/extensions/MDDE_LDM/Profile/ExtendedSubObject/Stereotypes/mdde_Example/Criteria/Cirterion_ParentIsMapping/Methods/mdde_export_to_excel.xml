@@ -1,0 +1,172 @@
+<o:MethodTargetItem Id="12D80A5C-0BE3-4C92-B3FF-C94AB71D45AB">
+<a:ObjectID>12D80A5C-0BE3-4C92-B3FF-C94AB71D45AB</a:ObjectID>
+<a:Name>mdde_export_to_excel</a:Name>
+<a:CreationDate>1736328878</a:CreationDate>
+<a:Creator>BasBosman</a:Creator>
+<a:Comment>Export Example data to Excel</a:Comment>
+<a:TargetCategory.Type>1</a:TargetCategory.Type>
+<a:MethodScript>Sub %Method%(obj)
+
+	&#39; Log that we will start exporting.
+	WriteInfo &quot;Start exporting &quot; &amp; obj.Code
+
+	&#39; Open &amp; Create Excel Document
+	Dim objExcelApp
+   Dim objActiveWorksheet
+	Set objExcelApp = CreateObject(&quot;Excel.Application&quot;) 
+	objExcelApp.Visible = True 
+   objExcelApp.Workbooks.Add
+   
+	Dim objExampleEntity
+   Dim intEntityCount : intEntityCount = 0
+   Dim intHeaderRows : intHeaderRows = 2
+   Dim strAttributeFormat
+   
+	For Each objExampleEntity In obj.getExtendedCollection(&quot;mdde_ExampleEntityData&quot;)
+		Dim objEntity : Set objEntity = objExampleEntity.getExtendedAttribute(&quot;mdde_ExampleEntity&quot;)
+      Set objEntity = getRealObject(objEntity)
+      Dim strEntityType: strEntityType = objExampleEntity.getExtendedAttribute(&quot;mdde_ExampleDataType&quot;)
+      
+		Dim objExampleRecord
+      Dim collAttributeHeader
+		Dim intRecordCount : intRecordCount = 0
+      Dim intHeaderCount
+      Dim bHeaderFound
+      Dim objHeaderAttr
+      Dim strWorkSheetNamePrefix
+      Dim intAttributeCount : intAttributeCount = 0
+      Dim intMaxAttributeCount : intMaxAttributeCount = 0
+      
+      &#39; Use a prefix in worksheet name since often source and target entities might have the same name
+      &#39; Add the entity count in the worksheet name to prevent duplicate worksheet names
+      intEntityCount = intEntityCount + 1
+      strWorkSheetNamePrefix = &quot;In-&quot; &amp; intEntityCount &amp; &quot;-&quot;
+      If strEntityType = &quot;Expected output&quot; Then
+         strWorkSheetNamePrefix = &quot;Out-&quot;
+      End If
+            
+      &#39; Create a new worksheet if needed and set the proper name
+      If intEntityCount = 1 Then
+         Set objActiveWorksheet = objExcelApp.Worksheets(1)
+      Else
+         Set objActiveWorksheet = objExcelApp.Worksheets.Add
+      End if
+      objActiveWorksheet.Name = Left(strWorkSheetNamePrefix &amp; objEntity.Code,31)
+      ObjActiveWorksheet.Cells(1,1).Value = objEntity.Code
+      
+      &#39; Write a row for each Example Record
+		For each objExampleRecord in objExampleEntity.getExtendedCollection(&quot;mdde_ExampleRecords&quot;)
+         Dim objTestAttribute
+         intRecordCount = intRecordCount + 1
+         intAttributeCount = 0
+         
+         objActiveWorksheet.Cells(intRecordCount + intHeaderRows, 1).Value = objExampleRecord.Code
+         
+         &#39;Since the composition of example records can be different (other subset of attributes, or different order)
+         &#39;The first record is used to initialize the headers in the excel sheet.
+         &#39;Each subsequent record is matched against the proper header columm. New columns not referenced in previous records will be added at the end.
+         If intRecordCount = 1 Then
+            Set collAttributeHeader = objExampleRecord.getExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
+            objActiveWorksheet.Cells(intHeaderRows, 1).Value = &quot;RecordID&quot;
+         End if
+         
+         &#39;Loop over all example attributes values of the record an write them to Excel
+			For each objTestAttribute in objExampleRecord.getExtendedCollection(&quot;mdde_ExampleAttributeValues&quot;)
+            intAttributeCount = intAttributeCount + 1
+				If intRecordCount = 1 Then
+            	&#39; First test case: write header and set proper format, also output format string in first row
+               Dim objAttribute : Set objAttribute = GetRealObject (objTestAttribute.GetExtendedAttribute(&quot;mdde_Attribute&quot;))
+               WriteExampleAttributeHeader objActiveWorksheet, objAttribute, intHeaderRows, intAttributecount
+               objActiveWorksheet.Cells(intRecordCount + intHeaderRows, intAttributeCount + 1).Value = objTestAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)               
+            Else
+               &#39; Match Attribute with Header
+               bHeaderFound = false
+               intHeaderCount = 1
+               For each objHeaderAttr in collAttributeHeader
+                  If objTestAttribute.Code = objHeaderAttr.Code Then
+                     objActiveWorksheet.Cells(intRecordCount + intHeaderRows, intHeaderCount + 1).Value = objTestAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
+                     bHeaderFound = true
+                     Exit For 
+                  End if
+                  intHeaderCount = intHeaderCount + 1
+               Next
+               &#39; If header not found, add it
+               If bHeaderFound = false Then                  
+                  objActiveWorksheet.Cells(intHeaderRows, intHeaderCount + 1).Value = objTestAttribute.Name
+                  objActiveWorksheet.Cells(intRecordCount + intHeaderRows, intHeaderCount + 1).Value = objTestAttribute.GetExtendedAttribute(&quot;mdde_Value&quot;)
+                  collAttributeHeader.Add objTestAttribute
+               End if
+				End if
+			Next
+         
+         &#39;Store the max attribute count to select the proper range for table
+         If intAttributeCount &gt; intMaxAttributeCount Then
+            intMaxAttributeCount = intAttributeCount
+         End If
+		Next
+		   
+		&#39;If we do not have test cases, write attributes from entity
+		If intRecordCount = 0 Then
+		   WriteDebug &quot;No test records found, initializing sheets for example entities&quot;
+		   intAttributeCount = 0
+		   ObjActiveWorksheet.Cells(intHeaderRows, 1).Value = &quot;RecordID&quot; 
+         For Each objAttribute In objEntity.Attributes
+            intAttributeCount = intAttributeCount + 1
+            WriteExampleAttributeHeader objActiveWorksheet, objAttribute, intHeaderRows, intAttributecount            
+		   Next
+         intMaxAttributeCount = intAttributeCount
+		End if
+      WriteDebug &quot;max attr count for &quot; &amp; objActiveWorksheet.Name &amp; &quot;: &quot;&amp; intMaxAttributeCount
+      &#39;Create a table in Excel for the example range
+      Dim tblRange : Set tblRange = objActiveWorksheet.Range(objActiveWorksheet.Cells(intHeaderRows, 1), objActiveWorksheet.Cells(intHeaderRows + intRecordCount + 1, intMaxAttributeCount + 1))
+      &#39;objActiveWorksheet.ListObjects.Add xlSrcRange, objActiveWorksheet.Selection, , xlYes
+      objActiveWorksheet.ListObjects.Add 1, tblRange, , 1
+    Next      
+End Sub
+
+&#39;Write attribute headers for an EntityAttribute
+Sub WriteExampleAttributeHeader(objActiveWorksheet, objAttribute, intHeaderRows, intAttributecount)
+   Dim strAttributeFormat : strAttributeFormat  = getEntityAttributeFormatString(objAttribute)  
+   objActiveWorksheet.Cells(intHeaderRows - 1, intAttributeCount + 1).Value = strAttributeFormat
+	objActiveWorksheet.Cells(intHeaderRows, intAttributeCount + 1).Value = objAttribute.Name
+   objActiveWorksheet.Cells(intHeaderRows, intAttributeCount + 1).Entirecolumn.NumberFormat = strAttributeFormat
+End Sub
+
+&#39; Get formatting string based on datatype for output of examples to Excel
+Function getEntityAttributeFormatString(objEntityAttribute)
+   getEntityAttributeFormatString = &quot;&quot;
+   &#39;get the datatype of the referenced attribute
+   If objEntityAttribute Is Nothing Then
+      WriteError &quot;Example attribute value &quot; &amp; objExampleValue.Code &amp; &quot; does not reference a (valid) EntityAttribute&quot;
+      Exit Function
+   End If
+   
+   &#39;If precision is set, it must be a number
+   &#39;Create a format string with the appropriate amount of decimals. Make the first decimal required to prevent output 12. 
+   &#39;when no decimals are specified in the example (excel issue):
+   &#39;https://stackoverflow.com/questions/50007653/excel-number-format-to-only-show-decimals-when-necessary
+   
+   If objEntityAttribute.Precision &gt; 0 Then
+      getEntityAttributeFormatString = &quot;#.0&quot;
+      If objEntityAttribute.Precision &gt; 1 Then
+         getEntityAttributeFormatString = getEntityAttributeFormatString &amp; replace(space(objEntityAttribute.Precision - 1), &quot; &quot;, &quot;#&quot;)
+      End If 
+      Exit Function
+   End If
+   Dim strDataType : strDataType = objEntityAttribute.DataType
+   Select case strDataType
+      Case  &quot;I&quot;, &quot;SI&quot;, &quot;LI&quot;, &quot;F&quot;, &quot;LF&quot;, &quot;DC&quot;, &quot;N&quot;
+         getEntityAttributeFormatString = &quot;#&quot;      
+         Exit Function
+      &#39;D = Date
+      Case &quot;D&quot;
+         getEntityAttributeFormatString = &quot;yyyy-mm-dd&quot;
+         Exit Function
+      &#39;DT = Date and Time
+      Case &quot;DT&quot;
+         getEntityAttributeFormatString = &quot;yyyy-mm-dd hh:mm:ss&quot;
+         Exit Function
+   End Select   
+ End Function
+</a:MethodScript>
+</o:MethodTargetItem>
